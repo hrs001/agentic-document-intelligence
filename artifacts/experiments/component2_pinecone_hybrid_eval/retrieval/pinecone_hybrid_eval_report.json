@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-03-17T09:08:08.200797+00:00",
+  "namespace": "microsoft_fy2025_fixed_corpus",
+  "index_name": "universal-knowledge-index",
+  "top_k": 8,
+  "alpha": 0.6,
+  "case_count": 4,
+  "passed_count": 4,
+  "cases": [
+    {
+      "query": "Who is the CEO of Microsoft?",
+      "expected_terms": [
+        "satya nadella",
+        "chief executive officer"
+      ],
+      "expected_sections": [
+        "Appendix B. Executive officers and selected reference data",
+        "9. Operations, people, properties, and governance"
+      ],
+      "raw_match_count": 8,
+      "deduped_match_count": 8,
+      "top_sections": [
+        "9. Operations, people, properties, and governance",
+        "Appendix C. Growth drivers by business line",
+        "2. Company overview, strategy, and operating model"
+      ],
+      "top_child_snippets": [
+        "result is high commercial flexibility with strong lock-in effects.\nGovernance and executives\nThe executive officers listed in the filing as of July 30, 2025 were Satya Nadella (Chairman and\nCEO), Judson Althoff (EVP and ",
+        "| Business line | FY2025 growth |\n| --- | --- |\n| Microsoft 365 Commercial products and cloud services | +14% |\n| Microsoft 365 Commercial cloud | +15% |\n| Microsoft 365 Commercial seat growth | +6% |\n| Microsoft 365 Con",
+        "2. Company overview, strategy, and operating model\nMicrosoft describes itself as a technology company committed to making digital technology and AI\navailable broadly and responsibly. Its mission remains to empower every "
+      ],
+      "evaluation": {
+        "matched_terms": [
+          "satya nadella"
+        ],
+        "matched_sections": [
+          "9. Operations, people, properties, and governance",
+          "Appendix B. Executive officers and selected reference data"
+        ],
+        "duplicate_results": false,
+        "passed": true
+      }
+    },
+    {
+      "query": "What were Microsoft's FY2025 revenue, operating income, and net income?",
+      "expected_terms": [
+        "$281,724",
+        "$128,528",
+        "$101,832"
+      ],
+      "expected_sections": [
+        "4. Fiscal 2025 financial performance",
+        "1. Executive summary"
+      ],
+      "raw_match_count": 8,
+      "deduped_match_count": 8,
+      "top_sections": [
+        "Appendix B. Executive officers and selected reference data",
+        "Appendix C. Growth drivers by business line",
+        "1. Executive summary"
+      ],
+      "top_child_snippets": [
+        "| Item | Value |\n| --- | --- |\n| Employees as of June 30, 2025 | Approximately 228,000 |\n| Registered holders of record (July 24, 2025) | 77,014 |\n| Cash, cash equivalents, and short-term investments | $94.6 billion |\n| ",
+        "| Business line | FY2025 growth |\n| --- | --- |\n| Microsoft 365 Commercial products and cloud services | +14% |\n| Microsoft 365 Commercial cloud | +15% |\n| Microsoft 365 Commercial seat growth | +6% |\n| Microsoft 365 Con",
+        "accepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout.\nThe year’s headline outcomes were strong. Revenue rose 15% to $281.7 billion, operating income\nrose 17% to $128.5 billion, and n"
+      ],
+      "evaluation": {
+        "matched_terms": [
+          "$101,832",
+          "$128,528",
+          "$281,724"
+        ],
+        "matched_sections": [
+          "1. Executive summary",
+          "4. Fiscal 2025 financial performance"
+        ],
+        "duplicate_results": false,
+        "passed": true
+      }
+    },
+    {
+      "query": "How fast did Azure and other cloud services grow in FY2025?",
+      "expected_terms": [
+        "34%",
+        "azure"
+      ],
+      "expected_sections": [
+        "5. Segment results and operating drivers",
+        "1. Executive summary"
+      ],
+      "raw_match_count": 8,
+      "deduped_match_count": 8,
+      "top_sections": [
+        "4. Fiscal 2025 financial performance",
+        "5. Segment results and operating drivers",
+        "5. Segment results and operating drivers"
+      ],
+      "top_child_snippets": [
+        "4. Fiscal 2025 financial performance\nFiscal 2025 was a year of strong top-line and operating growth, led by cloud and AI demand,\ncontinued Microsoft 365 momentum, strong Azure consumption, improved search economics, and\n",
+        "or 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other",
+        "Microsoft 365 Commercial cloud growth, while gross margin percentage decreased slightly because\nof AI infrastructure scaling. Even so, efficiency gains and scale in the cloud business allowed strong\nprofit expansion.\nInt"
+      ],
+      "evaluation": {
+        "matched_terms": [
+          "34%",
+          "azure"
+        ],
+        "matched_sections": [
+          "1. Executive summary",
+          "5. Segment results and operating drivers"
+        ],
+        "duplicate_results": false,
+        "passed": true
+      }
+    },
+    {
+      "query": "What does the filing say about cybersecurity risk and governance?",
+      "expected_terms": [
+        "cybersecurity",
+        "risk",
+        "governance"
+      ],
+      "expected_sections": [
+        "8. Risk factors and cybersecurity posture",
+        "9. Operations, people, properties, and governance"
+      ],
+      "raw_match_count": 8,
+      "deduped_match_count": 8,
+      "top_sections": [
+        "8. Risk factors and cybersecurity posture",
+        "Appendix F. Cybersecurity and risk dashboard",
+        "8. Risk factors and cybersecurity posture"
+      ],
+      "top_child_snippets": [
+        "Governance of cybersecurity is formalized. The board oversees cybersecurity risk, the CISO reports\nto the EVP of Cloud + AI, and a Cybersecurity Governance Council of deputy CISOs approves the\nenterprise risk assessment ",
+        "Appendix F. Cybersecurity and risk dashboard\nBecause Microsoft is both a cloud provider and a security vendor, cybersecurity risk is\nsimultaneously an operating risk, a product trust risk, and a reputational risk. The fi",
+        "states that it uses insights from 84 trillion signals per day in its security operations.\nGovernance of cybersecurity is formalized. The board oversees cybersecurity risk, the CISO reports\nto the EVP of Cloud + AI, and a"
+      ],
+      "evaluation": {
+        "matched_terms": [
+          "cybersecurity",
+          "governance",
+          "risk"
+        ],
+        "matched_sections": [
+          "8. Risk factors and cybersecurity posture"
+        ],
+        "duplicate_results": false,
+        "passed": true
+      }
+    }
+  ]
+}

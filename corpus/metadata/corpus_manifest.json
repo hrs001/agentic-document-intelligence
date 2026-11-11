@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "component_stage": "component_1_corpus_foundation",
+  "corpus": {
+    "id": "microsoft_fy2025_fixed_corpus",
+    "display_name": "Microsoft FY2025 Fixed Corpus",
+    "product_name": "Agentic Document Intelligence",
+    "status": "validated",
+    "ready_for_preprocessing": true,
+    "description": "Fixed SEC-focused corpus for the Agentic Document Intelligence v1 experience."
+  },
+  "documents": [
+    {
+      "document_id": "microsoft_fy2025_10k_summary",
+      "display_name": "Microsoft FY2025 10-K Summary",
+      "relative_path": "corpus/sources/Microsoft_FY2025_10K_Summary.pdf",
+      "source_type": "pdf",
+      "source_origin": "copied_from_project_examples",
+      "source_origin_path": "project_examples/universal-knowledge-copilot/Microsoft_FY2025_10K_Summary.pdf",
+      "sha256": "e2c1e238bce5e62ed4fa7aca2bcd84a198571762e8ed203fada7f7b127a328b4",
+      "business_domain_tags": [
+        "sec_filings",
+        "financial_reporting",
+        "microsoft",
+        "fy2025"
+      ],
+      "capabilities": {
+        "document_rag": true,
+        "graph_rag": true,
+        "text_to_sql": false
+      }
+    }
+  ],
+  "datasets": [
+    {
+      "dataset_id": "microsoft_fy2025_analyst_dataset",
+      "display_name": "Microsoft FY2025 Analyst Dataset",
+      "dataset_type": "synthetic_analyst_dataset",
+      "synthetic": true,
+      "description": "Synthetic analyst-oriented tables aligned to the Microsoft FY2025 filing narrative for demo text-to-SQL workflows.",
+      "tables": [
+        {
+          "table_name": "financial_performance_by_segment",
+          "relative_path": "corpus/datasets/financial_performance_by_segment.csv"
+        },
+        {
+          "table_name": "geographic_revenue_mix",
+          "relative_path": "corpus/datasets/geographic_revenue_mix.csv"
+        },
+        {
+          "table_name": "product_family_signals",
+          "relative_path": "corpus/datasets/product_family_signals.csv"
+        }
+      ],
+      "capabilities": {
+        "document_rag": false,
+        "graph_rag": false,
+        "text_to_sql": true
+      }
+    }
+  ],
+  "capability_flags": {
+    "document_rag": true,
+    "graph_rag": true,
+    "text_to_sql": true
+  },
+  "validation": {
+    "status": "validated",
+    "report_relative_path": "artifacts/validation/component_1_corpus_validation_report.json"
+  }
+}

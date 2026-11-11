@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-03-17T15:53:33.585686+00:00",
+  "result": {
+    "original_query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+    "policy": {
+      "decomposition_model": "gpt-5-mini",
+      "max_sub_queries": 3,
+      "run_hyde_in_initial_bundle": false,
+      "hyde_policy": "candidate_only_after_weak_retrieval"
+    },
+    "decomposition_result": {
+      "sanitized_query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+      "needs_decomposition": true,
+      "sub_queries": [
+        "Who is the CEO?",
+        "Which segment drove the most revenue growth?",
+        "What did the CEO say about AI?"
+      ],
+      "reasoning_type": "multi_intent",
+      "decomposition_strategy": "conjunction_split"
+    },
+    "sub_query_bundles": [
+      {
+        "sub_query_id": "sq_1",
+        "original_sub_query": "Who is the CEO?",
+        "multi_query_result": {
+          "original_query": "Who is the CEO?",
+          "rewrite_count": 3,
+          "rewrites": [
+            {
+              "query": "Identify the CEO.",
+              "angle": "direct"
+            },
+            {
+              "query": "Who is listed as CEO in management commentary?",
+              "angle": "management_commentary"
+            },
+            {
+              "query": "Who is listed as CEO in corporate filings?",
+              "angle": "financial_disclosure"
+            }
+          ]
+        },
+        "step_back_result": {
+          "original_query": "Who is the CEO?",
+          "step_back_query": "How can I determine the current CEO of a specific company or organization, and which authoritative sources (company website, filings, news, LinkedIn) confirm their identity?",
+          "broadening_strategy": "broaden_to_explanation"
+        },
+        "hyde_recommendation": {
+          "should_consider_hyde_after_weak_retrieval": true,
+          "candidate_reasons": [
+            "short_sparse_query"
+          ]
+        }
+      },
+      {
+        "sub_query_id": "sq_2",
+        "original_sub_query": "Which segment drove the most revenue growth?",
+        "multi_query_result": {
+          "original_query": "Which segment drove the most revenue growth?",
+          "rewrite_count": 3,
+          "rewrites": [
+            {
+              "query": "Which business segment contributed most to revenue growth?",
+              "angle": "direct"
+            },
+            {
+              "query": "Which product/service segment drove the largest revenue increase?",
+              "angle": "segment_product"
+            },
+            {
+              "query": "Which segment was identified as the primary driver of revenue growth in financial reports?",
+              "angle": "financial_disclosure"
+            }
+          ]
+        },
+        "step_back_result": {
+          "original_query": "Which segment drove the most revenue growth?",
+          "step_back_query": "How to measure and compare revenue growth across business segments to identify which segment contributed most to overall revenue growth?",
+          "broadening_strategy": "conceptualize_metric"
+        },
+        "hyde_recommendation": {
+          "should_consider_hyde_after_weak_retrieval": false,
+          "candidate_reasons": []
+        }
+      },
+      {
+        "sub_query_id": "sq_3",
+        "original_sub_query": "What did the CEO say about AI?",
+        "multi_query_result": {
+          "original_query": "What did the CEO say about AI?",
+          "rewrite_count": 3,
+          "rewrites": [
+            {
+              "query": "What did the CEO say about artificial intelligence?",
+              "angle": "direct"
+            },
+            {
+              "query": "CEO remarks on AI",
+              "angle": "management_commentary"
+            },
+            {
+              "query": "Quotes from the CEO about AI",
+              "angle": "direct"
+            }
+          ]
+        },
+        "step_back_result": {
+          "original_query": "What did the CEO say about AI?",
+          "step_back_query": "Summaries of the CEO's public statements about AI, including the date, venue (interview, earnings call, blog, speech), and the main points or positions conveyed.",
+          "broadening_strategy": "broaden_to_context"
+        },
+        "hyde_recommendation": {
+          "should_consider_hyde_after_weak_retrieval": false,
+          "candidate_reasons": []
+        }
+      }
+    ],
+    "bundle_summary": {
+      "sub_query_count": 3,
+      "total_multi_query_rewrites": 9,
+      "step_back_count": 3,
+      "hyde_candidate_count": 1
+    }
+  }
+}

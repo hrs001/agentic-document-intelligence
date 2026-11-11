@@ -1,0 +1,1283 @@
+{
+  "generated_at": "2026-03-18T11:53:20.704845+00:00",
+  "result": {
+    "original_query": "Which products and services are included under Intelligent Cloud?",
+    "policy": {
+      "routing_policy": {
+        "routing_model": "gpt-5-mini",
+        "routing_method": "llm_with_capability_summaries_and_signal_validation_v1"
+      },
+      "latency_policy": {
+        "policy_model": "gpt-5-mini",
+        "policy_method": "llm_latency_optimized_execution_planner_v1"
+      }
+    },
+    "routing_summary": {
+      "sub_query_count": 1,
+      "source_usage": {
+        "vector_document": 1,
+        "graph_relationships": 1,
+        "sql_structured": 0
+      }
+    },
+    "execution_summary": {
+      "sub_query_count": 1,
+      "source_usage": {
+        "vector_document": 0,
+        "graph_relationships": 1,
+        "sql_structured": 0
+      },
+      "vector_profile_usage": {
+        "skip": 0,
+        "fast": 0,
+        "balanced": 0,
+        "full": 0,
+        "fast_escalated": 0,
+        "balanced_escalated": 0
+      }
+    },
+    "bundle_summary": {
+      "sub_query_count": 1,
+      "fact_count": 13,
+      "overlap_signal_count": 0,
+      "conflict_signal_count": 0
+    },
+    "normalized_facts": [
+      {
+        "fact_id": "graph_node::node_intelligent_cloud",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "fact_type": "entity",
+        "summary": "Intelligent Cloud (segment)",
+        "entity_name": "Intelligent Cloud",
+        "entity_type": "segment",
+        "entities": [
+          "Intelligent Cloud"
+        ],
+        "aliases": [
+          "Intelligent Cloud (IC)"
+        ],
+        "section_titles": [
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review",
+          "4. Fiscal 2025 financial performance",
+          "5. Segment results and operating drivers",
+          "7. Major accounting notes and financial statement",
+          "Appendix G. Segment economics at a glance"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1",
+          "microsoft_fy2025_10k_summary_sec17_p30_par0"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4",
+          "microsoft_fy2025_10k_summary_sec17_p30_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec17_p30_par0_ch1"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          },
+          {
+            "page_start": 8,
+            "page_end": 9
+          },
+          {
+            "page_start": 9,
+            "page_end": 11
+          },
+          {
+            "page_start": 13,
+            "page_end": 15
+          },
+          {
+            "page_start": 30,
+            "page_end": 30
+          }
+        ],
+        "evidence_snippets": [
+          "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.",
+          "Azure within Intelligent Cloud",
+          "Intelligent Cloud was the fastest-growing segment",
+          "Intelligent Cloud was the fastest-growing segment in absolute dollars.",
+          "$25.7 billion to Intelligent Cloud",
+          "Intelligent Cloud is large enough to influence group economics materially"
+        ],
+        "node_score": 12.6
+      },
+      {
+        "fact_id": "graph_node::node_microsoft_365_commercial_products_and_cloud_services",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "fact_type": "entity",
+        "summary": "Microsoft 365 Commercial products and cloud services (product_or_service)",
+        "entity_name": "Microsoft 365 Commercial products and cloud services",
+        "entity_type": "product_or_service",
+        "entities": [
+          "Microsoft 365 Commercial products and cloud services"
+        ],
+        "aliases": [],
+        "section_titles": [
+          "5. Segment results and operating drivers"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec5_p9_par0"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 9,
+            "page_end": 11
+          }
+        ],
+        "evidence_snippets": [
+          "Microsoft 365 Commercial products and cloud services"
+        ],
+        "node_score": 10.2
+      },
+      {
+        "fact_id": "graph_node::node_microsoft_365_consumer_products_and_cloud_services",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "fact_type": "entity",
+        "summary": "Microsoft 365 Consumer products and cloud services (product_or_service)",
+        "entity_name": "Microsoft 365 Consumer products and cloud services",
+        "entity_type": "product_or_service",
+        "entities": [
+          "Microsoft 365 Consumer products and cloud services"
+        ],
+        "aliases": [],
+        "section_titles": [
+          "5. Segment results and operating drivers"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec5_p9_par0"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 9,
+            "page_end": 11
+          }
+        ],
+        "evidence_snippets": [
+          "Microsoft 365 Consumer products and cloud services"
+        ],
+        "node_score": 10.2
+      },
+      {
+        "fact_id": "graph_node::node_microsoft_s_investment_portfolio",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "fact_type": "entity",
+        "summary": "Microsoft's investment portfolio (financial_or_business_concept)",
+        "entity_name": "Microsoft's investment portfolio",
+        "entity_type": "financial_or_business_concept",
+        "entities": [
+          "Microsoft's investment portfolio"
+        ],
+        "aliases": [
+          "Microsoft\u2019s investment portfolio"
+        ],
+        "section_titles": [
+          "7. Major accounting notes and financial statement"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec7_p13_par4"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 13,
+            "page_end": 15
+          }
+        ],
+        "evidence_snippets": [
+          "Microsoft\u2019s investment portfolio is primarily high-quality fixed income and liquidity-oriented holdings"
+        ],
+        "node_score": 8.4
+      },
+      {
+        "fact_id": "graph_node::node_dynamics_products_and_cloud_services",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "fact_type": "entity",
+        "summary": "Dynamics products and cloud services (product_or_service)",
+        "entity_name": "Dynamics products and cloud services",
+        "entity_type": "product_or_service",
+        "entities": [
+          "Dynamics products and cloud services"
+        ],
+        "aliases": [],
+        "section_titles": [
+          "5. Segment results and operating drivers"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec5_p9_par0"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 9,
+            "page_end": 11
+          }
+        ],
+        "evidence_snippets": [
+          "Dynamics products and cloud services grew 15%"
+        ],
+        "node_score": 7.8
+      },
+      {
+        "fact_id": "graph_edge::edge_41",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "fact_type": "relationship",
+        "summary": "Microsoft -> includes -> Intelligent Cloud",
+        "entities": [
+          "Microsoft",
+          "Intelligent Cloud"
+        ],
+        "source_entity": "Microsoft",
+        "relation_type": "includes",
+        "target_entity": "Intelligent Cloud",
+        "section_titles": [
+          "2. Company overview, strategy, and operating model"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          }
+        ],
+        "evidence_snippets": [
+          "The three reportable segments are:"
+        ],
+        "edge_score": 13.2
+      },
+      {
+        "fact_id": "graph_edge::edge_47",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "fact_type": "relationship",
+        "summary": "Intelligent Cloud -> includes -> Azure",
+        "entities": [
+          "Intelligent Cloud",
+          "Azure"
+        ],
+        "source_entity": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_entity": "Azure",
+        "section_titles": [
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review",
+          "5. Segment results and operating drivers"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          },
+          {
+            "page_start": 9,
+            "page_end": 11
+          }
+        ],
+        "evidence_snippets": [
+          "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.",
+          "driven by Azure and other cloud services growth of 34%."
+        ],
+        "edge_score": 10.6
+      },
+      {
+        "fact_id": "graph_edge::edge_48",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "fact_type": "relationship",
+        "summary": "Intelligent Cloud -> includes -> GitHub",
+        "entities": [
+          "Intelligent Cloud",
+          "GitHub"
+        ],
+        "source_entity": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_entity": "GitHub",
+        "section_titles": [
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          }
+        ],
+        "evidence_snippets": [
+          "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+        ],
+        "edge_score": 10.4
+      },
+      {
+        "fact_id": "graph_edge::edge_49",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "fact_type": "relationship",
+        "summary": "Intelligent Cloud -> includes -> Nuance Healthcare",
+        "entities": [
+          "Intelligent Cloud",
+          "Nuance Healthcare"
+        ],
+        "source_entity": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_entity": "Nuance Healthcare",
+        "section_titles": [
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          }
+        ],
+        "evidence_snippets": [
+          "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+        ],
+        "edge_score": 10.4
+      },
+      {
+        "fact_id": "graph_edge::edge_151",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "fact_type": "relationship",
+        "summary": "Intelligent Cloud -> includes -> Server products and cloud services",
+        "entities": [
+          "Intelligent Cloud",
+          "Server products and cloud services"
+        ],
+        "source_entity": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_entity": "Server products and cloud services",
+        "section_titles": [
+          "5. Segment results and operating drivers"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec5_p9_par0"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 9,
+            "page_end": 11
+          }
+        ],
+        "evidence_snippets": [
+          "Server products and cloud services rose 23%"
+        ],
+        "edge_score": 10.2
+      },
+      {
+        "fact_id": "graph_edge::edge_85",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "fact_type": "relationship",
+        "summary": "Intelligent Cloud -> includes -> partner services",
+        "entities": [
+          "Intelligent Cloud",
+          "partner services"
+        ],
+        "source_entity": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_entity": "partner services",
+        "section_titles": [
+          "3. Segment and product portfolio review"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 6,
+            "page_end": 8
+          }
+        ],
+        "evidence_snippets": [
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+        ],
+        "edge_score": 10.2
+      },
+      {
+        "fact_id": "graph_edge::edge_82",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "fact_type": "relationship",
+        "summary": "Intelligent Cloud -> includes -> server products",
+        "entities": [
+          "Intelligent Cloud",
+          "server products"
+        ],
+        "source_entity": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_entity": "server products",
+        "section_titles": [
+          "3. Segment and product portfolio review"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 6,
+            "page_end": 8
+          }
+        ],
+        "evidence_snippets": [
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+        ],
+        "edge_score": 8.7
+      },
+      {
+        "fact_id": "graph_edge::edge_83",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "fact_type": "relationship",
+        "summary": "Intelligent Cloud -> includes -> developer tooling",
+        "entities": [
+          "Intelligent Cloud",
+          "developer tooling"
+        ],
+        "source_entity": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_entity": "developer tooling",
+        "section_titles": [
+          "3. Segment and product portfolio review"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 6,
+            "page_end": 8
+          }
+        ],
+        "evidence_snippets": [
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+        ],
+        "edge_score": 8.7
+      }
+    ],
+    "overlap_signals": [],
+    "conflict_signals": [],
+    "sub_query_fusions": [
+      {
+        "sub_query_id": "sq_1",
+        "original_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+        "active_sources": [
+          "graph_relationships"
+        ],
+        "fact_count": 13,
+        "facts": [
+          {
+            "fact_id": "graph_edge::edge_41",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "fact_type": "relationship",
+            "summary": "Microsoft -> includes -> Intelligent Cloud",
+            "entities": [
+              "Microsoft",
+              "Intelligent Cloud"
+            ],
+            "source_entity": "Microsoft",
+            "relation_type": "includes",
+            "target_entity": "Intelligent Cloud",
+            "section_titles": [
+              "2. Company overview, strategy, and operating model"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 4,
+                "page_end": 6
+              }
+            ],
+            "evidence_snippets": [
+              "The three reportable segments are:"
+            ],
+            "edge_score": 13.2
+          },
+          {
+            "fact_id": "graph_edge::edge_47",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "fact_type": "relationship",
+            "summary": "Intelligent Cloud -> includes -> Azure",
+            "entities": [
+              "Intelligent Cloud",
+              "Azure"
+            ],
+            "source_entity": "Intelligent Cloud",
+            "relation_type": "includes",
+            "target_entity": "Azure",
+            "section_titles": [
+              "2. Company overview, strategy, and operating model",
+              "3. Segment and product portfolio review",
+              "5. Segment results and operating drivers"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 4,
+                "page_end": 6
+              },
+              {
+                "page_start": 6,
+                "page_end": 8
+              },
+              {
+                "page_start": 9,
+                "page_end": 11
+              }
+            ],
+            "evidence_snippets": [
+              "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+              "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.",
+              "driven by Azure and other cloud services growth of 34%."
+            ],
+            "edge_score": 10.6
+          },
+          {
+            "fact_id": "graph_edge::edge_48",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "fact_type": "relationship",
+            "summary": "Intelligent Cloud -> includes -> GitHub",
+            "entities": [
+              "Intelligent Cloud",
+              "GitHub"
+            ],
+            "source_entity": "Intelligent Cloud",
+            "relation_type": "includes",
+            "target_entity": "GitHub",
+            "section_titles": [
+              "2. Company overview, strategy, and operating model",
+              "3. Segment and product portfolio review"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 4,
+                "page_end": 6
+              },
+              {
+                "page_start": 6,
+                "page_end": 8
+              }
+            ],
+            "evidence_snippets": [
+              "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+              "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+            ],
+            "edge_score": 10.4
+          },
+          {
+            "fact_id": "graph_edge::edge_49",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "fact_type": "relationship",
+            "summary": "Intelligent Cloud -> includes -> Nuance Healthcare",
+            "entities": [
+              "Intelligent Cloud",
+              "Nuance Healthcare"
+            ],
+            "source_entity": "Intelligent Cloud",
+            "relation_type": "includes",
+            "target_entity": "Nuance Healthcare",
+            "section_titles": [
+              "2. Company overview, strategy, and operating model",
+              "3. Segment and product portfolio review"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 4,
+                "page_end": 6
+              },
+              {
+                "page_start": 6,
+                "page_end": 8
+              }
+            ],
+            "evidence_snippets": [
+              "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+              "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+            ],
+            "edge_score": 10.4
+          },
+          {
+            "fact_id": "graph_edge::edge_151",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "fact_type": "relationship",
+            "summary": "Intelligent Cloud -> includes -> Server products and cloud services",
+            "entities": [
+              "Intelligent Cloud",
+              "Server products and cloud services"
+            ],
+            "source_entity": "Intelligent Cloud",
+            "relation_type": "includes",
+            "target_entity": "Server products and cloud services",
+            "section_titles": [
+              "5. Segment results and operating drivers"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec5_p9_par0"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 9,
+                "page_end": 11
+              }
+            ],
+            "evidence_snippets": [
+              "Server products and cloud services rose 23%"
+            ],
+            "edge_score": 10.2
+          },
+          {
+            "fact_id": "graph_edge::edge_85",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "fact_type": "relationship",
+            "summary": "Intelligent Cloud -> includes -> partner services",
+            "entities": [
+              "Intelligent Cloud",
+              "partner services"
+            ],
+            "source_entity": "Intelligent Cloud",
+            "relation_type": "includes",
+            "target_entity": "partner services",
+            "section_titles": [
+              "3. Segment and product portfolio review"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec3_p6_par1"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 6,
+                "page_end": 8
+              }
+            ],
+            "evidence_snippets": [
+              "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+            ],
+            "edge_score": 10.2
+          },
+          {
+            "fact_id": "graph_edge::edge_82",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "fact_type": "relationship",
+            "summary": "Intelligent Cloud -> includes -> server products",
+            "entities": [
+              "Intelligent Cloud",
+              "server products"
+            ],
+            "source_entity": "Intelligent Cloud",
+            "relation_type": "includes",
+            "target_entity": "server products",
+            "section_titles": [
+              "3. Segment and product portfolio review"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec3_p6_par1"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 6,
+                "page_end": 8
+              }
+            ],
+            "evidence_snippets": [
+              "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+            ],
+            "edge_score": 8.7
+          },
+          {
+            "fact_id": "graph_edge::edge_83",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "fact_type": "relationship",
+            "summary": "Intelligent Cloud -> includes -> developer tooling",
+            "entities": [
+              "Intelligent Cloud",
+              "developer tooling"
+            ],
+            "source_entity": "Intelligent Cloud",
+            "relation_type": "includes",
+            "target_entity": "developer tooling",
+            "section_titles": [
+              "3. Segment and product portfolio review"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec3_p6_par1"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 6,
+                "page_end": 8
+              }
+            ],
+            "evidence_snippets": [
+              "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+            ],
+            "edge_score": 8.7
+          },
+          {
+            "fact_id": "graph_node::node_intelligent_cloud",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "fact_type": "entity",
+            "summary": "Intelligent Cloud (segment)",
+            "entity_name": "Intelligent Cloud",
+            "entity_type": "segment",
+            "entities": [
+              "Intelligent Cloud"
+            ],
+            "aliases": [
+              "Intelligent Cloud (IC)"
+            ],
+            "section_titles": [
+              "2. Company overview, strategy, and operating model",
+              "3. Segment and product portfolio review",
+              "4. Fiscal 2025 financial performance",
+              "5. Segment results and operating drivers",
+              "7. Major accounting notes and financial statement",
+              "Appendix G. Segment economics at a glance"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1",
+              "microsoft_fy2025_10k_summary_sec17_p30_par0"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4",
+              "microsoft_fy2025_10k_summary_sec17_p30_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec17_p30_par0_ch1"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 4,
+                "page_end": 6
+              },
+              {
+                "page_start": 6,
+                "page_end": 8
+              },
+              {
+                "page_start": 8,
+                "page_end": 9
+              },
+              {
+                "page_start": 9,
+                "page_end": 11
+              },
+              {
+                "page_start": 13,
+                "page_end": 15
+              },
+              {
+                "page_start": 30,
+                "page_end": 30
+              }
+            ],
+            "evidence_snippets": [
+              "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+              "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.",
+              "Azure within Intelligent Cloud",
+              "Intelligent Cloud was the fastest-growing segment",
+              "Intelligent Cloud was the fastest-growing segment in absolute dollars.",
+              "$25.7 billion to Intelligent Cloud",
+              "Intelligent Cloud is large enough to influence group economics materially"
+            ],
+            "node_score": 12.6
+          },
+          {
+            "fact_id": "graph_node::node_microsoft_365_commercial_products_and_cloud_services",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "fact_type": "entity",
+            "summary": "Microsoft 365 Commercial products and cloud services (product_or_service)",
+            "entity_name": "Microsoft 365 Commercial products and cloud services",
+            "entity_type": "product_or_service",
+            "entities": [
+              "Microsoft 365 Commercial products and cloud services"
+            ],
+            "aliases": [],
+            "section_titles": [
+              "5. Segment results and operating drivers"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec5_p9_par0"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 9,
+                "page_end": 11
+              }
+            ],
+            "evidence_snippets": [
+              "Microsoft 365 Commercial products and cloud services"
+            ],
+            "node_score": 10.2
+          },
+          {
+            "fact_id": "graph_node::node_microsoft_365_consumer_products_and_cloud_services",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "fact_type": "entity",
+            "summary": "Microsoft 365 Consumer products and cloud services (product_or_service)",
+            "entity_name": "Microsoft 365 Consumer products and cloud services",
+            "entity_type": "product_or_service",
+            "entities": [
+              "Microsoft 365 Consumer products and cloud services"
+            ],
+            "aliases": [],
+            "section_titles": [
+              "5. Segment results and operating drivers"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec5_p9_par0"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 9,
+                "page_end": 11
+              }
+            ],
+            "evidence_snippets": [
+              "Microsoft 365 Consumer products and cloud services"
+            ],
+            "node_score": 10.2
+          },
+          {
+            "fact_id": "graph_node::node_microsoft_s_investment_portfolio",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "fact_type": "entity",
+            "summary": "Microsoft's investment portfolio (financial_or_business_concept)",
+            "entity_name": "Microsoft's investment portfolio",
+            "entity_type": "financial_or_business_concept",
+            "entities": [
+              "Microsoft's investment portfolio"
+            ],
+            "aliases": [
+              "Microsoft\u2019s investment portfolio"
+            ],
+            "section_titles": [
+              "7. Major accounting notes and financial statement"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec7_p13_par4"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 13,
+                "page_end": 15
+              }
+            ],
+            "evidence_snippets": [
+              "Microsoft\u2019s investment portfolio is primarily high-quality fixed income and liquidity-oriented holdings"
+            ],
+            "node_score": 8.4
+          },
+          {
+            "fact_id": "graph_node::node_dynamics_products_and_cloud_services",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "resolved_sub_query": "Which products and services are included under Microsoft's Intelligent Cloud segment?",
+            "fact_type": "entity",
+            "summary": "Dynamics products and cloud services (product_or_service)",
+            "entity_name": "Dynamics products and cloud services",
+            "entity_type": "product_or_service",
+            "entities": [
+              "Dynamics products and cloud services"
+            ],
+            "aliases": [],
+            "section_titles": [
+              "5. Segment results and operating drivers"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec5_p9_par0"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 9,
+                "page_end": 11
+              }
+            ],
+            "evidence_snippets": [
+              "Dynamics products and cloud services grew 15%"
+            ],
+            "node_score": 7.8
+          }
+        ],
+        "overlap_signals": [],
+        "conflict_signals": [],
+        "assembled_fused_sub_query_text": "[Fused Sub-query] Which products and services are included under Microsoft's Intelligent Cloud segment?\nResolved Query: Which products and services are included under Microsoft's Intelligent Cloud segment?\nActive Sources: graph_relationships\nFact Count: 13\nOverlap Signals: 0\nConflict Signals: 0\nAnswer-Ready Facts:\n[Graph] Microsoft -> includes -> Intelligent Cloud\n[Graph] Intelligent Cloud -> includes -> Azure\n[Graph] Intelligent Cloud -> includes -> GitHub\n[Graph] Intelligent Cloud -> includes -> Nuance Healthcare\n[Graph] Intelligent Cloud -> includes -> Server products and cloud services\n[Graph] Intelligent Cloud -> includes -> partner services\n[Graph] Intelligent Cloud -> includes -> server products\n[Graph] Intelligent Cloud -> includes -> developer tooling"
+      }
+    ],
+    "assembled_fused_evidence_text": "[Fused Sub-query] Which products and services are included under Microsoft's Intelligent Cloud segment?\nResolved Query: Which products and services are included under Microsoft's Intelligent Cloud segment?\nActive Sources: graph_relationships\nFact Count: 13\nOverlap Signals: 0\nConflict Signals: 0\nAnswer-Ready Facts:\n[Graph] Microsoft -> includes -> Intelligent Cloud\n[Graph] Intelligent Cloud -> includes -> Azure\n[Graph] Intelligent Cloud -> includes -> GitHub\n[Graph] Intelligent Cloud -> includes -> Nuance Healthcare\n[Graph] Intelligent Cloud -> includes -> Server products and cloud services\n[Graph] Intelligent Cloud -> includes -> partner services\n[Graph] Intelligent Cloud -> includes -> server products\n[Graph] Intelligent Cloud -> includes -> developer tooling"
+  }
+}

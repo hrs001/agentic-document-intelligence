@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-03-17T10:16:10.259708+00:00",
+  "query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+  "result": {
+    "sanitized_query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+    "needs_decomposition": true,
+    "sub_queries": [
+      "List Microsoft's FY2025 revenue?",
+      "List Microsoft's FY2025 operating income?",
+      "List Microsoft's FY2025 net income?"
+    ],
+    "reasoning_type": "list_intent",
+    "decomposition_strategy": "list_item_split"
+  }
+}

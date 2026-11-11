@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-03-18T05:19:14.934167+00:00",
+  "result": {
+    "original_query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+    "policy": {
+      "decomposition_model": "gpt-5.4-mini",
+      "max_sub_queries": 3,
+      "run_hyde_in_initial_bundle": false,
+      "hyde_policy": "candidate_only_after_weak_retrieval"
+    },
+    "decomposition_result": {
+      "sanitized_query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+      "needs_decomposition": true,
+      "sub_queries": [
+        "Who is the CEO?",
+        "What segment drove the most revenue growth?",
+        "What did they say about AI?"
+      ],
+      "reasoning_type": "multi_intent",
+      "decomposition_strategy": "conjunction_split"
+    },
+    "sub_query_bundles": [
+      {
+        "sub_query_id": "sq_1",
+        "original_sub_query": "Who is the CEO?",
+        "multi_query_result": {
+          "original_query": "Who is the CEO?",
+          "rewrite_count": 3,
+          "rewrites": [
+            {
+              "query": "Who is the company's CEO?",
+              "angle": "direct"
+            },
+            {
+              "query": "Who serves as chief executive officer?",
+              "angle": "direct"
+            },
+            {
+              "query": "Who is listed as CEO in company disclosures?",
+              "angle": "financial_disclosure"
+            }
+          ]
+        },
+        "step_back_result": {
+          "original_query": "Who is the CEO?",
+          "step_back_query": "What is the leadership structure and current executive management of the organization?",
+          "broadening_strategy": "broaden_to_context"
+        },
+        "hyde_recommendation": {
+          "should_consider_hyde_after_weak_retrieval": true,
+          "candidate_reasons": [
+            "short_sparse_query"
+          ]
+        }
+      },
+      {
+        "sub_query_id": "sq_2",
+        "original_sub_query": "What segment drove the most revenue growth?",
+        "multi_query_result": {
+          "original_query": "What segment drove the most revenue growth?",
+          "rewrite_count": 3,
+          "rewrites": [
+            {
+              "query": "Which segment contributed the most to revenue growth?",
+              "angle": "direct"
+            },
+            {
+              "query": "Which business segment was the main driver of revenue growth?",
+              "angle": "direct"
+            },
+            {
+              "query": "Which segment accounted for the largest increase in revenue?",
+              "angle": "segment_product"
+            }
+          ]
+        },
+        "step_back_result": {
+          "original_query": "What segment drove the most revenue growth?",
+          "step_back_query": "Which business segment contributed most to revenue growth, and what segment-level factors explain that growth?",
+          "broadening_strategy": "broaden_to_explanation"
+        },
+        "hyde_recommendation": {
+          "should_consider_hyde_after_weak_retrieval": false,
+          "candidate_reasons": []
+        }
+      },
+      {
+        "sub_query_id": "sq_3",
+        "original_sub_query": "What did they say about AI?",
+        "multi_query_result": {
+          "original_query": "What did they say about AI?",
+          "rewrite_count": 3,
+          "rewrites": [
+            {
+              "query": "What did they say about AI?",
+              "angle": "direct"
+            },
+            {
+              "query": "What did management say about AI?",
+              "angle": "management_commentary"
+            },
+            {
+              "query": "What did they disclose about AI?",
+              "angle": "financial_disclosure"
+            }
+          ]
+        },
+        "step_back_result": {
+          "original_query": "What did they say about AI?",
+          "step_back_query": "What context or discussion was provided about AI?",
+          "broadening_strategy": "broaden_to_context"
+        },
+        "hyde_recommendation": {
+          "should_consider_hyde_after_weak_retrieval": true,
+          "candidate_reasons": [
+            "ambiguous_reference"
+          ]
+        }
+      }
+    ],
+    "bundle_summary": {
+      "sub_query_count": 3,
+      "total_multi_query_rewrites": 9,
+      "step_back_count": 3,
+      "hyde_candidate_count": 2
+    }
+  }
+}

@@ -1,0 +1,299 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: Agentic Document Intelligence deployment for Lambda, S3, and CloudFront.
+
+Parameters:
+  OpenAIApiKey:
+    Type: String
+    NoEcho: true
+  PineconeApiKey:
+    Type: String
+    NoEcho: true
+  PineconeIndexName:
+    Type: String
+    Default: universal-knowledge-index
+  RuntimeAssetsBucketName:
+    Type: String
+    Default: rag-universal-knowledge
+    Description: Existing S3 bucket that stores the runtime bundle hydrated into Lambda /tmp.
+  RuntimeAssetsPrefix:
+    Type: String
+    Default: runtime-bundle
+  FrontendAssetsBucketName:
+    Type: String
+    Default: rag-universal-knowledge
+    Description: Existing S3 bucket that stores the static frontend export.
+  FrontendAssetsPrefix:
+    Type: String
+    Default: frontend-site
+    Description: Prefix inside the frontend assets bucket that contains the static export.
+  LambdaMemorySize:
+    Type: Number
+    Default: 10240
+    MinValue: 128
+    MaxValue: 10240
+  LambdaTimeout:
+    Type: Number
+    Default: 900
+    MinValue: 1
+    MaxValue: 900
+  LambdaEphemeralStorageMb:
+    Type: Number
+    Default: 2048
+    MinValue: 512
+    MaxValue: 10240
+  LambdaArchitecture:
+    Type: String
+    Default: x86_64
+    AllowedValues:
+      - x86_64
+      - arm64
+  FrontendPriceClass:
+    Type: String
+    Default: PriceClass_100
+    AllowedValues:
+      - PriceClass_100
+      - PriceClass_200
+      - PriceClass_All
+
+Globals:
+  Function:
+    Runtime: python3.13
+    Architectures:
+      - !Ref LambdaArchitecture
+    Timeout: !Ref LambdaTimeout
+    MemorySize: !Ref LambdaMemorySize
+    EphemeralStorage:
+      Size: !Ref LambdaEphemeralStorageMb
+    Tracing: Active
+    Environment:
+      Variables:
+        OPENAI_API_KEY: !Ref OpenAIApiKey
+        PINECONE_API_KEY: !Ref PineconeApiKey
+        PINECONE_INDEX_NAME: !Ref PineconeIndexName
+        ADI_RUNTIME_BUNDLE_BUCKET: !Ref RuntimeAssetsBucketName
+        ADI_RUNTIME_BUNDLE_PREFIX: !Ref RuntimeAssetsPrefix
+        ADI_RUNTIME_LOCAL_ROOT: /tmp/adi_runtime
+        ADI_RUNTIME_STATE_BUCKET: !Ref RuntimeAssetsBucketName
+        ADI_RUNTIME_STATE_PREFIX: runtime-state
+
+Resources:
+  BackendHttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowOrigins:
+          - "*"
+        AllowHeaders:
+          - "*"
+        AllowMethods:
+          - GET
+          - POST
+          - OPTIONS
+
+  BackendFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: deployment/dist/backend-src
+      Handler: agentic_document_intelligence.backend.app.lambda_handler.handler
+      Description: Agentic Document Intelligence backend API.
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - Version: "2012-10-17"
+          Statement:
+            - Effect: Allow
+              Action:
+                - s3:GetObject
+                - s3:PutObject
+              Resource:
+                - !Sub "arn:${AWS::Partition}:s3:::${RuntimeAssetsBucketName}/${RuntimeAssetsPrefix}/*"
+                - !Sub "arn:${AWS::Partition}:s3:::${RuntimeAssetsBucketName}/runtime-state/*"
+            - Effect: Allow
+              Action:
+                - s3:ListBucket
+              Resource: !Sub "arn:${AWS::Partition}:s3:::${RuntimeAssetsBucketName}"
+              Condition:
+                StringLike:
+                  s3:prefix:
+                    - !Sub "${RuntimeAssetsPrefix}/*"
+                    - runtime-state/*
+            - Effect: Allow
+              Action:
+                - lambda:InvokeFunction
+              Resource: !Sub "arn:${AWS::Partition}:lambda:${AWS::Region}:${AWS::AccountId}:function:${AWS::StackName}-BackendFunction*"
+      Events:
+        ProxyApi:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref BackendHttpApi
+            Path: /{proxy+}
+            Method: ANY
+        RootApi:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref BackendHttpApi
+            Path: /
+            Method: ANY
+
+  FrontendOriginAccessControl:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig:
+        Name: !Sub "${AWS::StackName}-frontend-oac"
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
+
+  FrontendBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref FrontendAssetsBucketName
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: AllowCloudFrontRead
+            Effect: Allow
+            Principal:
+              Service: cloudfront.amazonaws.com
+            Action: s3:GetObject
+            Resource: !Sub "arn:${AWS::Partition}:s3:::${FrontendAssetsBucketName}/${FrontendAssetsPrefix}/*"
+            Condition:
+              StringEquals:
+                AWS:SourceArn: !Sub "arn:${AWS::Partition}:cloudfront::${AWS::AccountId}:distribution/${FrontendDistribution}"
+
+  FrontendStaticCachePolicy:
+    Type: AWS::CloudFront::CachePolicy
+    Properties:
+      CachePolicyConfig:
+        Name: !Sub "${AWS::StackName}-static-cache"
+        DefaultTTL: 86400
+        MaxTTL: 31536000
+        MinTTL: 0
+        ParametersInCacheKeyAndForwardedToOrigin:
+          CookiesConfig:
+            CookieBehavior: none
+          EnableAcceptEncodingBrotli: true
+          EnableAcceptEncodingGzip: true
+          HeadersConfig:
+            HeaderBehavior: none
+          QueryStringsConfig:
+            QueryStringBehavior: none
+
+  FrontendApiCachePolicy:
+    Type: AWS::CloudFront::CachePolicy
+    Properties:
+      CachePolicyConfig:
+        Name: !Sub "${AWS::StackName}-api-cache"
+        DefaultTTL: 0
+        MaxTTL: 1
+        MinTTL: 0
+        ParametersInCacheKeyAndForwardedToOrigin:
+          CookiesConfig:
+            CookieBehavior: all
+          EnableAcceptEncodingBrotli: true
+          EnableAcceptEncodingGzip: true
+          HeadersConfig:
+            HeaderBehavior: whitelist
+            Headers:
+              - Content-Type
+              - Origin
+          QueryStringsConfig:
+            QueryStringBehavior: all
+
+  FrontendApiOriginRequestPolicy:
+    Type: AWS::CloudFront::OriginRequestPolicy
+    Properties:
+      OriginRequestPolicyConfig:
+        Name: !Sub "${AWS::StackName}-api-origin-request"
+        CookiesConfig:
+          CookieBehavior: all
+        HeadersConfig:
+          HeaderBehavior: whitelist
+          Headers:
+            - Content-Type
+            - Origin
+        QueryStringsConfig:
+          QueryStringBehavior: all
+
+  FrontendDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Enabled: true
+        HttpVersion: http2
+        PriceClass: !Ref FrontendPriceClass
+        DefaultRootObject: index.html
+        Origins:
+          - Id: FrontendS3Origin
+            DomainName: !Sub "${FrontendAssetsBucketName}.s3.${AWS::Region}.${AWS::URLSuffix}"
+            OriginPath: !Sub "/${FrontendAssetsPrefix}"
+            OriginAccessControlId: !Ref FrontendOriginAccessControl
+            S3OriginConfig: {}
+          - Id: BackendApiOrigin
+            DomainName: !Sub "${BackendHttpApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}"
+            CustomOriginConfig:
+              HTTPSPort: 443
+              OriginProtocolPolicy: https-only
+              OriginSSLProtocols:
+                - TLSv1.2
+        DefaultCacheBehavior:
+          AllowedMethods:
+            - GET
+            - HEAD
+            - OPTIONS
+          CachedMethods:
+            - GET
+            - HEAD
+          CachePolicyId: !Ref FrontendStaticCachePolicy
+          Compress: true
+          TargetOriginId: FrontendS3Origin
+          ViewerProtocolPolicy: redirect-to-https
+        CacheBehaviors:
+          - PathPattern: /api/*
+            AllowedMethods:
+              - GET
+              - HEAD
+              - OPTIONS
+              - POST
+              - PUT
+              - PATCH
+              - DELETE
+            CachedMethods:
+              - GET
+              - HEAD
+            CachePolicyId: !Ref FrontendApiCachePolicy
+            OriginRequestPolicyId: !Ref FrontendApiOriginRequestPolicy
+            Compress: true
+            TargetOriginId: BackendApiOrigin
+            ViewerProtocolPolicy: redirect-to-https
+          - PathPattern: /health
+            AllowedMethods:
+              - GET
+              - HEAD
+              - OPTIONS
+            CachedMethods:
+              - GET
+              - HEAD
+            CachePolicyId: !Ref FrontendApiCachePolicy
+            OriginRequestPolicyId: !Ref FrontendApiOriginRequestPolicy
+            Compress: true
+            TargetOriginId: BackendApiOrigin
+            ViewerProtocolPolicy: redirect-to-https
+        CustomErrorResponses:
+          - ErrorCode: 403
+            ResponseCode: 200
+            ResponsePagePath: /index.html
+          - ErrorCode: 404
+            ResponseCode: 200
+            ResponsePagePath: /index.html
+
+Outputs:
+  BackendApiUrl:
+    Description: Direct backend API endpoint.
+    Value: !Sub "https://${BackendHttpApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}"
+  FrontendBucketOutput:
+    Description: Existing S3 bucket for uploaded frontend static assets.
+    Value: !Ref FrontendAssetsBucketName
+  FrontendDistributionUrl:
+    Description: Public CloudFront URL for the static frontend.
+    Value: !Sub "https://${FrontendDistribution.DomainName}"

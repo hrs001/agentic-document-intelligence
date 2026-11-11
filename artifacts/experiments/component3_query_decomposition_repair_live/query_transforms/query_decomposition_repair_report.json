@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-03-17T11:00:22.331522+00:00",
+  "model": "gpt-5-mini",
+  "query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+  "original_result": {
+    "sanitized_query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+    "needs_decomposition": true,
+    "sub_queries": [
+      "Who is the CEO?",
+      "Which business segment drove the most revenue growth?",
+      "What did the CEO say about AI?"
+    ],
+    "reasoning_type": "multi_intent",
+    "decomposition_strategy": "conjunction_split"
+  },
+  "repaired_result": {
+    "sanitized_query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+    "needs_decomposition": true,
+    "sub_queries": [
+      "Who is the CEO?",
+      "Which business segment drove the most revenue growth?",
+      "What did the CEO say about AI?"
+    ],
+    "reasoning_type": "multi_intent",
+    "decomposition_strategy": "conjunction_split",
+    "repair_applied": false,
+    "repair_reasons": [],
+    "repair_notes": []
+  }
+}

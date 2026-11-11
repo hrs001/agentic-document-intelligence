@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-03-21T11:09:17.989879+00:00",
+  "model": "gpt-5-mini",
+  "result": {
+    "query": "What did they say about AI and margins?",
+    "estimated_sub_queries": 2,
+    "run_decomposition": true,
+    "run_multi_query": true,
+    "run_step_back": false,
+    "run_hyde": false,
+    "is_ambiguous_case": true,
+    "ambiguity_signals": [
+      "ambiguous_reference"
+    ],
+    "reasons": [
+      "compound_or_multi_intent"
+    ],
+    "selector_notes": [
+      "lexical variation may help"
+    ],
+    "llm_selector_applied": true
+  }
+}

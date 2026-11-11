@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-03-17T11:17:46.651891+00:00",
+  "model": "gpt-5-mini",
+  "result": {
+    "original_query": "What happened with Azure growth and what did management say about AI demand?",
+    "rewrite_count": 3,
+    "rewrites": [
+      {
+        "query": "What changed in Azure growth and what did management say about AI demand?",
+        "angle": "direct"
+      },
+      {
+        "query": "Management commentary on AI demand and how it affected Azure growth",
+        "angle": "management_commentary"
+      },
+      {
+        "query": "Earnings disclosure on Azure growth trend and management statements about AI demand",
+        "angle": "financial_disclosure"
+      }
+    ]
+  }
+}

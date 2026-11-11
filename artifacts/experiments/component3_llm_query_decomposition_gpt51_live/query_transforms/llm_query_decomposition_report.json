@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-03-17T10:52:33.853916+00:00",
+  "model": "gpt-5.1",
+  "query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+  "result": {
+    "sanitized_query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+    "needs_decomposition": true,
+    "sub_queries": [
+      "Who is the CEO of Microsoft?",
+      "Which Microsoft business segment drove the most revenue growth?",
+      "What did Microsoft say about AI?"
+    ],
+    "reasoning_type": "multi_intent",
+    "decomposition_strategy": "conjunction_split"
+  }
+}

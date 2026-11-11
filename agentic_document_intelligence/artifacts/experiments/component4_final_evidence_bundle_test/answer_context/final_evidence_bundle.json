@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-03-21T11:09:14.202977+00:00",
+  "result": {
+    "original_query": "query",
+    "policy": {},
+    "bundle_summary": {
+      "sub_query_count": 1,
+      "total_evidence_items": 1
+    },
+    "sub_query_bundles": [],
+    "assembled_evidence_text": ""
+  }
+}

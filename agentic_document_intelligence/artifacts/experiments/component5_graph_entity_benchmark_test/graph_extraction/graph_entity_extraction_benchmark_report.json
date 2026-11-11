@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-03-21T11:09:08.104344+00:00",
+  "benchmark_scope": "first_substantive_pages_of_microsoft_fy2025_summary",
+  "models_tested": [
+    "gpt-5-mini"
+  ],
+  "results": [
+    {
+      "model": "gpt-5-mini",
+      "summary": {
+        "avg_quality_score": 0.5,
+        "avg_relation_recall": 0.4,
+        "estimated_cost_usd": 0.01
+      },
+      "case_results": [],
+      "rank": 1
+    }
+  ]
+}

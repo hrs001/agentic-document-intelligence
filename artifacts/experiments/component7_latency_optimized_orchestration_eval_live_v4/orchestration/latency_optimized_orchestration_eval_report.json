@@ -1,0 +1,191 @@
+{
+  "generated_at": "2026-03-18T10:40:59.341293+00:00",
+  "model": "gpt-5-mini",
+  "case_count": 5,
+  "passed_count": 5,
+  "pass_rate": 1.0,
+  "average_runtime_seconds": 38.627,
+  "total_runtime_seconds": 193.135,
+  "case_results": [
+    {
+      "case_id": "orch_001_sql_only",
+      "query": "Which segment had the highest revenue in FY2025?",
+      "runtime_seconds": 19.072,
+      "execution_summary": {
+        "sub_query_count": 1,
+        "source_usage": {
+          "vector_document": 0,
+          "graph_relationships": 0,
+          "sql_structured": 1
+        },
+        "vector_profile_usage": {
+          "skip": 0,
+          "fast": 0,
+          "balanced": 0,
+          "full": 0,
+          "fast_escalated": 0,
+          "balanced_escalated": 0
+        }
+      },
+      "policy_summary": {
+        "sub_query_count": 1,
+        "vector_profile_counts": {
+          "skip": 1,
+          "fast": 0,
+          "balanced": 0,
+          "full": 0
+        },
+        "parallel_safe_count": 0
+      },
+      "evaluation": {
+        "missing_sources": [],
+        "missing_keywords": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "orch_002_graph_only",
+      "query": "Which segment includes GitHub?",
+      "runtime_seconds": 13.611,
+      "execution_summary": {
+        "sub_query_count": 1,
+        "source_usage": {
+          "vector_document": 0,
+          "graph_relationships": 1,
+          "sql_structured": 0
+        },
+        "vector_profile_usage": {
+          "skip": 0,
+          "fast": 0,
+          "balanced": 0,
+          "full": 0,
+          "fast_escalated": 0,
+          "balanced_escalated": 0
+        }
+      },
+      "policy_summary": {
+        "sub_query_count": 1,
+        "vector_profile_counts": {
+          "skip": 1,
+          "fast": 0,
+          "balanced": 0,
+          "full": 0
+        },
+        "parallel_safe_count": 0
+      },
+      "evaluation": {
+        "missing_sources": [],
+        "missing_keywords": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "orch_003_vector_only",
+      "query": "What did management say about AI demand?",
+      "runtime_seconds": 24.036,
+      "execution_summary": {
+        "sub_query_count": 1,
+        "source_usage": {
+          "vector_document": 1,
+          "graph_relationships": 0,
+          "sql_structured": 0
+        },
+        "vector_profile_usage": {
+          "skip": 0,
+          "fast": 1,
+          "balanced": 0,
+          "full": 0,
+          "fast_escalated": 0,
+          "balanced_escalated": 0
+        }
+      },
+      "policy_summary": {
+        "sub_query_count": 1,
+        "vector_profile_counts": {
+          "skip": 0,
+          "fast": 1,
+          "balanced": 0,
+          "full": 0
+        },
+        "parallel_safe_count": 0
+      },
+      "evaluation": {
+        "missing_sources": [],
+        "missing_keywords": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "orch_004_mixed_graph_sql",
+      "query": "Which segment includes GitHub and what was that segment's revenue in FY2025?",
+      "runtime_seconds": 73.948,
+      "execution_summary": {
+        "sub_query_count": 2,
+        "source_usage": {
+          "vector_document": 0,
+          "graph_relationships": 2,
+          "sql_structured": 1
+        },
+        "vector_profile_usage": {
+          "skip": 0,
+          "fast": 0,
+          "balanced": 0,
+          "full": 0,
+          "fast_escalated": 0,
+          "balanced_escalated": 0
+        }
+      },
+      "policy_summary": {
+        "sub_query_count": 2,
+        "vector_profile_counts": {
+          "skip": 2,
+          "fast": 0,
+          "balanced": 0,
+          "full": 0
+        },
+        "parallel_safe_count": 0
+      },
+      "evaluation": {
+        "missing_sources": [],
+        "missing_keywords": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "orch_005_mixed_sql_vector",
+      "query": "Which segment grew the fastest in FY2025 and what narrative driver was mentioned for it?",
+      "runtime_seconds": 62.468,
+      "execution_summary": {
+        "sub_query_count": 2,
+        "source_usage": {
+          "vector_document": 0,
+          "graph_relationships": 0,
+          "sql_structured": 2
+        },
+        "vector_profile_usage": {
+          "skip": 0,
+          "fast": 0,
+          "balanced": 0,
+          "full": 0,
+          "fast_escalated": 0,
+          "balanced_escalated": 0
+        }
+      },
+      "policy_summary": {
+        "sub_query_count": 2,
+        "vector_profile_counts": {
+          "skip": 1,
+          "fast": 1,
+          "balanced": 0,
+          "full": 0
+        },
+        "parallel_safe_count": 0
+      },
+      "evaluation": {
+        "missing_sources": [],
+        "missing_keywords": [],
+        "passed": true
+      }
+    }
+  ]
+}

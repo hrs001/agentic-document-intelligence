@@ -1,0 +1,61 @@
+[
+  {
+    "case_id": "orch_001_sql_only",
+    "query": "Which segment had the highest revenue in FY2025?",
+    "required_sources": ["sql_structured"],
+    "keyword_expectations": [
+      {
+        "source": "sql_structured",
+        "keywords": ["Intelligent Cloud", "108610"]
+      }
+    ]
+  },
+  {
+    "case_id": "orch_002_graph_only",
+    "query": "Which segment includes GitHub?",
+    "required_sources": ["graph_relationships"],
+    "keyword_expectations": [
+      {
+        "source": "graph_relationships",
+        "keywords": ["GitHub", "Intelligent Cloud"]
+      }
+    ]
+  },
+  {
+    "case_id": "orch_003_vector_only",
+    "query": "What did management say about AI demand?",
+    "required_sources": ["vector_document"],
+    "keyword_expectations": [
+      {
+        "source": "vector_document",
+        "keywords": ["AI", "demand"]
+      }
+    ]
+  },
+  {
+    "case_id": "orch_004_mixed_graph_sql",
+    "query": "Which segment includes GitHub and what was that segment's revenue in FY2025?",
+    "required_sources": ["graph_relationships", "sql_structured"],
+    "keyword_expectations": [
+      {
+        "source": "graph_relationships",
+        "keywords": ["GitHub", "Intelligent Cloud"]
+      },
+      {
+        "source": "sql_structured",
+        "keywords": ["Intelligent Cloud", "108610"]
+      }
+    ]
+  },
+  {
+    "case_id": "orch_005_mixed_sql_vector",
+    "query": "Which segment grew the fastest in FY2025 and what narrative driver was mentioned for it?",
+    "required_sources": ["sql_structured"],
+    "keyword_expectations": [
+      {
+        "source": "sql_structured",
+        "keywords": ["Intelligent Cloud", "12.6"]
+      }
+    ]
+  }
+]

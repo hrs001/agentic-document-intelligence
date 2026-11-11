@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-03-17T15:41:11.643498+00:00",
+  "model": "gpt-5-mini",
+  "result": {
+    "query": "What did they say about AI and margins?",
+    "max_sub_queries": 3,
+    "estimated_sub_queries": 2,
+    "run_decomposition": false,
+    "run_multi_query": true,
+    "run_step_back": true,
+    "run_hyde": false,
+    "is_ambiguous_case": true,
+    "ambiguity_signals": [
+      "ambiguous_reference"
+    ],
+    "reasons": [
+      "compound_or_multi_intent"
+    ],
+    "selector_notes": [
+      "Multi-query: lexical variation (e.g., \u201cAI impact on profit margins\u201d, \u201cAI and margins in earnings calls\u201d) increases recall for an underspecified phrase.",
+      "Step-back: \u2018they\u2019 is ambiguous \u2014 include broader contextual queries (companies, executives, analysts, recent earnings/coverage) to avoid wrong referent.",
+      "Decomposition not needed \u2014 single information need. HyDE not needed \u2014 query is sparse but multi-query + step-back should suffice within 3 sub-queries."
+    ],
+    "llm_selector_applied": true
+  }
+}

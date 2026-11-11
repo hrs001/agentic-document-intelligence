@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-03-17T10:16:10.229176+00:00",
+  "query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+  "result": {
+    "sanitized_query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+    "needs_decomposition": true,
+    "sub_queries": [
+      "Explain Microsoft's FY2025 revenue growth?",
+      "identify who the CEO is?"
+    ],
+    "reasoning_type": "multi_intent",
+    "decomposition_strategy": "conjunction_split"
+  }
+}

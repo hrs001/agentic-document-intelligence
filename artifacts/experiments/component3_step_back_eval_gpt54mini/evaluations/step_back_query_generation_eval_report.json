@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-03-18T05:59:27.364161+00:00",
+  "model": "gpt-5.4-mini",
+  "cases_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\evals\\step_back_query_generation_cases.json",
+  "case_count": 5,
+  "passed_count": 4,
+  "results": [
+    {
+      "query": "What was Microsoft's FY2025 revenue?",
+      "result": {
+        "original_query": "What was Microsoft's FY2025 revenue?",
+        "step_back_query": "Microsoft FY2025 revenue and annual financial results",
+        "broadening_strategy": "broaden_to_context"
+      },
+      "evaluation": {
+        "passed": true,
+        "required_terms_ok": true,
+        "forbidden_ok": true,
+        "broader_ok": true
+      }
+    },
+    {
+      "query": "What happened with Azure growth and what did management say about AI demand?",
+      "result": {
+        "original_query": "What happened with Azure growth and what did management say about AI demand?",
+        "step_back_query": "Microsoft Azure growth trends and management commentary on AI demand",
+        "broadening_strategy": "broaden_to_context"
+      },
+      "evaluation": {
+        "passed": false,
+        "required_terms_ok": true,
+        "forbidden_ok": true,
+        "broader_ok": false
+      }
+    },
+    {
+      "query": "Compare Azure and Microsoft 365 revenue drivers.",
+      "result": {
+        "original_query": "Compare Azure and Microsoft 365 revenue drivers.",
+        "step_back_query": "How do Azure and Microsoft 365 generate revenue, and what are the main business drivers behind each segment?",
+        "broadening_strategy": "broaden_to_explanation"
+      },
+      "evaluation": {
+        "passed": true,
+        "required_terms_ok": true,
+        "forbidden_ok": true,
+        "broader_ok": true
+      }
+    },
+    {
+      "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+      "result": {
+        "original_query": "What were the main cybersecurity governance responsibilities of the board and management?",
+        "step_back_query": "What are the typical cybersecurity governance roles and responsibilities of the board and management?",
+        "broadening_strategy": "broaden_to_explanation"
+      },
+      "evaluation": {
+        "passed": true,
+        "required_terms_ok": true,
+        "forbidden_ok": true,
+        "broader_ok": true
+      }
+    },
+    {
+      "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+      "result": {
+        "original_query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+        "step_back_query": "What did Microsoft say about capex and datacenter spending in FY2025 disclosures or earnings commentary?",
+        "broadening_strategy": "broaden_to_context"
+      },
+      "evaluation": {
+        "passed": true,
+        "required_terms_ok": true,
+        "forbidden_ok": true,
+        "broader_ok": true
+      }
+    }
+  ]
+}

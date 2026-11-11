@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-03-17T11:22:19.899522+00:00",
+  "model": "gpt-5-mini",
+  "result": {
+    "original_query": "What happened with Azure growth and what did management say about AI demand?",
+    "step_back_query": "What are the trends in Azure's growth and how has management explained AI-related demand affecting that growth?",
+    "broadening_strategy": "broaden_to_explanation"
+  }
+}

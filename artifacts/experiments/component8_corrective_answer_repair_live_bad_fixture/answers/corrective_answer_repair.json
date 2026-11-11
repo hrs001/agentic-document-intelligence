@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-03-18T11:44:53.039914+00:00",
+  "result": {
+    "original_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+    "repair_model": "gpt-5.1",
+    "repair_strategy": {
+      "strategy": "targeted_coverage_repair",
+      "reason": "The answer missed at least one sub-query or left part of the question unsupported.",
+      "focus": [
+        "Produce a corrected answer that states both parts: (a) the segment that includes GitHub, and (b) the FY2025 revenue for that segment.",
+        "Cite the supporting facts inline: graph_edge::e1 to support the segment claim and sql::sq_1::1 to support the revenue figure.",
+        "Present the revenue with explicit units using the SQL field (revenue_usd_millions=108610) and include a converted value in standard notation (e.g., $108.61 billion) for readability.",
+        "Confirm fiscal year context (FY2025) matches the SQL row's reporting period before finalizing; if any source conflicts are found, surface the discrepancy and provide both values and sources.",
+        "Regenerate the answer with inline fact-id citations for all used facts.",
+        "Run targeted answer repair for uncovered or unanswered sub-queries."
+      ]
+    },
+    "repair_applied": true,
+    "repaired_answer": {
+      "original_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+      "model": "gpt-5.1",
+      "answer_input_summary": {
+        "sub_query_count": 1,
+        "allowed_fact_count": 4
+      },
+      "answer_markdown": "GitHub is included in the Intelligent Cloud segment.[graph_edge::e1][vector::chunk_1]\n\nFor FY2025, the Intelligent Cloud segment reported revenue of $108,610 million (i.e., approximately $108.61 billion).[sql::sq_1::1]",
+      "used_fact_ids": [
+        "graph_edge::e1",
+        "vector::chunk_1",
+        "sql::sq_1::1"
+      ],
+      "citations": [
+        {
+          "fact_id": "graph_edge::e1",
+          "source_type": "graph_relationships",
+          "reason": "Supports that Intelligent Cloud includes GitHub."
+        },
+        {
+          "fact_id": "vector::chunk_1",
+          "source_type": "vector_document",
+          "reason": "Text evidence that Intelligent Cloud includes GitHub and other cloud services."
+        },
+        {
+          "fact_id": "sql::sq_1::1",
+          "source_type": "sql_structured",
+          "reason": "Provides the FY2025 revenue for the Intelligent Cloud segment in USD millions."
+        }
+      ],
+      "unanswered_sub_queries": [],
+      "confidence": "high",
+      "usage": {
+        "completion_tokens": 216,
+        "prompt_tokens": 2697,
+        "total_tokens": 2913,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "post_repair_deterministic_signals": {
+      "inline_fact_ids": [
+        "graph_edge::e1",
+        "vector::chunk_1",
+        "sql::sq_1::1"
+      ],
+      "missing_inline_for_used": [],
+      "inline_not_declared": [],
+      "unknown_used_fact_ids": [],
+      "unanswered_sub_queries": [],
+      "uncovered_sub_queries": [],
+      "used_source_types": [
+        "graph_relationships",
+        "sql_structured",
+        "vector_document"
+      ],
+      "used_conflict_fact_ids": [],
+      "conflict_acknowledged": false,
+      "needs_correction": false
+    },
+    "repair_success": true,
+    "usage": {
+      "completion_tokens": 216,
+      "prompt_tokens": 2697,
+      "total_tokens": 2913,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  }
+}

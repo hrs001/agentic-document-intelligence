@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-03-17T11:26:00.203903+00:00",
+  "model": "gpt-5-mini",
+  "result": {
+    "original_query": "What happened with Azure growth and what did management say about AI demand?",
+    "hypothetical_passage": "Azure growth showed a change in its recent trend, influenced by enterprise cloud adoption and evolving workload patterns. Management said that AI demand is driving increased consumption of Azure compute, storage, and specialized infrastructure and is a key consideration for capacity, product investment, and future revenue expectations.",
+    "generation_style": "factual_stub"
+  }
+}

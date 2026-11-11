@@ -1,0 +1,50 @@
+[
+  {
+    "case_id": "parallel_001_graph_and_sql",
+    "query": "Which segment includes GitHub, and what was FY2025 revenue mix by geography?",
+    "expect_parallel_safe": true,
+    "required_sources": ["graph_relationships", "sql_structured"],
+    "keyword_expectations": [
+      {
+        "source": "graph_relationships",
+        "keywords": ["GitHub", "Intelligent Cloud"]
+      },
+      {
+        "source": "sql_structured",
+        "keywords": ["United States", "Other Countries"]
+      }
+    ]
+  },
+  {
+    "case_id": "parallel_002_graph_and_sql",
+    "query": "Which products are included under Intelligent Cloud, and which geography had faster year-over-year revenue growth in FY2025?",
+    "expect_parallel_safe": true,
+    "required_sources": ["graph_relationships", "sql_structured"],
+    "keyword_expectations": [
+      {
+        "source": "graph_relationships",
+        "keywords": ["Intelligent Cloud", "GitHub"]
+      },
+      {
+        "source": "sql_structured",
+        "keywords": ["United States", "9.8"]
+      }
+    ]
+  },
+  {
+    "case_id": "parallel_003_graph_and_sql",
+    "query": "How does Azure relate to GitHub, and which segment had the highest operating margin in FY2025?",
+    "expect_parallel_safe": true,
+    "required_sources": ["graph_relationships", "sql_structured"],
+    "keyword_expectations": [
+      {
+        "source": "graph_relationships",
+        "keywords": ["Azure", "GitHub"]
+      },
+      {
+        "source": "sql_structured",
+        "keywords": ["Productivity and Business Processes", "50.6"]
+      }
+    ]
+  }
+]

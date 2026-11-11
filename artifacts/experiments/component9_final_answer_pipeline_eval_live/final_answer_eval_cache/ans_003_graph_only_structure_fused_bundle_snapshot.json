@@ -1,0 +1,2420 @@
+{
+  "generated_at": "2026-03-18T11:49:59.006070+00:00",
+  "result": {
+    "original_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+    "policy": {
+      "routing_policy": {
+        "routing_model": "gpt-5-mini",
+        "routing_method": "llm_with_capability_summaries_and_signal_validation_v1"
+      },
+      "latency_policy": {
+        "policy_model": "gpt-5-mini",
+        "policy_method": "llm_latency_optimized_execution_planner_v1"
+      }
+    },
+    "routing_summary": {
+      "sub_query_count": 1,
+      "source_usage": {
+        "vector_document": 1,
+        "graph_relationships": 1,
+        "sql_structured": 0
+      }
+    },
+    "execution_summary": {
+      "sub_query_count": 1,
+      "source_usage": {
+        "vector_document": 1,
+        "graph_relationships": 1,
+        "sql_structured": 0
+      },
+      "vector_profile_usage": {
+        "skip": 0,
+        "fast": 1,
+        "balanced": 0,
+        "full": 0,
+        "fast_escalated": 0,
+        "balanced_escalated": 0
+      }
+    },
+    "bundle_summary": {
+      "sub_query_count": 1,
+      "fact_count": 16,
+      "overlap_signal_count": 9,
+      "conflict_signal_count": 1
+    },
+    "normalized_facts": [
+      {
+        "fact_id": "graph_node::node_microsoft_s_investment_portfolio",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "entity",
+        "summary": "Microsoft's investment portfolio (financial_or_business_concept)",
+        "entity_name": "Microsoft's investment portfolio",
+        "entity_type": "financial_or_business_concept",
+        "entities": [
+          "Microsoft's investment portfolio"
+        ],
+        "aliases": [
+          "Microsoft\u2019s investment portfolio"
+        ],
+        "section_titles": [
+          "7. Major accounting notes and financial statement"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec7_p13_par4"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 13,
+            "page_end": 15
+          }
+        ],
+        "evidence_snippets": [
+          "Microsoft\u2019s investment portfolio is primarily high-quality fixed income and liquidity-oriented holdings"
+        ],
+        "node_score": 8.4
+      },
+      {
+        "fact_id": "graph_node::node_azure",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "entity",
+        "summary": "Azure (product_or_service)",
+        "entity_name": "Azure",
+        "entity_type": "product_or_service",
+        "entities": [
+          "Azure"
+        ],
+        "aliases": [],
+        "section_titles": [
+          "1. Executive summary",
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review",
+          "4. Fiscal 2025 financial performance",
+          "5. Segment results and operating drivers",
+          "10. Overall assessment",
+          "Appendix C. Growth drivers by business line"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par0",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0",
+          "microsoft_fy2025_10k_summary_sec13_p22_par0"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec2_p4_par2_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec13_p22_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec13_p22_par0_ch1"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 3,
+            "page_end": 4
+          },
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          },
+          {
+            "page_start": 8,
+            "page_end": 9
+          },
+          {
+            "page_start": 9,
+            "page_end": 11
+          },
+          {
+            "page_start": 19,
+            "page_end": 20
+          },
+          {
+            "page_start": 22,
+            "page_end": 24
+          }
+        ],
+        "evidence_snippets": [
+          "Azure and other cloud services grew 34%",
+          "especially Microsoft 365 Commercial and Azure",
+          "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+          "Azure supports GitHub, data services, and AI platforms",
+          "Azure is described as a comprehensive cloud platform spanning compute, networking, storage, data, AI, machine learning, cognitive services, IoT, and app services.",
+          "Azure within Intelligent Cloud",
+          "driven by Azure and other",
+          "Azure growth was fueled by demand across the portfolio rather than",
+          "Azure is capturing large-scale AI and infrastructure demand",
+          "Azure, Microsoft 365 Commercial cloud, Dynamics 365, Xbox content and services, and search monetization"
+        ],
+        "node_score": 7.2
+      },
+      {
+        "fact_id": "graph_node::node_microsoft",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "entity",
+        "summary": "Microsoft (organization)",
+        "entity_name": "Microsoft",
+        "entity_type": "organization",
+        "entities": [
+          "Microsoft"
+        ],
+        "aliases": [],
+        "section_titles": [
+          "Document Overview",
+          "1. Executive summary",
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review",
+          "4. Fiscal 2025 financial performance",
+          "5. Segment results and operating drivers",
+          "6. Balance sheet, liquidity, cash flow, and capital allocation",
+          "7. Major accounting notes and financial statement",
+          "8. Risk factors and cybersecurity posture",
+          "9. Operations, people, properties, and governance",
+          "10. Overall assessment",
+          "Appendix B. Executive officers and selected reference data",
+          "Appendix C. Growth drivers by business line",
+          "Appendix D. Liquidity, commitments, and lease detail",
+          "Appendix E. Tax, debt, and market risk detail",
+          "Appendix F. Cybersecurity and risk dashboard",
+          "Appendix G. Segment economics at a glance"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec0_p1_par0",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par0",
+          "microsoft_fy2025_10k_summary_sec4_p8_par1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par2",
+          "microsoft_fy2025_10k_summary_sec6_p11_par1",
+          "microsoft_fy2025_10k_summary_sec7_p13_par0",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1",
+          "microsoft_fy2025_10k_summary_sec7_p13_par2",
+          "microsoft_fy2025_10k_summary_sec7_p13_par3",
+          "microsoft_fy2025_10k_summary_sec7_p13_par4",
+          "microsoft_fy2025_10k_summary_sec8_p15_par0",
+          "microsoft_fy2025_10k_summary_sec8_p15_par1",
+          "microsoft_fy2025_10k_summary_sec8_p15_par3",
+          "microsoft_fy2025_10k_summary_sec9_p17_par0",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0",
+          "microsoft_fy2025_10k_summary_sec10_p19_par1",
+          "microsoft_fy2025_10k_summary_sec12_p21_par0",
+          "microsoft_fy2025_10k_summary_sec13_p22_par0",
+          "microsoft_fy2025_10k_summary_sec14_p24_par0",
+          "microsoft_fy2025_10k_summary_sec15_p26_par0",
+          "microsoft_fy2025_10k_summary_sec16_p28_par0",
+          "microsoft_fy2025_10k_summary_sec17_p30_par0"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec0_p1_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec0_p1_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec0_p1_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec0_p1_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec2_p4_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec4_p8_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec4_p8_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec5_p9_par2_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par2_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par2_ch2",
+          "microsoft_fy2025_10k_summary_sec5_p9_par2_ch3",
+          "microsoft_fy2025_10k_summary_sec6_p11_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec6_p11_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec6_p11_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec7_p13_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec7_p13_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec7_p13_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec7_p13_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4",
+          "microsoft_fy2025_10k_summary_sec7_p13_par2_ch0",
+          "microsoft_fy2025_10k_summary_sec7_p13_par3_ch0",
+          "microsoft_fy2025_10k_summary_sec7_p13_par3_ch1",
+          "microsoft_fy2025_10k_summary_sec7_p13_par3_ch2",
+          "microsoft_fy2025_10k_summary_sec7_p13_par3_ch3",
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3",
+          "microsoft_fy2025_10k_summary_sec8_p15_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec8_p15_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec8_p15_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec8_p15_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec8_p15_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec8_p15_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec8_p15_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec8_p15_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec8_p15_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec8_p15_par3_ch0",
+          "microsoft_fy2025_10k_summary_sec8_p15_par3_ch1",
+          "microsoft_fy2025_10k_summary_sec8_p15_par3_ch2",
+          "microsoft_fy2025_10k_summary_sec8_p15_par3_ch3",
+          "microsoft_fy2025_10k_summary_sec9_p17_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec9_p17_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec9_p17_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec10_p19_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec10_p19_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec12_p21_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec12_p21_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec13_p22_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec13_p22_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec14_p24_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec14_p24_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec15_p26_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec15_p26_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec15_p26_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec16_p28_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec16_p28_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec17_p30_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec17_p30_par0_ch1"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 1,
+            "page_end": 3
+          },
+          {
+            "page_start": 3,
+            "page_end": 4
+          },
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          },
+          {
+            "page_start": 8,
+            "page_end": 9
+          },
+          {
+            "page_start": 9,
+            "page_end": 11
+          },
+          {
+            "page_start": 11,
+            "page_end": 13
+          },
+          {
+            "page_start": 13,
+            "page_end": 15
+          },
+          {
+            "page_start": 15,
+            "page_end": 17
+          },
+          {
+            "page_start": 17,
+            "page_end": 19
+          },
+          {
+            "page_start": 19,
+            "page_end": 20
+          },
+          {
+            "page_start": 21,
+            "page_end": 22
+          },
+          {
+            "page_start": 22,
+            "page_end": 24
+          },
+          {
+            "page_start": 24,
+            "page_end": 26
+          },
+          {
+            "page_start": 26,
+            "page_end": 28
+          },
+          {
+            "page_start": 28,
+            "page_end": 30
+          },
+          {
+            "page_start": 30,
+            "page_end": 30
+          }
+        ],
+        "evidence_snippets": [
+          "Microsoft FY2025 Form 10-K",
+          "Microsoft entered fiscal 2025",
+          "Microsoft\u2019s FY2025 filing",
+          "Microsoft describes itself as a technology company",
+          "Microsoft notes progress",
+          "Microsoft\u2019s defense is integration, enterprise trust, cross-platform presence, and installed-base leverage.",
+          "Microsoft\u2019s earnings profile now",
+          "Microsoft\u2019s largest segment",
+          "Microsoft is scaling AI infrastructure.",
+          "Microsoft is not",
+          "Microsoft continued to return substantial capital to shareholders.",
+          "Microsoft\u2019s economics in FY2025",
+          "Microsoft reported no goodwill impairment",
+          "Microsoft ended FY2025",
+          "Microsoft\u2019s use of debt appears opportunistic and strategic rather than balance-sheet constrained.",
+          "Microsoft says it disagrees",
+          "Microsoft\u2019s risk disclosures",
+          "Microsoft\u2019s 10-K",
+          "Microsoft operates under evolving laws and regulations",
+          "Microsoft employed approximately 228,000 full-time employees",
+          "Microsoft\u2019s FY2025 Form 10-K",
+          "Microsoft\u2019s scale ensures",
+          "Microsoft Form 10-K",
+          "Microsoft\u2019s best growth vectors",
+          "Microsoft\u2019s liquidity remains strong",
+          "Microsoft does not signal an expectation of",
+          "Microsoft is both a cloud provider and a security vendor",
+          "Microsoft\u2019s FY2025 capital intensity was extraordinarily high for a software company"
+        ],
+        "node_score": 6.8
+      },
+      {
+        "fact_id": "graph_node::node_github",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "entity",
+        "summary": "GitHub (product_or_service)",
+        "entity_name": "GitHub",
+        "entity_type": "product_or_service",
+        "entities": [
+          "GitHub"
+        ],
+        "aliases": [],
+        "section_titles": [
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec2_p4_par2_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          }
+        ],
+        "evidence_snippets": [
+          "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+          "Azure supports GitHub, data services, and AI platforms",
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+        ],
+        "node_score": 6.6
+      },
+      {
+        "fact_id": "graph_node::node_productivity_and_business_processes",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "entity",
+        "summary": "Productivity and Business Processes (segment)",
+        "entity_name": "Productivity and Business Processes",
+        "entity_type": "segment",
+        "entities": [
+          "Productivity and Business Processes"
+        ],
+        "aliases": [
+          "Productivity and Business Processes (PBP)"
+        ],
+        "section_titles": [
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review",
+          "4. Fiscal 2025 financial performance",
+          "5. Segment results and operating drivers",
+          "7. Major accounting notes and financial statement"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par0",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          },
+          {
+            "page_start": 8,
+            "page_end": 9
+          },
+          {
+            "page_start": 9,
+            "page_end": 11
+          },
+          {
+            "page_start": 13,
+            "page_end": 15
+          }
+        ],
+        "evidence_snippets": [
+          "Productivity and Business Processes (PBP): Microsoft 365 Commercial, Microsoft 365 Consumer, LinkedIn, and Dynamics.",
+          "Productivity and Business Processes",
+          "Microsoft 365 Commercial cloud within Productivity and Business Processes",
+          "$31.5 billion to Productivity and Business Processes"
+        ],
+        "node_score": 5.3
+      },
+      {
+        "fact_id": "graph_edge::edge_19",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "relationship",
+        "summary": "Microsoft -> uses -> Azure",
+        "entities": [
+          "Microsoft",
+          "Azure"
+        ],
+        "source_entity": "Microsoft",
+        "relation_type": "uses",
+        "target_entity": "Azure",
+        "section_titles": [
+          "1. Executive summary"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par0"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 3,
+            "page_end": 4
+          }
+        ],
+        "evidence_snippets": [
+          "Azure and other cloud services grew 34%"
+        ],
+        "edge_score": 11.2
+      },
+      {
+        "fact_id": "graph_edge::edge_23",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "relationship",
+        "summary": "Microsoft -> includes -> Azure",
+        "entities": [
+          "Microsoft",
+          "Azure"
+        ],
+        "source_entity": "Microsoft",
+        "relation_type": "includes",
+        "target_entity": "Azure",
+        "section_titles": [
+          "1. Executive summary"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par1"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 3,
+            "page_end": 4
+          }
+        ],
+        "evidence_snippets": [
+          "especially Microsoft 365 Commercial and Azure"
+        ],
+        "edge_score": 11.2
+      },
+      {
+        "fact_id": "graph_edge::edge_220",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "relationship",
+        "summary": "Microsoft -> uses -> Microsoft's investment portfolio",
+        "entities": [
+          "Microsoft",
+          "Microsoft's investment portfolio"
+        ],
+        "source_entity": "Microsoft",
+        "relation_type": "uses",
+        "target_entity": "Microsoft's investment portfolio",
+        "section_titles": [
+          "7. Major accounting notes and financial statement"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec7_p13_par4"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+          "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 13,
+            "page_end": 15
+          }
+        ],
+        "evidence_snippets": [
+          "Microsoft\u2019s investment portfolio is primarily high-quality fixed income and liquidity-oriented holdings"
+        ],
+        "edge_score": 8.2
+      },
+      {
+        "fact_id": "graph_edge::edge_40",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "relationship",
+        "summary": "Microsoft -> includes -> Productivity and Business Processes",
+        "entities": [
+          "Microsoft",
+          "Productivity and Business Processes"
+        ],
+        "source_entity": "Microsoft",
+        "relation_type": "includes",
+        "target_entity": "Productivity and Business Processes",
+        "section_titles": [
+          "2. Company overview, strategy, and operating model"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          }
+        ],
+        "evidence_snippets": [
+          "The three reportable segments are:"
+        ],
+        "edge_score": 8.2
+      },
+      {
+        "fact_id": "graph_edge::edge_47",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "relationship",
+        "summary": "Intelligent Cloud -> includes -> Azure",
+        "entities": [
+          "Intelligent Cloud",
+          "Azure"
+        ],
+        "source_entity": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_entity": "Azure",
+        "section_titles": [
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review",
+          "5. Segment results and operating drivers"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          },
+          {
+            "page_start": 9,
+            "page_end": 11
+          }
+        ],
+        "evidence_snippets": [
+          "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.",
+          "driven by Azure and other cloud services growth of 34%."
+        ],
+        "edge_score": 7.6
+      },
+      {
+        "fact_id": "graph_edge::edge_48",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "relationship",
+        "summary": "Intelligent Cloud -> includes -> GitHub",
+        "entities": [
+          "Intelligent Cloud",
+          "GitHub"
+        ],
+        "source_entity": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_entity": "GitHub",
+        "section_titles": [
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          }
+        ],
+        "evidence_snippets": [
+          "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+        ],
+        "edge_score": 7.4
+      },
+      {
+        "fact_id": "graph_edge::edge_154",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "relationship",
+        "summary": "Azure -> uses -> AI infrastructure",
+        "entities": [
+          "Azure",
+          "AI infrastructure"
+        ],
+        "source_entity": "Azure",
+        "relation_type": "uses",
+        "target_entity": "AI infrastructure",
+        "section_titles": [
+          "5. Segment results and operating drivers"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec5_p9_par1"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 9,
+            "page_end": 11
+          }
+        ],
+        "evidence_snippets": [
+          "Microsoft is scaling AI infrastructure."
+        ],
+        "edge_score": 7.2
+      },
+      {
+        "fact_id": "graph_edge::edge_18",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "relationship",
+        "summary": "commercial recurring revenue -> includes -> Azure",
+        "entities": [
+          "commercial recurring revenue",
+          "Azure"
+        ],
+        "source_entity": "commercial recurring revenue",
+        "relation_type": "includes",
+        "target_entity": "Azure",
+        "section_titles": [
+          "1. Executive summary"
+        ],
+        "parent_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par0"
+        ],
+        "child_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 3,
+            "page_end": 4
+          }
+        ],
+        "evidence_snippets": [
+          "especially Microsoft 365 Commercial and Azure"
+        ],
+        "edge_score": 7.2
+      },
+      {
+        "fact_id": "vector::microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+        "source_type": "vector_document",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "text_evidence",
+        "summary": "networking, storage, data, AI, machine learning, cognitive services, IoT, and app services. Microsoft\nalso emphasizes Azure AI Foundry as a unified platform to design, customize, and manage AI\napplications and agents.\nGitHub deepens developer ecosystem control, while Nuance adds ",
+        "child_text": "networking, storage, data, AI, machine learning, cognitive services, IoT, and app services. Microsoft\nalso emphasizes Azure AI Foundry as a unified platform to design, customize, and manage AI\napplications and agents.\nGitHub deepens developer ecosystem control, while Nuance adds healthcare AI capabilities.",
+        "parent_text": "defense is integration, enterprise trust, cross-platform presence, and installed-base leverage.\nIntelligent Cloud\nIntelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare,\nenterprise support, and partner services. This is the segment most visibly tied to the AI\ninfrastructure cycle. Azure is described as a comprehensive cloud platform spanning compute,\nnetworking, storage, data, AI, machine learning, cognitive services, IoT, and app services. Microsoft\nalso emphasizes Azure AI Foundry as a unified platform to design, customize, and manage AI\napplications and agents.\nGitHub deepens developer ecosystem control, while Nuance adds healthcare AI capabilities.\nTraditional server products still matter, but the filing makes clear that customer shift toward cloud\nofferings continues to pressure on-premises transactional revenue. Competitive threats here come\nfrom hyperscale cloud providers, open-source alternatives, and specialist cybersecurity and\nanalytics vendors.\nMore Personal Computing\nMPC brings together Windows, Surface and accessories, Xbox hardware, Xbox content and\nservices, and Search and news advertising through Bing, Edge, Copilot, and affiliated properties.\nThis segment is more cyclical and consumer-exposed than the other two, but still strategically\nimportant because it controls major distribution endpoints.\nWindows OEM revenue depends on PC market conditions, device mix, AI PCs, OEM inventory,",
+        "entities": [
+          "AI",
+          "Microsoft",
+          "Azure",
+          "Foundry",
+          "Nuance",
+          "Intelligent Cloud\nIntelligent Cloud",
+          "Nuance Healthcare",
+          "This",
+          "3. Segment and product portfolio review"
+        ],
+        "section_title": "3. Segment and product portfolio review",
+        "parent_id": "microsoft_fy2025_10k_summary_sec3_p6_par1",
+        "citation": {
+          "source_chunk_id": "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "parent_id": "microsoft_fy2025_10k_summary_sec3_p6_par1",
+          "document_id": "microsoft_fy2025_10k_summary",
+          "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+          "section_title": "3. Segment and product portfolio review",
+          "page": 6,
+          "page_end": 8,
+          "content_type": "text"
+        },
+        "scores": {
+          "best_score": 5.58097744,
+          "rerank_score": 0.0,
+          "mmr_score": 0.0
+        }
+      },
+      {
+        "fact_id": "vector::microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+        "source_type": "vector_document",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "text_evidence",
+        "summary": "The flip side was cost intensity. Cost of revenue rose 36%, and gross margin percentage decreased\nbecause Microsoft is scaling AI infrastructure. This is one of the most important economic\nmessages in the 10-K: Azure is growing extremely fast, but the company is spending heavily ",
+        "child_text": "The flip side was cost intensity. Cost of revenue rose 36%, and gross margin percentage decreased\nbecause Microsoft is scaling AI infrastructure. This is one of the most important economic\nmessages in the 10-K: Azure is growing extremely fast, but the company is spending heavily to\npreserve capacity leadership. Operating income still rose 18% to $44.6 billion, showing that the",
+        "parent_text": "Intelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other\ncloud services growth of 34%. Azure growth was fueled by demand across the portfolio rather than\none isolated workload, reflecting both traditional cloud migration and AI-related consumption.\nThe flip side was cost intensity. Cost of revenue rose 36%, and gross margin percentage decreased\nbecause Microsoft is scaling AI infrastructure. This is one of the most important economic\nmessages in the 10-K: Azure is growing extremely fast, but the company is spending heavily to\npreserve capacity leadership. Operating income still rose 18% to $44.6 billion, showing that the\nsegment remains highly profitable despite margin pressure.\nMore Personal Computing\nMPC revenue rose $3.8 billion, or 7%, to $54.6 billion. The drivers were mixed. Windows and\nDevices rose only 2%, as Windows OEM growth was partly offset by declining Devices revenue.",
+        "entities": [
+          "The",
+          "Cost",
+          "Microsoft",
+          "AI",
+          "This",
+          "Azure",
+          "Operating",
+          "Intelligent Cloud",
+          "Revenue",
+          "Server",
+          "5. Segment results and operating drivers"
+        ],
+        "section_title": "5. Segment results and operating drivers",
+        "parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par1",
+        "citation": {
+          "source_chunk_id": "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+          "parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par1",
+          "document_id": "microsoft_fy2025_10k_summary",
+          "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+          "section_title": "5. Segment results and operating drivers",
+          "page": 9,
+          "page_end": 11,
+          "content_type": "text"
+        },
+        "scores": {
+          "best_score": 4.66724682,
+          "rerank_score": 0.0,
+          "mmr_score": 0.0
+        }
+      },
+      {
+        "fact_id": "vector::microsoft_fy2025_10k_summary_sec2_p4_par2_ch0",
+        "source_type": "vector_document",
+        "sub_query_id": "sq_1",
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "fact_type": "text_evidence",
+        "summary": "This operating model creates unusually strong strategic linkages. Windows supports Microsoft 365\nand search distribution; Azure supports GitHub, data services, and AI platforms; identity and\nsecurity support cloud trust; and productivity apps provide a natural channel for AI mone",
+        "child_text": "This operating model creates unusually strong strategic linkages. Windows supports Microsoft 365\nand search distribution; Azure supports GitHub, data services, and AI platforms; identity and\nsecurity support cloud trust; and productivity apps provide a natural channel for AI monetization.\nOne of the key messages of the filing is that the stack is not just broad\u2014it is mutually reinforcing.",
+        "parent_text": "This operating model creates unusually strong strategic linkages. Windows supports Microsoft 365\nand search distribution; Azure supports GitHub, data services, and AI platforms; identity and\nsecurity support cloud trust; and productivity apps provide a natural channel for AI monetization.\nOne of the key messages of the filing is that the stack is not just broad\u2014it is mutually reinforcing.",
+        "entities": [
+          "This",
+          "Windows",
+          "Microsoft",
+          "Azure",
+          "AI",
+          "One",
+          "2. Company overview, strategy, and operating model"
+        ],
+        "section_title": "2. Company overview, strategy, and operating model",
+        "parent_id": "microsoft_fy2025_10k_summary_sec2_p4_par2",
+        "citation": {
+          "source_chunk_id": "microsoft_fy2025_10k_summary_sec2_p4_par2_ch0",
+          "parent_id": "microsoft_fy2025_10k_summary_sec2_p4_par2",
+          "document_id": "microsoft_fy2025_10k_summary",
+          "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+          "section_title": "2. Company overview, strategy, and operating model",
+          "page": 4,
+          "page_end": 6,
+          "content_type": "text"
+        },
+        "scores": {
+          "best_score": 4.36454058,
+          "rerank_score": 0.0,
+          "mmr_score": 0.0
+        }
+      }
+    ],
+    "overlap_signals": [
+      {
+        "overlap_type": "entity",
+        "key": "azure",
+        "sources": [
+          "graph_relationships",
+          "vector_document"
+        ],
+        "fact_ids": [
+          "graph_node::node_azure",
+          "graph_edge::edge_19",
+          "graph_edge::edge_23",
+          "graph_edge::edge_47",
+          "graph_edge::edge_154",
+          "graph_edge::edge_18",
+          "vector::microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "vector::microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+          "vector::microsoft_fy2025_10k_summary_sec2_p4_par2_ch0"
+        ]
+      },
+      {
+        "overlap_type": "entity",
+        "key": "microsoft",
+        "sources": [
+          "graph_relationships",
+          "vector_document"
+        ],
+        "fact_ids": [
+          "graph_node::node_microsoft",
+          "graph_edge::edge_19",
+          "graph_edge::edge_23",
+          "graph_edge::edge_220",
+          "graph_edge::edge_40",
+          "vector::microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "vector::microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+          "vector::microsoft_fy2025_10k_summary_sec2_p4_par2_ch0"
+        ]
+      },
+      {
+        "overlap_type": "entity",
+        "key": "intelligent cloud",
+        "sources": [
+          "graph_relationships",
+          "vector_document"
+        ],
+        "fact_ids": [
+          "graph_edge::edge_47",
+          "graph_edge::edge_48",
+          "vector::microsoft_fy2025_10k_summary_sec5_p9_par1_ch1"
+        ]
+      },
+      {
+        "overlap_type": "parent_context",
+        "key": "microsoft fy2025 10k summary sec2 p4 par2",
+        "sources": [
+          "graph_relationships",
+          "vector_document"
+        ],
+        "fact_ids": [
+          "graph_node::node_azure",
+          "graph_node::node_github",
+          "vector::microsoft_fy2025_10k_summary_sec2_p4_par2_ch0"
+        ]
+      },
+      {
+        "overlap_type": "parent_context",
+        "key": "microsoft fy2025 10k summary sec3 p6 par1",
+        "sources": [
+          "graph_relationships",
+          "vector_document"
+        ],
+        "fact_ids": [
+          "graph_node::node_azure",
+          "graph_node::node_github",
+          "graph_edge::edge_47",
+          "graph_edge::edge_48",
+          "vector::microsoft_fy2025_10k_summary_sec3_p6_par1_ch1"
+        ]
+      },
+      {
+        "overlap_type": "parent_context",
+        "key": "microsoft fy2025 10k summary sec5 p9 par1",
+        "sources": [
+          "graph_relationships",
+          "vector_document"
+        ],
+        "fact_ids": [
+          "graph_node::node_azure",
+          "graph_node::node_microsoft",
+          "graph_edge::edge_47",
+          "graph_edge::edge_154",
+          "vector::microsoft_fy2025_10k_summary_sec5_p9_par1_ch1"
+        ]
+      },
+      {
+        "overlap_type": "section",
+        "key": "2 company overview strategy and operating model",
+        "sources": [
+          "graph_relationships",
+          "vector_document"
+        ],
+        "fact_ids": [
+          "graph_node::node_azure",
+          "graph_node::node_microsoft",
+          "graph_node::node_github",
+          "graph_node::node_productivity_and_business_processes",
+          "graph_edge::edge_40",
+          "graph_edge::edge_47",
+          "graph_edge::edge_48",
+          "vector::microsoft_fy2025_10k_summary_sec2_p4_par2_ch0"
+        ]
+      },
+      {
+        "overlap_type": "section",
+        "key": "3 segment and product portfolio review",
+        "sources": [
+          "graph_relationships",
+          "vector_document"
+        ],
+        "fact_ids": [
+          "graph_node::node_azure",
+          "graph_node::node_microsoft",
+          "graph_node::node_github",
+          "graph_node::node_productivity_and_business_processes",
+          "graph_edge::edge_47",
+          "graph_edge::edge_48",
+          "vector::microsoft_fy2025_10k_summary_sec3_p6_par1_ch1"
+        ]
+      },
+      {
+        "overlap_type": "section",
+        "key": "5 segment results and operating drivers",
+        "sources": [
+          "graph_relationships",
+          "vector_document"
+        ],
+        "fact_ids": [
+          "graph_node::node_azure",
+          "graph_node::node_microsoft",
+          "graph_node::node_productivity_and_business_processes",
+          "graph_edge::edge_47",
+          "graph_edge::edge_154",
+          "vector::microsoft_fy2025_10k_summary_sec5_p9_par1_ch1"
+        ]
+      }
+    ],
+    "conflict_signals": [
+      {
+        "conflict_type": "graph_relation_mismatch",
+        "entity_pair": [
+          "Microsoft",
+          "Azure"
+        ],
+        "relation_types": [
+          "uses",
+          "includes"
+        ],
+        "fact_ids": [
+          "graph_edge::edge_19",
+          "graph_edge::edge_23"
+        ]
+      }
+    ],
+    "sub_query_fusions": [
+      {
+        "sub_query_id": "sq_1",
+        "original_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "active_sources": [
+          "graph_relationships",
+          "vector_document"
+        ],
+        "fact_count": 16,
+        "facts": [
+          {
+            "fact_id": "graph_edge::edge_19",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "relationship",
+            "summary": "Microsoft -> uses -> Azure",
+            "entities": [
+              "Microsoft",
+              "Azure"
+            ],
+            "source_entity": "Microsoft",
+            "relation_type": "uses",
+            "target_entity": "Azure",
+            "section_titles": [
+              "1. Executive summary"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec1_p3_par0"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 3,
+                "page_end": 4
+              }
+            ],
+            "evidence_snippets": [
+              "Azure and other cloud services grew 34%"
+            ],
+            "edge_score": 11.2
+          },
+          {
+            "fact_id": "graph_edge::edge_23",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "relationship",
+            "summary": "Microsoft -> includes -> Azure",
+            "entities": [
+              "Microsoft",
+              "Azure"
+            ],
+            "source_entity": "Microsoft",
+            "relation_type": "includes",
+            "target_entity": "Azure",
+            "section_titles": [
+              "1. Executive summary"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec1_p3_par1"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 3,
+                "page_end": 4
+              }
+            ],
+            "evidence_snippets": [
+              "especially Microsoft 365 Commercial and Azure"
+            ],
+            "edge_score": 11.2
+          },
+          {
+            "fact_id": "graph_edge::edge_220",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "relationship",
+            "summary": "Microsoft -> uses -> Microsoft's investment portfolio",
+            "entities": [
+              "Microsoft",
+              "Microsoft's investment portfolio"
+            ],
+            "source_entity": "Microsoft",
+            "relation_type": "uses",
+            "target_entity": "Microsoft's investment portfolio",
+            "section_titles": [
+              "7. Major accounting notes and financial statement"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec7_p13_par4"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 13,
+                "page_end": 15
+              }
+            ],
+            "evidence_snippets": [
+              "Microsoft\u2019s investment portfolio is primarily high-quality fixed income and liquidity-oriented holdings"
+            ],
+            "edge_score": 8.2
+          },
+          {
+            "fact_id": "graph_edge::edge_40",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "relationship",
+            "summary": "Microsoft -> includes -> Productivity and Business Processes",
+            "entities": [
+              "Microsoft",
+              "Productivity and Business Processes"
+            ],
+            "source_entity": "Microsoft",
+            "relation_type": "includes",
+            "target_entity": "Productivity and Business Processes",
+            "section_titles": [
+              "2. Company overview, strategy, and operating model"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 4,
+                "page_end": 6
+              }
+            ],
+            "evidence_snippets": [
+              "The three reportable segments are:"
+            ],
+            "edge_score": 8.2
+          },
+          {
+            "fact_id": "graph_edge::edge_47",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "relationship",
+            "summary": "Intelligent Cloud -> includes -> Azure",
+            "entities": [
+              "Intelligent Cloud",
+              "Azure"
+            ],
+            "source_entity": "Intelligent Cloud",
+            "relation_type": "includes",
+            "target_entity": "Azure",
+            "section_titles": [
+              "2. Company overview, strategy, and operating model",
+              "3. Segment and product portfolio review",
+              "5. Segment results and operating drivers"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 4,
+                "page_end": 6
+              },
+              {
+                "page_start": 6,
+                "page_end": 8
+              },
+              {
+                "page_start": 9,
+                "page_end": 11
+              }
+            ],
+            "evidence_snippets": [
+              "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+              "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.",
+              "driven by Azure and other cloud services growth of 34%."
+            ],
+            "edge_score": 7.6
+          },
+          {
+            "fact_id": "graph_edge::edge_48",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "relationship",
+            "summary": "Intelligent Cloud -> includes -> GitHub",
+            "entities": [
+              "Intelligent Cloud",
+              "GitHub"
+            ],
+            "source_entity": "Intelligent Cloud",
+            "relation_type": "includes",
+            "target_entity": "GitHub",
+            "section_titles": [
+              "2. Company overview, strategy, and operating model",
+              "3. Segment and product portfolio review"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 4,
+                "page_end": 6
+              },
+              {
+                "page_start": 6,
+                "page_end": 8
+              }
+            ],
+            "evidence_snippets": [
+              "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+              "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+            ],
+            "edge_score": 7.4
+          },
+          {
+            "fact_id": "graph_edge::edge_154",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "relationship",
+            "summary": "Azure -> uses -> AI infrastructure",
+            "entities": [
+              "Azure",
+              "AI infrastructure"
+            ],
+            "source_entity": "Azure",
+            "relation_type": "uses",
+            "target_entity": "AI infrastructure",
+            "section_titles": [
+              "5. Segment results and operating drivers"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec5_p9_par1"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 9,
+                "page_end": 11
+              }
+            ],
+            "evidence_snippets": [
+              "Microsoft is scaling AI infrastructure."
+            ],
+            "edge_score": 7.2
+          },
+          {
+            "fact_id": "graph_edge::edge_18",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "relationship",
+            "summary": "commercial recurring revenue -> includes -> Azure",
+            "entities": [
+              "commercial recurring revenue",
+              "Azure"
+            ],
+            "source_entity": "commercial recurring revenue",
+            "relation_type": "includes",
+            "target_entity": "Azure",
+            "section_titles": [
+              "1. Executive summary"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec1_p3_par0"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 3,
+                "page_end": 4
+              }
+            ],
+            "evidence_snippets": [
+              "especially Microsoft 365 Commercial and Azure"
+            ],
+            "edge_score": 7.2
+          },
+          {
+            "fact_id": "graph_node::node_microsoft_s_investment_portfolio",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "entity",
+            "summary": "Microsoft's investment portfolio (financial_or_business_concept)",
+            "entity_name": "Microsoft's investment portfolio",
+            "entity_type": "financial_or_business_concept",
+            "entities": [
+              "Microsoft's investment portfolio"
+            ],
+            "aliases": [
+              "Microsoft\u2019s investment portfolio"
+            ],
+            "section_titles": [
+              "7. Major accounting notes and financial statement"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec7_p13_par4"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 13,
+                "page_end": 15
+              }
+            ],
+            "evidence_snippets": [
+              "Microsoft\u2019s investment portfolio is primarily high-quality fixed income and liquidity-oriented holdings"
+            ],
+            "node_score": 8.4
+          },
+          {
+            "fact_id": "graph_node::node_azure",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "entity",
+            "summary": "Azure (product_or_service)",
+            "entity_name": "Azure",
+            "entity_type": "product_or_service",
+            "entities": [
+              "Azure"
+            ],
+            "aliases": [],
+            "section_titles": [
+              "1. Executive summary",
+              "2. Company overview, strategy, and operating model",
+              "3. Segment and product portfolio review",
+              "4. Fiscal 2025 financial performance",
+              "5. Segment results and operating drivers",
+              "10. Overall assessment",
+              "Appendix C. Growth drivers by business line"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec1_p3_par0",
+              "microsoft_fy2025_10k_summary_sec1_p3_par1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1",
+              "microsoft_fy2025_10k_summary_sec10_p19_par0",
+              "microsoft_fy2025_10k_summary_sec13_p22_par0"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4",
+              "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec2_p4_par2_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec10_p19_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec10_p19_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec10_p19_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec10_p19_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec10_p19_par0_ch4",
+              "microsoft_fy2025_10k_summary_sec13_p22_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec13_p22_par0_ch1"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 3,
+                "page_end": 4
+              },
+              {
+                "page_start": 4,
+                "page_end": 6
+              },
+              {
+                "page_start": 6,
+                "page_end": 8
+              },
+              {
+                "page_start": 8,
+                "page_end": 9
+              },
+              {
+                "page_start": 9,
+                "page_end": 11
+              },
+              {
+                "page_start": 19,
+                "page_end": 20
+              },
+              {
+                "page_start": 22,
+                "page_end": 24
+              }
+            ],
+            "evidence_snippets": [
+              "Azure and other cloud services grew 34%",
+              "especially Microsoft 365 Commercial and Azure",
+              "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+              "Azure supports GitHub, data services, and AI platforms",
+              "Azure is described as a comprehensive cloud platform spanning compute, networking, storage, data, AI, machine learning, cognitive services, IoT, and app services.",
+              "Azure within Intelligent Cloud",
+              "driven by Azure and other",
+              "Azure growth was fueled by demand across the portfolio rather than",
+              "Azure is capturing large-scale AI and infrastructure demand",
+              "Azure, Microsoft 365 Commercial cloud, Dynamics 365, Xbox content and services, and search monetization"
+            ],
+            "node_score": 7.2
+          },
+          {
+            "fact_id": "graph_node::node_microsoft",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "entity",
+            "summary": "Microsoft (organization)",
+            "entity_name": "Microsoft",
+            "entity_type": "organization",
+            "entities": [
+              "Microsoft"
+            ],
+            "aliases": [],
+            "section_titles": [
+              "Document Overview",
+              "1. Executive summary",
+              "2. Company overview, strategy, and operating model",
+              "3. Segment and product portfolio review",
+              "4. Fiscal 2025 financial performance",
+              "5. Segment results and operating drivers",
+              "6. Balance sheet, liquidity, cash flow, and capital allocation",
+              "7. Major accounting notes and financial statement",
+              "8. Risk factors and cybersecurity posture",
+              "9. Operations, people, properties, and governance",
+              "10. Overall assessment",
+              "Appendix B. Executive officers and selected reference data",
+              "Appendix C. Growth drivers by business line",
+              "Appendix D. Liquidity, commitments, and lease detail",
+              "Appendix E. Tax, debt, and market risk detail",
+              "Appendix F. Cybersecurity and risk dashboard",
+              "Appendix G. Segment economics at a glance"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec0_p1_par0",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0",
+              "microsoft_fy2025_10k_summary_sec1_p3_par1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par0",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par0",
+              "microsoft_fy2025_10k_summary_sec4_p8_par1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par2",
+              "microsoft_fy2025_10k_summary_sec6_p11_par1",
+              "microsoft_fy2025_10k_summary_sec7_p13_par0",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1",
+              "microsoft_fy2025_10k_summary_sec7_p13_par2",
+              "microsoft_fy2025_10k_summary_sec7_p13_par3",
+              "microsoft_fy2025_10k_summary_sec7_p13_par4",
+              "microsoft_fy2025_10k_summary_sec8_p15_par0",
+              "microsoft_fy2025_10k_summary_sec8_p15_par1",
+              "microsoft_fy2025_10k_summary_sec8_p15_par3",
+              "microsoft_fy2025_10k_summary_sec9_p17_par0",
+              "microsoft_fy2025_10k_summary_sec10_p19_par0",
+              "microsoft_fy2025_10k_summary_sec10_p19_par1",
+              "microsoft_fy2025_10k_summary_sec12_p21_par0",
+              "microsoft_fy2025_10k_summary_sec13_p22_par0",
+              "microsoft_fy2025_10k_summary_sec14_p24_par0",
+              "microsoft_fy2025_10k_summary_sec15_p26_par0",
+              "microsoft_fy2025_10k_summary_sec16_p28_par0",
+              "microsoft_fy2025_10k_summary_sec17_p30_par0"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec0_p1_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec0_p1_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec0_p1_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec0_p1_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4",
+              "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec2_p4_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec2_p4_par0_ch4",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec4_p8_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec4_p8_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec5_p9_par2_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par2_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par2_ch2",
+              "microsoft_fy2025_10k_summary_sec5_p9_par2_ch3",
+              "microsoft_fy2025_10k_summary_sec6_p11_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec6_p11_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec6_p11_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec7_p13_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec7_p13_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec7_p13_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec7_p13_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4",
+              "microsoft_fy2025_10k_summary_sec7_p13_par2_ch0",
+              "microsoft_fy2025_10k_summary_sec7_p13_par3_ch0",
+              "microsoft_fy2025_10k_summary_sec7_p13_par3_ch1",
+              "microsoft_fy2025_10k_summary_sec7_p13_par3_ch2",
+              "microsoft_fy2025_10k_summary_sec7_p13_par3_ch3",
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+              "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3",
+              "microsoft_fy2025_10k_summary_sec8_p15_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec8_p15_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec8_p15_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec8_p15_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec8_p15_par0_ch4",
+              "microsoft_fy2025_10k_summary_sec8_p15_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec8_p15_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec8_p15_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec8_p15_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec8_p15_par3_ch0",
+              "microsoft_fy2025_10k_summary_sec8_p15_par3_ch1",
+              "microsoft_fy2025_10k_summary_sec8_p15_par3_ch2",
+              "microsoft_fy2025_10k_summary_sec8_p15_par3_ch3",
+              "microsoft_fy2025_10k_summary_sec9_p17_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec9_p17_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec9_p17_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec10_p19_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec10_p19_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec10_p19_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec10_p19_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec10_p19_par0_ch4",
+              "microsoft_fy2025_10k_summary_sec10_p19_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec10_p19_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec12_p21_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec12_p21_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec13_p22_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec13_p22_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec14_p24_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec14_p24_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec15_p26_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec15_p26_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec15_p26_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec16_p28_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec16_p28_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec17_p30_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec17_p30_par0_ch1"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 1,
+                "page_end": 3
+              },
+              {
+                "page_start": 3,
+                "page_end": 4
+              },
+              {
+                "page_start": 4,
+                "page_end": 6
+              },
+              {
+                "page_start": 6,
+                "page_end": 8
+              },
+              {
+                "page_start": 8,
+                "page_end": 9
+              },
+              {
+                "page_start": 9,
+                "page_end": 11
+              },
+              {
+                "page_start": 11,
+                "page_end": 13
+              },
+              {
+                "page_start": 13,
+                "page_end": 15
+              },
+              {
+                "page_start": 15,
+                "page_end": 17
+              },
+              {
+                "page_start": 17,
+                "page_end": 19
+              },
+              {
+                "page_start": 19,
+                "page_end": 20
+              },
+              {
+                "page_start": 21,
+                "page_end": 22
+              },
+              {
+                "page_start": 22,
+                "page_end": 24
+              },
+              {
+                "page_start": 24,
+                "page_end": 26
+              },
+              {
+                "page_start": 26,
+                "page_end": 28
+              },
+              {
+                "page_start": 28,
+                "page_end": 30
+              },
+              {
+                "page_start": 30,
+                "page_end": 30
+              }
+            ],
+            "evidence_snippets": [
+              "Microsoft FY2025 Form 10-K",
+              "Microsoft entered fiscal 2025",
+              "Microsoft\u2019s FY2025 filing",
+              "Microsoft describes itself as a technology company",
+              "Microsoft notes progress",
+              "Microsoft\u2019s defense is integration, enterprise trust, cross-platform presence, and installed-base leverage.",
+              "Microsoft\u2019s earnings profile now",
+              "Microsoft\u2019s largest segment",
+              "Microsoft is scaling AI infrastructure.",
+              "Microsoft is not",
+              "Microsoft continued to return substantial capital to shareholders.",
+              "Microsoft\u2019s economics in FY2025",
+              "Microsoft reported no goodwill impairment",
+              "Microsoft ended FY2025",
+              "Microsoft\u2019s use of debt appears opportunistic and strategic rather than balance-sheet constrained.",
+              "Microsoft says it disagrees",
+              "Microsoft\u2019s risk disclosures",
+              "Microsoft\u2019s 10-K",
+              "Microsoft operates under evolving laws and regulations",
+              "Microsoft employed approximately 228,000 full-time employees",
+              "Microsoft\u2019s FY2025 Form 10-K",
+              "Microsoft\u2019s scale ensures",
+              "Microsoft Form 10-K",
+              "Microsoft\u2019s best growth vectors",
+              "Microsoft\u2019s liquidity remains strong",
+              "Microsoft does not signal an expectation of",
+              "Microsoft is both a cloud provider and a security vendor",
+              "Microsoft\u2019s FY2025 capital intensity was extraordinarily high for a software company"
+            ],
+            "node_score": 6.8
+          },
+          {
+            "fact_id": "graph_node::node_github",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "entity",
+            "summary": "GitHub (product_or_service)",
+            "entity_name": "GitHub",
+            "entity_type": "product_or_service",
+            "entities": [
+              "GitHub"
+            ],
+            "aliases": [],
+            "section_titles": [
+              "2. Company overview, strategy, and operating model",
+              "3. Segment and product portfolio review"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec2_p4_par2_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 4,
+                "page_end": 6
+              },
+              {
+                "page_start": 6,
+                "page_end": 8
+              }
+            ],
+            "evidence_snippets": [
+              "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+              "Azure supports GitHub, data services, and AI platforms",
+              "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+            ],
+            "node_score": 6.6
+          },
+          {
+            "fact_id": "graph_node::node_productivity_and_business_processes",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "entity",
+            "summary": "Productivity and Business Processes (segment)",
+            "entity_name": "Productivity and Business Processes",
+            "entity_type": "segment",
+            "entities": [
+              "Productivity and Business Processes"
+            ],
+            "aliases": [
+              "Productivity and Business Processes (PBP)"
+            ],
+            "section_titles": [
+              "2. Company overview, strategy, and operating model",
+              "3. Segment and product portfolio review",
+              "4. Fiscal 2025 financial performance",
+              "5. Segment results and operating drivers",
+              "7. Major accounting notes and financial statement"
+            ],
+            "parent_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par0",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1"
+            ],
+            "child_ids": [
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+              "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+              "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 4,
+                "page_end": 6
+              },
+              {
+                "page_start": 6,
+                "page_end": 8
+              },
+              {
+                "page_start": 8,
+                "page_end": 9
+              },
+              {
+                "page_start": 9,
+                "page_end": 11
+              },
+              {
+                "page_start": 13,
+                "page_end": 15
+              }
+            ],
+            "evidence_snippets": [
+              "Productivity and Business Processes (PBP): Microsoft 365 Commercial, Microsoft 365 Consumer, LinkedIn, and Dynamics.",
+              "Productivity and Business Processes",
+              "Microsoft 365 Commercial cloud within Productivity and Business Processes",
+              "$31.5 billion to Productivity and Business Processes"
+            ],
+            "node_score": 5.3
+          },
+          {
+            "fact_id": "vector::microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "source_type": "vector_document",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "text_evidence",
+            "summary": "networking, storage, data, AI, machine learning, cognitive services, IoT, and app services. Microsoft\nalso emphasizes Azure AI Foundry as a unified platform to design, customize, and manage AI\napplications and agents.\nGitHub deepens developer ecosystem control, while Nuance adds ",
+            "child_text": "networking, storage, data, AI, machine learning, cognitive services, IoT, and app services. Microsoft\nalso emphasizes Azure AI Foundry as a unified platform to design, customize, and manage AI\napplications and agents.\nGitHub deepens developer ecosystem control, while Nuance adds healthcare AI capabilities.",
+            "parent_text": "defense is integration, enterprise trust, cross-platform presence, and installed-base leverage.\nIntelligent Cloud\nIntelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare,\nenterprise support, and partner services. This is the segment most visibly tied to the AI\ninfrastructure cycle. Azure is described as a comprehensive cloud platform spanning compute,\nnetworking, storage, data, AI, machine learning, cognitive services, IoT, and app services. Microsoft\nalso emphasizes Azure AI Foundry as a unified platform to design, customize, and manage AI\napplications and agents.\nGitHub deepens developer ecosystem control, while Nuance adds healthcare AI capabilities.\nTraditional server products still matter, but the filing makes clear that customer shift toward cloud\nofferings continues to pressure on-premises transactional revenue. Competitive threats here come\nfrom hyperscale cloud providers, open-source alternatives, and specialist cybersecurity and\nanalytics vendors.\nMore Personal Computing\nMPC brings together Windows, Surface and accessories, Xbox hardware, Xbox content and\nservices, and Search and news advertising through Bing, Edge, Copilot, and affiliated properties.\nThis segment is more cyclical and consumer-exposed than the other two, but still strategically\nimportant because it controls major distribution endpoints.\nWindows OEM revenue depends on PC market conditions, device mix, AI PCs, OEM inventory,",
+            "entities": [
+              "AI",
+              "Microsoft",
+              "Azure",
+              "Foundry",
+              "Nuance",
+              "Intelligent Cloud\nIntelligent Cloud",
+              "Nuance Healthcare",
+              "This",
+              "3. Segment and product portfolio review"
+            ],
+            "section_title": "3. Segment and product portfolio review",
+            "parent_id": "microsoft_fy2025_10k_summary_sec3_p6_par1",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+              "parent_id": "microsoft_fy2025_10k_summary_sec3_p6_par1",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "3. Segment and product portfolio review",
+              "page": 6,
+              "page_end": 8,
+              "content_type": "text"
+            },
+            "scores": {
+              "best_score": 5.58097744,
+              "rerank_score": 0.0,
+              "mmr_score": 0.0
+            }
+          },
+          {
+            "fact_id": "vector::microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "source_type": "vector_document",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "text_evidence",
+            "summary": "The flip side was cost intensity. Cost of revenue rose 36%, and gross margin percentage decreased\nbecause Microsoft is scaling AI infrastructure. This is one of the most important economic\nmessages in the 10-K: Azure is growing extremely fast, but the company is spending heavily ",
+            "child_text": "The flip side was cost intensity. Cost of revenue rose 36%, and gross margin percentage decreased\nbecause Microsoft is scaling AI infrastructure. This is one of the most important economic\nmessages in the 10-K: Azure is growing extremely fast, but the company is spending heavily to\npreserve capacity leadership. Operating income still rose 18% to $44.6 billion, showing that the",
+            "parent_text": "Intelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other\ncloud services growth of 34%. Azure growth was fueled by demand across the portfolio rather than\none isolated workload, reflecting both traditional cloud migration and AI-related consumption.\nThe flip side was cost intensity. Cost of revenue rose 36%, and gross margin percentage decreased\nbecause Microsoft is scaling AI infrastructure. This is one of the most important economic\nmessages in the 10-K: Azure is growing extremely fast, but the company is spending heavily to\npreserve capacity leadership. Operating income still rose 18% to $44.6 billion, showing that the\nsegment remains highly profitable despite margin pressure.\nMore Personal Computing\nMPC revenue rose $3.8 billion, or 7%, to $54.6 billion. The drivers were mixed. Windows and\nDevices rose only 2%, as Windows OEM growth was partly offset by declining Devices revenue.",
+            "entities": [
+              "The",
+              "Cost",
+              "Microsoft",
+              "AI",
+              "This",
+              "Azure",
+              "Operating",
+              "Intelligent Cloud",
+              "Revenue",
+              "Server",
+              "5. Segment results and operating drivers"
+            ],
+            "section_title": "5. Segment results and operating drivers",
+            "parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par1",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+              "parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par1",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "5. Segment results and operating drivers",
+              "page": 9,
+              "page_end": 11,
+              "content_type": "text"
+            },
+            "scores": {
+              "best_score": 4.66724682,
+              "rerank_score": 0.0,
+              "mmr_score": 0.0
+            }
+          },
+          {
+            "fact_id": "vector::microsoft_fy2025_10k_summary_sec2_p4_par2_ch0",
+            "source_type": "vector_document",
+            "sub_query_id": "sq_1",
+            "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "resolved_sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+            "fact_type": "text_evidence",
+            "summary": "This operating model creates unusually strong strategic linkages. Windows supports Microsoft 365\nand search distribution; Azure supports GitHub, data services, and AI platforms; identity and\nsecurity support cloud trust; and productivity apps provide a natural channel for AI mone",
+            "child_text": "This operating model creates unusually strong strategic linkages. Windows supports Microsoft 365\nand search distribution; Azure supports GitHub, data services, and AI platforms; identity and\nsecurity support cloud trust; and productivity apps provide a natural channel for AI monetization.\nOne of the key messages of the filing is that the stack is not just broad\u2014it is mutually reinforcing.",
+            "parent_text": "This operating model creates unusually strong strategic linkages. Windows supports Microsoft 365\nand search distribution; Azure supports GitHub, data services, and AI platforms; identity and\nsecurity support cloud trust; and productivity apps provide a natural channel for AI monetization.\nOne of the key messages of the filing is that the stack is not just broad\u2014it is mutually reinforcing.",
+            "entities": [
+              "This",
+              "Windows",
+              "Microsoft",
+              "Azure",
+              "AI",
+              "One",
+              "2. Company overview, strategy, and operating model"
+            ],
+            "section_title": "2. Company overview, strategy, and operating model",
+            "parent_id": "microsoft_fy2025_10k_summary_sec2_p4_par2",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec2_p4_par2_ch0",
+              "parent_id": "microsoft_fy2025_10k_summary_sec2_p4_par2",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "2. Company overview, strategy, and operating model",
+              "page": 4,
+              "page_end": 6,
+              "content_type": "text"
+            },
+            "scores": {
+              "best_score": 4.36454058,
+              "rerank_score": 0.0,
+              "mmr_score": 0.0
+            }
+          }
+        ],
+        "overlap_signals": [
+          {
+            "overlap_type": "entity",
+            "key": "azure",
+            "sources": [
+              "graph_relationships",
+              "vector_document"
+            ],
+            "fact_ids": [
+              "graph_node::node_azure",
+              "graph_edge::edge_19",
+              "graph_edge::edge_23",
+              "graph_edge::edge_47",
+              "graph_edge::edge_154",
+              "graph_edge::edge_18",
+              "vector::microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+              "vector::microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+              "vector::microsoft_fy2025_10k_summary_sec2_p4_par2_ch0"
+            ]
+          },
+          {
+            "overlap_type": "entity",
+            "key": "microsoft",
+            "sources": [
+              "graph_relationships",
+              "vector_document"
+            ],
+            "fact_ids": [
+              "graph_node::node_microsoft",
+              "graph_edge::edge_19",
+              "graph_edge::edge_23",
+              "graph_edge::edge_220",
+              "graph_edge::edge_40",
+              "vector::microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+              "vector::microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+              "vector::microsoft_fy2025_10k_summary_sec2_p4_par2_ch0"
+            ]
+          },
+          {
+            "overlap_type": "section",
+            "key": "2 company overview strategy and operating model",
+            "sources": [
+              "graph_relationships",
+              "vector_document"
+            ],
+            "fact_ids": [
+              "graph_node::node_azure",
+              "graph_node::node_microsoft",
+              "graph_node::node_github",
+              "graph_node::node_productivity_and_business_processes",
+              "graph_edge::edge_40",
+              "graph_edge::edge_47",
+              "graph_edge::edge_48",
+              "vector::microsoft_fy2025_10k_summary_sec2_p4_par2_ch0"
+            ]
+          },
+          {
+            "overlap_type": "entity",
+            "key": "intelligent cloud",
+            "sources": [
+              "graph_relationships",
+              "vector_document"
+            ],
+            "fact_ids": [
+              "graph_edge::edge_47",
+              "graph_edge::edge_48",
+              "vector::microsoft_fy2025_10k_summary_sec5_p9_par1_ch1"
+            ]
+          },
+          {
+            "overlap_type": "parent_context",
+            "key": "microsoft fy2025 10k summary sec3 p6 par1",
+            "sources": [
+              "graph_relationships",
+              "vector_document"
+            ],
+            "fact_ids": [
+              "graph_node::node_azure",
+              "graph_node::node_github",
+              "graph_edge::edge_47",
+              "graph_edge::edge_48",
+              "vector::microsoft_fy2025_10k_summary_sec3_p6_par1_ch1"
+            ]
+          },
+          {
+            "overlap_type": "parent_context",
+            "key": "microsoft fy2025 10k summary sec5 p9 par1",
+            "sources": [
+              "graph_relationships",
+              "vector_document"
+            ],
+            "fact_ids": [
+              "graph_node::node_azure",
+              "graph_node::node_microsoft",
+              "graph_edge::edge_47",
+              "graph_edge::edge_154",
+              "vector::microsoft_fy2025_10k_summary_sec5_p9_par1_ch1"
+            ]
+          },
+          {
+            "overlap_type": "section",
+            "key": "3 segment and product portfolio review",
+            "sources": [
+              "graph_relationships",
+              "vector_document"
+            ],
+            "fact_ids": [
+              "graph_node::node_azure",
+              "graph_node::node_microsoft",
+              "graph_node::node_github",
+              "graph_node::node_productivity_and_business_processes",
+              "graph_edge::edge_47",
+              "graph_edge::edge_48",
+              "vector::microsoft_fy2025_10k_summary_sec3_p6_par1_ch1"
+            ]
+          },
+          {
+            "overlap_type": "section",
+            "key": "5 segment results and operating drivers",
+            "sources": [
+              "graph_relationships",
+              "vector_document"
+            ],
+            "fact_ids": [
+              "graph_node::node_azure",
+              "graph_node::node_microsoft",
+              "graph_node::node_productivity_and_business_processes",
+              "graph_edge::edge_47",
+              "graph_edge::edge_154",
+              "vector::microsoft_fy2025_10k_summary_sec5_p9_par1_ch1"
+            ]
+          },
+          {
+            "overlap_type": "parent_context",
+            "key": "microsoft fy2025 10k summary sec2 p4 par2",
+            "sources": [
+              "graph_relationships",
+              "vector_document"
+            ],
+            "fact_ids": [
+              "graph_node::node_azure",
+              "graph_node::node_github",
+              "vector::microsoft_fy2025_10k_summary_sec2_p4_par2_ch0"
+            ]
+          }
+        ],
+        "conflict_signals": [
+          {
+            "conflict_type": "graph_relation_mismatch",
+            "entity_pair": [
+              "Microsoft",
+              "Azure"
+            ],
+            "relation_types": [
+              "uses",
+              "includes"
+            ],
+            "fact_ids": [
+              "graph_edge::edge_19",
+              "graph_edge::edge_23"
+            ]
+          }
+        ],
+        "assembled_fused_sub_query_text": "[Fused Sub-query] How does Azure relate to GitHub in Microsoft's business structure?\nResolved Query: How does Azure relate to GitHub in Microsoft's business structure?\nActive Sources: graph_relationships, vector_document\nFact Count: 16\nOverlap Signals: 9\nConflict Signals: 1\nAnswer-Ready Facts:\n[Graph] Microsoft -> uses -> Azure\n[Graph] Microsoft -> includes -> Azure\n[Graph] Microsoft -> uses -> Microsoft's investment portfolio\n[Graph] Microsoft -> includes -> Productivity and Business Processes\n[Graph] Intelligent Cloud -> includes -> Azure\n[Graph] Intelligent Cloud -> includes -> GitHub\n[Graph] Azure -> uses -> AI infrastructure\n[Graph] commercial recurring revenue -> includes -> Azure"
+      }
+    ],
+    "assembled_fused_evidence_text": "[Fused Sub-query] How does Azure relate to GitHub in Microsoft's business structure?\nResolved Query: How does Azure relate to GitHub in Microsoft's business structure?\nActive Sources: graph_relationships, vector_document\nFact Count: 16\nOverlap Signals: 9\nConflict Signals: 1\nAnswer-Ready Facts:\n[Graph] Microsoft -> uses -> Azure\n[Graph] Microsoft -> includes -> Azure\n[Graph] Microsoft -> uses -> Microsoft's investment portfolio\n[Graph] Microsoft -> includes -> Productivity and Business Processes\n[Graph] Intelligent Cloud -> includes -> Azure\n[Graph] Intelligent Cloud -> includes -> GitHub\n[Graph] Azure -> uses -> AI infrastructure\n[Graph] commercial recurring revenue -> includes -> Azure"
+  }
+}

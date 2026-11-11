@@ -1,0 +1,189 @@
+{
+  "generated_at": "2026-03-18T11:17:58.568991+00:00",
+  "case_id": "ans_006_sql_product_family",
+  "pipeline_model": "gpt-5-mini",
+  "result": {
+    "original_query": "Which product family had the highest AI relevance score in FY2025 and what was its strategic priority?",
+    "policy": {
+      "routing_policy": {
+        "routing_model": "gpt-5-mini",
+        "routing_method": "llm_with_capability_summaries_and_signal_validation_v1"
+      },
+      "latency_policy": {
+        "policy_model": "gpt-5-mini",
+        "policy_method": "llm_latency_optimized_execution_planner_v1"
+      }
+    },
+    "routing_summary": {
+      "sub_query_count": 2,
+      "source_usage": {
+        "vector_document": 0,
+        "graph_relationships": 0,
+        "sql_structured": 2
+      }
+    },
+    "execution_summary": {
+      "sub_query_count": 2,
+      "source_usage": {
+        "vector_document": 0,
+        "graph_relationships": 0,
+        "sql_structured": 2
+      },
+      "vector_profile_usage": {
+        "skip": 0,
+        "fast": 0,
+        "balanced": 0,
+        "full": 0,
+        "fast_escalated": 0,
+        "balanced_escalated": 0
+      }
+    },
+    "bundle_summary": {
+      "sub_query_count": 2,
+      "fact_count": 2,
+      "overlap_signal_count": 0,
+      "conflict_signal_count": 0
+    },
+    "normalized_facts": [
+      {
+        "fact_id": "sql::sq_1::1",
+        "source_type": "sql_structured",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which product family had the highest AI relevance score in FY2025?",
+        "resolved_sub_query": "Which product family had the highest AI relevance score in FY2025?",
+        "fact_type": "sql_row",
+        "summary": "product_family=Azure, ai_relevance_score=95",
+        "entities": [
+          "Azure"
+        ],
+        "target_tables": [
+          "product_family_signals"
+        ],
+        "validated_sql": "SELECT product_family, ai_relevance_score\nFROM product_family_signals\nWHERE fiscal_year = 2025\nORDER BY ai_relevance_score DESC\nLIMIT 1",
+        "row": {
+          "product_family": "Azure",
+          "ai_relevance_score": 95
+        },
+        "columns": [
+          "product_family",
+          "ai_relevance_score"
+        ],
+        "confidence": "high"
+      },
+      {
+        "fact_id": "sql::sq_2::1",
+        "source_type": "sql_structured",
+        "sub_query_id": "sq_2",
+        "sub_query": "What was the strategic priority of the product family with the highest AI relevance score in FY2025?",
+        "resolved_sub_query": "What was the strategic priority of the product family with the highest AI relevance score in FY2025?",
+        "fact_type": "sql_row",
+        "summary": "product_family=Azure, strategic_priority=High, ai_relevance_score=95",
+        "entities": [
+          "Azure",
+          "High"
+        ],
+        "target_tables": [
+          "product_family_signals"
+        ],
+        "validated_sql": "SELECT product_family, strategic_priority, ai_relevance_score\nFROM product_family_signals\nWHERE fiscal_year = 2025\nORDER BY ai_relevance_score DESC\nLIMIT 1",
+        "row": {
+          "product_family": "Azure",
+          "strategic_priority": "High",
+          "ai_relevance_score": 95
+        },
+        "columns": [
+          "product_family",
+          "strategic_priority",
+          "ai_relevance_score"
+        ],
+        "confidence": "high"
+      }
+    ],
+    "overlap_signals": [],
+    "conflict_signals": [],
+    "sub_query_fusions": [
+      {
+        "sub_query_id": "sq_1",
+        "original_sub_query": "Which product family had the highest AI relevance score in FY2025?",
+        "resolved_sub_query": "Which product family had the highest AI relevance score in FY2025?",
+        "active_sources": [
+          "sql_structured"
+        ],
+        "fact_count": 1,
+        "facts": [
+          {
+            "fact_id": "sql::sq_1::1",
+            "source_type": "sql_structured",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which product family had the highest AI relevance score in FY2025?",
+            "resolved_sub_query": "Which product family had the highest AI relevance score in FY2025?",
+            "fact_type": "sql_row",
+            "summary": "product_family=Azure, ai_relevance_score=95",
+            "entities": [
+              "Azure"
+            ],
+            "target_tables": [
+              "product_family_signals"
+            ],
+            "validated_sql": "SELECT product_family, ai_relevance_score\nFROM product_family_signals\nWHERE fiscal_year = 2025\nORDER BY ai_relevance_score DESC\nLIMIT 1",
+            "row": {
+              "product_family": "Azure",
+              "ai_relevance_score": 95
+            },
+            "columns": [
+              "product_family",
+              "ai_relevance_score"
+            ],
+            "confidence": "high"
+          }
+        ],
+        "overlap_signals": [],
+        "conflict_signals": [],
+        "assembled_fused_sub_query_text": "[Fused Sub-query] Which product family had the highest AI relevance score in FY2025?\nResolved Query: Which product family had the highest AI relevance score in FY2025?\nActive Sources: sql_structured\nFact Count: 1\nOverlap Signals: 0\nConflict Signals: 0\nAnswer-Ready Facts:\n[SQL] product_family=Azure, ai_relevance_score=95 | tables=product_family_signals"
+      },
+      {
+        "sub_query_id": "sq_2",
+        "original_sub_query": "What was the strategic priority of the product family with the highest AI relevance score in FY2025?",
+        "resolved_sub_query": "What was the strategic priority of the product family with the highest AI relevance score in FY2025?",
+        "active_sources": [
+          "sql_structured"
+        ],
+        "fact_count": 1,
+        "facts": [
+          {
+            "fact_id": "sql::sq_2::1",
+            "source_type": "sql_structured",
+            "sub_query_id": "sq_2",
+            "sub_query": "What was the strategic priority of the product family with the highest AI relevance score in FY2025?",
+            "resolved_sub_query": "What was the strategic priority of the product family with the highest AI relevance score in FY2025?",
+            "fact_type": "sql_row",
+            "summary": "product_family=Azure, strategic_priority=High, ai_relevance_score=95",
+            "entities": [
+              "Azure",
+              "High"
+            ],
+            "target_tables": [
+              "product_family_signals"
+            ],
+            "validated_sql": "SELECT product_family, strategic_priority, ai_relevance_score\nFROM product_family_signals\nWHERE fiscal_year = 2025\nORDER BY ai_relevance_score DESC\nLIMIT 1",
+            "row": {
+              "product_family": "Azure",
+              "strategic_priority": "High",
+              "ai_relevance_score": 95
+            },
+            "columns": [
+              "product_family",
+              "strategic_priority",
+              "ai_relevance_score"
+            ],
+            "confidence": "high"
+          }
+        ],
+        "overlap_signals": [],
+        "conflict_signals": [],
+        "assembled_fused_sub_query_text": "[Fused Sub-query] What was the strategic priority of the product family with the highest AI relevance score in FY2025?\nResolved Query: What was the strategic priority of the product family with the highest AI relevance score in FY2025?\nActive Sources: sql_structured\nFact Count: 1\nOverlap Signals: 0\nConflict Signals: 0\nAnswer-Ready Facts:\n[SQL] product_family=Azure, strategic_priority=High, ai_relevance_score=95 | tables=product_family_signals"
+      }
+    ],
+    "assembled_fused_evidence_text": "[Fused Sub-query] Which product family had the highest AI relevance score in FY2025?\nResolved Query: Which product family had the highest AI relevance score in FY2025?\nActive Sources: sql_structured\nFact Count: 1\nOverlap Signals: 0\nConflict Signals: 0\nAnswer-Ready Facts:\n[SQL] product_family=Azure, ai_relevance_score=95 | tables=product_family_signals\n\n---\n\n[Fused Sub-query] What was the strategic priority of the product family with the highest AI relevance score in FY2025?\nResolved Query: What was the strategic priority of the product family with the highest AI relevance score in FY2025?\nActive Sources: sql_structured\nFact Count: 1\nOverlap Signals: 0\nConflict Signals: 0\nAnswer-Ready Facts:\n[SQL] product_family=Azure, strategic_priority=High, ai_relevance_score=95 | tables=product_family_signals"
+  }
+}

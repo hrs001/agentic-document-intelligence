@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-03-16T10:29:31.437442+00:00",
+  "component": "component_1_corpus_foundation",
+  "ok": true,
+  "checks": [
+    {
+      "check_id": "manifest_parse",
+      "description": "Manifest parses as JSON object.",
+      "status": "pass",
+      "details": ""
+    },
+    {
+      "check_id": "metadata_parse",
+      "description": "Metadata parses as JSON object.",
+      "status": "pass",
+      "details": ""
+    },
+    {
+      "check_id": "dataset_schema_parse",
+      "description": "Dataset schema parses as JSON object.",
+      "status": "pass",
+      "details": ""
+    },
+    {
+      "check_id": "contract_parse",
+      "description": "Preprocessing contract parses as JSON object.",
+      "status": "pass",
+      "details": ""
+    },
+    {
+      "check_id": "metadata_required_keys",
+      "description": "Metadata includes all required top-level keys.",
+      "status": "pass",
+      "details": "required=['corpus_id', 'dataset_metadata', 'document_metadata', 'provenance', 'schema_version']"
+    },
+    {
+      "check_id": "contract_required_keys",
+      "description": "Preprocessing contract includes all required top-level keys.",
+      "status": "pass",
+      "details": "required=['artifact_layout', 'corpus_id', 'expected_outputs', 'schema_version']"
+    },
+    {
+      "check_id": "document_exists::microsoft_fy2025_10k_summary",
+      "description": "Document exists: microsoft_fy2025_10k_summary",
+      "status": "pass",
+      "details": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\corpus\\sources\\Microsoft_FY2025_10K_Summary.pdf"
+    },
+    {
+      "check_id": "document_hash::microsoft_fy2025_10k_summary",
+      "description": "Document hash matches manifest: microsoft_fy2025_10k_summary",
+      "status": "pass",
+      "details": "expected=e2c1e238bce5e62ed4fa7aca2bcd84a198571762e8ed203fada7f7b127a328b4 actual=e2c1e238bce5e62ed4fa7aca2bcd84a198571762e8ed203fada7f7b127a328b4"
+    },
+    {
+      "check_id": "dataset_exists::financial_performance_by_segment",
+      "description": "Dataset table exists: financial_performance_by_segment",
+      "status": "pass",
+      "details": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\corpus\\datasets\\financial_performance_by_segment.csv"
+    },
+    {
+      "check_id": "dataset_columns::financial_performance_by_segment",
+      "description": "Dataset columns match schema: financial_performance_by_segment",
+      "status": "pass",
+      "details": "expected=['fiscal_year', 'segment_name', 'revenue_usd_millions', 'operating_income_usd_millions', 'operating_margin_pct', 'yoy_revenue_growth_pct', 'narrative_driver'] actual=['fiscal_year', 'segment_name', 'revenue_usd_millions', 'operating_income_usd_millions', 'operating_margin_pct', 'yoy_revenue_growth_pct', 'narrative_driver']"
+    },
+    {
+      "check_id": "dataset_non_empty::financial_performance_by_segment",
+      "description": "Dataset has at least one data row: financial_performance_by_segment",
+      "status": "pass",
+      "details": ""
+    },
+    {
+      "check_id": "dataset_exists::geographic_revenue_mix",
+      "description": "Dataset table exists: geographic_revenue_mix",
+      "status": "pass",
+      "details": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\corpus\\datasets\\geographic_revenue_mix.csv"
+    },
+    {
+      "check_id": "dataset_columns::geographic_revenue_mix",
+      "description": "Dataset columns match schema: geographic_revenue_mix",
+      "status": "pass",
+      "details": "expected=['fiscal_year', 'geography', 'revenue_usd_millions', 'revenue_mix_pct', 'yoy_revenue_growth_pct'] actual=['fiscal_year', 'geography', 'revenue_usd_millions', 'revenue_mix_pct', 'yoy_revenue_growth_pct']"
+    },
+    {
+      "check_id": "dataset_non_empty::geographic_revenue_mix",
+      "description": "Dataset has at least one data row: geographic_revenue_mix",
+      "status": "pass",
+      "details": ""
+    },
+    {
+      "check_id": "dataset_exists::product_family_signals",
+      "description": "Dataset table exists: product_family_signals",
+      "status": "pass",
+      "details": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\corpus\\datasets\\product_family_signals.csv"
+    },
+    {
+      "check_id": "dataset_columns::product_family_signals",
+      "description": "Dataset columns match schema: product_family_signals",
+      "status": "pass",
+      "details": "expected=['fiscal_year', 'product_family', 'strategic_priority', 'revenue_signal_index', 'margin_profile', 'ai_relevance_score', 'commentary'] actual=['fiscal_year', 'product_family', 'strategic_priority', 'revenue_signal_index', 'margin_profile', 'ai_relevance_score', 'commentary']"
+    },
+    {
+      "check_id": "dataset_non_empty::product_family_signals",
+      "description": "Dataset has at least one data row: product_family_signals",
+      "status": "pass",
+      "details": ""
+    },
+    {
+      "check_id": "capability_consistency",
+      "description": "Manifest capability flags match declared assets.",
+      "status": "pass",
+      "details": "computed=document:True,graph:True,sql:True"
+    },
+    {
+      "check_id": "contract_expected_outputs",
+      "description": "Preprocessing contract defines the required downstream artifact interfaces.",
+      "status": "pass",
+      "details": "count=7"
+    }
+  ],
+  "warnings": [],
+  "blocking_issues": [],
+  "summary": {
+    "documents_declared": 1,
+    "datasets_declared": 1,
+    "tables_declared": 3,
+    "checks_run": 19
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-03-18T08:40:50.933721+00:00",
+  "result": {
+    "user_query": "x",
+    "database_path": "db.sqlite",
+    "target_tables": [
+      "t1"
+    ],
+    "validated_sql": "SELECT 1",
+    "confidence": "high",
+    "bundle_summary": {
+      "column_count": 1,
+      "row_count": 1,
+      "preview_row_count": 1
+    },
+    "columns": [
+      "x"
+    ],
+    "preview_rows": [
+      {
+        "x": 1
+      }
+    ],
+    "assembled_sql_evidence_text": "[SQL Evidence]"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-03-18T08:40:50.917607+00:00",
+  "result": {
+    "user_query": "Which segment had the highest revenue in FY2025?",
+    "database_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\artifacts\\experiments\\component6_sqlite_database_build_live\\sql_db\\microsoft_fy2025_analyst_demo.sqlite",
+    "target_tables": [
+      "financial_performance_by_segment"
+    ],
+    "validated_sql": "SELECT segment_name, revenue_usd_millions\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\n  AND revenue_usd_millions = (\n    SELECT MAX(revenue_usd_millions)\n    FROM financial_performance_by_segment\n    WHERE fiscal_year = 2025\n  )",
+    "confidence": "high",
+    "bundle_summary": {
+      "column_count": 2,
+      "row_count": 1,
+      "preview_row_count": 1
+    },
+    "columns": [
+      "segment_name",
+      "revenue_usd_millions"
+    ],
+    "preview_rows": [
+      {
+        "segment_name": "Intelligent Cloud",
+        "revenue_usd_millions": 108610
+      }
+    ],
+    "assembled_sql_evidence_text": "[SQL Evidence]\nUser Query: Which segment had the highest revenue in FY2025?\nTarget Tables: financial_performance_by_segment\nConfidence: high\nValidated SQL: SELECT segment_name, revenue_usd_millions\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\n  AND revenue_usd_millions = (\n    SELECT MAX(revenue_usd_millions)\n    FROM financial_performance_by_segment\n    WHERE fiscal_year = 2025\n  )\nReturned Rows: 1\nResult Preview:\n| segment_name | revenue_usd_millions |\n| --- | --- |\n| Intelligent Cloud | 108610 |"
+  }
+}

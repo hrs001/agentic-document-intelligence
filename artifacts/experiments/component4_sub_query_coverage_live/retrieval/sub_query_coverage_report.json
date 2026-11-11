@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-03-17T16:13:37.422872+00:00",
+  "result": {
+    "original_query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+    "policy": {
+      "decomposition_model": "gpt-5-mini",
+      "max_sub_queries": 3,
+      "run_hyde_in_initial_bundle": false,
+      "hyde_policy": "candidate_only_after_weak_retrieval"
+    },
+    "coverage_summary": {
+      "sub_query_count": 3,
+      "average_coverage_score": 0.8989,
+      "weak_sub_query_count": 0,
+      "weak_sub_query_ids": []
+    },
+    "sub_query_scores": [
+      {
+        "sub_query_id": "sq_1",
+        "original_sub_query": "Who is the CEO?",
+        "coverage_score": 1.0,
+        "coverage_label": "strong",
+        "should_consider_hyde": false,
+        "signal_breakdown": {
+          "top_score": 4.1267,
+          "score_strength": 1.0,
+          "query_overlap_ratio": 1.0,
+          "reinforced_match_strength": 1.0,
+          "result_depth_strength": 1.0
+        },
+        "top_match_ids": [
+          "microsoft_fy2025_10k_summary_sec9_p17_par2_ch0",
+          "microsoft_fy2025_10k_summary_sec12_table0_ch0",
+          "microsoft_fy2025_10k_summary_sec9_p17_par3_ch0"
+        ]
+      },
+      {
+        "sub_query_id": "sq_2",
+        "original_sub_query": "Which segment drove the most revenue growth?",
+        "coverage_score": 0.93,
+        "coverage_label": "strong",
+        "should_consider_hyde": false,
+        "signal_breakdown": {
+          "top_score": 5.8296,
+          "score_strength": 1.0,
+          "query_overlap_ratio": 0.8,
+          "reinforced_match_strength": 1.0,
+          "result_depth_strength": 1.0
+        },
+        "top_match_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0"
+        ]
+      },
+      {
+        "sub_query_id": "sq_3",
+        "original_sub_query": "What did the CEO say about AI?",
+        "coverage_score": 0.7667,
+        "coverage_label": "strong",
+        "should_consider_hyde": false,
+        "signal_breakdown": {
+          "top_score": 3.5526,
+          "score_strength": 1.0,
+          "query_overlap_ratio": 0.3333,
+          "reinforced_match_strength": 1.0,
+          "result_depth_strength": 1.0
+        },
+        "top_match_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec2_p4_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec6_p11_par1_ch3"
+        ]
+      }
+    ]
+  }
+}

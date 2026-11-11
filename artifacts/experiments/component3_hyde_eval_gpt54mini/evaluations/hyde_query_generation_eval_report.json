@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-03-18T05:59:30.496850+00:00",
+  "model": "gpt-5.4-mini",
+  "cases_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\evals\\hyde_query_generation_cases.json",
+  "case_count": 5,
+  "passed_count": 5,
+  "results": [
+    {
+      "query": "What was Microsoft's FY2025 revenue?",
+      "result": {
+        "original_query": "What was Microsoft's FY2025 revenue?",
+        "hypothetical_passage": "Microsoft's FY2025 revenue would be reported in the company's annual financial results and earnings filings for fiscal year 2025. The relevant figures are typically found in Microsoft\u2019s consolidated statements of income and management discussion of business performance. To answer this, one would look for Microsoft\u2019s FY2025 total revenue as disclosed in its annual report or earnings release.",
+        "generation_style": "financial_stub"
+      },
+      "evaluation": {
+        "passed": true,
+        "term_ok": true,
+        "forbidden_ok": true,
+        "sentence_ok": true,
+        "sentence_count": 3
+      }
+    },
+    {
+      "query": "What happened with Azure growth and what did management say about AI demand?",
+      "result": {
+        "original_query": "What happened with Azure growth and what did management say about AI demand?",
+        "hypothetical_passage": "Azure growth is often discussed in the context of cloud revenue trends, with attention on whether expansion accelerated or moderated in the latest period. Management comments on AI demand typically focus on strong customer interest, capacity constraints, and how AI workloads are contributing to Azure usage and future growth expectations.",
+        "generation_style": "factual_stub"
+      },
+      "evaluation": {
+        "passed": true,
+        "term_ok": true,
+        "forbidden_ok": true,
+        "sentence_ok": true,
+        "sentence_count": 2
+      }
+    },
+    {
+      "query": "Compare Azure and Microsoft 365 revenue drivers.",
+      "result": {
+        "original_query": "Compare Azure and Microsoft 365 revenue drivers.",
+        "hypothetical_passage": "Azure revenue is typically driven by cloud infrastructure usage, platform services, enterprise migration, and consumption-based demand from developers and large organizations. Microsoft 365 revenue is usually driven by subscription licensing, seat growth, enterprise adoption, and renewal rates across productivity and collaboration products. A comparison often looks at usage-based scaling and infrastructure expansion for Azure versus recurring per-user subscription expansion for Microsoft 365.",
+        "generation_style": "comparison_stub"
+      },
+      "evaluation": {
+        "passed": true,
+        "term_ok": true,
+        "forbidden_ok": true,
+        "sentence_ok": true,
+        "sentence_count": 3
+      }
+    },
+    {
+      "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+      "result": {
+        "original_query": "What were the main cybersecurity governance responsibilities of the board and management?",
+        "hypothetical_passage": "The board\u2019s cybersecurity governance responsibilities typically focus on overseeing risk appetite, approving major security strategy, and ensuring management has adequate controls and reporting in place. Management is usually responsible for implementing cybersecurity policies, operating defenses, monitoring threats, and escalating material incidents or control gaps to the board. Effective governance also includes clear accountability, regular risk assessments, and alignment between cybersecurity priorities and overall enterprise risk management.",
+        "generation_style": "governance_stub"
+      },
+      "evaluation": {
+        "passed": true,
+        "term_ok": true,
+        "forbidden_ok": true,
+        "sentence_ok": true,
+        "sentence_count": 3
+      }
+    },
+    {
+      "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+      "result": {
+        "original_query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+        "hypothetical_passage": "Microsoft\u2019s FY2025 disclosures and earnings commentary may discuss capital expenditures, including investment in datacenter capacity and cloud infrastructure. The language could reference capex trends, datacenter spending, and demand for AI or Azure-related infrastructure. Investors would look for mentions of whether spending was increasing, prioritized, or tied to long-term growth plans.",
+        "generation_style": "factual_stub"
+      },
+      "evaluation": {
+        "passed": true,
+        "term_ok": true,
+        "forbidden_ok": true,
+        "sentence_ok": true,
+        "sentence_count": 3
+      }
+    }
+  ]
+}

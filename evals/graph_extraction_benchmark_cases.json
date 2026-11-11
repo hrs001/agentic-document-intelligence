@@ -1,0 +1,165 @@
+[
+  {
+    "case_id": "exec_summary",
+    "section_title": "1. Executive summary",
+    "page_start": 3,
+    "page_end": 4,
+    "expected_entities": [
+      "Microsoft",
+      "AI",
+      "Microsoft Cloud",
+      "Azure and other cloud services",
+      "Activision Blizzard",
+      "AI infrastructure",
+      "IRS transfer-pricing dispute",
+      "Europe",
+      "Cybersecurity"
+    ],
+    "expected_relationships": [
+      {
+        "source": "Microsoft",
+        "relation_type": "integrates",
+        "target": "Activision Blizzard"
+      },
+      {
+        "source": "Microsoft",
+        "relation_type": "invests_in",
+        "target": "AI infrastructure"
+      },
+      {
+        "source": "Microsoft",
+        "relation_type": "faces",
+        "target": "IRS transfer-pricing dispute"
+      },
+      {
+        "source": "Microsoft",
+        "relation_type": "faces",
+        "target": "Europe"
+      },
+      {
+        "source": "AI",
+        "relation_type": "supports",
+        "target": "Microsoft Cloud"
+      }
+    ]
+  },
+  {
+    "case_id": "company_overview",
+    "section_title": "2. Company overview, strategy, and operating model",
+    "page_start": 4,
+    "page_end": 6,
+    "expected_entities": [
+      "Microsoft",
+      "Microsoft Cloud",
+      "Microsoft 365 Copilot",
+      "Productivity and Business Processes",
+      "Intelligent Cloud",
+      "More Personal Computing",
+      "Microsoft 365 Commercial",
+      "LinkedIn",
+      "Dynamics",
+      "Azure and other cloud services",
+      "GitHub",
+      "Nuance Healthcare",
+      "Gaming"
+    ],
+    "expected_relationships": [
+      {
+        "source": "Productivity and Business Processes",
+        "relation_type": "includes",
+        "target": "Microsoft 365 Commercial"
+      },
+      {
+        "source": "Productivity and Business Processes",
+        "relation_type": "includes",
+        "target": "LinkedIn"
+      },
+      {
+        "source": "Productivity and Business Processes",
+        "relation_type": "includes",
+        "target": "Dynamics"
+      },
+      {
+        "source": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target": "Azure and other cloud services"
+      },
+      {
+        "source": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target": "GitHub"
+      },
+      {
+        "source": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target": "Nuance Healthcare"
+      },
+      {
+        "source": "More Personal Computing",
+        "relation_type": "includes",
+        "target": "Gaming"
+      }
+    ]
+  },
+  {
+    "case_id": "segment_review",
+    "section_title": "3. Segment and product portfolio review",
+    "page_start": 6,
+    "page_end": 8,
+    "expected_entities": [
+      "Productivity and Business Processes",
+      "Microsoft 365 Commercial",
+      "LinkedIn",
+      "Dynamics",
+      "Intelligent Cloud",
+      "Azure",
+      "Azure AI Foundry",
+      "GitHub",
+      "Nuance Healthcare",
+      "More Personal Computing",
+      "Windows",
+      "Gaming",
+      "Search and news advertising",
+      "Bing",
+      "Edge",
+      "Copilot"
+    ],
+    "expected_relationships": [
+      {
+        "source": "Productivity and Business Processes",
+        "relation_type": "includes",
+        "target": "LinkedIn"
+      },
+      {
+        "source": "Productivity and Business Processes",
+        "relation_type": "includes",
+        "target": "Dynamics"
+      },
+      {
+        "source": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target": "Azure"
+      },
+      {
+        "source": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target": "Azure AI Foundry"
+      },
+      {
+        "source": "More Personal Computing",
+        "relation_type": "includes",
+        "target": "Windows"
+      },
+      {
+        "source": "More Personal Computing",
+        "relation_type": "includes",
+        "target": "Gaming"
+      },
+      {
+        "source": "More Personal Computing",
+        "relation_type": "includes",
+        "target": "Search and news advertising"
+      }
+    ]
+  }
+]

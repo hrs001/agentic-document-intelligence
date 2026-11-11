@@ -1,0 +1,189 @@
+{
+  "generated_at": "2026-03-18T12:06:11.919160+00:00",
+  "case_id": "ans_005_sql_growth_driver",
+  "pipeline_model": "gpt-5-mini",
+  "result": {
+    "original_query": "Which segment grew the fastest in FY2025 and what narrative driver was mentioned for it?",
+    "policy": {
+      "routing_policy": {
+        "routing_model": "gpt-5-mini",
+        "routing_method": "llm_with_capability_summaries_and_signal_validation_v1"
+      },
+      "latency_policy": {
+        "policy_model": "gpt-5-mini",
+        "policy_method": "llm_latency_optimized_execution_planner_v1"
+      }
+    },
+    "routing_summary": {
+      "sub_query_count": 2,
+      "source_usage": {
+        "vector_document": 1,
+        "graph_relationships": 0,
+        "sql_structured": 2
+      }
+    },
+    "execution_summary": {
+      "sub_query_count": 2,
+      "source_usage": {
+        "vector_document": 0,
+        "graph_relationships": 0,
+        "sql_structured": 2
+      },
+      "vector_profile_usage": {
+        "skip": 0,
+        "fast": 0,
+        "balanced": 0,
+        "full": 0,
+        "fast_escalated": 0,
+        "balanced_escalated": 0
+      }
+    },
+    "bundle_summary": {
+      "sub_query_count": 2,
+      "fact_count": 2,
+      "overlap_signal_count": 0,
+      "conflict_signal_count": 0
+    },
+    "normalized_facts": [
+      {
+        "fact_id": "sql::sq_1::1",
+        "source_type": "sql_structured",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which segment grew the fastest in FY2025?",
+        "resolved_sub_query": "Which segment grew the fastest in FY2025?",
+        "fact_type": "sql_row",
+        "summary": "segment_name=Intelligent Cloud, yoy_revenue_growth_pct=12.6",
+        "entities": [
+          "Intelligent Cloud"
+        ],
+        "target_tables": [
+          "financial_performance_by_segment"
+        ],
+        "validated_sql": "SELECT segment_name, yoy_revenue_growth_pct\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\n  AND yoy_revenue_growth_pct IS NOT NULL\n  AND yoy_revenue_growth_pct = (\n    SELECT MAX(yoy_revenue_growth_pct)\n    FROM financial_performance_by_segment\n    WHERE fiscal_year = 2025\n  )",
+        "row": {
+          "segment_name": "Intelligent Cloud",
+          "yoy_revenue_growth_pct": 12.6
+        },
+        "columns": [
+          "segment_name",
+          "yoy_revenue_growth_pct"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "fact_id": "sql::sq_2::1",
+        "source_type": "sql_structured",
+        "sub_query_id": "sq_2",
+        "sub_query": "What narrative driver was mentioned for the segment that grew the fastest in FY2025?",
+        "resolved_sub_query": "What narrative driver was mentioned for the Intelligent Cloud segment, which grew the fastest in FY2025?",
+        "fact_type": "sql_row",
+        "summary": "segment_name=Intelligent Cloud, yoy_revenue_growth_pct=12.6, narrative_driver=AI infrastructure demand",
+        "entities": [
+          "Intelligent Cloud",
+          "AI infrastructure demand"
+        ],
+        "target_tables": [
+          "financial_performance_by_segment"
+        ],
+        "validated_sql": "SELECT segment_name, yoy_revenue_growth_pct, narrative_driver\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\nORDER BY yoy_revenue_growth_pct DESC\nLIMIT 1",
+        "row": {
+          "segment_name": "Intelligent Cloud",
+          "yoy_revenue_growth_pct": 12.6,
+          "narrative_driver": "AI infrastructure demand"
+        },
+        "columns": [
+          "segment_name",
+          "yoy_revenue_growth_pct",
+          "narrative_driver"
+        ],
+        "confidence": "high"
+      }
+    ],
+    "overlap_signals": [],
+    "conflict_signals": [],
+    "sub_query_fusions": [
+      {
+        "sub_query_id": "sq_1",
+        "original_sub_query": "Which segment grew the fastest in FY2025?",
+        "resolved_sub_query": "Which segment grew the fastest in FY2025?",
+        "active_sources": [
+          "sql_structured"
+        ],
+        "fact_count": 1,
+        "facts": [
+          {
+            "fact_id": "sql::sq_1::1",
+            "source_type": "sql_structured",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which segment grew the fastest in FY2025?",
+            "resolved_sub_query": "Which segment grew the fastest in FY2025?",
+            "fact_type": "sql_row",
+            "summary": "segment_name=Intelligent Cloud, yoy_revenue_growth_pct=12.6",
+            "entities": [
+              "Intelligent Cloud"
+            ],
+            "target_tables": [
+              "financial_performance_by_segment"
+            ],
+            "validated_sql": "SELECT segment_name, yoy_revenue_growth_pct\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\n  AND yoy_revenue_growth_pct IS NOT NULL\n  AND yoy_revenue_growth_pct = (\n    SELECT MAX(yoy_revenue_growth_pct)\n    FROM financial_performance_by_segment\n    WHERE fiscal_year = 2025\n  )",
+            "row": {
+              "segment_name": "Intelligent Cloud",
+              "yoy_revenue_growth_pct": 12.6
+            },
+            "columns": [
+              "segment_name",
+              "yoy_revenue_growth_pct"
+            ],
+            "confidence": "medium"
+          }
+        ],
+        "overlap_signals": [],
+        "conflict_signals": [],
+        "assembled_fused_sub_query_text": "[Fused Sub-query] Which segment grew the fastest in FY2025?\nResolved Query: Which segment grew the fastest in FY2025?\nActive Sources: sql_structured\nFact Count: 1\nOverlap Signals: 0\nConflict Signals: 0\nAnswer-Ready Facts:\n[SQL] segment_name=Intelligent Cloud, yoy_revenue_growth_pct=12.6 | tables=financial_performance_by_segment"
+      },
+      {
+        "sub_query_id": "sq_2",
+        "original_sub_query": "What narrative driver was mentioned for the segment that grew the fastest in FY2025?",
+        "resolved_sub_query": "What narrative driver was mentioned for the Intelligent Cloud segment, which grew the fastest in FY2025?",
+        "active_sources": [
+          "sql_structured"
+        ],
+        "fact_count": 1,
+        "facts": [
+          {
+            "fact_id": "sql::sq_2::1",
+            "source_type": "sql_structured",
+            "sub_query_id": "sq_2",
+            "sub_query": "What narrative driver was mentioned for the segment that grew the fastest in FY2025?",
+            "resolved_sub_query": "What narrative driver was mentioned for the Intelligent Cloud segment, which grew the fastest in FY2025?",
+            "fact_type": "sql_row",
+            "summary": "segment_name=Intelligent Cloud, yoy_revenue_growth_pct=12.6, narrative_driver=AI infrastructure demand",
+            "entities": [
+              "Intelligent Cloud",
+              "AI infrastructure demand"
+            ],
+            "target_tables": [
+              "financial_performance_by_segment"
+            ],
+            "validated_sql": "SELECT segment_name, yoy_revenue_growth_pct, narrative_driver\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\nORDER BY yoy_revenue_growth_pct DESC\nLIMIT 1",
+            "row": {
+              "segment_name": "Intelligent Cloud",
+              "yoy_revenue_growth_pct": 12.6,
+              "narrative_driver": "AI infrastructure demand"
+            },
+            "columns": [
+              "segment_name",
+              "yoy_revenue_growth_pct",
+              "narrative_driver"
+            ],
+            "confidence": "high"
+          }
+        ],
+        "overlap_signals": [],
+        "conflict_signals": [],
+        "assembled_fused_sub_query_text": "[Fused Sub-query] What narrative driver was mentioned for the segment that grew the fastest in FY2025?\nResolved Query: What narrative driver was mentioned for the Intelligent Cloud segment, which grew the fastest in FY2025?\nActive Sources: sql_structured\nFact Count: 1\nOverlap Signals: 0\nConflict Signals: 0\nAnswer-Ready Facts:\n[SQL] segment_name=Intelligent Cloud, yoy_revenue_growth_pct=12.6, narrative_driver=AI infrastructure demand | tables=financial_performance_by_segment"
+      }
+    ],
+    "assembled_fused_evidence_text": "[Fused Sub-query] Which segment grew the fastest in FY2025?\nResolved Query: Which segment grew the fastest in FY2025?\nActive Sources: sql_structured\nFact Count: 1\nOverlap Signals: 0\nConflict Signals: 0\nAnswer-Ready Facts:\n[SQL] segment_name=Intelligent Cloud, yoy_revenue_growth_pct=12.6 | tables=financial_performance_by_segment\n\n---\n\n[Fused Sub-query] What narrative driver was mentioned for the segment that grew the fastest in FY2025?\nResolved Query: What narrative driver was mentioned for the Intelligent Cloud segment, which grew the fastest in FY2025?\nActive Sources: sql_structured\nFact Count: 1\nOverlap Signals: 0\nConflict Signals: 0\nAnswer-Ready Facts:\n[SQL] segment_name=Intelligent Cloud, yoy_revenue_growth_pct=12.6, narrative_driver=AI infrastructure demand | tables=financial_performance_by_segment"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-03-17T09:08:02.924683+00:00",
+  "document_id": "microsoft_fy2025_10k_summary",
+  "namespace": "microsoft_fy2025_fixed_corpus",
+  "index_name": "universal-knowledge-index",
+  "sparse_model": "pinecone-sparse-english-v0",
+  "child_record_count": 151,
+  "upserted_count": 151,
+  "dry_run": false,
+  "sample_vector": {
+    "id": "microsoft_fy2025_10k_summary_sec0_p1_par0_ch0_b65f2514ccd53ff2",
+    "dense_dim": 1536,
+    "sparse_nnz": 45,
+    "metadata": {
+      "child_index_in_parent": 0,
+      "content_type": "text",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "page": 1,
+      "page_end": 3,
+      "parent_id": "microsoft_fy2025_10k_summary_sec0_p1_par0",
+      "parent_index_on_page": 0,
+      "section_index": 0,
+      "section_title": "Document Overview",
+      "source_chunk_id": "microsoft_fy2025_10k_summary_sec0_p1_par0_ch0",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "text_hash": "b65f2514ccd53ff2"
+    }
+  }
+}

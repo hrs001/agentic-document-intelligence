@@ -1,0 +1,678 @@
+{
+  "generated_at": "2026-03-18T07:51:47.362665+00:00",
+  "result": {
+    "query": "Which segment includes GitHub?",
+    "database_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\artifacts\\experiments\\component5_kuzu_graph_build_live\\kuzu_db\\microsoft_fy2025_10k_summary.kuzu",
+    "bundle_summary": {
+      "matched_node_count": 5,
+      "matched_edge_count": 8
+    },
+    "matched_nodes": [
+      {
+        "node_id": "node_github",
+        "canonical_name": "GitHub",
+        "entity_type": "product_or_service",
+        "aliases": [],
+        "node_score": 6.2,
+        "mention_count": 3,
+        "evidence_snippets": [
+          "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+          "Azure supports GitHub, data services, and AI platforms",
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+        ],
+        "source_graph_input_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+          "microsoft_fy2025_10k_summary_sec2_p4_par2_graph_input",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+        ],
+        "source_parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1"
+        ],
+        "source_child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec2_p4_par2_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+        ],
+        "section_titles": [
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          }
+        ]
+      },
+      {
+        "node_id": "node_all_three_reporting_segments",
+        "canonical_name": "all three reporting segments",
+        "entity_type": "segment",
+        "aliases": [],
+        "node_score": 3.0,
+        "mention_count": 1,
+        "evidence_snippets": [
+          "all three reporting segments posted revenue and operating income growth"
+        ],
+        "source_graph_input_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input"
+        ],
+        "source_parent_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par1"
+        ],
+        "source_child_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2"
+        ],
+        "section_titles": [
+          "1. Executive summary"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 3,
+            "page_end": 4
+          }
+        ]
+      },
+      {
+        "node_id": "node_segment_structure",
+        "canonical_name": "segment structure",
+        "entity_type": "financial_or_business_concept",
+        "aliases": [],
+        "node_score": 3.0,
+        "mention_count": 1,
+        "evidence_snippets": [
+          "It preserves the filing\u2019s core content: business model, segment structure, strategy, management discussion and analysis, audited financial statements, major accounting notes, principal risks, cybersecurity governance, legal and tax exposures, and corporate governance disclosures."
+        ],
+        "source_graph_input_ids": [
+          "microsoft_fy2025_10k_summary_sec0_p1_par0_graph_input"
+        ],
+        "source_parent_ids": [
+          "microsoft_fy2025_10k_summary_sec0_p1_par0"
+        ],
+        "source_child_ids": [
+          "microsoft_fy2025_10k_summary_sec0_p1_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec0_p1_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec0_p1_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec0_p1_par0_ch3"
+        ],
+        "section_titles": [
+          "Document Overview"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 1,
+            "page_end": 3
+          }
+        ]
+      },
+      {
+        "node_id": "node_azure",
+        "canonical_name": "Azure",
+        "entity_type": "product_or_service",
+        "aliases": [],
+        "node_score": 0.9,
+        "mention_count": 10,
+        "evidence_snippets": [
+          "Azure and other cloud services grew 34%",
+          "especially Microsoft 365 Commercial and Azure",
+          "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+          "Azure supports GitHub, data services, and AI platforms",
+          "Azure is described as a comprehensive cloud platform spanning compute, networking, storage, data, AI, machine learning, cognitive services, IoT, and app services.",
+          "Azure within Intelligent Cloud",
+          "driven by Azure and other",
+          "Azure growth was fueled by demand across the portfolio rather than",
+          "Azure is capturing large-scale AI and infrastructure demand",
+          "Azure, Microsoft 365 Commercial cloud, Dynamics 365, Xbox content and services, and search monetization"
+        ],
+        "source_graph_input_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+          "microsoft_fy2025_10k_summary_sec2_p4_par2_graph_input",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_graph_input",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_graph_input",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_graph_input",
+          "microsoft_fy2025_10k_summary_sec13_p22_par0_graph_input"
+        ],
+        "source_parent_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par0",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0",
+          "microsoft_fy2025_10k_summary_sec13_p22_par0"
+        ],
+        "source_child_ids": [
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec2_p4_par2_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec10_p19_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec13_p22_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec13_p22_par0_ch1"
+        ],
+        "section_titles": [
+          "1. Executive summary",
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review",
+          "4. Fiscal 2025 financial performance",
+          "5. Segment results and operating drivers",
+          "10. Overall assessment",
+          "Appendix C. Growth drivers by business line"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 3,
+            "page_end": 4
+          },
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          },
+          {
+            "page_start": 8,
+            "page_end": 9
+          },
+          {
+            "page_start": 9,
+            "page_end": 11
+          },
+          {
+            "page_start": 19,
+            "page_end": 20
+          },
+          {
+            "page_start": 22,
+            "page_end": 24
+          }
+        ]
+      },
+      {
+        "node_id": "node_intelligent_cloud",
+        "canonical_name": "Intelligent Cloud",
+        "entity_type": "segment",
+        "aliases": [
+          "Intelligent Cloud (IC)"
+        ],
+        "node_score": 0.9,
+        "mention_count": 7,
+        "evidence_snippets": [
+          "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.",
+          "Azure within Intelligent Cloud",
+          "Intelligent Cloud was the fastest-growing segment",
+          "Intelligent Cloud was the fastest-growing segment in absolute dollars.",
+          "$25.7 billion to Intelligent Cloud",
+          "Intelligent Cloud is large enough to influence group economics materially"
+        ],
+        "source_graph_input_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_graph_input",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_graph_input",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_graph_input",
+          "microsoft_fy2025_10k_summary_sec17_p30_par0_graph_input"
+        ],
+        "source_parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1",
+          "microsoft_fy2025_10k_summary_sec17_p30_par0"
+        ],
+        "source_child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+          "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4",
+          "microsoft_fy2025_10k_summary_sec17_p30_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec17_p30_par0_ch1"
+        ],
+        "section_titles": [
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review",
+          "4. Fiscal 2025 financial performance",
+          "5. Segment results and operating drivers",
+          "7. Major accounting notes and financial statement",
+          "Appendix G. Segment economics at a glance"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          },
+          {
+            "page_start": 8,
+            "page_end": 9
+          },
+          {
+            "page_start": 9,
+            "page_end": 11
+          },
+          {
+            "page_start": 13,
+            "page_end": 15
+          },
+          {
+            "page_start": 30,
+            "page_end": 30
+          }
+        ]
+      }
+    ],
+    "matched_edges": [
+      {
+        "edge_id": "edge_47",
+        "source_node_id": "node_intelligent_cloud",
+        "source_canonical_name": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_node_id": "node_azure",
+        "target_canonical_name": "Azure",
+        "edge_score": 4.1,
+        "mention_count": 3,
+        "evidence_snippets": [
+          "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.",
+          "driven by Azure and other cloud services growth of 34%."
+        ],
+        "source_graph_input_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input"
+        ],
+        "source_parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1"
+        ],
+        "source_child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+        ],
+        "section_titles": [
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review",
+          "5. Segment results and operating drivers"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          },
+          {
+            "page_start": 9,
+            "page_end": 11
+          }
+        ]
+      },
+      {
+        "edge_id": "edge_48",
+        "source_node_id": "node_intelligent_cloud",
+        "source_canonical_name": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_node_id": "node_github",
+        "target_canonical_name": "GitHub",
+        "edge_score": 3.9,
+        "mention_count": 2,
+        "evidence_snippets": [
+          "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+        ],
+        "source_graph_input_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+        ],
+        "source_parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1"
+        ],
+        "source_child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+        ],
+        "section_titles": [
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          }
+        ]
+      },
+      {
+        "edge_id": "edge_49",
+        "source_node_id": "node_intelligent_cloud",
+        "source_canonical_name": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_node_id": "node_nuance_healthcare",
+        "target_canonical_name": "Nuance Healthcare",
+        "edge_score": 2.9,
+        "mention_count": 2,
+        "evidence_snippets": [
+          "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+        ],
+        "source_graph_input_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+        ],
+        "source_parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1"
+        ],
+        "source_child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+        ],
+        "section_titles": [
+          "2. Company overview, strategy, and operating model",
+          "3. Segment and product portfolio review"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          },
+          {
+            "page_start": 6,
+            "page_end": 8
+          }
+        ]
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "node_fy2025_form_10_k",
+        "source_canonical_name": "FY2025 Form 10-K",
+        "relation_type": "includes",
+        "target_node_id": "node_segment_structure",
+        "target_canonical_name": "segment structure",
+        "edge_score": 2.7,
+        "mention_count": 1,
+        "evidence_snippets": [
+          "It preserves the filing\u2019s core content: business model, segment structure, strategy, management discussion and analysis, audited financial statements, major accounting notes, principal risks, cybersecurity governance, legal and tax exposures, and corporate governance disclosures."
+        ],
+        "source_graph_input_ids": [
+          "microsoft_fy2025_10k_summary_sec0_p1_par0_graph_input"
+        ],
+        "source_parent_ids": [
+          "microsoft_fy2025_10k_summary_sec0_p1_par0"
+        ],
+        "source_child_ids": [
+          "microsoft_fy2025_10k_summary_sec0_p1_par0_ch0",
+          "microsoft_fy2025_10k_summary_sec0_p1_par0_ch1",
+          "microsoft_fy2025_10k_summary_sec0_p1_par0_ch2",
+          "microsoft_fy2025_10k_summary_sec0_p1_par0_ch3"
+        ],
+        "section_titles": [
+          "Document Overview"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 1,
+            "page_end": 3
+          }
+        ]
+      },
+      {
+        "edge_id": "edge_41",
+        "source_node_id": "node_microsoft",
+        "source_canonical_name": "Microsoft",
+        "relation_type": "includes",
+        "target_node_id": "node_intelligent_cloud",
+        "target_canonical_name": "Intelligent Cloud",
+        "edge_score": 2.7,
+        "mention_count": 1,
+        "evidence_snippets": [
+          "The three reportable segments are:"
+        ],
+        "source_graph_input_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input"
+        ],
+        "source_parent_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1"
+        ],
+        "source_child_ids": [
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3"
+        ],
+        "section_titles": [
+          "2. Company overview, strategy, and operating model"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 6
+          }
+        ]
+      },
+      {
+        "edge_id": "edge_82",
+        "source_node_id": "node_intelligent_cloud",
+        "source_canonical_name": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_node_id": "node_server_products",
+        "target_canonical_name": "server products",
+        "edge_score": 2.7,
+        "mention_count": 1,
+        "evidence_snippets": [
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+        ],
+        "source_graph_input_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+        ],
+        "source_parent_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1"
+        ],
+        "source_child_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+        ],
+        "section_titles": [
+          "3. Segment and product portfolio review"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 6,
+            "page_end": 8
+          }
+        ]
+      },
+      {
+        "edge_id": "edge_83",
+        "source_node_id": "node_intelligent_cloud",
+        "source_canonical_name": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_node_id": "node_developer_tooling",
+        "target_canonical_name": "developer tooling",
+        "edge_score": 2.7,
+        "mention_count": 1,
+        "evidence_snippets": [
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+        ],
+        "source_graph_input_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+        ],
+        "source_parent_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1"
+        ],
+        "source_child_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+        ],
+        "section_titles": [
+          "3. Segment and product portfolio review"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 6,
+            "page_end": 8
+          }
+        ]
+      },
+      {
+        "edge_id": "edge_84",
+        "source_node_id": "node_intelligent_cloud",
+        "source_canonical_name": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_node_id": "node_enterprise_support",
+        "target_canonical_name": "enterprise support",
+        "edge_score": 2.7,
+        "mention_count": 1,
+        "evidence_snippets": [
+          "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+        ],
+        "source_graph_input_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+        ],
+        "source_parent_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1"
+        ],
+        "source_child_ids": [
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+          "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+        ],
+        "section_titles": [
+          "3. Segment and product portfolio review"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 6,
+            "page_end": 8
+          }
+        ]
+      }
+    ],
+    "assembled_graph_evidence_text": "[Graph Evidence 1]\nRelation: Intelligent Cloud -> includes -> Azure\nPages: 4 - 6\nSections: 2. Company overview, strategy, and operating model, 3. Segment and product portfolio review, 5. Segment results and operating drivers\nEdge Score: 4.1\nEvidence Snippets:\nIntelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.\nIntelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.\ndriven by Azure and other cloud services growth of 34%.\n\n---\n\n[Graph Evidence 2]\nRelation: Intelligent Cloud -> includes -> GitHub\nPages: 4 - 6\nSections: 2. Company overview, strategy, and operating model, 3. Segment and product portfolio review\nEdge Score: 3.9\nEvidence Snippets:\nIntelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.\nIntelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.\n\n---\n\n[Graph Evidence 3]\nRelation: Intelligent Cloud -> includes -> Nuance Healthcare\nPages: 4 - 6\nSections: 2. Company overview, strategy, and operating model, 3. Segment and product portfolio review\nEdge Score: 2.9\nEvidence Snippets:\nIntelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.\nIntelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.\n\n---\n\n[Graph Evidence 4]\nRelation: FY2025 Form 10-K -> includes -> segment structure\nPages: 1 - 3\nSections: Document Overview\nEdge Score: 2.7\nEvidence Snippets:\nIt preserves the filing\u2019s core content: business model, segment structure, strategy, management discussion and analysis, audited financial statements, major accounting notes, principal risks, cybersecurity governance, legal and tax exposures, and corporate governance disclosures.\n\n---\n\n[Graph Evidence 5]\nRelation: Microsoft -> includes -> Intelligent Cloud\nPages: 4 - 6\nSections: 2. Company overview, strategy, and operating model\nEdge Score: 2.7\nEvidence Snippets:\nThe three reportable segments are:\n\n---\n\n[Graph Evidence 6]\nRelation: Intelligent Cloud -> includes -> server products\nPages: 6 - 8\nSections: 3. Segment and product portfolio review\nEdge Score: 2.7\nEvidence Snippets:\nIntelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.\n\n---\n\n[Graph Evidence 7]\nRelation: Intelligent Cloud -> includes -> developer tooling\nPages: 6 - 8\nSections: 3. Segment and product portfolio review\nEdge Score: 2.7\nEvidence Snippets:\nIntelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.\n\n---\n\n[Graph Evidence 8]\nRelation: Intelligent Cloud -> includes -> enterprise support\nPages: 6 - 8\nSections: 3. Segment and product portfolio review\nEdge Score: 2.7\nEvidence Snippets:\nIntelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+  }
+}

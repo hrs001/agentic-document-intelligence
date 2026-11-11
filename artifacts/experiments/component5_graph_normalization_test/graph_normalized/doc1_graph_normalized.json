@@ -1,0 +1,9 @@
+{
+  "document_id": "doc1",
+  "raw_entity_count": 2,
+  "raw_relationship_count": 1,
+  "normalized_node_count": 2,
+  "normalized_edge_count": 1,
+  "nodes": [],
+  "edges": []
+}

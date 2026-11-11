@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-03-18T11:02:32.064274+00:00",
+  "result": {
+    "original_query": "x",
+    "policy": {},
+    "routing_summary": {},
+    "execution_summary": {
+      "sub_query_count": 0,
+      "source_usage": {}
+    },
+    "sub_query_results": []
+  }
+}

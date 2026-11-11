@@ -1,0 +1,6174 @@
+{
+  "document_id": "microsoft_fy2025_10k_summary",
+  "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+  "source_relative_path": "corpus/sources/Microsoft_FY2025_10K_Summary.pdf",
+  "extraction_method": "pymupdf_layout_blocks_and_tables_v1",
+  "generated_at": "2026-03-16T11:25:52.912914+00:00",
+  "page_count": 30,
+  "pages": [
+    {
+      "page_number": 1,
+      "items": [
+        {
+          "item_id": "page1_text1",
+          "type": "text",
+          "bbox": [
+            143.8000030517578,
+            54.012977600097656,
+            468.2839660644531,
+            85.33897399902344
+          ],
+          "text": "Microsoft FY2025 Form 10-K"
+        },
+        {
+          "item_id": "page1_text2",
+          "type": "text",
+          "bbox": [
+            139.89999389648438,
+            99.1130142211914,
+            472.13494873046875,
+            130.4390106201172
+          ],
+          "text": "Condensed Summary Report"
+        },
+        {
+          "item_id": "page1_text3",
+          "type": "text",
+          "bbox": [
+            100.25,
+            144.22198486328125,
+            511.69427490234375,
+            160.5659942626953
+          ],
+          "text": "Prepared from the annual report for the fiscal year ended June 30, 2025."
+        },
+        {
+          "item_id": "page1_text4",
+          "type": "text",
+          "bbox": [
+            195.1999969482422,
+            168.52197265625,
+            416.8641357421875,
+            184.86598205566406
+          ],
+          "text": "Target length: approximately 30 pages."
+        },
+        {
+          "item_id": "page1_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            212.8254852294922,
+            553.4261474609375,
+            227.12649536132812
+          ],
+          "text": "This report condenses Microsoft’s 137-page FY2025 Form 10-K into a decision-oriented narrative. It"
+        },
+        {
+          "item_id": "page1_text6",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            228.8254852294922,
+            524.3411254882812,
+            243.12649536132812
+          ],
+          "text": "preserves the filing’s core content: business model, segment structure, strategy, management"
+        },
+        {
+          "item_id": "page1_text7",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            244.8254852294922,
+            527.9844970703125,
+            259.1264953613281
+          ],
+          "text": "discussion and analysis, audited financial statements, major accounting notes, principal risks,"
+        },
+        {
+          "item_id": "page1_text8",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            260.82550048828125,
+            508.24456787109375,
+            275.1264953613281
+          ],
+          "text": "cybersecurity governance, legal and tax exposures, and corporate governance disclosures."
+        },
+        {
+          "item_id": "page1_text9",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            280.8290100097656,
+            516.5739135742188,
+            293.0870056152344
+          ],
+          "text": "Source basis: the user-provided Microsoft FY2025 Form 10-K PDF, cross-checked against Microsoft Investor"
+        },
+        {
+          "item_id": "page1_text10",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            294.52899169921875,
+            275.5719299316406,
+            306.7869873046875
+          ],
+          "text": "Relations and the SEC-hosted filing for consistency."
+        },
+        {
+          "item_id": "page1_text11",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            310.22900390625,
+            556.3900146484375,
+            322.48699951171875
+          ],
+          "text": "Important note: this is a summary, not a substitute for the original filing. Figures are generally shown in U.S. dollars"
+        },
+        {
+          "item_id": "page1_text12",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            323.9289855957031,
+            312.3729248046875,
+            336.1869812011719
+          ],
+          "text": "and many tables are in millions unless otherwise indicated."
+        }
+      ],
+      "text_block_count": 12,
+      "table_count": 0
+    },
+    {
+      "page_number": 2,
+      "items": [
+        {
+          "item_id": "page2_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            129.364013671875,
+            75.78797912597656
+          ],
+          "text": "Contents"
+        },
+        {
+          "item_id": "page2_text2",
+          "type": "text",
+          "bbox": [
+            68.5,
+            84.42552185058594,
+            179.19097900390625,
+            98.72652435302734
+          ],
+          "text": "1. Executive summary"
+        },
+        {
+          "item_id": "page2_text3",
+          "type": "text",
+          "bbox": [
+            68.5,
+            104.42552185058594,
+            331.7874755859375,
+            118.72652435302734
+          ],
+          "text": "2. Company overview, strategy, and operating model"
+        },
+        {
+          "item_id": "page2_text4",
+          "type": "text",
+          "bbox": [
+            68.5,
+            124.42552185058594,
+            270.4674987792969,
+            138.72653198242188
+          ],
+          "text": "3. Segment and product portfolio review"
+        },
+        {
+          "item_id": "page2_text5",
+          "type": "text",
+          "bbox": [
+            68.5,
+            144.42552185058594,
+            249.24700927734375,
+            158.72653198242188
+          ],
+          "text": "4. Fiscal 2025 financial performance"
+        },
+        {
+          "item_id": "page2_text6",
+          "type": "text",
+          "bbox": [
+            68.5,
+            164.42552185058594,
+            270.8560485839844,
+            178.72653198242188
+          ],
+          "text": "5. Segment results and operating drivers"
+        },
+        {
+          "item_id": "page2_text7",
+          "type": "text",
+          "bbox": [
+            68.5,
+            184.42552185058594,
+            361.7230529785156,
+            198.72653198242188
+          ],
+          "text": "6. Balance sheet, liquidity, cash flow, and capital allocation"
+        },
+        {
+          "item_id": "page2_text8",
+          "type": "text",
+          "bbox": [
+            68.5,
+            204.42552185058594,
+            382.83856201171875,
+            218.72653198242188
+          ],
+          "text": "7. Major accounting notes and financial statement implications"
+        },
+        {
+          "item_id": "page2_text9",
+          "type": "text",
+          "bbox": [
+            68.5,
+            224.42552185058594,
+            271.4544982910156,
+            238.72653198242188
+          ],
+          "text": "8. Risk factors and cybersecurity posture"
+        },
+        {
+          "item_id": "page2_text10",
+          "type": "text",
+          "bbox": [
+            68.5,
+            244.42552185058594,
+            316.67803955078125,
+            258.7265319824219
+          ],
+          "text": "9. Operations, people, properties, and governance"
+        },
+        {
+          "item_id": "page2_text11",
+          "type": "text",
+          "bbox": [
+            68.5,
+            264.425537109375,
+            181.53253173828125,
+            278.7265319824219
+          ],
+          "text": "10. Overall assessment"
+        },
+        {
+          "item_id": "page2_text12",
+          "type": "text",
+          "bbox": [
+            68.5,
+            284.4255065917969,
+            230.55706787109375,
+            298.72650146484375
+          ],
+          "text": "Appendix A. Key financial tables"
+        },
+        {
+          "item_id": "page2_text13",
+          "type": "text",
+          "bbox": [
+            68.5,
+            304.4255065917969,
+            360.6415710449219,
+            318.72650146484375
+          ],
+          "text": "Appendix B. Executive officers and selected reference data"
+        }
+      ],
+      "text_block_count": 13,
+      "table_count": 0
+    },
+    {
+      "page_number": 3,
+      "items": [
+        {
+          "item_id": "page3_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            236.74002075195312,
+            75.78797912597656
+          ],
+          "text": "1. Executive summary"
+        },
+        {
+          "item_id": "page3_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.42552185058594,
+            544.3016357421875,
+            98.72652435302734
+          ],
+          "text": "Microsoft entered fiscal 2025 with the scale of a mature software platform company and ended it"
+        },
+        {
+          "item_id": "page3_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            100.42552185058594,
+            523.385498046875,
+            114.72652435302734
+          ],
+          "text": "looking increasingly like the infrastructure and application layer for enterprise AI. The filing"
+        },
+        {
+          "item_id": "page3_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            116.42552185058594,
+            537.3715209960938,
+            130.72653198242188
+          ],
+          "text": "shows a business that is simultaneously growing quickly, widening strategic control points, and"
+        },
+        {
+          "item_id": "page3_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            132.42552185058594,
+            521.83154296875,
+            146.72653198242188
+          ],
+          "text": "accepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout."
+        },
+        {
+          "item_id": "page3_text6",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            152.42552185058594,
+            543.2410278320312,
+            166.72653198242188
+          ],
+          "text": "The year’s headline outcomes were strong. Revenue rose 15% to $281.7 billion, operating income"
+        },
+        {
+          "item_id": "page3_text7",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            168.42552185058594,
+            529.7591552734375,
+            182.72653198242188
+          ],
+          "text": "rose 17% to $128.5 billion, and net income rose 16% to $101.8 billion. Microsoft Cloud revenue"
+        },
+        {
+          "item_id": "page3_text8",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            184.42552185058594,
+            528.5096435546875,
+            198.72653198242188
+          ],
+          "text": "reached $168.9 billion, up 23%, while Azure and other cloud services grew 34%. The company"
+        },
+        {
+          "item_id": "page3_text9",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            200.42552185058594,
+            555.97998046875,
+            214.72653198242188
+          ],
+          "text": "continued to scale both enterprise productivity and cloud infrastructure while also benefiting from"
+        },
+        {
+          "item_id": "page3_text10",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            216.42552185058594,
+            297.1734924316406,
+            230.72653198242188
+          ],
+          "text": "the integration of Activision Blizzard in gaming."
+        },
+        {
+          "item_id": "page3_text11",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            236.42552185058594,
+            527.396484375,
+            250.72653198242188
+          ],
+          "text": "The filing also shows the cost of that growth. Capital expenditures surged, lease commitments"
+        },
+        {
+          "item_id": "page3_text12",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            252.42552185058594,
+            545.58251953125,
+            266.7265319824219
+          ],
+          "text": "expanded materially, and management explicitly acknowledged margin pressure from scaling AI"
+        },
+        {
+          "item_id": "page3_text13",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            268.425537109375,
+            542.83154296875,
+            282.7265319824219
+          ],
+          "text": "infrastructure. In other words, Microsoft is converting a large portion of current earnings power"
+        },
+        {
+          "item_id": "page3_text14",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            284.4255065917969,
+            417.0939636230469,
+            298.72650146484375
+          ],
+          "text": "into datacenters, servers, GPUs, and long-duration commercial capacity."
+        },
+        {
+          "item_id": "page3_text15",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            304.3909912109375,
+            249.91403198242188,
+            319.37298583984375
+          ],
+          "text": "Several themes dominate the 10-K:"
+        },
+        {
+          "item_id": "page3_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            323.22552490234375,
+            551.3815307617188,
+            337.72601318359375
+          ],
+          "text": "\nAI is now embedded across Microsoft’s entire stack: infrastructure, developer tooling, business"
+        },
+        {
+          "item_id": "page3_text17",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            339.22552490234375,
+            312.15997314453125,
+            353.5265197753906
+          ],
+          "text": "applications, productivity, search, and security."
+        },
+        {
+          "item_id": "page3_text18",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            355.22552490234375,
+            529.2159423828125,
+            369.72601318359375
+          ],
+          "text": "\nCommercial recurring revenue remains the core earnings engine, especially Microsoft 365"
+        },
+        {
+          "item_id": "page3_text19",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            371.22552490234375,
+            193.41549682617188,
+            385.5265197753906
+          ],
+          "text": "Commercial and Azure."
+        },
+        {
+          "item_id": "page3_text20",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            387.22552490234375,
+            525.2050170898438,
+            401.72601318359375
+          ],
+          "text": "\nSegment performance was broad-based: all three reporting segments posted revenue and"
+        },
+        {
+          "item_id": "page3_text21",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            403.22552490234375,
+            205.10202026367188,
+            417.5265197753906
+          ],
+          "text": "operating income growth."
+        },
+        {
+          "item_id": "page3_text22",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            419.22552490234375,
+            535.7258911132812,
+            433.72601318359375
+          ],
+          "text": "\nCapital intensity increased sharply as Microsoft expanded datacenters and finance leases to"
+        },
+        {
+          "item_id": "page3_text23",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            435.22552490234375,
+            175.08253479003906,
+            449.5265197753906
+          ],
+          "text": "support AI demand."
+        },
+        {
+          "item_id": "page3_text24",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            451.22552490234375,
+            556.8800048828125,
+            465.72601318359375
+          ],
+          "text": "\nTax and legal matters remain important watch items, especially the IRS transfer-pricing dispute"
+        },
+        {
+          "item_id": "page3_text25",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            467.22552490234375,
+            269.3934631347656,
+            481.5265197753906
+          ],
+          "text": "and data/privacy regulation in Europe."
+        },
+        {
+          "item_id": "page3_text26",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            483.22552490234375,
+            548.9664916992188,
+            497.72601318359375
+          ],
+          "text": "\nCybersecurity remains both a strategic differentiator and a material source of operational and"
+        },
+        {
+          "item_id": "page3_text27",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            499.22552490234375,
+            162.51400756835938,
+            513.5264892578125
+          ],
+          "text": "reputational risk."
+        },
+        {
+          "item_id": "page3_text28",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            519.2100219726562,
+            532.6001586914062,
+            532.8300170898438
+          ],
+          "text": "In strategic terms, Microsoft’s FY2025 filing reads as the report of a company trying to lead the next"
+        },
+        {
+          "item_id": "page3_text29",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            534.4600219726562,
+            532.2404174804688,
+            548.0800170898438
+          ],
+          "text": "platform cycle rather than defend the previous one. It is using its installed base in Office, Windows,"
+        },
+        {
+          "item_id": "page3_text30",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            549.7100219726562,
+            489.2401428222656,
+            563.3300170898438
+          ],
+          "text": "developer tools, enterprise identity, and cloud to distribute AI functionality broadly, while"
+        },
+        {
+          "item_id": "page3_text31",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            564.9600219726562,
+            433.88018798828125,
+            578.5800170898438
+          ],
+          "text": "simultaneously scaling the infrastructure required to support that distribution."
+        }
+      ],
+      "text_block_count": 31,
+      "table_count": 0
+    },
+    {
+      "page_number": 4,
+      "items": [
+        {
+          "item_id": "page4_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            483.0760498046875,
+            75.78797912597656
+          ],
+          "text": "2. Company overview, strategy, and operating model"
+        },
+        {
+          "item_id": "page4_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.42552185058594,
+            550.8640747070312,
+            98.72652435302734
+          ],
+          "text": "Microsoft describes itself as a technology company committed to making digital technology and AI"
+        },
+        {
+          "item_id": "page4_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            100.42552185058594,
+            517.6420288085938,
+            114.72652435302734
+          ],
+          "text": "available broadly and responsibly. Its mission remains to empower every person and every"
+        },
+        {
+          "item_id": "page4_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            116.42552185058594,
+            544.1860961914062,
+            130.72653198242188
+          ],
+          "text": "organization on the planet to achieve more. The business spans software, cloud services, devices,"
+        },
+        {
+          "item_id": "page4_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            132.42552185058594,
+            533.1925048828125,
+            146.72653198242188
+          ],
+          "text": "online advertising, gaming, and professional networks, but the filing increasingly frames these"
+        },
+        {
+          "item_id": "page4_text6",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            148.42552185058594,
+            438.05206298828125,
+            162.72653198242188
+          ],
+          "text": "offerings as connected layers of one stack rather than isolated product lines."
+        },
+        {
+          "item_id": "page4_text7",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            170.3874969482422,
+            518.0498046875,
+            187.41250610351562
+          ],
+          "text": "Management highlights three ambitions that organize research, product"
+        },
+        {
+          "item_id": "page4_text8",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            189.43748474121094,
+            325.9499816894531,
+            206.46249389648438
+          ],
+          "text": "development, and go-to-market execution:"
+        },
+        {
+          "item_id": "page4_text9",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            212.52549743652344,
+            305.9125671386719,
+            227.0260009765625
+          ],
+          "text": "\nReinvent productivity and business processes."
+        },
+        {
+          "item_id": "page4_text10",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            228.52549743652344,
+            356.1025390625,
+            243.0260009765625
+          ],
+          "text": "\nBuild the intelligent cloud and intelligent edge platform."
+        },
+        {
+          "item_id": "page4_text11",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            244.52549743652344,
+            242.66050720214844,
+            259.0260009765625
+          ],
+          "text": "\nCreate more personal computing."
+        },
+        {
+          "item_id": "page4_text12",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            264.5255126953125,
+            522.0309448242188,
+            278.8265075683594
+          ],
+          "text": "The company’s near- to medium-term opportunity is described in explicitly AI-centric terms."
+        },
+        {
+          "item_id": "page4_text13",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            280.5255126953125,
+            552.7750854492188,
+            294.8265075683594
+          ],
+          "text": "Microsoft is investing to help customers maximize digital spend through the Microsoft Cloud while"
+        },
+        {
+          "item_id": "page4_text14",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            296.5255126953125,
+            528.5410766601562,
+            310.8265075683594
+          ],
+          "text": "leading the AI platform wave across solution areas. Key emphasis areas include Microsoft 365"
+        },
+        {
+          "item_id": "page4_text15",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            312.5255126953125,
+            532.2999267578125,
+            326.8265075683594
+          ],
+          "text": "Copilot and agents, cloud-based AI services, workplace modernization, developer productivity,"
+        },
+        {
+          "item_id": "page4_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            328.5255126953125,
+            451.407958984375,
+            342.8265075683594
+          ],
+          "text": "cybersecurity, gaming expansion, and Windows-linked consumer engagement."
+        },
+        {
+          "item_id": "page4_text17",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            348.5255126953125,
+            526.525146484375,
+            362.8265075683594
+          ],
+          "text": "The filing also emphasizes sustainability commitments announced in 2020: to become carbon"
+        },
+        {
+          "item_id": "page4_text18",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            364.5255126953125,
+            545.6036376953125,
+            378.8265075683594
+          ],
+          "text": "negative, water positive, and zero waste by 2030. Microsoft notes progress but also acknowledges"
+        },
+        {
+          "item_id": "page4_text19",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            380.5255126953125,
+            556.0799560546875,
+            394.8265075683594
+          ],
+          "text": "that the operating environment and the technical challenge have both evolved since the goals were"
+        },
+        {
+          "item_id": "page4_text20",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            396.5255126953125,
+            116.44749450683594,
+            410.8265075683594
+          ],
+          "text": "announced."
+        },
+        {
+          "item_id": "page4_text21",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            418.4875183105469,
+            183.91250610351562,
+            435.51251220703125
+          ],
+          "text": "Operating segments"
+        },
+        {
+          "item_id": "page4_text22",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            441.57550048828125,
+            535.386962890625,
+            455.8764953613281
+          ],
+          "text": "Beginning in fiscal 2025, Microsoft changed its segment composition to align external reporting"
+        },
+        {
+          "item_id": "page4_text23",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            457.57550048828125,
+            552.1555786132812,
+            471.8764953613281
+          ],
+          "text": "with how management runs the company internally. Most notably, the commercial components of"
+        },
+        {
+          "item_id": "page4_text24",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            473.57550048828125,
+            548.6695556640625,
+            487.8764953613281
+          ],
+          "text": "Microsoft 365 were brought together in Productivity and Business Processes. The three reportable"
+        },
+        {
+          "item_id": "page4_text25",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            489.57550048828125,
+            126.61151123046875,
+            503.8764953613281
+          ],
+          "text": "segments are:"
+        },
+        {
+          "item_id": "page4_text26",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            509.57550048828125,
+            555.5799560546875,
+            524.0759887695312
+          ],
+          "text": "\nProductivity and Business Processes (PBP): Microsoft 365 Commercial, Microsoft 365 Consumer,"
+        },
+        {
+          "item_id": "page4_text27",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            525.5755004882812,
+            200.3980255126953,
+            539.87646484375
+          ],
+          "text": "LinkedIn, and Dynamics."
+        },
+        {
+          "item_id": "page4_text28",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            541.5755004882812,
+            511.1875305175781,
+            556.0759887695312
+          ],
+          "text": "\nIntelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance"
+        },
+        {
+          "item_id": "page4_text29",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            557.5755004882812,
+            296.5254821777344,
+            571.87646484375
+          ],
+          "text": "Healthcare, and enterprise/partner services."
+        },
+        {
+          "item_id": "page4_text30",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            573.5755004882812,
+            513.7389526367188,
+            588.0759887695312
+          ],
+          "text": "\nMore Personal Computing (MPC): Windows and Devices, Gaming, and Search and news"
+        },
+        {
+          "item_id": "page4_text31",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            589.5755004882812,
+            134.84649658203125,
+            603.87646484375
+          ],
+          "text": "advertising."
+        },
+        {
+          "item_id": "page4_text32",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            611.5375366210938,
+            195.37498474121094,
+            628.5625
+          ],
+          "text": "Why the model works"
+        },
+        {
+          "item_id": "page4_text33",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            634.62548828125,
+            553.8775024414062,
+            648.9264526367188
+          ],
+          "text": "The filing repeatedly underscores the economic logic of Microsoft’s cloud model. Management says"
+        },
+        {
+          "item_id": "page4_text34",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            650.62548828125,
+            545.9815673828125,
+            664.9264526367188
+          ],
+          "text": "the Microsoft Cloud benefits from three economies of scale: lower per-unit datacenter cost, better"
+        },
+        {
+          "item_id": "page4_text35",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            666.62548828125,
+            525.0970458984375,
+            680.9264526367188
+          ],
+          "text": "utilization through aggregated customer demand, and lower maintenance labor cost through"
+        },
+        {
+          "item_id": "page4_text36",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            682.62548828125,
+            548.3126220703125,
+            696.9264526367188
+          ],
+          "text": "multi-tenancy. In practice, this allows Microsoft to cross-sell infrastructure, productivity, security,"
+        },
+        {
+          "item_id": "page4_text37",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            698.62548828125,
+            438.33563232421875,
+            712.9264526367188
+          ],
+          "text": "developer services, and data/AI offerings into the same commercial account."
+        }
+      ],
+      "text_block_count": 37,
+      "table_count": 0
+    },
+    {
+      "page_number": 5,
+      "items": [
+        {
+          "item_id": "page5_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            54.0255012512207,
+            551.7460327148438,
+            68.32649993896484
+          ],
+          "text": "This operating model creates unusually strong strategic linkages. Windows supports Microsoft 365"
+        },
+        {
+          "item_id": "page5_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            70.02549743652344,
+            524.9710693359375,
+            84.32649993896484
+          ],
+          "text": "and search distribution; Azure supports GitHub, data services, and AI platforms; identity and"
+        },
+        {
+          "item_id": "page5_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            86.02549743652344,
+            551.0845336914062,
+            100.32649993896484
+          ],
+          "text": "security support cloud trust; and productivity apps provide a natural channel for AI monetization."
+        },
+        {
+          "item_id": "page5_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            102.02549743652344,
+            541.4772338867188,
+            116.32649993896484
+          ],
+          "text": "One of the key messages of the filing is that the stack is not just broad—it is mutually reinforcing."
+        }
+      ],
+      "text_block_count": 4,
+      "table_count": 0
+    },
+    {
+      "page_number": 6,
+      "items": [
+        {
+          "item_id": "page6_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            384.5801086425781,
+            75.78797912597656
+          ],
+          "text": "3. Segment and product portfolio review"
+        },
+        {
+          "item_id": "page6_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.42552185058594,
+            553.1004638671875,
+            98.72652435302734
+          ],
+          "text": "This section summarizes what each segment contains, how management describes growth drivers,"
+        },
+        {
+          "item_id": "page6_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            100.42552185058594,
+            286.04351806640625,
+            114.72652435302734
+          ],
+          "text": "and where the major competitive tensions sit."
+        },
+        {
+          "item_id": "page6_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            122.38749694824219,
+            286.4000549316406,
+            139.41250610351562
+          ],
+          "text": "Productivity and Business Processes"
+        },
+        {
+          "item_id": "page6_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            145.4755096435547,
+            532.4051513671875,
+            159.77651977539062
+          ],
+          "text": "PBP houses Microsoft’s productivity, communication, collaboration, business applications, and"
+        },
+        {
+          "item_id": "page6_text6",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            161.4755096435547,
+            516.1930541992188,
+            175.77651977539062
+          ],
+          "text": "professional network assets. The core economic engine is Microsoft 365 Commercial, which"
+        },
+        {
+          "item_id": "page6_text7",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            177.4755096435547,
+            527.14453125,
+            191.77651977539062
+          ],
+          "text": "combines Office, Windows, Enterprise Mobility + Security, and related cloud services. Growth"
+        },
+        {
+          "item_id": "page6_text8",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            193.4755096435547,
+            532.2579345703125,
+            207.77651977539062
+          ],
+          "text": "depends on seat expansion, higher revenue per user, deeper penetration of small and medium"
+        },
+        {
+          "item_id": "page6_text9",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            209.4755096435547,
+            543.4194946289062,
+            223.77651977539062
+          ],
+          "text": "businesses and frontline workers, and monetization of AI-enabled scenarios through Copilot and"
+        },
+        {
+          "item_id": "page6_text10",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            225.4755096435547,
+            122.28550720214844,
+            239.77651977539062
+          ],
+          "text": "related tools."
+        },
+        {
+          "item_id": "page6_text11",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            245.4755096435547,
+            518.902099609375,
+            259.7765197753906
+          ],
+          "text": "On the consumer side, Microsoft 365 Consumer remains a subscription-led productivity and"
+        },
+        {
+          "item_id": "page6_text12",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            261.47552490234375,
+            530.2000122070312,
+            275.7765197753906
+          ],
+          "text": "storage offering supported by products such as Outlook.com and OneDrive. LinkedIn provides"
+        },
+        {
+          "item_id": "page6_text13",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            277.47552490234375,
+            539.1880493164062,
+            291.7765197753906
+          ],
+          "text": "monetized professional network products across talent, marketing, premium subscriptions, and"
+        },
+        {
+          "item_id": "page6_text14",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            293.47552490234375,
+            536.7310180664062,
+            307.7765197753906
+          ],
+          "text": "sales solutions. Dynamics contributes ERP, CRM, Power Apps, and Power Automate capabilities,"
+        },
+        {
+          "item_id": "page6_text15",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            309.47552490234375,
+            540.2696533203125,
+            323.7765197753906
+          ],
+          "text": "making this segment broader than classic office software and more comparable to an integrated"
+        },
+        {
+          "item_id": "page6_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            325.47552490234375,
+            133.28952026367188,
+            339.7765197753906
+          ],
+          "text": "work platform."
+        },
+        {
+          "item_id": "page6_text17",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            345.47552490234375,
+            522.177978515625,
+            359.7765197753906
+          ],
+          "text": "Competition in this segment comes from productivity suites, collaboration platforms, AI-first"
+        },
+        {
+          "item_id": "page6_text18",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            361.47552490234375,
+            547.262451171875,
+            375.7765197753906
+          ],
+          "text": "workflow tools, business applications vendors, and niche security or identity vendors. Microsoft’s"
+        },
+        {
+          "item_id": "page6_text19",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            377.47552490234375,
+            519.24853515625,
+            391.7765197753906
+          ],
+          "text": "defense is integration, enterprise trust, cross-platform presence, and installed-base leverage."
+        },
+        {
+          "item_id": "page6_text20",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            399.4375,
+            164.0124969482422,
+            416.4624938964844
+          ],
+          "text": "Intelligent Cloud"
+        },
+        {
+          "item_id": "page6_text21",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            422.5255126953125,
+            543.6295776367188,
+            436.8265075683594
+          ],
+          "text": "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare,"
+        },
+        {
+          "item_id": "page6_text22",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            438.5255126953125,
+            492.9461669921875,
+            452.8265075683594
+          ],
+          "text": "enterprise support, and partner services. This is the segment most visibly tied to the AI"
+        },
+        {
+          "item_id": "page6_text23",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            454.5255126953125,
+            533.591552734375,
+            468.8265075683594
+          ],
+          "text": "infrastructure cycle. Azure is described as a comprehensive cloud platform spanning compute,"
+        },
+        {
+          "item_id": "page6_text24",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            470.5255126953125,
+            556.0799560546875,
+            484.8265075683594
+          ],
+          "text": "networking, storage, data, AI, machine learning, cognitive services, IoT, and app services. Microsoft"
+        },
+        {
+          "item_id": "page6_text25",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            486.5255126953125,
+            525.748046875,
+            500.8265075683594
+          ],
+          "text": "also emphasizes Azure AI Foundry as a unified platform to design, customize, and manage AI"
+        },
+        {
+          "item_id": "page6_text26",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            502.5255126953125,
+            178.31350708007812,
+            516.8264770507812
+          ],
+          "text": "applications and agents."
+        },
+        {
+          "item_id": "page6_text27",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            522.5255126953125,
+            518.9755859375,
+            536.8264770507812
+          ],
+          "text": "GitHub deepens developer ecosystem control, while Nuance adds healthcare AI capabilities."
+        },
+        {
+          "item_id": "page6_text28",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            538.5255126953125,
+            554.003662109375,
+            552.8264770507812
+          ],
+          "text": "Traditional server products still matter, but the filing makes clear that customer shift toward cloud"
+        },
+        {
+          "item_id": "page6_text29",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            554.5255126953125,
+            550.9585571289062,
+            568.8264770507812
+          ],
+          "text": "offerings continues to pressure on-premises transactional revenue. Competitive threats here come"
+        },
+        {
+          "item_id": "page6_text30",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            570.5255126953125,
+            518.9125366210938,
+            584.8264770507812
+          ],
+          "text": "from hyperscale cloud providers, open-source alternatives, and specialist cybersecurity and"
+        },
+        {
+          "item_id": "page6_text31",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            586.5255126953125,
+            148.35699462890625,
+            600.8264770507812
+          ],
+          "text": "analytics vendors."
+        },
+        {
+          "item_id": "page6_text32",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            608.4874877929688,
+            222.49996948242188,
+            625.512451171875
+          ],
+          "text": "More Personal Computing"
+        },
+        {
+          "item_id": "page6_text33",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            631.5755004882812,
+            512.3499755859375,
+            645.87646484375
+          ],
+          "text": "MPC brings together Windows, Surface and accessories, Xbox hardware, Xbox content and"
+        },
+        {
+          "item_id": "page6_text34",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            647.5755004882812,
+            539.513427734375,
+            661.87646484375
+          ],
+          "text": "services, and Search and news advertising through Bing, Edge, Copilot, and affiliated properties."
+        },
+        {
+          "item_id": "page6_text35",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            663.5755004882812,
+            527.55419921875,
+            677.87646484375
+          ],
+          "text": "This segment is more cyclical and consumer-exposed than the other two, but still strategically"
+        },
+        {
+          "item_id": "page6_text36",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            679.5755004882812,
+            354.6085205078125,
+            693.87646484375
+          ],
+          "text": "important because it controls major distribution endpoints."
+        },
+        {
+          "item_id": "page6_text37",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            699.5755004882812,
+            529.1394653320312,
+            713.87646484375
+          ],
+          "text": "Windows OEM revenue depends on PC market conditions, device mix, AI PCs, OEM inventory,"
+        },
+        {
+          "item_id": "page6_text38",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            715.5755004882812,
+            543.5560302734375,
+            729.87646484375
+          ],
+          "text": "pricing, and supply-chain availability. Gaming is now a scaled content-and-subscription business"
+        }
+      ],
+      "text_block_count": 38,
+      "table_count": 0
+    },
+    {
+      "page_number": 7,
+      "items": [
+        {
+          "item_id": "page7_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            54.0255012512207,
+            550.6749267578125,
+            68.32649993896484
+          ],
+          "text": "supported by first-party studios, Game Pass, cloud gaming, and the Activision Blizzard acquisition."
+        },
+        {
+          "item_id": "page7_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            70.02549743652344,
+            554.6300048828125,
+            84.32649993896484
+          ],
+          "text": "Search and news advertising is positioned around user acquisition and engagement via Bing, Edge,"
+        },
+        {
+          "item_id": "page7_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            86.02549743652344,
+            513.8726196289062,
+            100.32649993896484
+          ],
+          "text": "and Copilot. Competition remains intense, particularly from alternative device ecosystems,"
+        },
+        {
+          "item_id": "page7_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            102.02549743652344,
+            439.5536193847656,
+            116.32649993896484
+          ],
+          "text": "entertainment platforms, console rivals, and major search and ad platforms."
+        }
+      ],
+      "text_block_count": 4,
+      "table_count": 0
+    },
+    {
+      "page_number": 8,
+      "items": [
+        {
+          "item_id": "page8_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            348.3560791015625,
+            75.78797912597656
+          ],
+          "text": "4. Fiscal 2025 financial performance"
+        },
+        {
+          "item_id": "page8_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.42552185058594,
+            519.8679809570312,
+            98.72652435302734
+          ],
+          "text": "Fiscal 2025 was a year of strong top-line and operating growth, led by cloud and AI demand,"
+        },
+        {
+          "item_id": "page8_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            100.42552185058594,
+            551.0950927734375,
+            114.72652435302734
+          ],
+          "text": "continued Microsoft 365 momentum, strong Azure consumption, improved search economics, and"
+        },
+        {
+          "item_id": "page8_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            116.42552185058594,
+            359.7115173339844,
+            130.72653198242188
+          ],
+          "text": "incremental contribution from gaming content and services."
+        },
+        {
+          "item_id": "page8_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            138.3874969482422,
+            303.3375244140625,
+            155.41250610351562
+          ],
+          "text": "Table 1. Consolidated summary results"
+        },
+        {
+          "item_id": "page8_table0",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            161.625,
+            554.5250244140625,
+            270.7750244140625
+          ],
+          "row_count": 6,
+          "column_count": 4,
+          "header": [
+            "Metric",
+            "FY2025",
+            "FY2024",
+            "Change"
+          ],
+          "markdown": "| Metric | FY2025 | FY2024 | Change |\n| --- | --- | --- | --- |\n| Revenue | $281,724 | $245,122 | +15% |\n| Gross margin | $193,893 | $171,008 | +13% |\n| Operating income | $128,528 | $109,433 | +17% |\n| Net income | $101,832 | $88,136 | +16% |\n| Diluted EPS | $13.64 | $11.80 | +16% |"
+        },
+        {
+          "item_id": "page8_text12",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            270.8789978027344,
+            241.88494873046875,
+            283.1369934082031
+          ],
+          "text": "Amounts in millions except per-share data."
+        },
+        {
+          "item_id": "page8_text13",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            306.57550048828125,
+            527.7324829101562,
+            320.8764953613281
+          ],
+          "text": "Revenue growth of $36.6 billion was broad-based, but two engines were especially important:"
+        },
+        {
+          "item_id": "page8_text14",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            322.57550048828125,
+            519.9310913085938,
+            336.8764953613281
+          ],
+          "text": "Azure within Intelligent Cloud and Microsoft 365 Commercial cloud within Productivity and"
+        },
+        {
+          "item_id": "page8_text15",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            338.57550048828125,
+            546.2020874023438,
+            352.8764953613281
+          ],
+          "text": "Business Processes. Gross margin increased almost $23 billion, although gross margin percentage"
+        },
+        {
+          "item_id": "page8_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            354.57550048828125,
+            530.2526245117188,
+            368.8764953613281
+          ],
+          "text": "declined slightly because the mix shifted toward more infrastructure-heavy cloud activity and"
+        },
+        {
+          "item_id": "page8_text17",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            370.57550048828125,
+            347.216552734375,
+            384.8764953613281
+          ],
+          "text": "because Microsoft is scaling AI capacity ahead of demand."
+        },
+        {
+          "item_id": "page8_text18",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            390.57550048828125,
+            523.9736328125,
+            404.8764953613281
+          ],
+          "text": "Operating expenses increased only 6%, which is slower than revenue growth. That operating"
+        },
+        {
+          "item_id": "page8_text19",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            406.57550048828125,
+            527.78515625,
+            420.8764953613281
+          ],
+          "text": "leverage allowed operating income to grow faster than revenue despite the pressure on cloud"
+        },
+        {
+          "item_id": "page8_text20",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            422.57550048828125,
+            547.556396484375,
+            436.8764953613281
+          ],
+          "text": "margin percentage. Research and development, sales and marketing, and gaming-related costs all"
+        },
+        {
+          "item_id": "page8_text21",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            438.57550048828125,
+            361.7380065917969,
+            452.8764953613281
+          ],
+          "text": "rose, but the company still expanded profitability materially."
+        },
+        {
+          "item_id": "page8_text22",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            460.5375061035156,
+            241.89999389648438,
+            477.5625
+          ],
+          "text": "Table 2. Revenue mix by type"
+        },
+        {
+          "item_id": "page8_table1",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            483.7250061035156,
+            554.5250244140625,
+            556.5750122070312
+          ],
+          "row_count": 4,
+          "column_count": 4,
+          "header": [
+            "Revenue type",
+            "FY2025",
+            "FY2024",
+            "Change"
+          ],
+          "markdown": "| Revenue type | FY2025 | FY2024 | Change |\n| --- | --- | --- | --- |\n| Product | $63,946 | $64,773 | -1% |\n| Service and other | $217,778 | $180,349 | +21% |\n| Total | $281,724 | $245,122 | +15% |"
+        },
+        {
+          "item_id": "page8_text27",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            556.72900390625,
+            424.41387939453125,
+            568.9869995117188
+          ],
+          "text": "The filing highlights the company’s structural shift toward service and cloud revenue."
+        },
+        {
+          "item_id": "page8_text28",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            592.425537109375,
+            542.62158203125,
+            606.7265014648438
+          ],
+          "text": "The mix shift is strategically important. Product revenue was roughly flat to slightly down, while"
+        },
+        {
+          "item_id": "page8_text29",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            608.425537109375,
+            523.8685302734375,
+            622.7265014648438
+          ],
+          "text": "service and other revenue rose sharply. This reinforces that Microsoft’s earnings profile now"
+        },
+        {
+          "item_id": "page8_text30",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            624.425537109375,
+            546.3175048828125,
+            638.7265014648438
+          ],
+          "text": "depends primarily on subscriptions, cloud consumption, support, and online services rather than"
+        },
+        {
+          "item_id": "page8_text31",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            640.425537109375,
+            280.6884765625,
+            654.7265014648438
+          ],
+          "text": "packaged software or device unit shipments."
+        },
+        {
+          "item_id": "page8_text32",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            660.425537109375,
+            525.6431274414062,
+            674.7265014648438
+          ],
+          "text": "From a profitability perspective, FY2025 gross margin was about 68.8% of revenue, operating"
+        },
+        {
+          "item_id": "page8_text33",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            676.425537109375,
+            556.0799560546875,
+            690.7265014648438
+          ],
+          "text": "margin about 45.6%, and net margin about 36.1%. Those remain exceptionally strong at Microsoft’s"
+        },
+        {
+          "item_id": "page8_text34",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            692.425537109375,
+            444.8874816894531,
+            706.7265014648438
+          ],
+          "text": "scale, even after absorbing the cost of aggressive AI infrastructure expansion."
+        }
+      ],
+      "text_block_count": 24,
+      "table_count": 2
+    },
+    {
+      "page_number": 9,
+      "items": [
+        {
+          "item_id": "page9_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            386.2919921875,
+            75.78797912597656
+          ],
+          "text": "5. Segment results and operating drivers"
+        },
+        {
+          "item_id": "page9_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.38749694824219,
+            361.49993896484375,
+            101.4124984741211
+          ],
+          "text": "Table 3. Segment revenue and operating income"
+        },
+        {
+          "item_id": "page9_table0",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            107.625,
+            554.5250244140625,
+            239.67498779296875
+          ],
+          "row_count": 5,
+          "column_count": 5,
+          "header": [
+            "Segment",
+            "Revenue FY2025",
+            "Revenue growth",
+            "Operating income\nFY2025",
+            "OI growth"
+          ],
+          "markdown": "| Segment | Revenue FY2025 | Revenue growth | Operating income\nFY2025 | OI growth |\n| --- | --- | --- | --- | --- |\n| Productivity &\nBusiness Processes | $120,810 | +13% | $69,773 | +17% |\n| Intelligent Cloud | $106,265 | +21% | $44,589 | +18% |\n| More Personal\nComputing | $54,649 | +7% | $14,166 | +18% |\n| Total | $281,724 | +15% | $128,528 | +17% |"
+        },
+        {
+          "item_id": "page9_text11",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            261.78753662109375,
+            286.4000549316406,
+            278.8125305175781
+          ],
+          "text": "Productivity and Business Processes"
+        },
+        {
+          "item_id": "page9_text12",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            284.8755187988281,
+            556.5799560546875,
+            299.176513671875
+          ],
+          "text": "PBP remained Microsoft’s largest segment by revenue and its most profitable by absolute operating"
+        },
+        {
+          "item_id": "page9_text13",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            300.8755187988281,
+            537.4030151367188,
+            315.176513671875
+          ],
+          "text": "income. Revenue increased $14.0 billion to $120.8 billion. The largest contributor was Microsoft"
+        },
+        {
+          "item_id": "page9_text14",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            316.8755187988281,
+            525.0761108398438,
+            331.176513671875
+          ],
+          "text": "365 Commercial products and cloud services, which grew $10.8 billion, or 14%. Microsoft 365"
+        },
+        {
+          "item_id": "page9_text15",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            332.8755187988281,
+            541.30908203125,
+            347.176513671875
+          ],
+          "text": "Commercial cloud revenue grew 15%, supported by 6% seat growth, especially among small and"
+        },
+        {
+          "item_id": "page9_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            348.8755187988281,
+            491.1505432128906,
+            363.176513671875
+          ],
+          "text": "medium businesses and frontline worker offerings, as well as higher revenue per user."
+        },
+        {
+          "item_id": "page9_text17",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            368.8755187988281,
+            551.5885620117188,
+            383.176513671875
+          ],
+          "text": "Microsoft 365 Consumer products and cloud services rose 11%, helped by subscriber growth and a"
+        },
+        {
+          "item_id": "page9_text18",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            384.8755187988281,
+            540.0068359375,
+            399.176513671875
+          ],
+          "text": "January 2025 price increase. Consumer subscribers reached 89.0 million. LinkedIn revenue rose"
+        },
+        {
+          "item_id": "page9_text19",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            400.8755187988281,
+            550.8116455078125,
+            415.176513671875
+          ],
+          "text": "9% with growth across all lines of business. Dynamics products and cloud services grew 15%, with"
+        },
+        {
+          "item_id": "page9_text20",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            416.8755187988281,
+            169.69302368164062,
+            431.176513671875
+          ],
+          "text": "Dynamics 365 up 19%."
+        },
+        {
+          "item_id": "page9_text21",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            436.8755187988281,
+            533.843505859375,
+            451.176513671875
+          ],
+          "text": "Operating income increased 17% to $69.8 billion. Management says cost of revenue rose due to"
+        },
+        {
+          "item_id": "page9_text22",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            452.8755187988281,
+            555.97998046875,
+            467.176513671875
+          ],
+          "text": "Microsoft 365 Commercial cloud growth, while gross margin percentage decreased slightly because"
+        },
+        {
+          "item_id": "page9_text23",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            468.8755187988281,
+            556.0799560546875,
+            483.176513671875
+          ],
+          "text": "of AI infrastructure scaling. Even so, efficiency gains and scale in the cloud business allowed strong"
+        },
+        {
+          "item_id": "page9_text24",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            484.8755187988281,
+            142.8340301513672,
+            499.176513671875
+          ],
+          "text": "profit expansion."
+        },
+        {
+          "item_id": "page9_text25",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            506.8375244140625,
+            164.0124969482422,
+            523.8624877929688
+          ],
+          "text": "Intelligent Cloud"
+        },
+        {
+          "item_id": "page9_text26",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            529.925537109375,
+            543.5455322265625,
+            544.2265014648438
+          ],
+          "text": "Intelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,"
+        },
+        {
+          "item_id": "page9_text27",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            545.925537109375,
+            546.2125244140625,
+            560.2265014648438
+          ],
+          "text": "or 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other"
+        },
+        {
+          "item_id": "page9_text28",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            561.925537109375,
+            555.8299560546875,
+            576.2265014648438
+          ],
+          "text": "cloud services growth of 34%. Azure growth was fueled by demand across the portfolio rather than"
+        },
+        {
+          "item_id": "page9_text29",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            577.925537109375,
+            531.4495239257812,
+            592.2265014648438
+          ],
+          "text": "one isolated workload, reflecting both traditional cloud migration and AI-related consumption."
+        },
+        {
+          "item_id": "page9_text30",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            597.925537109375,
+            547.5459594726562,
+            612.2265014648438
+          ],
+          "text": "The flip side was cost intensity. Cost of revenue rose 36%, and gross margin percentage decreased"
+        },
+        {
+          "item_id": "page9_text31",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            613.925537109375,
+            508.2552185058594,
+            628.2265014648438
+          ],
+          "text": "because Microsoft is scaling AI infrastructure. This is one of the most important economic"
+        },
+        {
+          "item_id": "page9_text32",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            629.925537109375,
+            529.947998046875,
+            644.2265014648438
+          ],
+          "text": "messages in the 10-K: Azure is growing extremely fast, but the company is spending heavily to"
+        },
+        {
+          "item_id": "page9_text33",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            645.925537109375,
+            533.8751220703125,
+            660.2265014648438
+          ],
+          "text": "preserve capacity leadership. Operating income still rose 18% to $44.6 billion, showing that the"
+        },
+        {
+          "item_id": "page9_text34",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            661.925537109375,
+            356.81353759765625,
+            676.2265014648438
+          ],
+          "text": "segment remains highly profitable despite margin pressure."
+        },
+        {
+          "item_id": "page9_text35",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            683.8875122070312,
+            222.49996948242188,
+            700.9124755859375
+          ],
+          "text": "More Personal Computing"
+        },
+        {
+          "item_id": "page9_text36",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            706.9755249023438,
+            522.1990966796875,
+            721.2764892578125
+          ],
+          "text": "MPC revenue rose $3.8 billion, or 7%, to $54.6 billion. The drivers were mixed. Windows and"
+        },
+        {
+          "item_id": "page9_text37",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            722.9755249023438,
+            534.3789672851562,
+            737.2764892578125
+          ],
+          "text": "Devices rose only 2%, as Windows OEM growth was partly offset by declining Devices revenue."
+        }
+      ],
+      "text_block_count": 29,
+      "table_count": 1
+    },
+    {
+      "page_number": 10,
+      "items": [
+        {
+          "item_id": "page10_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            54.0255012512207,
+            519.9415893554688,
+            68.32649993896484
+          ],
+          "text": "Gaming revenue rose 9%, driven by 16% growth in Xbox content and services, reflecting the"
+        },
+        {
+          "item_id": "page10_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            70.02549743652344,
+            529.8536376953125,
+            84.32649993896484
+          ],
+          "text": "impact of Activision Blizzard and Game Pass, while Xbox hardware revenue fell 25% on lower"
+        },
+        {
+          "item_id": "page10_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            86.02549743652344,
+            505.7665100097656,
+            100.32649993896484
+          ],
+          "text": "console volume. Search and news advertising rose 13%, and search and news advertising"
+        },
+        {
+          "item_id": "page10_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            102.02549743652344,
+            542.2645263671875,
+            116.32649993896484
+          ],
+          "text": "excluding traffic acquisition costs rose 20%, driven by higher search volume and higher revenue"
+        },
+        {
+          "item_id": "page10_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            118.02549743652344,
+            113.0245132446289,
+            132.32650756835938
+          ],
+          "text": "per search."
+        },
+        {
+          "item_id": "page10_text6",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            138.02549743652344,
+            536.5736083984375,
+            152.32650756835938
+          ],
+          "text": "Operating income increased 18% to $14.2 billion. This matters because it shows Microsoft is not"
+        },
+        {
+          "item_id": "page10_text7",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            154.02549743652344,
+            532.9722290039062,
+            168.32650756835938
+          ],
+          "text": "only growing the consumer/endpoint side of the portfolio, but also translating that growth into"
+        },
+        {
+          "item_id": "page10_text8",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            170.02549743652344,
+            514.6180419921875,
+            184.32650756835938
+          ],
+          "text": "better economics—especially in search and advertising—despite the weaker hardware mix."
+        },
+        {
+          "item_id": "page10_text9",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            191.9874725341797,
+            235.21250915527344,
+            209.01248168945312
+          ],
+          "text": "Table 4. Operating expenses"
+        },
+        {
+          "item_id": "page10_table0",
+          "type": "table",
+          "bbox": [
+            57.599998474121094,
+            215.3499755859375,
+            554.4000244140625,
+            287.95001220703125
+          ],
+          "row_count": 4,
+          "column_count": 4,
+          "header": [
+            "Expense line",
+            "FY2025",
+            "FY2024",
+            "Change"
+          ],
+          "markdown": "| Expense line | FY2025 | FY2024 | Change |\n| --- | --- | --- | --- |\n| Research & development | $32,488 | $29,510 | +10% |\n| Sales & marketing | $25,654 | $24,456 | +5% |\n| General & administrative | $7,223 | $7,609 | -5% |"
+        },
+        {
+          "item_id": "page10_text14",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            308.1755065917969,
+            508.91650390625,
+            322.47650146484375
+          ],
+          "text": "R&D rose primarily because of investments in cloud and AI engineering and the impact of"
+        },
+        {
+          "item_id": "page10_text15",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            324.1755065917969,
+            536.7416381835938,
+            338.47650146484375
+          ],
+          "text": "Activision Blizzard. Sales and marketing also increased, but more slowly than revenue. General"
+        },
+        {
+          "item_id": "page10_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            340.1755065917969,
+            552.3759155273438,
+            354.47650146484375
+          ],
+          "text": "and administrative expense decreased modestly. The overall picture is disciplined expense growth"
+        },
+        {
+          "item_id": "page10_text17",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            356.1755065917969,
+            511.95098876953125,
+            370.47650146484375
+          ],
+          "text": "in support functions combined with aggressive spending where management sees durable"
+        },
+        {
+          "item_id": "page10_text18",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            372.1755065917969,
+            429.9040222167969,
+            386.47650146484375
+          ],
+          "text": "strategic return: AI, cloud engineering, gaming content, and sales capacity."
+        }
+      ],
+      "text_block_count": 14,
+      "table_count": 1
+    },
+    {
+      "page_number": 11,
+      "items": [
+        {
+          "item_id": "page11_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            534.0521850585938,
+            75.78797912597656
+          ],
+          "text": "6. Balance sheet, liquidity, cash flow, and capital allocation"
+        },
+        {
+          "item_id": "page11_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.38749694824219,
+            263.4999694824219,
+            101.4124984741211
+          ],
+          "text": "Table 5. Balance sheet highlights"
+        },
+        {
+          "item_id": "page11_table0",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            107.625,
+            554.5250244140625,
+            321.17498779296875
+          ],
+          "row_count": 11,
+          "column_count": 3,
+          "header": [
+            "Balance sheet item",
+            "June 30, 2025",
+            "June 30, 2024"
+          ],
+          "markdown": "| Balance sheet item | June 30, 2025 | June 30, 2024 |\n| --- | --- | --- |\n| Cash and cash equivalents | $30,242 | $18,315 |\n| Short-term investments | $64,323 | $57,228 |\n| Total cash, cash equivalents, and ST\ninvestments | $94,565 | $75,543 |\n| Accounts receivable | $69,905 | $56,924 |\n| Property and equipment, net | $204,966 | $135,591 |\n| Goodwill | $119,509 | $119,220 |\n| Intangible assets, net | $22,604 | $27,597 |\n| Total assets | $619,003 | $512,163 |\n| Total liabilities | $275,524 | $243,686 |\n| Total stockholders’ equity | $343,479 | $268,477 |"
+        },
+        {
+          "item_id": "page11_text15",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            341.32550048828125,
+            537.0145874023438,
+            355.6264953613281
+          ],
+          "text": "The balance sheet expanded materially in FY2025. The most important changes were the rise in"
+        },
+        {
+          "item_id": "page11_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            357.32550048828125,
+            535.2504272460938,
+            371.6264953613281
+          ],
+          "text": "cash and short-term investments, the large increase in property and equipment, and continued"
+        },
+        {
+          "item_id": "page11_text17",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            373.32550048828125,
+            538.673583984375,
+            387.6264953613281
+          ],
+          "text": "elevation of goodwill and intangibles following the Activision Blizzard acquisition. Net property"
+        },
+        {
+          "item_id": "page11_text18",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            389.32550048828125,
+            540.87841796875,
+            403.6264953613281
+          ],
+          "text": "and equipment rose nearly $69.4 billion year over year, reflecting unprecedented infrastructure"
+        },
+        {
+          "item_id": "page11_text19",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            405.32550048828125,
+            102.86051940917969,
+            419.6264953613281
+          ],
+          "text": "buildout."
+        },
+        {
+          "item_id": "page11_text20",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            425.32550048828125,
+            534.379150390625,
+            439.6264953613281
+          ],
+          "text": "Liquidity remained very strong. Management states that existing cash, short-term investments,"
+        },
+        {
+          "item_id": "page11_text21",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            441.32550048828125,
+            550.7380981445312,
+            455.6264953613281
+          ],
+          "text": "operating cash flow, and access to capital markets are expected to be sufficient to fund operations,"
+        },
+        {
+          "item_id": "page11_text22",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            457.32550048828125,
+            542.3379516601562,
+            471.6264953613281
+          ],
+          "text": "dividends, repurchases, debt maturities, material capital expenditures, and tax obligations for at"
+        },
+        {
+          "item_id": "page11_text23",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            473.32550048828125,
+            334.7215576171875,
+            487.6264953613281
+          ],
+          "text": "least the next 12 months and for the foreseeable future."
+        },
+        {
+          "item_id": "page11_text24",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            495.2875061035156,
+            237.54998779296875,
+            512.3125
+          ],
+          "text": "Table 6. Cash flow highlights"
+        },
+        {
+          "item_id": "page11_table1",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            518.5250244140625,
+            554.5250244140625,
+            677.6749877929688
+          ],
+          "row_count": 8,
+          "column_count": 3,
+          "header": [
+            "Cash flow item",
+            "FY2025",
+            "FY2024"
+          ],
+          "markdown": "| Cash flow item | FY2025 | FY2024 |\n| --- | --- | --- |\n| Net cash from operations | $136,162 | $118,548 |\n| Net cash used in investing | ($72,599) | ($96,970) |\n| Net cash used in fni ancing | ($51,699) | ($37,757) |\n| Capital expenditures (property &\nequipment additions) | ($64,551) | ($44,477) |\n| Cash dividends paid | ($24,082) | ($21,771) |\n| Common stock repurchased | ($18,420) | ($17,254) |\n| Ending cash and cash equivalents | $30,242 | $18,315 |"
+        },
+        {
+          "item_id": "page11_text34",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            697.7755126953125,
+            557.0799560546875,
+            712.0764770507812
+          ],
+          "text": "Operating cash flow of $136.2 billion was extremely strong and rose by $17.6 billion year over year."
+        },
+        {
+          "item_id": "page11_text35",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            713.7755126953125,
+            522.1990356445312,
+            728.0764770507812
+          ],
+          "text": "The company converted accounting earnings into cash efficiently, supported by high-margin"
+        }
+      ],
+      "text_block_count": 14,
+      "table_count": 2
+    },
+    {
+      "page_number": 12,
+      "items": [
+        {
+          "item_id": "page12_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            54.0255012512207,
+            522.1781005859375,
+            68.32649993896484
+          ],
+          "text": "recurring revenue and the scale of commercial contracts. The dominant use of that cash was"
+        },
+        {
+          "item_id": "page12_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            70.02549743652344,
+            398.1100769042969,
+            84.32649993896484
+          ],
+          "text": "investing activity, especially datacenter and infrastructure buildout."
+        },
+        {
+          "item_id": "page12_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            90.02549743652344,
+            553.2056274414062,
+            104.32649993896484
+          ],
+          "text": "Capital expenditures reached $64.6 billion, up sharply from $44.5 billion. This is one of the clearest"
+        },
+        {
+          "item_id": "page12_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            106.02549743652344,
+            547.6931762695312,
+            120.32649993896484
+          ],
+          "text": "quantitative signals in the report: Microsoft is in a capital deployment phase to support cloud and"
+        },
+        {
+          "item_id": "page12_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            122.02549743652344,
+            537.1719970703125,
+            136.32650756835938
+          ],
+          "text": "AI demand. The company is also using finance leases extensively, so cash capex understates the"
+        },
+        {
+          "item_id": "page12_text6",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            138.02549743652344,
+            217.8145294189453,
+            152.32650756835938
+          ],
+          "text": "full infrastructure commitment."
+        },
+        {
+          "item_id": "page12_text7",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            159.9874725341797,
+            187.875,
+            177.01248168945312
+          ],
+          "text": "Shareholder returns"
+        },
+        {
+          "item_id": "page12_text8",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            183.0754852294922,
+            526.9976196289062,
+            197.37649536132812
+          ],
+          "text": "Microsoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1"
+        },
+        {
+          "item_id": "page12_text9",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            199.0754852294922,
+            553.5206298828125,
+            213.37649536132812
+          ],
+          "text": "billion in cash dividends and spent $18.4 billion repurchasing common stock through open-market"
+        },
+        {
+          "item_id": "page12_text10",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            215.0754852294922,
+            512.9801635742188,
+            229.37649536132812
+          ],
+          "text": "repurchases. Dividends declared totaled $24.7 billion, or $3.32 per share. A new $60 billion"
+        },
+        {
+          "item_id": "page12_text11",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            231.0754852294922,
+            539.051513671875,
+            245.37649536132812
+          ],
+          "text": "repurchase authorization approved in September 2024 commenced in April 2025 after the prior"
+        },
+        {
+          "item_id": "page12_text12",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            247.0754852294922,
+            453.9701232910156,
+            261.3764953613281
+          ],
+          "text": "authorization was completed; $57.3 billion remained available at June 30, 2025."
+        },
+        {
+          "item_id": "page12_text13",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            269.0375061035156,
+            430.3873291015625,
+            286.0625
+          ],
+          "text": "Table 7. Selected contractual obligations as of June 30, 2025"
+        },
+        {
+          "item_id": "page12_table0",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            292.2250061035156,
+            554.5250244140625,
+            446.9750061035156
+          ],
+          "row_count": 7,
+          "column_count": 4,
+          "header": [
+            "Obligation",
+            "2026",
+            "Thereafter",
+            "Total"
+          ],
+          "markdown": "| Obligation | 2026 | Thereafter | Total |\n| --- | --- | --- | --- |\n| Long-term debt principal | $3,000 | $46,206 | $49,206 |\n| Long-term debt interest | $1,509 | $25,527 | $27,036 |\n| Construction\ncommitments | $26,859 | $5,290 | $32,149 |\n| Operating & fni ance\nleases incl. interest | $12,798 | $165,903 | $178,701 |\n| Purchase commitments | $103,940 | $6,013 | $109,953 |\n| Total | $148,106 | $248,939 | $397,045 |"
+        },
+        {
+          "item_id": "page12_text23",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            467.07550048828125,
+            549.8980712890625,
+            481.3764953613281
+          ],
+          "text": "These obligations confirm that Microsoft’s AI and cloud expansion is not just an income-statement"
+        },
+        {
+          "item_id": "page12_text24",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            483.07550048828125,
+            552.2500610351562,
+            497.3764953613281
+          ],
+          "text": "story but a multi-year capital commitment story. Leases, construction commitments, and purchase"
+        },
+        {
+          "item_id": "page12_text25",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            499.07550048828125,
+            503.85552978515625,
+            513.37646484375
+          ],
+          "text": "commitments together amount to a very large future funding requirement, although one"
+        },
+        {
+          "item_id": "page12_text26",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            515.0755004882812,
+            313.1229553222656,
+            529.37646484375
+          ],
+          "text": "comfortably supported by current cash generation."
+        }
+      ],
+      "text_block_count": 17,
+      "table_count": 1
+    },
+    {
+      "page_number": 13,
+      "items": [
+        {
+          "item_id": "page13_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            465.7320861816406,
+            75.78797912597656
+          ],
+          "text": "7. Major accounting notes and financial statement"
+        },
+        {
+          "item_id": "page13_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            78.39599609375,
+            159.0120086669922,
+            100.18800354003906
+          ],
+          "text": "implications"
+        },
+        {
+          "item_id": "page13_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            108.82548522949219,
+            554.5299682617188,
+            123.1264877319336
+          ],
+          "text": "The notes to the financial statements reveal where management believes investors need additional"
+        },
+        {
+          "item_id": "page13_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            124.82548522949219,
+            550.37060546875,
+            139.12649536132812
+          ],
+          "text": "context beyond the headline statements. Several notes are especially important for understanding"
+        },
+        {
+          "item_id": "page13_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            140.8254852294922,
+            222.67605590820312,
+            155.12649536132812
+          ],
+          "text": "Microsoft’s economics in FY2025."
+        },
+        {
+          "item_id": "page13_text6",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            162.7875213623047,
+            501.4249267578125,
+            179.81253051757812
+          ],
+          "text": "Revenue recognition, unearned revenue, and remaining performance"
+        },
+        {
+          "item_id": "page13_text7",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            181.83750915527344,
+            128.2750244140625,
+            198.86251831054688
+          ],
+          "text": "obligations"
+        },
+        {
+          "item_id": "page13_text8",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            204.92552185058594,
+            534.925048828125,
+            219.22653198242188
+          ],
+          "text": "Unearned revenue ended FY2025 at $67.3 billion. Revenue allocated to remaining performance"
+        },
+        {
+          "item_id": "page13_text9",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            220.92552185058594,
+            520.4456176757812,
+            235.22653198242188
+          ],
+          "text": "obligations reached $375 billion, of which $368 billion was commercial. Microsoft expects to"
+        },
+        {
+          "item_id": "page13_text10",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            236.92552185058594,
+            545.6875610351562,
+            251.22653198242188
+          ],
+          "text": "recognize roughly 40% of total remaining performance obligations over the next 12 months, with"
+        },
+        {
+          "item_id": "page13_text11",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            252.92552185058594,
+            550.5595092773438,
+            267.2265319824219
+          ],
+          "text": "the rest thereafter. This provides substantial visibility into future commercial revenue, though the"
+        },
+        {
+          "item_id": "page13_text12",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            268.9255065917969,
+            443.1655578613281,
+            283.22650146484375
+          ],
+          "text": "timing varies across subscriptions, licenses, and consumption-based services."
+        },
+        {
+          "item_id": "page13_text13",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            288.9255065917969,
+            546.9475708007812,
+            303.22650146484375
+          ],
+          "text": "This large remaining performance obligation base is a key feature of Microsoft’s model. It reflects"
+        },
+        {
+          "item_id": "page13_text14",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            304.9255065917969,
+            551.7774658203125,
+            319.22650146484375
+          ],
+          "text": "the scale of multi-year commercial agreements and supports the view that revenue quality is high,"
+        },
+        {
+          "item_id": "page13_text15",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            320.9255065917969,
+            475.3375244140625,
+            335.22650146484375
+          ],
+          "text": "even if some businesses—especially cloud consumption—remain demand sensitive."
+        },
+        {
+          "item_id": "page13_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            342.88751220703125,
+            328.974853515625,
+            359.9125061035156
+          ],
+          "text": "Business combinations: Activision Blizzard"
+        },
+        {
+          "item_id": "page13_text17",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            365.97552490234375,
+            553.3001098632812,
+            380.2765197753906
+          ],
+          "text": "Microsoft completed the Activision Blizzard acquisition in October 2023 for $75.4 billion, primarily"
+        },
+        {
+          "item_id": "page13_text18",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            381.97552490234375,
+            514.7545776367188,
+            396.2765197753906
+          ],
+          "text": "in cash. The purchase price allocation includes $51.0 billion of goodwill and $22.0 billion of"
+        },
+        {
+          "item_id": "page13_text19",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            397.97552490234375,
+            551.3681030273438,
+            412.2765197753906
+          ],
+          "text": "identifiable intangible assets. Management says the acquisition is intended to accelerate growth in"
+        },
+        {
+          "item_id": "page13_text20",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            413.97552490234375,
+            546.7164306640625,
+            428.2765197753906
+          ],
+          "text": "gaming across mobile, PC, console, and cloud gaming. Activision Blizzard is reported within More"
+        },
+        {
+          "item_id": "page13_text21",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            429.97552490234375,
+            161.62901306152344,
+            444.2765197753906
+          ],
+          "text": "Personal Computing."
+        },
+        {
+          "item_id": "page13_text22",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            449.97552490234375,
+            534.7990112304688,
+            464.2765197753906
+          ],
+          "text": "The significance is twofold. First, it explains much of the elevated goodwill and intangible asset"
+        },
+        {
+          "item_id": "page13_text23",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            465.97552490234375,
+            553.2894897460938,
+            480.2765197753906
+          ],
+          "text": "base. Second, it contributed to gaming growth in FY2025, especially Xbox content and services. The"
+        },
+        {
+          "item_id": "page13_text24",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            481.97552490234375,
+            464.4385070800781,
+            496.2765197753906
+          ],
+          "text": "acquisition therefore remains both a balance-sheet event and an operating event."
+        },
+        {
+          "item_id": "page13_text25",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            503.9375,
+            250.90000915527344,
+            520.9624633789062
+          ],
+          "text": "Goodwill and intangible assets"
+        },
+        {
+          "item_id": "page13_text26",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            527.0255126953125,
+            514.4921875,
+            541.3264770507812
+          ],
+          "text": "Total goodwill ended FY2025 at $119.5 billion, with $62.4 billion allocated to More Personal"
+        },
+        {
+          "item_id": "page13_text27",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            543.0255126953125,
+            532.8250732421875,
+            557.3264770507812
+          ],
+          "text": "Computing, $31.5 billion to Productivity and Business Processes, and $25.7 billion to Intelligent"
+        },
+        {
+          "item_id": "page13_text28",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            559.0255126953125,
+            522.5667114257812,
+            573.3264770507812
+          ],
+          "text": "Cloud. Microsoft reported no goodwill impairment in the annual tests for 2025, 2024, or 2023."
+        },
+        {
+          "item_id": "page13_text29",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            579.0255126953125,
+            545.3201293945312,
+            593.3264770507812
+          ],
+          "text": "Net intangible assets were $22.6 billion at June 30, 2025. Amortization expense was $6.0 billion in"
+        },
+        {
+          "item_id": "page13_text30",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            595.0255126953125,
+            555.6799926757812,
+            609.3264770507812
+          ],
+          "text": "FY2025, up from $4.8 billion in FY2024, and future amortization remains meaningful: $4.6 billion is"
+        },
+        {
+          "item_id": "page13_text31",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            611.0255126953125,
+            519.66845703125,
+            625.3264770507812
+          ],
+          "text": "expected in FY2026 alone. This is a non-trivial drag on reported earnings but largely reflects"
+        },
+        {
+          "item_id": "page13_text32",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            627.0255126953125,
+            404.89300537109375,
+            641.3264770507812
+          ],
+          "text": "acquisition accounting rather than deterioration in the core business."
+        },
+        {
+          "item_id": "page13_text33",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            648.9874877929688,
+            240.2874755859375,
+            666.012451171875
+          ],
+          "text": "Debt and financing structure"
+        },
+        {
+          "item_id": "page13_text34",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            672.0755004882812,
+            547.2310791015625,
+            686.37646484375
+          ],
+          "text": "Microsoft ended FY2025 with no commercial paper outstanding, versus $6.7 billion a year earlier."
+        },
+        {
+          "item_id": "page13_text35",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            688.0755004882812,
+            529.349609375,
+            702.37646484375
+          ],
+          "text": "Total face value of long-term debt was $49.2 billion, and carrying value of total debt was $43.2"
+        },
+        {
+          "item_id": "page13_text36",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            704.0755004882812,
+            534.0849609375,
+            718.37646484375
+          ],
+          "text": "billion after discounts, hedge adjustments, and exchange-related premiums. Current portion of"
+        },
+        {
+          "item_id": "page13_text37",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            720.0755004882812,
+            400.0526123046875,
+            734.37646484375
+          ],
+          "text": "long-term debt was $3.0 billion and long-term debt was $40.2 billion."
+        }
+      ],
+      "text_block_count": 37,
+      "table_count": 0
+    },
+    {
+      "page_number": 14,
+      "items": [
+        {
+          "item_id": "page14_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            54.0255012512207,
+            534.7151489257812,
+            68.32649993896484
+          ],
+          "text": "The debt load remains very manageable relative to cash, investments, operating cash flow, and"
+        },
+        {
+          "item_id": "page14_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            70.02549743652344,
+            535.6810913085938,
+            84.32649993896484
+          ],
+          "text": "overall market position. Microsoft’s use of debt appears opportunistic and strategic rather than"
+        },
+        {
+          "item_id": "page14_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            86.02549743652344,
+            191.08152770996094,
+            100.32649993896484
+          ],
+          "text": "balance-sheet constrained."
+        },
+        {
+          "item_id": "page14_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            107.98747253417969,
+            420.0873718261719,
+            125.0124740600586
+          ],
+          "text": "Leases and off-balance-sheet-like infrastructure intensity"
+        },
+        {
+          "item_id": "page14_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            131.0754852294922,
+            513.6311645507812,
+            145.37649536132812
+          ],
+          "text": "Lease disclosures are particularly important in FY2025 because they illuminate Microsoft’s"
+        },
+        {
+          "item_id": "page14_text6",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            147.0754852294922,
+            535.1875,
+            161.37649536132812
+          ],
+          "text": "infrastructure scaling strategy. Operating lease liabilities totaled $22.9 billion and finance lease"
+        },
+        {
+          "item_id": "page14_text7",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            163.0754852294922,
+            536.2481079101562,
+            177.37649536132812
+          ],
+          "text": "liabilities totaled $46.2 billion. In addition, Microsoft disclosed $92.7 billion of additional leases,"
+        },
+        {
+          "item_id": "page14_text8",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            179.0754852294922,
+            542.6321411132812,
+            193.37649536132812
+          ],
+          "text": "primarily for datacenters, that had not yet commenced as of June 30, 2025. These will commence"
+        },
+        {
+          "item_id": "page14_text9",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            195.0754852294922,
+            202.8310546875,
+            209.37649536132812
+          ],
+          "text": "between FY2026 and FY2031."
+        },
+        {
+          "item_id": "page14_text10",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            215.05999755859375,
+            528.6002807617188,
+            228.67999267578125
+          ],
+          "text": "This disclosure is one of the strongest signals in the filing that Microsoft is locking in long-duration"
+        },
+        {
+          "item_id": "page14_text11",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            230.30999755859375,
+            540.4602661132812,
+            243.92999267578125
+          ],
+          "text": "capacity for AI and cloud workloads. It also means investors should evaluate capital intensity using a"
+        },
+        {
+          "item_id": "page14_text12",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            245.55999755859375,
+            228.42001342773438,
+            259.17999267578125
+          ],
+          "text": "broader lens than cash capex alone."
+        },
+        {
+          "item_id": "page14_text13",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            266.7875061035156,
+            94.625,
+            283.8125
+          ],
+          "text": "Taxes"
+        },
+        {
+          "item_id": "page14_text14",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            289.8755187988281,
+            555.1799926757812,
+            304.176513671875
+          ],
+          "text": "Income before tax reached $123.6 billion and provision for income taxes was $21.8 billion, yielding"
+        },
+        {
+          "item_id": "page14_text15",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            305.8755187988281,
+            549.446533203125,
+            320.176513671875
+          ],
+          "text": "an effective rate of 17.6%. The rate remained below the U.S. statutory level mainly because a large"
+        },
+        {
+          "item_id": "page14_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            321.8755187988281,
+            509.51513671875,
+            336.176513671875
+          ],
+          "text": "share of foreign income is generated through Ireland at lower tax rates. Management also"
+        },
+        {
+          "item_id": "page14_text17",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            337.8755187988281,
+            543.0206298828125,
+            352.176513671875
+          ],
+          "text": "discussed Pillar Two global minimum tax rules and said it does not currently estimate a material"
+        },
+        {
+          "item_id": "page14_text18",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            353.8755187988281,
+            530.54638671875,
+            368.176513671875
+          ],
+          "text": "financial statement impact, though the company continues monitoring implementation across"
+        },
+        {
+          "item_id": "page14_text19",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            369.8755187988281,
+            122.71601867675781,
+            384.176513671875
+          ],
+          "text": "jurisdictions."
+        },
+        {
+          "item_id": "page14_text20",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            389.8755187988281,
+            519.9730224609375,
+            404.176513671875
+          ],
+          "text": "The tax footnote also contains one of the filing’s largest specific dispute exposures: the IRS is"
+        },
+        {
+          "item_id": "page14_text21",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            405.8755187988281,
+            541.0359497070312,
+            420.176513671875
+          ],
+          "text": "seeking an additional tax payment of $28.9 billion plus penalties and interest in connection with"
+        },
+        {
+          "item_id": "page14_text22",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            421.8755187988281,
+            538.4635620117188,
+            436.176513671875
+          ],
+          "text": "transfer-pricing issues for tax years 2004 to 2013. Microsoft says it disagrees and will vigorously"
+        },
+        {
+          "item_id": "page14_text23",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            437.8755187988281,
+            552.9430541992188,
+            452.176513671875
+          ],
+          "text": "contest the proposed adjustments. It also says current allowances for income tax contingencies are"
+        },
+        {
+          "item_id": "page14_text24",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            453.8755187988281,
+            106.59849548339844,
+            468.176513671875
+          ],
+          "text": "adequate."
+        },
+        {
+          "item_id": "page14_text25",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            475.8375244140625,
+            322.9625244140625,
+            492.8625183105469
+          ],
+          "text": "Investments, derivatives, and market risk"
+        },
+        {
+          "item_id": "page14_text26",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            498.9255065917969,
+            526.2310180664062,
+            513.2265014648438
+          ],
+          "text": "Microsoft’s investment portfolio is primarily high-quality fixed income and liquidity-oriented"
+        },
+        {
+          "item_id": "page14_text27",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            514.925537109375,
+            549.593505859375,
+            529.2265014648438
+          ],
+          "text": "holdings, supplemented by equity and other investments. Market risk disclosures show sensitivity"
+        },
+        {
+          "item_id": "page14_text28",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            530.925537109375,
+            544.574462890625,
+            545.2265014648438
+          ],
+          "text": "to foreign exchange, interest rates, credit spreads, and equity prices. Management also notes that"
+        },
+        {
+          "item_id": "page14_text29",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            546.925537109375,
+            536.31103515625,
+            561.2265014648438
+          ],
+          "text": "other income (expense), net primarily reflects recognized losses on equity method investments,"
+        },
+        {
+          "item_id": "page14_text30",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            562.925537109375,
+            543.356689453125,
+            577.2265014648438
+          ],
+          "text": "including OpenAI, in FY2025. That point matters because it shows that strategic partnerships can"
+        },
+        {
+          "item_id": "page14_text31",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            578.925537109375,
+            293.0469970703125,
+            593.2265014648438
+          ],
+          "text": "create volatility outside core operating income."
+        },
+        {
+          "item_id": "page14_text32",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            600.8875122070312,
+            146.4875030517578,
+            617.9124755859375
+          ],
+          "text": "Contingencies"
+        },
+        {
+          "item_id": "page14_text33",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            623.9755249023438,
+            549.068603515625,
+            638.2764892578125
+          ],
+          "text": "The contingencies note mentions the Irish Data Protection Commission matter involving LinkedIn"
+        },
+        {
+          "item_id": "page14_text34",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            639.9755249023438,
+            520.8760986328125,
+            654.2764892578125
+          ],
+          "text": "targeted advertising practices under GDPR. Microsoft states that LinkedIn appealed the final"
+        },
+        {
+          "item_id": "page14_text35",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            655.9755249023438,
+            530.5676879882812,
+            670.2764892578125
+          ],
+          "text": "decision in November 2024 and that the next hearing is scheduled for December 2025. Beyond"
+        },
+        {
+          "item_id": "page14_text36",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            671.9755249023438,
+            521.0230712890625,
+            686.2764892578125
+          ],
+          "text": "specific matters, aggregate legal liabilities accrued were $541 million, and adverse outcomes"
+        },
+        {
+          "item_id": "page14_text37",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            687.9755249023438,
+            547.1575317382812,
+            702.2764892578125
+          ],
+          "text": "beyond recorded amounts that are reasonably possible were estimated at roughly $600 million in"
+        },
+        {
+          "item_id": "page14_text38",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            703.9755249023438,
+            108.90850067138672,
+            718.2764892578125
+          ],
+          "text": "aggregate."
+        }
+      ],
+      "text_block_count": 38,
+      "table_count": 0
+    },
+    {
+      "page_number": 15,
+      "items": [
+        {
+          "item_id": "page15_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            388.30810546875,
+            75.78797912597656
+          ],
+          "text": "8. Risk factors and cybersecurity posture"
+        },
+        {
+          "item_id": "page15_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.42552185058594,
+            538.4110717773438,
+            98.72652435302734
+          ],
+          "text": "Microsoft’s risk disclosures are extensive but can be grouped into six broad categories: strategic"
+        },
+        {
+          "item_id": "page15_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            100.42552185058594,
+            492.2530822753906,
+            114.72652435302734
+          ],
+          "text": "and competitive risks, risks related to the evolution of the business, cybersecurity/data"
+        },
+        {
+          "item_id": "page15_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            116.42552185058594,
+            536.8359375,
+            130.72653198242188
+          ],
+          "text": "privacy/platform abuse risks, operational risks, legal/regulatory/litigation risks, and intellectual"
+        },
+        {
+          "item_id": "page15_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            132.42552185058594,
+            171.73001098632812,
+            146.72653198242188
+          ],
+          "text": "property/general risks."
+        },
+        {
+          "item_id": "page15_text6",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            154.3874969482422,
+            254.3249969482422,
+            171.41250610351562
+          ],
+          "text": "Strategic and competitive risks"
+        },
+        {
+          "item_id": "page15_text7",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            177.4755096435547,
+            524.1970825195312,
+            191.97601318359375
+          ],
+          "text": "\nCompetition is intense across productivity software, cloud platforms, AI services, devices,"
+        },
+        {
+          "item_id": "page15_text8",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            193.4755096435547,
+            292.5670166015625,
+            207.77651977539062
+          ],
+          "text": "gaming ecosystems, and digital advertising."
+        },
+        {
+          "item_id": "page15_text9",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            209.4755096435547,
+            523.0946044921875,
+            223.97601318359375
+          ],
+          "text": "\nPlatform-based ecosystems create network effects, but competing ecosystems can restrict"
+        },
+        {
+          "item_id": "page15_text10",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            225.4755096435547,
+            529.1005249023438,
+            239.77651977539062
+          ],
+          "text": "application distribution, weaken developer support, or reduce monetization opportunities."
+        },
+        {
+          "item_id": "page15_text11",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            241.4755096435547,
+            543.7271118164062,
+            255.97601318359375
+          ],
+          "text": "\nBusiness model competition includes free or ad-supported services, open-source alternatives,"
+        },
+        {
+          "item_id": "page15_text12",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            257.47552490234375,
+            479.677001953125,
+            271.7765197753906
+          ],
+          "text": "vertically integrated rivals, and low-cost operating system or platform providers."
+        },
+        {
+          "item_id": "page15_text13",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            273.47552490234375,
+            511.0825500488281,
+            287.97601318359375
+          ],
+          "text": "\nMicrosoft’s shift toward cloud and AI services requires continued execution and heavy"
+        },
+        {
+          "item_id": "page15_text14",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            289.47552490234375,
+            455.0965881347656,
+            303.7765197753906
+          ],
+          "text": "infrastructure spending; failure to monetize at scale could pressure returns."
+        },
+        {
+          "item_id": "page15_text15",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            311.4375,
+            277.7624816894531,
+            328.4624938964844
+          ],
+          "text": "Risks related to business evolution"
+        },
+        {
+          "item_id": "page15_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            334.5255126953125,
+            550.405029296875,
+            349.0260009765625
+          ],
+          "text": "\nLarge investments in new products, services, hardware, and AI may not earn expected returns."
+        },
+        {
+          "item_id": "page15_text17",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            350.5255126953125,
+            506.93505859375,
+            365.0260009765625
+          ],
+          "text": "\nAcquisitions, partnerships, and alliances—including large strategic deals—may create"
+        },
+        {
+          "item_id": "page15_text18",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            366.5255126953125,
+            344.77301025390625,
+            380.8265075683594
+          ],
+          "text": "integration, compliance, valuation, or execution risks."
+        },
+        {
+          "item_id": "page15_text19",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            382.5255126953125,
+            525.0685424804688,
+            397.0260009765625
+          ],
+          "text": "\nData handling practices, regulatory scrutiny, and public perceptions of product misuse or"
+        },
+        {
+          "item_id": "page15_text20",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            398.5255126953125,
+            276.9955139160156,
+            412.8265075683594
+          ],
+          "text": "mismanagement could reduce adoption."
+        },
+        {
+          "item_id": "page15_text21",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            420.4875183105469,
+            363.58746337890625,
+            437.51251220703125
+          ],
+          "text": "Cybersecurity, data privacy, and platform abuse"
+        },
+        {
+          "item_id": "page15_text22",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            443.57550048828125,
+            515.1431884765625,
+            457.8764953613281
+          ],
+          "text": "Cybersecurity is unusually central in Microsoft’s 10-K because the company is both a major"
+        },
+        {
+          "item_id": "page15_text23",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            459.57550048828125,
+            553.845947265625,
+            473.8764953613281
+          ],
+          "text": "technology provider and a high-profile cyber target. The filing explicitly references prior incidents,"
+        },
+        {
+          "item_id": "page15_text24",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            475.57550048828125,
+            553.6151123046875,
+            489.8764953613281
+          ],
+          "text": "including a nation-state associated threat actor that used a password-spray attack to compromise a"
+        },
+        {
+          "item_id": "page15_text25",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            491.57550048828125,
+            552.9325561523438,
+            505.8764953613281
+          ],
+          "text": "legacy test account and gain access to Microsoft email accounts and some source code repositories."
+        },
+        {
+          "item_id": "page15_text26",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            507.57550048828125,
+            539.8705444335938,
+            521.87646484375
+          ],
+          "text": "Microsoft warns that such incidents can harm reputation, customer relationships, and results of"
+        },
+        {
+          "item_id": "page15_text27",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            523.5755004882812,
+            113.88551330566406,
+            537.87646484375
+          ],
+          "text": "operations."
+        },
+        {
+          "item_id": "page15_text28",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            543.5755004882812,
+            541.93896484375,
+            557.87646484375
+          ],
+          "text": "The company says it launched the Secure Future Initiative in November 2023 and expanded it in"
+        },
+        {
+          "item_id": "page15_text29",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            559.5755004882812,
+            547.6825561523438,
+            573.87646484375
+          ],
+          "text": "May 2024. The initiative is built around three principles: Secure by Design, Secure by Default, and"
+        },
+        {
+          "item_id": "page15_text30",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            575.5755004882812,
+            527.6696166992188,
+            589.87646484375
+          ],
+          "text": "Secure Operations. Microsoft says it assesses alignment to the NIST Cybersecurity Framework"
+        },
+        {
+          "item_id": "page15_text31",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            591.5755004882812,
+            493.1455078125,
+            605.87646484375
+          ],
+          "text": "annually, undertakes tabletop exercises, production environment testing, red teaming,"
+        },
+        {
+          "item_id": "page15_text32",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            607.5755004882812,
+            529.9795532226562,
+            621.87646484375
+          ],
+          "text": "vulnerability testing, employee training, and simulated phishing education. The company also"
+        },
+        {
+          "item_id": "page15_text33",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            623.5755004882812,
+            470.9065246582031,
+            637.87646484375
+          ],
+          "text": "states that it uses insights from 84 trillion signals per day in its security operations."
+        },
+        {
+          "item_id": "page15_text34",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            643.5755004882812,
+            555.4299926757812,
+            657.87646484375
+          ],
+          "text": "Governance of cybersecurity is formalized. The board oversees cybersecurity risk, the CISO reports"
+        },
+        {
+          "item_id": "page15_text35",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            659.5755004882812,
+            536.1849365234375,
+            673.87646484375
+          ],
+          "text": "to the EVP of Cloud + AI, and a Cybersecurity Governance Council of deputy CISOs approves the"
+        },
+        {
+          "item_id": "page15_text36",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            675.5755004882812,
+            501.2305603027344,
+            689.87646484375
+          ],
+          "text": "enterprise risk assessment process, determines risk levels and mitigations, reviews NIST"
+        },
+        {
+          "item_id": "page15_text37",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            691.5755004882812,
+            398.236083984375,
+            705.87646484375
+          ],
+          "text": "alignment, and supports compliance with cybersecurity regulations."
+        }
+      ],
+      "text_block_count": 37,
+      "table_count": 0
+    },
+    {
+      "page_number": 16,
+      "items": [
+        {
+          "item_id": "page16_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.98747634887695,
+            168.37501525878906,
+            71.0124740600586
+          ],
+          "text": "Operational risks"
+        },
+        {
+          "item_id": "page16_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            77.07548522949219,
+            520.1124267578125,
+            91.57598876953125
+          ],
+          "text": "\nCloud and AI growth depend on datacenter land, energy, networking, servers, GPUs, and"
+        },
+        {
+          "item_id": "page16_text3",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            93.07548522949219,
+            232.2130126953125,
+            107.3764877319336
+          ],
+          "text": "related supply-chain resilience."
+        },
+        {
+          "item_id": "page16_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            109.07548522949219,
+            546.4990234375,
+            123.57598876953125
+          ],
+          "text": "\nSome server and device components have few qualified suppliers, creating concentration risk."
+        },
+        {
+          "item_id": "page16_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            125.07548522949219,
+            546.6566162109375,
+            139.57598876953125
+          ],
+          "text": "\nSoftware quality, service reliability, outages, or patching failures could disrupt customers and"
+        },
+        {
+          "item_id": "page16_text6",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            141.0754852294922,
+            281.93048095703125,
+            155.37649536132812
+          ],
+          "text": "magnify liability or reputational damage."
+        },
+        {
+          "item_id": "page16_text7",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            163.0375213623047,
+            223.93751525878906,
+            180.06253051757812
+          ],
+          "text": "Legal and regulatory risks"
+        },
+        {
+          "item_id": "page16_text8",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            186.12547302246094,
+            537.8154907226562,
+            200.6259765625
+          ],
+          "text": "\nMicrosoft operates under evolving laws and regulations related to privacy, advertising, data"
+        },
+        {
+          "item_id": "page16_text9",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            202.12547302246094,
+            342.5995178222656,
+            216.42648315429688
+          ],
+          "text": "storage, competition, digital markets, content, and AI."
+        },
+        {
+          "item_id": "page16_text10",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            218.12547302246094,
+            549.7645263671875,
+            232.6259765625
+          ],
+          "text": "\nRegulatory actions in major jurisdictions, particularly the EU, can require operational changes"
+        },
+        {
+          "item_id": "page16_text11",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            234.12547302246094,
+            212.1580352783203,
+            248.42648315429688
+          ],
+          "text": "and raise compliance costs."
+        },
+        {
+          "item_id": "page16_text12",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            250.12547302246094,
+            532.1455078125,
+            264.6259765625
+          ],
+          "text": "\nTax disputes, antitrust or platform-related investigations, and data protection enforcement"
+        },
+        {
+          "item_id": "page16_text13",
+          "type": "text",
+          "bbox": [
+            75.69999694824219,
+            266.12548828125,
+            242.28250122070312,
+            280.4264831542969
+          ],
+          "text": "remain meaningful watch points."
+        },
+        {
+          "item_id": "page16_text14",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            288.0875244140625,
+            230.95001220703125,
+            305.1125183105469
+          ],
+          "text": "Bottom line on risk posture"
+        },
+        {
+          "item_id": "page16_text15",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            311.1755065917969,
+            507.3310852050781,
+            325.47650146484375
+          ],
+          "text": "The 10-K does not suggest fragility. Instead, it depicts a company with enormous financial"
+        },
+        {
+          "item_id": "page16_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            327.1755065917969,
+            550.1395874023438,
+            341.47650146484375
+          ],
+          "text": "resilience that nevertheless faces real execution and trust risks because of its scale, centrality, and"
+        },
+        {
+          "item_id": "page16_text17",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            343.1755065917969,
+            517.5476684570312,
+            357.47650146484375
+          ],
+          "text": "exposure to the AI and cloud infrastructure cycle. For investors, the most important risks to"
+        },
+        {
+          "item_id": "page16_text18",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            359.1755065917969,
+            540.259033203125,
+            373.47650146484375
+          ],
+          "text": "monitor are cybersecurity, AI-related regulation and monetization, infrastructure cost intensity,"
+        },
+        {
+          "item_id": "page16_text19",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            375.1755065917969,
+            421.4620666503906,
+            389.47650146484375
+          ],
+          "text": "tax disputes, and the ability to maintain high trust while moving quickly."
+        }
+      ],
+      "text_block_count": 19,
+      "table_count": 0
+    },
+    {
+      "page_number": 17,
+      "items": [
+        {
+          "item_id": "page17_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            461.1721496582031,
+            75.78797912597656
+          ],
+          "text": "9. Operations, people, properties, and governance"
+        },
+        {
+          "item_id": "page17_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.38749694824219,
+            151.07501220703125,
+            101.4124984741211
+          ],
+          "text": "Human capital"
+        },
+        {
+          "item_id": "page17_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            107.47550964355469,
+            530.1055908203125,
+            121.7765121459961
+          ],
+          "text": "As of June 30, 2025, Microsoft employed approximately 228,000 full-time employees, including"
+        },
+        {
+          "item_id": "page17_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            123.47550964355469,
+            538.6841430664062,
+            137.77651977539062
+          ],
+          "text": "125,000 in the United States and 103,000 internationally. Of these, approximately 89,000 were in"
+        },
+        {
+          "item_id": "page17_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            139.4755096435547,
+            555.7799682617188,
+            153.77651977539062
+          ],
+          "text": "operations, 80,000 in product research and development, 44,000 in sales and marketing, and 15,000"
+        },
+        {
+          "item_id": "page17_text6",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            155.4755096435547,
+            210.39102172851562,
+            169.77651977539062
+          ],
+          "text": "in general and administration."
+        },
+        {
+          "item_id": "page17_text7",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            175.4755096435547,
+            552.73291015625,
+            189.77651977539062
+          ],
+          "text": "Management says compensation, benefits, wellbeing programs, pay equity monitoring, continuous"
+        },
+        {
+          "item_id": "page17_text8",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            191.4755096435547,
+            529.2760620117188,
+            205.77651977539062
+          ],
+          "text": "learning, and employee listening systems are important to attracting and retaining talent. The"
+        },
+        {
+          "item_id": "page17_text9",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            207.4755096435547,
+            533.3919067382812,
+            221.77651977539062
+          ],
+          "text": "filing also emphasizes that security responsibility is embedded across teams and functions, not"
+        },
+        {
+          "item_id": "page17_text10",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            223.4755096435547,
+            236.9140167236328,
+            237.77651977539062
+          ],
+          "text": "isolated within one technical group."
+        },
+        {
+          "item_id": "page17_text11",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            245.43748474121094,
+            225.32504272460938,
+            262.4624938964844
+          ],
+          "text": "Operations and properties"
+        },
+        {
+          "item_id": "page17_text12",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            268.5255126953125,
+            548.4910888671875,
+            282.8265075683594
+          ],
+          "text": "Microsoft maintains regional operations service centers across the Americas, Asia Pacific, Europe,"
+        },
+        {
+          "item_id": "page17_text13",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            284.5255126953125,
+            516.0040283203125,
+            298.8265075683594
+          ],
+          "text": "and the Middle East. It operates datacenters in these regions and says location and capacity"
+        },
+        {
+          "item_id": "page17_text14",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            300.5255126953125,
+            556.1300048828125,
+            314.8265075683594
+          ],
+          "text": "decisions increasingly reflect AI-service demand. The company stresses dependencies on permitted"
+        },
+        {
+          "item_id": "page17_text15",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            316.5255126953125,
+            491.43408203125,
+            330.8265075683594
+          ],
+          "text": "land, predictable energy, networking supplies, and server components including GPUs."
+        },
+        {
+          "item_id": "page17_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            336.5255126953125,
+            552.8170776367188,
+            350.8265075683594
+          ],
+          "text": "On properties, Microsoft reports roughly 97 million square feet of total owned and leased property"
+        },
+        {
+          "item_id": "page17_text17",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            352.5255126953125,
+            541.949462890625,
+            366.8265075683594
+          ],
+          "text": "worldwide, of which 57 million square feet are in the U.S. and 40 million internationally. In King"
+        },
+        {
+          "item_id": "page17_text18",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            368.5255126953125,
+            557.0299682617188,
+            382.8265075683594
+          ],
+          "text": "County, Washington, it has approximately 15 million square feet, including about 12 million square"
+        },
+        {
+          "item_id": "page17_text19",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            384.5255126953125,
+            348.3821105957031,
+            398.8265075683594
+          ],
+          "text": "feet of owned space on roughly 530 acres at headquarters."
+        },
+        {
+          "item_id": "page17_text20",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            406.4875183105469,
+            229.07498168945312,
+            423.51251220703125
+          ],
+          "text": "Research and development"
+        },
+        {
+          "item_id": "page17_text21",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            429.57550048828125,
+            521.3802490234375,
+            443.8764953613281
+          ],
+          "text": "Microsoft continues to invest heavily in both fundamental and applied R&D across cloud, AI,"
+        },
+        {
+          "item_id": "page17_text22",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            445.57550048828125,
+            550.12890625,
+            459.8764953613281
+          ],
+          "text": "devices, security, operating systems, and digital work/life experiences. The report frames in-house"
+        },
+        {
+          "item_id": "page17_text23",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            461.57550048828125,
+            537.3084716796875,
+            475.8764953613281
+          ],
+          "text": "development as a source of competitive advantage because it preserves product differentiation,"
+        },
+        {
+          "item_id": "page17_text24",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            477.57550048828125,
+            505.6090393066406,
+            491.8764953613281
+          ],
+          "text": "control over implementation, and freedom to prioritize modifications and enhancements."
+        },
+        {
+          "item_id": "page17_text25",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            499.53753662109375,
+            264.51251220703125,
+            516.5625
+          ],
+          "text": "Distribution, sales, and licensing"
+        },
+        {
+          "item_id": "page17_text26",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            522.62548828125,
+            515.1430053710938,
+            536.9264526367188
+          ],
+          "text": "The filing outlines a broad commercial distribution model spanning direct sales, enterprise"
+        },
+        {
+          "item_id": "page17_text27",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            538.62548828125,
+            533.2765502929688,
+            552.9264526367188
+          ],
+          "text": "agreements, Microsoft Customer Agreements, reseller channels, cloud solution providers, OEM"
+        },
+        {
+          "item_id": "page17_text28",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            554.62548828125,
+            530.8405151367188,
+            568.9264526367188
+          ],
+          "text": "relationships, and online direct channels. This matters because Microsoft’s performance is not"
+        },
+        {
+          "item_id": "page17_text29",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            570.62548828125,
+            509.78802490234375,
+            584.9264526367188
+          ],
+          "text": "dependent on a single sales motion. Its commercial engine combines long-cycle enterprise"
+        },
+        {
+          "item_id": "page17_text30",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            586.62548828125,
+            337.02099609375,
+            600.9264526367188
+          ],
+          "text": "contracting with self-serve and partner-led distribution."
+        },
+        {
+          "item_id": "page17_text31",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            606.62548828125,
+            550.202392578125,
+            620.9264526367188
+          ],
+          "text": "The company also uses several licensing frameworks—Enterprise Agreement, Microsoft Customer"
+        },
+        {
+          "item_id": "page17_text32",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            622.62548828125,
+            555.4299926757812,
+            636.9264526367188
+          ],
+          "text": "Agreement, Microsoft Online Subscription Agreement, Microsoft Products and Services Agreement,"
+        },
+        {
+          "item_id": "page17_text33",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            638.62548828125,
+            550.2235717773438,
+            652.9264526367188
+          ],
+          "text": "Open Value, and Select Plus—to match contract form to customer size and deployment model. The"
+        },
+        {
+          "item_id": "page17_text34",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            654.62548828125,
+            369.53955078125,
+            668.9264526367188
+          ],
+          "text": "result is high commercial flexibility with strong lock-in effects."
+        },
+        {
+          "item_id": "page17_text35",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            676.5875244140625,
+            231.9374542236328,
+            693.6124877929688
+          ],
+          "text": "Governance and executives"
+        },
+        {
+          "item_id": "page17_text36",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            699.675537109375,
+            528.1422119140625,
+            713.9765014648438
+          ],
+          "text": "The executive officers listed in the filing as of July 30, 2025 were Satya Nadella (Chairman and"
+        },
+        {
+          "item_id": "page17_text37",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            715.675537109375,
+            534.694091796875,
+            729.9765014648438
+          ],
+          "text": "CEO), Judson Althoff (EVP and Chief Commercial Officer), Amy Coleman (EVP and Chief Human"
+        }
+      ],
+      "text_block_count": 37,
+      "table_count": 0
+    },
+    {
+      "page_number": 18,
+      "items": [
+        {
+          "item_id": "page18_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            54.0255012512207,
+            546.0656127929688,
+            68.32649993896484
+          ],
+          "text": "Resources Officer), Kathleen Hogan (EVP, Office of Strategy and Transformation), Amy Hood (EVP"
+        },
+        {
+          "item_id": "page18_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            70.02549743652344,
+            549.5935668945312,
+            84.32649993896484
+          ],
+          "text": "and CFO), Takeshi Numoto (EVP and Chief Marketing Officer), and Bradford Smith (Vice Chair and"
+        },
+        {
+          "item_id": "page18_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            86.02549743652344,
+            111.43900299072266,
+            100.32649993896484
+          ],
+          "text": "President)."
+        },
+        {
+          "item_id": "page18_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            106.02549743652344,
+            533.108642578125,
+            120.32649993896484
+          ],
+          "text": "The filing also states that disclosure controls and procedures were effective as of June 30, 2025."
+        },
+        {
+          "item_id": "page18_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            122.02549743652344,
+            534.4420166015625,
+            136.32650756835938
+          ],
+          "text": "Management concluded internal control over financial reporting was effective under the COSO"
+        },
+        {
+          "item_id": "page18_text6",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            138.02549743652344,
+            547.87158203125,
+            152.32650756835938
+          ],
+          "text": "2013 framework, and Deloitte & Touche LLP audited internal control over financial reporting and"
+        },
+        {
+          "item_id": "page18_text7",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            154.02549743652344,
+            246.40603637695312,
+            168.32650756835938
+          ],
+          "text": "the consolidated financial statements."
+        }
+      ],
+      "text_block_count": 7,
+      "table_count": 0
+    },
+    {
+      "page_number": 19,
+      "items": [
+        {
+          "item_id": "page19_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            241.10800170898438,
+            75.78797912597656
+          ],
+          "text": "10. Overall assessment"
+        },
+        {
+          "item_id": "page19_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.42552185058594,
+            525.7586669921875,
+            98.72652435302734
+          ],
+          "text": "Microsoft’s FY2025 Form 10-K presents a company in a position of unusual strength. The core"
+        },
+        {
+          "item_id": "page19_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            100.42552185058594,
+            544.47998046875,
+            114.72652435302734
+          ],
+          "text": "software and cloud franchise is still expanding, the productivity stack remains a major recurring-"
+        },
+        {
+          "item_id": "page19_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            116.42552185058594,
+            537.0250854492188,
+            130.72653198242188
+          ],
+          "text": "revenue engine, Azure is capturing large-scale AI and infrastructure demand, and the company"
+        },
+        {
+          "item_id": "page19_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            132.42552185058594,
+            544.984130859375,
+            146.72653198242188
+          ],
+          "text": "retains enough financial capacity to fund both exceptional shareholder returns and a historically"
+        },
+        {
+          "item_id": "page19_text6",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            148.42552185058594,
+            204.39553833007812,
+            162.72653198242188
+          ],
+          "text": "large capital expansion cycle."
+        },
+        {
+          "item_id": "page19_text7",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            168.42552185058594,
+            535.5130004882812,
+            182.72653198242188
+          ],
+          "text": "The most important judgment call for readers is how to interpret the trade-off between present"
+        },
+        {
+          "item_id": "page19_text8",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            184.42552185058594,
+            528.0789794921875,
+            198.72653198242188
+          ],
+          "text": "margins and future strategic positioning. Microsoft is plainly spending heavily on AI capacity,"
+        },
+        {
+          "item_id": "page19_text9",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            200.42552185058594,
+            540.88916015625,
+            214.72653198242188
+          ],
+          "text": "datacenter expansion, and long-duration lease commitments. This increases cost of revenue and"
+        },
+        {
+          "item_id": "page19_text10",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            216.42552185058594,
+            533.0979614257812,
+            230.72653198242188
+          ],
+          "text": "can depress cloud gross margin percentage in the near term. But management is signaling that"
+        },
+        {
+          "item_id": "page19_text11",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            232.42552185058594,
+            549.089599609375,
+            246.72653198242188
+          ],
+          "text": "capacity leadership and distribution breadth matter more than maximizing short-term margin on"
+        },
+        {
+          "item_id": "page19_text12",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            248.42552185058594,
+            168.14955139160156,
+            262.7265319824219
+          ],
+          "text": "every unit of demand."
+        },
+        {
+          "item_id": "page19_text13",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            268.425537109375,
+            503.17315673828125,
+            282.7265319824219
+          ],
+          "text": "The filing also suggests that Microsoft’s competitive moat is no longer best understood as"
+        },
+        {
+          "item_id": "page19_text14",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            284.4255065917969,
+            529.044921875,
+            298.72650146484375
+          ],
+          "text": "“Windows plus Office.” It is now the combination of commercial distribution, enterprise trust,"
+        },
+        {
+          "item_id": "page19_text15",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            300.4255065917969,
+            547.1575317382812,
+            314.72650146484375
+          ],
+          "text": "identity, security, developer tools, business applications, collaboration, and cloud infrastructure—"
+        },
+        {
+          "item_id": "page19_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            316.4255065917969,
+            549.625,
+            330.72650146484375
+          ],
+          "text": "plus the ability to insert AI across all of them. That is a much broader and more defensible control"
+        },
+        {
+          "item_id": "page19_text17",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            332.4255065917969,
+            100.76051330566406,
+            346.72650146484375
+          ],
+          "text": "position."
+        },
+        {
+          "item_id": "page19_text18",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            352.4100036621094,
+            534.9403076171875,
+            366.0299987792969
+          ],
+          "text": "At the same time, the report does not support complacency. The company remains exposed to cyber"
+        },
+        {
+          "item_id": "page19_text19",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            367.6600036621094,
+            528.5302734375,
+            381.2799987792969
+          ],
+          "text": "incidents, platform regulation, infrastructure bottlenecks, acquisition execution risk, and large tax"
+        },
+        {
+          "item_id": "page19_text20",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            382.9100036621094,
+            548.0101928710938,
+            396.5299987792969
+          ],
+          "text": "disputes. If any of those areas go badly, Microsoft’s scale ensures the consequences could also be large."
+        },
+        {
+          "item_id": "page19_text21",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            398.1600036621094,
+            530.9402465820312,
+            411.7799987792969
+          ],
+          "text": "Still, the FY2025 filing overall reads as the report of a company with expanding strategic relevance,"
+        },
+        {
+          "item_id": "page19_text22",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            413.4100036621094,
+            491.93035888671875,
+            427.0299987792969
+          ],
+          "text": "robust earnings quality, and the balance-sheet capacity to keep investing ahead of demand."
+        }
+      ],
+      "text_block_count": 22,
+      "table_count": 0
+    },
+    {
+      "page_number": 20,
+      "items": [
+        {
+          "item_id": "page20_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            320.5960388183594,
+            75.78797912597656
+          ],
+          "text": "Appendix A. Key financial tables"
+        },
+        {
+          "item_id": "page20_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.38749694824219,
+            233.43746948242188,
+            101.4124984741211
+          ],
+          "text": "Table A1. Income statement"
+        },
+        {
+          "item_id": "page20_table0",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            107.625,
+            554.5250244140625,
+            339.375
+          ],
+          "row_count": 12,
+          "column_count": 4,
+          "header": [
+            "Line item",
+            "FY2025",
+            "FY2024",
+            "FY2023"
+          ],
+          "markdown": "| Line item | FY2025 | FY2024 | FY2023 |\n| --- | --- | --- | --- |\n| Revenue | $281,724 | $245,122 | $211,915 |\n| Cost of revenue | $87,831 | $74,114 | $65,863 |\n| Gross margin | $193,893 | $171,008 | $146,052 |\n| R&D | $32,488 | $29,510 | $27,195 |\n| Sales & marketing | $25,654 | $24,456 | $22,759 |\n| General & administrative | $7,223 | $7,609 | $7,575 |\n| Operating income | $128,528 | $109,433 | $88,523 |\n| Income before taxes | $123,627 | $107,787 | $89,311 |\n| Provision for income\ntaxes | $21,795 | $19,651 | $16,950 |\n| Net income | $101,832 | $88,136 | $72,361 |\n| Diluted EPS | $13.64 | $11.80 | $9.68 |"
+        },
+        {
+          "item_id": "page20_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            361.4375,
+            247.2875213623047,
+            378.4624938964844
+          ],
+          "text": "Table A2. Cash flow statement"
+        },
+        {
+          "item_id": "page20_table1",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            384.625,
+            554.5250244140625,
+            521.1749877929688
+          ],
+          "row_count": 6,
+          "column_count": 4,
+          "header": [
+            "Table A2. Cash flow",
+            "statement",
+            "",
+            ""
+          ],
+          "markdown": "| Line item | FY2025 | FY2024 | FY2023 |\n| --- | --- | --- | --- |\n| Net cash from operations | $136,162 | $118,548 | $87,582 |\n| Net cash used in investing | ($72,599) | ($96,970) | ($22,680) |\n| Net cash used in fni ancing | ($51,699) | ($37,757) | ($43,935) |\n| Net change in cash & cash\nequivalents | $11,927 | ($16,389) | $20,773 |\n| Ending cash & cash\nequivalents | $30,242 | $18,315 | $34,704 |"
+        },
+        {
+          "item_id": "page20_text25",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            543.2875366210938,
+            408.72491455078125,
+            560.3125
+          ],
+          "text": "Table A3. Shareholder returns and stockholders’ equity"
+        },
+        {
+          "item_id": "page20_table2",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            566.5250244140625,
+            554.5250244140625,
+            698.5750122070312
+          ],
+          "row_count": 5,
+          "column_count": 4,
+          "header": [
+            "Metric",
+            "FY2025",
+            "FY2024",
+            "FY2023"
+          ],
+          "markdown": "| Metric | FY2025 | FY2024 | FY2023 |\n| --- | --- | --- | --- |\n| Cash dividends declared\nper share | $3.32 | $3.00 | $2.72 |\n| Common stock cash\ndividends | $24,677 | $22,293 | $20,226 |\n| Repurchases under\nannounced programs | $13,000 | $11,960 | $18,400 |\n| Total stockholders’ equity | $343,479 | $268,477 | $206,223 |"
+        }
+      ],
+      "text_block_count": 4,
+      "table_count": 3
+    },
+    {
+      "page_number": 21,
+      "items": [
+        {
+          "item_id": "page21_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            533.156005859375,
+            75.78797912597656
+          ],
+          "text": "Appendix B. Executive officers and selected reference data"
+        },
+        {
+          "item_id": "page21_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.38749694824219,
+            346.14990234375,
+            101.4124984741211
+          ],
+          "text": "Table B1. Executive officers listed in the filing"
+        },
+        {
+          "item_id": "page21_table0",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            107.625,
+            554.5250244140625,
+            335.2749938964844
+          ],
+          "row_count": 8,
+          "column_count": 3,
+          "header": [
+            "Name",
+            "Age",
+            "Position"
+          ],
+          "markdown": "| Name | Age | Position |\n| --- | --- | --- |\n| Satya Nadella | 57 | Chairman and Chief Executive\nOfcfi er |\n| Judson B. Althoff | 52 | Executive Vice President and Chief\nCommercial Ofcfi er |\n| Amy L. Coleman | 53 | Executive Vice President and Chief\nHuman Resources Ofcfi er |\n| Kathleen T. Hogan | 59 | Executive Vice President, Ofcfi e of\nStrategy and Transformation |\n| Amy E. Hood | 53 | Executive Vice President and Chief\nFinancial Ofcfi er |\n| Takeshi Numoto | 54 | Executive Vice President and Chief\nMarketing Officer |\n| Bradford L. Smith | 66 | Vice Chair and President |"
+        },
+        {
+          "item_id": "page21_text17",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            357.3375244140625,
+            359.58746337890625,
+            374.3625183105469
+          ],
+          "text": "Table B2. Selected operating and reference data"
+        },
+        {
+          "item_id": "page21_table1",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            380.5249938964844,
+            554.5250244140625,
+            562.2750244140625
+          ],
+          "row_count": 10,
+          "column_count": 2,
+          "header": [
+            "Item",
+            "Value"
+          ],
+          "markdown": "| Item | Value |\n| --- | --- |\n| Employees as of June 30, 2025 | Approximately 228,000 |\n| Registered holders of record (July 24, 2025) | 77,014 |\n| Cash, cash equivalents, and short-term investments | $94.6 billion |\n| Remaining performance obligations | $375 billion |\n| Microsoft Cloud revenue | $168.9 billion |\n| Microsoft 365 Consumer subscribers | 89.0 million |\n| Total assets | $619.0 billion |\n| Total liabilities | $275.5 billion |\n| Total stockholders’ equity | $343.5 billion |"
+        },
+        {
+          "item_id": "page21_text28",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            584.3875122070312,
+            171.23751831054688,
+            601.4124755859375
+          ],
+          "text": "Methodology note"
+        },
+        {
+          "item_id": "page21_text29",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            607.4755249023438,
+            538.7998046875,
+            621.7764892578125
+          ],
+          "text": "This condensed report was drafted from the full FY2025 Microsoft Form 10-K and cross-checked"
+        },
+        {
+          "item_id": "page21_text30",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            623.4755249023438,
+            551.6409912109375,
+            637.7764892578125
+          ],
+          "text": "against Microsoft’s Investor Relations annual report pages and the SEC filing page. It is designed to"
+        },
+        {
+          "item_id": "page21_text31",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            639.4755249023438,
+            529.6224975585938,
+            653.7764892578125
+          ],
+          "text": "preserve material information while making the document substantially shorter and easier to"
+        },
+        {
+          "item_id": "page21_text32",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            655.4755249023438,
+            94.9540023803711,
+            669.7764892578125
+          ],
+          "text": "review."
+        },
+        {
+          "item_id": "page21_text33",
+          "type": "text",
+          "bbox": [
+            276.3500061035156,
+            675.47900390625,
+            335.8399963378906,
+            687.7369995117188
+          ],
+          "text": "End of report."
+        }
+      ],
+      "text_block_count": 9,
+      "table_count": 2
+    },
+    {
+      "page_number": 22,
+      "items": [
+        {
+          "item_id": "page22_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            417.9720764160156,
+            75.78797912597656
+          ],
+          "text": "Appendix C. Growth drivers by business line"
+        },
+        {
+          "item_id": "page22_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.42552185058594,
+            501.7765197753906,
+            98.72652435302734
+          ],
+          "text": "This appendix breaks the segment totals into the business lines management specifically"
+        },
+        {
+          "item_id": "page22_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            100.42552185058594,
+            556.72998046875,
+            114.72652435302734
+          ],
+          "text": "highlighted in MD&A. It provides a more granular view of what actually drove consolidated growth"
+        },
+        {
+          "item_id": "page22_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            116.42552185058594,
+            109.3494873046875,
+            130.72653198242188
+          ],
+          "text": "in FY2025."
+        },
+        {
+          "item_id": "page22_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            138.3874969482422,
+            357.1499938964844,
+            155.41250610351562
+          ],
+          "text": "Table C1. Selected business-line growth metrics"
+        },
+        {
+          "item_id": "page22_table0",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            161.625,
+            554.5250244140625,
+            470.375
+          ],
+          "row_count": 17,
+          "column_count": 2,
+          "header": [
+            "Table C1. Selected business-line growth",
+            "metrics"
+          ],
+          "markdown": "| Business line | FY2025 growth |\n| --- | --- |\n| Microsoft 365 Commercial products and cloud services | +14% |\n| Microsoft 365 Commercial cloud | +15% |\n| Microsoft 365 Commercial seat growth | +6% |\n| Microsoft 365 Consumer products and cloud services | +11% |\n| Microsoft 365 Consumer cloud | +11% |\n| Microsoft 365 Consumer subscribers | 89.0 million (+8%) |\n| LinkedIn | +9% |\n| Dynamics products and cloud services | +15% |\n| Dynamics 365 | +19% |\n| Server products and cloud services | +23% |\n| Azure and other cloud services | +34% |\n| Enterprise and partner services | +2% |\n| Windows OEM and Devices | +3% |\n| Xbox content and services | +16% |\n| Xbox hardware | -25% |\n| Search and news advertising ex-TAC | +20% |"
+        },
+        {
+          "item_id": "page22_text23",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            490.5255126953125,
+            513.589111328125,
+            504.8265075683594
+          ],
+          "text": "Viewed together, these metrics show that Microsoft’s best growth vectors were not isolated"
+        },
+        {
+          "item_id": "page22_text24",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            506.5255126953125,
+            544.658447265625,
+            520.8264770507812
+          ],
+          "text": "experiments. They were scaled products already sitting on top of meaningful distribution: Azure,"
+        },
+        {
+          "item_id": "page22_text25",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            522.5255126953125,
+            493.3660888671875,
+            536.8264770507812
+          ],
+          "text": "Microsoft 365 Commercial cloud, Dynamics 365, Xbox content and services, and search"
+        },
+        {
+          "item_id": "page22_text26",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            538.5255126953125,
+            532.8355712890625,
+            552.8264770507812
+          ],
+          "text": "monetization. That is why the 10-K reads less like a turnaround story and more like a platform-"
+        },
+        {
+          "item_id": "page22_text27",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            554.5255126953125,
+            140.61851501464844,
+            568.8264770507812
+          ],
+          "text": "deepening story."
+        },
+        {
+          "item_id": "page22_text28",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            576.4874877929688,
+            475.2250061035156,
+            593.512451171875
+          ],
+          "text": "Table C2. Management’s stated primary growth levers by business"
+        },
+        {
+          "item_id": "page22_table1",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            599.7249755859375,
+            554.5250244140625,
+            740.0750122070312
+          ],
+          "row_count": 5,
+          "column_count": 2,
+          "header": [
+            "Business",
+            "Primary driver(s) cited in fli ing"
+          ],
+          "markdown": "| Business | Primary driver(s) cited in fli ing |\n| --- | --- |\n| Microsoft 365 Commercial | Installed-base growth, ARPU expansion, shift from on-\npremises to cloud, Copilot and other AI-enabled\nscenarios |\n| Microsoft 365 Consumer | New users, feature expansion including AI tools, shift\nto subscriptions, storage and communication demand |\n| LinkedIn | Member engagement plus monetization across Talent,\nMarketing, Premium, and Sales Solutions |\n| Dynamics | User licenses, application consumption, ARPU |"
+        }
+      ],
+      "text_block_count": 11,
+      "table_count": 2
+    },
+    {
+      "page_number": 23,
+      "items": [
+        {
+          "item_id": "page23_table0",
+          "type": "table",
+          "bbox": [
+            57.599998474121094,
+            54.25,
+            554.4000244140625,
+            199.8499755859375
+          ],
+          "row_count": 5,
+          "column_count": 2,
+          "header": [
+            "",
+            "expansion, and cloud transition to Dynamics 365"
+          ],
+          "markdown": "|  | expansion, and cloud transition to Dynamics 365 |\n| --- | --- |\n| Azure | Consumption-based demand across infrastructure,\nplatform, data, and AI services |\n| Windows OEM | Device market volume, AI PC category, attachment\nrate, pricing, inventory, and supply chain |\n| Gaming | Active user base, content availability, exclusive titles,\ndevice reliability, subscriptions and ads |\n| Search and news advertising | User acquisition, intent matching, search volume, and\nrevenue per search |"
+        }
+      ],
+      "text_block_count": 0,
+      "table_count": 1
+    },
+    {
+      "page_number": 24,
+      "items": [
+        {
+          "item_id": "page24_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            492.5480651855469,
+            75.78797912597656
+          ],
+          "text": "Appendix D. Liquidity, commitments, and lease detail"
+        },
+        {
+          "item_id": "page24_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.42552185058594,
+            531.712158203125,
+            98.72652435302734
+          ],
+          "text": "Microsoft’s liquidity remains strong, but the filing makes clear that the company has entered a"
+        },
+        {
+          "item_id": "page24_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            100.42552185058594,
+            556.6300048828125,
+            114.72652435302734
+          ],
+          "text": "period of unusually large forward commitments. Those commitments are mainly tied to datacenter"
+        },
+        {
+          "item_id": "page24_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            116.42552185058594,
+            369.1404724121094,
+            130.72653198242188
+          ],
+          "text": "expansion, infrastructure capacity, and lease-backed buildout."
+        },
+        {
+          "item_id": "page24_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            138.3874969482422,
+            373.1124267578125,
+            155.41250610351562
+          ],
+          "text": "Table D1. Unearned revenue recognition schedule"
+        },
+        {
+          "item_id": "page24_table0",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            161.625,
+            554.5250244140625,
+            288.875
+          ],
+          "row_count": 7,
+          "column_count": 2,
+          "header": [
+            "Recognition period",
+            "Amount"
+          ],
+          "markdown": "| Recognition period | Amount |\n| --- | --- |\n| Three months ending September 30, 2025 | $25,191 |\n| Three months ending December 31, 2025 | $19,733 |\n| Three months ending March 31, 2026 | $13,742 |\n| Three months ending June 30, 2026 | $5,889 |\n| Thereafter | $2,710 |\n| Total unearned revenue | $67,265 |"
+        },
+        {
+          "item_id": "page24_text13",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            310.9875183105469,
+            201.6875,
+            328.01251220703125
+          ],
+          "text": "Table D2. Lease profile"
+        },
+        {
+          "item_id": "page24_table1",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            334.2250061035156,
+            554.5250244140625,
+            479.67498779296875
+          ],
+          "row_count": 8,
+          "column_count": 2,
+          "header": [
+            "Table D2. Lease profile",
+            ""
+          ],
+          "markdown": "| Lease metric | FY2025 |\n| --- | --- |\n| Operating lease liabilities | $22,861 |\n| Finance lease liabilities | $46,172 |\n| Operating lease right-of-use assets | $24,823 |\n| Finance lease property and equipment, net | $44,015 |\n| Additional leases not yet commenced | $92.7 billion |\n| Weighted average remaining term (operating) | 6 years |\n| Weighted average remaining term (fni ance) | 13 years |"
+        },
+        {
+          "item_id": "page24_text22",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            501.73748779296875,
+            274.7124938964844,
+            518.762451171875
+          ],
+          "text": "Table D3. Lease maturity schedule"
+        },
+        {
+          "item_id": "page24_table2",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            524.9249877929688,
+            554.5250244140625,
+            670.375
+          ],
+          "row_count": 8,
+          "column_count": 3,
+          "header": [
+            "Year",
+            "Operating leases",
+            "Finance leases"
+          ],
+          "markdown": "| Year | Operating leases | Finance leases |\n| --- | --- | --- |\n| 2026 | $6,111 | $5,008 |\n| 2027 | $5,237 | $5,157 |\n| 2028 | $3,495 | $5,187 |\n| 2029 | $2,419 | $4,521 |\n| 2030 | $2,017 | $4,382 |\n| Thereafter | $6,202 | $36,251 |\n| Total lease payments | $25,481 | $60,506 |"
+        },
+        {
+          "item_id": "page24_text31",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            690.5255126953125,
+            543.5245971679688,
+            704.8264770507812
+          ],
+          "text": "The practical implication is that Microsoft’s AI buildout has a large embedded future cash profile"
+        },
+        {
+          "item_id": "page24_text32",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            706.5255126953125,
+            535.0615234375,
+            720.8264770507812
+          ],
+          "text": "even before considering ordinary opex. Investors focusing only on current-period capex would"
+        },
+        {
+          "item_id": "page24_text33",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            722.5255126953125,
+            408.7361145019531,
+            736.8264770507812
+          ],
+          "text": "understate the long-tail funding requirements of the capacity strategy."
+        }
+      ],
+      "text_block_count": 10,
+      "table_count": 3
+    },
+    {
+      "page_number": 25,
+      "items": [],
+      "text_block_count": 0,
+      "table_count": 0
+    },
+    {
+      "page_number": 26,
+      "items": [
+        {
+          "item_id": "page26_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            425.66802978515625,
+            75.78797912597656
+          ],
+          "text": "Appendix E. Tax, debt, and market risk detail"
+        },
+        {
+          "item_id": "page26_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.42552185058594,
+            530.2001953125,
+            98.72652435302734
+          ],
+          "text": "The tax and treasury sections of the 10-K matter because they capture the main non-operating"
+        },
+        {
+          "item_id": "page26_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            100.42552185058594,
+            533.7491455078125,
+            114.72652435302734
+          ],
+          "text": "variables that can still move reported results materially: tax disputes, debt structure, valuation"
+        },
+        {
+          "item_id": "page26_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            116.42552185058594,
+            337.7455139160156,
+            130.72653198242188
+          ],
+          "text": "changes in investments, and macro-market sensitivities."
+        },
+        {
+          "item_id": "page26_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            138.3874969482422,
+            385.86236572265625,
+            155.41250610351562
+          ],
+          "text": "Table E1. Effective tax rate reconciliation highlights"
+        },
+        {
+          "item_id": "page26_table0",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            161.625,
+            554.5250244140625,
+            343.375
+          ],
+          "row_count": 10,
+          "column_count": 2,
+          "header": [
+            "Driver",
+            "2025 impact"
+          ],
+          "markdown": "| Driver | 2025 impact |\n| --- | --- |\n| U.S. federal statutory rate | 21.0% |\n| Foreign earnings taxed at lower rates | (1.5)% |\n| Foreign-derived intangible income deduction | (1.0)% |\n| State income taxes, net of federal benefti | +1.5% |\n| Research and development credit | (1.1)% |\n| Excess tax benefits from stock compensation | (0.9)% |\n| Interest, net | +1.0% |\n| Other reconciling items, net | (1.4)% |\n| Efef ctive tax rate | 17.6% |"
+        },
+        {
+          "item_id": "page26_text16",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            365.4375,
+            218.1875,
+            382.4624938964844
+          ],
+          "text": "Table E2. Debt maturities"
+        },
+        {
+          "item_id": "page26_table1",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            388.625,
+            554.5250244140625,
+            534.0750122070312
+          ],
+          "row_count": 8,
+          "column_count": 2,
+          "header": [
+            "Table E2. Debt maturities",
+            ""
+          ],
+          "markdown": "| Year ending June 30 | Amount |\n| --- | --- |\n| 2026 | $3,000 |\n| 2027 | $9,250 |\n| 2028 | $0 |\n| 2029 | $2,054 |\n| 2030 | $0 |\n| Thereafter | $34,902 |\n| Total | $49,206 |"
+        },
+        {
+          "item_id": "page26_text25",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            556.1875,
+            316.3374328613281,
+            573.2124633789062
+          ],
+          "text": "Table E3. Market risk sensitivity analysis"
+        },
+        {
+          "item_id": "page26_table2",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            579.4249877929688,
+            554.5250244140625,
+            688.5750122070312
+          ],
+          "row_count": 6,
+          "column_count": 3,
+          "header": [
+            "Risk category",
+            "Hypothetical change",
+            "Impact"
+          ],
+          "markdown": "| Risk category | Hypothetical change | Impact |\n| --- | --- | --- |\n| Foreign currency – revenue | 10% decrease in FX rates | $(11,596) earnings |\n| Foreign currency – investments | 10% decrease in FX rates | $(17) fair value |\n| Interest rate | +100 basis points U.S. Treasury | $(1,415) fair value |\n| Credit | +100 basis points spreads | $(436) fair value |\n| Equity | 10% decrease in market prices | $(1,213) earnings |"
+        },
+        {
+          "item_id": "page26_text32",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            708.675537109375,
+            548.8375244140625,
+            722.9765014648438
+          ],
+          "text": "The IRS transfer-pricing dispute is the single largest named tax exposure in the filing. The amount"
+        },
+        {
+          "item_id": "page26_text33",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            724.675537109375,
+            513.7046508789062,
+            738.9765014648438
+          ],
+          "text": "sought by the IRS is large enough to matter, but Microsoft does not signal an expectation of"
+        }
+      ],
+      "text_block_count": 9,
+      "table_count": 3
+    },
+    {
+      "page_number": 27,
+      "items": [
+        {
+          "item_id": "page27_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            54.0255012512207,
+            549.1210327148438,
+            68.32649993896484
+          ],
+          "text": "imminent resolution within the next 12 months. Treasury and market-risk exposures, by contrast,"
+        },
+        {
+          "item_id": "page27_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            70.02549743652344,
+            324.0430603027344,
+            84.32649993896484
+          ],
+          "text": "appear well within the company’s capacity to absorb."
+        }
+      ],
+      "text_block_count": 2,
+      "table_count": 0
+    },
+    {
+      "page_number": 28,
+      "items": [
+        {
+          "item_id": "page28_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            434.9001770019531,
+            75.78797912597656
+          ],
+          "text": "Appendix F. Cybersecurity and risk dashboard"
+        },
+        {
+          "item_id": "page28_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.42552185058594,
+            491.39202880859375,
+            98.72652435302734
+          ],
+          "text": "Because Microsoft is both a cloud provider and a security vendor, cybersecurity risk is"
+        },
+        {
+          "item_id": "page28_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            100.42552185058594,
+            555.72998046875,
+            114.72652435302734
+          ],
+          "text": "simultaneously an operating risk, a product trust risk, and a reputational risk. The filing’s language"
+        },
+        {
+          "item_id": "page28_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            116.42552185058594,
+            555.0799560546875,
+            130.72653198242188
+          ],
+          "text": "suggests management views this as a board-level strategic issue rather than just a technical control"
+        },
+        {
+          "item_id": "page28_text5",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            132.42552185058594,
+            102.65050506591797,
+            146.72653198242188
+          ],
+          "text": "function."
+        },
+        {
+          "item_id": "page28_text6",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            154.3874969482422,
+            314.3125305175781,
+            171.41250610351562
+          ],
+          "text": "Table F1. Cybersecurity operating model"
+        },
+        {
+          "item_id": "page28_table0",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            177.625,
+            554.5250244140625,
+            405.2749938964844
+          ],
+          "row_count": 8,
+          "column_count": 2,
+          "header": [
+            "Area",
+            "What the fli ing says"
+          ],
+          "markdown": "| Area | What the fli ing says |\n| --- | --- |\n| Strategic program | Secure Future Initiative launched Nov. 2023 and\nexpanded May 2024 |\n| Core principles | Secure by Design, Secure by Default, Secure Operations |\n| Framework alignment | Annual assessment against NIST CSF and other\nstandards |\n| Preparedness activities | Tabletop exercises, production tests, penetration tests,\nred teaming, vulnerability testing |\n| Employee enablement | Mandatory training, incident reporting tools, simulated\nphishing exercises |\n| Governance | Board oversight, CISO reporting to EVP Cloud + AI,\nCybersecurity Governance Council |\n| Scale signal | Security operations draw from 84 trillion signals per\nday |"
+        },
+        {
+          "item_id": "page28_text21",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            427.3375244140625,
+            457.8124694824219,
+            444.3625183105469
+          ],
+          "text": "Table F2. Risk dashboard for monitoring the next 12–24 months"
+        },
+        {
+          "item_id": "page28_table1",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            450.5249938964844,
+            554.5250244140625,
+            660.0750122070312
+          ],
+          "row_count": 7,
+          "column_count": 3,
+          "header": [
+            "Risk area",
+            "Why it matters",
+            "What to watch"
+          ],
+          "markdown": "| Risk area | Why it matters | What to watch |\n| --- | --- | --- |\n| AI infrastructure intensity | Can pressure cloud margins and\ncash needs | Capex trend, lease growth, Azure\nmargin commentary |\n| Cybersecurity incidents | Can damage trust and invite\nregulation | Incident disclosures, remediation\nposture, security program updates |\n| Tax litigation | IRS dispute is very large in absolute\nterms | Administrative appeals progress\nand reserve commentary |\n| EU regulation & privacy | May afef ct LinkedIn, platform\nbehavior, and compliance cost | GDPR and DMA/DSA developments |\n| OpenAI-related economics | Partnership creates strategic upside\nand non-operating volatility | Other income/(expense) and\npartnership disclosures |\n| Gaming integration | Affects returns from Activision\nBlizzard acquisition | Content growth, margins, Game\nPass momentum |"
+        },
+        {
+          "item_id": "page28_text45",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            680.175537109375,
+            511.3001403808594,
+            694.4765014648438
+          ],
+          "text": "The broader lesson is that Microsoft’s risk profile scales with its strategic role in the digital"
+        },
+        {
+          "item_id": "page28_text46",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            696.175537109375,
+            529.3914794921875,
+            710.4765014648438
+          ],
+          "text": "economy. The stronger the platform position becomes, the more visible and consequential the"
+        },
+        {
+          "item_id": "page28_text47",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            712.175537109375,
+            351.070068359375,
+            726.4765014648438
+          ],
+          "text": "trust, compliance, and security obligations become as well."
+        }
+      ],
+      "text_block_count": 10,
+      "table_count": 2
+    },
+    {
+      "page_number": 29,
+      "items": [],
+      "text_block_count": 0,
+      "table_count": 0
+    },
+    {
+      "page_number": 30,
+      "items": [
+        {
+          "item_id": "page30_text1",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            53.995975494384766,
+            411.34808349609375,
+            75.78797912597656
+          ],
+          "text": "Appendix G. Segment economics at a glance"
+        },
+        {
+          "item_id": "page30_text2",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            84.42552185058594,
+            528.7510986328125,
+            98.72652435302734
+          ],
+          "text": "This appendix converts selected segment and company figures into simple economics that are"
+        },
+        {
+          "item_id": "page30_text3",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            100.42552185058594,
+            205.760498046875,
+            114.72652435302734
+          ],
+          "text": "easier to compare at a glance."
+        },
+        {
+          "item_id": "page30_text4",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            122.38749694824219,
+            307.7375183105469,
+            139.41250610351562
+          ],
+          "text": "Table G1. Operating margin by segment"
+        },
+        {
+          "item_id": "page30_table0",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            145.625,
+            554.5250244140625,
+            263.9749755859375
+          ],
+          "row_count": 5,
+          "column_count": 4,
+          "header": [
+            "Segment",
+            "Revenue FY2025",
+            "Operating income\nFY2025",
+            "Operating margin"
+          ],
+          "markdown": "| Segment | Revenue FY2025 | Operating income\nFY2025 | Operating margin |\n| --- | --- | --- | --- |\n| Productivity & Business\nProcesses | $120,810 | $69,773 | 57.8% |\n| Intelligent Cloud | $106,265 | $44,589 | 42.0% |\n| More Personal Computing | $54,649 | $14,166 | 25.9% |\n| Total company | $281,724 | $128,528 | 45.6% |"
+        },
+        {
+          "item_id": "page30_text12",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            286.0875244140625,
+            422.59991455078125,
+            303.1125183105469
+          ],
+          "text": "Table G2. Segment revenue mix of total company revenue"
+        },
+        {
+          "item_id": "page30_table1",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            309.32501220703125,
+            554.5250244140625,
+            382.17498779296875
+          ],
+          "row_count": 4,
+          "column_count": 2,
+          "header": [
+            "Segment",
+            "Share of FY2025 revenue"
+          ],
+          "markdown": "| Segment | Share of FY2025 revenue |\n| --- | --- |\n| Productivity & Business Processes | 42.9% |\n| Intelligent Cloud | 37.7% |\n| More Personal Computing | 19.4% |"
+        },
+        {
+          "item_id": "page30_text17",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            404.2375183105469,
+            346.4373779296875,
+            421.26251220703125
+          ],
+          "text": "Table G3. Selected capital intensity indicators"
+        },
+        {
+          "item_id": "page30_table2",
+          "type": "table",
+          "bbox": [
+            57.474998474121094,
+            427.42498779296875,
+            554.5250244140625,
+            536.5750122070312
+          ],
+          "row_count": 6,
+          "column_count": 2,
+          "header": [
+            "Indicator",
+            "FY2025"
+          ],
+          "markdown": "| Indicator | FY2025 |\n| --- | --- |\n| Capital expenditures / revenue | 22.9% |\n| Operating cash fol w / revenue | 48.3% |\n| Cash + short-term investments / total assets | 15.3% |\n| Total liabilities / equity | 0.80x |\n| Goodwill + intangibles / total assets | 22.9% |"
+        },
+        {
+          "item_id": "page30_text24",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            556.7255249023438,
+            508.28656005859375,
+            571.0264892578125
+          ],
+          "text": "This view reinforces three points. First, PBP remains the highest-margin segment. Second,"
+        },
+        {
+          "item_id": "page30_text25",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            572.7255249023438,
+            523.8580322265625,
+            587.0264892578125
+          ],
+          "text": "Intelligent Cloud is large enough to influence group economics materially even when its own"
+        },
+        {
+          "item_id": "page30_text26",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            588.7255249023438,
+            550.7484741210938,
+            603.0264892578125
+          ],
+          "text": "margin percentage moves. Third, Microsoft’s FY2025 capital intensity was extraordinarily high for"
+        },
+        {
+          "item_id": "page30_text27",
+          "type": "text",
+          "bbox": [
+            57.70000076293945,
+            604.7255249023438,
+            382.49652099609375,
+            619.0264892578125
+          ],
+          "text": "a software company, reflecting the datacenter and AI build cycle."
+        }
+      ],
+      "text_block_count": 10,
+      "table_count": 3
+    }
+  ]
+}

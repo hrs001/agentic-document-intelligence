@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-03-18T08:03:42.938300+00:00",
+  "result": {
+    "database_path": "db",
+    "table_count": 1,
+    "tables": [],
+    "prompt_schema_text": "x"
+  }
+}

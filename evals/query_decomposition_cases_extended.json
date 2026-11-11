@@ -1,0 +1,201 @@
+[
+  {
+    "query": "What was Microsoft's FY2025 revenue?",
+    "expected": {
+      "needs_decomposition": false,
+      "sub_queries": [
+        "What was Microsoft's FY2025 revenue?"
+      ]
+    }
+  },
+  {
+    "query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+    "expected": {
+      "needs_decomposition": true,
+      "sub_queries": [
+        "Who is the CEO of Microsoft?",
+        "What was Microsoft's FY2025 revenue?"
+      ]
+    }
+  },
+  {
+    "query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+    "expected": {
+      "needs_decomposition": true,
+      "sub_queries": [
+        "Explain Microsoft's FY2025 revenue growth?",
+        "Who is the CEO of Microsoft?"
+      ]
+    }
+  },
+  {
+    "query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+    "expected": {
+      "needs_decomposition": true,
+      "sub_queries": [
+        "What was Microsoft's FY2025 revenue?",
+        "What was Microsoft's FY2025 operating income?",
+        "What was Microsoft's FY2025 net income?"
+      ]
+    }
+  },
+  {
+    "query": "Compare Azure and Microsoft 365 revenue drivers.",
+    "expected": {
+      "needs_decomposition": false,
+      "sub_queries": [
+        "Compare Azure and Microsoft 365 revenue drivers."
+      ]
+    }
+  },
+  {
+    "query": "Could you tell me the CEO of Microsoft and summarize fiscal 2025 cybersecurity risks?",
+    "expected": {
+      "needs_decomposition": true,
+      "sub_queries": [
+        "Who is the CEO of Microsoft?",
+        "Summarize Microsoft's fiscal 2025 cybersecurity risks?"
+      ]
+    }
+  },
+  {
+    "query": "Revenue, operating income, and cash flow for FY2025 please.",
+    "expected": {
+      "needs_decomposition": true,
+      "sub_queries": [
+        "What was Microsoft's FY2025 revenue?",
+        "What was Microsoft's FY2025 operating income?",
+        "What was Microsoft's FY2025 cash flow?"
+      ]
+    }
+  },
+  {
+    "query": "What happened with Azure growth and what did management say about AI demand?",
+    "expected": {
+      "needs_decomposition": true,
+      "sub_queries": [
+        "What happened with Azure growth?",
+        "What did management say about AI demand?"
+      ]
+    }
+  },
+  {
+    "query": "Who is Microsoft's CFO?",
+    "expected": {
+      "needs_decomposition": false,
+      "sub_queries": [
+        "Who is Microsoft's CFO?"
+      ]
+    }
+  },
+  {
+    "query": "Who are the executive officers and what does Satya Nadella do?",
+    "expected": {
+      "needs_decomposition": true,
+      "sub_queries": [
+        "Who are Microsoft's executive officers?",
+        "What is Satya Nadella's role at Microsoft?"
+      ]
+    }
+  },
+  {
+    "query": "Summarize the key risks related to AI demand, cybersecurity, and regulation.",
+    "expected": {
+      "needs_decomposition": true,
+      "sub_queries": [
+        "Summarize Microsoft's AI demand risks?",
+        "Summarize Microsoft's cybersecurity risks?",
+        "Summarize Microsoft's regulatory risks?"
+      ]
+    }
+  },
+  {
+    "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+    "expected": {
+      "needs_decomposition": true,
+      "sub_queries": [
+        "Did Microsoft mention capital expenditures in FY2025?",
+        "Did Microsoft mention datacenter spending in FY2025?"
+      ]
+    }
+  },
+  {
+    "query": "How did Intelligent Cloud perform compared with Productivity and Business Processes?",
+    "expected": {
+      "needs_decomposition": false,
+      "sub_queries": [
+        "How did Intelligent Cloud perform compared with Productivity and Business Processes?"
+      ]
+    }
+  },
+  {
+    "query": "Tell me the revenue, operating margin, and segment with the highest growth.",
+    "expected": {
+      "needs_decomposition": true,
+      "sub_queries": [
+        "What was Microsoft's revenue?",
+        "What was Microsoft's operating margin?",
+        "Which Microsoft segment had the highest growth?"
+      ]
+    }
+  },
+  {
+    "query": "What did management say about Copilot and Azure demand?",
+    "expected": {
+      "needs_decomposition": true,
+      "sub_queries": [
+        "What did management say about Copilot?",
+        "What did management say about Azure demand?"
+      ]
+    }
+  },
+  {
+    "query": "Explain Microsoft's capital allocation strategy.",
+    "expected": {
+      "needs_decomposition": false,
+      "sub_queries": [
+        "Explain Microsoft's capital allocation strategy."
+      ]
+    }
+  },
+  {
+    "query": "Could you compare gross margin trends and also tell me net income?",
+    "expected": {
+      "needs_decomposition": true,
+      "sub_queries": [
+        "Compare Microsoft's gross margin trends.",
+        "What was Microsoft's net income?"
+      ]
+    }
+  },
+  {
+    "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+    "expected": {
+      "needs_decomposition": true,
+      "sub_queries": [
+        "What were the board's cybersecurity governance responsibilities?",
+        "What were management's cybersecurity governance responsibilities?"
+      ]
+    }
+  },
+  {
+    "query": "Azure growth?",
+    "expected": {
+      "needs_decomposition": false,
+      "sub_queries": [
+        "What happened with Azure growth?"
+      ]
+    }
+  },
+  {
+    "query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+    "expected": {
+      "needs_decomposition": true,
+      "sub_queries": [
+        "Who is the CEO of Microsoft?",
+        "Which Microsoft segment drove the most revenue growth?",
+        "What did management say about AI?"
+      ]
+    }
+  }
+]

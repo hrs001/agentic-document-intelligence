@@ -1,0 +1,10 @@
+{
+  "model": "gpt-5-mini",
+  "database_path": "db.sqlite",
+  "case_count": 1,
+  "strict_passed_count": 1,
+  "strict_pass_rate": 1.0,
+  "answer_passed_count": 1,
+  "answer_pass_rate": 1.0,
+  "case_results": []
+}

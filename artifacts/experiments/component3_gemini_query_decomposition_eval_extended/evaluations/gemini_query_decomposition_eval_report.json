@@ -1,0 +1,1258 @@
+{
+  "generated_at": "2026-03-17T10:49:16.429172+00:00",
+  "model": "gemini-3-flash-preview",
+  "cases_path": "agentic_document_intelligence\\evals\\query_decomposition_cases_extended.json",
+  "case_count": 20,
+  "passed_count": 6,
+  "exact_passed_count": 1,
+  "baseline_passed_count": 10,
+  "baseline_exact_passed_count": 5,
+  "results": [
+    {
+      "query": "What was Microsoft's FY2025 revenue?",
+      "gemini_result": {
+        "sanitized_query": "What was Microsoft's FY2025 revenue?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "What was Microsoft's FY2025 revenue?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "What was Microsoft's FY2025 revenue?",
+        "passed": true,
+        "exact_passed": true,
+        "missing_sub_queries": [],
+        "extra_sub_queries": [],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+      "gemini_result": {
+        "sanitized_query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Who is the CEO of Microsoft?",
+          "What was Microsoft's revenue for FY2025?"
+        ],
+        "reasoning_type": "multi_question",
+        "decomposition_strategy": "question_boundary_split"
+      },
+      "evaluation": {
+        "query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what was microsoft's fy2025 revenue"
+        ],
+        "extra_sub_queries": [
+          "what was microsoft's revenue for fy2025"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+      "gemini_result": {
+        "sanitized_query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "What was Microsoft's revenue growth in FY2025?",
+          "Who is the CEO of Microsoft?"
+        ],
+        "reasoning_type": "multi_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "explain microsoft's fy2025 revenue growth"
+        ],
+        "extra_sub_queries": [
+          "what was microsoft's revenue growth in fy2025"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+      "gemini_result": {
+        "sanitized_query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "What was Microsoft's revenue for FY2025?",
+          "What was Microsoft's operating income for FY2025?",
+          "What was Microsoft's net income for FY2025?"
+        ],
+        "reasoning_type": "list_intent",
+        "decomposition_strategy": "list_item_split"
+      },
+      "evaluation": {
+        "query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what was microsoft's fy2025 revenue",
+          "what was microsoft's fy2025 operating income",
+          "what was microsoft's fy2025 net income"
+        ],
+        "extra_sub_queries": [
+          "what was microsoft's revenue for fy2025",
+          "what was microsoft's operating income for fy2025",
+          "what was microsoft's net income for fy2025"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Compare Azure and Microsoft 365 revenue drivers.",
+      "gemini_result": {
+        "sanitized_query": "Compare Azure and Microsoft 365 revenue drivers.",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "What are the revenue drivers for Azure and Microsoft 365 and how do they compare?"
+        ],
+        "reasoning_type": "comparison",
+        "decomposition_strategy": "comparison_atomic"
+      },
+      "evaluation": {
+        "query": "Compare Azure and Microsoft 365 revenue drivers.",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "compare azure and microsoft 365 revenue drivers"
+        ],
+        "extra_sub_queries": [
+          "what are the revenue drivers for azure and microsoft 365 and how do they compare"
+        ],
+        "semantic_missing_sub_queries": [
+          "compare_azure_m365_revenue_drivers"
+        ],
+        "semantic_extra_sub_queries": [
+          "what are the revenue drivers for azure and microsoft 365 and how do they compare"
+        ],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Could you tell me the CEO of Microsoft and summarize fiscal 2025 cybersecurity risks?",
+      "gemini_result": {
+        "sanitized_query": "Could you tell me the CEO of Microsoft and summarize fiscal 2025 cybersecurity risks?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Who is the CEO of Microsoft?",
+          "Summarize the cybersecurity risks for Microsoft in fiscal year 2025."
+        ],
+        "reasoning_type": "multi_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "Could you tell me the CEO of Microsoft and summarize fiscal 2025 cybersecurity risks?",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "summarize microsoft's fy2025 cybersecurity risks"
+        ],
+        "extra_sub_queries": [
+          "summarize the cybersecurity risks for microsoft in fy2025"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Revenue, operating income, and cash flow for FY2025 please.",
+      "gemini_result": {
+        "sanitized_query": "Revenue, operating income, and cash flow for FY2025 please.",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "What was Microsoft's revenue for FY2025?",
+          "What was Microsoft's operating income for FY2025?",
+          "What was Microsoft's cash flow for FY2025?"
+        ],
+        "reasoning_type": "list_intent",
+        "decomposition_strategy": "list_item_split"
+      },
+      "evaluation": {
+        "query": "Revenue, operating income, and cash flow for FY2025 please.",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what was microsoft's fy2025 revenue",
+          "what was microsoft's fy2025 operating income",
+          "what was microsoft's fy2025 cash flow"
+        ],
+        "extra_sub_queries": [
+          "what was microsoft's revenue for fy2025",
+          "what was microsoft's operating income for fy2025",
+          "what was microsoft's cash flow for fy2025"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "What happened with Azure growth and what did management say about AI demand?",
+      "gemini_result": {
+        "sanitized_query": "What happened with Azure growth and what did management say about AI demand?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "What was the growth of Microsoft Azure?",
+          "What did Microsoft management say about AI demand?"
+        ],
+        "reasoning_type": "multi_question",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "What happened with Azure growth and what did management say about AI demand?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what happened with azure growth",
+          "what did management say about ai demand"
+        ],
+        "extra_sub_queries": [
+          "what was the growth of azure",
+          "what did microsoft management say about ai demand"
+        ],
+        "semantic_missing_sub_queries": [
+          "azure_growth"
+        ],
+        "semantic_extra_sub_queries": [
+          "what was the growth of azure"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Who is Microsoft's CFO?",
+      "gemini_result": {
+        "sanitized_query": "Who is Microsoft's CFO?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "Who is the CFO of Microsoft?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "Who is Microsoft's CFO?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "who is microsoft's cfo"
+        ],
+        "extra_sub_queries": [
+          "who is the cfo of microsoft"
+        ],
+        "semantic_missing_sub_queries": [
+          "who is microsoft's cfo"
+        ],
+        "semantic_extra_sub_queries": [
+          "who is the cfo of microsoft"
+        ],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Who are the executive officers and what does Satya Nadella do?",
+      "gemini_result": {
+        "sanitized_query": "Who are the executive officers and what does Satya Nadella do?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Who are the executive officers of Microsoft?",
+          "What is the role and responsibilities of Satya Nadella at Microsoft?"
+        ],
+        "reasoning_type": "multi_question",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "Who are the executive officers and what does Satya Nadella do?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "who are microsoft's executive officers",
+          "what is satya nadella's role at microsoft"
+        ],
+        "extra_sub_queries": [
+          "who are the executive officers of microsoft",
+          "what is the role and responsibilities of satya nadella at microsoft"
+        ],
+        "semantic_missing_sub_queries": [
+          "who are microsoft's executive officers",
+          "what is satya nadella's role at microsoft"
+        ],
+        "semantic_extra_sub_queries": [
+          "who are the executive officers of microsoft",
+          "what is the role and responsibilities of satya nadella at microsoft"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Summarize the key risks related to AI demand, cybersecurity, and regulation.",
+      "gemini_result": {
+        "sanitized_query": "Summarize the key risks related to AI demand, cybersecurity, and regulation.",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "What are the key risks related to AI demand for Microsoft?",
+          "What are the key risks related to cybersecurity for Microsoft?",
+          "What are the key risks related to regulation for Microsoft?"
+        ],
+        "reasoning_type": "list_intent",
+        "decomposition_strategy": "list_item_split"
+      },
+      "evaluation": {
+        "query": "Summarize the key risks related to AI demand, cybersecurity, and regulation.",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "summarize microsoft's ai demand risks",
+          "summarize microsoft's cybersecurity risks",
+          "summarize microsoft's regulatory risks"
+        ],
+        "extra_sub_queries": [
+          "what are the key risks related to ai demand for microsoft",
+          "what are the key risks related to cybersecurity for microsoft",
+          "what are the key risks related to regulation for microsoft"
+        ],
+        "semantic_missing_sub_queries": [
+          "microsoft_fy2025_cybersecurity_risks",
+          "summarize microsoft's regulatory risks"
+        ],
+        "semantic_extra_sub_queries": [
+          "what are the key risks related to cybersecurity for microsoft",
+          "what are the key risks related to regulation for microsoft"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+      "gemini_result": {
+        "sanitized_query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Did Microsoft mention capital expenditures (capex) in FY2025?",
+          "Did Microsoft mention datacenter spending in FY2025?"
+        ],
+        "reasoning_type": "list_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "did microsoft mention capital expenditures in fy2025"
+        ],
+        "extra_sub_queries": [
+          "did microsoft mention capital expenditures (capex) in fy2025"
+        ],
+        "semantic_missing_sub_queries": [
+          "did microsoft mention capital expenditures in fy2025"
+        ],
+        "semantic_extra_sub_queries": [
+          "did microsoft mention capital expenditures (capex) in fy2025"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "How did Intelligent Cloud perform compared with Productivity and Business Processes?",
+      "gemini_result": {
+        "sanitized_query": "How did Intelligent Cloud perform compared with Productivity and Business Processes?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "How did Microsoft's Intelligent Cloud segment perform compared with its Productivity and Business Processes segment?"
+        ],
+        "reasoning_type": "comparison",
+        "decomposition_strategy": "comparison_atomic"
+      },
+      "evaluation": {
+        "query": "How did Intelligent Cloud perform compared with Productivity and Business Processes?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "how did intelligent cloud perform compared with productivity and business processes"
+        ],
+        "extra_sub_queries": [
+          "how did microsoft's intelligent cloud segment perform compared with its productivity and business processes segment"
+        ],
+        "semantic_missing_sub_queries": [
+          "how did intelligent cloud perform compared with productivity and business processes"
+        ],
+        "semantic_extra_sub_queries": [
+          "how did microsoft's intelligent cloud segment perform compared with its productivity and business processes segment"
+        ],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Tell me the revenue, operating margin, and segment with the highest growth.",
+      "gemini_result": {
+        "sanitized_query": "Tell me the revenue, operating margin, and segment with the highest growth.",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "What is the revenue of Microsoft?",
+          "What is the operating margin of Microsoft?",
+          "Which Microsoft segment had the highest growth?"
+        ],
+        "reasoning_type": "list_intent",
+        "decomposition_strategy": "list_item_split"
+      },
+      "evaluation": {
+        "query": "Tell me the revenue, operating margin, and segment with the highest growth.",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what was microsoft's revenue",
+          "what was microsoft's operating margin"
+        ],
+        "extra_sub_queries": [
+          "what is the revenue of microsoft",
+          "what is the operating margin of microsoft"
+        ],
+        "semantic_missing_sub_queries": [
+          "what was microsoft's revenue",
+          "what was microsoft's operating margin"
+        ],
+        "semantic_extra_sub_queries": [
+          "what is the revenue of microsoft",
+          "what is the operating margin of microsoft"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "What did management say about Copilot and Azure demand?",
+      "gemini_result": {
+        "sanitized_query": "What did management say about Copilot and Azure demand?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "What did Microsoft management say about Copilot?",
+          "What did Microsoft management say about Azure demand?"
+        ],
+        "reasoning_type": "multi_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "What did management say about Copilot and Azure demand?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what did management say about copilot",
+          "what did management say about azure demand"
+        ],
+        "extra_sub_queries": [
+          "what did microsoft management say about copilot",
+          "what did microsoft management say about azure demand"
+        ],
+        "semantic_missing_sub_queries": [
+          "what did management say about copilot",
+          "what did management say about azure demand"
+        ],
+        "semantic_extra_sub_queries": [
+          "what did microsoft management say about copilot",
+          "what did microsoft management say about azure demand"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Explain Microsoft's capital allocation strategy.",
+      "gemini_result": {
+        "sanitized_query": "Explain Microsoft's capital allocation strategy.",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "What is Microsoft's capital allocation strategy?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "Explain Microsoft's capital allocation strategy.",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "explain microsoft's capital allocation strategy"
+        ],
+        "extra_sub_queries": [
+          "what is microsoft's capital allocation strategy"
+        ],
+        "semantic_missing_sub_queries": [
+          "explain microsoft's capital allocation strategy"
+        ],
+        "semantic_extra_sub_queries": [
+          "what is microsoft's capital allocation strategy"
+        ],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Could you compare gross margin trends and also tell me net income?",
+      "gemini_result": {
+        "sanitized_query": "Could you compare gross margin trends and also tell me net income?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "What are the gross margin trends for Microsoft?",
+          "What is the net income for Microsoft?"
+        ],
+        "reasoning_type": "multi_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "Could you compare gross margin trends and also tell me net income?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "compare microsoft's gross margin trends",
+          "what was microsoft's net income"
+        ],
+        "extra_sub_queries": [
+          "what are the gross margin trends for microsoft",
+          "what is the net income for microsoft"
+        ],
+        "semantic_missing_sub_queries": [
+          "compare microsoft's gross margin trends",
+          "what was microsoft's net income"
+        ],
+        "semantic_extra_sub_queries": [
+          "what are the gross margin trends for microsoft",
+          "what is the net income for microsoft"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+      "gemini_result": {
+        "sanitized_query": "What were the main cybersecurity governance responsibilities of the board and management?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "What were the main cybersecurity governance responsibilities of the Microsoft Board of Directors?",
+          "What were the main cybersecurity governance responsibilities of Microsoft management?"
+        ],
+        "reasoning_type": "multi_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what were the board's cybersecurity governance responsibilities",
+          "what were management's cybersecurity governance responsibilities"
+        ],
+        "extra_sub_queries": [
+          "what were the main cybersecurity governance responsibilities of the microsoft board of directors",
+          "what were the main cybersecurity governance responsibilities of microsoft management"
+        ],
+        "semantic_missing_sub_queries": [
+          "what were the board's cybersecurity governance responsibilities",
+          "what were management's cybersecurity governance responsibilities"
+        ],
+        "semantic_extra_sub_queries": [
+          "what were the main cybersecurity governance responsibilities of the microsoft board of directors",
+          "what were the main cybersecurity governance responsibilities of microsoft management"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Azure growth?",
+      "gemini_result": {
+        "sanitized_query": "Azure growth?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "What is the growth rate of Microsoft Azure?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "Azure growth?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what happened with azure growth"
+        ],
+        "extra_sub_queries": [
+          "what is the growth rate of azure"
+        ],
+        "semantic_missing_sub_queries": [
+          "azure_growth"
+        ],
+        "semantic_extra_sub_queries": [
+          "what is the growth rate of azure"
+        ],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+      "gemini_result": {
+        "sanitized_query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Who is the CEO of Microsoft?",
+          "Which Microsoft segment drove the most revenue growth?",
+          "What did Microsoft's CEO say about AI?"
+        ],
+        "reasoning_type": "multi_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what did management say about ai"
+        ],
+        "extra_sub_queries": [
+          "what did microsoft's ceo say about ai"
+        ],
+        "semantic_missing_sub_queries": [
+          "what did management say about ai"
+        ],
+        "semantic_extra_sub_queries": [
+          "what did microsoft's ceo say about ai"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    }
+  ],
+  "baseline_results": [
+    {
+      "query": "What was Microsoft's FY2025 revenue?",
+      "baseline_result": {
+        "sanitized_query": "What was Microsoft's FY2025 revenue?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "What was Microsoft's FY2025 revenue?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "What was Microsoft's FY2025 revenue?",
+        "passed": true,
+        "exact_passed": true,
+        "missing_sub_queries": [],
+        "extra_sub_queries": [],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+      "baseline_result": {
+        "sanitized_query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Who is the CEO of Microsoft",
+          "What was FY2025 revenue"
+        ],
+        "reasoning_type": "multi_question",
+        "decomposition_strategy": "question_boundary_split"
+      },
+      "evaluation": {
+        "query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what was microsoft's fy2025 revenue"
+        ],
+        "extra_sub_queries": [
+          "what was fy2025 revenue"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+      "baseline_result": {
+        "sanitized_query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Explain Microsoft's FY2025 revenue growth?",
+          "identify who the CEO is?"
+        ],
+        "reasoning_type": "multi_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "who is the ceo of microsoft"
+        ],
+        "extra_sub_queries": [
+          "identify who the ceo is"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+      "baseline_result": {
+        "sanitized_query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "List Microsoft's FY2025 revenue?",
+          "List Microsoft's FY2025 operating income?",
+          "List Microsoft's FY2025 net income?"
+        ],
+        "reasoning_type": "list_intent",
+        "decomposition_strategy": "list_item_split"
+      },
+      "evaluation": {
+        "query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what was microsoft's fy2025 revenue",
+          "what was microsoft's fy2025 operating income",
+          "what was microsoft's fy2025 net income"
+        ],
+        "extra_sub_queries": [
+          "list microsoft's fy2025 revenue",
+          "list microsoft's fy2025 operating income",
+          "list microsoft's fy2025 net income"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Compare Azure and Microsoft 365 revenue drivers.",
+      "baseline_result": {
+        "sanitized_query": "Compare Azure and Microsoft 365 revenue drivers.",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "Compare Azure and Microsoft 365 revenue drivers?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "Compare Azure and Microsoft 365 revenue drivers.",
+        "passed": true,
+        "exact_passed": true,
+        "missing_sub_queries": [],
+        "extra_sub_queries": [],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Could you tell me the CEO of Microsoft and summarize fiscal 2025 cybersecurity risks?",
+      "baseline_result": {
+        "sanitized_query": "Could you tell me the CEO of Microsoft and summarize fiscal 2025 cybersecurity risks?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Could you tell me the CEO of Microsoft?",
+          "summarize fiscal 2025 cybersecurity risks?"
+        ],
+        "reasoning_type": "multi_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "Could you tell me the CEO of Microsoft and summarize fiscal 2025 cybersecurity risks?",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "who is the ceo of microsoft",
+          "summarize microsoft's fy2025 cybersecurity risks"
+        ],
+        "extra_sub_queries": [
+          "could you tell me the ceo of microsoft",
+          "summarize fy2025 cybersecurity risks"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Revenue, operating income, and cash flow for FY2025 please.",
+      "baseline_result": {
+        "sanitized_query": "Revenue, operating income, and cash flow for FY2025 please.",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "Revenue, operating income, and cash flow for FY2025 please?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "Revenue, operating income, and cash flow for FY2025 please.",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what was microsoft's fy2025 revenue",
+          "what was microsoft's fy2025 operating income",
+          "what was microsoft's fy2025 cash flow"
+        ],
+        "extra_sub_queries": [
+          "revenue, operating income, and cash flow for fy2025 please"
+        ],
+        "semantic_missing_sub_queries": [
+          "microsoft_fy2025_operating_income",
+          "microsoft_fy2025_cash_flow"
+        ],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "What happened with Azure growth and what did management say about AI demand?",
+      "baseline_result": {
+        "sanitized_query": "What happened with Azure growth and what did management say about AI demand?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "What happened with Azure growth and what did management say about AI demand?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "What happened with Azure growth and what did management say about AI demand?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what happened with azure growth",
+          "what did management say about ai demand"
+        ],
+        "extra_sub_queries": [
+          "what happened with azure growth and what did management say about ai demand"
+        ],
+        "semantic_missing_sub_queries": [
+          "ai_demand"
+        ],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Who is Microsoft's CFO?",
+      "baseline_result": {
+        "sanitized_query": "Who is Microsoft's CFO?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "Who is Microsoft's CFO?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "Who is Microsoft's CFO?",
+        "passed": true,
+        "exact_passed": true,
+        "missing_sub_queries": [],
+        "extra_sub_queries": [],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Who are the executive officers and what does Satya Nadella do?",
+      "baseline_result": {
+        "sanitized_query": "Who are the executive officers and what does Satya Nadella do?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "Who are the executive officers and what does Satya Nadella do?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "Who are the executive officers and what does Satya Nadella do?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "who are microsoft's executive officers",
+          "what is satya nadella's role at microsoft"
+        ],
+        "extra_sub_queries": [
+          "who are the executive officers and what does satya nadella do"
+        ],
+        "semantic_missing_sub_queries": [
+          "who are microsoft's executive officers",
+          "what is satya nadella's role at microsoft"
+        ],
+        "semantic_extra_sub_queries": [
+          "who are the executive officers and what does satya nadella do"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Summarize the key risks related to AI demand, cybersecurity, and regulation.",
+      "baseline_result": {
+        "sanitized_query": "Summarize the key risks related to AI demand, cybersecurity, and regulation.",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "Summarize the key risks related to AI demand, cybersecurity, and regulation?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "Summarize the key risks related to AI demand, cybersecurity, and regulation.",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "summarize microsoft's ai demand risks",
+          "summarize microsoft's cybersecurity risks",
+          "summarize microsoft's regulatory risks"
+        ],
+        "extra_sub_queries": [
+          "summarize the key risks related to ai demand, cybersecurity, and regulation"
+        ],
+        "semantic_missing_sub_queries": [
+          "microsoft_fy2025_cybersecurity_risks",
+          "summarize microsoft's regulatory risks"
+        ],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+      "baseline_result": {
+        "sanitized_query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "Did Microsoft mention capex and datacenter spending in FY2025?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "did microsoft mention capital expenditures in fy2025",
+          "did microsoft mention datacenter spending in fy2025"
+        ],
+        "extra_sub_queries": [
+          "did microsoft mention capex and datacenter spending in fy2025"
+        ],
+        "semantic_missing_sub_queries": [
+          "did microsoft mention capital expenditures in fy2025",
+          "did microsoft mention datacenter spending in fy2025"
+        ],
+        "semantic_extra_sub_queries": [
+          "did microsoft mention capex and datacenter spending in fy2025"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "How did Intelligent Cloud perform compared with Productivity and Business Processes?",
+      "baseline_result": {
+        "sanitized_query": "How did Intelligent Cloud perform compared with Productivity and Business Processes?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "How did Intelligent Cloud perform compared with Productivity and Business Processes?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "How did Intelligent Cloud perform compared with Productivity and Business Processes?",
+        "passed": true,
+        "exact_passed": true,
+        "missing_sub_queries": [],
+        "extra_sub_queries": [],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Tell me the revenue, operating margin, and segment with the highest growth.",
+      "baseline_result": {
+        "sanitized_query": "Tell me the revenue, operating margin, and segment with the highest growth.",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Tell me the revenue, operating margin,?",
+          "segment with the highest growth?"
+        ],
+        "reasoning_type": "multi_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "Tell me the revenue, operating margin, and segment with the highest growth.",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what was microsoft's revenue",
+          "what was microsoft's operating margin",
+          "which microsoft segment had the highest growth"
+        ],
+        "extra_sub_queries": [
+          "tell me the revenue, operating margin",
+          "segment with the highest growth"
+        ],
+        "semantic_missing_sub_queries": [
+          "what was microsoft's revenue",
+          "what was microsoft's operating margin",
+          "which microsoft segment had the highest growth"
+        ],
+        "semantic_extra_sub_queries": [
+          "tell me the revenue, operating margin",
+          "segment with the highest growth"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "What did management say about Copilot and Azure demand?",
+      "baseline_result": {
+        "sanitized_query": "What did management say about Copilot and Azure demand?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "What did management say about Copilot and Azure demand?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "What did management say about Copilot and Azure demand?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what did management say about copilot",
+          "what did management say about azure demand"
+        ],
+        "extra_sub_queries": [
+          "what did management say about copilot and azure demand"
+        ],
+        "semantic_missing_sub_queries": [
+          "what did management say about copilot",
+          "what did management say about azure demand"
+        ],
+        "semantic_extra_sub_queries": [
+          "what did management say about copilot and azure demand"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Explain Microsoft's capital allocation strategy.",
+      "baseline_result": {
+        "sanitized_query": "Explain Microsoft's capital allocation strategy.",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "Explain Microsoft's capital allocation strategy?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "Explain Microsoft's capital allocation strategy.",
+        "passed": true,
+        "exact_passed": true,
+        "missing_sub_queries": [],
+        "extra_sub_queries": [],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Could you compare gross margin trends and also tell me net income?",
+      "baseline_result": {
+        "sanitized_query": "Could you compare gross margin trends and also tell me net income?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "Could you compare gross margin trends and also tell me net income?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "Could you compare gross margin trends and also tell me net income?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "compare microsoft's gross margin trends",
+          "what was microsoft's net income"
+        ],
+        "extra_sub_queries": [
+          "could you compare gross margin trends and also tell me net income"
+        ],
+        "semantic_missing_sub_queries": [
+          "compare microsoft's gross margin trends",
+          "what was microsoft's net income"
+        ],
+        "semantic_extra_sub_queries": [
+          "could you compare gross margin trends and also tell me net income"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+      "baseline_result": {
+        "sanitized_query": "What were the main cybersecurity governance responsibilities of the board and management?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "What were the main cybersecurity governance responsibilities of the board and management?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what were the board's cybersecurity governance responsibilities",
+          "what were management's cybersecurity governance responsibilities"
+        ],
+        "extra_sub_queries": [
+          "what were the main cybersecurity governance responsibilities of the board and management"
+        ],
+        "semantic_missing_sub_queries": [
+          "what were the board's cybersecurity governance responsibilities",
+          "what were management's cybersecurity governance responsibilities"
+        ],
+        "semantic_extra_sub_queries": [
+          "what were the main cybersecurity governance responsibilities of the board and management"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Azure growth?",
+      "baseline_result": {
+        "sanitized_query": "Azure growth?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "Azure growth?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "Azure growth?",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what happened with azure growth"
+        ],
+        "extra_sub_queries": [
+          "azure growth"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+      "baseline_result": {
+        "sanitized_query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Who is the CEO?",
+          "what segment drove the most revenue growth?",
+          "what did they say about AI?"
+        ],
+        "reasoning_type": "multi_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "who is the ceo of microsoft",
+          "which microsoft segment drove the most revenue growth",
+          "what did management say about ai"
+        ],
+        "extra_sub_queries": [
+          "who is the ceo",
+          "what segment drove the most revenue growth",
+          "what did they say about ai"
+        ],
+        "semantic_missing_sub_queries": [
+          "which microsoft segment drove the most revenue growth",
+          "what did management say about ai"
+        ],
+        "semantic_extra_sub_queries": [
+          "what segment drove the most revenue growth",
+          "what did they say about ai"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    }
+  ]
+}

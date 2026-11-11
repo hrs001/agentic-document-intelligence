@@ -1,0 +1,70 @@
+{
+    "elapsed_seconds":  150.84,
+    "status":  "failed",
+    "event_count":  12,
+    "events":  [
+                   {
+                       "timestamp":  "2026-03-19T09:06:35.826746+00:00",
+                       "component":  "Guardrails",
+                       "data":  "User query accepted for multi-source RAG execution."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:06:44.954038+00:00",
+                       "component":  "Query Decomposition",
+                       "data":  "Prepared 3 sub-queries: Which Microsoft reporting segment includes GitHub? | What was the FY2025 revenue for the Microsoft reporting segment that includes GitHub? | What strategic themes did Microsoft management highlight that are relevant to the Microsoft reporting segment that includes GitHub?"
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:06:55.512496+00:00",
+                       "component":  "Source Router",
+                       "data":  "Routing selected: sq_1 -\u003e graph_relationships; sq_2 -\u003e sql_structured, graph_relationships, vector_document; sq_3 -\u003e vector_document, graph_relationships"
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:07:08.727128+00:00",
+                       "component":  "Latency Policy",
+                       "data":  "Execution plan: sq_1 profile=skip sources=graph_relationships; sq_2 profile=fast sources=sql_structured,graph_relationships; sq_3 profile=fast sources=graph_relationships"
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:07:47.628097+00:00",
+                       "component":  "Retriever",
+                       "data":  "Execution summary: {\"sub_query_count\": 3, \"source_usage\": {\"vector_document\": 0, \"graph_relationships\": 3, \"sql_structured\": 1}, \"vector_profile_usage\": {\"skip\": 0, \"fast\": 0, \"balanced\": 0, \"full\": 0, \"fast_escalated\": 0, \"balanced_escalated\": 0}}"
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:07:47.629075+00:00",
+                       "component":  "Evidence Fusion",
+                       "data":  "Fused 42 facts across 3 sub-queries."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:07:47.629083+00:00",
+                       "component":  "Answer Generator",
+                       "data":  "Generating grounded answer from fused evidence."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:08:04.649579+00:00",
+                       "component":  "Self-Reflective RAG",
+                       "data":  "Critiquing the answer for grounding, coverage, and citation integrity."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:08:04.649591+00:00",
+                       "component":  "LLM Judge",
+                       "data":  "Scoring the answer with RAGAS-style metrics."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:08:23.584448+00:00",
+                       "component":  "Runtime Gate",
+                       "data":  "Action=targeted_answer_repair | Reason=Coverage gap detected by critique."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:08:23.584483+00:00",
+                       "component":  "Repair",
+                       "data":  "Running targeted grounded-answer repair."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:09:06.312493+00:00",
+                       "component":  "Error",
+                       "data":  "Error code: 400 - {\u0027error\u0027: {\u0027message\u0027: \"We could not parse the JSON body of your request. (HINT: This likely means you aren\u0027t using your HTTP library correctly. The OpenAI API expects a JSON payload, but what was sent was not valid JSON. If you have trouble figuring out how to fix this, please contact us through our help center at help.openai.com.)\", \u0027type\u0027: \u0027invalid_request_error\u0027, \u0027param\u0027: None, \u0027code\u0027: None}}"
+                   }
+               ],
+    "result":  {
+                   "status":  "Error code: 400 - {\u0027error\u0027: {\u0027message\u0027: \"We could not parse the JSON body of your request. (HINT: This likely means you aren\u0027t using your HTTP library correctly. The OpenAI API expects a JSON payload, but what was sent was not valid JSON. If you have trouble figuring out how to fix this, please contact us through our help center at help.openai.com.)\", \u0027type\u0027: \u0027invalid_request_error\u0027, \u0027param\u0027: None, \u0027code\u0027: None}}"
+               }
+}

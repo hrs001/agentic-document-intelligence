@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-03-18T11:38:34.199186+00:00",
+  "result": {
+    "original_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+    "model": "gpt-5.1",
+    "answer_input_summary": {
+      "sub_query_count": 1,
+      "allowed_fact_count": 4
+    },
+    "answer_markdown": "GitHub is included in the **Intelligent Cloud** segment.[graph_edge::e1][vector::chunk_1]\n\nIn FY2025, the **Intelligent Cloud** segment reported revenue of **$108,610 million**.[sql::sq_1::1]",
+    "used_fact_ids": [
+      "graph_edge::e1",
+      "vector::chunk_1",
+      "sql::sq_1::1"
+    ],
+    "citations": [
+      {
+        "fact_id": "graph_edge::e1",
+        "source_type": "graph_relationships",
+        "reason": "Shows that the Intelligent Cloud segment includes GitHub via an explicit 'includes' relationship."
+      },
+      {
+        "fact_id": "vector::chunk_1",
+        "source_type": "vector_document",
+        "reason": "Provides text evidence that Intelligent Cloud includes GitHub and other cloud services, corroborating the segment association."
+      },
+      {
+        "fact_id": "sql::sq_1::1",
+        "source_type": "sql_structured",
+        "reason": "Gives the FY2025 revenue figure for the Intelligent Cloud segment (108,610 million USD)."
+      }
+    ],
+    "unanswered_sub_queries": [],
+    "confidence": "high",
+    "usage": {
+      "completion_tokens": 234,
+      "prompt_tokens": 1576,
+      "total_tokens": 1810,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+    "elapsed_seconds":  188.43,
+    "status":  "completed",
+    "event_count":  13,
+    "events":  [
+                   {
+                       "timestamp":  "2026-03-19T08:53:17.292240+00:00",
+                       "component":  "Guardrails",
+                       "data":  "User query accepted for multi-source RAG execution."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T08:53:23.562181+00:00",
+                       "component":  "Query Decomposition",
+                       "data":  "Prepared 3 sub-queries: Which Microsoft reporting segment includes GitHub? | What was the FY2025 revenue for the Microsoft reporting segment that includes GitHub? | What strategic themes did Microsoft management highlight that are relevant to the Microsoft reporting segment that includes GitHub?"
+                   },
+                   {
+                       "timestamp":  "2026-03-19T08:53:51.450037+00:00",
+                       "component":  "Source Router",
+                       "data":  "Routing selected: sq_1 -\u003e graph_relationships; sq_2 -\u003e sql_structured, graph_relationships, vector_document; sq_3 -\u003e vector_document"
+                   },
+                   {
+                       "timestamp":  "2026-03-19T08:54:14.703527+00:00",
+                       "component":  "Latency Policy",
+                       "data":  "Execution plan: sq_1 profile=skip sources=graph_relationships; sq_2 profile=fast sources=sql_structured,graph_relationships; sq_3 profile=fast sources=vector_document"
+                   },
+                   {
+                       "timestamp":  "2026-03-19T08:54:55.229990+00:00",
+                       "component":  "Retriever",
+                       "data":  "Execution summary: {\"sub_query_count\": 3, \"source_usage\": {\"vector_document\": 1, \"graph_relationships\": 2, \"sql_structured\": 1}, \"vector_profile_usage\": {\"skip\": 0, \"fast\": 1, \"balanced\": 0, \"full\": 0, \"fast_escalated\": 0, \"balanced_escalated\": 0}}"
+                   },
+                   {
+                       "timestamp":  "2026-03-19T08:54:55.232271+00:00",
+                       "component":  "Evidence Fusion",
+                       "data":  "Fused 32 facts across 3 sub-queries."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T08:54:55.232279+00:00",
+                       "component":  "Answer Generator",
+                       "data":  "Generating grounded answer from fused evidence."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T08:55:08.111988+00:00",
+                       "component":  "Self-Reflective RAG",
+                       "data":  "Critiquing the answer for grounding, coverage, and citation integrity."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T08:55:29.337889+00:00",
+                       "component":  "LLM Judge",
+                       "data":  "Scoring the answer with RAGAS-style metrics."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T08:55:45.620105+00:00",
+                       "component":  "Runtime Gate",
+                       "data":  "Action=targeted_answer_repair | Reason=Coverage gap detected by critique."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T08:55:45.620147+00:00",
+                       "component":  "Repair",
+                       "data":  "Running targeted grounded-answer repair."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T08:56:25.294533+00:00",
+                       "component":  "Repair",
+                       "data":  "Repair strategy=targeted_coverage_repair applied=True"
+                   },
+                   {
+                       "timestamp":  "2026-03-19T08:56:25.294563+00:00",
+                       "component":  "Runtime Gate",
+                       "data":  "Action=stop_best_effort | Reason=Quality did not improve after the previous retry."
+                   }
+               ],
+    "result":  {
+                   "answer":  "- **Which segment includes GitHub?**  \n  GitHub is included in the **Intelligent Cloud (IC)** reporting segment. The filingâ??s segment description explicitly lists \"Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.\"[Evidence 1]  \n  Graph data separately shows that Microsoftâ??s three reportable segments are **Productivity and Business Processes**, **Intelligent Cloud**, and **More Personal Computing** but does not contradict the explicit text that places GitHub within Intelligent Cloud.[Evidence 2][Evidence 3][Evidence 4][Evidence 5]\n\n- **FY2025 revenue for that segment**  \n  The **Intelligent Cloud** segment reported FY2025 revenue of **$108,610 million ($108.61 billion)**.[Evidence 6]\n\n- **Strategic themes management highlighted that are relevant to GitHub / Intelligent Cloud**\n  - **Azure as a foundation for GitHub and AI platforms**: Management notes that \"Azure supports GitHub, data services, and AI platforms,\" describing \"unusually strong strategic linkages\" across the stack.[Evidence 7]\n  - **Mutually reinforcing cloud stack**: The same discussion emphasizes that \"the stack is not just broadâ??it is mutually reinforcing,\" meaning infrastructure, developer services (including GitHub), data, and AI offerings strengthen each other within Microsoft Cloud.[Evidence 7]\n  - **Cloud economies of scale and crossâ??sell logic**: Management highlights that the Microsoft Cloud benefits from three economies of scaleâ??lower perâ??unit datacenter cost, better utilization via aggregated demand, and lower maintenance labor cost through multiâ??tenancyâ??and that this enables crossâ??selling of infrastructure, productivity, security, developer services, and data/AI offerings into the same commercial account.[Evidence 1]\n\nThese themes are what the filing explicitly ties to GitHub and its home segment, Intelligent Cloud; more granular GitHubâ??specific strategic themes are not provided in the available evidence.[Evidence 1][Evidence 7]",
+                   "citations":  [
+                                     {
+                                         "index":  1,
+                                         "source_type":  "internal_document",
+                                         "display_label":  "[Evidence 1]",
+                                         "title":  "negative, water positive, and zero waste by 2030. Microsoft notes progress but also acknowledges\nthat the operating environment and the technical challenge have both evolved since the goals were\nannounced.\nOperating segments\nBeginning in fiscal 2025, Microsoft changed its segment",
+                                         "source_file":  "Microsoft_FY2025_10K_Summary.pdf",
+                                         "page_number":  4,
+                                         "section":  "2. Company overview, strategy, and operating model",
+                                         "chunk_text":  "negative, water positive, and zero waste by 2030. Microsoft notes progress but also acknowledges\nthat the operating environment and the technical challenge have both evolved since the goals were\nannounced.\nOperating segments\nBeginning in fiscal 2025, Microsoft changed its segment composition to align external reporting",
+                                         "fact_id":  "vector::microsoft_fy2025_10k_summary_sec2_p4_par1_ch0"
+                                     },
+                                     {
+                                         "index":  2,
+                                         "source_type":  "graph_entity",
+                                         "display_label":  "[Evidence 2]",
+                                         "title":  "Microsoft -\u003e includes -\u003e Productivity and Business Processes",
+                                         "entity_names":  [
+                                                              "Microsoft",
+                                                              "Productivity and Business Processes"
+                                                          ],
+                                         "relationship_type":  "includes",
+                                         "section":  "2. Company overview, strategy, and operating model",
+                                         "page_number":  4,
+                                         "chunk_text":  "The three reportable segments are:",
+                                         "fact_id":  "graph_edge::edge_40"
+                                     },
+                                     {
+                                         "index":  3,
+                                         "source_type":  "graph_entity",
+                                         "display_label":  "[Evidence 3]",
+                                         "title":  "Microsoft -\u003e includes -\u003e Intelligent Cloud",
+                                         "entity_names":  [
+                                                              "Microsoft",
+                                                              "Intelligent Cloud"
+                                                          ],
+                                         "relationship_type":  "includes",
+                                         "section":  "2. Company overview, strategy, and operating model",
+                                         "page_number":  4,
+                                         "chunk_text":  "The three reportable segments are:",
+                                         "fact_id":  "graph_edge::edge_41"
+                                     },
+                                     {
+                                         "index":  4,
+                                         "source_type":  "graph_entity",
+                                         "display_label":  "[Evidence 4]",
+                                         "title":  "Microsoft -\u003e includes -\u003e More Personal Computing",
+                                         "entity_names":  [
+                                                              "Microsoft",
+                                                              "More Personal Computing"
+                                                          ],
+                                         "relationship_type":  "includes",
+                                         "section":  "2. Company overview, strategy, and operating model",
+                                         "page_number":  4,
+                                         "chunk_text":  "The three reportable segments are:",
+                                         "fact_id":  "graph_edge::edge_42"
+                                     },
+                                     {
+                                         "index":  5,
+                                         "source_type":  "graph_entity",
+                                         "display_label":  "[Evidence 5]",
+                                         "title":  "GitHub (product_or_service)",
+                                         "entity_names":  [
+                                                              "GitHub"
+                                                          ],
+                                         "relationship_type":  null,
+                                         "section":  "2. Company overview, strategy, and operating model, 3. Segment and product portfolio review",
+                                         "page_number":  4,
+                                         "chunk_text":  "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.\nAzure supports GitHub, data services, and AI platforms",
+                                         "fact_id":  "graph_node::node_github"
+                                     },
+                                     {
+                                         "index":  6,
+                                         "source_type":  "database",
+                                         "display_label":  "[Evidence 6]",
+                                         "title":  "segment_name=Intelligent Cloud, revenue_usd_millions=108610",
+                                         "table_name":  "financial_performance_by_segment",
+                                         "sql_query":  "SELECT segment_name, revenue_usd_millions\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025",
+                                         "chunk_text":  "segment_name=Intelligent Cloud, revenue_usd_millions=108610",
+                                         "fact_id":  "sql::sq_2::2"
+                                     },
+                                     {
+                                         "index":  7,
+                                         "source_type":  "internal_document",
+                                         "display_label":  "[Evidence 7]",
+                                         "title":  "This operating model creates unusually strong strategic linkages. Windows supports Microsoft 365\nand search distribution; Azure supports GitHub, data services, and AI platforms; identity and\nsecurity support cloud trust; and productivity apps provide a natural channel for AI mone",
+                                         "source_file":  "Microsoft_FY2025_10K_Summary.pdf",
+                                         "page_number":  4,
+                                         "section":  "2. Company overview, strategy, and operating model",
+                                         "chunk_text":  "This operating model creates unusually strong strategic linkages. Windows supports Microsoft 365\nand search distribution; Azure supports GitHub, data services, and AI platforms; identity and\nsecurity support cloud trust; and productivity apps provide a natural channel for AI monetization.\nOne of the key messages of the filing is that the stack is not just broadâ??it is mutually reinforcing.",
+                                         "fact_id":  "vector::microsoft_fy2025_10k_summary_sec2_p4_par2_ch0"
+                                     }
+                                 ],
+                   "evaluation":  {
+                                      "faithfulness":  0.6,
+                                      "answer_relevancy":  1.0,
+                                      "context_precision":  0.8,
+                                      "citation_grounding":  0.8,
+                                      "overall_badge":  "BORDERLINE",
+                                      "reasoning":  "The answer correctly identifies GitHub as part of the Intelligent Cloud segment, gives the FY2025 Intelligent Cloud revenue ($108,610 million), and summarizes management strategic themes with supporting citations. However, it fails to acknowledge a recorded deterministic conflict signal regarding graph relationship mismatches (sq_1), which the pipeline flagged as a highâ??severity issue and should have been surfaced or resolved in the response.",
+                                      "strengths":  [
+                                                        "Directly answers all parts of the original query (segment containing GitHub, segment FY2025 revenue, and relevant management strategic themes).",
+                                                        "Provides specific numeric revenue (with units) and cites the SQL row evidence for that claim.",
+                                                        "Uses the company\u0027s filing excerpt to support the placement of GitHub within Intelligent Cloud and to summarize management\u0027s strategic themes."
+                                                    ],
+                                      "weaknesses":  [
+                                                         "Did not acknowledge or resolve a deterministic conflict signal (graph_relation_mismatch) flagged for sub_query sq_1, which is a required hard-warning to surface.",
+                                                         "Relies on graph relationship citations without reconciling or explaining the conflicting graph edges referenced in the critique (graph_edge::edge_22 and graph_edge::edge_53).",
+                                                         "Contains some extraneous graph relationship citations that add noise without clarifying the conflict or strengthening the primary filing-based evidence."
+                                                     ],
+                                      "recommendations":  [
+                                                              "Surface and address the deterministic conflict: retrieve and examine the graph edges implicated by the conflict (graph_edge::edge_22 and graph_edge::edge_53) and explain why they do or do not contradict the filing text placing GitHub in Intelligent Cloud.",
+                                                              "If the filing text (10â??K excerpt) is authoritative, explicitly state that the company\u0027s filing is being prioritized and explain the rationale for favoring it over graph relationship entries.",
+                                                              "If the conflict cannot be fully resolved, update the answer to present both pieces of evidence (the filing and the conflicting graph edges), describe the ambiguity, and recommend the filing as the primary source or request clarification/additional documentation.",
+                                                              "Remove or minimize unnecessary graph citations that do not support the core claims, keeping the answer tightly grounded to the most relevant primary evidence (the 10â??K excerpt and the SQL revenue row)."
+                                                          ]
+                                  },
+                   "evaluation_pending":  false,
+                   "truncated_subqueries":  false,
+                   "subquery_cap":  3,
+                   "judge_average_score":  4.0,
+                   "runtime_history":  [
+                                           {
+                                               "round":  0,
+                                               "action":  "initial_generation",
+                                               "judge_average_score":  3.75,
+                                               "judge_verdict":  "borderline",
+                                               "critique_needs_correction":  true
+                                           },
+                                           {
+                                               "round":  1,
+                                               "action":  "targeted_answer_repair",
+                                               "reason":  "Coverage gap detected by critique.",
+                                               "judge_average_score":  4.0,
+                                               "judge_verdict":  "borderline",
+                                               "critique_needs_correction":  true
+                                           }
+                                       ],
+                   "termination":  {
+                                       "action":  "stop_best_effort",
+                                       "reason":  "Quality did not improve after the previous retry."
+                                   },
+                   "critique":  {
+                                    "grounded":  true,
+                                    "complete":  true,
+                                    "needs_correction":  true,
+                                    "confidence":  "high",
+                                    "issue_summary":  "Answer correctly cites evidence that GitHub is in the Intelligent Cloud segment, the FY2025 revenue for that segment, and management strategic themes, but it did not acknowledge an existing deterministic conflict signal flagged in sub_query sq_1 regarding graph relationship mismatches.",
+                                    "strengths":  [
+                                                      "Directly answers all three sub-queries (which segment, segment FY2025 revenue, and relevant strategic themes).",
+                                                      "Cites specific evidence (vector text and SQL row) for the segment assignment and revenue.",
+                                                      "Summarizes management strategic themes with direct quotes from the provided filing excerpt."
+                                                  ],
+                                    "issues":  [
+                                                   {
+                                                       "issue_type":  "unacknowledged_deterministic_conflict",
+                                                       "severity":  "high",
+                                                       "description":  "There is a deterministic conflict signal recorded for sub_query sq_1 (graph_relation_mismatch involving Microsoft and Microsoft 365 Commercial). The answer does not acknowledge or resolve this conflict as required by the instructions to treat deterministic signals as hard warnings.",
+                                                       "affected_sub_queries":  [
+                                                                                    "sq_1"
+                                                                                ],
+                                                       "repair_action":  "Re-examine the graph_relationships facts that raised the conflict (graph_edge::edge_22 and graph_edge::edge_53) and either: (a) show why those edges do not affect the claim that GitHub is in Intelligent Cloud (e.g., they refer to a different relationship type or entity), or (b) update the answer to reflect the ambiguity and explain which evidence was prioritized and why."
+                                                   }
+                                               ],
+                                    "repair_plan":  [
+                                                        "Retrieve and review the graph relationship facts referenced by the conflict signal (graph_edge::edge_22 and graph_edge::edge_53) to determine the nature of the mismatch.",
+                                                        "Confirm the textual 10-K/vector excerpt that explicitly lists GitHub under the Intelligent Cloud segment and keep that citation if it is the authoritative source.",
+                                                        "If the graph edges refer to an overlapping/integrative relationship (e.g., \u0027integrates\u0027 vs \u0027includes\u0027), add an explicit note in the answer explaining the difference and why Intelligent Cloud is the correct reporting segment for GitHub.",
+                                                        "If the graph edges indicate a contradictory placement, surface both pieces of evidence in the answer, state the contradiction clearly, and recommend which primary source to trust (prefer the company\u0027s filing language) or request clarification/additional documents.",
+                                                        "Update the answer to explicitly acknowledge the conflict and include the resolved rationale or remaining ambiguity."
+                                                    ]
+                                },
+                   "sources_used":  [
+                                        "graph_relationships",
+                                        "sql_structured",
+                                        "vector_document"
+                                    ],
+                   "status":  "ok",
+                   "original_query":  "Which segment includes GitHub, what was that segment\u0027s FY2025 revenue, and what strategic themes did management highlight that are relevant to that business?"
+               }
+}

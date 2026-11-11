@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-03-18T08:01:35.354773+00:00",
+  "result": {
+    "database_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\agentic_document_intelligence\\artifacts\\experiments\\component6_sqlite_database_build_live\\sql_db\\microsoft_fy2025_analyst_demo.sqlite",
+    "table_count": 3,
+    "tables": [
+      {
+        "table_name": "financial_performance_by_segment",
+        "source_csv_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\corpus\\datasets\\financial_performance_by_segment.csv",
+        "row_count": 9,
+        "columns": [
+          {
+            "name": "fiscal_year",
+            "sqlite_type": "INTEGER"
+          },
+          {
+            "name": "segment_name",
+            "sqlite_type": "TEXT"
+          },
+          {
+            "name": "revenue_usd_millions",
+            "sqlite_type": "INTEGER"
+          },
+          {
+            "name": "operating_income_usd_millions",
+            "sqlite_type": "INTEGER"
+          },
+          {
+            "name": "operating_margin_pct",
+            "sqlite_type": "REAL"
+          },
+          {
+            "name": "yoy_revenue_growth_pct",
+            "sqlite_type": "REAL"
+          },
+          {
+            "name": "narrative_driver",
+            "sqlite_type": "TEXT"
+          }
+        ]
+      },
+      {
+        "table_name": "geographic_revenue_mix",
+        "source_csv_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\corpus\\datasets\\geographic_revenue_mix.csv",
+        "row_count": 6,
+        "columns": [
+          {
+            "name": "fiscal_year",
+            "sqlite_type": "INTEGER"
+          },
+          {
+            "name": "geography",
+            "sqlite_type": "TEXT"
+          },
+          {
+            "name": "revenue_usd_millions",
+            "sqlite_type": "INTEGER"
+          },
+          {
+            "name": "revenue_mix_pct",
+            "sqlite_type": "REAL"
+          },
+          {
+            "name": "yoy_revenue_growth_pct",
+            "sqlite_type": "REAL"
+          }
+        ]
+      },
+      {
+        "table_name": "product_family_signals",
+        "source_csv_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\corpus\\datasets\\product_family_signals.csv",
+        "row_count": 7,
+        "columns": [
+          {
+            "name": "fiscal_year",
+            "sqlite_type": "INTEGER"
+          },
+          {
+            "name": "product_family",
+            "sqlite_type": "TEXT"
+          },
+          {
+            "name": "strategic_priority",
+            "sqlite_type": "TEXT"
+          },
+          {
+            "name": "revenue_signal_index",
+            "sqlite_type": "INTEGER"
+          },
+          {
+            "name": "margin_profile",
+            "sqlite_type": "TEXT"
+          },
+          {
+            "name": "ai_relevance_score",
+            "sqlite_type": "INTEGER"
+          },
+          {
+            "name": "commentary",
+            "sqlite_type": "TEXT"
+          }
+        ]
+      }
+    ]
+  }
+}

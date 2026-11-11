@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-03-18T11:38:46.536488+00:00",
+  "result": {
+    "original_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+    "answer_model": "gpt-5.1",
+    "critique_model": "gpt-5-mini",
+    "deterministic_signals": {
+      "inline_fact_ids": [
+        "graph_edge::e1",
+        "vector::chunk_1",
+        "sql::sq_1::1"
+      ],
+      "missing_inline_for_used": [],
+      "inline_not_declared": [],
+      "unknown_used_fact_ids": [],
+      "unanswered_sub_queries": [],
+      "uncovered_sub_queries": [],
+      "used_source_types": [
+        "graph_relationships",
+        "sql_structured",
+        "vector_document"
+      ],
+      "used_conflict_fact_ids": [],
+      "conflict_acknowledged": false,
+      "needs_correction": false
+    },
+    "llm_critique": {
+      "grounded": true,
+      "complete": true,
+      "needs_correction": false,
+      "confidence": "high",
+      "issue_summary": "Answer is supported by provided graph and SQL evidence and directly addresses the query.",
+      "strengths": [
+        "Directly answers both parts of the query (segment containing GitHub and FY2025 revenue).",
+        "Grounded in multiple evidence types: graph relationship, vector document text, and SQL row.",
+        "No conflicting evidence present in the provided sources."
+      ],
+      "issues": [],
+      "repair_plan": []
+    },
+    "final_critique": {
+      "grounded": true,
+      "complete": true,
+      "needs_correction": false,
+      "confidence": "high",
+      "issue_summary": "Answer is supported by provided graph and SQL evidence and directly addresses the query.",
+      "strengths": [
+        "Directly answers both parts of the query (segment containing GitHub and FY2025 revenue).",
+        "Grounded in multiple evidence types: graph relationship, vector document text, and SQL row.",
+        "No conflicting evidence present in the provided sources."
+      ],
+      "issues": [],
+      "repair_plan": []
+    },
+    "usage": {
+      "completion_tokens": 334,
+      "prompt_tokens": 777,
+      "total_tokens": 1111,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 192,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  }
+}

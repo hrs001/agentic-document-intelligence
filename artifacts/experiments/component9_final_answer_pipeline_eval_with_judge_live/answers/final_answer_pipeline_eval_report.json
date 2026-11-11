@@ -1,0 +1,2691 @@
+{
+  "generated_at": "2026-03-18T12:10:40.650835+00:00",
+  "pipeline_model": "gpt-5-mini",
+  "answer_model": "gpt-5.1",
+  "critique_model": "gpt-5-mini",
+  "repair_model": "gpt-5.1",
+  "judge_model": "gpt-5-mini",
+  "case_count": 8,
+  "initial_passed_count": 6,
+  "initial_pass_rate": 0.75,
+  "final_passed_count": 7,
+  "final_pass_rate": 0.875,
+  "repaired_count": 1,
+  "recovered_count": 1,
+  "judge_passed_count": 7,
+  "judge_pass_rate": 0.875,
+  "judge_average_score": 4.719,
+  "average_runtime_seconds": 22.947,
+  "total_runtime_seconds": 183.578,
+  "case_results": [
+    {
+      "case_id": "ans_001_sql_highest_revenue",
+      "query": "Which segment had the highest revenue in FY2025?",
+      "runtime_seconds": 17.744,
+      "answer_runtime_seconds": 1.869,
+      "critique_runtime_seconds": 6.364,
+      "repair_runtime_seconds": 0.0,
+      "judge_runtime_seconds": 9.511,
+      "initial_evaluation": {
+        "passed": true,
+        "missing_phrases": [],
+        "missing_source_types": [],
+        "citation_count": 1,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "final_evaluation": {
+        "passed": true,
+        "missing_phrases": [],
+        "missing_source_types": [],
+        "citation_count": 1,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "repair_applied": false,
+      "repair_success": true,
+      "repair_strategy": {
+        "strategy": "no_op",
+        "reason": "The critique says the answer does not need correction.",
+        "focus": []
+      },
+      "initial_answer": {
+        "original_query": "Which segment had the highest revenue in FY2025?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 1,
+          "allowed_fact_count": 1
+        },
+        "answer_markdown": "The segment with the highest revenue in FY2025 was **Intelligent Cloud**, with revenue of **$108,610 million**.[sql::sq_1::1]",
+        "used_fact_ids": [
+          "sql::sq_1::1"
+        ],
+        "citations": [
+          {
+            "fact_id": "sql::sq_1::1",
+            "source_type": "sql_structured",
+            "reason": "Identifies Intelligent Cloud as the top-revenue segment in fiscal year 2025 and provides the specific revenue amount of 108,610 million USD from the ordered query result."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 140,
+          "prompt_tokens": 653,
+          "total_tokens": 793,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "critique_result": {
+        "original_query": "Which segment had the highest revenue in FY2025?",
+        "answer_model": "gpt-5.1",
+        "critique_model": "gpt-5-mini",
+        "deterministic_signals": {
+          "inline_fact_ids": [
+            "sql::sq_1::1"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "sql_structured"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": false
+        },
+        "llm_critique": {
+          "grounded": true,
+          "complete": true,
+          "needs_correction": false,
+          "confidence": "high",
+          "issue_summary": "The answer is directly supported by the provided SQL row (sql::sq_1::1) and fully answers the query.",
+          "strengths": [
+            "Directly answers the user question with a clear segment name and revenue number.",
+            "Cites the specific underlying fact (sql::sq_1::1) used to derive the answer.",
+            "Figure reported ($108,610 million) matches the provided structured data."
+          ],
+          "issues": [],
+          "repair_plan": []
+        },
+        "final_critique": {
+          "grounded": true,
+          "complete": true,
+          "needs_correction": false,
+          "confidence": "high",
+          "issue_summary": "The answer is directly supported by the provided SQL row (sql::sq_1::1) and fully answers the query.",
+          "strengths": [
+            "Directly answers the user question with a clear segment name and revenue number.",
+            "Cites the specific underlying fact (sql::sq_1::1) used to derive the answer.",
+            "Figure reported ($108,610 million) matches the provided structured data."
+          ],
+          "issues": [],
+          "repair_plan": []
+        },
+        "usage": {
+          "completion_tokens": 411,
+          "prompt_tokens": 596,
+          "total_tokens": 1007,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 256,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "repair_result": {
+        "original_query": "Which segment had the highest revenue in FY2025?",
+        "repair_model": "gpt-5.1",
+        "repair_strategy": {
+          "strategy": "no_op",
+          "reason": "The critique says the answer does not need correction.",
+          "focus": []
+        },
+        "repair_applied": false,
+        "repaired_answer": {
+          "original_query": "Which segment had the highest revenue in FY2025?",
+          "model": "gpt-5.1",
+          "answer_input_summary": {
+            "sub_query_count": 1,
+            "allowed_fact_count": 1
+          },
+          "answer_markdown": "The segment with the highest revenue in FY2025 was **Intelligent Cloud**, with revenue of **$108,610 million**.[sql::sq_1::1]",
+          "used_fact_ids": [
+            "sql::sq_1::1"
+          ],
+          "citations": [
+            {
+              "fact_id": "sql::sq_1::1",
+              "source_type": "sql_structured",
+              "reason": "Identifies Intelligent Cloud as the top-revenue segment in fiscal year 2025 and provides the specific revenue amount of 108,610 million USD from the ordered query result."
+            }
+          ],
+          "unanswered_sub_queries": [],
+          "confidence": "high",
+          "usage": {
+            "completion_tokens": 140,
+            "prompt_tokens": 653,
+            "total_tokens": 793,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        },
+        "post_repair_deterministic_signals": {
+          "inline_fact_ids": [
+            "sql::sq_1::1"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "sql_structured"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": false
+        },
+        "repair_success": true,
+        "usage": {}
+      },
+      "final_answer": {
+        "original_query": "Which segment had the highest revenue in FY2025?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 1,
+          "allowed_fact_count": 1
+        },
+        "answer_markdown": "The segment with the highest revenue in FY2025 was **Intelligent Cloud**, with revenue of **$108,610 million**.[sql::sq_1::1]",
+        "used_fact_ids": [
+          "sql::sq_1::1"
+        ],
+        "citations": [
+          {
+            "fact_id": "sql::sq_1::1",
+            "source_type": "sql_structured",
+            "reason": "Identifies Intelligent Cloud as the top-revenue segment in fiscal year 2025 and provides the specific revenue amount of 108,610 million USD from the ordered query result."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 140,
+          "prompt_tokens": 653,
+          "total_tokens": 793,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "judge_result": {
+        "original_query": "Which segment had the highest revenue in FY2025?",
+        "judge_model": "gpt-5-mini",
+        "metrics": {
+          "faithfulness": 5,
+          "answer_relevancy": 5,
+          "context_precision": 5,
+          "citation_grounding": 5,
+          "overall_verdict": "pass",
+          "summary": "The answer correctly identifies 'Intelligent Cloud' as the segment with the highest FY2025 revenue and reports the revenue value ($108,610 million) that matches the provided SQL row (sql::sq_1::1). The claim is directly supported by the cited fact.",
+          "strengths": [
+            "Directly answers the user question with the specific segment name and revenue number.",
+            "The reported figure exactly matches the provided structured fact (sql::sq_1::1).",
+            "A clear citation to the underlying fact is included."
+          ],
+          "weaknesses": [
+            "Minor presentation clarity: the answer shows the value as \"$108,610 million\" which could be restated as $108.61 billion for easier interpretation.",
+            "Citation is an internal fact ID (sql::sq_1::1); adding a human-readable source label (table name or report) would improve traceability."
+          ],
+          "recommendations": [
+            "Clarify numeric units (e.g., also present as $108.61 billion) to avoid reader confusion.",
+            "When possible, include a human-readable data source or table name along with the internal fact ID for better traceability."
+          ]
+        },
+        "average_score": 5.0,
+        "usage": {
+          "completion_tokens": 591,
+          "prompt_tokens": 618,
+          "total_tokens": 1209,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 320,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "case_id": "ans_002_graph_sql_github_revenue",
+      "query": "Which segment includes GitHub and what was its FY2025 revenue?",
+      "runtime_seconds": 48.965,
+      "answer_runtime_seconds": 5.23,
+      "critique_runtime_seconds": 23.272,
+      "repair_runtime_seconds": 7.23,
+      "judge_runtime_seconds": 13.233,
+      "initial_evaluation": {
+        "passed": false,
+        "missing_phrases": [],
+        "missing_source_types": [],
+        "citation_count": 6,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": [
+          "Which Microsoft reporting segment includes GitHub?"
+        ]
+      },
+      "final_evaluation": {
+        "passed": true,
+        "missing_phrases": [],
+        "missing_source_types": [],
+        "citation_count": 5,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "repair_applied": true,
+      "repair_success": true,
+      "repair_strategy": {
+        "strategy": "targeted_coverage_repair",
+        "reason": "The answer missed at least one sub-query or left part of the question unsupported.",
+        "focus": [
+          "1) Query the graph_relationships dataset for any edges where subject or object equals 'GitHub' (including possible alternate labels) and where relation types include 'includes', 'included_in', 'part_of', 'integrates', or similar. Collect any matching fact IDs and summaries.",
+          "2) If a direct GitHub->segment relationship is found, extract the segment name and link it to the SQL revenue row (sql::sq_2::1/2/3) and return the segment name plus its FY2025 revenue with citations.",
+          "3) If no direct relationship is found in graph_relationships, search other available sources in the evidence bundle (e.g., product-to-segment mappings, segment descriptions, or textual notes) for any mention of GitHub mapping to a segment and cite fact IDs. Also check for alternate parent entities (e.g., GitHub being part of a product family that is assigned to a segment).",
+          "4) If after exhaustive search no supporting evidence exists in the provided data, explicitly state that the relation is not present in the evidence, list the checked fact IDs/datasets, and offer to (a) accept a best-effort mapping based on typical corporate reporting (with clear caveats), or (b) allow external sources (10-K/press release) to be consulted to answer definitively.",
+          "5) Update the user-facing answer to (a) directly answer which segment includes GitHub if found, with citations, or (b) explicitly state inability to answer from provided evidence and include the FY2025 revenues for all segments with citations, making clear which part was unresolved.",
+          "Run targeted answer repair for uncovered or unanswered sub-queries."
+        ]
+      },
+      "initial_answer": {
+        "original_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 2,
+          "allowed_fact_count": 16
+        },
+        "answer_markdown": "The provided evidence does not state which specific Microsoft reporting segment includes GitHub, so that part of your question cannot be answered from these facts.\n\nHowever, the FY2025 revenues for Microsoft\u2019s three reportable segments are:\n- Productivity and Business Processes: $81,220 million in revenue.[sql::sq_2::1]\n- Intelligent Cloud: $108,610 million in revenue.[sql::sq_2::2]\n- More Personal Computing: $60,610 million in revenue.[sql::sq_2::3]\n\nThese three segments are confirmed as Microsoft\u2019s reportable segments in the relationships data, but no fact links GitHub to any one of them.[graph_edge::edge_40][graph_edge::edge_41][graph_edge::edge_42]",
+        "used_fact_ids": [
+          "sql::sq_2::1",
+          "sql::sq_2::2",
+          "sql::sq_2::3",
+          "graph_edge::edge_40",
+          "graph_edge::edge_41",
+          "graph_edge::edge_42"
+        ],
+        "citations": [
+          {
+            "fact_id": "sql::sq_2::1",
+            "source_type": "sql_structured",
+            "reason": "Provides the FY2025 revenue figure for the Productivity and Business Processes segment."
+          },
+          {
+            "fact_id": "sql::sq_2::2",
+            "source_type": "sql_structured",
+            "reason": "Provides the FY2025 revenue figure for the Intelligent Cloud segment."
+          },
+          {
+            "fact_id": "sql::sq_2::3",
+            "source_type": "sql_structured",
+            "reason": "Provides the FY2025 revenue figure for the More Personal Computing segment."
+          },
+          {
+            "fact_id": "graph_edge::edge_40",
+            "source_type": "graph_relationships",
+            "reason": "Shows that Productivity and Business Processes is one of Microsoft\u2019s three reportable segments."
+          },
+          {
+            "fact_id": "graph_edge::edge_41",
+            "source_type": "graph_relationships",
+            "reason": "Shows that Intelligent Cloud is one of Microsoft\u2019s three reportable segments."
+          },
+          {
+            "fact_id": "graph_edge::edge_42",
+            "source_type": "graph_relationships",
+            "reason": "Shows that More Personal Computing is one of Microsoft\u2019s three reportable segments."
+          }
+        ],
+        "unanswered_sub_queries": [
+          "Which Microsoft reporting segment includes GitHub?"
+        ],
+        "confidence": "medium",
+        "usage": {
+          "completion_tokens": 467,
+          "prompt_tokens": 6242,
+          "total_tokens": 6709,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 2816
+          }
+        }
+      },
+      "critique_result": {
+        "original_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "answer_model": "gpt-5.1",
+        "critique_model": "gpt-5-mini",
+        "deterministic_signals": {
+          "inline_fact_ids": [
+            "sql::sq_2::1",
+            "sql::sq_2::2",
+            "sql::sq_2::3",
+            "graph_edge::edge_40",
+            "graph_edge::edge_41",
+            "graph_edge::edge_42"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [
+            "Which Microsoft reporting segment includes GitHub?"
+          ],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "graph_relationships",
+            "sql_structured"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": true
+        },
+        "llm_critique": {
+          "grounded": false,
+          "complete": false,
+          "needs_correction": true,
+          "confidence": "medium",
+          "issue_summary": "The reply provides FY2025 revenues for Microsoft's three reportable segments (these are supported by the cited facts) but fails to answer the primary sub-query asking which reporting segment includes GitHub. It also did not acknowledge the unresolved sub-query nor the reported relationship conflict signal.",
+          "strengths": [
+            "Correctly extracted FY2025 revenue figures for the three reportable segments from the provided sql facts and cited their fact IDs.",
+            "Identified the three reportable segments from the relationships data and cited the related graph edge fact IDs.",
+            "Concise presentation of available revenue facts."
+          ],
+          "issues": [
+            {
+              "issue_type": "unanswered_sub_query",
+              "severity": "high",
+              "description": "The sub-query 'Which Microsoft reporting segment includes GitHub?' was left unanswered. The deterministic signals list this sub-query as unanswered, but the answer only states that the provided evidence does not include the mapping without showing the search steps or confirming absence across the relationship facts.",
+              "affected_sub_queries": [
+                "sq_1"
+              ],
+              "repair_action": "Search the relationships dataset for any edges involving the entity 'GitHub' (or alternate entity labels) and relations like 'includes', 'included_in', 'part_of', 'integrates' to locate any mapping to a reportable segment. If none exist, explicitly state that no supporting evidence was found and return the evidence coverage (fact IDs checked)."
+            },
+            {
+              "issue_type": "conflict_not_acknowledged",
+              "severity": "medium",
+              "description": "A conflict signal (graph_relation_mismatch) is present in sub_query sq_1 per the provided deterministic signals, but the answer did not acknowledge or explain this conflict.",
+              "affected_sub_queries": [
+                "sq_1"
+              ],
+              "repair_action": "Inspect the conflict_fact_ids listed (edge IDs in the relationships data) and describe the mismatch (e.g., differing relation types between the same entity pairs). If relevant to GitHub mapping, explain its impact on the answer; otherwise state why the conflict does not affect the GitHub mapping."
+            },
+            {
+              "issue_type": "insufficient_evidence_reporting",
+              "severity": "low",
+              "description": "The answer states 'the provided evidence does not state which specific Microsoft reporting segment includes GitHub' but does not enumerate which sources were checked or return a short provenance summary (which fact IDs were searched/absent).",
+              "affected_sub_queries": [
+                "sq_1"
+              ],
+              "repair_action": "Report which datasets/edge sets were searched (e.g., graph_relationships entries scanned) and list any relevant fact IDs found or explicitly note none found for GitHub-to-segment edges."
+            }
+          ],
+          "repair_plan": [
+            "1) Query the graph_relationships dataset for any edges where subject or object equals 'GitHub' (including possible alternate labels) and where relation types include 'includes', 'included_in', 'part_of', 'integrates', or similar. Collect any matching fact IDs and summaries.",
+            "2) If a direct GitHub->segment relationship is found, extract the segment name and link it to the SQL revenue row (sql::sq_2::1/2/3) and return the segment name plus its FY2025 revenue with citations.",
+            "3) If no direct relationship is found in graph_relationships, search other available sources in the evidence bundle (e.g., product-to-segment mappings, segment descriptions, or textual notes) for any mention of GitHub mapping to a segment and cite fact IDs. Also check for alternate parent entities (e.g., GitHub being part of a product family that is assigned to a segment).",
+            "4) If after exhaustive search no supporting evidence exists in the provided data, explicitly state that the relation is not present in the evidence, list the checked fact IDs/datasets, and offer to (a) accept a best-effort mapping based on typical corporate reporting (with clear caveats), or (b) allow external sources (10-K/press release) to be consulted to answer definitively.",
+            "5) Update the user-facing answer to (a) directly answer which segment includes GitHub if found, with citations, or (b) explicitly state inability to answer from provided evidence and include the FY2025 revenues for all segments with citations, making clear which part was unresolved."
+          ]
+        },
+        "final_critique": {
+          "grounded": false,
+          "complete": false,
+          "needs_correction": true,
+          "confidence": "medium",
+          "issue_summary": "The reply provides FY2025 revenues for Microsoft's three reportable segments (these are supported by the cited facts) but fails to answer the primary sub-query asking which reporting segment includes GitHub. It also did not acknowledge the unresolved sub-query nor the reported relationship conflict signal.",
+          "strengths": [
+            "Correctly extracted FY2025 revenue figures for the three reportable segments from the provided sql facts and cited their fact IDs.",
+            "Identified the three reportable segments from the relationships data and cited the related graph edge fact IDs.",
+            "Concise presentation of available revenue facts."
+          ],
+          "issues": [
+            {
+              "issue_type": "unanswered_sub_query",
+              "severity": "high",
+              "description": "The sub-query 'Which Microsoft reporting segment includes GitHub?' was left unanswered. The deterministic signals list this sub-query as unanswered, but the answer only states that the provided evidence does not include the mapping without showing the search steps or confirming absence across the relationship facts.",
+              "affected_sub_queries": [
+                "sq_1"
+              ],
+              "repair_action": "Search the relationships dataset for any edges involving the entity 'GitHub' (or alternate entity labels) and relations like 'includes', 'included_in', 'part_of', 'integrates' to locate any mapping to a reportable segment. If none exist, explicitly state that no supporting evidence was found and return the evidence coverage (fact IDs checked)."
+            },
+            {
+              "issue_type": "conflict_not_acknowledged",
+              "severity": "medium",
+              "description": "A conflict signal (graph_relation_mismatch) is present in sub_query sq_1 per the provided deterministic signals, but the answer did not acknowledge or explain this conflict.",
+              "affected_sub_queries": [
+                "sq_1"
+              ],
+              "repair_action": "Inspect the conflict_fact_ids listed (edge IDs in the relationships data) and describe the mismatch (e.g., differing relation types between the same entity pairs). If relevant to GitHub mapping, explain its impact on the answer; otherwise state why the conflict does not affect the GitHub mapping."
+            },
+            {
+              "issue_type": "insufficient_evidence_reporting",
+              "severity": "low",
+              "description": "The answer states 'the provided evidence does not state which specific Microsoft reporting segment includes GitHub' but does not enumerate which sources were checked or return a short provenance summary (which fact IDs were searched/absent).",
+              "affected_sub_queries": [
+                "sq_1"
+              ],
+              "repair_action": "Report which datasets/edge sets were searched (e.g., graph_relationships entries scanned) and list any relevant fact IDs found or explicitly note none found for GitHub-to-segment edges."
+            },
+            {
+              "issue_type": "coverage_gap",
+              "severity": "high",
+              "description": "The answer leaves at least one sub-query unanswered or unsupported.",
+              "affected_sub_queries": [
+                "Which Microsoft reporting segment includes GitHub?"
+              ],
+              "repair_action": "Run a targeted correction pass for the missing sub-query coverage."
+            }
+          ],
+          "repair_plan": [
+            "1) Query the graph_relationships dataset for any edges where subject or object equals 'GitHub' (including possible alternate labels) and where relation types include 'includes', 'included_in', 'part_of', 'integrates', or similar. Collect any matching fact IDs and summaries.",
+            "2) If a direct GitHub->segment relationship is found, extract the segment name and link it to the SQL revenue row (sql::sq_2::1/2/3) and return the segment name plus its FY2025 revenue with citations.",
+            "3) If no direct relationship is found in graph_relationships, search other available sources in the evidence bundle (e.g., product-to-segment mappings, segment descriptions, or textual notes) for any mention of GitHub mapping to a segment and cite fact IDs. Also check for alternate parent entities (e.g., GitHub being part of a product family that is assigned to a segment).",
+            "4) If after exhaustive search no supporting evidence exists in the provided data, explicitly state that the relation is not present in the evidence, list the checked fact IDs/datasets, and offer to (a) accept a best-effort mapping based on typical corporate reporting (with clear caveats), or (b) allow external sources (10-K/press release) to be consulted to answer definitively.",
+            "5) Update the user-facing answer to (a) directly answer which segment includes GitHub if found, with citations, or (b) explicitly state inability to answer from provided evidence and include the FY2025 revenues for all segments with citations, making clear which part was unresolved.",
+            "Run targeted answer repair for uncovered or unanswered sub-queries."
+          ]
+        },
+        "usage": {
+          "completion_tokens": 1674,
+          "prompt_tokens": 1241,
+          "total_tokens": 2915,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 704,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "repair_result": {
+        "original_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "repair_model": "gpt-5.1",
+        "repair_strategy": {
+          "strategy": "targeted_coverage_repair",
+          "reason": "The answer missed at least one sub-query or left part of the question unsupported.",
+          "focus": [
+            "1) Query the graph_relationships dataset for any edges where subject or object equals 'GitHub' (including possible alternate labels) and where relation types include 'includes', 'included_in', 'part_of', 'integrates', or similar. Collect any matching fact IDs and summaries.",
+            "2) If a direct GitHub->segment relationship is found, extract the segment name and link it to the SQL revenue row (sql::sq_2::1/2/3) and return the segment name plus its FY2025 revenue with citations.",
+            "3) If no direct relationship is found in graph_relationships, search other available sources in the evidence bundle (e.g., product-to-segment mappings, segment descriptions, or textual notes) for any mention of GitHub mapping to a segment and cite fact IDs. Also check for alternate parent entities (e.g., GitHub being part of a product family that is assigned to a segment).",
+            "4) If after exhaustive search no supporting evidence exists in the provided data, explicitly state that the relation is not present in the evidence, list the checked fact IDs/datasets, and offer to (a) accept a best-effort mapping based on typical corporate reporting (with clear caveats), or (b) allow external sources (10-K/press release) to be consulted to answer definitively.",
+            "5) Update the user-facing answer to (a) directly answer which segment includes GitHub if found, with citations, or (b) explicitly state inability to answer from provided evidence and include the FY2025 revenues for all segments with citations, making clear which part was unresolved.",
+            "Run targeted answer repair for uncovered or unanswered sub-queries."
+          ]
+        },
+        "repair_applied": true,
+        "repaired_answer": {
+          "original_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+          "model": "gpt-5.1",
+          "answer_input_summary": {
+            "sub_query_count": 2,
+            "allowed_fact_count": 20
+          },
+          "answer_markdown": "From the provided evidence, GitHub is listed as one of the offerings within Microsoft\u2019s **Intelligent Cloud** portfolio, alongside Azure, server products, developer tooling, Nuance Healthcare, and enterprise/partner services.[graph_node::node_github]\n\nThe FY2025 revenue for **Intelligent Cloud** was **$108,610 million**.[sql::sq_2::2]\n\nSo, based on the evidence in this bundle:\n- **Segment that includes GitHub:** Intelligent Cloud[graph_node::node_github]\n- **FY2025 revenue of that segment:** $108,610 million[sql::sq_2::2]\n\nNote: While the relationships data explicitly defines Microsoft\u2019s three reportable segments (Productivity and Business Processes, Intelligent Cloud, and More Personal Computing),[graph_edge::edge_40][graph_edge::edge_41][graph_edge::edge_42] the only direct mention of GitHub\u2019s placement is that it is part of the Intelligent Cloud portfolio; the evidence does not provide a more granular or conflicting mapping.[graph_node::node_github]",
+          "used_fact_ids": [
+            "graph_node::node_github",
+            "sql::sq_2::2",
+            "graph_edge::edge_40",
+            "graph_edge::edge_41",
+            "graph_edge::edge_42"
+          ],
+          "citations": [
+            {
+              "fact_id": "graph_node::node_github",
+              "source_type": "graph_relationships",
+              "reason": "Used to determine that GitHub is included within the Intelligent Cloud portfolio and thus mapped to that reporting segment."
+            },
+            {
+              "fact_id": "sql::sq_2::2",
+              "source_type": "sql_structured",
+              "reason": "Provides the FY2025 revenue figure for the Intelligent Cloud segment."
+            },
+            {
+              "fact_id": "graph_edge::edge_40",
+              "source_type": "graph_relationships",
+              "reason": "Supports the identification of Productivity and Business Processes as one of Microsoft\u2019s three reportable segments for context."
+            },
+            {
+              "fact_id": "graph_edge::edge_41",
+              "source_type": "graph_relationships",
+              "reason": "Supports the identification of Intelligent Cloud as one of Microsoft\u2019s three reportable segments."
+            },
+            {
+              "fact_id": "graph_edge::edge_42",
+              "source_type": "graph_relationships",
+              "reason": "Supports the identification of More Personal Computing as one of Microsoft\u2019s three reportable segments for completeness."
+            }
+          ],
+          "unanswered_sub_queries": [],
+          "confidence": "high",
+          "usage": {
+            "completion_tokens": 496,
+            "prompt_tokens": 12577,
+            "total_tokens": 13073,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        },
+        "post_repair_deterministic_signals": {
+          "inline_fact_ids": [
+            "graph_node::node_github",
+            "sql::sq_2::2",
+            "graph_node::node_github",
+            "sql::sq_2::2",
+            "graph_edge::edge_40",
+            "graph_edge::edge_41",
+            "graph_edge::edge_42",
+            "graph_node::node_github"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "graph_relationships",
+            "sql_structured"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": true,
+          "needs_correction": false
+        },
+        "repair_success": true,
+        "usage": {
+          "completion_tokens": 496,
+          "prompt_tokens": 12577,
+          "total_tokens": 13073,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "final_answer": {
+        "original_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 2,
+          "allowed_fact_count": 20
+        },
+        "answer_markdown": "From the provided evidence, GitHub is listed as one of the offerings within Microsoft\u2019s **Intelligent Cloud** portfolio, alongside Azure, server products, developer tooling, Nuance Healthcare, and enterprise/partner services.[graph_node::node_github]\n\nThe FY2025 revenue for **Intelligent Cloud** was **$108,610 million**.[sql::sq_2::2]\n\nSo, based on the evidence in this bundle:\n- **Segment that includes GitHub:** Intelligent Cloud[graph_node::node_github]\n- **FY2025 revenue of that segment:** $108,610 million[sql::sq_2::2]\n\nNote: While the relationships data explicitly defines Microsoft\u2019s three reportable segments (Productivity and Business Processes, Intelligent Cloud, and More Personal Computing),[graph_edge::edge_40][graph_edge::edge_41][graph_edge::edge_42] the only direct mention of GitHub\u2019s placement is that it is part of the Intelligent Cloud portfolio; the evidence does not provide a more granular or conflicting mapping.[graph_node::node_github]",
+        "used_fact_ids": [
+          "graph_node::node_github",
+          "sql::sq_2::2",
+          "graph_edge::edge_40",
+          "graph_edge::edge_41",
+          "graph_edge::edge_42"
+        ],
+        "citations": [
+          {
+            "fact_id": "graph_node::node_github",
+            "source_type": "graph_relationships",
+            "reason": "Used to determine that GitHub is included within the Intelligent Cloud portfolio and thus mapped to that reporting segment."
+          },
+          {
+            "fact_id": "sql::sq_2::2",
+            "source_type": "sql_structured",
+            "reason": "Provides the FY2025 revenue figure for the Intelligent Cloud segment."
+          },
+          {
+            "fact_id": "graph_edge::edge_40",
+            "source_type": "graph_relationships",
+            "reason": "Supports the identification of Productivity and Business Processes as one of Microsoft\u2019s three reportable segments for context."
+          },
+          {
+            "fact_id": "graph_edge::edge_41",
+            "source_type": "graph_relationships",
+            "reason": "Supports the identification of Intelligent Cloud as one of Microsoft\u2019s three reportable segments."
+          },
+          {
+            "fact_id": "graph_edge::edge_42",
+            "source_type": "graph_relationships",
+            "reason": "Supports the identification of More Personal Computing as one of Microsoft\u2019s three reportable segments for completeness."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 496,
+          "prompt_tokens": 12577,
+          "total_tokens": 13073,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "judge_result": {
+        "original_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "judge_model": "gpt-5-mini",
+        "metrics": {
+          "faithfulness": 2,
+          "answer_relevancy": 4,
+          "context_precision": 3,
+          "citation_grounding": 2,
+          "overall_verdict": "fail",
+          "summary": "The answer attempts to respond directly to the query and correctly extracts the FY2025 revenue number for the Intelligent Cloud segment, but it asserts that GitHub is part of the Intelligent Cloud portfolio without adequate supporting evidence from the cited facts. The response also fails to acknowledge a reported relationship conflict and does not document which relationship edges were checked, leaving the primary sub-query insufficiently supported.",
+          "strengths": [
+            "Extracted and reported the FY2025 revenue number for Intelligent Cloud from the provided SQL fact (sql::sq_2::2).",
+            "Identified Microsoft's three reportable segments and cited related graph edge facts.",
+            "Concise and clear presentation of the revenue figure."
+          ],
+          "weaknesses": [
+            "Claim that GitHub is included in the Intelligent Cloud segment is not supported by the cited graph_relationships fact (graph_node::node_github is just an entity mention and does not itself prove membership under Intelligent Cloud).",
+            "Did not acknowledge or explain the conflict signal present for the relationships data.",
+            "Insufficient provenance: the answer does not enumerate which relationship edges were searched or explicitly state absence/presence of a GitHub->segment edge.",
+            "Citation grounding is weak: major claim (GitHub mapping) lacks an appropriate supporting fact ID."
+          ],
+          "recommendations": [
+            "Re-run the relationship search specifically for edges where subject or object equals 'GitHub' (including alternate labels) and relation types like 'includes', 'included_in', 'part_of', or 'integrates'. Return any matching fact IDs and summaries; if none are found, explicitly state that and list the checked fact IDs/datasets.",
+            "If a direct GitHub->segment relationship is found, cite that specific graph edge fact ID alongside the SQL revenue row to support the mapping; if not found, do not assert the mapping and instead offer the FY2025 revenues for all segments with clear provenance.",
+            "Inspect and report on the conflict signal: list the conflict_fact_ids and explain whether and how the conflict affects GitHub's mapping to a segment.",
+            "Improve citation grounding by attaching the most directly relevant fact IDs to each major claim (e.g., mapping claim must cite a graph edge that links GitHub to Intelligent Cloud).",
+            "If the evidence bundle lacks the mapping after exhaustive search, offer to (a) perform a best-effort external lookup (e.g., Microsoft 10-K or official product/segment documentation) with clear caveats, or (b) accept that the mapping cannot be determined from the provided evidence."
+          ]
+        },
+        "average_score": 2.75,
+        "usage": {
+          "completion_tokens": 1105,
+          "prompt_tokens": 1949,
+          "total_tokens": 3054,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 512,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "case_id": "ans_003_graph_only_structure",
+      "query": "How does Azure relate to GitHub in Microsoft's business structure?",
+      "runtime_seconds": 23.385,
+      "answer_runtime_seconds": 3.926,
+      "critique_runtime_seconds": 8.845,
+      "repair_runtime_seconds": 0.0,
+      "judge_runtime_seconds": 10.614,
+      "initial_evaluation": {
+        "passed": true,
+        "missing_phrases": [],
+        "missing_source_types": [],
+        "citation_count": 3,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "final_evaluation": {
+        "passed": true,
+        "missing_phrases": [],
+        "missing_source_types": [],
+        "citation_count": 3,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "repair_applied": false,
+      "repair_success": true,
+      "repair_strategy": {
+        "strategy": "no_op",
+        "reason": "The critique says the answer does not need correction.",
+        "focus": []
+      },
+      "initial_answer": {
+        "original_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 1,
+          "allowed_fact_count": 8
+        },
+        "answer_markdown": "Within Microsoft\u2019s business structure, both Azure and GitHub sit inside the same reporting segment, **Intelligent Cloud**. That segment is explicitly described as including **Azure and other cloud services** as well as **GitHub**.[graph_edge::edge_47][graph_edge::edge_48]\n\nSo, Azure and GitHub are **peer offerings within the Intelligent Cloud segment**, rather than one being part of the other. Azure represents Microsoft\u2019s cloud platform and services in that segment, while GitHub is another product/business reported in the same segment.[graph_edge::edge_47][graph_edge::edge_48]\n\nSeparately, Azure is also highlighted as a key contributor to Microsoft\u2019s commercial recurring revenue, underscoring its importance as a major cloud business line for the company.[graph_edge::edge_18]",
+        "used_fact_ids": [
+          "graph_edge::edge_47",
+          "graph_edge::edge_48",
+          "graph_edge::edge_18"
+        ],
+        "citations": [
+          {
+            "fact_id": "graph_edge::edge_47",
+            "source_type": "graph_relationships",
+            "reason": "Supports that Azure is included in the Intelligent Cloud segment and is part of Microsoft\u2019s business structure there."
+          },
+          {
+            "fact_id": "graph_edge::edge_48",
+            "source_type": "graph_relationships",
+            "reason": "Shows that GitHub is also included in the Intelligent Cloud segment, making Azure and GitHub peer offerings in the same segment."
+          },
+          {
+            "fact_id": "graph_edge::edge_18",
+            "source_type": "graph_relationships",
+            "reason": "Indicates that Azure is a component of Microsoft\u2019s commercial recurring revenue, reinforcing its role as a major business line."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 358,
+          "prompt_tokens": 4532,
+          "total_tokens": 4890,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 4480
+          }
+        }
+      },
+      "critique_result": {
+        "original_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "answer_model": "gpt-5.1",
+        "critique_model": "gpt-5-mini",
+        "deterministic_signals": {
+          "inline_fact_ids": [
+            "graph_edge::edge_47",
+            "graph_edge::edge_48",
+            "graph_edge::edge_47",
+            "graph_edge::edge_48",
+            "graph_edge::edge_18"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "graph_relationships"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": false
+        },
+        "llm_critique": {
+          "grounded": true,
+          "complete": true,
+          "needs_correction": false,
+          "confidence": "high",
+          "issue_summary": "The answer is supported by the provided relationship facts (Intelligent Cloud includes Azure and GitHub; Azure contributes to commercial recurring revenue) and directly answers the query.",
+          "strengths": [
+            "Accurately uses provided relationship facts showing both Azure and GitHub are included in the Intelligent Cloud segment.",
+            "Correctly characterizes them as peer offerings within that reporting segment rather than one being a subset of the other.",
+            "Notes Azure's role in commercial recurring revenue, aligning with the provided fact."
+          ],
+          "issues": [],
+          "repair_plan": []
+        },
+        "final_critique": {
+          "grounded": true,
+          "complete": true,
+          "needs_correction": false,
+          "confidence": "high",
+          "issue_summary": "The answer is supported by the provided relationship facts (Intelligent Cloud includes Azure and GitHub; Azure contributes to commercial recurring revenue) and directly answers the query.",
+          "strengths": [
+            "Accurately uses provided relationship facts showing both Azure and GitHub are included in the Intelligent Cloud segment.",
+            "Correctly characterizes them as peer offerings within that reporting segment rather than one being a subset of the other.",
+            "Notes Azure's role in commercial recurring revenue, aligning with the provided fact."
+          ],
+          "issues": [],
+          "repair_plan": []
+        },
+        "usage": {
+          "completion_tokens": 554,
+          "prompt_tokens": 933,
+          "total_tokens": 1487,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 384,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "repair_result": {
+        "original_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "repair_model": "gpt-5.1",
+        "repair_strategy": {
+          "strategy": "no_op",
+          "reason": "The critique says the answer does not need correction.",
+          "focus": []
+        },
+        "repair_applied": false,
+        "repaired_answer": {
+          "original_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+          "model": "gpt-5.1",
+          "answer_input_summary": {
+            "sub_query_count": 1,
+            "allowed_fact_count": 8
+          },
+          "answer_markdown": "Within Microsoft\u2019s business structure, both Azure and GitHub sit inside the same reporting segment, **Intelligent Cloud**. That segment is explicitly described as including **Azure and other cloud services** as well as **GitHub**.[graph_edge::edge_47][graph_edge::edge_48]\n\nSo, Azure and GitHub are **peer offerings within the Intelligent Cloud segment**, rather than one being part of the other. Azure represents Microsoft\u2019s cloud platform and services in that segment, while GitHub is another product/business reported in the same segment.[graph_edge::edge_47][graph_edge::edge_48]\n\nSeparately, Azure is also highlighted as a key contributor to Microsoft\u2019s commercial recurring revenue, underscoring its importance as a major cloud business line for the company.[graph_edge::edge_18]",
+          "used_fact_ids": [
+            "graph_edge::edge_47",
+            "graph_edge::edge_48",
+            "graph_edge::edge_18"
+          ],
+          "citations": [
+            {
+              "fact_id": "graph_edge::edge_47",
+              "source_type": "graph_relationships",
+              "reason": "Supports that Azure is included in the Intelligent Cloud segment and is part of Microsoft\u2019s business structure there."
+            },
+            {
+              "fact_id": "graph_edge::edge_48",
+              "source_type": "graph_relationships",
+              "reason": "Shows that GitHub is also included in the Intelligent Cloud segment, making Azure and GitHub peer offerings in the same segment."
+            },
+            {
+              "fact_id": "graph_edge::edge_18",
+              "source_type": "graph_relationships",
+              "reason": "Indicates that Azure is a component of Microsoft\u2019s commercial recurring revenue, reinforcing its role as a major business line."
+            }
+          ],
+          "unanswered_sub_queries": [],
+          "confidence": "high",
+          "usage": {
+            "completion_tokens": 358,
+            "prompt_tokens": 4532,
+            "total_tokens": 4890,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 4480
+            }
+          }
+        },
+        "post_repair_deterministic_signals": {
+          "inline_fact_ids": [
+            "graph_edge::edge_47",
+            "graph_edge::edge_48",
+            "graph_edge::edge_47",
+            "graph_edge::edge_48",
+            "graph_edge::edge_18"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "graph_relationships"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": false
+        },
+        "repair_success": true,
+        "usage": {}
+      },
+      "final_answer": {
+        "original_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 1,
+          "allowed_fact_count": 8
+        },
+        "answer_markdown": "Within Microsoft\u2019s business structure, both Azure and GitHub sit inside the same reporting segment, **Intelligent Cloud**. That segment is explicitly described as including **Azure and other cloud services** as well as **GitHub**.[graph_edge::edge_47][graph_edge::edge_48]\n\nSo, Azure and GitHub are **peer offerings within the Intelligent Cloud segment**, rather than one being part of the other. Azure represents Microsoft\u2019s cloud platform and services in that segment, while GitHub is another product/business reported in the same segment.[graph_edge::edge_47][graph_edge::edge_48]\n\nSeparately, Azure is also highlighted as a key contributor to Microsoft\u2019s commercial recurring revenue, underscoring its importance as a major cloud business line for the company.[graph_edge::edge_18]",
+        "used_fact_ids": [
+          "graph_edge::edge_47",
+          "graph_edge::edge_48",
+          "graph_edge::edge_18"
+        ],
+        "citations": [
+          {
+            "fact_id": "graph_edge::edge_47",
+            "source_type": "graph_relationships",
+            "reason": "Supports that Azure is included in the Intelligent Cloud segment and is part of Microsoft\u2019s business structure there."
+          },
+          {
+            "fact_id": "graph_edge::edge_48",
+            "source_type": "graph_relationships",
+            "reason": "Shows that GitHub is also included in the Intelligent Cloud segment, making Azure and GitHub peer offerings in the same segment."
+          },
+          {
+            "fact_id": "graph_edge::edge_18",
+            "source_type": "graph_relationships",
+            "reason": "Indicates that Azure is a component of Microsoft\u2019s commercial recurring revenue, reinforcing its role as a major business line."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 358,
+          "prompt_tokens": 4532,
+          "total_tokens": 4890,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 4480
+          }
+        }
+      },
+      "judge_result": {
+        "original_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "judge_model": "gpt-5-mini",
+        "metrics": {
+          "faithfulness": 5,
+          "answer_relevancy": 5,
+          "context_precision": 5,
+          "citation_grounding": 5,
+          "overall_verdict": "pass",
+          "summary": "The answer correctly states that both Azure and GitHub are reported within Microsoft\u2019s Intelligent Cloud segment and that Azure contributes to commercial recurring revenue. These claims are supported by the provided relationship facts and directly address the query.",
+          "strengths": [
+            "Accurately uses the provided relationship facts showing both Azure and GitHub are included in the Intelligent Cloud segment.",
+            "Correctly characterizes Azure and GitHub as peer offerings within that reporting segment rather than one being a subset of the other.",
+            "Notes Azure\u2019s role in commercial recurring revenue, aligning with the supplied fact."
+          ],
+          "weaknesses": [],
+          "recommendations": [
+            "If precision is needed for formal use, add a direct citation to Microsoft\u2019s latest financial filings (e.g., annual or quarterly report) to show the Intelligent Cloud segment composition and any date applicability.",
+            "Mention that reporting segments can change over time (include timeframe or fiscal year) to avoid implying permanence.",
+            "Optional: add context about GitHub\u2019s ownership structure (acquired by Microsoft in 2018 but reported within Intelligent Cloud) if the user wants corporate history beyond reporting structure."
+          ]
+        },
+        "average_score": 5.0,
+        "usage": {
+          "completion_tokens": 710,
+          "prompt_tokens": 886,
+          "total_tokens": 1596,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 448,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "case_id": "ans_004_sql_geography_mix_growth",
+      "query": "Which geography had faster year-over-year revenue growth in FY2025 and what was its revenue mix percentage?",
+      "runtime_seconds": 20.976,
+      "answer_runtime_seconds": 3.643,
+      "critique_runtime_seconds": 5.707,
+      "repair_runtime_seconds": 0.0,
+      "judge_runtime_seconds": 11.626,
+      "initial_evaluation": {
+        "passed": true,
+        "missing_phrases": [],
+        "missing_source_types": [],
+        "citation_count": 2,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "final_evaluation": {
+        "passed": true,
+        "missing_phrases": [],
+        "missing_source_types": [],
+        "citation_count": 2,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "repair_applied": false,
+      "repair_success": true,
+      "repair_strategy": {
+        "strategy": "no_op",
+        "reason": "The critique says the answer does not need correction.",
+        "focus": []
+      },
+      "initial_answer": {
+        "original_query": "Which geography had faster year-over-year revenue growth in FY2025 and what was its revenue mix percentage?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 2,
+          "allowed_fact_count": 2
+        },
+        "answer_markdown": "The United States had the fastest year-over-year revenue growth in FY2025, with a growth rate of 9.8%. Its revenue mix percentage in FY2025 was 46.8%.[sql::sq_1::1][sql::sq_2::1]",
+        "used_fact_ids": [
+          "sql::sq_1::1",
+          "sql::sq_2::1"
+        ],
+        "citations": [
+          {
+            "fact_id": "sql::sq_1::1",
+            "source_type": "sql_structured",
+            "reason": "Identifies the geography (United States) and its year-over-year revenue growth percentage (9.8%) in FY2025, and that it is the fastest based on the ordered query."
+          },
+          {
+            "fact_id": "sql::sq_2::1",
+            "source_type": "sql_structured",
+            "reason": "Provides the revenue mix percentage (46.8%) for the United States in FY2025, which is the geography with the fastest growth."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 222,
+          "prompt_tokens": 1006,
+          "total_tokens": 1228,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "critique_result": {
+        "original_query": "Which geography had faster year-over-year revenue growth in FY2025 and what was its revenue mix percentage?",
+        "answer_model": "gpt-5.1",
+        "critique_model": "gpt-5-mini",
+        "deterministic_signals": {
+          "inline_fact_ids": [
+            "sql::sq_1::1",
+            "sql::sq_2::1"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "sql_structured"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": false
+        },
+        "llm_critique": {
+          "grounded": true,
+          "complete": true,
+          "needs_correction": false,
+          "confidence": "high",
+          "issue_summary": "Answer is supported by provided SQL-structured facts and directly addresses both sub-queries.",
+          "strengths": [
+            "Correctly identifies the geography with the highest YoY revenue growth (United States) using provided data.",
+            "Provides the exact growth rate (9.8%) and the corresponding revenue mix percentage (46.8%).",
+            "Uses structured SQL fact references (sql::sq_1::1, sql::sq_2::1) as evidence."
+          ],
+          "issues": [],
+          "repair_plan": []
+        },
+        "final_critique": {
+          "grounded": true,
+          "complete": true,
+          "needs_correction": false,
+          "confidence": "high",
+          "issue_summary": "Answer is supported by provided SQL-structured facts and directly addresses both sub-queries.",
+          "strengths": [
+            "Correctly identifies the geography with the highest YoY revenue growth (United States) using provided data.",
+            "Provides the exact growth rate (9.8%) and the corresponding revenue mix percentage (46.8%).",
+            "Uses structured SQL fact references (sql::sq_1::1, sql::sq_2::1) as evidence."
+          ],
+          "issues": [],
+          "repair_plan": []
+        },
+        "usage": {
+          "completion_tokens": 356,
+          "prompt_tokens": 795,
+          "total_tokens": 1151,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 192,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "repair_result": {
+        "original_query": "Which geography had faster year-over-year revenue growth in FY2025 and what was its revenue mix percentage?",
+        "repair_model": "gpt-5.1",
+        "repair_strategy": {
+          "strategy": "no_op",
+          "reason": "The critique says the answer does not need correction.",
+          "focus": []
+        },
+        "repair_applied": false,
+        "repaired_answer": {
+          "original_query": "Which geography had faster year-over-year revenue growth in FY2025 and what was its revenue mix percentage?",
+          "model": "gpt-5.1",
+          "answer_input_summary": {
+            "sub_query_count": 2,
+            "allowed_fact_count": 2
+          },
+          "answer_markdown": "The United States had the fastest year-over-year revenue growth in FY2025, with a growth rate of 9.8%. Its revenue mix percentage in FY2025 was 46.8%.[sql::sq_1::1][sql::sq_2::1]",
+          "used_fact_ids": [
+            "sql::sq_1::1",
+            "sql::sq_2::1"
+          ],
+          "citations": [
+            {
+              "fact_id": "sql::sq_1::1",
+              "source_type": "sql_structured",
+              "reason": "Identifies the geography (United States) and its year-over-year revenue growth percentage (9.8%) in FY2025, and that it is the fastest based on the ordered query."
+            },
+            {
+              "fact_id": "sql::sq_2::1",
+              "source_type": "sql_structured",
+              "reason": "Provides the revenue mix percentage (46.8%) for the United States in FY2025, which is the geography with the fastest growth."
+            }
+          ],
+          "unanswered_sub_queries": [],
+          "confidence": "high",
+          "usage": {
+            "completion_tokens": 222,
+            "prompt_tokens": 1006,
+            "total_tokens": 1228,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        },
+        "post_repair_deterministic_signals": {
+          "inline_fact_ids": [
+            "sql::sq_1::1",
+            "sql::sq_2::1"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "sql_structured"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": false
+        },
+        "repair_success": true,
+        "usage": {}
+      },
+      "final_answer": {
+        "original_query": "Which geography had faster year-over-year revenue growth in FY2025 and what was its revenue mix percentage?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 2,
+          "allowed_fact_count": 2
+        },
+        "answer_markdown": "The United States had the fastest year-over-year revenue growth in FY2025, with a growth rate of 9.8%. Its revenue mix percentage in FY2025 was 46.8%.[sql::sq_1::1][sql::sq_2::1]",
+        "used_fact_ids": [
+          "sql::sq_1::1",
+          "sql::sq_2::1"
+        ],
+        "citations": [
+          {
+            "fact_id": "sql::sq_1::1",
+            "source_type": "sql_structured",
+            "reason": "Identifies the geography (United States) and its year-over-year revenue growth percentage (9.8%) in FY2025, and that it is the fastest based on the ordered query."
+          },
+          {
+            "fact_id": "sql::sq_2::1",
+            "source_type": "sql_structured",
+            "reason": "Provides the revenue mix percentage (46.8%) for the United States in FY2025, which is the geography with the fastest growth."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 222,
+          "prompt_tokens": 1006,
+          "total_tokens": 1228,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "judge_result": {
+        "original_query": "Which geography had faster year-over-year revenue growth in FY2025 and what was its revenue mix percentage?",
+        "judge_model": "gpt-5-mini",
+        "metrics": {
+          "faithfulness": 5,
+          "answer_relevancy": 5,
+          "context_precision": 5,
+          "citation_grounding": 5,
+          "overall_verdict": "pass",
+          "summary": "The answer correctly and concisely states that the United States had the fastest YoY revenue growth in FY2025 (9.8%) and gives its revenue mix (46.8%), with both claims supported by the provided SQL-structured facts.",
+          "strengths": [
+            "Claims are directly supported by the provided SQL facts (growth 9.8%, revenue mix 46.8%).",
+            "Answer directly addresses the user's two-part question (which geography and its revenue mix).",
+            "Concise and includes citations to the specific structured facts used."
+          ],
+          "weaknesses": [
+            "Relies solely on the supplied SQL rows; no additional context (e.g., comparison values for other geographies) is provided.",
+            "Citations are inline identifiers; a more user-friendly source label or data snapshot could improve transparency."
+          ],
+          "recommendations": [
+            "Accept the answer as provided \u2014 it is accurate and well-supported by the cited facts.",
+            "If wider context is desired, include the FY2025 YoY growth and revenue mix for other geographies for comparison.",
+            "Consider presenting the supporting SQL rows or table excerpt when returning results to end users for easier verification."
+          ]
+        },
+        "average_score": 5.0,
+        "usage": {
+          "completion_tokens": 702,
+          "prompt_tokens": 784,
+          "total_tokens": 1486,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 384,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "case_id": "ans_005_sql_growth_driver",
+      "query": "Which segment grew the fastest in FY2025 and what narrative driver was mentioned for it?",
+      "runtime_seconds": 16.257,
+      "answer_runtime_seconds": 2.947,
+      "critique_runtime_seconds": 5.043,
+      "repair_runtime_seconds": 0.0,
+      "judge_runtime_seconds": 8.267,
+      "initial_evaluation": {
+        "passed": false,
+        "missing_phrases": [
+          "12.6"
+        ],
+        "missing_source_types": [],
+        "citation_count": 2,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "final_evaluation": {
+        "passed": false,
+        "missing_phrases": [
+          "12.6"
+        ],
+        "missing_source_types": [],
+        "citation_count": 2,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "repair_applied": false,
+      "repair_success": true,
+      "repair_strategy": {
+        "strategy": "no_op",
+        "reason": "The critique says the answer does not need correction.",
+        "focus": []
+      },
+      "initial_answer": {
+        "original_query": "Which segment grew the fastest in FY2025 and what narrative driver was mentioned for it?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 2,
+          "allowed_fact_count": 2
+        },
+        "answer_markdown": "The fastest-growing segment in FY2025 was **Intelligent Cloud**, and its growth was primarily driven by **AI infrastructure demand**.[sql::sq_1::1][sql::sq_2::1]",
+        "used_fact_ids": [
+          "sql::sq_1::1",
+          "sql::sq_2::1"
+        ],
+        "citations": [
+          {
+            "fact_id": "sql::sq_1::1",
+            "source_type": "sql_structured",
+            "reason": "Supports the identification of Intelligent Cloud as the segment with the highest FY2025 year-over-year revenue growth (12.6%)."
+          },
+          {
+            "fact_id": "sql::sq_2::1",
+            "source_type": "sql_structured",
+            "reason": "Provides both the confirmation that Intelligent Cloud is the top-growing segment in FY2025 and specifies its narrative driver as AI infrastructure demand."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 193,
+          "prompt_tokens": 1086,
+          "total_tokens": 1279,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "critique_result": {
+        "original_query": "Which segment grew the fastest in FY2025 and what narrative driver was mentioned for it?",
+        "answer_model": "gpt-5.1",
+        "critique_model": "gpt-5-mini",
+        "deterministic_signals": {
+          "inline_fact_ids": [
+            "sql::sq_1::1",
+            "sql::sq_2::1"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "sql_structured"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": false
+        },
+        "llm_critique": {
+          "grounded": true,
+          "complete": true,
+          "needs_correction": false,
+          "confidence": "high",
+          "issue_summary": "Answer is supported by the provided SQL facts: Intelligent Cloud had the highest YoY growth (12.6%) in FY2025 and the narrative driver given was AI infrastructure demand.",
+          "strengths": [
+            "Directly answers both parts of the query (segment and narrative driver).",
+            "Claims are supported by the provided SQL fact rows (sql::sq_1::1 and sql::sq_2::1).",
+            "Concise and unambiguous phrasing."
+          ],
+          "issues": [],
+          "repair_plan": []
+        },
+        "final_critique": {
+          "grounded": true,
+          "complete": true,
+          "needs_correction": false,
+          "confidence": "high",
+          "issue_summary": "Answer is supported by the provided SQL facts: Intelligent Cloud had the highest YoY growth (12.6%) in FY2025 and the narrative driver given was AI infrastructure demand.",
+          "strengths": [
+            "Directly answers both parts of the query (segment and narrative driver).",
+            "Claims are supported by the provided SQL fact rows (sql::sq_1::1 and sql::sq_2::1).",
+            "Concise and unambiguous phrasing."
+          ],
+          "issues": [],
+          "repair_plan": []
+        },
+        "usage": {
+          "completion_tokens": 359,
+          "prompt_tokens": 778,
+          "total_tokens": 1137,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 192,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "repair_result": {
+        "original_query": "Which segment grew the fastest in FY2025 and what narrative driver was mentioned for it?",
+        "repair_model": "gpt-5.1",
+        "repair_strategy": {
+          "strategy": "no_op",
+          "reason": "The critique says the answer does not need correction.",
+          "focus": []
+        },
+        "repair_applied": false,
+        "repaired_answer": {
+          "original_query": "Which segment grew the fastest in FY2025 and what narrative driver was mentioned for it?",
+          "model": "gpt-5.1",
+          "answer_input_summary": {
+            "sub_query_count": 2,
+            "allowed_fact_count": 2
+          },
+          "answer_markdown": "The fastest-growing segment in FY2025 was **Intelligent Cloud**, and its growth was primarily driven by **AI infrastructure demand**.[sql::sq_1::1][sql::sq_2::1]",
+          "used_fact_ids": [
+            "sql::sq_1::1",
+            "sql::sq_2::1"
+          ],
+          "citations": [
+            {
+              "fact_id": "sql::sq_1::1",
+              "source_type": "sql_structured",
+              "reason": "Supports the identification of Intelligent Cloud as the segment with the highest FY2025 year-over-year revenue growth (12.6%)."
+            },
+            {
+              "fact_id": "sql::sq_2::1",
+              "source_type": "sql_structured",
+              "reason": "Provides both the confirmation that Intelligent Cloud is the top-growing segment in FY2025 and specifies its narrative driver as AI infrastructure demand."
+            }
+          ],
+          "unanswered_sub_queries": [],
+          "confidence": "high",
+          "usage": {
+            "completion_tokens": 193,
+            "prompt_tokens": 1086,
+            "total_tokens": 1279,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        },
+        "post_repair_deterministic_signals": {
+          "inline_fact_ids": [
+            "sql::sq_1::1",
+            "sql::sq_2::1"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "sql_structured"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": false
+        },
+        "repair_success": true,
+        "usage": {}
+      },
+      "final_answer": {
+        "original_query": "Which segment grew the fastest in FY2025 and what narrative driver was mentioned for it?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 2,
+          "allowed_fact_count": 2
+        },
+        "answer_markdown": "The fastest-growing segment in FY2025 was **Intelligent Cloud**, and its growth was primarily driven by **AI infrastructure demand**.[sql::sq_1::1][sql::sq_2::1]",
+        "used_fact_ids": [
+          "sql::sq_1::1",
+          "sql::sq_2::1"
+        ],
+        "citations": [
+          {
+            "fact_id": "sql::sq_1::1",
+            "source_type": "sql_structured",
+            "reason": "Supports the identification of Intelligent Cloud as the segment with the highest FY2025 year-over-year revenue growth (12.6%)."
+          },
+          {
+            "fact_id": "sql::sq_2::1",
+            "source_type": "sql_structured",
+            "reason": "Provides both the confirmation that Intelligent Cloud is the top-growing segment in FY2025 and specifies its narrative driver as AI infrastructure demand."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 193,
+          "prompt_tokens": 1086,
+          "total_tokens": 1279,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "judge_result": {
+        "original_query": "Which segment grew the fastest in FY2025 and what narrative driver was mentioned for it?",
+        "judge_model": "gpt-5-mini",
+        "metrics": {
+          "faithfulness": 5,
+          "answer_relevancy": 5,
+          "context_precision": 5,
+          "citation_grounding": 5,
+          "overall_verdict": "pass",
+          "summary": "The answer correctly identifies Intelligent Cloud as the fastest-growing segment in FY2025 and attributes its growth to AI infrastructure demand, matching the provided SQL facts (yoy growth 12.6% and narrative driver). The response is concise and properly cites the supporting facts.",
+          "strengths": [
+            "Directly answers both parts of the user query (segment and narrative driver).",
+            "Claims are supported by the provided structured facts (sql::sq_1::1 and sql::sq_2::1).",
+            "Concise and unambiguous phrasing with appropriate citations."
+          ],
+          "weaknesses": [
+            "Does not include the numeric growth value (12.6%), which would add precision to the answer."
+          ],
+          "recommendations": [
+            "Include the YoY growth percentage (12.6%) when stating which segment grew fastest to provide more context.",
+            "If available, cite any additional supporting context (e.g., whether the driver refers to product sales, cloud services, or infrastructure purchases) to make the narrative driver more specific.",
+            "Confirm with other source types (e.g., narrative reports) if broader corroboration beyond the SQL facts is required for higher-stakes use."
+          ]
+        },
+        "average_score": 5.0,
+        "usage": {
+          "completion_tokens": 576,
+          "prompt_tokens": 770,
+          "total_tokens": 1346,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 256,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "case_id": "ans_006_sql_product_family",
+      "query": "Which product family had the highest AI relevance score in FY2025 and what was its strategic priority?",
+      "runtime_seconds": 15.621,
+      "answer_runtime_seconds": 2.712,
+      "critique_runtime_seconds": 7.157,
+      "repair_runtime_seconds": 0.0,
+      "judge_runtime_seconds": 5.752,
+      "initial_evaluation": {
+        "passed": true,
+        "missing_phrases": [],
+        "missing_source_types": [],
+        "citation_count": 2,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "final_evaluation": {
+        "passed": true,
+        "missing_phrases": [],
+        "missing_source_types": [],
+        "citation_count": 2,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "repair_applied": false,
+      "repair_success": true,
+      "repair_strategy": {
+        "strategy": "no_op",
+        "reason": "The critique says the answer does not need correction.",
+        "focus": []
+      },
+      "initial_answer": {
+        "original_query": "Which product family had the highest AI relevance score in FY2025 and what was its strategic priority?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 2,
+          "allowed_fact_count": 2
+        },
+        "answer_markdown": "The product family with the highest AI relevance score in FY2025 was **Azure**, with an AI relevance score of **95**.[sql::sq_1::1]\n\nIts strategic priority in FY2025 was classified as **High**.[sql::sq_2::1]",
+        "used_fact_ids": [
+          "sql::sq_1::1",
+          "sql::sq_2::1"
+        ],
+        "citations": [
+          {
+            "fact_id": "sql::sq_1::1",
+            "source_type": "sql_structured",
+            "reason": "Supports identifying Azure as the product family with the maximum AI relevance score in FY2025 and provides the score value of 95."
+          },
+          {
+            "fact_id": "sql::sq_2::1",
+            "source_type": "sql_structured",
+            "reason": "Provides the strategic_priority value (High) for the Azure product family in FY2025."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 202,
+          "prompt_tokens": 988,
+          "total_tokens": 1190,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "critique_result": {
+        "original_query": "Which product family had the highest AI relevance score in FY2025 and what was its strategic priority?",
+        "answer_model": "gpt-5.1",
+        "critique_model": "gpt-5-mini",
+        "deterministic_signals": {
+          "inline_fact_ids": [
+            "sql::sq_1::1",
+            "sql::sq_2::1"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "sql_structured"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": false
+        },
+        "llm_critique": {
+          "grounded": true,
+          "complete": true,
+          "needs_correction": false,
+          "confidence": "high",
+          "issue_summary": "The answer is directly supported by the provided SQL facts (product_family=Azure, ai_relevance_score=95; strategic_priority=High) and fully answers both parts of the query.",
+          "strengths": [
+            "Directly cites specific structured facts linking Azure to an AI relevance score of 95 and a strategic priority of High.",
+            "Both sub-questions (highest AI relevance and its strategic priority) are answered concisely and correctly.",
+            "No conflicting evidence present; deterministic signals show used facts are declared and valid."
+          ],
+          "issues": [],
+          "repair_plan": []
+        },
+        "final_critique": {
+          "grounded": true,
+          "complete": true,
+          "needs_correction": false,
+          "confidence": "high",
+          "issue_summary": "The answer is directly supported by the provided SQL facts (product_family=Azure, ai_relevance_score=95; strategic_priority=High) and fully answers both parts of the query.",
+          "strengths": [
+            "Directly cites specific structured facts linking Azure to an AI relevance score of 95 and a strategic priority of High.",
+            "Both sub-questions (highest AI relevance and its strategic priority) are answered concisely and correctly.",
+            "No conflicting evidence present; deterministic signals show used facts are declared and valid."
+          ],
+          "issues": [],
+          "repair_plan": []
+        },
+        "usage": {
+          "completion_tokens": 560,
+          "prompt_tokens": 784,
+          "total_tokens": 1344,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 384,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "repair_result": {
+        "original_query": "Which product family had the highest AI relevance score in FY2025 and what was its strategic priority?",
+        "repair_model": "gpt-5.1",
+        "repair_strategy": {
+          "strategy": "no_op",
+          "reason": "The critique says the answer does not need correction.",
+          "focus": []
+        },
+        "repair_applied": false,
+        "repaired_answer": {
+          "original_query": "Which product family had the highest AI relevance score in FY2025 and what was its strategic priority?",
+          "model": "gpt-5.1",
+          "answer_input_summary": {
+            "sub_query_count": 2,
+            "allowed_fact_count": 2
+          },
+          "answer_markdown": "The product family with the highest AI relevance score in FY2025 was **Azure**, with an AI relevance score of **95**.[sql::sq_1::1]\n\nIts strategic priority in FY2025 was classified as **High**.[sql::sq_2::1]",
+          "used_fact_ids": [
+            "sql::sq_1::1",
+            "sql::sq_2::1"
+          ],
+          "citations": [
+            {
+              "fact_id": "sql::sq_1::1",
+              "source_type": "sql_structured",
+              "reason": "Supports identifying Azure as the product family with the maximum AI relevance score in FY2025 and provides the score value of 95."
+            },
+            {
+              "fact_id": "sql::sq_2::1",
+              "source_type": "sql_structured",
+              "reason": "Provides the strategic_priority value (High) for the Azure product family in FY2025."
+            }
+          ],
+          "unanswered_sub_queries": [],
+          "confidence": "high",
+          "usage": {
+            "completion_tokens": 202,
+            "prompt_tokens": 988,
+            "total_tokens": 1190,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0
+            }
+          }
+        },
+        "post_repair_deterministic_signals": {
+          "inline_fact_ids": [
+            "sql::sq_1::1",
+            "sql::sq_2::1"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "sql_structured"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": false
+        },
+        "repair_success": true,
+        "usage": {}
+      },
+      "final_answer": {
+        "original_query": "Which product family had the highest AI relevance score in FY2025 and what was its strategic priority?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 2,
+          "allowed_fact_count": 2
+        },
+        "answer_markdown": "The product family with the highest AI relevance score in FY2025 was **Azure**, with an AI relevance score of **95**.[sql::sq_1::1]\n\nIts strategic priority in FY2025 was classified as **High**.[sql::sq_2::1]",
+        "used_fact_ids": [
+          "sql::sq_1::1",
+          "sql::sq_2::1"
+        ],
+        "citations": [
+          {
+            "fact_id": "sql::sq_1::1",
+            "source_type": "sql_structured",
+            "reason": "Supports identifying Azure as the product family with the maximum AI relevance score in FY2025 and provides the score value of 95."
+          },
+          {
+            "fact_id": "sql::sq_2::1",
+            "source_type": "sql_structured",
+            "reason": "Provides the strategic_priority value (High) for the Azure product family in FY2025."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 202,
+          "prompt_tokens": 988,
+          "total_tokens": 1190,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "judge_result": {
+        "original_query": "Which product family had the highest AI relevance score in FY2025 and what was its strategic priority?",
+        "judge_model": "gpt-5-mini",
+        "metrics": {
+          "faithfulness": 5,
+          "answer_relevancy": 5,
+          "context_precision": 5,
+          "citation_grounding": 5,
+          "overall_verdict": "pass",
+          "summary": "The answer correctly identifies Azure as the product family with the highest AI relevance score in FY2025 (95) and correctly states its strategic priority as High. Both claims are directly supported by the provided SQL-structured facts and are relevant to the original query.",
+          "strengths": [
+            "Claims are directly supported by the provided structured facts (ai_relevance_score and strategic_priority).",
+            "Answers both parts of the user query concisely and correctly.",
+            "Citations are attached to the corresponding claims, reflecting appropriate grounding."
+          ],
+          "weaknesses": [],
+          "recommendations": [
+            "No changes required; the answer is accurate and well-grounded in the provided evidence."
+          ]
+        },
+        "average_score": 5.0,
+        "usage": {
+          "completion_tokens": 369,
+          "prompt_tokens": 786,
+          "total_tokens": 1155,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 192,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "case_id": "ans_007_graph_listing",
+      "query": "Which products and services are included under Intelligent Cloud?",
+      "runtime_seconds": 20.78,
+      "answer_runtime_seconds": 4.865,
+      "critique_runtime_seconds": 6.86,
+      "repair_runtime_seconds": 0.0,
+      "judge_runtime_seconds": 9.055,
+      "initial_evaluation": {
+        "passed": true,
+        "missing_phrases": [],
+        "missing_source_types": [],
+        "citation_count": 7,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "final_evaluation": {
+        "passed": true,
+        "missing_phrases": [],
+        "missing_source_types": [],
+        "citation_count": 7,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "repair_applied": false,
+      "repair_success": true,
+      "repair_strategy": {
+        "strategy": "no_op",
+        "reason": "The critique says the answer does not need correction.",
+        "focus": []
+      },
+      "initial_answer": {
+        "original_query": "Which products and services are included under Intelligent Cloud?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 1,
+          "allowed_fact_count": 8
+        },
+        "answer_markdown": "Under Microsoft\u2019s **Intelligent Cloud** segment, the included products and services are:\n\n- **Azure and other cloud services** [graph_edge::edge_47][graph_edge::edge_151]\n- **Server products** [graph_edge::edge_82][graph_edge::edge_151]\n- **Developer tooling** [graph_edge::edge_83]\n- **GitHub** [graph_edge::edge_48]\n- **Nuance Healthcare** [graph_edge::edge_49]\n- **Enterprise support services** (enterprise services) [graph_edge::edge_47]\n- **Partner services** [graph_edge::edge_85]\n\nAll of these are explicitly described as being contained within or included in the Intelligent Cloud segment. [graph_edge::edge_47]",
+        "used_fact_ids": [
+          "graph_edge::edge_47",
+          "graph_edge::edge_48",
+          "graph_edge::edge_49",
+          "graph_edge::edge_151",
+          "graph_edge::edge_85",
+          "graph_edge::edge_82",
+          "graph_edge::edge_83"
+        ],
+        "citations": [
+          {
+            "fact_id": "graph_edge::edge_47",
+            "source_type": "graph_relationships",
+            "reason": "Supports that Azure and other cloud services, as well as enterprise support, are part of Intelligent Cloud and summarizes the segment\u2019s contents."
+          },
+          {
+            "fact_id": "graph_edge::edge_151",
+            "source_type": "graph_relationships",
+            "reason": "Shows that server products and cloud services are included within Intelligent Cloud."
+          },
+          {
+            "fact_id": "graph_edge::edge_82",
+            "source_type": "graph_relationships",
+            "reason": "Reinforces that server products are contained in Intelligent Cloud."
+          },
+          {
+            "fact_id": "graph_edge::edge_83",
+            "source_type": "graph_relationships",
+            "reason": "Indicates that developer tooling is part of the Intelligent Cloud segment."
+          },
+          {
+            "fact_id": "graph_edge::edge_48",
+            "source_type": "graph_relationships",
+            "reason": "Shows that GitHub is included within Intelligent Cloud."
+          },
+          {
+            "fact_id": "graph_edge::edge_49",
+            "source_type": "graph_relationships",
+            "reason": "Shows that Nuance Healthcare is included within Intelligent Cloud."
+          },
+          {
+            "fact_id": "graph_edge::edge_85",
+            "source_type": "graph_relationships",
+            "reason": "Indicates that partner services are part of Intelligent Cloud."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 493,
+          "prompt_tokens": 3884,
+          "total_tokens": 4377,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 3840
+          }
+        }
+      },
+      "critique_result": {
+        "original_query": "Which products and services are included under Intelligent Cloud?",
+        "answer_model": "gpt-5.1",
+        "critique_model": "gpt-5-mini",
+        "deterministic_signals": {
+          "inline_fact_ids": [
+            "graph_edge::edge_47",
+            "graph_edge::edge_151",
+            "graph_edge::edge_82",
+            "graph_edge::edge_151",
+            "graph_edge::edge_83",
+            "graph_edge::edge_48",
+            "graph_edge::edge_49",
+            "graph_edge::edge_47",
+            "graph_edge::edge_85",
+            "graph_edge::edge_47"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "graph_relationships"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": false
+        },
+        "llm_critique": {
+          "grounded": true,
+          "complete": true,
+          "needs_correction": false,
+          "confidence": "high",
+          "issue_summary": "Answer is supported by the provided graph_relationship facts and lists the products/services included in Intelligent Cloud.",
+          "strengths": [
+            "Directly cites and reflects the provided graph_relationship facts.",
+            "Includes all items referenced in the used facts (Azure/cloud services, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support services, partner services).",
+            "Concise and directly answers the user query."
+          ],
+          "issues": [],
+          "repair_plan": []
+        },
+        "final_critique": {
+          "grounded": true,
+          "complete": true,
+          "needs_correction": false,
+          "confidence": "high",
+          "issue_summary": "Answer is supported by the provided graph_relationship facts and lists the products/services included in Intelligent Cloud.",
+          "strengths": [
+            "Directly cites and reflects the provided graph_relationship facts.",
+            "Includes all items referenced in the used facts (Azure/cloud services, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support services, partner services).",
+            "Concise and directly answers the user query."
+          ],
+          "issues": [],
+          "repair_plan": []
+        },
+        "usage": {
+          "completion_tokens": 537,
+          "prompt_tokens": 1149,
+          "total_tokens": 1686,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 384,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "repair_result": {
+        "original_query": "Which products and services are included under Intelligent Cloud?",
+        "repair_model": "gpt-5.1",
+        "repair_strategy": {
+          "strategy": "no_op",
+          "reason": "The critique says the answer does not need correction.",
+          "focus": []
+        },
+        "repair_applied": false,
+        "repaired_answer": {
+          "original_query": "Which products and services are included under Intelligent Cloud?",
+          "model": "gpt-5.1",
+          "answer_input_summary": {
+            "sub_query_count": 1,
+            "allowed_fact_count": 8
+          },
+          "answer_markdown": "Under Microsoft\u2019s **Intelligent Cloud** segment, the included products and services are:\n\n- **Azure and other cloud services** [graph_edge::edge_47][graph_edge::edge_151]\n- **Server products** [graph_edge::edge_82][graph_edge::edge_151]\n- **Developer tooling** [graph_edge::edge_83]\n- **GitHub** [graph_edge::edge_48]\n- **Nuance Healthcare** [graph_edge::edge_49]\n- **Enterprise support services** (enterprise services) [graph_edge::edge_47]\n- **Partner services** [graph_edge::edge_85]\n\nAll of these are explicitly described as being contained within or included in the Intelligent Cloud segment. [graph_edge::edge_47]",
+          "used_fact_ids": [
+            "graph_edge::edge_47",
+            "graph_edge::edge_48",
+            "graph_edge::edge_49",
+            "graph_edge::edge_151",
+            "graph_edge::edge_85",
+            "graph_edge::edge_82",
+            "graph_edge::edge_83"
+          ],
+          "citations": [
+            {
+              "fact_id": "graph_edge::edge_47",
+              "source_type": "graph_relationships",
+              "reason": "Supports that Azure and other cloud services, as well as enterprise support, are part of Intelligent Cloud and summarizes the segment\u2019s contents."
+            },
+            {
+              "fact_id": "graph_edge::edge_151",
+              "source_type": "graph_relationships",
+              "reason": "Shows that server products and cloud services are included within Intelligent Cloud."
+            },
+            {
+              "fact_id": "graph_edge::edge_82",
+              "source_type": "graph_relationships",
+              "reason": "Reinforces that server products are contained in Intelligent Cloud."
+            },
+            {
+              "fact_id": "graph_edge::edge_83",
+              "source_type": "graph_relationships",
+              "reason": "Indicates that developer tooling is part of the Intelligent Cloud segment."
+            },
+            {
+              "fact_id": "graph_edge::edge_48",
+              "source_type": "graph_relationships",
+              "reason": "Shows that GitHub is included within Intelligent Cloud."
+            },
+            {
+              "fact_id": "graph_edge::edge_49",
+              "source_type": "graph_relationships",
+              "reason": "Shows that Nuance Healthcare is included within Intelligent Cloud."
+            },
+            {
+              "fact_id": "graph_edge::edge_85",
+              "source_type": "graph_relationships",
+              "reason": "Indicates that partner services are part of Intelligent Cloud."
+            }
+          ],
+          "unanswered_sub_queries": [],
+          "confidence": "high",
+          "usage": {
+            "completion_tokens": 493,
+            "prompt_tokens": 3884,
+            "total_tokens": 4377,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 3840
+            }
+          }
+        },
+        "post_repair_deterministic_signals": {
+          "inline_fact_ids": [
+            "graph_edge::edge_47",
+            "graph_edge::edge_151",
+            "graph_edge::edge_82",
+            "graph_edge::edge_151",
+            "graph_edge::edge_83",
+            "graph_edge::edge_48",
+            "graph_edge::edge_49",
+            "graph_edge::edge_47",
+            "graph_edge::edge_85",
+            "graph_edge::edge_47"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "graph_relationships"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": false
+        },
+        "repair_success": true,
+        "usage": {}
+      },
+      "final_answer": {
+        "original_query": "Which products and services are included under Intelligent Cloud?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 1,
+          "allowed_fact_count": 8
+        },
+        "answer_markdown": "Under Microsoft\u2019s **Intelligent Cloud** segment, the included products and services are:\n\n- **Azure and other cloud services** [graph_edge::edge_47][graph_edge::edge_151]\n- **Server products** [graph_edge::edge_82][graph_edge::edge_151]\n- **Developer tooling** [graph_edge::edge_83]\n- **GitHub** [graph_edge::edge_48]\n- **Nuance Healthcare** [graph_edge::edge_49]\n- **Enterprise support services** (enterprise services) [graph_edge::edge_47]\n- **Partner services** [graph_edge::edge_85]\n\nAll of these are explicitly described as being contained within or included in the Intelligent Cloud segment. [graph_edge::edge_47]",
+        "used_fact_ids": [
+          "graph_edge::edge_47",
+          "graph_edge::edge_48",
+          "graph_edge::edge_49",
+          "graph_edge::edge_151",
+          "graph_edge::edge_85",
+          "graph_edge::edge_82",
+          "graph_edge::edge_83"
+        ],
+        "citations": [
+          {
+            "fact_id": "graph_edge::edge_47",
+            "source_type": "graph_relationships",
+            "reason": "Supports that Azure and other cloud services, as well as enterprise support, are part of Intelligent Cloud and summarizes the segment\u2019s contents."
+          },
+          {
+            "fact_id": "graph_edge::edge_151",
+            "source_type": "graph_relationships",
+            "reason": "Shows that server products and cloud services are included within Intelligent Cloud."
+          },
+          {
+            "fact_id": "graph_edge::edge_82",
+            "source_type": "graph_relationships",
+            "reason": "Reinforces that server products are contained in Intelligent Cloud."
+          },
+          {
+            "fact_id": "graph_edge::edge_83",
+            "source_type": "graph_relationships",
+            "reason": "Indicates that developer tooling is part of the Intelligent Cloud segment."
+          },
+          {
+            "fact_id": "graph_edge::edge_48",
+            "source_type": "graph_relationships",
+            "reason": "Shows that GitHub is included within Intelligent Cloud."
+          },
+          {
+            "fact_id": "graph_edge::edge_49",
+            "source_type": "graph_relationships",
+            "reason": "Shows that Nuance Healthcare is included within Intelligent Cloud."
+          },
+          {
+            "fact_id": "graph_edge::edge_85",
+            "source_type": "graph_relationships",
+            "reason": "Indicates that partner services are part of Intelligent Cloud."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 493,
+          "prompt_tokens": 3884,
+          "total_tokens": 4377,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 3840
+          }
+        }
+      },
+      "judge_result": {
+        "original_query": "Which products and services are included under Intelligent Cloud?",
+        "judge_model": "gpt-5-mini",
+        "metrics": {
+          "faithfulness": 5,
+          "answer_relevancy": 5,
+          "context_precision": 5,
+          "citation_grounding": 5,
+          "overall_verdict": "pass",
+          "summary": "The answer accurately and concisely lists the products and services included in Microsoft\u2019s Intelligent Cloud segment, and each major item is supported by the provided graph_relationship facts/citations.",
+          "strengths": [
+            "Comprehensively lists the items present in the provided facts (Azure/cloud services, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support services, partner services).",
+            "Each listed item is directly tied to one or more graph_edge citations, showing clear grounding in the supplied evidence.",
+            "Concise and on-topic\u2014directly answers the user\u2019s query without extraneous information."
+          ],
+          "weaknesses": [
+            "Minor potential overlap in phrasing (e.g., \u201cAzure and other cloud services\u201d vs. \u201cserver products and cloud services\u201d) could cause slight redundancy or ambiguity.",
+            "Answer uses graph_edge citation tokens rather than human-readable source references; this is fine for internal grounding but less useful for end users seeking original documents."
+          ],
+          "recommendations": [
+            "Accept as-is for returning to the user. Optionally, clarify wording to avoid overlap (e.g., separate Azure, cloud services, and server products distinctly).",
+            "If presenting to end users, replace graph_edge tokens with human-readable citations or links to the original Microsoft filings/announcements for easier verification."
+          ]
+        },
+        "average_score": 5.0,
+        "usage": {
+          "completion_tokens": 683,
+          "prompt_tokens": 1097,
+          "total_tokens": 1780,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 384,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "case_id": "ans_008_vector_narrative",
+      "query": "What did management say about AI demand?",
+      "runtime_seconds": 19.85,
+      "answer_runtime_seconds": 5.79,
+      "critique_runtime_seconds": 7.528,
+      "repair_runtime_seconds": 0.0,
+      "judge_runtime_seconds": 6.532,
+      "initial_evaluation": {
+        "passed": true,
+        "missing_phrases": [],
+        "missing_source_types": [],
+        "citation_count": 3,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "final_evaluation": {
+        "passed": true,
+        "missing_phrases": [],
+        "missing_source_types": [],
+        "citation_count": 3,
+        "missing_inline_citations": [],
+        "unanswered_sub_queries": []
+      },
+      "repair_applied": false,
+      "repair_success": true,
+      "repair_strategy": {
+        "strategy": "no_op",
+        "reason": "The critique says the answer does not need correction.",
+        "focus": []
+      },
+      "initial_answer": {
+        "original_query": "What did management say about AI demand?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 1,
+          "allowed_fact_count": 3
+        },
+        "answer_markdown": "Management described AI demand as a key driver of Microsoft\u2019s current strategy and capital deployment:\n\n- Capital intensity has increased sharply as Microsoft expands datacenters and finance leases specifically to **support AI demand**.[vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1]\n- The company is in a **capital deployment phase to support cloud and AI demand**, with cash capex understating the full infrastructure commitment because of extensive use of finance leases.[vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1]\n- In operations, management noted that **datacenter location and capacity decisions increasingly reflect AI-service demand**, indicating that AI demand is shaping where and how they build infrastructure globally.[vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2]\n\nOverall, management\u2019s comments portray AI demand as strong and growing, requiring substantial, multi-year investments in datacenters and related infrastructure.[vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1][vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1][vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2]",
+        "used_fact_ids": [
+          "vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+          "vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+          "vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2"
+        ],
+        "citations": [
+          {
+            "fact_id": "vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "source_type": "vector_document",
+            "reason": "Shows that capital intensity increased sharply as Microsoft expanded datacenters and finance leases to support AI demand, indicating management links higher investment directly to AI demand."
+          },
+          {
+            "fact_id": "vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+            "source_type": "vector_document",
+            "reason": "Explains that Microsoft is in a capital deployment phase to support cloud and AI demand and that finance leases mean cash capex understates total infrastructure commitment."
+          },
+          {
+            "fact_id": "vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+            "source_type": "vector_document",
+            "reason": "States that datacenter location and capacity decisions increasingly reflect AI-service demand, showing operational responses to AI demand across regions."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 554,
+          "prompt_tokens": 2973,
+          "total_tokens": 3527,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 1024
+          }
+        }
+      },
+      "critique_result": {
+        "original_query": "What did management say about AI demand?",
+        "answer_model": "gpt-5.1",
+        "critique_model": "gpt-5-mini",
+        "deterministic_signals": {
+          "inline_fact_ids": [
+            "vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+            "vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+            "vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+            "vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "vector_document"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": false
+        },
+        "llm_critique": {
+          "grounded": true,
+          "complete": true,
+          "needs_correction": false,
+          "confidence": "high",
+          "issue_summary": "The answer accurately reflects the provided source snippets: management linked AI demand to increased capital intensity, multi-year capital deployment (including finance leases), and datacenter location/capacity decisions. No unsupported claims or missing sub-queries were detected.",
+          "strengths": [
+            "Directly cites multiple relevant source passages that support each claim.",
+            "Summarizes management's points concisely and clearly.",
+            "Does not introduce unrelated assertions beyond what the sources imply."
+          ],
+          "issues": [],
+          "repair_plan": []
+        },
+        "final_critique": {
+          "grounded": true,
+          "complete": true,
+          "needs_correction": false,
+          "confidence": "high",
+          "issue_summary": "The answer accurately reflects the provided source snippets: management linked AI demand to increased capital intensity, multi-year capital deployment (including finance leases), and datacenter location/capacity decisions. No unsupported claims or missing sub-queries were detected.",
+          "strengths": [
+            "Directly cites multiple relevant source passages that support each claim.",
+            "Summarizes management's points concisely and clearly.",
+            "Does not introduce unrelated assertions beyond what the sources imply."
+          ],
+          "issues": [],
+          "repair_plan": []
+        },
+        "usage": {
+          "completion_tokens": 546,
+          "prompt_tokens": 1290,
+          "total_tokens": 1836,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 384,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      },
+      "repair_result": {
+        "original_query": "What did management say about AI demand?",
+        "repair_model": "gpt-5.1",
+        "repair_strategy": {
+          "strategy": "no_op",
+          "reason": "The critique says the answer does not need correction.",
+          "focus": []
+        },
+        "repair_applied": false,
+        "repaired_answer": {
+          "original_query": "What did management say about AI demand?",
+          "model": "gpt-5.1",
+          "answer_input_summary": {
+            "sub_query_count": 1,
+            "allowed_fact_count": 3
+          },
+          "answer_markdown": "Management described AI demand as a key driver of Microsoft\u2019s current strategy and capital deployment:\n\n- Capital intensity has increased sharply as Microsoft expands datacenters and finance leases specifically to **support AI demand**.[vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1]\n- The company is in a **capital deployment phase to support cloud and AI demand**, with cash capex understating the full infrastructure commitment because of extensive use of finance leases.[vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1]\n- In operations, management noted that **datacenter location and capacity decisions increasingly reflect AI-service demand**, indicating that AI demand is shaping where and how they build infrastructure globally.[vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2]\n\nOverall, management\u2019s comments portray AI demand as strong and growing, requiring substantial, multi-year investments in datacenters and related infrastructure.[vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1][vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1][vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2]",
+          "used_fact_ids": [
+            "vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+            "vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2"
+          ],
+          "citations": [
+            {
+              "fact_id": "vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+              "source_type": "vector_document",
+              "reason": "Shows that capital intensity increased sharply as Microsoft expanded datacenters and finance leases to support AI demand, indicating management links higher investment directly to AI demand."
+            },
+            {
+              "fact_id": "vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+              "source_type": "vector_document",
+              "reason": "Explains that Microsoft is in a capital deployment phase to support cloud and AI demand and that finance leases mean cash capex understates total infrastructure commitment."
+            },
+            {
+              "fact_id": "vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+              "source_type": "vector_document",
+              "reason": "States that datacenter location and capacity decisions increasingly reflect AI-service demand, showing operational responses to AI demand across regions."
+            }
+          ],
+          "unanswered_sub_queries": [],
+          "confidence": "high",
+          "usage": {
+            "completion_tokens": 554,
+            "prompt_tokens": 2973,
+            "total_tokens": 3527,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 1024
+            }
+          }
+        },
+        "post_repair_deterministic_signals": {
+          "inline_fact_ids": [
+            "vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+            "vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+            "vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+            "vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2"
+          ],
+          "missing_inline_for_used": [],
+          "inline_not_declared": [],
+          "unknown_used_fact_ids": [],
+          "unanswered_sub_queries": [],
+          "uncovered_sub_queries": [],
+          "used_source_types": [
+            "vector_document"
+          ],
+          "used_conflict_fact_ids": [],
+          "conflict_acknowledged": false,
+          "needs_correction": false
+        },
+        "repair_success": true,
+        "usage": {}
+      },
+      "final_answer": {
+        "original_query": "What did management say about AI demand?",
+        "model": "gpt-5.1",
+        "answer_input_summary": {
+          "sub_query_count": 1,
+          "allowed_fact_count": 3
+        },
+        "answer_markdown": "Management described AI demand as a key driver of Microsoft\u2019s current strategy and capital deployment:\n\n- Capital intensity has increased sharply as Microsoft expands datacenters and finance leases specifically to **support AI demand**.[vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1]\n- The company is in a **capital deployment phase to support cloud and AI demand**, with cash capex understating the full infrastructure commitment because of extensive use of finance leases.[vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1]\n- In operations, management noted that **datacenter location and capacity decisions increasingly reflect AI-service demand**, indicating that AI demand is shaping where and how they build infrastructure globally.[vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2]\n\nOverall, management\u2019s comments portray AI demand as strong and growing, requiring substantial, multi-year investments in datacenters and related infrastructure.[vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1][vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1][vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2]",
+        "used_fact_ids": [
+          "vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+          "vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+          "vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2"
+        ],
+        "citations": [
+          {
+            "fact_id": "vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "source_type": "vector_document",
+            "reason": "Shows that capital intensity increased sharply as Microsoft expanded datacenters and finance leases to support AI demand, indicating management links higher investment directly to AI demand."
+          },
+          {
+            "fact_id": "vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+            "source_type": "vector_document",
+            "reason": "Explains that Microsoft is in a capital deployment phase to support cloud and AI demand and that finance leases mean cash capex understates total infrastructure commitment."
+          },
+          {
+            "fact_id": "vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+            "source_type": "vector_document",
+            "reason": "States that datacenter location and capacity decisions increasingly reflect AI-service demand, showing operational responses to AI demand across regions."
+          }
+        ],
+        "unanswered_sub_queries": [],
+        "confidence": "high",
+        "usage": {
+          "completion_tokens": 554,
+          "prompt_tokens": 2973,
+          "total_tokens": 3527,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 1024
+          }
+        }
+      },
+      "judge_result": {
+        "original_query": "What did management say about AI demand?",
+        "judge_model": "gpt-5-mini",
+        "metrics": {
+          "faithfulness": 5,
+          "answer_relevancy": 5,
+          "context_precision": 5,
+          "citation_grounding": 5,
+          "overall_verdict": "pass",
+          "summary": "The answer accurately and concisely summarizes management's statements that AI demand is driving increased capital intensity, multi-year capital deployment (including finance leases), and datacenter location/capacity decisions. Each major claim is supported by the provided source snippets.",
+          "strengths": [
+            "Claims are directly supported by the cited source snippets.",
+            "Addresses the user question succinctly and stays on topic.",
+            "Citations are attached to the major claims, enabling verification."
+          ],
+          "weaknesses": [
+            "No direct quotes or precise numeric figures from the sources were provided (e.g., magnitude of capex or lease amounts).",
+            "Timeframe/context (e.g., fiscal year) could be made explicit to increase clarity."
+          ],
+          "recommendations": [
+            "Include direct quotes or specific numeric figures from the underlying document where relevant to strengthen persuasiveness.",
+            "Add the timeframe (e.g., FY2025) when referencing management comments to provide clearer context.",
+            "If needed, link each citation to an exact page or paragraph reference in the source for easier verification."
+          ]
+        },
+        "average_score": 5.0,
+        "usage": {
+          "completion_tokens": 550,
+          "prompt_tokens": 1200,
+          "total_tokens": 1750,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 256,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

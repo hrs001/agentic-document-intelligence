@@ -1,0 +1,37 @@
+[
+  {
+    "query": "What was Microsoft's FY2025 revenue?",
+    "expected": {
+      "rewrite_count_range": [2, 3],
+      "required_angles": ["direct", "financial_disclosure"]
+    }
+  },
+  {
+    "query": "What happened with Azure growth and what did management say about AI demand?",
+    "expected": {
+      "rewrite_count_range": [2, 3],
+      "required_angles": ["direct", "management_commentary"]
+    }
+  },
+  {
+    "query": "Compare Azure and Microsoft 365 revenue drivers.",
+    "expected": {
+      "rewrite_count_range": [2, 3],
+      "required_angles": ["comparison", "segment_product"]
+    }
+  },
+  {
+    "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+    "expected": {
+      "rewrite_count_range": [2, 3],
+      "required_angles": ["direct", "governance_risk"]
+    }
+  },
+  {
+    "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+    "expected": {
+      "rewrite_count_range": [2, 3],
+      "required_angles": ["direct", "financial_disclosure"]
+    }
+  }
+]

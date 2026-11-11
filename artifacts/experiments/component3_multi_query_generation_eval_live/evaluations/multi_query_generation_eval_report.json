@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-03-17T11:18:26.914864+00:00",
+  "model": "gpt-5-mini",
+  "cases_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\evals\\multi_query_generation_cases.json",
+  "case_count": 5,
+  "passed_count": 5,
+  "results": [
+    {
+      "query": "What was Microsoft's FY2025 revenue?",
+      "result": {
+        "original_query": "What was Microsoft's FY2025 revenue?",
+        "rewrite_count": 3,
+        "rewrites": [
+          {
+            "query": "Microsoft FY2025 total revenue",
+            "angle": "direct"
+          },
+          {
+            "query": "Microsoft fiscal year 2025 revenue reported in the Form 10-K",
+            "angle": "financial_disclosure"
+          },
+          {
+            "query": "Microsoft management statement on FY2025 revenue",
+            "angle": "management_commentary"
+          }
+        ]
+      },
+      "evaluation": {
+        "passed": true,
+        "count_ok": true,
+        "angle_ok": true,
+        "has_duplicates": false,
+        "rewrite_count": 3
+      }
+    },
+    {
+      "query": "What happened with Azure growth and what did management say about AI demand?",
+      "result": {
+        "original_query": "What happened with Azure growth and what did management say about AI demand?",
+        "rewrite_count": 3,
+        "rewrites": [
+          {
+            "query": "What happened to Azure growth and what did management say about AI demand?",
+            "angle": "direct"
+          },
+          {
+            "query": "Microsoft management comments on AI demand and how Azure growth performed",
+            "angle": "management_commentary"
+          },
+          {
+            "query": "Azure growth in financial disclosures and management discussion of AI demand",
+            "angle": "financial_disclosure"
+          }
+        ]
+      },
+      "evaluation": {
+        "passed": true,
+        "count_ok": true,
+        "angle_ok": true,
+        "has_duplicates": false,
+        "rewrite_count": 3
+      }
+    },
+    {
+      "query": "Compare Azure and Microsoft 365 revenue drivers.",
+      "result": {
+        "original_query": "Compare Azure and Microsoft 365 revenue drivers.",
+        "rewrite_count": 3,
+        "rewrites": [
+          {
+            "query": "Azure vs Microsoft 365 revenue drivers",
+            "angle": "comparison"
+          },
+          {
+            "query": "Microsoft financial disclosures on Azure and Microsoft 365 revenue drivers",
+            "angle": "financial_disclosure"
+          },
+          {
+            "query": "Product and service revenue drivers for Azure compared with Microsoft 365",
+            "angle": "segment_product"
+          }
+        ]
+      },
+      "evaluation": {
+        "passed": true,
+        "count_ok": true,
+        "angle_ok": true,
+        "has_duplicates": false,
+        "rewrite_count": 3
+      }
+    },
+    {
+      "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+      "result": {
+        "original_query": "What were the main cybersecurity governance responsibilities of the board and management?",
+        "rewrite_count": 3,
+        "rewrites": [
+          {
+            "query": "What were the board's and management's primary cybersecurity governance responsibilities?",
+            "angle": "direct"
+          },
+          {
+            "query": "What cybersecurity governance responsibilities did management describe for itself and which did it attribute to the board?",
+            "angle": "management_commentary"
+          },
+          {
+            "query": "Which cybersecurity governance responsibilities were assigned to the board versus management?",
+            "angle": "governance_risk"
+          }
+        ]
+      },
+      "evaluation": {
+        "passed": true,
+        "count_ok": true,
+        "angle_ok": true,
+        "has_duplicates": false,
+        "rewrite_count": 3
+      }
+    },
+    {
+      "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+      "result": {
+        "original_query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+        "rewrite_count": 3,
+        "rewrites": [
+          {
+            "query": "Microsoft FY2025 mention of capital expenditures and datacenter spending?",
+            "angle": "direct"
+          },
+          {
+            "query": "Microsoft FY2025 financial disclosures on capex and datacenter investment",
+            "angle": "financial_disclosure"
+          },
+          {
+            "query": "Did Microsoft's FY2025 management commentary or earnings call discuss capex and datacenter spending?",
+            "angle": "management_commentary"
+          }
+        ]
+      },
+      "evaluation": {
+        "passed": true,
+        "count_ok": true,
+        "angle_ok": true,
+        "has_duplicates": false,
+        "rewrite_count": 3
+      }
+    }
+  ]
+}

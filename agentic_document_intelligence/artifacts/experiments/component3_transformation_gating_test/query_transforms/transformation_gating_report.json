@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-03-21T11:09:21.553747+00:00",
+  "result": {
+    "query": "What was Microsoft's FY2025 revenue?",
+    "max_sub_queries": 3,
+    "estimated_sub_queries": 1,
+    "run_decomposition": false,
+    "run_multi_query": true,
+    "run_step_back": false,
+    "run_hyde": true,
+    "is_ambiguous_case": false,
+    "ambiguity_signals": [],
+    "reasons": [
+      "needs_retrieval_variation",
+      "sparse_query_support"
+    ]
+  }
+}

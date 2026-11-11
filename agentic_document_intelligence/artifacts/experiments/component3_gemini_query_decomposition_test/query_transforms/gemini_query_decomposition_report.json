@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-03-21T11:09:14.204041+00:00",
+  "model": "gemini-3-flash-preview",
+  "query": "What was revenue?",
+  "result": {
+    "needs_decomposition": false,
+    "sub_queries": [
+      "What was revenue?"
+    ],
+    "reasoning_type": "single_intent",
+    "decomposition_strategy": "none"
+  }
+}

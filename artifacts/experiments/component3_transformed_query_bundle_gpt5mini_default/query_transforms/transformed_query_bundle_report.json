@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-03-18T05:56:52.695018+00:00",
+  "result": {
+    "original_query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+    "policy": {
+      "decomposition_model": "gpt-5-mini",
+      "max_sub_queries": 3,
+      "run_hyde_in_initial_bundle": false,
+      "hyde_policy": "candidate_only_after_weak_retrieval"
+    },
+    "decomposition_result": {
+      "sanitized_query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+      "needs_decomposition": true,
+      "sub_queries": [
+        "Who is the CEO?",
+        "What segment drove the most revenue growth?",
+        "What did they say about AI?"
+      ],
+      "reasoning_type": "multi_intent",
+      "decomposition_strategy": "conjunction_split"
+    },
+    "sub_query_bundles": [
+      {
+        "sub_query_id": "sq_1",
+        "original_sub_query": "Who is the CEO?",
+        "multi_query_result": {
+          "original_query": "Who is the CEO?",
+          "rewrite_count": 3,
+          "rewrites": [
+            {
+              "query": "Who is the CEO?",
+              "angle": "direct"
+            },
+            {
+              "query": "Who holds the chief executive officer position?",
+              "angle": "management_commentary"
+            },
+            {
+              "query": "Corporate governance records listing the CEO",
+              "angle": "governance_risk"
+            }
+          ]
+        },
+        "step_back_result": {
+          "original_query": "Who is the CEO?",
+          "step_back_query": "How can I determine the current CEO of a specific company or organization, and which authoritative sources reliably provide up-to-date CEO information (e.g., company website, regulatory filings, press releases, business databases)?",
+          "broadening_strategy": "broaden_to_explanation"
+        },
+        "hyde_recommendation": {
+          "should_consider_hyde_after_weak_retrieval": true,
+          "candidate_reasons": [
+            "short_sparse_query"
+          ]
+        }
+      },
+      {
+        "sub_query_id": "sq_2",
+        "original_sub_query": "What segment drove the most revenue growth?",
+        "multi_query_result": {
+          "original_query": "What segment drove the most revenue growth?",
+          "rewrite_count": 3,
+          "rewrites": [
+            {
+              "query": "Which business segment drove the most revenue growth?",
+              "angle": "direct"
+            },
+            {
+              "query": "Which segment contributed the largest revenue growth in the financial filings?",
+              "angle": "financial_disclosure"
+            },
+            {
+              "query": "According to management commentary, which segment drove the greatest revenue growth?",
+              "angle": "management_commentary"
+            }
+          ]
+        },
+        "step_back_result": {
+          "original_query": "What segment drove the most revenue growth?",
+          "step_back_query": "How should one determine which business segment drove the most revenue growth \u2014 which metrics and definitions to use (segment revenue, absolute contribution, growth rate) and which time periods to compare?",
+          "broadening_strategy": "conceptualize_metric"
+        },
+        "hyde_recommendation": {
+          "should_consider_hyde_after_weak_retrieval": false,
+          "candidate_reasons": []
+        }
+      },
+      {
+        "sub_query_id": "sq_3",
+        "original_sub_query": "What did they say about AI?",
+        "multi_query_result": {
+          "original_query": "What did they say about AI?",
+          "rewrite_count": 3,
+          "rewrites": [
+            {
+              "query": "What did they say about AI?",
+              "angle": "direct"
+            },
+            {
+              "query": "What have they said about AI?",
+              "angle": "direct"
+            },
+            {
+              "query": "How did they comment on AI?",
+              "angle": "direct"
+            }
+          ]
+        },
+        "step_back_result": {
+          "original_query": "What did they say about AI?",
+          "step_back_query": "Summarize what the referenced speakers or authors said about AI, including their main claims, concerns, and recommended actions.",
+          "broadening_strategy": "broaden_to_explanation"
+        },
+        "hyde_recommendation": {
+          "should_consider_hyde_after_weak_retrieval": true,
+          "candidate_reasons": [
+            "ambiguous_reference"
+          ]
+        }
+      }
+    ],
+    "bundle_summary": {
+      "sub_query_count": 3,
+      "total_multi_query_rewrites": 9,
+      "step_back_count": 3,
+      "hyde_candidate_count": 2
+    }
+  }
+}

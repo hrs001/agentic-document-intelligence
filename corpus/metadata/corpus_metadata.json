@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "corpus_id": "microsoft_fy2025_fixed_corpus",
+  "provenance": {
+    "source_document_policy": "fixed_corpus_no_user_uploads",
+    "document_source_kind": "source_derived",
+    "dataset_source_kind": "synthetic",
+    "notes": [
+      "The PDF is source-derived and copied from the reference workspace into this project workspace.",
+      "The SQL dataset is synthetic and intended for demo-quality analytical questioning.",
+      "Later answer generation must not represent synthetic SQL rows as direct factual extraction from the PDF."
+    ]
+  },
+  "document_metadata": [
+    {
+      "document_id": "microsoft_fy2025_10k_summary",
+      "title": "Microsoft FY2025 10-K Summary",
+      "document_type": "pdf",
+      "business_domain": "financial_reporting",
+      "issuer": "Microsoft",
+      "fiscal_period": "FY2025",
+      "expected_retrieval_domains": [
+        "business_overview",
+        "segment_performance",
+        "risk_and_strategy",
+        "financial_summary",
+        "management_narrative"
+      ],
+      "graph_eligible": true,
+      "sql_eligible": false,
+      "topic_tags": [
+        "revenue",
+        "segments",
+        "cloud",
+        "productivity",
+        "personal_computing",
+        "strategy",
+        "risk"
+      ],
+      "evaluation_notes": [
+        "Use for narrative and evidence-grounded retrieval.",
+        "Prefer citations back to this document for document and graph answers."
+      ]
+    }
+  ],
+  "dataset_metadata": [
+    {
+      "dataset_id": "microsoft_fy2025_analyst_dataset",
+      "display_name": "Microsoft FY2025 Analyst Dataset",
+      "synthetic": true,
+      "sql_eligible": true,
+      "graph_eligible": false,
+      "expected_query_domains": [
+        "revenue_trends",
+        "segment_comparison",
+        "operating_margin_analysis",
+        "geographic_mix",
+        "product_family_signals"
+      ],
+      "tables": [
+        {
+          "table_name": "financial_performance_by_segment",
+          "semantic_description": "Synthetic segment-level financial performance for FY2023-FY2025.",
+          "source_label": "synthetic"
+        },
+        {
+          "table_name": "geographic_revenue_mix",
+          "semantic_description": "Synthetic geography-level revenue mix for FY2023-FY2025.",
+          "source_label": "synthetic"
+        },
+        {
+          "table_name": "product_family_signals",
+          "semantic_description": "Synthetic product-family analyst signals for FY2025 demo reasoning.",
+          "source_label": "synthetic"
+        }
+      ],
+      "evaluation_notes": [
+        "Suitable for SQL generation and data-preview rendering.",
+        "Must be clearly labeled synthetic in UX and telemetry when used."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-aurora-bg: #020617; /* slate-950 */
+  --color-aurora-glass: rgba(255, 255, 255, 0.05);
+  --color-aurora-border: rgba(6, 182, 212, 0.2); /* cyan-500/20 */
+  --color-aurora-cyan: #06b6d4;
+  --color-aurora-indigo: #4f46e5;
+  --color-aurora-violet: #7c3aed;
+  
+  --font-sans: 'Inter', var(--font-sans);
+  --font-mono: 'JetBrains Mono', var(--font-mono);
+}
+
+@layer base {
+  :root {
+    --background: var(--color-aurora-bg);
+    --foreground: #f8fafc; /* slate-50 */
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply antialiased min-h-screen selection:bg-cyan-500/30 font-sans;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-xl border border-cyan-500/20 shadow-2xl;
+  }
+  
+  .glass-button {
+    @apply bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 transition-all duration-300;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+  }
+}
+
+/* Background gradient animations */
+.aurora-gradient-bg {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  background: radial-gradient(circle at top left, rgba(6, 182, 212, 0.15), transparent 40%),
+              radial-gradient(circle at bottom right, rgba(124, 58, 237, 0.15), transparent 40%);
+}
+
+.aurora-blob {
+  position: absolute;
+  filter: blur(80px);
+  z-index: -1;
+  opacity: 0.5;
+  animation: float 20s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(5%, 10%) scale(1.1); }
+  100% { transform: translate(-5%, -5%) scale(0.9); }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

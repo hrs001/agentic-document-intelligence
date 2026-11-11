@@ -1,0 +1,56 @@
+{
+  "query": "What were Microsoft's FY2025 revenue, operating income, and net income?",
+  "generated_at": "2026-03-21T11:09:08.094678+00:00",
+  "source_report_type": "pinecone_rerank_report",
+  "parent_context_count": 2,
+  "contexts": [
+    {
+      "parent_id": "parent_1",
+      "section_title": "Section A",
+      "page": 3,
+      "page_end": 4,
+      "content_types": [
+        "text",
+        "table"
+      ],
+      "parent_text": "Full parent text A.",
+      "children": [
+        {
+          "source_chunk_id": "chunk_1",
+          "content_type": "text",
+          "score": 0.9,
+          "child_text": "Revenue rose strongly."
+        },
+        {
+          "source_chunk_id": "chunk_2",
+          "content_type": "table",
+          "score": 0.8,
+          "child_text": "Table with totals."
+        }
+      ],
+      "best_rank": 1,
+      "best_score": 0.9
+    },
+    {
+      "parent_id": "parent_2",
+      "section_title": "Section B",
+      "page": 8,
+      "page_end": 9,
+      "content_types": [
+        "text"
+      ],
+      "parent_text": "Full parent text B.",
+      "children": [
+        {
+          "source_chunk_id": "chunk_3",
+          "content_type": "text",
+          "score": 0.6,
+          "child_text": "Operating income details."
+        }
+      ],
+      "best_rank": 3,
+      "best_score": 0.6
+    }
+  ],
+  "assembled_context_text": "[Context 1] Section: Section A\nPages: 3 - 4\nParent ID: parent_1\nContent Types: text, table\nEvidence Snippets:\nRevenue rose strongly.\n\nTable with totals.\nParent Context:\nFull parent text A.\n\n---\n\n[Context 2] Section: Section B\nPages: 8 - 9\nParent ID: parent_2\nContent Types: text\nEvidence Snippets:\nOperating income details.\nParent Context:\nFull parent text B."
+}

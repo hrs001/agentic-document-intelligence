@@ -1,0 +1,17 @@
+[
+  {
+    "query": "Which segment includes GitHub, what was that segment's FY2025 revenue, and what strategic themes did management highlight that are relevant to that business?"
+  },
+  {
+    "query": "Rank Microsoft's FY2025 segments by revenue, identify which one grew the fastest, and explain what the document says about the demand drivers behind that growth."
+  },
+  {
+    "query": "What was the FY2025 revenue mix by geography, which region contributed the most, and what risks or business context in the document matter for interpreting that concentration?"
+  },
+  {
+    "query": "Find the segment associated with LinkedIn, compare its FY2025 revenue against Intelligent Cloud, and summarize any management commentary that helps explain the difference in scale."
+  },
+  {
+    "query": "Which segment had the highest FY2025 revenue, what was its operating income, and what narrative evidence from the document suggests why that segment performed strongly?"
+  }
+]

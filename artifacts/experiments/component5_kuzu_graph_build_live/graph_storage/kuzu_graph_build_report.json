@@ -1,0 +1,41 @@
+{
+  "document_id": "microsoft_fy2025_10k_summary",
+  "input_artifact_type": "graph_validated",
+  "graph_storage_method": {
+    "type": "kuzu_local_db_v1"
+  },
+  "generated_at": "2026-03-18T07:39:00.387919+00:00",
+  "database_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\artifacts\\experiments\\component5_kuzu_graph_build_live\\kuzu_db\\microsoft_fy2025_10k_summary.kuzu",
+  "input_validated_node_count": 335,
+  "input_validated_edge_count": 188,
+  "stored_node_count": 335,
+  "stored_edge_count": 188,
+  "distinct_relation_type_count": 6,
+  "sample_edges": [
+    {
+      "source": "Activision Blizzard",
+      "relation_type": "includes",
+      "target": "More Personal Computing"
+    },
+    {
+      "source": "Activision Blizzard acquisition",
+      "relation_type": "includes",
+      "target": "goodwill"
+    },
+    {
+      "source": "Activision Blizzard acquisition",
+      "relation_type": "includes",
+      "target": "identifiable intangible assets"
+    },
+    {
+      "source": "Azure",
+      "relation_type": "includes",
+      "target": "Intelligent Cloud"
+    },
+    {
+      "source": "Azure",
+      "relation_type": "uses",
+      "target": "AI infrastructure"
+    }
+  ]
+}

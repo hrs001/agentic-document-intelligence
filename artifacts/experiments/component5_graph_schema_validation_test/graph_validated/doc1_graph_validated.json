@@ -1,0 +1,11 @@
+{
+  "document_id": "doc1",
+  "validated_node_count": 1,
+  "validated_edge_count": 1,
+  "rejected_node_count": 0,
+  "rejected_edge_count": 0,
+  "validated_nodes": [],
+  "validated_edges": [],
+  "rejected_nodes": [],
+  "rejected_edges": []
+}

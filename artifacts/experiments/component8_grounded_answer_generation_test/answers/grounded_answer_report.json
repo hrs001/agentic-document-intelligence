@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-03-19T11:54:29.573491+00:00",
+  "result": {
+    "original_query": "x",
+    "model": "gpt-5-mini",
+    "answer_markdown": "x [sql::sq_1::1]",
+    "used_fact_ids": [
+      "sql::sq_1::1"
+    ],
+    "citations": [],
+    "unanswered_sub_queries": [],
+    "confidence": "medium"
+  }
+}

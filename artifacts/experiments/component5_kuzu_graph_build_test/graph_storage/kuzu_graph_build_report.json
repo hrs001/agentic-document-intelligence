@@ -1,0 +1,7 @@
+{
+  "document_id": "doc1",
+  "database_path": "x",
+  "stored_node_count": 2,
+  "stored_edge_count": 1,
+  "distinct_relation_type_count": 1
+}

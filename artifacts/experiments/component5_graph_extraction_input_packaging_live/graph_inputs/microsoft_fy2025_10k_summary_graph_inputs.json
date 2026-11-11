@@ -1,0 +1,746 @@
+{
+  "document_id": "microsoft_fy2025_10k_summary",
+  "input_artifact_type": "chunk_artifact",
+  "graph_input_strategy": {
+    "type": "unique_text_parent_chunks_v1",
+    "active_content_types": [
+      "text"
+    ],
+    "excluded_content_types": [
+      "table"
+    ],
+    "target_extraction_model": "gpt-5.4-mini"
+  },
+  "generated_at": "2026-03-18T07:11:55.279513+00:00",
+  "page_count": 30,
+  "section_count": 18,
+  "graph_input_count": 40,
+  "skipped_table_chunk_count": 26,
+  "graph_inputs": [
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec0_p1_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec0_p1_par0",
+      "section_title": "Document Overview",
+      "page_start": 1,
+      "page_end": 3,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec0_p1_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec0_p1_par0_ch1",
+        "microsoft_fy2025_10k_summary_sec0_p1_par0_ch2",
+        "microsoft_fy2025_10k_summary_sec0_p1_par0_ch3"
+      ],
+      "source_child_count": 4,
+      "parent_text": "Microsoft FY2025 Form 10-K\nCondensed Summary Report\nPrepared from the annual report for the fiscal year ended June 30, 2025.\nTarget length: approximately 30 pages.\nThis report condenses Microsoft\u2019s 137-page FY2025 Form 10-K into a decision-oriented narrative. It\npreserves the filing\u2019s core content: business model, segment structure, strategy, management\ndiscussion and analysis, audited financial statements, major accounting notes, principal risks,\ncybersecurity governance, legal and tax exposures, and corporate governance disclosures.\nSource basis: the user-provided Microsoft FY2025 Form 10-K PDF, cross-checked against Microsoft Investor\nRelations and the SEC-hosted filing for consistency.\nImportant note: this is a summary, not a substitute for the original filing. Figures are generally shown in U.S. dollars\nand many tables are in millions unless otherwise indicated.\n\nContents",
+      "extraction_text": "Document Overview\n\nMicrosoft FY2025 Form 10-K\nCondensed Summary Report\nPrepared from the annual report for the fiscal year ended June 30, 2025.\nTarget length: approximately 30 pages.\nThis report condenses Microsoft\u2019s 137-page FY2025 Form 10-K into a decision-oriented narrative. It\npreserves the filing\u2019s core content: business model, segment structure, strategy, management\ndiscussion and analysis, audited financial statements, major accounting notes, principal risks,\ncybersecurity governance, legal and tax exposures, and corporate governance disclosures.\nSource basis: the user-provided Microsoft FY2025 Form 10-K PDF, cross-checked against Microsoft Investor\nRelations and the SEC-hosted filing for consistency.\nImportant note: this is a summary, not a substitute for the original filing. Figures are generally shown in U.S. dollars\nand many tables are in millions unless otherwise indicated.\n\nContents"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec1_p3_par0",
+      "section_title": "1. Executive summary",
+      "page_start": 3,
+      "page_end": 4,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+        "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+        "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+        "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4"
+      ],
+      "source_child_count": 5,
+      "parent_text": "1. Executive summary\nMicrosoft entered fiscal 2025 with the scale of a mature software platform company and ended it\nlooking increasingly like the infrastructure and application layer for enterprise AI. The filing\nshows a business that is simultaneously growing quickly, widening strategic control points, and\naccepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout.\nThe year\u2019s headline outcomes were strong. Revenue rose 15% to $281.7 billion, operating income\nrose 17% to $128.5 billion, and net income rose 16% to $101.8 billion. Microsoft Cloud revenue\nreached $168.9 billion, up 23%, while Azure and other cloud services grew 34%. The company\ncontinued to scale both enterprise productivity and cloud infrastructure while also benefiting from\nthe integration of Activision Blizzard in gaming.\nThe filing also shows the cost of that growth. Capital expenditures surged, lease commitments\nexpanded materially, and management explicitly acknowledged margin pressure from scaling AI\ninfrastructure. In other words, Microsoft is converting a large portion of current earnings power\ninto datacenters, servers, GPUs, and long-duration commercial capacity.\nSeveral themes dominate the 10-K:\n\uf0b7\nAI is now embedded across Microsoft\u2019s entire stack: infrastructure, developer tooling, business\napplications, productivity, search, and security.\n\uf0b7\nCommercial recurring revenue remains the core earnings engine, especially Microsoft 365\nCommercial and Azure.\n\uf0b7",
+      "extraction_text": "1. Executive summary\nMicrosoft entered fiscal 2025 with the scale of a mature software platform company and ended it\nlooking increasingly like the infrastructure and application layer for enterprise AI. The filing\nshows a business that is simultaneously growing quickly, widening strategic control points, and\naccepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout.\nThe year\u2019s headline outcomes were strong. Revenue rose 15% to $281.7 billion, operating income\nrose 17% to $128.5 billion, and net income rose 16% to $101.8 billion. Microsoft Cloud revenue\nreached $168.9 billion, up 23%, while Azure and other cloud services grew 34%. The company\ncontinued to scale both enterprise productivity and cloud infrastructure while also benefiting from\nthe integration of Activision Blizzard in gaming.\nThe filing also shows the cost of that growth. Capital expenditures surged, lease commitments\nexpanded materially, and management explicitly acknowledged margin pressure from scaling AI\ninfrastructure. In other words, Microsoft is converting a large portion of current earnings power\ninto datacenters, servers, GPUs, and long-duration commercial capacity.\nSeveral themes dominate the 10-K:\n\uf0b7\nAI is now embedded across Microsoft\u2019s entire stack: infrastructure, developer tooling, business\napplications, productivity, search, and security.\n\uf0b7\nCommercial recurring revenue remains the core earnings engine, especially Microsoft 365\nCommercial and Azure.\n\uf0b7"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec1_p3_par1",
+      "section_title": "1. Executive summary",
+      "page_start": 3,
+      "page_end": 4,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+        "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+        "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2"
+      ],
+      "source_child_count": 3,
+      "parent_text": "applications, productivity, search, and security.\n\uf0b7\nCommercial recurring revenue remains the core earnings engine, especially Microsoft 365\nCommercial and Azure.\n\uf0b7\nSegment performance was broad-based: all three reporting segments posted revenue and\noperating income growth.\n\uf0b7\nCapital intensity increased sharply as Microsoft expanded datacenters and finance leases to\nsupport AI demand.\n\uf0b7\nTax and legal matters remain important watch items, especially the IRS transfer-pricing dispute\nand data/privacy regulation in Europe.\n\uf0b7\nCybersecurity remains both a strategic differentiator and a material source of operational and\nreputational risk.\nIn strategic terms, Microsoft\u2019s FY2025 filing reads as the report of a company trying to lead the next\nplatform cycle rather than defend the previous one. It is using its installed base in Office, Windows,\ndeveloper tools, enterprise identity, and cloud to distribute AI functionality broadly, while\nsimultaneously scaling the infrastructure required to support that distribution.",
+      "extraction_text": "1. Executive summary\n\napplications, productivity, search, and security.\n\uf0b7\nCommercial recurring revenue remains the core earnings engine, especially Microsoft 365\nCommercial and Azure.\n\uf0b7\nSegment performance was broad-based: all three reporting segments posted revenue and\noperating income growth.\n\uf0b7\nCapital intensity increased sharply as Microsoft expanded datacenters and finance leases to\nsupport AI demand.\n\uf0b7\nTax and legal matters remain important watch items, especially the IRS transfer-pricing dispute\nand data/privacy regulation in Europe.\n\uf0b7\nCybersecurity remains both a strategic differentiator and a material source of operational and\nreputational risk.\nIn strategic terms, Microsoft\u2019s FY2025 filing reads as the report of a company trying to lead the next\nplatform cycle rather than defend the previous one. It is using its installed base in Office, Windows,\ndeveloper tools, enterprise identity, and cloud to distribute AI functionality broadly, while\nsimultaneously scaling the infrastructure required to support that distribution."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec2_p4_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec2_p4_par0",
+      "section_title": "2. Company overview, strategy, and operating model",
+      "page_start": 4,
+      "page_end": 6,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec2_p4_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec2_p4_par0_ch1",
+        "microsoft_fy2025_10k_summary_sec2_p4_par0_ch2",
+        "microsoft_fy2025_10k_summary_sec2_p4_par0_ch3",
+        "microsoft_fy2025_10k_summary_sec2_p4_par0_ch4"
+      ],
+      "source_child_count": 5,
+      "parent_text": "2. Company overview, strategy, and operating model\nMicrosoft describes itself as a technology company committed to making digital technology and AI\navailable broadly and responsibly. Its mission remains to empower every person and every\norganization on the planet to achieve more. The business spans software, cloud services, devices,\nonline advertising, gaming, and professional networks, but the filing increasingly frames these\nofferings as connected layers of one stack rather than isolated product lines.\nManagement highlights three ambitions that organize research, product\ndevelopment, and go-to-market execution:\n\uf0b7\nReinvent productivity and business processes.\n\uf0b7\nBuild the intelligent cloud and intelligent edge platform.\n\uf0b7\nCreate more personal computing.\nThe company\u2019s near- to medium-term opportunity is described in explicitly AI-centric terms.\nMicrosoft is investing to help customers maximize digital spend through the Microsoft Cloud while\nleading the AI platform wave across solution areas. Key emphasis areas include Microsoft 365\nCopilot and agents, cloud-based AI services, workplace modernization, developer productivity,\ncybersecurity, gaming expansion, and Windows-linked consumer engagement.\nThe filing also emphasizes sustainability commitments announced in 2020: to become carbon\nnegative, water positive, and zero waste by 2030. Microsoft notes progress but also acknowledges\nthat the operating environment and the technical challenge have both evolved since the goals were",
+      "extraction_text": "2. Company overview, strategy, and operating model\nMicrosoft describes itself as a technology company committed to making digital technology and AI\navailable broadly and responsibly. Its mission remains to empower every person and every\norganization on the planet to achieve more. The business spans software, cloud services, devices,\nonline advertising, gaming, and professional networks, but the filing increasingly frames these\nofferings as connected layers of one stack rather than isolated product lines.\nManagement highlights three ambitions that organize research, product\ndevelopment, and go-to-market execution:\n\uf0b7\nReinvent productivity and business processes.\n\uf0b7\nBuild the intelligent cloud and intelligent edge platform.\n\uf0b7\nCreate more personal computing.\nThe company\u2019s near- to medium-term opportunity is described in explicitly AI-centric terms.\nMicrosoft is investing to help customers maximize digital spend through the Microsoft Cloud while\nleading the AI platform wave across solution areas. Key emphasis areas include Microsoft 365\nCopilot and agents, cloud-based AI services, workplace modernization, developer productivity,\ncybersecurity, gaming expansion, and Windows-linked consumer engagement.\nThe filing also emphasizes sustainability commitments announced in 2020: to become carbon\nnegative, water positive, and zero waste by 2030. Microsoft notes progress but also acknowledges\nthat the operating environment and the technical challenge have both evolved since the goals were"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec2_p4_par1",
+      "section_title": "2. Company overview, strategy, and operating model",
+      "page_start": 4,
+      "page_end": 6,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+        "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+        "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+        "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3"
+      ],
+      "source_child_count": 4,
+      "parent_text": "negative, water positive, and zero waste by 2030. Microsoft notes progress but also acknowledges\nthat the operating environment and the technical challenge have both evolved since the goals were\nannounced.\nOperating segments\nBeginning in fiscal 2025, Microsoft changed its segment composition to align external reporting\nwith how management runs the company internally. Most notably, the commercial components of\nMicrosoft 365 were brought together in Productivity and Business Processes. The three reportable\nsegments are:\n\uf0b7\nProductivity and Business Processes (PBP): Microsoft 365 Commercial, Microsoft 365 Consumer,\nLinkedIn, and Dynamics.\n\uf0b7\nIntelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance\nHealthcare, and enterprise/partner services.\n\uf0b7\nMore Personal Computing (MPC): Windows and Devices, Gaming, and Search and news\nadvertising.\nWhy the model works\nThe filing repeatedly underscores the economic logic of Microsoft\u2019s cloud model. Management says\nthe Microsoft Cloud benefits from three economies of scale: lower per-unit datacenter cost, better\nutilization through aggregated customer demand, and lower maintenance labor cost through\nmulti-tenancy. In practice, this allows Microsoft to cross-sell infrastructure, productivity, security,\ndeveloper services, and data/AI offerings into the same commercial account.",
+      "extraction_text": "2. Company overview, strategy, and operating model\n\nnegative, water positive, and zero waste by 2030. Microsoft notes progress but also acknowledges\nthat the operating environment and the technical challenge have both evolved since the goals were\nannounced.\nOperating segments\nBeginning in fiscal 2025, Microsoft changed its segment composition to align external reporting\nwith how management runs the company internally. Most notably, the commercial components of\nMicrosoft 365 were brought together in Productivity and Business Processes. The three reportable\nsegments are:\n\uf0b7\nProductivity and Business Processes (PBP): Microsoft 365 Commercial, Microsoft 365 Consumer,\nLinkedIn, and Dynamics.\n\uf0b7\nIntelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance\nHealthcare, and enterprise/partner services.\n\uf0b7\nMore Personal Computing (MPC): Windows and Devices, Gaming, and Search and news\nadvertising.\nWhy the model works\nThe filing repeatedly underscores the economic logic of Microsoft\u2019s cloud model. Management says\nthe Microsoft Cloud benefits from three economies of scale: lower per-unit datacenter cost, better\nutilization through aggregated customer demand, and lower maintenance labor cost through\nmulti-tenancy. In practice, this allows Microsoft to cross-sell infrastructure, productivity, security,\ndeveloper services, and data/AI offerings into the same commercial account."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec2_p4_par2_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec2_p4_par2",
+      "section_title": "2. Company overview, strategy, and operating model",
+      "page_start": 4,
+      "page_end": 6,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec2_p4_par2_ch0"
+      ],
+      "source_child_count": 1,
+      "parent_text": "This operating model creates unusually strong strategic linkages. Windows supports Microsoft 365\nand search distribution; Azure supports GitHub, data services, and AI platforms; identity and\nsecurity support cloud trust; and productivity apps provide a natural channel for AI monetization.\nOne of the key messages of the filing is that the stack is not just broad\u2014it is mutually reinforcing.",
+      "extraction_text": "2. Company overview, strategy, and operating model\n\nThis operating model creates unusually strong strategic linkages. Windows supports Microsoft 365\nand search distribution; Azure supports GitHub, data services, and AI platforms; identity and\nsecurity support cloud trust; and productivity apps provide a natural channel for AI monetization.\nOne of the key messages of the filing is that the stack is not just broad\u2014it is mutually reinforcing."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec3_p6_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec3_p6_par0",
+      "section_title": "3. Segment and product portfolio review",
+      "page_start": 6,
+      "page_end": 8,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+        "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+        "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3"
+      ],
+      "source_child_count": 4,
+      "parent_text": "3. Segment and product portfolio review\nThis section summarizes what each segment contains, how management describes growth drivers,\nand where the major competitive tensions sit.\nProductivity and Business Processes\nPBP houses Microsoft\u2019s productivity, communication, collaboration, business applications, and\nprofessional network assets. The core economic engine is Microsoft 365 Commercial, which\ncombines Office, Windows, Enterprise Mobility + Security, and related cloud services. Growth\ndepends on seat expansion, higher revenue per user, deeper penetration of small and medium\nbusinesses and frontline workers, and monetization of AI-enabled scenarios through Copilot and\nrelated tools.\nOn the consumer side, Microsoft 365 Consumer remains a subscription-led productivity and\nstorage offering supported by products such as Outlook.com and OneDrive. LinkedIn provides\nmonetized professional network products across talent, marketing, premium subscriptions, and\nsales solutions. Dynamics contributes ERP, CRM, Power Apps, and Power Automate capabilities,\nmaking this segment broader than classic office software and more comparable to an integrated\nwork platform.\nCompetition in this segment comes from productivity suites, collaboration platforms, AI-first\nworkflow tools, business applications vendors, and niche security or identity vendors. Microsoft\u2019s\ndefense is integration, enterprise trust, cross-platform presence, and installed-base leverage.\nIntelligent Cloud",
+      "extraction_text": "3. Segment and product portfolio review\nThis section summarizes what each segment contains, how management describes growth drivers,\nand where the major competitive tensions sit.\nProductivity and Business Processes\nPBP houses Microsoft\u2019s productivity, communication, collaboration, business applications, and\nprofessional network assets. The core economic engine is Microsoft 365 Commercial, which\ncombines Office, Windows, Enterprise Mobility + Security, and related cloud services. Growth\ndepends on seat expansion, higher revenue per user, deeper penetration of small and medium\nbusinesses and frontline workers, and monetization of AI-enabled scenarios through Copilot and\nrelated tools.\nOn the consumer side, Microsoft 365 Consumer remains a subscription-led productivity and\nstorage offering supported by products such as Outlook.com and OneDrive. LinkedIn provides\nmonetized professional network products across talent, marketing, premium subscriptions, and\nsales solutions. Dynamics contributes ERP, CRM, Power Apps, and Power Automate capabilities,\nmaking this segment broader than classic office software and more comparable to an integrated\nwork platform.\nCompetition in this segment comes from productivity suites, collaboration platforms, AI-first\nworkflow tools, business applications vendors, and niche security or identity vendors. Microsoft\u2019s\ndefense is integration, enterprise trust, cross-platform presence, and installed-base leverage.\nIntelligent Cloud"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec3_p6_par1",
+      "section_title": "3. Segment and product portfolio review",
+      "page_start": 6,
+      "page_end": 8,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+        "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+        "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+        "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+        "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+      ],
+      "source_child_count": 5,
+      "parent_text": "defense is integration, enterprise trust, cross-platform presence, and installed-base leverage.\nIntelligent Cloud\nIntelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare,\nenterprise support, and partner services. This is the segment most visibly tied to the AI\ninfrastructure cycle. Azure is described as a comprehensive cloud platform spanning compute,\nnetworking, storage, data, AI, machine learning, cognitive services, IoT, and app services. Microsoft\nalso emphasizes Azure AI Foundry as a unified platform to design, customize, and manage AI\napplications and agents.\nGitHub deepens developer ecosystem control, while Nuance adds healthcare AI capabilities.\nTraditional server products still matter, but the filing makes clear that customer shift toward cloud\nofferings continues to pressure on-premises transactional revenue. Competitive threats here come\nfrom hyperscale cloud providers, open-source alternatives, and specialist cybersecurity and\nanalytics vendors.\nMore Personal Computing\nMPC brings together Windows, Surface and accessories, Xbox hardware, Xbox content and\nservices, and Search and news advertising through Bing, Edge, Copilot, and affiliated properties.\nThis segment is more cyclical and consumer-exposed than the other two, but still strategically\nimportant because it controls major distribution endpoints.\nWindows OEM revenue depends on PC market conditions, device mix, AI PCs, OEM inventory,",
+      "extraction_text": "3. Segment and product portfolio review\n\ndefense is integration, enterprise trust, cross-platform presence, and installed-base leverage.\nIntelligent Cloud\nIntelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare,\nenterprise support, and partner services. This is the segment most visibly tied to the AI\ninfrastructure cycle. Azure is described as a comprehensive cloud platform spanning compute,\nnetworking, storage, data, AI, machine learning, cognitive services, IoT, and app services. Microsoft\nalso emphasizes Azure AI Foundry as a unified platform to design, customize, and manage AI\napplications and agents.\nGitHub deepens developer ecosystem control, while Nuance adds healthcare AI capabilities.\nTraditional server products still matter, but the filing makes clear that customer shift toward cloud\nofferings continues to pressure on-premises transactional revenue. Competitive threats here come\nfrom hyperscale cloud providers, open-source alternatives, and specialist cybersecurity and\nanalytics vendors.\nMore Personal Computing\nMPC brings together Windows, Surface and accessories, Xbox hardware, Xbox content and\nservices, and Search and news advertising through Bing, Edge, Copilot, and affiliated properties.\nThis segment is more cyclical and consumer-exposed than the other two, but still strategically\nimportant because it controls major distribution endpoints.\nWindows OEM revenue depends on PC market conditions, device mix, AI PCs, OEM inventory,"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec3_p6_par2_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec3_p6_par2",
+      "section_title": "3. Segment and product portfolio review",
+      "page_start": 6,
+      "page_end": 8,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec3_p6_par2_ch0"
+      ],
+      "source_child_count": 1,
+      "parent_text": "important because it controls major distribution endpoints.\nWindows OEM revenue depends on PC market conditions, device mix, AI PCs, OEM inventory,\npricing, and supply-chain availability. Gaming is now a scaled content-and-subscription business",
+      "extraction_text": "3. Segment and product portfolio review\n\nimportant because it controls major distribution endpoints.\nWindows OEM revenue depends on PC market conditions, device mix, AI PCs, OEM inventory,\npricing, and supply-chain availability. Gaming is now a scaled content-and-subscription business"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec3_p6_par3_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec3_p6_par3",
+      "section_title": "3. Segment and product portfolio review",
+      "page_start": 6,
+      "page_end": 8,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec3_p6_par3_ch0"
+      ],
+      "source_child_count": 1,
+      "parent_text": "supported by first-party studios, Game Pass, cloud gaming, and the Activision Blizzard acquisition.\nSearch and news advertising is positioned around user acquisition and engagement via Bing, Edge,\nand Copilot. Competition remains intense, particularly from alternative device ecosystems,\nentertainment platforms, console rivals, and major search and ad platforms.",
+      "extraction_text": "3. Segment and product portfolio review\n\nsupported by first-party studios, Game Pass, cloud gaming, and the Activision Blizzard acquisition.\nSearch and news advertising is positioned around user acquisition and engagement via Bing, Edge,\nand Copilot. Competition remains intense, particularly from alternative device ecosystems,\nentertainment platforms, console rivals, and major search and ad platforms."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec4_p8_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec4_p8_par0",
+      "section_title": "4. Fiscal 2025 financial performance",
+      "page_start": 8,
+      "page_end": 9,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+        "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+        "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+        "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4"
+      ],
+      "source_child_count": 5,
+      "parent_text": "4. Fiscal 2025 financial performance\nFiscal 2025 was a year of strong top-line and operating growth, led by cloud and AI demand,\ncontinued Microsoft 365 momentum, strong Azure consumption, improved search economics, and\nincremental contribution from gaming content and services.\nTable 1. Consolidated summary results\nAmounts in millions except per-share data.\nRevenue growth of $36.6 billion was broad-based, but two engines were especially important:\nAzure within Intelligent Cloud and Microsoft 365 Commercial cloud within Productivity and\nBusiness Processes. Gross margin increased almost $23 billion, although gross margin percentage\ndeclined slightly because the mix shifted toward more infrastructure-heavy cloud activity and\nbecause Microsoft is scaling AI capacity ahead of demand.\nOperating expenses increased only 6%, which is slower than revenue growth. That operating\nleverage allowed operating income to grow faster than revenue despite the pressure on cloud\nmargin percentage. Research and development, sales and marketing, and gaming-related costs all\nrose, but the company still expanded profitability materially.\nTable 2. Revenue mix by type\nThe filing highlights the company\u2019s structural shift toward service and cloud revenue.\nThe mix shift is strategically important. Product revenue was roughly flat to slightly down, while\nservice and other revenue rose sharply. This reinforces that Microsoft\u2019s earnings profile now",
+      "extraction_text": "4. Fiscal 2025 financial performance\nFiscal 2025 was a year of strong top-line and operating growth, led by cloud and AI demand,\ncontinued Microsoft 365 momentum, strong Azure consumption, improved search economics, and\nincremental contribution from gaming content and services.\nTable 1. Consolidated summary results\nAmounts in millions except per-share data.\nRevenue growth of $36.6 billion was broad-based, but two engines were especially important:\nAzure within Intelligent Cloud and Microsoft 365 Commercial cloud within Productivity and\nBusiness Processes. Gross margin increased almost $23 billion, although gross margin percentage\ndeclined slightly because the mix shifted toward more infrastructure-heavy cloud activity and\nbecause Microsoft is scaling AI capacity ahead of demand.\nOperating expenses increased only 6%, which is slower than revenue growth. That operating\nleverage allowed operating income to grow faster than revenue despite the pressure on cloud\nmargin percentage. Research and development, sales and marketing, and gaming-related costs all\nrose, but the company still expanded profitability materially.\nTable 2. Revenue mix by type\nThe filing highlights the company\u2019s structural shift toward service and cloud revenue.\nThe mix shift is strategically important. Product revenue was roughly flat to slightly down, while\nservice and other revenue rose sharply. This reinforces that Microsoft\u2019s earnings profile now"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec4_p8_par1_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec4_p8_par1",
+      "section_title": "4. Fiscal 2025 financial performance",
+      "page_start": 8,
+      "page_end": 9,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec4_p8_par1_ch0",
+        "microsoft_fy2025_10k_summary_sec4_p8_par1_ch1"
+      ],
+      "source_child_count": 2,
+      "parent_text": "The mix shift is strategically important. Product revenue was roughly flat to slightly down, while\nservice and other revenue rose sharply. This reinforces that Microsoft\u2019s earnings profile now\ndepends primarily on subscriptions, cloud consumption, support, and online services rather than\npackaged software or device unit shipments.\nFrom a profitability perspective, FY2025 gross margin was about 68.8% of revenue, operating\nmargin about 45.6%, and net margin about 36.1%. Those remain exceptionally strong at Microsoft\u2019s\nscale, even after absorbing the cost of aggressive AI infrastructure expansion.",
+      "extraction_text": "4. Fiscal 2025 financial performance\n\nThe mix shift is strategically important. Product revenue was roughly flat to slightly down, while\nservice and other revenue rose sharply. This reinforces that Microsoft\u2019s earnings profile now\ndepends primarily on subscriptions, cloud consumption, support, and online services rather than\npackaged software or device unit shipments.\nFrom a profitability perspective, FY2025 gross margin was about 68.8% of revenue, operating\nmargin about 45.6%, and net margin about 36.1%. Those remain exceptionally strong at Microsoft\u2019s\nscale, even after absorbing the cost of aggressive AI infrastructure expansion."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec5_p9_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par0",
+      "section_title": "5. Segment results and operating drivers",
+      "page_start": 9,
+      "page_end": 11,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+        "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+        "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+        "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4"
+      ],
+      "source_child_count": 5,
+      "parent_text": "5. Segment results and operating drivers\nTable 3. Segment revenue and operating income\nProductivity and Business Processes\nPBP remained Microsoft\u2019s largest segment by revenue and its most profitable by absolute operating\nincome. Revenue increased $14.0 billion to $120.8 billion. The largest contributor was Microsoft\n365 Commercial products and cloud services, which grew $10.8 billion, or 14%. Microsoft 365\nCommercial cloud revenue grew 15%, supported by 6% seat growth, especially among small and\nmedium businesses and frontline worker offerings, as well as higher revenue per user.\nMicrosoft 365 Consumer products and cloud services rose 11%, helped by subscriber growth and a\nJanuary 2025 price increase. Consumer subscribers reached 89.0 million. LinkedIn revenue rose\n9% with growth across all lines of business. Dynamics products and cloud services grew 15%, with\nDynamics 365 up 19%.\nOperating income increased 17% to $69.8 billion. Management says cost of revenue rose due to\nMicrosoft 365 Commercial cloud growth, while gross margin percentage decreased slightly because\nof AI infrastructure scaling. Even so, efficiency gains and scale in the cloud business allowed strong\nprofit expansion.\nIntelligent Cloud\nIntelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other",
+      "extraction_text": "5. Segment results and operating drivers\nTable 3. Segment revenue and operating income\nProductivity and Business Processes\nPBP remained Microsoft\u2019s largest segment by revenue and its most profitable by absolute operating\nincome. Revenue increased $14.0 billion to $120.8 billion. The largest contributor was Microsoft\n365 Commercial products and cloud services, which grew $10.8 billion, or 14%. Microsoft 365\nCommercial cloud revenue grew 15%, supported by 6% seat growth, especially among small and\nmedium businesses and frontline worker offerings, as well as higher revenue per user.\nMicrosoft 365 Consumer products and cloud services rose 11%, helped by subscriber growth and a\nJanuary 2025 price increase. Consumer subscribers reached 89.0 million. LinkedIn revenue rose\n9% with growth across all lines of business. Dynamics products and cloud services grew 15%, with\nDynamics 365 up 19%.\nOperating income increased 17% to $69.8 billion. Management says cost of revenue rose due to\nMicrosoft 365 Commercial cloud growth, while gross margin percentage decreased slightly because\nof AI infrastructure scaling. Even so, efficiency gains and scale in the cloud business allowed strong\nprofit expansion.\nIntelligent Cloud\nIntelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par1",
+      "section_title": "5. Segment results and operating drivers",
+      "page_start": 9,
+      "page_end": 11,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+        "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+        "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+      ],
+      "source_child_count": 3,
+      "parent_text": "Intelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other\ncloud services growth of 34%. Azure growth was fueled by demand across the portfolio rather than\none isolated workload, reflecting both traditional cloud migration and AI-related consumption.\nThe flip side was cost intensity. Cost of revenue rose 36%, and gross margin percentage decreased\nbecause Microsoft is scaling AI infrastructure. This is one of the most important economic\nmessages in the 10-K: Azure is growing extremely fast, but the company is spending heavily to\npreserve capacity leadership. Operating income still rose 18% to $44.6 billion, showing that the\nsegment remains highly profitable despite margin pressure.\nMore Personal Computing\nMPC revenue rose $3.8 billion, or 7%, to $54.6 billion. The drivers were mixed. Windows and\nDevices rose only 2%, as Windows OEM growth was partly offset by declining Devices revenue.",
+      "extraction_text": "5. Segment results and operating drivers\n\nIntelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other\ncloud services growth of 34%. Azure growth was fueled by demand across the portfolio rather than\none isolated workload, reflecting both traditional cloud migration and AI-related consumption.\nThe flip side was cost intensity. Cost of revenue rose 36%, and gross margin percentage decreased\nbecause Microsoft is scaling AI infrastructure. This is one of the most important economic\nmessages in the 10-K: Azure is growing extremely fast, but the company is spending heavily to\npreserve capacity leadership. Operating income still rose 18% to $44.6 billion, showing that the\nsegment remains highly profitable despite margin pressure.\nMore Personal Computing\nMPC revenue rose $3.8 billion, or 7%, to $54.6 billion. The drivers were mixed. Windows and\nDevices rose only 2%, as Windows OEM growth was partly offset by declining Devices revenue."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec5_p9_par2_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par2",
+      "section_title": "5. Segment results and operating drivers",
+      "page_start": 9,
+      "page_end": 11,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec5_p9_par2_ch0",
+        "microsoft_fy2025_10k_summary_sec5_p9_par2_ch1",
+        "microsoft_fy2025_10k_summary_sec5_p9_par2_ch2",
+        "microsoft_fy2025_10k_summary_sec5_p9_par2_ch3"
+      ],
+      "source_child_count": 4,
+      "parent_text": "Gaming revenue rose 9%, driven by 16% growth in Xbox content and services, reflecting the\nimpact of Activision Blizzard and Game Pass, while Xbox hardware revenue fell 25% on lower\nconsole volume. Search and news advertising rose 13%, and search and news advertising\nexcluding traffic acquisition costs rose 20%, driven by higher search volume and higher revenue\nper search.\nOperating income increased 18% to $14.2 billion. This matters because it shows Microsoft is not\nonly growing the consumer/endpoint side of the portfolio, but also translating that growth into\nbetter economics\u2014especially in search and advertising\u2014despite the weaker hardware mix.\nTable 4. Operating expenses\nR&D rose primarily because of investments in cloud and AI engineering and the impact of\nActivision Blizzard. Sales and marketing also increased, but more slowly than revenue. General\nand administrative expense decreased modestly. The overall picture is disciplined expense growth\nin support functions combined with aggressive spending where management sees durable\nstrategic return: AI, cloud engineering, gaming content, and sales capacity.",
+      "extraction_text": "5. Segment results and operating drivers\n\nGaming revenue rose 9%, driven by 16% growth in Xbox content and services, reflecting the\nimpact of Activision Blizzard and Game Pass, while Xbox hardware revenue fell 25% on lower\nconsole volume. Search and news advertising rose 13%, and search and news advertising\nexcluding traffic acquisition costs rose 20%, driven by higher search volume and higher revenue\nper search.\nOperating income increased 18% to $14.2 billion. This matters because it shows Microsoft is not\nonly growing the consumer/endpoint side of the portfolio, but also translating that growth into\nbetter economics\u2014especially in search and advertising\u2014despite the weaker hardware mix.\nTable 4. Operating expenses\nR&D rose primarily because of investments in cloud and AI engineering and the impact of\nActivision Blizzard. Sales and marketing also increased, but more slowly than revenue. General\nand administrative expense decreased modestly. The overall picture is disciplined expense growth\nin support functions combined with aggressive spending where management sees durable\nstrategic return: AI, cloud engineering, gaming content, and sales capacity."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec6_p11_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec6_p11_par0",
+      "section_title": "6. Balance sheet, liquidity, cash flow, and capital allocation",
+      "page_start": 11,
+      "page_end": 13,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec6_p11_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec6_p11_par0_ch1",
+        "microsoft_fy2025_10k_summary_sec6_p11_par0_ch2"
+      ],
+      "source_child_count": 3,
+      "parent_text": "6. Balance sheet, liquidity, cash flow, and capital allocation\nTable 5. Balance sheet highlights\nThe balance sheet expanded materially in FY2025. The most important changes were the rise in\ncash and short-term investments, the large increase in property and equipment, and continued\nelevation of goodwill and intangibles following the Activision Blizzard acquisition. Net property\nand equipment rose nearly $69.4 billion year over year, reflecting unprecedented infrastructure\nbuildout.\nLiquidity remained very strong. Management states that existing cash, short-term investments,\noperating cash flow, and access to capital markets are expected to be sufficient to fund operations,\ndividends, repurchases, debt maturities, material capital expenditures, and tax obligations for at\nleast the next 12 months and for the foreseeable future.\nTable 6. Cash flow highlights\nOperating cash flow of $136.2 billion was extremely strong and rose by $17.6 billion year over year.\nThe company converted accounting earnings into cash efficiently, supported by high-margin",
+      "extraction_text": "6. Balance sheet, liquidity, cash flow, and capital allocation\nTable 5. Balance sheet highlights\nThe balance sheet expanded materially in FY2025. The most important changes were the rise in\ncash and short-term investments, the large increase in property and equipment, and continued\nelevation of goodwill and intangibles following the Activision Blizzard acquisition. Net property\nand equipment rose nearly $69.4 billion year over year, reflecting unprecedented infrastructure\nbuildout.\nLiquidity remained very strong. Management states that existing cash, short-term investments,\noperating cash flow, and access to capital markets are expected to be sufficient to fund operations,\ndividends, repurchases, debt maturities, material capital expenditures, and tax obligations for at\nleast the next 12 months and for the foreseeable future.\nTable 6. Cash flow highlights\nOperating cash flow of $136.2 billion was extremely strong and rose by $17.6 billion year over year.\nThe company converted accounting earnings into cash efficiently, supported by high-margin"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec6_p11_par1_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec6_p11_par1",
+      "section_title": "6. Balance sheet, liquidity, cash flow, and capital allocation",
+      "page_start": 11,
+      "page_end": 13,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec6_p11_par1_ch0",
+        "microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+        "microsoft_fy2025_10k_summary_sec6_p11_par1_ch2",
+        "microsoft_fy2025_10k_summary_sec6_p11_par1_ch3"
+      ],
+      "source_child_count": 4,
+      "parent_text": "recurring revenue and the scale of commercial contracts. The dominant use of that cash was\ninvesting activity, especially datacenter and infrastructure buildout.\nCapital expenditures reached $64.6 billion, up sharply from $44.5 billion. This is one of the clearest\nquantitative signals in the report: Microsoft is in a capital deployment phase to support cloud and\nAI demand. The company is also using finance leases extensively, so cash capex understates the\nfull infrastructure commitment.\nShareholder returns\nMicrosoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1\nbillion in cash dividends and spent $18.4 billion repurchasing common stock through open-market\nrepurchases. Dividends declared totaled $24.7 billion, or $3.32 per share. A new $60 billion\nrepurchase authorization approved in September 2024 commenced in April 2025 after the prior\nauthorization was completed; $57.3 billion remained available at June 30, 2025.\nTable 7. Selected contractual obligations as of June 30, 2025\nThese obligations confirm that Microsoft\u2019s AI and cloud expansion is not just an income-statement\nstory but a multi-year capital commitment story. Leases, construction commitments, and purchase\ncommitments together amount to a very large future funding requirement, although one\ncomfortably supported by current cash generation.",
+      "extraction_text": "6. Balance sheet, liquidity, cash flow, and capital allocation\n\nrecurring revenue and the scale of commercial contracts. The dominant use of that cash was\ninvesting activity, especially datacenter and infrastructure buildout.\nCapital expenditures reached $64.6 billion, up sharply from $44.5 billion. This is one of the clearest\nquantitative signals in the report: Microsoft is in a capital deployment phase to support cloud and\nAI demand. The company is also using finance leases extensively, so cash capex understates the\nfull infrastructure commitment.\nShareholder returns\nMicrosoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1\nbillion in cash dividends and spent $18.4 billion repurchasing common stock through open-market\nrepurchases. Dividends declared totaled $24.7 billion, or $3.32 per share. A new $60 billion\nrepurchase authorization approved in September 2024 commenced in April 2025 after the prior\nauthorization was completed; $57.3 billion remained available at June 30, 2025.\nTable 7. Selected contractual obligations as of June 30, 2025\nThese obligations confirm that Microsoft\u2019s AI and cloud expansion is not just an income-statement\nstory but a multi-year capital commitment story. Leases, construction commitments, and purchase\ncommitments together amount to a very large future funding requirement, although one\ncomfortably supported by current cash generation."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec7_p13_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec7_p13_par0",
+      "section_title": "7. Major accounting notes and financial statement",
+      "page_start": 13,
+      "page_end": 15,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec7_p13_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec7_p13_par0_ch1",
+        "microsoft_fy2025_10k_summary_sec7_p13_par0_ch2",
+        "microsoft_fy2025_10k_summary_sec7_p13_par0_ch3"
+      ],
+      "source_child_count": 4,
+      "parent_text": "7. Major accounting notes and financial statement\nimplications\nThe notes to the financial statements reveal where management believes investors need additional\ncontext beyond the headline statements. Several notes are especially important for understanding\nMicrosoft\u2019s economics in FY2025.\nRevenue recognition, unearned revenue, and remaining performance\nobligations\nUnearned revenue ended FY2025 at $67.3 billion. Revenue allocated to remaining performance\nobligations reached $375 billion, of which $368 billion was commercial. Microsoft expects to\nrecognize roughly 40% of total remaining performance obligations over the next 12 months, with\nthe rest thereafter. This provides substantial visibility into future commercial revenue, though the\ntiming varies across subscriptions, licenses, and consumption-based services.\nThis large remaining performance obligation base is a key feature of Microsoft\u2019s model. It reflects\nthe scale of multi-year commercial agreements and supports the view that revenue quality is high,\neven if some businesses\u2014especially cloud consumption\u2014remain demand sensitive.\nBusiness combinations: Activision Blizzard\nMicrosoft completed the Activision Blizzard acquisition in October 2023 for $75.4 billion, primarily\nin cash. The purchase price allocation includes $51.0 billion of goodwill and $22.0 billion of\nidentifiable intangible assets. Management says the acquisition is intended to accelerate growth in",
+      "extraction_text": "7. Major accounting notes and financial statement\nimplications\nThe notes to the financial statements reveal where management believes investors need additional\ncontext beyond the headline statements. Several notes are especially important for understanding\nMicrosoft\u2019s economics in FY2025.\nRevenue recognition, unearned revenue, and remaining performance\nobligations\nUnearned revenue ended FY2025 at $67.3 billion. Revenue allocated to remaining performance\nobligations reached $375 billion, of which $368 billion was commercial. Microsoft expects to\nrecognize roughly 40% of total remaining performance obligations over the next 12 months, with\nthe rest thereafter. This provides substantial visibility into future commercial revenue, though the\ntiming varies across subscriptions, licenses, and consumption-based services.\nThis large remaining performance obligation base is a key feature of Microsoft\u2019s model. It reflects\nthe scale of multi-year commercial agreements and supports the view that revenue quality is high,\neven if some businesses\u2014especially cloud consumption\u2014remain demand sensitive.\nBusiness combinations: Activision Blizzard\nMicrosoft completed the Activision Blizzard acquisition in October 2023 for $75.4 billion, primarily\nin cash. The purchase price allocation includes $51.0 billion of goodwill and $22.0 billion of\nidentifiable intangible assets. Management says the acquisition is intended to accelerate growth in"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec7_p13_par1_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec7_p13_par1",
+      "section_title": "7. Major accounting notes and financial statement",
+      "page_start": 13,
+      "page_end": 15,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+        "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+        "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+        "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+        "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4"
+      ],
+      "source_child_count": 5,
+      "parent_text": "in cash. The purchase price allocation includes $51.0 billion of goodwill and $22.0 billion of\nidentifiable intangible assets. Management says the acquisition is intended to accelerate growth in\ngaming across mobile, PC, console, and cloud gaming. Activision Blizzard is reported within More\nPersonal Computing.\nThe significance is twofold. First, it explains much of the elevated goodwill and intangible asset\nbase. Second, it contributed to gaming growth in FY2025, especially Xbox content and services. The\nacquisition therefore remains both a balance-sheet event and an operating event.\nGoodwill and intangible assets\nTotal goodwill ended FY2025 at $119.5 billion, with $62.4 billion allocated to More Personal\nComputing, $31.5 billion to Productivity and Business Processes, and $25.7 billion to Intelligent\nCloud. Microsoft reported no goodwill impairment in the annual tests for 2025, 2024, or 2023.\nNet intangible assets were $22.6 billion at June 30, 2025. Amortization expense was $6.0 billion in\nFY2025, up from $4.8 billion in FY2024, and future amortization remains meaningful: $4.6 billion is\nexpected in FY2026 alone. This is a non-trivial drag on reported earnings but largely reflects\nacquisition accounting rather than deterioration in the core business.\nDebt and financing structure\nMicrosoft ended FY2025 with no commercial paper outstanding, versus $6.7 billion a year earlier.\nTotal face value of long-term debt was $49.2 billion, and carrying value of total debt was $43.2",
+      "extraction_text": "7. Major accounting notes and financial statement\n\nin cash. The purchase price allocation includes $51.0 billion of goodwill and $22.0 billion of\nidentifiable intangible assets. Management says the acquisition is intended to accelerate growth in\ngaming across mobile, PC, console, and cloud gaming. Activision Blizzard is reported within More\nPersonal Computing.\nThe significance is twofold. First, it explains much of the elevated goodwill and intangible asset\nbase. Second, it contributed to gaming growth in FY2025, especially Xbox content and services. The\nacquisition therefore remains both a balance-sheet event and an operating event.\nGoodwill and intangible assets\nTotal goodwill ended FY2025 at $119.5 billion, with $62.4 billion allocated to More Personal\nComputing, $31.5 billion to Productivity and Business Processes, and $25.7 billion to Intelligent\nCloud. Microsoft reported no goodwill impairment in the annual tests for 2025, 2024, or 2023.\nNet intangible assets were $22.6 billion at June 30, 2025. Amortization expense was $6.0 billion in\nFY2025, up from $4.8 billion in FY2024, and future amortization remains meaningful: $4.6 billion is\nexpected in FY2026 alone. This is a non-trivial drag on reported earnings but largely reflects\nacquisition accounting rather than deterioration in the core business.\nDebt and financing structure\nMicrosoft ended FY2025 with no commercial paper outstanding, versus $6.7 billion a year earlier.\nTotal face value of long-term debt was $49.2 billion, and carrying value of total debt was $43.2"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec7_p13_par2_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec7_p13_par2",
+      "section_title": "7. Major accounting notes and financial statement",
+      "page_start": 13,
+      "page_end": 15,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec7_p13_par2_ch0"
+      ],
+      "source_child_count": 1,
+      "parent_text": "Microsoft ended FY2025 with no commercial paper outstanding, versus $6.7 billion a year earlier.\nTotal face value of long-term debt was $49.2 billion, and carrying value of total debt was $43.2\nbillion after discounts, hedge adjustments, and exchange-related premiums. Current portion of\nlong-term debt was $3.0 billion and long-term debt was $40.2 billion.",
+      "extraction_text": "7. Major accounting notes and financial statement\n\nMicrosoft ended FY2025 with no commercial paper outstanding, versus $6.7 billion a year earlier.\nTotal face value of long-term debt was $49.2 billion, and carrying value of total debt was $43.2\nbillion after discounts, hedge adjustments, and exchange-related premiums. Current portion of\nlong-term debt was $3.0 billion and long-term debt was $40.2 billion."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec7_p13_par3_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec7_p13_par3",
+      "section_title": "7. Major accounting notes and financial statement",
+      "page_start": 13,
+      "page_end": 15,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec7_p13_par3_ch0",
+        "microsoft_fy2025_10k_summary_sec7_p13_par3_ch1",
+        "microsoft_fy2025_10k_summary_sec7_p13_par3_ch2",
+        "microsoft_fy2025_10k_summary_sec7_p13_par3_ch3"
+      ],
+      "source_child_count": 4,
+      "parent_text": "The debt load remains very manageable relative to cash, investments, operating cash flow, and\noverall market position. Microsoft\u2019s use of debt appears opportunistic and strategic rather than\nbalance-sheet constrained.\nLeases and off-balance-sheet-like infrastructure intensity\nLease disclosures are particularly important in FY2025 because they illuminate Microsoft\u2019s\ninfrastructure scaling strategy. Operating lease liabilities totaled $22.9 billion and finance lease\nliabilities totaled $46.2 billion. In addition, Microsoft disclosed $92.7 billion of additional leases,\nprimarily for datacenters, that had not yet commenced as of June 30, 2025. These will commence\nbetween FY2026 and FY2031.\nThis disclosure is one of the strongest signals in the filing that Microsoft is locking in long-duration\ncapacity for AI and cloud workloads. It also means investors should evaluate capital intensity using a\nbroader lens than cash capex alone.\nTaxes\nIncome before tax reached $123.6 billion and provision for income taxes was $21.8 billion, yielding\nan effective rate of 17.6%. The rate remained below the U.S. statutory level mainly because a large\nshare of foreign income is generated through Ireland at lower tax rates. Management also\ndiscussed Pillar Two global minimum tax rules and said it does not currently estimate a material\nfinancial statement impact, though the company continues monitoring implementation across\njurisdictions.",
+      "extraction_text": "7. Major accounting notes and financial statement\n\nThe debt load remains very manageable relative to cash, investments, operating cash flow, and\noverall market position. Microsoft\u2019s use of debt appears opportunistic and strategic rather than\nbalance-sheet constrained.\nLeases and off-balance-sheet-like infrastructure intensity\nLease disclosures are particularly important in FY2025 because they illuminate Microsoft\u2019s\ninfrastructure scaling strategy. Operating lease liabilities totaled $22.9 billion and finance lease\nliabilities totaled $46.2 billion. In addition, Microsoft disclosed $92.7 billion of additional leases,\nprimarily for datacenters, that had not yet commenced as of June 30, 2025. These will commence\nbetween FY2026 and FY2031.\nThis disclosure is one of the strongest signals in the filing that Microsoft is locking in long-duration\ncapacity for AI and cloud workloads. It also means investors should evaluate capital intensity using a\nbroader lens than cash capex alone.\nTaxes\nIncome before tax reached $123.6 billion and provision for income taxes was $21.8 billion, yielding\nan effective rate of 17.6%. The rate remained below the U.S. statutory level mainly because a large\nshare of foreign income is generated through Ireland at lower tax rates. Management also\ndiscussed Pillar Two global minimum tax rules and said it does not currently estimate a material\nfinancial statement impact, though the company continues monitoring implementation across\njurisdictions."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec7_p13_par4_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec7_p13_par4",
+      "section_title": "7. Major accounting notes and financial statement",
+      "page_start": 13,
+      "page_end": 15,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+        "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+        "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+        "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3"
+      ],
+      "source_child_count": 4,
+      "parent_text": "financial statement impact, though the company continues monitoring implementation across\njurisdictions.\nThe tax footnote also contains one of the filing\u2019s largest specific dispute exposures: the IRS is\nseeking an additional tax payment of $28.9 billion plus penalties and interest in connection with\ntransfer-pricing issues for tax years 2004 to 2013. Microsoft says it disagrees and will vigorously\ncontest the proposed adjustments. It also says current allowances for income tax contingencies are\nadequate.\nInvestments, derivatives, and market risk\nMicrosoft\u2019s investment portfolio is primarily high-quality fixed income and liquidity-oriented\nholdings, supplemented by equity and other investments. Market risk disclosures show sensitivity\nto foreign exchange, interest rates, credit spreads, and equity prices. Management also notes that\nother income (expense), net primarily reflects recognized losses on equity method investments,\nincluding OpenAI, in FY2025. That point matters because it shows that strategic partnerships can\ncreate volatility outside core operating income.\nContingencies\nThe contingencies note mentions the Irish Data Protection Commission matter involving LinkedIn\ntargeted advertising practices under GDPR. Microsoft states that LinkedIn appealed the final\ndecision in November 2024 and that the next hearing is scheduled for December 2025. Beyond\nspecific matters, aggregate legal liabilities accrued were $541 million, and adverse outcomes",
+      "extraction_text": "7. Major accounting notes and financial statement\n\nfinancial statement impact, though the company continues monitoring implementation across\njurisdictions.\nThe tax footnote also contains one of the filing\u2019s largest specific dispute exposures: the IRS is\nseeking an additional tax payment of $28.9 billion plus penalties and interest in connection with\ntransfer-pricing issues for tax years 2004 to 2013. Microsoft says it disagrees and will vigorously\ncontest the proposed adjustments. It also says current allowances for income tax contingencies are\nadequate.\nInvestments, derivatives, and market risk\nMicrosoft\u2019s investment portfolio is primarily high-quality fixed income and liquidity-oriented\nholdings, supplemented by equity and other investments. Market risk disclosures show sensitivity\nto foreign exchange, interest rates, credit spreads, and equity prices. Management also notes that\nother income (expense), net primarily reflects recognized losses on equity method investments,\nincluding OpenAI, in FY2025. That point matters because it shows that strategic partnerships can\ncreate volatility outside core operating income.\nContingencies\nThe contingencies note mentions the Irish Data Protection Commission matter involving LinkedIn\ntargeted advertising practices under GDPR. Microsoft states that LinkedIn appealed the final\ndecision in November 2024 and that the next hearing is scheduled for December 2025. Beyond\nspecific matters, aggregate legal liabilities accrued were $541 million, and adverse outcomes"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec7_p13_par5_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec7_p13_par5",
+      "section_title": "7. Major accounting notes and financial statement",
+      "page_start": 13,
+      "page_end": 15,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec7_p13_par5_ch0"
+      ],
+      "source_child_count": 1,
+      "parent_text": "decision in November 2024 and that the next hearing is scheduled for December 2025. Beyond\nspecific matters, aggregate legal liabilities accrued were $541 million, and adverse outcomes\nbeyond recorded amounts that are reasonably possible were estimated at roughly $600 million in\naggregate.",
+      "extraction_text": "7. Major accounting notes and financial statement\n\ndecision in November 2024 and that the next hearing is scheduled for December 2025. Beyond\nspecific matters, aggregate legal liabilities accrued were $541 million, and adverse outcomes\nbeyond recorded amounts that are reasonably possible were estimated at roughly $600 million in\naggregate."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec8_p15_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec8_p15_par0",
+      "section_title": "8. Risk factors and cybersecurity posture",
+      "page_start": 15,
+      "page_end": 17,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec8_p15_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec8_p15_par0_ch1",
+        "microsoft_fy2025_10k_summary_sec8_p15_par0_ch2",
+        "microsoft_fy2025_10k_summary_sec8_p15_par0_ch3",
+        "microsoft_fy2025_10k_summary_sec8_p15_par0_ch4"
+      ],
+      "source_child_count": 5,
+      "parent_text": "8. Risk factors and cybersecurity posture\nMicrosoft\u2019s risk disclosures are extensive but can be grouped into six broad categories: strategic\nand competitive risks, risks related to the evolution of the business, cybersecurity/data\nprivacy/platform abuse risks, operational risks, legal/regulatory/litigation risks, and intellectual\nproperty/general risks.\nStrategic and competitive risks\n\uf0b7\nCompetition is intense across productivity software, cloud platforms, AI services, devices,\ngaming ecosystems, and digital advertising.\n\uf0b7\nPlatform-based ecosystems create network effects, but competing ecosystems can restrict\napplication distribution, weaken developer support, or reduce monetization opportunities.\n\uf0b7\nBusiness model competition includes free or ad-supported services, open-source alternatives,\nvertically integrated rivals, and low-cost operating system or platform providers.\n\uf0b7\nMicrosoft\u2019s shift toward cloud and AI services requires continued execution and heavy\ninfrastructure spending; failure to monetize at scale could pressure returns.\nRisks related to business evolution\n\uf0b7\nLarge investments in new products, services, hardware, and AI may not earn expected returns.\n\uf0b7\nAcquisitions, partnerships, and alliances\u2014including large strategic deals\u2014may create\nintegration, compliance, valuation, or execution risks.\n\uf0b7\nData handling practices, regulatory scrutiny, and public perceptions of product misuse or\nmismanagement could reduce adoption.\nCybersecurity, data privacy, and platform abuse",
+      "extraction_text": "8. Risk factors and cybersecurity posture\nMicrosoft\u2019s risk disclosures are extensive but can be grouped into six broad categories: strategic\nand competitive risks, risks related to the evolution of the business, cybersecurity/data\nprivacy/platform abuse risks, operational risks, legal/regulatory/litigation risks, and intellectual\nproperty/general risks.\nStrategic and competitive risks\n\uf0b7\nCompetition is intense across productivity software, cloud platforms, AI services, devices,\ngaming ecosystems, and digital advertising.\n\uf0b7\nPlatform-based ecosystems create network effects, but competing ecosystems can restrict\napplication distribution, weaken developer support, or reduce monetization opportunities.\n\uf0b7\nBusiness model competition includes free or ad-supported services, open-source alternatives,\nvertically integrated rivals, and low-cost operating system or platform providers.\n\uf0b7\nMicrosoft\u2019s shift toward cloud and AI services requires continued execution and heavy\ninfrastructure spending; failure to monetize at scale could pressure returns.\nRisks related to business evolution\n\uf0b7\nLarge investments in new products, services, hardware, and AI may not earn expected returns.\n\uf0b7\nAcquisitions, partnerships, and alliances\u2014including large strategic deals\u2014may create\nintegration, compliance, valuation, or execution risks.\n\uf0b7\nData handling practices, regulatory scrutiny, and public perceptions of product misuse or\nmismanagement could reduce adoption.\nCybersecurity, data privacy, and platform abuse"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec8_p15_par1_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec8_p15_par1",
+      "section_title": "8. Risk factors and cybersecurity posture",
+      "page_start": 15,
+      "page_end": 17,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec8_p15_par1_ch0",
+        "microsoft_fy2025_10k_summary_sec8_p15_par1_ch1",
+        "microsoft_fy2025_10k_summary_sec8_p15_par1_ch2",
+        "microsoft_fy2025_10k_summary_sec8_p15_par1_ch3"
+      ],
+      "source_child_count": 4,
+      "parent_text": "\uf0b7\nData handling practices, regulatory scrutiny, and public perceptions of product misuse or\nmismanagement could reduce adoption.\nCybersecurity, data privacy, and platform abuse\nCybersecurity is unusually central in Microsoft\u2019s 10-K because the company is both a major\ntechnology provider and a high-profile cyber target. The filing explicitly references prior incidents,\nincluding a nation-state associated threat actor that used a password-spray attack to compromise a\nlegacy test account and gain access to Microsoft email accounts and some source code repositories.\nMicrosoft warns that such incidents can harm reputation, customer relationships, and results of\noperations.\nThe company says it launched the Secure Future Initiative in November 2023 and expanded it in\nMay 2024. The initiative is built around three principles: Secure by Design, Secure by Default, and\nSecure Operations. Microsoft says it assesses alignment to the NIST Cybersecurity Framework\nannually, undertakes tabletop exercises, production environment testing, red teaming,\nvulnerability testing, employee training, and simulated phishing education. The company also\nstates that it uses insights from 84 trillion signals per day in its security operations.\nGovernance of cybersecurity is formalized. The board oversees cybersecurity risk, the CISO reports\nto the EVP of Cloud + AI, and a Cybersecurity Governance Council of deputy CISOs approves the",
+      "extraction_text": "8. Risk factors and cybersecurity posture\n\n\uf0b7\nData handling practices, regulatory scrutiny, and public perceptions of product misuse or\nmismanagement could reduce adoption.\nCybersecurity, data privacy, and platform abuse\nCybersecurity is unusually central in Microsoft\u2019s 10-K because the company is both a major\ntechnology provider and a high-profile cyber target. The filing explicitly references prior incidents,\nincluding a nation-state associated threat actor that used a password-spray attack to compromise a\nlegacy test account and gain access to Microsoft email accounts and some source code repositories.\nMicrosoft warns that such incidents can harm reputation, customer relationships, and results of\noperations.\nThe company says it launched the Secure Future Initiative in November 2023 and expanded it in\nMay 2024. The initiative is built around three principles: Secure by Design, Secure by Default, and\nSecure Operations. Microsoft says it assesses alignment to the NIST Cybersecurity Framework\nannually, undertakes tabletop exercises, production environment testing, red teaming,\nvulnerability testing, employee training, and simulated phishing education. The company also\nstates that it uses insights from 84 trillion signals per day in its security operations.\nGovernance of cybersecurity is formalized. The board oversees cybersecurity risk, the CISO reports\nto the EVP of Cloud + AI, and a Cybersecurity Governance Council of deputy CISOs approves the"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec8_p15_par2_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec8_p15_par2",
+      "section_title": "8. Risk factors and cybersecurity posture",
+      "page_start": 15,
+      "page_end": 17,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec8_p15_par2_ch0"
+      ],
+      "source_child_count": 1,
+      "parent_text": "Governance of cybersecurity is formalized. The board oversees cybersecurity risk, the CISO reports\nto the EVP of Cloud + AI, and a Cybersecurity Governance Council of deputy CISOs approves the\nenterprise risk assessment process, determines risk levels and mitigations, reviews NIST\nalignment, and supports compliance with cybersecurity regulations.",
+      "extraction_text": "8. Risk factors and cybersecurity posture\n\nGovernance of cybersecurity is formalized. The board oversees cybersecurity risk, the CISO reports\nto the EVP of Cloud + AI, and a Cybersecurity Governance Council of deputy CISOs approves the\nenterprise risk assessment process, determines risk levels and mitigations, reviews NIST\nalignment, and supports compliance with cybersecurity regulations."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec8_p15_par3_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec8_p15_par3",
+      "section_title": "8. Risk factors and cybersecurity posture",
+      "page_start": 15,
+      "page_end": 17,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec8_p15_par3_ch0",
+        "microsoft_fy2025_10k_summary_sec8_p15_par3_ch1",
+        "microsoft_fy2025_10k_summary_sec8_p15_par3_ch2",
+        "microsoft_fy2025_10k_summary_sec8_p15_par3_ch3"
+      ],
+      "source_child_count": 4,
+      "parent_text": "Operational risks\n\uf0b7\nCloud and AI growth depend on datacenter land, energy, networking, servers, GPUs, and\nrelated supply-chain resilience.\n\uf0b7\nSome server and device components have few qualified suppliers, creating concentration risk.\n\uf0b7\nSoftware quality, service reliability, outages, or patching failures could disrupt customers and\nmagnify liability or reputational damage.\nLegal and regulatory risks\n\uf0b7\nMicrosoft operates under evolving laws and regulations related to privacy, advertising, data\nstorage, competition, digital markets, content, and AI.\n\uf0b7\nRegulatory actions in major jurisdictions, particularly the EU, can require operational changes\nand raise compliance costs.\n\uf0b7\nTax disputes, antitrust or platform-related investigations, and data protection enforcement\nremain meaningful watch points.\nBottom line on risk posture\nThe 10-K does not suggest fragility. Instead, it depicts a company with enormous financial\nresilience that nevertheless faces real execution and trust risks because of its scale, centrality, and\nexposure to the AI and cloud infrastructure cycle. For investors, the most important risks to\nmonitor are cybersecurity, AI-related regulation and monetization, infrastructure cost intensity,\ntax disputes, and the ability to maintain high trust while moving quickly.",
+      "extraction_text": "8. Risk factors and cybersecurity posture\n\nOperational risks\n\uf0b7\nCloud and AI growth depend on datacenter land, energy, networking, servers, GPUs, and\nrelated supply-chain resilience.\n\uf0b7\nSome server and device components have few qualified suppliers, creating concentration risk.\n\uf0b7\nSoftware quality, service reliability, outages, or patching failures could disrupt customers and\nmagnify liability or reputational damage.\nLegal and regulatory risks\n\uf0b7\nMicrosoft operates under evolving laws and regulations related to privacy, advertising, data\nstorage, competition, digital markets, content, and AI.\n\uf0b7\nRegulatory actions in major jurisdictions, particularly the EU, can require operational changes\nand raise compliance costs.\n\uf0b7\nTax disputes, antitrust or platform-related investigations, and data protection enforcement\nremain meaningful watch points.\nBottom line on risk posture\nThe 10-K does not suggest fragility. Instead, it depicts a company with enormous financial\nresilience that nevertheless faces real execution and trust risks because of its scale, centrality, and\nexposure to the AI and cloud infrastructure cycle. For investors, the most important risks to\nmonitor are cybersecurity, AI-related regulation and monetization, infrastructure cost intensity,\ntax disputes, and the ability to maintain high trust while moving quickly."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec9_p17_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec9_p17_par0",
+      "section_title": "9. Operations, people, properties, and governance",
+      "page_start": 17,
+      "page_end": 19,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec9_p17_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec9_p17_par0_ch1",
+        "microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+        "microsoft_fy2025_10k_summary_sec9_p17_par0_ch3"
+      ],
+      "source_child_count": 4,
+      "parent_text": "9. Operations, people, properties, and governance\nHuman capital\nAs of June 30, 2025, Microsoft employed approximately 228,000 full-time employees, including\n125,000 in the United States and 103,000 internationally. Of these, approximately 89,000 were in\noperations, 80,000 in product research and development, 44,000 in sales and marketing, and 15,000\nin general and administration.\nManagement says compensation, benefits, wellbeing programs, pay equity monitoring, continuous\nlearning, and employee listening systems are important to attracting and retaining talent. The\nfiling also emphasizes that security responsibility is embedded across teams and functions, not\nisolated within one technical group.\nOperations and properties\nMicrosoft maintains regional operations service centers across the Americas, Asia Pacific, Europe,\nand the Middle East. It operates datacenters in these regions and says location and capacity\ndecisions increasingly reflect AI-service demand. The company stresses dependencies on permitted\nland, predictable energy, networking supplies, and server components including GPUs.\nOn properties, Microsoft reports roughly 97 million square feet of total owned and leased property\nworldwide, of which 57 million square feet are in the U.S. and 40 million internationally. In King\nCounty, Washington, it has approximately 15 million square feet, including about 12 million square\nfeet of owned space on roughly 530 acres at headquarters.\nResearch and development",
+      "extraction_text": "9. Operations, people, properties, and governance\nHuman capital\nAs of June 30, 2025, Microsoft employed approximately 228,000 full-time employees, including\n125,000 in the United States and 103,000 internationally. Of these, approximately 89,000 were in\noperations, 80,000 in product research and development, 44,000 in sales and marketing, and 15,000\nin general and administration.\nManagement says compensation, benefits, wellbeing programs, pay equity monitoring, continuous\nlearning, and employee listening systems are important to attracting and retaining talent. The\nfiling also emphasizes that security responsibility is embedded across teams and functions, not\nisolated within one technical group.\nOperations and properties\nMicrosoft maintains regional operations service centers across the Americas, Asia Pacific, Europe,\nand the Middle East. It operates datacenters in these regions and says location and capacity\ndecisions increasingly reflect AI-service demand. The company stresses dependencies on permitted\nland, predictable energy, networking supplies, and server components including GPUs.\nOn properties, Microsoft reports roughly 97 million square feet of total owned and leased property\nworldwide, of which 57 million square feet are in the U.S. and 40 million internationally. In King\nCounty, Washington, it has approximately 15 million square feet, including about 12 million square\nfeet of owned space on roughly 530 acres at headquarters.\nResearch and development"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec9_p17_par1_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec9_p17_par1",
+      "section_title": "9. Operations, people, properties, and governance",
+      "page_start": 17,
+      "page_end": 19,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec9_p17_par1_ch0",
+        "microsoft_fy2025_10k_summary_sec9_p17_par1_ch1",
+        "microsoft_fy2025_10k_summary_sec9_p17_par1_ch2",
+        "microsoft_fy2025_10k_summary_sec9_p17_par1_ch3",
+        "microsoft_fy2025_10k_summary_sec9_p17_par1_ch4"
+      ],
+      "source_child_count": 5,
+      "parent_text": "County, Washington, it has approximately 15 million square feet, including about 12 million square\nfeet of owned space on roughly 530 acres at headquarters.\nResearch and development\nMicrosoft continues to invest heavily in both fundamental and applied R&D across cloud, AI,\ndevices, security, operating systems, and digital work/life experiences. The report frames in-house\ndevelopment as a source of competitive advantage because it preserves product differentiation,\ncontrol over implementation, and freedom to prioritize modifications and enhancements.\nDistribution, sales, and licensing\nThe filing outlines a broad commercial distribution model spanning direct sales, enterprise\nagreements, Microsoft Customer Agreements, reseller channels, cloud solution providers, OEM\nrelationships, and online direct channels. This matters because Microsoft\u2019s performance is not\ndependent on a single sales motion. Its commercial engine combines long-cycle enterprise\ncontracting with self-serve and partner-led distribution.\nThe company also uses several licensing frameworks\u2014Enterprise Agreement, Microsoft Customer\nAgreement, Microsoft Online Subscription Agreement, Microsoft Products and Services Agreement,\nOpen Value, and Select Plus\u2014to match contract form to customer size and deployment model. The\nresult is high commercial flexibility with strong lock-in effects.\nGovernance and executives\nThe executive officers listed in the filing as of July 30, 2025 were Satya Nadella (Chairman and",
+      "extraction_text": "9. Operations, people, properties, and governance\n\nCounty, Washington, it has approximately 15 million square feet, including about 12 million square\nfeet of owned space on roughly 530 acres at headquarters.\nResearch and development\nMicrosoft continues to invest heavily in both fundamental and applied R&D across cloud, AI,\ndevices, security, operating systems, and digital work/life experiences. The report frames in-house\ndevelopment as a source of competitive advantage because it preserves product differentiation,\ncontrol over implementation, and freedom to prioritize modifications and enhancements.\nDistribution, sales, and licensing\nThe filing outlines a broad commercial distribution model spanning direct sales, enterprise\nagreements, Microsoft Customer Agreements, reseller channels, cloud solution providers, OEM\nrelationships, and online direct channels. This matters because Microsoft\u2019s performance is not\ndependent on a single sales motion. Its commercial engine combines long-cycle enterprise\ncontracting with self-serve and partner-led distribution.\nThe company also uses several licensing frameworks\u2014Enterprise Agreement, Microsoft Customer\nAgreement, Microsoft Online Subscription Agreement, Microsoft Products and Services Agreement,\nOpen Value, and Select Plus\u2014to match contract form to customer size and deployment model. The\nresult is high commercial flexibility with strong lock-in effects.\nGovernance and executives\nThe executive officers listed in the filing as of July 30, 2025 were Satya Nadella (Chairman and"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec9_p17_par2_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec9_p17_par2",
+      "section_title": "9. Operations, people, properties, and governance",
+      "page_start": 17,
+      "page_end": 19,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec9_p17_par2_ch0"
+      ],
+      "source_child_count": 1,
+      "parent_text": "result is high commercial flexibility with strong lock-in effects.\nGovernance and executives\nThe executive officers listed in the filing as of July 30, 2025 were Satya Nadella (Chairman and\nCEO), Judson Althoff (EVP and Chief Commercial Officer), Amy Coleman (EVP and Chief Human",
+      "extraction_text": "9. Operations, people, properties, and governance\n\nresult is high commercial flexibility with strong lock-in effects.\nGovernance and executives\nThe executive officers listed in the filing as of July 30, 2025 were Satya Nadella (Chairman and\nCEO), Judson Althoff (EVP and Chief Commercial Officer), Amy Coleman (EVP and Chief Human"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec9_p17_par3_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec9_p17_par3",
+      "section_title": "9. Operations, people, properties, and governance",
+      "page_start": 17,
+      "page_end": 19,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec9_p17_par3_ch0",
+        "microsoft_fy2025_10k_summary_sec9_p17_par3_ch1"
+      ],
+      "source_child_count": 2,
+      "parent_text": "Resources Officer), Kathleen Hogan (EVP, Office of Strategy and Transformation), Amy Hood (EVP\nand CFO), Takeshi Numoto (EVP and Chief Marketing Officer), and Bradford Smith (Vice Chair and\nPresident).\nThe filing also states that disclosure controls and procedures were effective as of June 30, 2025.\nManagement concluded internal control over financial reporting was effective under the COSO\n2013 framework, and Deloitte & Touche LLP audited internal control over financial reporting and\nthe consolidated financial statements.",
+      "extraction_text": "9. Operations, people, properties, and governance\n\nResources Officer), Kathleen Hogan (EVP, Office of Strategy and Transformation), Amy Hood (EVP\nand CFO), Takeshi Numoto (EVP and Chief Marketing Officer), and Bradford Smith (Vice Chair and\nPresident).\nThe filing also states that disclosure controls and procedures were effective as of June 30, 2025.\nManagement concluded internal control over financial reporting was effective under the COSO\n2013 framework, and Deloitte & Touche LLP audited internal control over financial reporting and\nthe consolidated financial statements."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec10_p19_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec10_p19_par0",
+      "section_title": "10. Overall assessment",
+      "page_start": 19,
+      "page_end": 20,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec10_p19_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec10_p19_par0_ch1",
+        "microsoft_fy2025_10k_summary_sec10_p19_par0_ch2",
+        "microsoft_fy2025_10k_summary_sec10_p19_par0_ch3",
+        "microsoft_fy2025_10k_summary_sec10_p19_par0_ch4"
+      ],
+      "source_child_count": 5,
+      "parent_text": "10. Overall assessment\nMicrosoft\u2019s FY2025 Form 10-K presents a company in a position of unusual strength. The core\nsoftware and cloud franchise is still expanding, the productivity stack remains a major recurring-\nrevenue engine, Azure is capturing large-scale AI and infrastructure demand, and the company\nretains enough financial capacity to fund both exceptional shareholder returns and a historically\nlarge capital expansion cycle.\nThe most important judgment call for readers is how to interpret the trade-off between present\nmargins and future strategic positioning. Microsoft is plainly spending heavily on AI capacity,\ndatacenter expansion, and long-duration lease commitments. This increases cost of revenue and\ncan depress cloud gross margin percentage in the near term. But management is signaling that\ncapacity leadership and distribution breadth matter more than maximizing short-term margin on\nevery unit of demand.\nThe filing also suggests that Microsoft\u2019s competitive moat is no longer best understood as\n\u201cWindows plus Office.\u201d It is now the combination of commercial distribution, enterprise trust,\nidentity, security, developer tools, business applications, collaboration, and cloud infrastructure\u2014\nplus the ability to insert AI across all of them. That is a much broader and more defensible control\nposition.\nAt the same time, the report does not support complacency. The company remains exposed to cyber",
+      "extraction_text": "10. Overall assessment\nMicrosoft\u2019s FY2025 Form 10-K presents a company in a position of unusual strength. The core\nsoftware and cloud franchise is still expanding, the productivity stack remains a major recurring-\nrevenue engine, Azure is capturing large-scale AI and infrastructure demand, and the company\nretains enough financial capacity to fund both exceptional shareholder returns and a historically\nlarge capital expansion cycle.\nThe most important judgment call for readers is how to interpret the trade-off between present\nmargins and future strategic positioning. Microsoft is plainly spending heavily on AI capacity,\ndatacenter expansion, and long-duration lease commitments. This increases cost of revenue and\ncan depress cloud gross margin percentage in the near term. But management is signaling that\ncapacity leadership and distribution breadth matter more than maximizing short-term margin on\nevery unit of demand.\nThe filing also suggests that Microsoft\u2019s competitive moat is no longer best understood as\n\u201cWindows plus Office.\u201d It is now the combination of commercial distribution, enterprise trust,\nidentity, security, developer tools, business applications, collaboration, and cloud infrastructure\u2014\nplus the ability to insert AI across all of them. That is a much broader and more defensible control\nposition.\nAt the same time, the report does not support complacency. The company remains exposed to cyber"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec10_p19_par1_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec10_p19_par1",
+      "section_title": "10. Overall assessment",
+      "page_start": 19,
+      "page_end": 20,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec10_p19_par1_ch0",
+        "microsoft_fy2025_10k_summary_sec10_p19_par1_ch1"
+      ],
+      "source_child_count": 2,
+      "parent_text": "position.\nAt the same time, the report does not support complacency. The company remains exposed to cyber\nincidents, platform regulation, infrastructure bottlenecks, acquisition execution risk, and large tax\ndisputes. If any of those areas go badly, Microsoft\u2019s scale ensures the consequences could also be large.\nStill, the FY2025 filing overall reads as the report of a company with expanding strategic relevance,\nrobust earnings quality, and the balance-sheet capacity to keep investing ahead of demand.",
+      "extraction_text": "10. Overall assessment\n\nposition.\nAt the same time, the report does not support complacency. The company remains exposed to cyber\nincidents, platform regulation, infrastructure bottlenecks, acquisition execution risk, and large tax\ndisputes. If any of those areas go badly, Microsoft\u2019s scale ensures the consequences could also be large.\nStill, the FY2025 filing overall reads as the report of a company with expanding strategic relevance,\nrobust earnings quality, and the balance-sheet capacity to keep investing ahead of demand."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec11_p20_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec11_p20_par0",
+      "section_title": "Appendix A. Key financial tables",
+      "page_start": 20,
+      "page_end": 21,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec11_p20_par0_ch0"
+      ],
+      "source_child_count": 1,
+      "parent_text": "Appendix A. Key financial tables\nTable A1. Income statement\nTable A2. Cash flow statement\nTable A3. Shareholder returns and stockholders\u2019 equity",
+      "extraction_text": "Appendix A. Key financial tables\nTable A1. Income statement\nTable A2. Cash flow statement\nTable A3. Shareholder returns and stockholders\u2019 equity"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec12_p21_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec12_p21_par0",
+      "section_title": "Appendix B. Executive officers and selected reference data",
+      "page_start": 21,
+      "page_end": 22,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec12_p21_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec12_p21_par0_ch1"
+      ],
+      "source_child_count": 2,
+      "parent_text": "Appendix B. Executive officers and selected reference data\nTable B1. Executive officers listed in the filing\nTable B2. Selected operating and reference data\nMethodology note\nThis condensed report was drafted from the full FY2025 Microsoft Form 10-K and cross-checked\nagainst Microsoft\u2019s Investor Relations annual report pages and the SEC filing page. It is designed to\npreserve material information while making the document substantially shorter and easier to\nreview.\nEnd of report.",
+      "extraction_text": "Appendix B. Executive officers and selected reference data\nTable B1. Executive officers listed in the filing\nTable B2. Selected operating and reference data\nMethodology note\nThis condensed report was drafted from the full FY2025 Microsoft Form 10-K and cross-checked\nagainst Microsoft\u2019s Investor Relations annual report pages and the SEC filing page. It is designed to\npreserve material information while making the document substantially shorter and easier to\nreview.\nEnd of report."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec13_p22_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec13_p22_par0",
+      "section_title": "Appendix C. Growth drivers by business line",
+      "page_start": 22,
+      "page_end": 24,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec13_p22_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec13_p22_par0_ch1"
+      ],
+      "source_child_count": 2,
+      "parent_text": "Appendix C. Growth drivers by business line\nThis appendix breaks the segment totals into the business lines management specifically\nhighlighted in MD&A. It provides a more granular view of what actually drove consolidated growth\nin FY2025.\nTable C1. Selected business-line growth metrics\nViewed together, these metrics show that Microsoft\u2019s best growth vectors were not isolated\nexperiments. They were scaled products already sitting on top of meaningful distribution: Azure,\nMicrosoft 365 Commercial cloud, Dynamics 365, Xbox content and services, and search\nmonetization. That is why the 10-K reads less like a turnaround story and more like a platform-\ndeepening story.\nTable C2. Management\u2019s stated primary growth levers by business",
+      "extraction_text": "Appendix C. Growth drivers by business line\nThis appendix breaks the segment totals into the business lines management specifically\nhighlighted in MD&A. It provides a more granular view of what actually drove consolidated growth\nin FY2025.\nTable C1. Selected business-line growth metrics\nViewed together, these metrics show that Microsoft\u2019s best growth vectors were not isolated\nexperiments. They were scaled products already sitting on top of meaningful distribution: Azure,\nMicrosoft 365 Commercial cloud, Dynamics 365, Xbox content and services, and search\nmonetization. That is why the 10-K reads less like a turnaround story and more like a platform-\ndeepening story.\nTable C2. Management\u2019s stated primary growth levers by business"
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec14_p24_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec14_p24_par0",
+      "section_title": "Appendix D. Liquidity, commitments, and lease detail",
+      "page_start": 24,
+      "page_end": 26,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec14_p24_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec14_p24_par0_ch1"
+      ],
+      "source_child_count": 2,
+      "parent_text": "Appendix D. Liquidity, commitments, and lease detail\nMicrosoft\u2019s liquidity remains strong, but the filing makes clear that the company has entered a\nperiod of unusually large forward commitments. Those commitments are mainly tied to datacenter\nexpansion, infrastructure capacity, and lease-backed buildout.\nTable D1. Unearned revenue recognition schedule\nTable D2. Lease profile\nTable D3. Lease maturity schedule\nThe practical implication is that Microsoft\u2019s AI buildout has a large embedded future cash profile\neven before considering ordinary opex. Investors focusing only on current-period capex would\nunderstate the long-tail funding requirements of the capacity strategy.",
+      "extraction_text": "Appendix D. Liquidity, commitments, and lease detail\nMicrosoft\u2019s liquidity remains strong, but the filing makes clear that the company has entered a\nperiod of unusually large forward commitments. Those commitments are mainly tied to datacenter\nexpansion, infrastructure capacity, and lease-backed buildout.\nTable D1. Unearned revenue recognition schedule\nTable D2. Lease profile\nTable D3. Lease maturity schedule\nThe practical implication is that Microsoft\u2019s AI buildout has a large embedded future cash profile\neven before considering ordinary opex. Investors focusing only on current-period capex would\nunderstate the long-tail funding requirements of the capacity strategy."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec15_p26_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec15_p26_par0",
+      "section_title": "Appendix E. Tax, debt, and market risk detail",
+      "page_start": 26,
+      "page_end": 28,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec15_p26_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec15_p26_par0_ch1",
+        "microsoft_fy2025_10k_summary_sec15_p26_par0_ch2"
+      ],
+      "source_child_count": 3,
+      "parent_text": "Appendix E. Tax, debt, and market risk detail\nThe tax and treasury sections of the 10-K matter because they capture the main non-operating\nvariables that can still move reported results materially: tax disputes, debt structure, valuation\nchanges in investments, and macro-market sensitivities.\nTable E1. Effective tax rate reconciliation highlights\nTable E2. Debt maturities\nTable E3. Market risk sensitivity analysis\nThe IRS transfer-pricing dispute is the single largest named tax exposure in the filing. The amount\nsought by the IRS is large enough to matter, but Microsoft does not signal an expectation of\n\nimminent resolution within the next 12 months. Treasury and market-risk exposures, by contrast,\nappear well within the company\u2019s capacity to absorb.",
+      "extraction_text": "Appendix E. Tax, debt, and market risk detail\nThe tax and treasury sections of the 10-K matter because they capture the main non-operating\nvariables that can still move reported results materially: tax disputes, debt structure, valuation\nchanges in investments, and macro-market sensitivities.\nTable E1. Effective tax rate reconciliation highlights\nTable E2. Debt maturities\nTable E3. Market risk sensitivity analysis\nThe IRS transfer-pricing dispute is the single largest named tax exposure in the filing. The amount\nsought by the IRS is large enough to matter, but Microsoft does not signal an expectation of\n\nimminent resolution within the next 12 months. Treasury and market-risk exposures, by contrast,\nappear well within the company\u2019s capacity to absorb."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec16_p28_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec16_p28_par0",
+      "section_title": "Appendix F. Cybersecurity and risk dashboard",
+      "page_start": 28,
+      "page_end": 30,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec16_p28_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec16_p28_par0_ch1"
+      ],
+      "source_child_count": 2,
+      "parent_text": "Appendix F. Cybersecurity and risk dashboard\nBecause Microsoft is both a cloud provider and a security vendor, cybersecurity risk is\nsimultaneously an operating risk, a product trust risk, and a reputational risk. The filing\u2019s language\nsuggests management views this as a board-level strategic issue rather than just a technical control\nfunction.\nTable F1. Cybersecurity operating model\nTable F2. Risk dashboard for monitoring the next 12\u201324 months\nThe broader lesson is that Microsoft\u2019s risk profile scales with its strategic role in the digital\neconomy. The stronger the platform position becomes, the more visible and consequential the\ntrust, compliance, and security obligations become as well.",
+      "extraction_text": "Appendix F. Cybersecurity and risk dashboard\nBecause Microsoft is both a cloud provider and a security vendor, cybersecurity risk is\nsimultaneously an operating risk, a product trust risk, and a reputational risk. The filing\u2019s language\nsuggests management views this as a board-level strategic issue rather than just a technical control\nfunction.\nTable F1. Cybersecurity operating model\nTable F2. Risk dashboard for monitoring the next 12\u201324 months\nThe broader lesson is that Microsoft\u2019s risk profile scales with its strategic role in the digital\neconomy. The stronger the platform position becomes, the more visible and consequential the\ntrust, compliance, and security obligations become as well."
+    },
+    {
+      "graph_input_id": "microsoft_fy2025_10k_summary_sec17_p30_par0_graph_input",
+      "document_id": "microsoft_fy2025_10k_summary",
+      "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+      "source_parent_id": "microsoft_fy2025_10k_summary_sec17_p30_par0",
+      "section_title": "Appendix G. Segment economics at a glance",
+      "page_start": 30,
+      "page_end": 30,
+      "content_type": "text",
+      "source_child_ids": [
+        "microsoft_fy2025_10k_summary_sec17_p30_par0_ch0",
+        "microsoft_fy2025_10k_summary_sec17_p30_par0_ch1"
+      ],
+      "source_child_count": 2,
+      "parent_text": "Appendix G. Segment economics at a glance\nThis appendix converts selected segment and company figures into simple economics that are\neasier to compare at a glance.\nTable G1. Operating margin by segment\nTable G2. Segment revenue mix of total company revenue\nTable G3. Selected capital intensity indicators\nThis view reinforces three points. First, PBP remains the highest-margin segment. Second,\nIntelligent Cloud is large enough to influence group economics materially even when its own\nmargin percentage moves. Third, Microsoft\u2019s FY2025 capital intensity was extraordinarily high for\na software company, reflecting the datacenter and AI build cycle.",
+      "extraction_text": "Appendix G. Segment economics at a glance\nThis appendix converts selected segment and company figures into simple economics that are\neasier to compare at a glance.\nTable G1. Operating margin by segment\nTable G2. Segment revenue mix of total company revenue\nTable G3. Selected capital intensity indicators\nThis view reinforces three points. First, PBP remains the highest-margin segment. Second,\nIntelligent Cloud is large enough to influence group economics materially even when its own\nmargin percentage moves. Third, Microsoft\u2019s FY2025 capital intensity was extraordinarily high for\na software company, reflecting the datacenter and AI build cycle."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.cer
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.npm-cache/
+frontend/test-results/
+frontend/playwright-report/
+frontend/dev_frontend_run.log
+
+# Build and deployment outputs
+.aws-sam/
+deployment/dist/
+
+# Runtime and local state
+*.sqlite-shm
+*.sqlite-wal
+tmp/
+temp/
+
+# Logs
+*.log
+*.out
+*.err
+artifacts/frontend_backend_logs/
+artifacts/runtime_logs/
+frontend/logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

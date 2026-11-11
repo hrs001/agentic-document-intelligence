@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-03-18T08:38:38.746909+00:00",
+  "result": {
+    "database_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\artifacts\\experiments\\component6_sqlite_database_build_live\\sql_db\\microsoft_fy2025_analyst_demo.sqlite",
+    "user_query": "Which segment had the highest revenue in FY2025?",
+    "target_tables": [
+      "financial_performance_by_segment"
+    ],
+    "generated_sql": "SELECT segment_name, revenue_usd_millions\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\n  AND revenue_usd_millions = (\n    SELECT MAX(revenue_usd_millions)\n    FROM financial_performance_by_segment\n    WHERE fiscal_year = 2025\n  )",
+    "validated_sql": "SELECT segment_name, revenue_usd_millions\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\n  AND revenue_usd_millions = (\n    SELECT MAX(revenue_usd_millions)\n    FROM financial_performance_by_segment\n    WHERE fiscal_year = 2025\n  )",
+    "row_limit": 50,
+    "row_count": 1,
+    "columns": [
+      "segment_name",
+      "revenue_usd_millions"
+    ],
+    "rows": [
+      {
+        "segment_name": "Intelligent Cloud",
+        "revenue_usd_millions": 108610
+      }
+    ],
+    "confidence": "high"
+  }
+}

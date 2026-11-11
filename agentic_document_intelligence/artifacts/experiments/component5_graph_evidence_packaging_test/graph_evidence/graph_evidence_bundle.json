@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-03-21T11:09:18.008891+00:00",
+  "result": {
+    "query": "x",
+    "database_path": "db",
+    "bundle_summary": {
+      "matched_node_count": 1,
+      "matched_edge_count": 1
+    },
+    "matched_nodes": [],
+    "matched_edges": [],
+    "assembled_graph_evidence_text": ""
+  }
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "query": "What was Microsoft's FY2025 revenue?",
+    "expected": {
+      "run_decomposition": false,
+      "run_multi_query": false,
+      "run_step_back": false,
+      "run_hyde": false,
+      "is_ambiguous_case": false,
+      "estimated_sub_queries": 1
+    }
+  },
+  {
+    "query": "Azure growth?",
+    "expected": {
+      "run_decomposition": false,
+      "run_multi_query": true,
+      "run_step_back": false,
+      "run_hyde": true,
+      "is_ambiguous_case": false,
+      "estimated_sub_queries": 1
+    }
+  },
+  {
+    "query": "What happened with Azure growth and what did management say about AI demand?",
+    "expected": {
+      "run_decomposition": true,
+      "run_multi_query": false,
+      "run_step_back": true,
+      "run_hyde": false,
+      "is_ambiguous_case": true,
+      "estimated_sub_queries": 2
+    }
+  },
+  {
+    "query": "Compare Azure and Microsoft 365 revenue drivers.",
+    "expected": {
+      "run_decomposition": false,
+      "run_multi_query": true,
+      "run_step_back": true,
+      "run_hyde": false,
+      "is_ambiguous_case": false,
+      "estimated_sub_queries": 1
+    }
+  },
+  {
+    "query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+    "expected": {
+      "run_decomposition": true,
+      "run_multi_query": false,
+      "run_step_back": false,
+      "run_hyde": false,
+      "is_ambiguous_case": true,
+      "estimated_sub_queries": 3
+    }
+  },
+  {
+    "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+    "expected": {
+      "run_decomposition": false,
+      "run_multi_query": false,
+      "run_step_back": true,
+      "run_hyde": false,
+      "is_ambiguous_case": true,
+      "estimated_sub_queries": 1
+    }
+  },
+  {
+    "query": "Revenue, operating income, and cash flow for FY2025 please.",
+    "expected": {
+      "run_decomposition": true,
+      "run_multi_query": false,
+      "run_step_back": false,
+      "run_hyde": false,
+      "is_ambiguous_case": false,
+      "estimated_sub_queries": 3
+    }
+  },
+  {
+    "query": "What did they say about AI and margins?",
+    "expected": {
+      "run_decomposition": true,
+      "run_multi_query": false,
+      "run_step_back": false,
+      "run_hyde": false,
+      "is_ambiguous_case": true,
+      "estimated_sub_queries": 2
+    }
+  },
+  {
+    "query": "Explain Microsoft's capital allocation strategy.",
+    "expected": {
+      "run_decomposition": false,
+      "run_multi_query": false,
+      "run_step_back": true,
+      "run_hyde": false,
+      "is_ambiguous_case": false,
+      "estimated_sub_queries": 1
+    }
+  },
+  {
+    "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+    "expected": {
+      "run_decomposition": true,
+      "run_multi_query": false,
+      "run_step_back": false,
+      "run_hyde": false,
+      "is_ambiguous_case": false,
+      "estimated_sub_queries": 2
+    }
+  },
+  {
+    "query": "Who are the executive officers and what does Satya Nadella do?",
+    "expected": {
+      "run_decomposition": true,
+      "run_multi_query": false,
+      "run_step_back": false,
+      "run_hyde": false,
+      "is_ambiguous_case": false,
+      "estimated_sub_queries": 2
+    }
+  },
+  {
+    "query": "Summarize the key risks related to AI demand, cybersecurity, and regulation.",
+    "expected": {
+      "run_decomposition": false,
+      "run_multi_query": false,
+      "run_step_back": true,
+      "run_hyde": false,
+      "is_ambiguous_case": false,
+      "estimated_sub_queries": 1
+    }
+  }
+]

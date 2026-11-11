@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-03-18T11:47:26.506527+00:00",
+  "result": {
+    "original_query": "x",
+    "repair_model": "gpt-5.1",
+    "repair_strategy": {
+      "strategy": "no_op"
+    },
+    "repair_applied": false,
+    "repair_success": true,
+    "repaired_answer": {
+      "answer_markdown": "x"
+    },
+    "post_repair_deterministic_signals": {}
+  }
+}

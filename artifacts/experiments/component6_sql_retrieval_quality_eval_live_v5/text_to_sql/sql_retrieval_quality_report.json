@@ -1,0 +1,588 @@
+{
+  "generated_at": "2026-03-18T08:54:18.068369+00:00",
+  "model": "gpt-5-mini",
+  "database_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\artifacts\\experiments\\component6_sqlite_database_build_live\\sql_db\\microsoft_fy2025_analyst_demo.sqlite",
+  "case_count": 10,
+  "strict_passed_count": 10,
+  "strict_pass_rate": 1.0,
+  "answer_passed_count": 10,
+  "answer_pass_rate": 1.0,
+  "case_results": [
+    {
+      "case_id": "sql_001_highest_segment_revenue_2025",
+      "query": "Which segment had the highest revenue in FY2025?",
+      "expected_target_tables": [
+        "financial_performance_by_segment"
+      ],
+      "generated_target_tables": [
+        "financial_performance_by_segment"
+      ],
+      "table_hit": true,
+      "generated_sql": "SELECT segment_name, revenue_usd_millions\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\nORDER BY revenue_usd_millions DESC\nLIMIT 1",
+      "validated_sql": "SELECT segment_name, revenue_usd_millions\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\nORDER BY revenue_usd_millions DESC\nLIMIT 1",
+      "confidence": "high",
+      "actual_result": {
+        "columns": [
+          "segment_name",
+          "revenue_usd_millions"
+        ],
+        "row_count": 1,
+        "rows": [
+          {
+            "segment_name": "Intelligent Cloud",
+            "revenue_usd_millions": 108610
+          }
+        ]
+      },
+      "expected_result": {
+        "columns": [
+          "segment_name",
+          "revenue_usd_millions"
+        ],
+        "rows": [
+          {
+            "segment_name": "Intelligent Cloud",
+            "revenue_usd_millions": 108610
+          }
+        ],
+        "row_count": 1
+      },
+      "comparison": {
+        "same_columns": true,
+        "rows_match": true,
+        "missing_columns": [],
+        "extra_columns": [],
+        "projected_rows_match": true,
+        "strict_passed": true,
+        "answer_passed": true,
+        "actual_row_count": 1,
+        "expected_row_count": 1
+      },
+      "strict_passed": true,
+      "answer_passed": true,
+      "passed": true
+    },
+    {
+      "case_id": "sql_002_best_segment_margin_2025",
+      "query": "Which Microsoft segment had the highest operating margin in FY2025?",
+      "expected_target_tables": [
+        "financial_performance_by_segment"
+      ],
+      "generated_target_tables": [
+        "financial_performance_by_segment"
+      ],
+      "table_hit": true,
+      "generated_sql": "SELECT segment_name, operating_margin_pct\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\nORDER BY operating_margin_pct DESC\nLIMIT 1",
+      "validated_sql": "SELECT segment_name, operating_margin_pct\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\nORDER BY operating_margin_pct DESC\nLIMIT 1",
+      "confidence": "high",
+      "actual_result": {
+        "columns": [
+          "segment_name",
+          "operating_margin_pct"
+        ],
+        "row_count": 1,
+        "rows": [
+          {
+            "segment_name": "Productivity and Business Processes",
+            "operating_margin_pct": 50.6
+          }
+        ]
+      },
+      "expected_result": {
+        "columns": [
+          "segment_name",
+          "operating_margin_pct"
+        ],
+        "rows": [
+          {
+            "segment_name": "Productivity and Business Processes",
+            "operating_margin_pct": 50.6
+          }
+        ],
+        "row_count": 1
+      },
+      "comparison": {
+        "same_columns": true,
+        "rows_match": true,
+        "missing_columns": [],
+        "extra_columns": [],
+        "projected_rows_match": true,
+        "strict_passed": true,
+        "answer_passed": true,
+        "actual_row_count": 1,
+        "expected_row_count": 1
+      },
+      "strict_passed": true,
+      "answer_passed": true,
+      "passed": true
+    },
+    {
+      "case_id": "sql_003_negative_growth_2023",
+      "query": "Which segment had negative year-over-year revenue growth in FY2023?",
+      "expected_target_tables": [
+        "financial_performance_by_segment"
+      ],
+      "generated_target_tables": [
+        "financial_performance_by_segment"
+      ],
+      "table_hit": true,
+      "generated_sql": "SELECT segment_name, yoy_revenue_growth_pct\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2023\n  AND yoy_revenue_growth_pct < 0",
+      "validated_sql": "SELECT segment_name, yoy_revenue_growth_pct\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2023\n  AND yoy_revenue_growth_pct < 0",
+      "confidence": "high",
+      "actual_result": {
+        "columns": [
+          "segment_name",
+          "yoy_revenue_growth_pct"
+        ],
+        "row_count": 1,
+        "rows": [
+          {
+            "segment_name": "More Personal Computing",
+            "yoy_revenue_growth_pct": -3.4
+          }
+        ]
+      },
+      "expected_result": {
+        "columns": [
+          "segment_name",
+          "yoy_revenue_growth_pct"
+        ],
+        "rows": [
+          {
+            "segment_name": "More Personal Computing",
+            "yoy_revenue_growth_pct": -3.4
+          }
+        ],
+        "row_count": 1
+      },
+      "comparison": {
+        "same_columns": true,
+        "rows_match": true,
+        "missing_columns": [],
+        "extra_columns": [],
+        "projected_rows_match": true,
+        "strict_passed": true,
+        "answer_passed": true,
+        "actual_row_count": 1,
+        "expected_row_count": 1
+      },
+      "strict_passed": true,
+      "answer_passed": true,
+      "passed": true
+    },
+    {
+      "case_id": "sql_004_geography_mix_2025",
+      "query": "What was the revenue mix percentage by geography in FY2025?",
+      "expected_target_tables": [
+        "geographic_revenue_mix"
+      ],
+      "generated_target_tables": [
+        "geographic_revenue_mix"
+      ],
+      "table_hit": true,
+      "generated_sql": "SELECT geography, revenue_mix_pct\nFROM geographic_revenue_mix\nWHERE fiscal_year = 2025\nORDER BY revenue_mix_pct DESC",
+      "validated_sql": "SELECT geography, revenue_mix_pct\nFROM geographic_revenue_mix\nWHERE fiscal_year = 2025\nORDER BY revenue_mix_pct DESC",
+      "confidence": "high",
+      "actual_result": {
+        "columns": [
+          "geography",
+          "revenue_mix_pct"
+        ],
+        "row_count": 2,
+        "rows": [
+          {
+            "geography": "Other Countries",
+            "revenue_mix_pct": 53.2
+          },
+          {
+            "geography": "United States",
+            "revenue_mix_pct": 46.8
+          }
+        ]
+      },
+      "expected_result": {
+        "columns": [
+          "geography",
+          "revenue_mix_pct"
+        ],
+        "rows": [
+          {
+            "geography": "Other Countries",
+            "revenue_mix_pct": 53.2
+          },
+          {
+            "geography": "United States",
+            "revenue_mix_pct": 46.8
+          }
+        ],
+        "row_count": 2
+      },
+      "comparison": {
+        "same_columns": true,
+        "rows_match": true,
+        "missing_columns": [],
+        "extra_columns": [],
+        "projected_rows_match": true,
+        "strict_passed": true,
+        "answer_passed": true,
+        "actual_row_count": 2,
+        "expected_row_count": 2
+      },
+      "strict_passed": true,
+      "answer_passed": true,
+      "passed": true
+    },
+    {
+      "case_id": "sql_005_geography_growth_2025",
+      "query": "Which geography had faster year-over-year revenue growth in FY2025?",
+      "expected_target_tables": [
+        "geographic_revenue_mix"
+      ],
+      "generated_target_tables": [
+        "geographic_revenue_mix"
+      ],
+      "table_hit": true,
+      "generated_sql": "SELECT geography, yoy_revenue_growth_pct\nFROM geographic_revenue_mix\nWHERE fiscal_year = 2025\nORDER BY yoy_revenue_growth_pct DESC\nLIMIT 1",
+      "validated_sql": "SELECT geography, yoy_revenue_growth_pct\nFROM geographic_revenue_mix\nWHERE fiscal_year = 2025\nORDER BY yoy_revenue_growth_pct DESC\nLIMIT 1",
+      "confidence": "high",
+      "actual_result": {
+        "columns": [
+          "geography",
+          "yoy_revenue_growth_pct"
+        ],
+        "row_count": 1,
+        "rows": [
+          {
+            "geography": "United States",
+            "yoy_revenue_growth_pct": 9.8
+          }
+        ]
+      },
+      "expected_result": {
+        "columns": [
+          "geography",
+          "yoy_revenue_growth_pct"
+        ],
+        "rows": [
+          {
+            "geography": "United States",
+            "yoy_revenue_growth_pct": 9.8
+          }
+        ],
+        "row_count": 1
+      },
+      "comparison": {
+        "same_columns": true,
+        "rows_match": true,
+        "missing_columns": [],
+        "extra_columns": [],
+        "projected_rows_match": true,
+        "strict_passed": true,
+        "answer_passed": true,
+        "actual_row_count": 1,
+        "expected_row_count": 1
+      },
+      "strict_passed": true,
+      "answer_passed": true,
+      "passed": true
+    },
+    {
+      "case_id": "sql_006_top_ai_product_family",
+      "query": "Which product family had the highest AI relevance score in FY2025?",
+      "expected_target_tables": [
+        "product_family_signals"
+      ],
+      "generated_target_tables": [
+        "product_family_signals"
+      ],
+      "table_hit": true,
+      "generated_sql": "SELECT product_family, ai_relevance_score\nFROM product_family_signals\nWHERE fiscal_year = 2025\nORDER BY ai_relevance_score DESC\nLIMIT 1",
+      "validated_sql": "SELECT product_family, ai_relevance_score\nFROM product_family_signals\nWHERE fiscal_year = 2025\nORDER BY ai_relevance_score DESC\nLIMIT 1",
+      "confidence": "high",
+      "actual_result": {
+        "columns": [
+          "product_family",
+          "ai_relevance_score"
+        ],
+        "row_count": 1,
+        "rows": [
+          {
+            "product_family": "Azure",
+            "ai_relevance_score": 95
+          }
+        ]
+      },
+      "expected_result": {
+        "columns": [
+          "product_family",
+          "ai_relevance_score"
+        ],
+        "rows": [
+          {
+            "product_family": "Azure",
+            "ai_relevance_score": 95
+          }
+        ],
+        "row_count": 1
+      },
+      "comparison": {
+        "same_columns": true,
+        "rows_match": true,
+        "missing_columns": [],
+        "extra_columns": [],
+        "projected_rows_match": true,
+        "strict_passed": true,
+        "answer_passed": true,
+        "actual_row_count": 1,
+        "expected_row_count": 1
+      },
+      "strict_passed": true,
+      "answer_passed": true,
+      "passed": true
+    },
+    {
+      "case_id": "sql_007_high_priority_products",
+      "query": "List the high strategic priority product families in FY2025 ordered by revenue signal index from highest to lowest.",
+      "expected_target_tables": [
+        "product_family_signals"
+      ],
+      "generated_target_tables": [
+        "product_family_signals"
+      ],
+      "table_hit": true,
+      "generated_sql": "SELECT product_family, revenue_signal_index\nFROM product_family_signals\nWHERE fiscal_year = 2025\n  AND strategic_priority = 'High'\nORDER BY revenue_signal_index DESC",
+      "validated_sql": "SELECT product_family, revenue_signal_index\nFROM product_family_signals\nWHERE fiscal_year = 2025\n  AND strategic_priority = 'High'\nORDER BY revenue_signal_index DESC",
+      "confidence": "high",
+      "actual_result": {
+        "columns": [
+          "product_family",
+          "revenue_signal_index"
+        ],
+        "row_count": 2,
+        "rows": [
+          {
+            "product_family": "Azure",
+            "revenue_signal_index": 96
+          },
+          {
+            "product_family": "Microsoft 365",
+            "revenue_signal_index": 92
+          }
+        ]
+      },
+      "expected_result": {
+        "columns": [
+          "product_family",
+          "revenue_signal_index"
+        ],
+        "rows": [
+          {
+            "product_family": "Azure",
+            "revenue_signal_index": 96
+          },
+          {
+            "product_family": "Microsoft 365",
+            "revenue_signal_index": 92
+          }
+        ],
+        "row_count": 2
+      },
+      "comparison": {
+        "same_columns": true,
+        "rows_match": true,
+        "missing_columns": [],
+        "extra_columns": [],
+        "projected_rows_match": true,
+        "strict_passed": true,
+        "answer_passed": true,
+        "actual_row_count": 2,
+        "expected_row_count": 2
+      },
+      "strict_passed": true,
+      "answer_passed": true,
+      "passed": true
+    },
+    {
+      "case_id": "sql_008_medium_priority_high_ai",
+      "query": "Which FY2025 product families have medium strategic priority and AI relevance score above 40?",
+      "expected_target_tables": [
+        "product_family_signals"
+      ],
+      "generated_target_tables": [
+        "product_family_signals"
+      ],
+      "table_hit": true,
+      "generated_sql": "SELECT product_family, ai_relevance_score\nFROM product_family_signals\nWHERE fiscal_year = 2025\n  AND strategic_priority = 'Medium'\n  AND ai_relevance_score > 40",
+      "validated_sql": "SELECT product_family, ai_relevance_score\nFROM product_family_signals\nWHERE fiscal_year = 2025\n  AND strategic_priority = 'Medium'\n  AND ai_relevance_score > 40",
+      "confidence": "high",
+      "actual_result": {
+        "columns": [
+          "product_family",
+          "ai_relevance_score"
+        ],
+        "row_count": 2,
+        "rows": [
+          {
+            "product_family": "Dynamics 365",
+            "ai_relevance_score": 63
+          },
+          {
+            "product_family": "Windows",
+            "ai_relevance_score": 41
+          }
+        ]
+      },
+      "expected_result": {
+        "columns": [
+          "product_family",
+          "ai_relevance_score"
+        ],
+        "rows": [
+          {
+            "product_family": "Dynamics 365",
+            "ai_relevance_score": 63
+          },
+          {
+            "product_family": "Windows",
+            "ai_relevance_score": 41
+          }
+        ],
+        "row_count": 2
+      },
+      "comparison": {
+        "same_columns": true,
+        "rows_match": true,
+        "missing_columns": [],
+        "extra_columns": [],
+        "projected_rows_match": true,
+        "strict_passed": true,
+        "answer_passed": true,
+        "actual_row_count": 2,
+        "expected_row_count": 2
+      },
+      "strict_passed": true,
+      "answer_passed": true,
+      "passed": true
+    },
+    {
+      "case_id": "sql_009_average_margin_2025",
+      "query": "What was the average operating margin across Microsoft segments in FY2025?",
+      "expected_target_tables": [
+        "financial_performance_by_segment"
+      ],
+      "generated_target_tables": [
+        "financial_performance_by_segment"
+      ],
+      "table_hit": true,
+      "generated_sql": "SELECT AVG(operating_margin_pct) AS average_operating_margin_pct\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025",
+      "validated_sql": "SELECT AVG(operating_margin_pct) AS average_operating_margin_pct\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025",
+      "confidence": "high",
+      "actual_result": {
+        "columns": [
+          "average_operating_margin_pct"
+        ],
+        "row_count": 1,
+        "rows": [
+          {
+            "average_operating_margin_pct": 39.1
+          }
+        ]
+      },
+      "expected_result": {
+        "columns": [
+          "average_operating_margin_pct"
+        ],
+        "rows": [
+          {
+            "average_operating_margin_pct": 39.1
+          }
+        ],
+        "row_count": 1
+      },
+      "comparison": {
+        "same_columns": true,
+        "rows_match": true,
+        "missing_columns": [],
+        "extra_columns": [],
+        "projected_rows_match": true,
+        "strict_passed": true,
+        "answer_passed": true,
+        "actual_row_count": 1,
+        "expected_row_count": 1
+      },
+      "strict_passed": true,
+      "answer_passed": true,
+      "passed": true
+    },
+    {
+      "case_id": "sql_010_segment_revenue_ranking_2025",
+      "query": "Rank Microsoft segments by FY2025 revenue from highest to lowest.",
+      "expected_target_tables": [
+        "financial_performance_by_segment"
+      ],
+      "generated_target_tables": [
+        "financial_performance_by_segment"
+      ],
+      "table_hit": true,
+      "generated_sql": "SELECT segment_name, revenue_usd_millions\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\nORDER BY revenue_usd_millions DESC",
+      "validated_sql": "SELECT segment_name, revenue_usd_millions\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\nORDER BY revenue_usd_millions DESC",
+      "confidence": "medium",
+      "actual_result": {
+        "columns": [
+          "segment_name",
+          "revenue_usd_millions"
+        ],
+        "row_count": 3,
+        "rows": [
+          {
+            "segment_name": "Intelligent Cloud",
+            "revenue_usd_millions": 108610
+          },
+          {
+            "segment_name": "Productivity and Business Processes",
+            "revenue_usd_millions": 81220
+          },
+          {
+            "segment_name": "More Personal Computing",
+            "revenue_usd_millions": 60610
+          }
+        ]
+      },
+      "expected_result": {
+        "columns": [
+          "segment_name",
+          "revenue_usd_millions"
+        ],
+        "rows": [
+          {
+            "segment_name": "Intelligent Cloud",
+            "revenue_usd_millions": 108610
+          },
+          {
+            "segment_name": "Productivity and Business Processes",
+            "revenue_usd_millions": 81220
+          },
+          {
+            "segment_name": "More Personal Computing",
+            "revenue_usd_millions": 60610
+          }
+        ],
+        "row_count": 3
+      },
+      "comparison": {
+        "same_columns": true,
+        "rows_match": true,
+        "missing_columns": [],
+        "extra_columns": [],
+        "projected_rows_match": true,
+        "strict_passed": true,
+        "answer_passed": true,
+        "actual_row_count": 3,
+        "expected_row_count": 3
+      },
+      "strict_passed": true,
+      "answer_passed": true,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "case_id": "route_001_sql_max_revenue",
+    "query": "Which segment had the highest revenue in FY2025?",
+    "must_include_sources": ["sql_structured"],
+    "must_exclude_sources": ["graph_relationships"]
+  },
+  {
+    "case_id": "route_002_sql_average_margin",
+    "query": "What was the average operating margin across Microsoft segments in FY2025?",
+    "must_include_sources": ["sql_structured"],
+    "must_exclude_sources": ["graph_relationships"]
+  },
+  {
+    "case_id": "route_003_graph_product_segment",
+    "query": "Which segment includes GitHub?",
+    "must_include_sources": ["graph_relationships"],
+    "must_exclude_sources": ["sql_structured"]
+  },
+  {
+    "case_id": "route_004_graph_relationship_platform",
+    "query": "How does Azure relate to GitHub in Microsoft's business structure?",
+    "must_include_sources": ["graph_relationships", "vector_document"],
+    "must_exclude_sources": ["sql_structured"]
+  },
+  {
+    "case_id": "route_005_vector_narrative_ai",
+    "query": "What did management say about AI demand?",
+    "must_include_sources": ["vector_document"],
+    "must_exclude_sources": ["sql_structured"]
+  },
+  {
+    "case_id": "route_006_vector_risk",
+    "query": "What were the main risks discussed in the filing?",
+    "must_include_sources": ["vector_document"],
+    "must_exclude_sources": ["sql_structured"]
+  },
+  {
+    "case_id": "route_007_mixed_ceo_and_revenue",
+    "query": "Who is the CEO of Microsoft and which segment had the highest revenue in FY2025?",
+    "must_include_sources": ["vector_document", "sql_structured"],
+    "must_exclude_sources": []
+  },
+  {
+    "case_id": "route_008_mixed_relationship_and_metric",
+    "query": "Which segment includes GitHub and what was that segment's revenue in FY2025?",
+    "must_include_sources": ["graph_relationships", "sql_structured"],
+    "must_exclude_sources": []
+  },
+  {
+    "case_id": "route_009_sql_filter",
+    "query": "Which FY2025 product families have medium strategic priority and AI relevance score above 40?",
+    "must_include_sources": ["sql_structured"],
+    "must_exclude_sources": ["graph_relationships"]
+  },
+  {
+    "case_id": "route_010_vector_strategy",
+    "query": "Explain Microsoft's AI strategy in the FY2025 summary.",
+    "must_include_sources": ["vector_document"],
+    "must_exclude_sources": ["sql_structured"]
+  },
+  {
+    "case_id": "route_011_graph_org_structure",
+    "query": "Which products and services are included under Intelligent Cloud?",
+    "must_include_sources": ["graph_relationships", "vector_document"],
+    "must_exclude_sources": ["sql_structured"]
+  },
+  {
+    "case_id": "route_012_sql_geography_mix",
+    "query": "What was the FY2025 revenue mix by geography?",
+    "must_include_sources": ["sql_structured"],
+    "must_exclude_sources": ["graph_relationships"]
+  },
+  {
+    "case_id": "route_013_vector_quote_style",
+    "query": "What does the document say about cybersecurity governance?",
+    "must_include_sources": ["vector_document"],
+    "must_exclude_sources": ["sql_structured"]
+  },
+  {
+    "case_id": "route_014_mixed_revenue_and_driver",
+    "query": "Which segment grew the fastest in FY2025 and what narrative driver was mentioned for it?",
+    "must_include_sources": ["sql_structured", "vector_document"],
+    "must_exclude_sources": []
+  },
+  {
+    "case_id": "route_015_graph_dependency",
+    "query": "What technologies or platforms does Azure support or integrate with?",
+    "must_include_sources": ["graph_relationships"],
+    "must_exclude_sources": ["sql_structured"]
+  }
+]

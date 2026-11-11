@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-03-21T11:09:21.518750+00:00",
+  "model": "gpt-5-mini",
+  "query": "Who is the CEO?",
+  "original_result": {
+    "sub_queries": [
+      "Who is the CEO?"
+    ]
+  },
+  "repaired_result": {
+    "sub_queries": [
+      "Who is the CEO of Microsoft?"
+    ],
+    "repair_applied": true
+  }
+}

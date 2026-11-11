@@ -1,0 +1,317 @@
+{
+  "generated_at": "2026-03-18T11:27:40.834028+00:00",
+  "case_id": "ans_008_vector_narrative",
+  "pipeline_model": "gpt-5-mini",
+  "result": {
+    "original_query": "What did management say about AI demand?",
+    "policy": {
+      "routing_policy": {
+        "routing_model": "gpt-5-mini",
+        "routing_method": "llm_with_capability_summaries_and_signal_validation_v1"
+      },
+      "latency_policy": {
+        "policy_model": "gpt-5-mini",
+        "policy_method": "llm_latency_optimized_execution_planner_v1"
+      }
+    },
+    "routing_summary": {
+      "sub_query_count": 1,
+      "source_usage": {
+        "vector_document": 1,
+        "graph_relationships": 0,
+        "sql_structured": 0
+      }
+    },
+    "execution_summary": {
+      "sub_query_count": 1,
+      "source_usage": {
+        "vector_document": 1,
+        "graph_relationships": 0,
+        "sql_structured": 0
+      },
+      "vector_profile_usage": {
+        "skip": 0,
+        "fast": 1,
+        "balanced": 0,
+        "full": 0,
+        "fast_escalated": 0,
+        "balanced_escalated": 0
+      }
+    },
+    "bundle_summary": {
+      "sub_query_count": 1,
+      "fact_count": 3,
+      "overlap_signal_count": 0,
+      "conflict_signal_count": 0
+    },
+    "normalized_facts": [
+      {
+        "fact_id": "vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+        "source_type": "vector_document",
+        "sub_query_id": "sq_1",
+        "sub_query": "What did management say about AI demand?",
+        "resolved_sub_query": "What did management say about AI demand?",
+        "fact_type": "text_evidence",
+        "summary": "AI demand. The company is also using finance leases extensively, so cash capex understates the\nfull infrastructure commitment.\nShareholder returns\nMicrosoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1\nbillion in cash dividends and spent $1",
+        "child_text": "AI demand. The company is also using finance leases extensively, so cash capex understates the\nfull infrastructure commitment.\nShareholder returns\nMicrosoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1\nbillion in cash dividends and spent $18.4 billion repurchasing common stock through open-market",
+        "parent_text": "recurring revenue and the scale of commercial contracts. The dominant use of that cash was\ninvesting activity, especially datacenter and infrastructure buildout.\nCapital expenditures reached $64.6 billion, up sharply from $44.5 billion. This is one of the clearest\nquantitative signals in the report: Microsoft is in a capital deployment phase to support cloud and\nAI demand. The company is also using finance leases extensively, so cash capex understates the\nfull infrastructure commitment.\nShareholder returns\nMicrosoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1\nbillion in cash dividends and spent $18.4 billion repurchasing common stock through open-market\nrepurchases. Dividends declared totaled $24.7 billion, or $3.32 per share. A new $60 billion\nrepurchase authorization approved in September 2024 commenced in April 2025 after the prior\nauthorization was completed; $57.3 billion remained available at June 30, 2025.\nTable 7. Selected contractual obligations as of June 30, 2025\nThese obligations confirm that Microsoft\u2019s AI and cloud expansion is not just an income-statement\nstory but a multi-year capital commitment story. Leases, construction commitments, and purchase\ncommitments together amount to a very large future funding requirement, although one\ncomfortably supported by current cash generation.",
+        "entities": [
+          "AI",
+          "The",
+          "Shareholder",
+          "Microsoft",
+          "During",
+          "Capital",
+          "This",
+          "6. Balance sheet, liquidity, cash flow, and capital allocation"
+        ],
+        "section_title": "6. Balance sheet, liquidity, cash flow, and capital allocation",
+        "parent_id": "microsoft_fy2025_10k_summary_sec6_p11_par1",
+        "citation": {
+          "source_chunk_id": "microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+          "parent_id": "microsoft_fy2025_10k_summary_sec6_p11_par1",
+          "document_id": "microsoft_fy2025_10k_summary",
+          "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+          "section_title": "6. Balance sheet, liquidity, cash flow, and capital allocation",
+          "page": 11,
+          "page_end": 13,
+          "content_type": "text"
+        },
+        "scores": {
+          "best_score": 2.71404028,
+          "rerank_score": 0.0,
+          "mmr_score": 0.0
+        }
+      },
+      {
+        "fact_id": "vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+        "source_type": "vector_document",
+        "sub_query_id": "sq_1",
+        "sub_query": "What did management say about AI demand?",
+        "resolved_sub_query": "What did management say about AI demand?",
+        "fact_type": "text_evidence",
+        "summary": "support AI demand.\n\uf0b7\nTax and legal matters remain important watch items, especially the IRS transfer-pricing dispute\nand data/privacy regulation in Europe.\n\uf0b7\nCybersecurity remains both a strategic differentiator and a material source of operational and\nreputational risk.\nIn strat",
+        "child_text": "support AI demand.\n\uf0b7\nTax and legal matters remain important watch items, especially the IRS transfer-pricing dispute\nand data/privacy regulation in Europe.\n\uf0b7\nCybersecurity remains both a strategic differentiator and a material source of operational and\nreputational risk.\nIn strategic terms, Microsoft\u2019s FY2025 filing reads as the report of a company trying to lead the next",
+        "parent_text": "applications, productivity, search, and security.\n\uf0b7\nCommercial recurring revenue remains the core earnings engine, especially Microsoft 365\nCommercial and Azure.\n\uf0b7\nSegment performance was broad-based: all three reporting segments posted revenue and\noperating income growth.\n\uf0b7\nCapital intensity increased sharply as Microsoft expanded datacenters and finance leases to\nsupport AI demand.\n\uf0b7\nTax and legal matters remain important watch items, especially the IRS transfer-pricing dispute\nand data/privacy regulation in Europe.\n\uf0b7\nCybersecurity remains both a strategic differentiator and a material source of operational and\nreputational risk.\nIn strategic terms, Microsoft\u2019s FY2025 filing reads as the report of a company trying to lead the next\nplatform cycle rather than defend the previous one. It is using its installed base in Office, Windows,\ndeveloper tools, enterprise identity, and cloud to distribute AI functionality broadly, while\nsimultaneously scaling the infrastructure required to support that distribution.",
+        "entities": [
+          "AI",
+          "Tax",
+          "Europe",
+          "Cybersecurity",
+          "In",
+          "Microsoft",
+          "Commercial",
+          "Azure",
+          "Segment",
+          "Capital",
+          "1. Executive summary"
+        ],
+        "section_title": "1. Executive summary",
+        "parent_id": "microsoft_fy2025_10k_summary_sec1_p3_par1",
+        "citation": {
+          "source_chunk_id": "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+          "parent_id": "microsoft_fy2025_10k_summary_sec1_p3_par1",
+          "document_id": "microsoft_fy2025_10k_summary",
+          "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+          "section_title": "1. Executive summary",
+          "page": 3,
+          "page_end": 4,
+          "content_type": "text"
+        },
+        "scores": {
+          "best_score": 2.65519476,
+          "rerank_score": 0.0,
+          "mmr_score": 0.0
+        }
+      },
+      {
+        "fact_id": "vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+        "source_type": "vector_document",
+        "sub_query_id": "sq_1",
+        "sub_query": "What did management say about AI demand?",
+        "resolved_sub_query": "What did management say about AI demand?",
+        "fact_type": "text_evidence",
+        "summary": "Operations and properties\nMicrosoft maintains regional operations service centers across the Americas, Asia Pacific, Europe,\nand the Middle East. It operates datacenters in these regions and says location and capacity\ndecisions increasingly reflect AI-service demand. The company ",
+        "child_text": "Operations and properties\nMicrosoft maintains regional operations service centers across the Americas, Asia Pacific, Europe,\nand the Middle East. It operates datacenters in these regions and says location and capacity\ndecisions increasingly reflect AI-service demand. The company stresses dependencies on permitted\nland, predictable energy, networking supplies, and server components including GPUs.",
+        "parent_text": "9. Operations, people, properties, and governance\nHuman capital\nAs of June 30, 2025, Microsoft employed approximately 228,000 full-time employees, including\n125,000 in the United States and 103,000 internationally. Of these, approximately 89,000 were in\noperations, 80,000 in product research and development, 44,000 in sales and marketing, and 15,000\nin general and administration.\nManagement says compensation, benefits, wellbeing programs, pay equity monitoring, continuous\nlearning, and employee listening systems are important to attracting and retaining talent. The\nfiling also emphasizes that security responsibility is embedded across teams and functions, not\nisolated within one technical group.\nOperations and properties\nMicrosoft maintains regional operations service centers across the Americas, Asia Pacific, Europe,\nand the Middle East. It operates datacenters in these regions and says location and capacity\ndecisions increasingly reflect AI-service demand. The company stresses dependencies on permitted\nland, predictable energy, networking supplies, and server components including GPUs.\nOn properties, Microsoft reports roughly 97 million square feet of total owned and leased property\nworldwide, of which 57 million square feet are in the U.S. and 40 million internationally. In King\nCounty, Washington, it has approximately 15 million square feet, including about 12 million square\nfeet of owned space on roughly 530 acres at headquarters.\nResearch and development",
+        "entities": [
+          "Operations",
+          "Microsoft",
+          "Americas",
+          "Asia Pacific",
+          "Europe",
+          "Middle East. It",
+          "AI",
+          "The",
+          "Human",
+          "As",
+          "June",
+          "United States",
+          "Of",
+          "Management",
+          "9. Operations, people, properties, and governance"
+        ],
+        "section_title": "9. Operations, people, properties, and governance",
+        "parent_id": "microsoft_fy2025_10k_summary_sec9_p17_par0",
+        "citation": {
+          "source_chunk_id": "microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+          "parent_id": "microsoft_fy2025_10k_summary_sec9_p17_par0",
+          "document_id": "microsoft_fy2025_10k_summary",
+          "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+          "section_title": "9. Operations, people, properties, and governance",
+          "page": 17,
+          "page_end": 19,
+          "content_type": "text"
+        },
+        "scores": {
+          "best_score": 2.12969041,
+          "rerank_score": 0.0,
+          "mmr_score": 0.0
+        }
+      }
+    ],
+    "overlap_signals": [],
+    "conflict_signals": [],
+    "sub_query_fusions": [
+      {
+        "sub_query_id": "sq_1",
+        "original_sub_query": "What did management say about AI demand?",
+        "resolved_sub_query": "What did management say about AI demand?",
+        "active_sources": [
+          "vector_document"
+        ],
+        "fact_count": 3,
+        "facts": [
+          {
+            "fact_id": "vector::microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+            "source_type": "vector_document",
+            "sub_query_id": "sq_1",
+            "sub_query": "What did management say about AI demand?",
+            "resolved_sub_query": "What did management say about AI demand?",
+            "fact_type": "text_evidence",
+            "summary": "AI demand. The company is also using finance leases extensively, so cash capex understates the\nfull infrastructure commitment.\nShareholder returns\nMicrosoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1\nbillion in cash dividends and spent $1",
+            "child_text": "AI demand. The company is also using finance leases extensively, so cash capex understates the\nfull infrastructure commitment.\nShareholder returns\nMicrosoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1\nbillion in cash dividends and spent $18.4 billion repurchasing common stock through open-market",
+            "parent_text": "recurring revenue and the scale of commercial contracts. The dominant use of that cash was\ninvesting activity, especially datacenter and infrastructure buildout.\nCapital expenditures reached $64.6 billion, up sharply from $44.5 billion. This is one of the clearest\nquantitative signals in the report: Microsoft is in a capital deployment phase to support cloud and\nAI demand. The company is also using finance leases extensively, so cash capex understates the\nfull infrastructure commitment.\nShareholder returns\nMicrosoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1\nbillion in cash dividends and spent $18.4 billion repurchasing common stock through open-market\nrepurchases. Dividends declared totaled $24.7 billion, or $3.32 per share. A new $60 billion\nrepurchase authorization approved in September 2024 commenced in April 2025 after the prior\nauthorization was completed; $57.3 billion remained available at June 30, 2025.\nTable 7. Selected contractual obligations as of June 30, 2025\nThese obligations confirm that Microsoft\u2019s AI and cloud expansion is not just an income-statement\nstory but a multi-year capital commitment story. Leases, construction commitments, and purchase\ncommitments together amount to a very large future funding requirement, although one\ncomfortably supported by current cash generation.",
+            "entities": [
+              "AI",
+              "The",
+              "Shareholder",
+              "Microsoft",
+              "During",
+              "Capital",
+              "This",
+              "6. Balance sheet, liquidity, cash flow, and capital allocation"
+            ],
+            "section_title": "6. Balance sheet, liquidity, cash flow, and capital allocation",
+            "parent_id": "microsoft_fy2025_10k_summary_sec6_p11_par1",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+              "parent_id": "microsoft_fy2025_10k_summary_sec6_p11_par1",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "6. Balance sheet, liquidity, cash flow, and capital allocation",
+              "page": 11,
+              "page_end": 13,
+              "content_type": "text"
+            },
+            "scores": {
+              "best_score": 2.71404028,
+              "rerank_score": 0.0,
+              "mmr_score": 0.0
+            }
+          },
+          {
+            "fact_id": "vector::microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "source_type": "vector_document",
+            "sub_query_id": "sq_1",
+            "sub_query": "What did management say about AI demand?",
+            "resolved_sub_query": "What did management say about AI demand?",
+            "fact_type": "text_evidence",
+            "summary": "support AI demand.\n\uf0b7\nTax and legal matters remain important watch items, especially the IRS transfer-pricing dispute\nand data/privacy regulation in Europe.\n\uf0b7\nCybersecurity remains both a strategic differentiator and a material source of operational and\nreputational risk.\nIn strat",
+            "child_text": "support AI demand.\n\uf0b7\nTax and legal matters remain important watch items, especially the IRS transfer-pricing dispute\nand data/privacy regulation in Europe.\n\uf0b7\nCybersecurity remains both a strategic differentiator and a material source of operational and\nreputational risk.\nIn strategic terms, Microsoft\u2019s FY2025 filing reads as the report of a company trying to lead the next",
+            "parent_text": "applications, productivity, search, and security.\n\uf0b7\nCommercial recurring revenue remains the core earnings engine, especially Microsoft 365\nCommercial and Azure.\n\uf0b7\nSegment performance was broad-based: all three reporting segments posted revenue and\noperating income growth.\n\uf0b7\nCapital intensity increased sharply as Microsoft expanded datacenters and finance leases to\nsupport AI demand.\n\uf0b7\nTax and legal matters remain important watch items, especially the IRS transfer-pricing dispute\nand data/privacy regulation in Europe.\n\uf0b7\nCybersecurity remains both a strategic differentiator and a material source of operational and\nreputational risk.\nIn strategic terms, Microsoft\u2019s FY2025 filing reads as the report of a company trying to lead the next\nplatform cycle rather than defend the previous one. It is using its installed base in Office, Windows,\ndeveloper tools, enterprise identity, and cloud to distribute AI functionality broadly, while\nsimultaneously scaling the infrastructure required to support that distribution.",
+            "entities": [
+              "AI",
+              "Tax",
+              "Europe",
+              "Cybersecurity",
+              "In",
+              "Microsoft",
+              "Commercial",
+              "Azure",
+              "Segment",
+              "Capital",
+              "1. Executive summary"
+            ],
+            "section_title": "1. Executive summary",
+            "parent_id": "microsoft_fy2025_10k_summary_sec1_p3_par1",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+              "parent_id": "microsoft_fy2025_10k_summary_sec1_p3_par1",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "1. Executive summary",
+              "page": 3,
+              "page_end": 4,
+              "content_type": "text"
+            },
+            "scores": {
+              "best_score": 2.65519476,
+              "rerank_score": 0.0,
+              "mmr_score": 0.0
+            }
+          },
+          {
+            "fact_id": "vector::microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+            "source_type": "vector_document",
+            "sub_query_id": "sq_1",
+            "sub_query": "What did management say about AI demand?",
+            "resolved_sub_query": "What did management say about AI demand?",
+            "fact_type": "text_evidence",
+            "summary": "Operations and properties\nMicrosoft maintains regional operations service centers across the Americas, Asia Pacific, Europe,\nand the Middle East. It operates datacenters in these regions and says location and capacity\ndecisions increasingly reflect AI-service demand. The company ",
+            "child_text": "Operations and properties\nMicrosoft maintains regional operations service centers across the Americas, Asia Pacific, Europe,\nand the Middle East. It operates datacenters in these regions and says location and capacity\ndecisions increasingly reflect AI-service demand. The company stresses dependencies on permitted\nland, predictable energy, networking supplies, and server components including GPUs.",
+            "parent_text": "9. Operations, people, properties, and governance\nHuman capital\nAs of June 30, 2025, Microsoft employed approximately 228,000 full-time employees, including\n125,000 in the United States and 103,000 internationally. Of these, approximately 89,000 were in\noperations, 80,000 in product research and development, 44,000 in sales and marketing, and 15,000\nin general and administration.\nManagement says compensation, benefits, wellbeing programs, pay equity monitoring, continuous\nlearning, and employee listening systems are important to attracting and retaining talent. The\nfiling also emphasizes that security responsibility is embedded across teams and functions, not\nisolated within one technical group.\nOperations and properties\nMicrosoft maintains regional operations service centers across the Americas, Asia Pacific, Europe,\nand the Middle East. It operates datacenters in these regions and says location and capacity\ndecisions increasingly reflect AI-service demand. The company stresses dependencies on permitted\nland, predictable energy, networking supplies, and server components including GPUs.\nOn properties, Microsoft reports roughly 97 million square feet of total owned and leased property\nworldwide, of which 57 million square feet are in the U.S. and 40 million internationally. In King\nCounty, Washington, it has approximately 15 million square feet, including about 12 million square\nfeet of owned space on roughly 530 acres at headquarters.\nResearch and development",
+            "entities": [
+              "Operations",
+              "Microsoft",
+              "Americas",
+              "Asia Pacific",
+              "Europe",
+              "Middle East. It",
+              "AI",
+              "The",
+              "Human",
+              "As",
+              "June",
+              "United States",
+              "Of",
+              "Management",
+              "9. Operations, people, properties, and governance"
+            ],
+            "section_title": "9. Operations, people, properties, and governance",
+            "parent_id": "microsoft_fy2025_10k_summary_sec9_p17_par0",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+              "parent_id": "microsoft_fy2025_10k_summary_sec9_p17_par0",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "9. Operations, people, properties, and governance",
+              "page": 17,
+              "page_end": 19,
+              "content_type": "text"
+            },
+            "scores": {
+              "best_score": 2.12969041,
+              "rerank_score": 0.0,
+              "mmr_score": 0.0
+            }
+          }
+        ],
+        "overlap_signals": [],
+        "conflict_signals": [],
+        "assembled_fused_sub_query_text": "[Fused Sub-query] What did management say about AI demand?\nResolved Query: What did management say about AI demand?\nActive Sources: vector_document\nFact Count: 3\nOverlap Signals: 0\nConflict Signals: 0\nAnswer-Ready Facts:\n[Vector] AI demand. The company is also using finance leases extensively, so cash capex understates the\nfull infrastructure commitment.\nShareholder returns\nMicrosoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1\nbillion in cash dividends and spent $1 | section=6. Balance sheet, liquidity, cash flow, and capital allocation | pages=11 - 13\n[Vector] support AI demand.\n\uf0b7\nTax and legal matters remain important watch items, especially the IRS transfer-pricing dispute\nand data/privacy regulation in Europe.\n\uf0b7\nCybersecurity remains both a strategic differentiator and a material source of operational and\nreputational risk.\nIn strat | section=1. Executive summary | pages=3 - 4\n[Vector] Operations and properties\nMicrosoft maintains regional operations service centers across the Americas, Asia Pacific, Europe,\nand the Middle East. It operates datacenters in these regions and says location and capacity\ndecisions increasingly reflect AI-service demand. The company  | section=9. Operations, people, properties, and governance | pages=17 - 19"
+      }
+    ],
+    "assembled_fused_evidence_text": "[Fused Sub-query] What did management say about AI demand?\nResolved Query: What did management say about AI demand?\nActive Sources: vector_document\nFact Count: 3\nOverlap Signals: 0\nConflict Signals: 0\nAnswer-Ready Facts:\n[Vector] AI demand. The company is also using finance leases extensively, so cash capex understates the\nfull infrastructure commitment.\nShareholder returns\nMicrosoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1\nbillion in cash dividends and spent $1 | section=6. Balance sheet, liquidity, cash flow, and capital allocation | pages=11 - 13\n[Vector] support AI demand.\n\uf0b7\nTax and legal matters remain important watch items, especially the IRS transfer-pricing dispute\nand data/privacy regulation in Europe.\n\uf0b7\nCybersecurity remains both a strategic differentiator and a material source of operational and\nreputational risk.\nIn strat | section=1. Executive summary | pages=3 - 4\n[Vector] Operations and properties\nMicrosoft maintains regional operations service centers across the Americas, Asia Pacific, Europe,\nand the Middle East. It operates datacenters in these regions and says location and capacity\ndecisions increasingly reflect AI-service demand. The company  | section=9. Operations, people, properties, and governance | pages=17 - 19"
+  }
+}

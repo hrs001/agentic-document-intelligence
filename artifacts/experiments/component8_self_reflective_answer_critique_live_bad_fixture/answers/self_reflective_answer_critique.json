@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-03-18T11:44:44.727882+00:00",
+  "result": {
+    "original_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+    "answer_model": "gpt-5.1",
+    "critique_model": "gpt-5-mini",
+    "deterministic_signals": {
+      "inline_fact_ids": [],
+      "missing_inline_for_used": [
+        "graph_edge::e1",
+        "sql::sq_1::1"
+      ],
+      "inline_not_declared": [],
+      "unknown_used_fact_ids": [],
+      "unanswered_sub_queries": [
+        "What was its FY2025 revenue?"
+      ],
+      "uncovered_sub_queries": [],
+      "used_source_types": [
+        "graph_relationships",
+        "sql_structured"
+      ],
+      "used_conflict_fact_ids": [],
+      "conflict_acknowledged": false,
+      "needs_correction": true
+    },
+    "llm_critique": {
+      "grounded": true,
+      "complete": false,
+      "needs_correction": true,
+      "confidence": "high",
+      "issue_summary": "Answer correctly identifies the segment but fails to provide the FY2025 revenue and does not include inline evidence or units for the used facts.",
+      "strengths": [
+        "Correctly identifies that GitHub is included in the Intelligent Cloud segment (supported by graph relationship fact).",
+        "Used relevant sources (graph relationships and SQL structured) to attempt to answer the query."
+      ],
+      "issues": [
+        {
+          "issue_type": "missing_subquery_answer",
+          "severity": "high",
+          "description": "The answer did not state the FY2025 revenue for the segment that includes GitHub, leaving the user's second sub-query unanswered.",
+          "affected_sub_queries": [
+            "What was its FY2025 revenue?"
+          ],
+          "repair_action": "Include the FY2025 revenue value pulled from the structured SQL fact (sql::sq_1::1) when presenting the final answer."
+        },
+        {
+          "issue_type": "missing_inline_evidence",
+          "severity": "medium",
+          "description": "The response used facts (graph_edge::e1 and sql::sq_1::1) but did not include inline citations or otherwise indicate which facts support which claims.",
+          "affected_sub_queries": [
+            "Which segment includes GitHub and what was its FY2025 revenue?"
+          ],
+          "repair_action": "Attach or cite the specific fact IDs/sources when making each claim (e.g., cite graph_edge::e1 for the segment relationship and sql::sq_1::1 for the revenue figure)."
+        },
+        {
+          "issue_type": "unclear_units_or_presentation",
+          "severity": "low",
+          "description": "The used SQL fact records revenue as 'revenue_usd_millions=108610' but the answer did not present any revenue figure or clarify units/format.",
+          "affected_sub_queries": [
+            "What was its FY2025 revenue?"
+          ],
+          "repair_action": "When adding the revenue, present the value with explicit units (e.g., USD millions) and offer a human-friendly conversion (e.g., $108,610 million = $108.61 billion)."
+        }
+      ],
+      "repair_plan": [
+        "Produce a corrected answer that states both parts: (a) the segment that includes GitHub, and (b) the FY2025 revenue for that segment.",
+        "Cite the supporting facts inline: graph_edge::e1 to support the segment claim and sql::sq_1::1 to support the revenue figure.",
+        "Present the revenue with explicit units using the SQL field (revenue_usd_millions=108610) and include a converted value in standard notation (e.g., $108.61 billion) for readability.",
+        "Confirm fiscal year context (FY2025) matches the SQL row's reporting period before finalizing; if any source conflicts are found, surface the discrepancy and provide both values and sources."
+      ]
+    },
+    "final_critique": {
+      "grounded": true,
+      "complete": false,
+      "needs_correction": true,
+      "confidence": "high",
+      "issue_summary": "Answer correctly identifies the segment but fails to provide the FY2025 revenue and does not include inline evidence or units for the used facts.",
+      "strengths": [
+        "Correctly identifies that GitHub is included in the Intelligent Cloud segment (supported by graph relationship fact).",
+        "Used relevant sources (graph relationships and SQL structured) to attempt to answer the query."
+      ],
+      "issues": [
+        {
+          "issue_type": "missing_subquery_answer",
+          "severity": "high",
+          "description": "The answer did not state the FY2025 revenue for the segment that includes GitHub, leaving the user's second sub-query unanswered.",
+          "affected_sub_queries": [
+            "What was its FY2025 revenue?"
+          ],
+          "repair_action": "Include the FY2025 revenue value pulled from the structured SQL fact (sql::sq_1::1) when presenting the final answer."
+        },
+        {
+          "issue_type": "missing_inline_evidence",
+          "severity": "medium",
+          "description": "The response used facts (graph_edge::e1 and sql::sq_1::1) but did not include inline citations or otherwise indicate which facts support which claims.",
+          "affected_sub_queries": [
+            "Which segment includes GitHub and what was its FY2025 revenue?"
+          ],
+          "repair_action": "Attach or cite the specific fact IDs/sources when making each claim (e.g., cite graph_edge::e1 for the segment relationship and sql::sq_1::1 for the revenue figure)."
+        },
+        {
+          "issue_type": "unclear_units_or_presentation",
+          "severity": "low",
+          "description": "The used SQL fact records revenue as 'revenue_usd_millions=108610' but the answer did not present any revenue figure or clarify units/format.",
+          "affected_sub_queries": [
+            "What was its FY2025 revenue?"
+          ],
+          "repair_action": "When adding the revenue, present the value with explicit units (e.g., USD millions) and offer a human-friendly conversion (e.g., $108,610 million = $108.61 billion)."
+        },
+        {
+          "issue_type": "missing_inline_citations",
+          "severity": "high",
+          "description": "Some used facts are not cited inline in the answer text.",
+          "affected_sub_queries": [],
+          "repair_action": "Regenerate the answer with inline citations for every used fact."
+        },
+        {
+          "issue_type": "coverage_gap",
+          "severity": "high",
+          "description": "The answer leaves at least one sub-query unanswered or unsupported.",
+          "affected_sub_queries": [
+            "What was its FY2025 revenue?"
+          ],
+          "repair_action": "Run a targeted correction pass for the missing sub-query coverage."
+        }
+      ],
+      "repair_plan": [
+        "Produce a corrected answer that states both parts: (a) the segment that includes GitHub, and (b) the FY2025 revenue for that segment.",
+        "Cite the supporting facts inline: graph_edge::e1 to support the segment claim and sql::sq_1::1 to support the revenue figure.",
+        "Present the revenue with explicit units using the SQL field (revenue_usd_millions=108610) and include a converted value in standard notation (e.g., $108.61 billion) for readability.",
+        "Confirm fiscal year context (FY2025) matches the SQL row's reporting period before finalizing; if any source conflicts are found, surface the discrepancy and provide both values and sources.",
+        "Regenerate the answer with inline fact-id citations for all used facts.",
+        "Run targeted answer repair for uncovered or unanswered sub-queries."
+      ]
+    },
+    "usage": {
+      "completion_tokens": 1498,
+      "prompt_tokens": 665,
+      "total_tokens": 2163,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 832,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  }
+}

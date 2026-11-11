@@ -1,0 +1,10 @@
+fiscal_year,segment_name,revenue_usd_millions,operating_income_usd_millions,operating_margin_pct,yoy_revenue_growth_pct,narrative_driver
+2023,Productivity and Business Processes,69040,33610,48.7,8.1,Commercial seat expansion and durable Microsoft 365 demand
+2024,Productivity and Business Processes,74860,37240,49.7,8.4,Office commercial growth and stable LinkedIn monetization
+2025,Productivity and Business Processes,81220,41080,50.6,8.5,Copilot attach, Microsoft 365 premium mix, and recurring enterprise demand
+2023,Intelligent Cloud,87910,38110,43.4,17.2,Azure consumption growth and enterprise cloud modernization
+2024,Intelligent Cloud,96480,43050,44.6,9.7,Azure AI services expansion and resilient infrastructure demand
+2025,Intelligent Cloud,108610,49870,45.9,12.6,AI infrastructure demand, Azure workload growth, and platform expansion
+2023,More Personal Computing,54990,10310,18.7,-3.4,PC market normalization offset by gaming and search resilience
+2024,More Personal Computing,57720,11890,20.6,5.0,Device stabilization and advertising recovery
+2025,More Personal Computing,60610,12620,20.8,5.0,Windows ecosystem stabilization and search monetization gains

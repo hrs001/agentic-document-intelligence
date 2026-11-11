@@ -1,0 +1,74 @@
+[
+  {
+    "case_id": "irs_risk",
+    "query": "What IRS dispute does Microsoft face?",
+    "expected_node_names": ["Microsoft", "IRS transfer-pricing dispute"],
+    "expected_relations": [
+      {
+        "source": "Microsoft",
+        "relation_type": "faces",
+        "target": "IRS transfer-pricing dispute"
+      }
+    ]
+  },
+  {
+    "case_id": "github_segment",
+    "query": "Which segment includes GitHub?",
+    "expected_node_names": ["GitHub", "Intelligent Cloud"],
+    "expected_relations": [
+      {
+        "source": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target": "GitHub"
+      }
+    ]
+  },
+  {
+    "case_id": "linkedin_segment",
+    "query": "Which segment includes LinkedIn?",
+    "expected_node_names": ["LinkedIn", "Productivity and Business Processes"],
+    "expected_relations": [
+      {
+        "source": "Productivity and Business Processes",
+        "relation_type": "includes",
+        "target": "LinkedIn"
+      }
+    ]
+  },
+  {
+    "case_id": "azure_ai_infra",
+    "query": "How is Azure connected to AI infrastructure?",
+    "expected_node_names": ["Azure", "AI infrastructure"],
+    "expected_relations": [
+      {
+        "source": "Azure",
+        "relation_type": "uses",
+        "target": "AI infrastructure"
+      }
+    ]
+  },
+  {
+    "case_id": "mpc_windows",
+    "query": "What does More Personal Computing include?",
+    "expected_node_names": ["More Personal Computing", "Windows"],
+    "expected_relations": [
+      {
+        "source": "More Personal Computing",
+        "relation_type": "includes",
+        "target": "Windows"
+      }
+    ]
+  },
+  {
+    "case_id": "activision_integration",
+    "query": "What company did Microsoft integrate?",
+    "expected_node_names": ["Microsoft", "Activision Blizzard"],
+    "expected_relations": [
+      {
+        "source": "Microsoft",
+        "relation_type": "integrates",
+        "target": "Activision Blizzard"
+      }
+    ]
+  }
+]

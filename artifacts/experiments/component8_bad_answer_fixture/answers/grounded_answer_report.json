@@ -1,0 +1,16 @@
+{
+  "result": {
+    "original_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+    "model": "gpt-5.1",
+    "answer_markdown": "GitHub is included in Intelligent Cloud.",
+    "used_fact_ids": [
+      "graph_edge::e1",
+      "sql::sq_1::1"
+    ],
+    "citations": [],
+    "unanswered_sub_queries": [
+      "What was its FY2025 revenue?"
+    ],
+    "confidence": "medium"
+  }
+}

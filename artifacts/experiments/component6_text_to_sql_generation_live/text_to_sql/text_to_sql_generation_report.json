@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-03-18T08:14:15.891903+00:00",
+  "model": "gpt-5-mini",
+  "result": {
+    "user_query": "Which segment had the highest revenue in FY2025?",
+    "target_tables": [
+      "financial_performance_by_segment"
+    ],
+    "sql_query": "SELECT segment_name, revenue_usd_millions\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\n  AND revenue_usd_millions = (\n    SELECT MAX(revenue_usd_millions)\n    FROM financial_performance_by_segment\n    WHERE fiscal_year = 2025\n  )",
+    "rationale": "The financial_performance_by_segment table contains segment-level revenue by fiscal_year. The query filters to fiscal_year = 2025 and returns the segment(s) with the maximum revenue_usd_millions for that year. Using a subquery ensures ties for highest revenue are included.",
+    "confidence": "high"
+  }
+}

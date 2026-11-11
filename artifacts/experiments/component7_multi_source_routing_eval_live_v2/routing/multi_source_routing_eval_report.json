@@ -1,0 +1,420 @@
+{
+  "generated_at": "2026-03-18T09:03:19.931027+00:00",
+  "model": "gpt-5-mini",
+  "case_count": 15,
+  "passed_count": 15,
+  "pass_rate": 1.0,
+  "case_results": [
+    {
+      "case_id": "route_001_sql_max_revenue",
+      "query": "Which segment had the highest revenue in FY2025?",
+      "routing_decision": {
+        "sub_query": "Which segment had the highest revenue in FY2025?",
+        "primary_source": "sql_structured",
+        "selected_sources": [
+          "sql_structured"
+        ],
+        "reasoning": "This is a numeric ranking question (which segment had the highest revenue in a specified fiscal year). The financial_performance_by_segment table in the SQL schema contains fiscal_year and revenue_usd_millions, so the SQL source is the appropriate and authoritative source to compute the max revenue and identify the segment.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 8,
+          "numeric_signal_count": 2,
+          "relationship_signal_count": 0,
+          "narrative_signal_count": 0,
+          "metric_signal_count": 1,
+          "clause_count": 1,
+          "looks_multi_source": false
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "route_002_sql_average_margin",
+      "query": "What was the average operating margin across Microsoft segments in FY2025?",
+      "routing_decision": {
+        "sub_query": "What was the average operating margin across Microsoft segments in FY2025?",
+        "primary_source": "sql_structured",
+        "selected_sources": [
+          "sql_structured"
+        ],
+        "reasoning": "This question requests a numeric aggregation (average operating margin across segments for a specific fiscal year). The financial_performance_by_segment table in the SQL schema includes operating_margin_pct by segment and fiscal_year, so the SQL source can directly compute the average for FY2025.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 11,
+          "numeric_signal_count": 3,
+          "relationship_signal_count": 0,
+          "narrative_signal_count": 0,
+          "metric_signal_count": 1,
+          "clause_count": 1,
+          "looks_multi_source": false
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "route_003_graph_product_segment",
+      "query": "Which segment includes GitHub?",
+      "routing_decision": {
+        "sub_query": "Which segment includes GitHub?",
+        "primary_source": "graph_relationships",
+        "selected_sources": [
+          "graph_relationships"
+        ],
+        "reasoning": "This is a product-to-segment membership question (which segment includes the product GitHub). The graph_relationships source is optimized for entity-to-entity relationships and contains 'includes' relations mapping products/services to segments, so it is the best and smallest source to answer this query.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 4,
+          "numeric_signal_count": 0,
+          "relationship_signal_count": 2,
+          "narrative_signal_count": 0,
+          "metric_signal_count": 0,
+          "clause_count": 1,
+          "looks_multi_source": false
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "route_004_graph_relationship_platform",
+      "query": "How does Azure relate to GitHub in Microsoft's business structure?",
+      "routing_decision": {
+        "sub_query": "How does Azure relate to GitHub in Microsoft's business structure?",
+        "primary_source": "graph_relationships",
+        "selected_sources": [
+          "graph_relationships",
+          "vector_document"
+        ],
+        "reasoning": "The question is fundamentally about the relationship between two Microsoft entities/products (Azure and GitHub) \u2014 i.e., inclusion, integration, dependencies, and organizational positioning. The graph_relationships source is optimized for entity-to-entity relationships (relation types like integrates, supports, depends_on, includes) and is therefore the best single source to retrieve how Azure and GitHub are connected within Microsoft\u2019s structure. No numeric aggregation or narrative disclosure requiring RAG over filings is requested, so additional sources are not needed.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 10,
+          "numeric_signal_count": 0,
+          "relationship_signal_count": 1,
+          "narrative_signal_count": 2,
+          "metric_signal_count": 0,
+          "clause_count": 1,
+          "looks_multi_source": true
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "route_005_vector_narrative_ai",
+      "query": "What did management say about AI demand?",
+      "routing_decision": {
+        "sub_query": "What did management say about AI demand?",
+        "primary_source": "vector_document",
+        "selected_sources": [
+          "vector_document"
+        ],
+        "reasoning": "This question asks for management commentary \u2014 a qualitative, narrative disclosure best found in MD&A, earnings commentary, risk/strategy sections, or management quotes. The vector_document RAG over the FY2025 filing text chunks is the appropriate source to retrieve direct quotes and explanatory language. SQL is for numeric aggregations and the graph is for entity relationships, neither of which fit this request.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 7,
+          "numeric_signal_count": 0,
+          "relationship_signal_count": 0,
+          "narrative_signal_count": 2,
+          "metric_signal_count": 0,
+          "clause_count": 1,
+          "looks_multi_source": false
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "route_006_vector_risk",
+      "query": "What were the main risks discussed in the filing?",
+      "routing_decision": {
+        "sub_query": "What were the main risks discussed in the filing?",
+        "primary_source": "vector_document",
+        "selected_sources": [
+          "vector_document"
+        ],
+        "reasoning": "This question requests the filing's risk discussion\u2014qualitative, narrative risk factors and management commentary. Those disclosures are stored as narrative text in the document corpus (10-K style) and are best retrieved via vector-document RAG. The SQL tables contain numeric and structured signals only and the graph is for entity relationships, so they are not appropriate here.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 9,
+          "numeric_signal_count": 0,
+          "relationship_signal_count": 0,
+          "narrative_signal_count": 0,
+          "metric_signal_count": 0,
+          "clause_count": 1,
+          "looks_multi_source": false
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "route_007_mixed_ceo_and_revenue",
+      "query": "Who is the CEO of Microsoft and which segment had the highest revenue in FY2025?",
+      "routing_decision": {
+        "sub_query": "Who is the CEO of Microsoft and which segment had the highest revenue in FY2025?",
+        "primary_source": "sql_structured",
+        "selected_sources": [
+          "sql_structured",
+          "graph_relationships",
+          "vector_document"
+        ],
+        "reasoning": "This question has two distinct evidence needs: the CEO is an organizational leadership fact (best retrieved from the knowledge graph of entities/relationships), while which segment had the highest FY2025 revenue is a numeric ranking/aggregation best answered from the financial_performance_by_segment SQL table. Therefore use graph_relationships to get the CEO and sql_structured to compute the top revenue segment for FY2025.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 15,
+          "numeric_signal_count": 2,
+          "relationship_signal_count": 1,
+          "narrative_signal_count": 0,
+          "metric_signal_count": 1,
+          "clause_count": 2,
+          "looks_multi_source": true
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "route_008_mixed_relationship_and_metric",
+      "query": "Which segment includes GitHub and what was that segment's revenue in FY2025?",
+      "routing_decision": {
+        "sub_query": "Which segment includes GitHub and what was that segment's revenue in FY2025?",
+        "primary_source": "graph_relationships",
+        "selected_sources": [
+          "graph_relationships",
+          "sql_structured"
+        ],
+        "reasoning": "Determining which segment 'includes' GitHub is an entity-to-entity relationship best handled by graph_relationships (product -> segment mapping). Once the segment is identified, the numeric revenue for FY2025 should be retrieved from the financial_performance_by_segment table in the SQL schema (sql_structured). Therefore both sources are needed: graph_relationships to map GitHub to the correct segment, and sql_structured to fetch that segment's FY2025 revenue.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 12,
+          "numeric_signal_count": 2,
+          "relationship_signal_count": 2,
+          "narrative_signal_count": 0,
+          "metric_signal_count": 1,
+          "clause_count": 2,
+          "looks_multi_source": true
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "route_009_sql_filter",
+      "query": "Which FY2025 product families have medium strategic priority and AI relevance score above 40?",
+      "routing_decision": {
+        "sub_query": "Which FY2025 product families have medium strategic priority and AI relevance score above 40?",
+        "primary_source": "sql_structured",
+        "selected_sources": [
+          "sql_structured"
+        ],
+        "reasoning": "This request is a filtered query over structured attributes (fiscal_year, strategic_priority, ai_relevance_score) that are present in the product_family_signals table of the SQL schema. SQL is best for precise filtering (FY2025 AND strategic_priority = 'Medium' AND ai_relevance_score > 40) and returning the matching product_family rows.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 14,
+          "numeric_signal_count": 0,
+          "relationship_signal_count": 0,
+          "narrative_signal_count": 0,
+          "metric_signal_count": 1,
+          "clause_count": 2,
+          "looks_multi_source": false
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "route_010_vector_strategy",
+      "query": "Explain Microsoft's AI strategy in the FY2025 summary.",
+      "routing_decision": {
+        "sub_query": "Explain Microsoft's AI strategy in the FY2025 summary.",
+        "primary_source": "vector_document",
+        "selected_sources": [
+          "vector_document"
+        ],
+        "reasoning": "The request asks for a narrative explanation of strategy and management commentary from the FY2025 summary. The vector_document RAG (10-K style text chunks) is best suited for qualitative disclosures, strategic priorities, executive language, and risk/positioning context. The SQL tables contain numeric metrics and product signals but not full narrative commentary; graph_relationships is only needed if entity-to-entity relationships are specifically requested. Therefore a single vector_document source is appropriate.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 8,
+          "numeric_signal_count": 0,
+          "relationship_signal_count": 0,
+          "narrative_signal_count": 2,
+          "metric_signal_count": 0,
+          "clause_count": 1,
+          "looks_multi_source": false
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "route_011_graph_org_structure",
+      "query": "Which products and services are included under Intelligent Cloud?",
+      "routing_decision": {
+        "sub_query": "Which products and services are included under Intelligent Cloud?",
+        "primary_source": "graph_relationships",
+        "selected_sources": [
+          "graph_relationships",
+          "vector_document"
+        ],
+        "reasoning": "This question asks about membership/inclusion (which products and services belong to the Intelligent Cloud segment). The graph_relationships source is optimized for entity-to-entity relationships and 'includes' relations (product_or_service -> segment), making it the most appropriate single source. Narrative context is not required to answer the membership list.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 9,
+          "numeric_signal_count": 0,
+          "relationship_signal_count": 1,
+          "narrative_signal_count": 1,
+          "metric_signal_count": 0,
+          "clause_count": 2,
+          "looks_multi_source": true
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "route_012_sql_geography_mix",
+      "query": "What was the FY2025 revenue mix by geography?",
+      "routing_decision": {
+        "sub_query": "What was the FY2025 revenue mix by geography?",
+        "primary_source": "sql_structured",
+        "selected_sources": [
+          "sql_structured"
+        ],
+        "reasoning": "The requested information is a quantitative breakdown (revenue mix by geography) and the sqlite schema includes a geographic_revenue_mix table with fiscal_year, geography, revenue_usd_millions, and revenue_mix_pct columns \u2014 a direct match for this query.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 8,
+          "numeric_signal_count": 2,
+          "relationship_signal_count": 0,
+          "narrative_signal_count": 0,
+          "metric_signal_count": 2,
+          "clause_count": 1,
+          "looks_multi_source": false
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "route_013_vector_quote_style",
+      "query": "What does the document say about cybersecurity governance?",
+      "routing_decision": {
+        "sub_query": "What does the document say about cybersecurity governance?",
+        "primary_source": "vector_document",
+        "selected_sources": [
+          "vector_document"
+        ],
+        "reasoning": "This is a request for narrative disclosure and qualitative description (governance, policies, oversight, roles, procedures) that would be contained in the filing text. The vector_document source holds the 10-K style narrative chunks (risk factors, management discussion, governance disclosures) and is best suited to retrieve direct language about cybersecurity governance. The available SQL tables contain numeric/financial metrics and the graph store is for entity-relationship queries, so neither is appropriate here.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 8,
+          "numeric_signal_count": 0,
+          "relationship_signal_count": 0,
+          "narrative_signal_count": 2,
+          "metric_signal_count": 0,
+          "clause_count": 1,
+          "looks_multi_source": false
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "route_014_mixed_revenue_and_driver",
+      "query": "Which segment grew the fastest in FY2025 and what narrative driver was mentioned for it?",
+      "routing_decision": {
+        "sub_query": "Which segment grew the fastest in FY2025 and what narrative driver was mentioned for it?",
+        "primary_source": "sql_structured",
+        "selected_sources": [
+          "sql_structured",
+          "vector_document"
+        ],
+        "reasoning": "This question asks for a ranking (fastest-growing segment) by YoY revenue growth and retrieval of the narrative driver. The financial_performance_by_segment table in the SQL schema includes yoy_revenue_growth_pct and narrative_driver for each segment and fiscal_year, so the SQL source can compute the max growth for FY2025 and return the associated narrative driver directly.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 15,
+          "numeric_signal_count": 0,
+          "relationship_signal_count": 0,
+          "narrative_signal_count": 2,
+          "metric_signal_count": 0,
+          "clause_count": 2,
+          "looks_multi_source": false
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    },
+    {
+      "case_id": "route_015_graph_dependency",
+      "query": "What technologies or platforms does Azure support or integrate with?",
+      "routing_decision": {
+        "sub_query": "What technologies or platforms does Azure support or integrate with?",
+        "primary_source": "graph_relationships",
+        "selected_sources": [
+          "graph_relationships"
+        ],
+        "reasoning": "The question is fundamentally about entity-to-entity relationships (which technologies/platforms Azure supports or integrates with). The graph_relationships source contains typed relationships such as \"integrates\", \"supports\", and \"uses\" between Azure (a platform) and other technologies, making it the most appropriate and concise source. SQL is not applicable (no numeric aggregation) and vector_document (narrative) is unnecessary for a relationship-focused listing.",
+        "confidence": "high",
+        "signals": {
+          "word_count": 10,
+          "numeric_signal_count": 0,
+          "relationship_signal_count": 2,
+          "narrative_signal_count": 0,
+          "metric_signal_count": 0,
+          "clause_count": 3,
+          "looks_multi_source": false
+        }
+      },
+      "evaluation": {
+        "missing_required_sources": [],
+        "forbidden_selected_sources": [],
+        "passed": true
+      }
+    }
+  ]
+}

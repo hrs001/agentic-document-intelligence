@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-03-21T11:09:21.531010+00:00",
+  "result": {
+    "original_query": "query",
+    "policy": {},
+    "rerank_summary": {
+      "sub_query_count": 1
+    },
+    "sub_query_results": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-03-17T10:16:10.133615+00:00",
+  "query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+  "result": {
+    "sanitized_query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+    "needs_decomposition": true,
+    "sub_queries": [
+      "Who is the CEO of Microsoft",
+      "What was FY2025 revenue"
+    ],
+    "reasoning_type": "multi_question",
+    "decomposition_strategy": "question_boundary_split"
+  }
+}

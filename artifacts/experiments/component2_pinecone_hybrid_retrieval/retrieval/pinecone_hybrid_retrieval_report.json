@@ -1,0 +1,203 @@
+{
+  "generated_at": "2026-03-17T09:08:05.925883+00:00",
+  "namespace": "microsoft_fy2025_fixed_corpus",
+  "index_name": "universal-knowledge-index",
+  "query": "What were Microsoft's FY2025 revenue, operating income, and net income?",
+  "top_k": 8,
+  "alpha": 0.6,
+  "dense_model": "text-embedding-3-small",
+  "sparse_model": "pinecone-sparse-english-v0",
+  "raw_match_count": 8,
+  "deduped_match_count": 8,
+  "matches": [
+    {
+      "id": "microsoft_fy2025_10k_summary_sec12_table1_ch0_2489a6a327ae87ce",
+      "score": 0.365551,
+      "metadata": {
+        "child_index_in_parent": 0,
+        "content_type": "table",
+        "document_id": "microsoft_fy2025_10k_summary",
+        "page": 21,
+        "page_end": 21,
+        "parent_id": "microsoft_fy2025_10k_summary_sec12_table1",
+        "parent_index_on_page": 1,
+        "section_index": 12,
+        "section_title": "Appendix B. Executive officers and selected reference data",
+        "source_chunk_id": "microsoft_fy2025_10k_summary_sec12_table1_ch0",
+        "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+        "table_column_count": 2,
+        "table_header": [
+          "Item",
+          "Value"
+        ],
+        "table_row_count": 10,
+        "text_hash": "2489a6a327ae87ce"
+      },
+      "child_text": "| Item | Value |\n| --- | --- |\n| Employees as of June 30, 2025 | Approximately 228,000 |\n| Registered holders of record (July 24, 2025) | 77,014 |\n| Cash, cash equivalents, and short-term investments | $94.6 billion |\n| Remaining performance obligations | $375 billion |\n| Microsoft Cloud revenue | $168.9 billion |\n| Microsoft 365 Consumer subscribers | 89.0 million |\n| Total assets | $619.0 billion |\n| Total liabilities | $275.5 billion |\n| Total stockholders’ equity | $343.5 billion |",
+      "parent_text": "| Item | Value |\n| --- | --- |\n| Employees as of June 30, 2025 | Approximately 228,000 |\n| Registered holders of record (July 24, 2025) | 77,014 |\n| Cash, cash equivalents, and short-term investments | $94.6 billion |\n| Remaining performance obligations | $375 billion |\n| Microsoft Cloud revenue | $168.9 billion |\n| Microsoft 365 Consumer subscribers | 89.0 million |\n| Total assets | $619.0 billion |\n| Total liabilities | $275.5 billion |\n| Total stockholders’ equity | $343.5 billion |"
+    },
+    {
+      "id": "microsoft_fy2025_10k_summary_sec13_table0_ch0_b34399b292d02e29",
+      "score": 0.378286362,
+      "metadata": {
+        "child_index_in_parent": 0,
+        "content_type": "table",
+        "document_id": "microsoft_fy2025_10k_summary",
+        "page": 22,
+        "page_end": 22,
+        "parent_id": "microsoft_fy2025_10k_summary_sec13_table0",
+        "parent_index_on_page": 0,
+        "section_index": 13,
+        "section_title": "Appendix C. Growth drivers by business line",
+        "source_chunk_id": "microsoft_fy2025_10k_summary_sec13_table0_ch0",
+        "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+        "table_column_count": 2,
+        "table_header": [
+          "Table C1. Selected business-line growth",
+          "metrics"
+        ],
+        "table_row_count": 17,
+        "text_hash": "b34399b292d02e29"
+      },
+      "child_text": "| Business line | FY2025 growth |\n| --- | --- |\n| Microsoft 365 Commercial products and cloud services | +14% |\n| Microsoft 365 Commercial cloud | +15% |\n| Microsoft 365 Commercial seat growth | +6% |\n| Microsoft 365 Consumer products and cloud services | +11% |\n| Microsoft 365 Consumer cloud | +11% |\n| Microsoft 365 Consumer subscribers | 89.0 million (+8%) |\n| LinkedIn | +9% |\n| Dynamics products and cloud services | +15% |\n| Dynamics 365 | +19% |\n| Server products and cloud services | +23% |\n| Azure and other cloud services | +34% |\n| Enterprise and partner services | +2% |\n| Windows OEM and Devices | +3% |\n| Xbox content and services | +16% |\n| Xbox hardware | -25% |\n| Search and news advertising ex-TAC | +20% |",
+      "parent_text": "| Business line | FY2025 growth |\n| --- | --- |\n| Microsoft 365 Commercial products and cloud services | +14% |\n| Microsoft 365 Commercial cloud | +15% |\n| Microsoft 365 Commercial seat growth | +6% |\n| Microsoft 365 Consumer products and cloud services | +11% |\n| Microsoft 365 Consumer cloud | +11% |\n| Microsoft 365 Consumer subscribers | 89.0 million (+8%) |\n| LinkedIn | +9% |\n| Dynamics products and cloud services | +15% |\n| Dynamics 365 | +19% |\n| Server products and cloud services | +23% |\n| Azure and other cloud services | +34% |\n| Enterprise and partner services | +2% |\n| Windows OEM and Devices | +3% |\n| Xbox content and services | +16% |\n| Xbox hardware | -25% |\n| Search and news advertising ex-TAC | +20% |"
+    },
+    {
+      "id": "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1_79461658c896a260",
+      "score": 0.37100029,
+      "metadata": {
+        "child_index_in_parent": 1,
+        "content_type": "text",
+        "document_id": "microsoft_fy2025_10k_summary",
+        "page": 3,
+        "page_end": 4,
+        "parent_id": "microsoft_fy2025_10k_summary_sec1_p3_par0",
+        "parent_index_on_page": 0,
+        "section_index": 1,
+        "section_title": "1. Executive summary",
+        "source_chunk_id": "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+        "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+        "text_hash": "79461658c896a260"
+      },
+      "child_text": "accepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout.\nThe year’s headline outcomes were strong. Revenue rose 15% to $281.7 billion, operating income\nrose 17% to $128.5 billion, and net income rose 16% to $101.8 billion. Microsoft Cloud revenue\nreached $168.9 billion, up 23%, while Azure and other cloud services grew 34%. The company",
+      "parent_text": "1. Executive summary\nMicrosoft entered fiscal 2025 with the scale of a mature software platform company and ended it\nlooking increasingly like the infrastructure and application layer for enterprise AI. The filing\nshows a business that is simultaneously growing quickly, widening strategic control points, and\naccepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout.\nThe year’s headline outcomes were strong. Revenue rose 15% to $281.7 billion, operating income\nrose 17% to $128.5 billion, and net income rose 16% to $101.8 billion. Microsoft Cloud revenue\nreached $168.9 billion, up 23%, while Azure and other cloud services grew 34%. The company\ncontinued to scale both enterprise productivity and cloud infrastructure while also benefiting from\nthe integration of Activision Blizzard in gaming.\nThe filing also shows the cost of that growth. Capital expenditures surged, lease commitments\nexpanded materially, and management explicitly acknowledged margin pressure from scaling AI\ninfrastructure. In other words, Microsoft is converting a large portion of current earnings power\ninto datacenters, servers, GPUs, and long-duration commercial capacity.\nSeveral themes dominate the 10-K:\n\nAI is now embedded across Microsoft’s entire stack: infrastructure, developer tooling, business\napplications, productivity, search, and security.\n\nCommercial recurring revenue remains the core earnings engine, especially Microsoft 365\nCommercial and Azure.\n"
+    },
+    {
+      "id": "microsoft_fy2025_10k_summary_sec11_table0_ch0_a5e3927b8c154d87",
+      "score": 0.359312057,
+      "metadata": {
+        "child_index_in_parent": 0,
+        "content_type": "table",
+        "document_id": "microsoft_fy2025_10k_summary",
+        "page": 20,
+        "page_end": 20,
+        "parent_id": "microsoft_fy2025_10k_summary_sec11_table0",
+        "parent_index_on_page": 0,
+        "section_index": 11,
+        "section_title": "Appendix A. Key financial tables",
+        "source_chunk_id": "microsoft_fy2025_10k_summary_sec11_table0_ch0",
+        "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+        "table_column_count": 4,
+        "table_header": [
+          "Line item",
+          "FY2025",
+          "FY2024",
+          "FY2023"
+        ],
+        "table_row_count": 12,
+        "text_hash": "a5e3927b8c154d87"
+      },
+      "child_text": "| Line item | FY2025 | FY2024 | FY2023 |\n| --- | --- | --- | --- |\n| Revenue | $281,724 | $245,122 | $211,915 |\n| Cost of revenue | $87,831 | $74,114 | $65,863 |\n| Gross margin | $193,893 | $171,008 | $146,052 |\n| R&D | $32,488 | $29,510 | $27,195 |\n| Sales & marketing | $25,654 | $24,456 | $22,759 |\n| General & administrative | $7,223 | $7,609 | $7,575 |\n| Operating income | $128,528 | $109,433 | $88,523 |\n| Income before taxes | $123,627 | $107,787 | $89,311 |\n| Provision for income\ntaxes | $21,795 | $19,651 | $16,950 |\n| Net income | $101,832 | $88,136 | $72,361 |\n| Diluted EPS | $13.64 | $11.80 | $9.68 |",
+      "parent_text": "| Line item | FY2025 | FY2024 | FY2023 |\n| --- | --- | --- | --- |\n| Revenue | $281,724 | $245,122 | $211,915 |\n| Cost of revenue | $87,831 | $74,114 | $65,863 |\n| Gross margin | $193,893 | $171,008 | $146,052 |\n| R&D | $32,488 | $29,510 | $27,195 |\n| Sales & marketing | $25,654 | $24,456 | $22,759 |\n| General & administrative | $7,223 | $7,609 | $7,575 |\n| Operating income | $128,528 | $109,433 | $88,523 |\n| Income before taxes | $123,627 | $107,787 | $89,311 |\n| Provision for income\ntaxes | $21,795 | $19,651 | $16,950 |\n| Net income | $101,832 | $88,136 | $72,361 |\n| Diluted EPS | $13.64 | $11.80 | $9.68 |"
+    },
+    {
+      "id": "microsoft_fy2025_10k_summary_sec6_p11_par1_ch1_2023302a2682069e",
+      "score": 0.360656738,
+      "metadata": {
+        "child_index_in_parent": 1,
+        "content_type": "text",
+        "document_id": "microsoft_fy2025_10k_summary",
+        "page": 11,
+        "page_end": 13,
+        "parent_id": "microsoft_fy2025_10k_summary_sec6_p11_par1",
+        "parent_index_on_page": 1,
+        "section_index": 6,
+        "section_title": "6. Balance sheet, liquidity, cash flow, and capital allocation",
+        "source_chunk_id": "microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+        "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+        "text_hash": "2023302a2682069e"
+      },
+      "child_text": "AI demand. The company is also using finance leases extensively, so cash capex understates the\nfull infrastructure commitment.\nShareholder returns\nMicrosoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1\nbillion in cash dividends and spent $18.4 billion repurchasing common stock through open-market",
+      "parent_text": "recurring revenue and the scale of commercial contracts. The dominant use of that cash was\ninvesting activity, especially datacenter and infrastructure buildout.\nCapital expenditures reached $64.6 billion, up sharply from $44.5 billion. This is one of the clearest\nquantitative signals in the report: Microsoft is in a capital deployment phase to support cloud and\nAI demand. The company is also using finance leases extensively, so cash capex understates the\nfull infrastructure commitment.\nShareholder returns\nMicrosoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1\nbillion in cash dividends and spent $18.4 billion repurchasing common stock through open-market\nrepurchases. Dividends declared totaled $24.7 billion, or $3.32 per share. A new $60 billion\nrepurchase authorization approved in September 2024 commenced in April 2025 after the prior\nauthorization was completed; $57.3 billion remained available at June 30, 2025.\nTable 7. Selected contractual obligations as of June 30, 2025\nThese obligations confirm that Microsoft’s AI and cloud expansion is not just an income-statement\nstory but a multi-year capital commitment story. Leases, construction commitments, and purchase\ncommitments together amount to a very large future funding requirement, although one\ncomfortably supported by current cash generation."
+    },
+    {
+      "id": "microsoft_fy2025_10k_summary_sec4_p8_par1_ch1_cd1a181ccb364023",
+      "score": 0.400218,
+      "metadata": {
+        "child_index_in_parent": 1,
+        "content_type": "text",
+        "document_id": "microsoft_fy2025_10k_summary",
+        "page": 8,
+        "page_end": 9,
+        "parent_id": "microsoft_fy2025_10k_summary_sec4_p8_par1",
+        "parent_index_on_page": 1,
+        "section_index": 4,
+        "section_title": "4. Fiscal 2025 financial performance",
+        "source_chunk_id": "microsoft_fy2025_10k_summary_sec4_p8_par1_ch1",
+        "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+        "text_hash": "cd1a181ccb364023"
+      },
+      "child_text": "packaged software or device unit shipments.\nFrom a profitability perspective, FY2025 gross margin was about 68.8% of revenue, operating\nmargin about 45.6%, and net margin about 36.1%. Those remain exceptionally strong at Microsoft’s\nscale, even after absorbing the cost of aggressive AI infrastructure expansion.",
+      "parent_text": "The mix shift is strategically important. Product revenue was roughly flat to slightly down, while\nservice and other revenue rose sharply. This reinforces that Microsoft’s earnings profile now\ndepends primarily on subscriptions, cloud consumption, support, and online services rather than\npackaged software or device unit shipments.\nFrom a profitability perspective, FY2025 gross margin was about 68.8% of revenue, operating\nmargin about 45.6%, and net margin about 36.1%. Those remain exceptionally strong at Microsoft’s\nscale, even after absorbing the cost of aggressive AI infrastructure expansion."
+    },
+    {
+      "id": "microsoft_fy2025_10k_summary_sec7_p13_par3_ch2_5ec6af974a236f25",
+      "score": 0.365926743,
+      "metadata": {
+        "child_index_in_parent": 2,
+        "content_type": "text",
+        "document_id": "microsoft_fy2025_10k_summary",
+        "page": 13,
+        "page_end": 15,
+        "parent_id": "microsoft_fy2025_10k_summary_sec7_p13_par3",
+        "parent_index_on_page": 3,
+        "section_index": 7,
+        "section_title": "7. Major accounting notes and financial statement",
+        "source_chunk_id": "microsoft_fy2025_10k_summary_sec7_p13_par3_ch2",
+        "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+        "text_hash": "5ec6af974a236f25"
+      },
+      "child_text": "between FY2026 and FY2031.\nThis disclosure is one of the strongest signals in the filing that Microsoft is locking in long-duration\ncapacity for AI and cloud workloads. It also means investors should evaluate capital intensity using a\nbroader lens than cash capex alone.\nTaxes\nIncome before tax reached $123.6 billion and provision for income taxes was $21.8 billion, yielding",
+      "parent_text": "The debt load remains very manageable relative to cash, investments, operating cash flow, and\noverall market position. Microsoft’s use of debt appears opportunistic and strategic rather than\nbalance-sheet constrained.\nLeases and off-balance-sheet-like infrastructure intensity\nLease disclosures are particularly important in FY2025 because they illuminate Microsoft’s\ninfrastructure scaling strategy. Operating lease liabilities totaled $22.9 billion and finance lease\nliabilities totaled $46.2 billion. In addition, Microsoft disclosed $92.7 billion of additional leases,\nprimarily for datacenters, that had not yet commenced as of June 30, 2025. These will commence\nbetween FY2026 and FY2031.\nThis disclosure is one of the strongest signals in the filing that Microsoft is locking in long-duration\ncapacity for AI and cloud workloads. It also means investors should evaluate capital intensity using a\nbroader lens than cash capex alone.\nTaxes\nIncome before tax reached $123.6 billion and provision for income taxes was $21.8 billion, yielding\nan effective rate of 17.6%. The rate remained below the U.S. statutory level mainly because a large\nshare of foreign income is generated through Ireland at lower tax rates. Management also\ndiscussed Pillar Two global minimum tax rules and said it does not currently estimate a material\nfinancial statement impact, though the company continues monitoring implementation across\njurisdictions."
+    },
+    {
+      "id": "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0_6d89d088e6ba9fff",
+      "score": 0.421549797,
+      "metadata": {
+        "child_index_in_parent": 0,
+        "content_type": "text",
+        "document_id": "microsoft_fy2025_10k_summary",
+        "page": 8,
+        "page_end": 9,
+        "parent_id": "microsoft_fy2025_10k_summary_sec4_p8_par0",
+        "parent_index_on_page": 0,
+        "section_index": 4,
+        "section_title": "4. Fiscal 2025 financial performance",
+        "source_chunk_id": "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+        "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+        "text_hash": "6d89d088e6ba9fff"
+      },
+      "child_text": "4. Fiscal 2025 financial performance\nFiscal 2025 was a year of strong top-line and operating growth, led by cloud and AI demand,\ncontinued Microsoft 365 momentum, strong Azure consumption, improved search economics, and\nincremental contribution from gaming content and services.\nTable 1. Consolidated summary results\nAmounts in millions except per-share data.",
+      "parent_text": "4. Fiscal 2025 financial performance\nFiscal 2025 was a year of strong top-line and operating growth, led by cloud and AI demand,\ncontinued Microsoft 365 momentum, strong Azure consumption, improved search economics, and\nincremental contribution from gaming content and services.\nTable 1. Consolidated summary results\nAmounts in millions except per-share data.\nRevenue growth of $36.6 billion was broad-based, but two engines were especially important:\nAzure within Intelligent Cloud and Microsoft 365 Commercial cloud within Productivity and\nBusiness Processes. Gross margin increased almost $23 billion, although gross margin percentage\ndeclined slightly because the mix shifted toward more infrastructure-heavy cloud activity and\nbecause Microsoft is scaling AI capacity ahead of demand.\nOperating expenses increased only 6%, which is slower than revenue growth. That operating\nleverage allowed operating income to grow faster than revenue despite the pressure on cloud\nmargin percentage. Research and development, sales and marketing, and gaming-related costs all\nrose, but the company still expanded profitability materially.\nTable 2. Revenue mix by type\nThe filing highlights the company’s structural shift toward service and cloud revenue.\nThe mix shift is strategically important. Product revenue was roughly flat to slightly down, while\nservice and other revenue rose sharply. This reinforces that Microsoft’s earnings profile now"
+    }
+  ],
+  "lambda_notes": {
+    "stateless": true,
+    "network_dependencies": [
+      "OpenAI embeddings",
+      "Pinecone sparse embed",
+      "Pinecone hybrid query"
+    ],
+    "artifact_hydration": "Local chunk artifact now; can later move to packaged assets or S3 for Lambda."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-03-18T08:52:55.705527+00:00",
+  "model": "gpt-5-mini",
+  "result": {
+    "user_query": "x",
+    "target_tables": [
+      "t1"
+    ],
+    "sql_query": "SELECT 1",
+    "rationale": "r",
+    "confidence": "high"
+  }
+}

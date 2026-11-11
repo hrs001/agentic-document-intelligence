@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "corpus_id": "microsoft_fy2025_fixed_corpus",
+  "artifact_layout": {
+    "sources_dir": "corpus/sources",
+    "datasets_dir": "corpus/datasets",
+    "metadata_dir": "corpus/metadata",
+    "contracts_dir": "corpus/contracts",
+    "validation_dir": "artifacts/validation",
+    "experiments_dir": "artifacts/experiments"
+  },
+  "expected_outputs": [
+    {
+      "artifact_name": "extracted_document_text",
+      "relative_path_pattern": "artifacts/experiments/{run_id}/document_text/{document_id}.json",
+      "required_fields": [
+        "document_id",
+        "text",
+        "extraction_method",
+        "generated_at"
+      ]
+    },
+    {
+      "artifact_name": "chunk_records",
+      "relative_path_pattern": "artifacts/experiments/{run_id}/chunks/{document_id}_chunks.json",
+      "required_fields": [
+        "child_id",
+        "parent_id",
+        "child_text",
+        "parent_text",
+        "metadata"
+      ]
+    },
+    {
+      "artifact_name": "embedding_ready_records",
+      "relative_path_pattern": "artifacts/experiments/{run_id}/embeddings/{document_id}_embedding_records.json",
+      "required_fields": [
+        "record_id",
+        "text",
+        "metadata"
+      ]
+    },
+    {
+      "artifact_name": "graph_extraction_inputs",
+      "relative_path_pattern": "artifacts/experiments/{run_id}/graph/{document_id}_graph_inputs.json",
+      "required_fields": [
+        "input_id",
+        "text",
+        "metadata"
+      ]
+    },
+    {
+      "artifact_name": "graph_nodes_edges",
+      "relative_path_pattern": "artifacts/experiments/{run_id}/graph/{document_id}_graph_output.json",
+      "required_fields": [
+        "nodes",
+        "edges",
+        "generated_at"
+      ]
+    },
+    {
+      "artifact_name": "sql_ready_dataset_bundle",
+      "relative_path_pattern": "artifacts/experiments/{run_id}/sql/dataset_bundle.json",
+      "required_fields": [
+        "dataset_id",
+        "tables",
+        "generated_at"
+      ]
+    },
+    {
+      "artifact_name": "corpus_summary",
+      "relative_path_pattern": "artifacts/experiments/{run_id}/summary/corpus_summary.json",
+      "required_fields": [
+        "corpus_id",
+        "documents",
+        "datasets",
+        "topical_summary",
+        "generated_at"
+      ]
+    }
+  ]
+}

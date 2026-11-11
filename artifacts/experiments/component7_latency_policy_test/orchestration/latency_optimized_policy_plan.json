@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-03-19T16:44:05.035947+00:00",
+  "result": {
+    "policy_summary": {
+      "sub_query_count": 1,
+      "vector_profile_counts": {},
+      "parallel_safe_count": 0
+    }
+  }
+}

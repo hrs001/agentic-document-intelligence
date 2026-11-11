@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "microsoft_fy2025_analyst_dataset",
+  "display_name": "Microsoft FY2025 Analyst Dataset",
+  "synthetic": true,
+  "tables": [
+    {
+      "table_name": "financial_performance_by_segment",
+      "semantic_description": "Segment-level financial performance for synthetic analyst demo workflows.",
+      "columns": [
+        { "name": "fiscal_year", "type": "INTEGER" },
+        { "name": "segment_name", "type": "TEXT" },
+        { "name": "revenue_usd_millions", "type": "INTEGER" },
+        { "name": "operating_income_usd_millions", "type": "INTEGER" },
+        { "name": "operating_margin_pct", "type": "REAL" },
+        { "name": "yoy_revenue_growth_pct", "type": "REAL" },
+        { "name": "narrative_driver", "type": "TEXT" }
+      ]
+    },
+    {
+      "table_name": "geographic_revenue_mix",
+      "semantic_description": "Geographic revenue mix and growth trends for synthetic analyst demo workflows.",
+      "columns": [
+        { "name": "fiscal_year", "type": "INTEGER" },
+        { "name": "geography", "type": "TEXT" },
+        { "name": "revenue_usd_millions", "type": "INTEGER" },
+        { "name": "revenue_mix_pct", "type": "REAL" },
+        { "name": "yoy_revenue_growth_pct", "type": "REAL" }
+      ]
+    },
+    {
+      "table_name": "product_family_signals",
+      "semantic_description": "Analyst-style strategic and product-family signals for synthetic demo workflows.",
+      "columns": [
+        { "name": "fiscal_year", "type": "INTEGER" },
+        { "name": "product_family", "type": "TEXT" },
+        { "name": "strategic_priority", "type": "TEXT" },
+        { "name": "revenue_signal_index", "type": "INTEGER" },
+        { "name": "margin_profile", "type": "TEXT" },
+        { "name": "ai_relevance_score", "type": "INTEGER" },
+        { "name": "commentary", "type": "TEXT" }
+      ]
+    }
+  ]
+}

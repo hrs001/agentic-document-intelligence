@@ -1,0 +1,4281 @@
+{
+  "generated_at": "2026-03-18T07:44:34.051885+00:00",
+  "database_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\artifacts\\experiments\\component5_kuzu_graph_build_live\\kuzu_db\\microsoft_fy2025_10k_summary.kuzu",
+  "case_count": 6,
+  "passed_count": 5,
+  "case_results": [
+    {
+      "case_id": "irs_risk",
+      "query": "What IRS dispute does Microsoft face?",
+      "evaluation": {
+        "case_id": "irs_risk",
+        "query": "What IRS dispute does Microsoft face?",
+        "node_hit_count": 2,
+        "expected_node_count": 2,
+        "relation_hit_count": 1,
+        "expected_relation_count": 1,
+        "passed": true
+      },
+      "matched_nodes": [
+        {
+          "node_id": "node_microsoft",
+          "canonical_name": "Microsoft",
+          "entity_type": "organization",
+          "aliases": [],
+          "evidence_snippets": [
+            "Microsoft FY2025 Form 10-K",
+            "Microsoft entered fiscal 2025",
+            "Microsoft\u2019s FY2025 filing",
+            "Microsoft describes itself as a technology company",
+            "Microsoft notes progress",
+            "Microsoft\u2019s defense is integration, enterprise trust, cross-platform presence, and installed-base leverage.",
+            "Microsoft\u2019s earnings profile now",
+            "Microsoft\u2019s largest segment",
+            "Microsoft is scaling AI infrastructure.",
+            "Microsoft is not",
+            "Microsoft continued to return substantial capital to shareholders.",
+            "Microsoft\u2019s economics in FY2025",
+            "Microsoft reported no goodwill impairment",
+            "Microsoft ended FY2025",
+            "Microsoft\u2019s use of debt appears opportunistic and strategic rather than balance-sheet constrained.",
+            "Microsoft says it disagrees",
+            "Microsoft\u2019s risk disclosures",
+            "Microsoft\u2019s 10-K",
+            "Microsoft operates under evolving laws and regulations",
+            "Microsoft employed approximately 228,000 full-time employees",
+            "Microsoft\u2019s FY2025 Form 10-K",
+            "Microsoft\u2019s scale ensures",
+            "Microsoft Form 10-K",
+            "Microsoft\u2019s best growth vectors",
+            "Microsoft\u2019s liquidity remains strong",
+            "Microsoft does not signal an expectation of",
+            "Microsoft is both a cloud provider and a security vendor",
+            "Microsoft\u2019s FY2025 capital intensity was extraordinarily high for a software company"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec4_p8_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_graph_input",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_graph_input",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_graph_input",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec10_p19_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec12_p21_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec14_p24_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec16_p28_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0",
+            "microsoft_fy2025_10k_summary_sec4_p8_par1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par1",
+            "microsoft_fy2025_10k_summary_sec12_p21_par0",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0",
+            "microsoft_fy2025_10k_summary_sec14_p24_par0",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0",
+            "microsoft_fy2025_10k_summary_sec16_p28_par0",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec4_p8_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec4_p8_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch3",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch0",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch1",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch2",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch3",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec10_p19_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec12_p21_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec12_p21_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec14_p24_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec14_p24_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec16_p28_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec16_p28_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0_ch1"
+          ],
+          "section_titles": [
+            "Document Overview",
+            "1. Executive summary",
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review",
+            "4. Fiscal 2025 financial performance",
+            "5. Segment results and operating drivers",
+            "6. Balance sheet, liquidity, cash flow, and capital allocation",
+            "7. Major accounting notes and financial statement",
+            "8. Risk factors and cybersecurity posture",
+            "9. Operations, people, properties, and governance",
+            "10. Overall assessment",
+            "Appendix B. Executive officers and selected reference data",
+            "Appendix C. Growth drivers by business line",
+            "Appendix D. Liquidity, commitments, and lease detail",
+            "Appendix E. Tax, debt, and market risk detail",
+            "Appendix F. Cybersecurity and risk dashboard",
+            "Appendix G. Segment economics at a glance"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 1,
+              "page_end": 3
+            },
+            {
+              "page_start": 3,
+              "page_end": 4
+            },
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 8,
+              "page_end": 9
+            },
+            {
+              "page_start": 9,
+              "page_end": 11
+            },
+            {
+              "page_start": 11,
+              "page_end": 13
+            },
+            {
+              "page_start": 13,
+              "page_end": 15
+            },
+            {
+              "page_start": 15,
+              "page_end": 17
+            },
+            {
+              "page_start": 17,
+              "page_end": 19
+            },
+            {
+              "page_start": 19,
+              "page_end": 20
+            },
+            {
+              "page_start": 21,
+              "page_end": 22
+            },
+            {
+              "page_start": 22,
+              "page_end": 24
+            },
+            {
+              "page_start": 24,
+              "page_end": 26
+            },
+            {
+              "page_start": 26,
+              "page_end": 28
+            },
+            {
+              "page_start": 28,
+              "page_end": 30
+            },
+            {
+              "page_start": 30,
+              "page_end": 30
+            }
+          ],
+          "mention_count": 28,
+          "node_score": 6.4
+        },
+        {
+          "node_id": "node_irs",
+          "canonical_name": "IRS",
+          "entity_type": "regulatory_or_external_body",
+          "aliases": [],
+          "evidence_snippets": [
+            "The IRS is seeking an additional tax payment",
+            "The amount sought by the IRS"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_graph_input",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch2"
+          ],
+          "section_titles": [
+            "7. Major accounting notes and financial statement",
+            "Appendix E. Tax, debt, and market risk detail"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 13,
+              "page_end": 15
+            },
+            {
+              "page_start": 26,
+              "page_end": 28
+            }
+          ],
+          "mention_count": 2,
+          "node_score": 6.1
+        },
+        {
+          "node_id": "node_irs_transfer_pricing_dispute",
+          "canonical_name": "IRS transfer-pricing dispute",
+          "entity_type": "risk_or_issue",
+          "aliases": [],
+          "evidence_snippets": [
+            "especially the IRS transfer-pricing dispute",
+            "The IRS transfer-pricing dispute is the single largest named tax exposure"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch2"
+          ],
+          "section_titles": [
+            "1. Executive summary",
+            "Appendix E. Tax, debt, and market risk detail"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            },
+            {
+              "page_start": 26,
+              "page_end": 28
+            }
+          ],
+          "mention_count": 2,
+          "node_score": 5.5
+        },
+        {
+          "node_id": "node_microsoft_s_investment_portfolio",
+          "canonical_name": "Microsoft's investment portfolio",
+          "entity_type": "financial_or_business_concept",
+          "aliases": [
+            "Microsoft\u2019s investment portfolio"
+          ],
+          "evidence_snippets": [
+            "Microsoft\u2019s investment portfolio is primarily high-quality fixed income and liquidity-oriented holdings"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3"
+          ],
+          "section_titles": [
+            "7. Major accounting notes and financial statement"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 13,
+              "page_end": 15
+            }
+          ],
+          "mention_count": 1,
+          "node_score": 4.5
+        },
+        {
+          "node_id": "node_microsoft_365_commercial",
+          "canonical_name": "Microsoft 365 Commercial",
+          "entity_type": "product_or_service",
+          "aliases": [],
+          "evidence_snippets": [
+            "especially Microsoft 365 Commercial and Azure",
+            "The commercial components of Microsoft 365 were brought together in Productivity and Business Processes.",
+            "The core economic engine is Microsoft 365 Commercial"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3"
+          ],
+          "section_titles": [
+            "1. Executive summary",
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            },
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 4,
+          "node_score": 3.3
+        }
+      ],
+      "matched_edges": [
+        {
+          "edge_id": "edge_27",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_irs_transfer_pricing_dispute",
+          "target_canonical_name": "IRS transfer-pricing dispute",
+          "relation_type": "faces",
+          "evidence_snippets": [
+            "especially the IRS transfer-pricing dispute",
+            "Microsoft does not signal an expectation of imminent resolution within the next 12 months."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch2"
+          ],
+          "section_titles": [
+            "1. Executive summary",
+            "Appendix E. Tax, debt, and market risk detail"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            },
+            {
+              "page_start": 26,
+              "page_end": 28
+            }
+          ],
+          "mention_count": 2,
+          "edge_score": 6.9
+        },
+        {
+          "edge_id": "edge_216",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_irs",
+          "target_canonical_name": "IRS",
+          "relation_type": "faces",
+          "evidence_snippets": [
+            "The IRS is seeking an additional tax payment"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3"
+          ],
+          "section_titles": [
+            "7. Major accounting notes and financial statement"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 13,
+              "page_end": 15
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 5.2
+        },
+        {
+          "edge_id": "edge_363",
+          "source_node_id": "node_irs_transfer_pricing_dispute",
+          "source_canonical_name": "IRS transfer-pricing dispute",
+          "target_node_id": "node_irs",
+          "target_canonical_name": "IRS",
+          "relation_type": "faces",
+          "evidence_snippets": [
+            "The IRS transfer-pricing dispute is the single largest named tax exposure in the filing."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec15_p26_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch2"
+          ],
+          "section_titles": [
+            "Appendix E. Tax, debt, and market risk detail"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 26,
+              "page_end": 28
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 5.2
+        },
+        {
+          "edge_id": "edge_203",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_long_term_debt",
+          "target_canonical_name": "long-term debt",
+          "relation_type": "faces",
+          "evidence_snippets": [
+            "Total face value of long-term debt was $49.2 billion"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2_ch0"
+          ],
+          "section_titles": [
+            "7. Major accounting notes and financial statement"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 13,
+              "page_end": 15
+            }
+          ],
+          "mention_count": 2,
+          "edge_score": 4.4
+        },
+        {
+          "edge_id": "edge_22",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_microsoft_365_commercial",
+          "target_canonical_name": "Microsoft 365 Commercial",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "especially Microsoft 365 Commercial and Azure"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2"
+          ],
+          "section_titles": [
+            "1. Executive summary"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 3.7
+        },
+        {
+          "edge_id": "edge_220",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_microsoft_s_investment_portfolio",
+          "target_canonical_name": "Microsoft's investment portfolio",
+          "relation_type": "uses",
+          "evidence_snippets": [
+            "Microsoft\u2019s investment portfolio is primarily high-quality fixed income and liquidity-oriented holdings"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3"
+          ],
+          "section_titles": [
+            "7. Major accounting notes and financial statement"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 13,
+              "page_end": 15
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 3.7
+        },
+        {
+          "edge_id": "edge_53",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_microsoft_365_commercial",
+          "target_canonical_name": "Microsoft 365 Commercial",
+          "relation_type": "integrates",
+          "evidence_snippets": [
+            "the commercial components of Microsoft 365 were brought together in Productivity and Business Processes"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 3.7
+        },
+        {
+          "edge_id": "edge_202",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_commercial_paper",
+          "target_canonical_name": "commercial paper",
+          "relation_type": "faces",
+          "evidence_snippets": [
+            "Microsoft ended FY2025 with no commercial paper outstanding"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2_ch0"
+          ],
+          "section_titles": [
+            "7. Major accounting notes and financial statement"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 13,
+              "page_end": 15
+            }
+          ],
+          "mention_count": 2,
+          "edge_score": 2.9
+        }
+      ]
+    },
+    {
+      "case_id": "github_segment",
+      "query": "Which segment includes GitHub?",
+      "evaluation": {
+        "case_id": "github_segment",
+        "query": "Which segment includes GitHub?",
+        "node_hit_count": 2,
+        "expected_node_count": 2,
+        "relation_hit_count": 1,
+        "expected_relation_count": 1,
+        "passed": true
+      },
+      "matched_nodes": [
+        {
+          "node_id": "node_github",
+          "canonical_name": "GitHub",
+          "entity_type": "product_or_service",
+          "aliases": [],
+          "evidence_snippets": [
+            "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+            "Azure supports GitHub, data services, and AI platforms",
+            "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par2_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec2_p4_par2_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 3,
+          "node_score": 6.2
+        },
+        {
+          "node_id": "node_all_three_reporting_segments",
+          "canonical_name": "all three reporting segments",
+          "entity_type": "segment",
+          "aliases": [],
+          "evidence_snippets": [
+            "all three reporting segments posted revenue and operating income growth"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2"
+          ],
+          "section_titles": [
+            "1. Executive summary"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            }
+          ],
+          "mention_count": 1,
+          "node_score": 3.0
+        },
+        {
+          "node_id": "node_segment_structure",
+          "canonical_name": "segment structure",
+          "entity_type": "financial_or_business_concept",
+          "aliases": [],
+          "evidence_snippets": [
+            "It preserves the filing\u2019s core content: business model, segment structure, strategy, management discussion and analysis, audited financial statements, major accounting notes, principal risks, cybersecurity governance, legal and tax exposures, and corporate governance disclosures."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch3"
+          ],
+          "section_titles": [
+            "Document Overview"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 1,
+              "page_end": 3
+            }
+          ],
+          "mention_count": 1,
+          "node_score": 3.0
+        },
+        {
+          "node_id": "node_azure",
+          "canonical_name": "Azure",
+          "entity_type": "product_or_service",
+          "aliases": [],
+          "evidence_snippets": [
+            "Azure and other cloud services grew 34%",
+            "especially Microsoft 365 Commercial and Azure",
+            "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+            "Azure supports GitHub, data services, and AI platforms",
+            "Azure is described as a comprehensive cloud platform spanning compute, networking, storage, data, AI, machine learning, cognitive services, IoT, and app services.",
+            "Azure within Intelligent Cloud",
+            "driven by Azure and other",
+            "Azure growth was fueled by demand across the portfolio rather than",
+            "Azure is capturing large-scale AI and infrastructure demand",
+            "Azure, Microsoft 365 Commercial cloud, Dynamics 365, Xbox content and services, and search monetization"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par2_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec2_p4_par2_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_ch1"
+          ],
+          "section_titles": [
+            "1. Executive summary",
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review",
+            "4. Fiscal 2025 financial performance",
+            "5. Segment results and operating drivers",
+            "10. Overall assessment",
+            "Appendix C. Growth drivers by business line"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            },
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 8,
+              "page_end": 9
+            },
+            {
+              "page_start": 9,
+              "page_end": 11
+            },
+            {
+              "page_start": 19,
+              "page_end": 20
+            },
+            {
+              "page_start": 22,
+              "page_end": 24
+            }
+          ],
+          "mention_count": 10,
+          "node_score": 0.9
+        },
+        {
+          "node_id": "node_intelligent_cloud",
+          "canonical_name": "Intelligent Cloud",
+          "entity_type": "segment",
+          "aliases": [
+            "Intelligent Cloud (IC)"
+          ],
+          "evidence_snippets": [
+            "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+            "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.",
+            "Azure within Intelligent Cloud",
+            "Intelligent Cloud was the fastest-growing segment",
+            "Intelligent Cloud was the fastest-growing segment in absolute dollars.",
+            "$25.7 billion to Intelligent Cloud",
+            "Intelligent Cloud is large enough to influence group economics materially"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0_ch1"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review",
+            "4. Fiscal 2025 financial performance",
+            "5. Segment results and operating drivers",
+            "7. Major accounting notes and financial statement",
+            "Appendix G. Segment economics at a glance"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 8,
+              "page_end": 9
+            },
+            {
+              "page_start": 9,
+              "page_end": 11
+            },
+            {
+              "page_start": 13,
+              "page_end": 15
+            },
+            {
+              "page_start": 30,
+              "page_end": 30
+            }
+          ],
+          "mention_count": 7,
+          "node_score": 0.9
+        }
+      ],
+      "matched_edges": [
+        {
+          "edge_id": "edge_47",
+          "source_node_id": "node_intelligent_cloud",
+          "source_canonical_name": "Intelligent Cloud",
+          "target_node_id": "node_azure",
+          "target_canonical_name": "Azure",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+            "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.",
+            "driven by Azure and other cloud services growth of 34%."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review",
+            "5. Segment results and operating drivers"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 9,
+              "page_end": 11
+            }
+          ],
+          "mention_count": 3,
+          "edge_score": 4.1
+        },
+        {
+          "edge_id": "edge_48",
+          "source_node_id": "node_intelligent_cloud",
+          "source_canonical_name": "Intelligent Cloud",
+          "target_node_id": "node_github",
+          "target_canonical_name": "GitHub",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+            "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 2,
+          "edge_score": 3.9
+        },
+        {
+          "edge_id": "edge_49",
+          "source_node_id": "node_intelligent_cloud",
+          "source_canonical_name": "Intelligent Cloud",
+          "target_node_id": "node_nuance_healthcare",
+          "target_canonical_name": "Nuance Healthcare",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+            "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 2,
+          "edge_score": 2.9
+        },
+        {
+          "edge_id": "edge_3",
+          "source_node_id": "node_fy2025_form_10_k",
+          "source_canonical_name": "FY2025 Form 10-K",
+          "target_node_id": "node_segment_structure",
+          "target_canonical_name": "segment structure",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "It preserves the filing\u2019s core content: business model, segment structure, strategy, management discussion and analysis, audited financial statements, major accounting notes, principal risks, cybersecurity governance, legal and tax exposures, and corporate governance disclosures."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch3"
+          ],
+          "section_titles": [
+            "Document Overview"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 1,
+              "page_end": 3
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 2.7
+        },
+        {
+          "edge_id": "edge_41",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_intelligent_cloud",
+          "target_canonical_name": "Intelligent Cloud",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "The three reportable segments are:"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 2.7
+        },
+        {
+          "edge_id": "edge_82",
+          "source_node_id": "node_intelligent_cloud",
+          "source_canonical_name": "Intelligent Cloud",
+          "target_node_id": "node_server_products",
+          "target_canonical_name": "server products",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+          ],
+          "section_titles": [
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 2.7
+        },
+        {
+          "edge_id": "edge_83",
+          "source_node_id": "node_intelligent_cloud",
+          "source_canonical_name": "Intelligent Cloud",
+          "target_node_id": "node_developer_tooling",
+          "target_canonical_name": "developer tooling",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+          ],
+          "section_titles": [
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 2.7
+        },
+        {
+          "edge_id": "edge_84",
+          "source_node_id": "node_intelligent_cloud",
+          "source_canonical_name": "Intelligent Cloud",
+          "target_node_id": "node_enterprise_support",
+          "target_canonical_name": "enterprise support",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+          ],
+          "section_titles": [
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 2.7
+        }
+      ]
+    },
+    {
+      "case_id": "linkedin_segment",
+      "query": "Which segment includes LinkedIn?",
+      "evaluation": {
+        "case_id": "linkedin_segment",
+        "query": "Which segment includes LinkedIn?",
+        "node_hit_count": 2,
+        "expected_node_count": 2,
+        "relation_hit_count": 1,
+        "expected_relation_count": 1,
+        "passed": true
+      },
+      "matched_nodes": [
+        {
+          "node_id": "node_linkedin",
+          "canonical_name": "LinkedIn",
+          "entity_type": "product_or_service",
+          "aliases": [],
+          "evidence_snippets": [
+            "Productivity and Business Processes (PBP): Microsoft 365 Commercial, Microsoft 365 Consumer, LinkedIn, and Dynamics.",
+            "LinkedIn provides monetized professional network products across talent, marketing, premium subscriptions, and sales solutions.",
+            "LinkedIn revenue rose",
+            "involving LinkedIn targeted advertising practices under GDPR"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review",
+            "5. Segment results and operating drivers",
+            "7. Major accounting notes and financial statement"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 9,
+              "page_end": 11
+            },
+            {
+              "page_start": 13,
+              "page_end": 15
+            }
+          ],
+          "mention_count": 4,
+          "node_score": 6.3
+        },
+        {
+          "node_id": "node_all_three_reporting_segments",
+          "canonical_name": "all three reporting segments",
+          "entity_type": "segment",
+          "aliases": [],
+          "evidence_snippets": [
+            "all three reporting segments posted revenue and operating income growth"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2"
+          ],
+          "section_titles": [
+            "1. Executive summary"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            }
+          ],
+          "mention_count": 1,
+          "node_score": 3.0
+        },
+        {
+          "node_id": "node_segment_structure",
+          "canonical_name": "segment structure",
+          "entity_type": "financial_or_business_concept",
+          "aliases": [],
+          "evidence_snippets": [
+            "It preserves the filing\u2019s core content: business model, segment structure, strategy, management discussion and analysis, audited financial statements, major accounting notes, principal risks, cybersecurity governance, legal and tax exposures, and corporate governance disclosures."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch3"
+          ],
+          "section_titles": [
+            "Document Overview"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 1,
+              "page_end": 3
+            }
+          ],
+          "mention_count": 1,
+          "node_score": 3.0
+        },
+        {
+          "node_id": "node_productivity_and_business_processes",
+          "canonical_name": "Productivity and Business Processes",
+          "entity_type": "segment",
+          "aliases": [
+            "Productivity and Business Processes (PBP)"
+          ],
+          "evidence_snippets": [
+            "Productivity and Business Processes (PBP): Microsoft 365 Commercial, Microsoft 365 Consumer, LinkedIn, and Dynamics.",
+            "Productivity and Business Processes",
+            "Microsoft 365 Commercial cloud within Productivity and Business Processes",
+            "$31.5 billion to Productivity and Business Processes"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review",
+            "4. Fiscal 2025 financial performance",
+            "5. Segment results and operating drivers",
+            "7. Major accounting notes and financial statement"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 8,
+              "page_end": 9
+            },
+            {
+              "page_start": 9,
+              "page_end": 11
+            },
+            {
+              "page_start": 13,
+              "page_end": 15
+            }
+          ],
+          "mention_count": 5,
+          "node_score": 0.9
+        },
+        {
+          "node_id": "node_dynamics",
+          "canonical_name": "Dynamics",
+          "entity_type": "product_or_service",
+          "aliases": [],
+          "evidence_snippets": [
+            "Productivity and Business Processes (PBP): Microsoft 365 Commercial, Microsoft 365 Consumer, LinkedIn, and Dynamics.",
+            "Dynamics contributes ERP, CRM, Power Apps, and Power Automate capabilities"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 2,
+          "node_score": 0.6
+        }
+      ],
+      "matched_edges": [
+        {
+          "edge_id": "edge_45",
+          "source_node_id": "node_productivity_and_business_processes",
+          "source_canonical_name": "Productivity and Business Processes",
+          "target_node_id": "node_linkedin",
+          "target_canonical_name": "LinkedIn",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "Productivity and Business Processes (PBP): Microsoft 365 Commercial, Microsoft 365 Consumer, LinkedIn, and Dynamics.",
+            "PBP houses Microsoft\u2019s productivity, communication, collaboration, business applications, and professional network assets.",
+            "LinkedIn revenue rose 9%"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review",
+            "5. Segment results and operating drivers"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 9,
+              "page_end": 11
+            }
+          ],
+          "mention_count": 3,
+          "edge_score": 4.1
+        },
+        {
+          "edge_id": "edge_46",
+          "source_node_id": "node_productivity_and_business_processes",
+          "source_canonical_name": "Productivity and Business Processes",
+          "target_node_id": "node_dynamics",
+          "target_canonical_name": "Dynamics",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "Productivity and Business Processes (PBP): Microsoft 365 Commercial, Microsoft 365 Consumer, LinkedIn, and Dynamics.",
+            "PBP houses Microsoft\u2019s productivity, communication, collaboration, business applications, and professional network assets."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 2,
+          "edge_score": 3.9
+        },
+        {
+          "edge_id": "edge_43",
+          "source_node_id": "node_productivity_and_business_processes",
+          "source_canonical_name": "Productivity and Business Processes",
+          "target_node_id": "node_microsoft_365_commercial",
+          "target_canonical_name": "Microsoft 365 Commercial",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "Productivity and Business Processes (PBP): Microsoft 365 Commercial, Microsoft 365 Consumer, LinkedIn, and Dynamics.",
+            "PBP houses Microsoft\u2019s productivity, communication, collaboration, business applications, and professional network assets."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 2,
+          "edge_score": 2.9
+        },
+        {
+          "edge_id": "edge_44",
+          "source_node_id": "node_productivity_and_business_processes",
+          "source_canonical_name": "Productivity and Business Processes",
+          "target_node_id": "node_microsoft_365_consumer",
+          "target_canonical_name": "Microsoft 365 Consumer",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "Productivity and Business Processes (PBP): Microsoft 365 Commercial, Microsoft 365 Consumer, LinkedIn, and Dynamics.",
+            "PBP houses Microsoft\u2019s productivity, communication, collaboration, business applications, and professional network assets."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 2,
+          "edge_score": 2.9
+        },
+        {
+          "edge_id": "edge_225",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_linkedin",
+          "target_canonical_name": "LinkedIn",
+          "relation_type": "faces",
+          "evidence_snippets": [
+            "involving LinkedIn targeted advertising practices under GDPR"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3"
+          ],
+          "section_titles": [
+            "7. Major accounting notes and financial statement"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 13,
+              "page_end": 15
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 2.7
+        },
+        {
+          "edge_id": "edge_3",
+          "source_node_id": "node_fy2025_form_10_k",
+          "source_canonical_name": "FY2025 Form 10-K",
+          "target_node_id": "node_segment_structure",
+          "target_canonical_name": "segment structure",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "It preserves the filing\u2019s core content: business model, segment structure, strategy, management discussion and analysis, audited financial statements, major accounting notes, principal risks, cybersecurity governance, legal and tax exposures, and corporate governance disclosures."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch3"
+          ],
+          "section_titles": [
+            "Document Overview"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 1,
+              "page_end": 3
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 2.7
+        },
+        {
+          "edge_id": "edge_40",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_productivity_and_business_processes",
+          "target_canonical_name": "Productivity and Business Processes",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "The three reportable segments are:"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 2.7
+        },
+        {
+          "edge_id": "edge_73",
+          "source_node_id": "node_productivity_and_business_processes",
+          "source_canonical_name": "Productivity and Business Processes",
+          "target_node_id": "node_productivity_suites",
+          "target_canonical_name": "productivity suites",
+          "relation_type": "faces",
+          "evidence_snippets": [
+            "Competition in this segment comes from productivity suites, collaboration platforms, AI-first workflow tools, business applications vendors, and niche security or identity vendors."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3"
+          ],
+          "section_titles": [
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 2.7
+        }
+      ]
+    },
+    {
+      "case_id": "azure_ai_infra",
+      "query": "How is Azure connected to AI infrastructure?",
+      "evaluation": {
+        "case_id": "azure_ai_infra",
+        "query": "How is Azure connected to AI infrastructure?",
+        "node_hit_count": 2,
+        "expected_node_count": 2,
+        "relation_hit_count": 1,
+        "expected_relation_count": 1,
+        "passed": true
+      },
+      "matched_nodes": [
+        {
+          "node_id": "node_ai_infrastructure",
+          "canonical_name": "AI infrastructure",
+          "entity_type": "technology_or_platform",
+          "aliases": [],
+          "evidence_snippets": [
+            "Microsoft is scaling AI infrastructure."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+          ],
+          "section_titles": [
+            "5. Segment results and operating drivers"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 9,
+              "page_end": 11
+            }
+          ],
+          "mention_count": 1,
+          "node_score": 8.0
+        },
+        {
+          "node_id": "node_azure",
+          "canonical_name": "Azure",
+          "entity_type": "product_or_service",
+          "aliases": [],
+          "evidence_snippets": [
+            "Azure and other cloud services grew 34%",
+            "especially Microsoft 365 Commercial and Azure",
+            "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+            "Azure supports GitHub, data services, and AI platforms",
+            "Azure is described as a comprehensive cloud platform spanning compute, networking, storage, data, AI, machine learning, cognitive services, IoT, and app services.",
+            "Azure within Intelligent Cloud",
+            "driven by Azure and other",
+            "Azure growth was fueled by demand across the portfolio rather than",
+            "Azure is capturing large-scale AI and infrastructure demand",
+            "Azure, Microsoft 365 Commercial cloud, Dynamics 365, Xbox content and services, and search monetization"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par2_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec2_p4_par2_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_ch1"
+          ],
+          "section_titles": [
+            "1. Executive summary",
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review",
+            "4. Fiscal 2025 financial performance",
+            "5. Segment results and operating drivers",
+            "10. Overall assessment",
+            "Appendix C. Growth drivers by business line"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            },
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 8,
+              "page_end": 9
+            },
+            {
+              "page_start": 9,
+              "page_end": 11
+            },
+            {
+              "page_start": 19,
+              "page_end": 20
+            },
+            {
+              "page_start": 22,
+              "page_end": 24
+            }
+          ],
+          "mention_count": 10,
+          "node_score": 6.4
+        },
+        {
+          "node_id": "node_ai",
+          "canonical_name": "AI",
+          "entity_type": "technology_or_platform",
+          "aliases": [],
+          "evidence_snippets": [
+            "aggressive spending where management sees durable strategic return: AI",
+            "related to privacy, advertising, data storage, competition, digital markets, content, and AI",
+            "across cloud, AI,",
+            "plus the ability to insert AI across all of them"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_graph_input",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_graph_input",
+            "microsoft_fy2025_10k_summary_sec9_p17_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par2",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3",
+            "microsoft_fy2025_10k_summary_sec9_p17_par1",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch3",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch0",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch1",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch2",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch3",
+            "microsoft_fy2025_10k_summary_sec9_p17_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec9_p17_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec9_p17_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec9_p17_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec9_p17_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch4"
+          ],
+          "section_titles": [
+            "5. Segment results and operating drivers",
+            "8. Risk factors and cybersecurity posture",
+            "9. Operations, people, properties, and governance",
+            "10. Overall assessment"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 9,
+              "page_end": 11
+            },
+            {
+              "page_start": 15,
+              "page_end": 17
+            },
+            {
+              "page_start": 17,
+              "page_end": 19
+            },
+            {
+              "page_start": 19,
+              "page_end": 20
+            }
+          ],
+          "mention_count": 4,
+          "node_score": 6.3
+        },
+        {
+          "node_id": "node_ai_infrastructure_buildout",
+          "canonical_name": "AI infrastructure buildout",
+          "entity_type": "initiative_or_strategy",
+          "aliases": [],
+          "evidence_snippets": [
+            "heavier AI infrastructure buildout"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4"
+          ],
+          "section_titles": [
+            "1. Executive summary"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            }
+          ],
+          "mention_count": 1,
+          "node_score": 5.4
+        },
+        {
+          "node_id": "node_ai_infrastructure_cycle",
+          "canonical_name": "AI infrastructure cycle",
+          "entity_type": "financial_or_business_concept",
+          "aliases": [],
+          "evidence_snippets": [
+            "This segment is most visibly tied to the AI infrastructure cycle."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+          ],
+          "section_titles": [
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 1,
+          "node_score": 5.4
+        }
+      ],
+      "matched_edges": [
+        {
+          "edge_id": "edge_154",
+          "source_node_id": "node_azure",
+          "source_canonical_name": "Azure",
+          "target_node_id": "node_ai_infrastructure",
+          "target_canonical_name": "AI infrastructure",
+          "relation_type": "uses",
+          "evidence_snippets": [
+            "Microsoft is scaling AI infrastructure."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+          ],
+          "section_titles": [
+            "5. Segment results and operating drivers"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 9,
+              "page_end": 11
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 6.7
+        },
+        {
+          "edge_id": "edge_13",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_ai_infrastructure_buildout",
+          "target_canonical_name": "AI infrastructure buildout",
+          "relation_type": "invests_in",
+          "evidence_snippets": [
+            "accepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4"
+          ],
+          "section_titles": [
+            "1. Executive summary"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 4.2
+        },
+        {
+          "edge_id": "edge_155",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_ai_infrastructure",
+          "target_canonical_name": "AI infrastructure",
+          "relation_type": "invests_in",
+          "evidence_snippets": [
+            "Microsoft is scaling AI infrastructure."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+          ],
+          "section_titles": [
+            "5. Segment results and operating drivers"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 9,
+              "page_end": 11
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 4.2
+        },
+        {
+          "edge_id": "edge_47",
+          "source_node_id": "node_intelligent_cloud",
+          "source_canonical_name": "Intelligent Cloud",
+          "target_node_id": "node_azure",
+          "target_canonical_name": "Azure",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.",
+            "Intelligent Cloud contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.",
+            "driven by Azure and other cloud services growth of 34%."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review",
+            "5. Segment results and operating drivers"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 9,
+              "page_end": 11
+            }
+          ],
+          "mention_count": 3,
+          "edge_score": 3.1
+        },
+        {
+          "edge_id": "edge_134",
+          "source_node_id": "node_azure",
+          "source_canonical_name": "Azure",
+          "target_node_id": "node_intelligent_cloud",
+          "target_canonical_name": "Intelligent Cloud",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "Azure within Intelligent Cloud"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec4_p8_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4"
+          ],
+          "section_titles": [
+            "4. Fiscal 2025 financial performance"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 8,
+              "page_end": 9
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 2.7
+        },
+        {
+          "edge_id": "edge_18",
+          "source_node_id": "node_commercial_recurring_revenue",
+          "source_canonical_name": "commercial recurring revenue",
+          "target_node_id": "node_azure",
+          "target_canonical_name": "Azure",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "especially Microsoft 365 Commercial and Azure"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4"
+          ],
+          "section_titles": [
+            "1. Executive summary"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 2.7
+        },
+        {
+          "edge_id": "edge_19",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_azure",
+          "target_canonical_name": "Azure",
+          "relation_type": "uses",
+          "evidence_snippets": [
+            "Azure and other cloud services grew 34%"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4"
+          ],
+          "section_titles": [
+            "1. Executive summary"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 2.7
+        },
+        {
+          "edge_id": "edge_23",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_azure",
+          "target_canonical_name": "Azure",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "especially Microsoft 365 Commercial and Azure"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2"
+          ],
+          "section_titles": [
+            "1. Executive summary"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 2.7
+        }
+      ]
+    },
+    {
+      "case_id": "mpc_windows",
+      "query": "What does More Personal Computing include?",
+      "evaluation": {
+        "case_id": "mpc_windows",
+        "query": "What does More Personal Computing include?",
+        "node_hit_count": 2,
+        "expected_node_count": 2,
+        "relation_hit_count": 1,
+        "expected_relation_count": 1,
+        "passed": true
+      },
+      "matched_nodes": [
+        {
+          "node_id": "node_more_personal_computing",
+          "canonical_name": "More Personal Computing",
+          "entity_type": "segment",
+          "aliases": [
+            "More Personal Computing (MPC)"
+          ],
+          "evidence_snippets": [
+            "More Personal Computing (MPC): Windows and Devices, Gaming, and Search and news advertising.",
+            "More Personal Computing",
+            "Activision Blizzard is reported within More Personal Computing."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review",
+            "5. Segment results and operating drivers",
+            "7. Major accounting notes and financial statement"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 9,
+              "page_end": 11
+            },
+            {
+              "page_start": 13,
+              "page_end": 15
+            }
+          ],
+          "mention_count": 4,
+          "node_score": 15.6
+        },
+        {
+          "node_id": "node_gaming",
+          "canonical_name": "gaming",
+          "entity_type": "product_or_service",
+          "aliases": [
+            "Gaming"
+          ],
+          "evidence_snippets": [
+            "in gaming",
+            "online advertising, gaming, and professional networks",
+            "More Personal Computing (MPC): Windows and Devices, Gaming, and Search and news advertising.",
+            "Gaming is now a scaled content-and-subscription business",
+            "accelerate growth in gaming across mobile, PC, console, and cloud gaming"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par2_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par2_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4"
+          ],
+          "section_titles": [
+            "1. Executive summary",
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review",
+            "7. Major accounting notes and financial statement"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            },
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 13,
+              "page_end": 15
+            }
+          ],
+          "mention_count": 5,
+          "node_score": 1.7
+        },
+        {
+          "node_id": "node_search_and_news_advertising",
+          "canonical_name": "Search and news advertising",
+          "entity_type": "financial_or_business_concept",
+          "aliases": [],
+          "evidence_snippets": [
+            "More Personal Computing (MPC): Windows and Devices, Gaming, and Search and news advertising.",
+            "MPC brings together Windows, Surface and accessories, Xbox hardware, Xbox content and services, and Search and news advertising through Bing, Edge, Copilot, and affiliated properties.",
+            "Search and news advertising is positioned around user acquisition and engagement via Bing, Edge,\nand Copilot",
+            "Search and news advertising rose 13%"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par3_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par3",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec3_p6_par3_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch3"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review",
+            "5. Segment results and operating drivers"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 9,
+              "page_end": 11
+            }
+          ],
+          "mention_count": 4,
+          "node_score": 1.6
+        },
+        {
+          "node_id": "node_windows_and_devices",
+          "canonical_name": "Windows and Devices",
+          "entity_type": "product_or_service",
+          "aliases": [],
+          "evidence_snippets": [
+            "More Personal Computing (MPC): Windows and Devices, Gaming, and Search and news advertising."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            }
+          ],
+          "mention_count": 1,
+          "node_score": 1.3
+        },
+        {
+          "node_id": "node_microsoft",
+          "canonical_name": "Microsoft",
+          "entity_type": "organization",
+          "aliases": [],
+          "evidence_snippets": [
+            "Microsoft FY2025 Form 10-K",
+            "Microsoft entered fiscal 2025",
+            "Microsoft\u2019s FY2025 filing",
+            "Microsoft describes itself as a technology company",
+            "Microsoft notes progress",
+            "Microsoft\u2019s defense is integration, enterprise trust, cross-platform presence, and installed-base leverage.",
+            "Microsoft\u2019s earnings profile now",
+            "Microsoft\u2019s largest segment",
+            "Microsoft is scaling AI infrastructure.",
+            "Microsoft is not",
+            "Microsoft continued to return substantial capital to shareholders.",
+            "Microsoft\u2019s economics in FY2025",
+            "Microsoft reported no goodwill impairment",
+            "Microsoft ended FY2025",
+            "Microsoft\u2019s use of debt appears opportunistic and strategic rather than balance-sheet constrained.",
+            "Microsoft says it disagrees",
+            "Microsoft\u2019s risk disclosures",
+            "Microsoft\u2019s 10-K",
+            "Microsoft operates under evolving laws and regulations",
+            "Microsoft employed approximately 228,000 full-time employees",
+            "Microsoft\u2019s FY2025 Form 10-K",
+            "Microsoft\u2019s scale ensures",
+            "Microsoft Form 10-K",
+            "Microsoft\u2019s best growth vectors",
+            "Microsoft\u2019s liquidity remains strong",
+            "Microsoft does not signal an expectation of",
+            "Microsoft is both a cloud provider and a security vendor",
+            "Microsoft\u2019s FY2025 capital intensity was extraordinarily high for a software company"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec4_p8_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_graph_input",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_graph_input",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_graph_input",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec10_p19_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec12_p21_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec14_p24_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec16_p28_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0",
+            "microsoft_fy2025_10k_summary_sec4_p8_par1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par1",
+            "microsoft_fy2025_10k_summary_sec12_p21_par0",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0",
+            "microsoft_fy2025_10k_summary_sec14_p24_par0",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0",
+            "microsoft_fy2025_10k_summary_sec16_p28_par0",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec4_p8_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec4_p8_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch3",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch0",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch1",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch2",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch3",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec10_p19_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec12_p21_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec12_p21_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec14_p24_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec14_p24_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec16_p28_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec16_p28_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0_ch1"
+          ],
+          "section_titles": [
+            "Document Overview",
+            "1. Executive summary",
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review",
+            "4. Fiscal 2025 financial performance",
+            "5. Segment results and operating drivers",
+            "6. Balance sheet, liquidity, cash flow, and capital allocation",
+            "7. Major accounting notes and financial statement",
+            "8. Risk factors and cybersecurity posture",
+            "9. Operations, people, properties, and governance",
+            "10. Overall assessment",
+            "Appendix B. Executive officers and selected reference data",
+            "Appendix C. Growth drivers by business line",
+            "Appendix D. Liquidity, commitments, and lease detail",
+            "Appendix E. Tax, debt, and market risk detail",
+            "Appendix F. Cybersecurity and risk dashboard",
+            "Appendix G. Segment economics at a glance"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 1,
+              "page_end": 3
+            },
+            {
+              "page_start": 3,
+              "page_end": 4
+            },
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 8,
+              "page_end": 9
+            },
+            {
+              "page_start": 9,
+              "page_end": 11
+            },
+            {
+              "page_start": 11,
+              "page_end": 13
+            },
+            {
+              "page_start": 13,
+              "page_end": 15
+            },
+            {
+              "page_start": 15,
+              "page_end": 17
+            },
+            {
+              "page_start": 17,
+              "page_end": 19
+            },
+            {
+              "page_start": 19,
+              "page_end": 20
+            },
+            {
+              "page_start": 21,
+              "page_end": 22
+            },
+            {
+              "page_start": 22,
+              "page_end": 24
+            },
+            {
+              "page_start": 24,
+              "page_end": 26
+            },
+            {
+              "page_start": 26,
+              "page_end": 28
+            },
+            {
+              "page_start": 28,
+              "page_end": 30
+            },
+            {
+              "page_start": 30,
+              "page_end": 30
+            }
+          ],
+          "mention_count": 28,
+          "node_score": 0.5
+        }
+      ],
+      "matched_edges": [
+        {
+          "edge_id": "edge_52",
+          "source_node_id": "node_more_personal_computing",
+          "source_canonical_name": "More Personal Computing",
+          "target_node_id": "node_search_and_news_advertising",
+          "target_canonical_name": "Search and news advertising",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "More Personal Computing (MPC): Windows and Devices, Gaming, and Search and news advertising.",
+            "MPC brings together Windows, Surface and accessories, Xbox hardware, Xbox content and services, and Search and news advertising through Bing, Edge, Copilot, and affiliated properties."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 2,
+          "edge_score": 6.9
+        },
+        {
+          "edge_id": "edge_42",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_more_personal_computing",
+          "target_canonical_name": "More Personal Computing",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "The three reportable segments are:"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 6.7
+        },
+        {
+          "edge_id": "edge_50",
+          "source_node_id": "node_more_personal_computing",
+          "source_canonical_name": "More Personal Computing",
+          "target_node_id": "node_windows_and_devices",
+          "target_canonical_name": "Windows and Devices",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "More Personal Computing (MPC): Windows and Devices, Gaming, and Search and news advertising."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 6.7
+        },
+        {
+          "edge_id": "edge_51",
+          "source_node_id": "node_more_personal_computing",
+          "source_canonical_name": "More Personal Computing",
+          "target_node_id": "node_gaming",
+          "target_canonical_name": "gaming",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "More Personal Computing (MPC): Windows and Devices, Gaming, and Search and news advertising."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3"
+          ],
+          "section_titles": [
+            "2. Company overview, strategy, and operating model"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 4,
+              "page_end": 6
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 6.7
+        },
+        {
+          "edge_id": "edge_88",
+          "source_node_id": "node_more_personal_computing",
+          "source_canonical_name": "More Personal Computing",
+          "target_node_id": "node_windows",
+          "target_canonical_name": "Windows",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "MPC brings together Windows, Surface and accessories, Xbox hardware, Xbox content and services, and Search and news advertising through Bing, Edge, Copilot, and affiliated properties.",
+            "Windows and Devices rose only 2%,"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+          ],
+          "section_titles": [
+            "3. Segment and product portfolio review",
+            "5. Segment results and operating drivers"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 9,
+              "page_end": 11
+            }
+          ],
+          "mention_count": 2,
+          "edge_score": 5.9
+        },
+        {
+          "edge_id": "edge_157",
+          "source_node_id": "node_more_personal_computing",
+          "source_canonical_name": "More Personal Computing",
+          "target_node_id": "node_devices",
+          "target_canonical_name": "devices",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "Windows and Devices rose only 2%,"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2"
+          ],
+          "section_titles": [
+            "5. Segment results and operating drivers"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 9,
+              "page_end": 11
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 5.7
+        },
+        {
+          "edge_id": "edge_197",
+          "source_node_id": "node_activision_blizzard",
+          "source_canonical_name": "Activision Blizzard",
+          "target_node_id": "node_more_personal_computing",
+          "target_canonical_name": "More Personal Computing",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "Activision Blizzard is reported within More Personal Computing."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4"
+          ],
+          "section_titles": [
+            "7. Major accounting notes and financial statement"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 13,
+              "page_end": 15
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 5.7
+        },
+        {
+          "edge_id": "edge_89",
+          "source_node_id": "node_more_personal_computing",
+          "source_canonical_name": "More Personal Computing",
+          "target_node_id": "node_surface_and_accessories",
+          "target_canonical_name": "Surface and accessories",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "MPC brings together Windows, Surface and accessories, Xbox hardware, Xbox content and services, and Search and news advertising through Bing, Edge, Copilot, and affiliated properties."
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par1_ch4"
+          ],
+          "section_titles": [
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 5.7
+        }
+      ]
+    },
+    {
+      "case_id": "activision_integration",
+      "query": "What company did Microsoft integrate?",
+      "evaluation": {
+        "case_id": "activision_integration",
+        "query": "What company did Microsoft integrate?",
+        "node_hit_count": 1,
+        "expected_node_count": 2,
+        "relation_hit_count": 0,
+        "expected_relation_count": 1,
+        "passed": false
+      },
+      "matched_nodes": [
+        {
+          "node_id": "node_microsoft",
+          "canonical_name": "Microsoft",
+          "entity_type": "organization",
+          "aliases": [],
+          "evidence_snippets": [
+            "Microsoft FY2025 Form 10-K",
+            "Microsoft entered fiscal 2025",
+            "Microsoft\u2019s FY2025 filing",
+            "Microsoft describes itself as a technology company",
+            "Microsoft notes progress",
+            "Microsoft\u2019s defense is integration, enterprise trust, cross-platform presence, and installed-base leverage.",
+            "Microsoft\u2019s earnings profile now",
+            "Microsoft\u2019s largest segment",
+            "Microsoft is scaling AI infrastructure.",
+            "Microsoft is not",
+            "Microsoft continued to return substantial capital to shareholders.",
+            "Microsoft\u2019s economics in FY2025",
+            "Microsoft reported no goodwill impairment",
+            "Microsoft ended FY2025",
+            "Microsoft\u2019s use of debt appears opportunistic and strategic rather than balance-sheet constrained.",
+            "Microsoft says it disagrees",
+            "Microsoft\u2019s risk disclosures",
+            "Microsoft\u2019s 10-K",
+            "Microsoft operates under evolving laws and regulations",
+            "Microsoft employed approximately 228,000 full-time employees",
+            "Microsoft\u2019s FY2025 Form 10-K",
+            "Microsoft\u2019s scale ensures",
+            "Microsoft Form 10-K",
+            "Microsoft\u2019s best growth vectors",
+            "Microsoft\u2019s liquidity remains strong",
+            "Microsoft does not signal an expectation of",
+            "Microsoft is both a cloud provider and a security vendor",
+            "Microsoft\u2019s FY2025 capital intensity was extraordinarily high for a software company"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec4_p8_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_graph_input",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_graph_input",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_graph_input",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_graph_input",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec10_p19_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec12_p21_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec14_p24_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec16_p28_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0",
+            "microsoft_fy2025_10k_summary_sec4_p8_par1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par1",
+            "microsoft_fy2025_10k_summary_sec12_p21_par0",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0",
+            "microsoft_fy2025_10k_summary_sec14_p24_par0",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0",
+            "microsoft_fy2025_10k_summary_sec16_p28_par0",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec0_p1_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec4_p8_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec4_p8_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec5_p9_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch0",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch1",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch2",
+            "microsoft_fy2025_10k_summary_sec5_p9_par2_ch3",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par1_ch4",
+            "microsoft_fy2025_10k_summary_sec7_p13_par2_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par3_ch3",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec8_p15_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch0",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch1",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch2",
+            "microsoft_fy2025_10k_summary_sec8_p15_par3_ch3",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec9_p17_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec10_p19_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec12_p21_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec12_p21_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec14_p24_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec14_p24_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec15_p26_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec16_p28_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec16_p28_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec17_p30_par0_ch1"
+          ],
+          "section_titles": [
+            "Document Overview",
+            "1. Executive summary",
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review",
+            "4. Fiscal 2025 financial performance",
+            "5. Segment results and operating drivers",
+            "6. Balance sheet, liquidity, cash flow, and capital allocation",
+            "7. Major accounting notes and financial statement",
+            "8. Risk factors and cybersecurity posture",
+            "9. Operations, people, properties, and governance",
+            "10. Overall assessment",
+            "Appendix B. Executive officers and selected reference data",
+            "Appendix C. Growth drivers by business line",
+            "Appendix D. Liquidity, commitments, and lease detail",
+            "Appendix E. Tax, debt, and market risk detail",
+            "Appendix F. Cybersecurity and risk dashboard",
+            "Appendix G. Segment economics at a glance"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 1,
+              "page_end": 3
+            },
+            {
+              "page_start": 3,
+              "page_end": 4
+            },
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            },
+            {
+              "page_start": 8,
+              "page_end": 9
+            },
+            {
+              "page_start": 9,
+              "page_end": 11
+            },
+            {
+              "page_start": 11,
+              "page_end": 13
+            },
+            {
+              "page_start": 13,
+              "page_end": 15
+            },
+            {
+              "page_start": 15,
+              "page_end": 17
+            },
+            {
+              "page_start": 17,
+              "page_end": 19
+            },
+            {
+              "page_start": 19,
+              "page_end": 20
+            },
+            {
+              "page_start": 21,
+              "page_end": 22
+            },
+            {
+              "page_start": 22,
+              "page_end": 24
+            },
+            {
+              "page_start": 24,
+              "page_end": 26
+            },
+            {
+              "page_start": 26,
+              "page_end": 28
+            },
+            {
+              "page_start": 28,
+              "page_end": 30
+            },
+            {
+              "page_start": 30,
+              "page_end": 30
+            }
+          ],
+          "mention_count": 28,
+          "node_score": 6.4
+        },
+        {
+          "node_id": "node_microsoft_s_investment_portfolio",
+          "canonical_name": "Microsoft's investment portfolio",
+          "entity_type": "financial_or_business_concept",
+          "aliases": [
+            "Microsoft\u2019s investment portfolio"
+          ],
+          "evidence_snippets": [
+            "Microsoft\u2019s investment portfolio is primarily high-quality fixed income and liquidity-oriented holdings"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3"
+          ],
+          "section_titles": [
+            "7. Major accounting notes and financial statement"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 13,
+              "page_end": 15
+            }
+          ],
+          "mention_count": 1,
+          "node_score": 4.5
+        },
+        {
+          "node_id": "node_microsoft_365_commercial",
+          "canonical_name": "Microsoft 365 Commercial",
+          "entity_type": "product_or_service",
+          "aliases": [],
+          "evidence_snippets": [
+            "especially Microsoft 365 Commercial and Azure",
+            "The commercial components of Microsoft 365 were brought together in Productivity and Business Processes.",
+            "The core economic engine is Microsoft 365 Commercial"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec3_p6_par0_ch3"
+          ],
+          "section_titles": [
+            "1. Executive summary",
+            "2. Company overview, strategy, and operating model",
+            "3. Segment and product portfolio review"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            },
+            {
+              "page_start": 4,
+              "page_end": 6
+            },
+            {
+              "page_start": 6,
+              "page_end": 8
+            }
+          ],
+          "mention_count": 4,
+          "node_score": 3.3
+        },
+        {
+          "node_id": "node_microsoft_cloud",
+          "canonical_name": "Microsoft Cloud",
+          "entity_type": "product_or_service",
+          "aliases": [],
+          "evidence_snippets": [
+            "Microsoft Cloud revenue reached $168.9 billion",
+            "Microsoft is investing to help customers maximize digital spend through the Microsoft Cloud",
+            "the economic logic of Microsoft\u2019s cloud model"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec2_p4_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec2_p4_par1_ch3"
+          ],
+          "section_titles": [
+            "1. Executive summary",
+            "2. Company overview, strategy, and operating model"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            },
+            {
+              "page_start": 4,
+              "page_end": 6
+            }
+          ],
+          "mention_count": 3,
+          "node_score": 3.2
+        },
+        {
+          "node_id": "node_microsoft_365_commercial_cloud",
+          "canonical_name": "Microsoft 365 Commercial cloud",
+          "entity_type": "product_or_service",
+          "aliases": [],
+          "evidence_snippets": [
+            "Microsoft 365 Commercial cloud within Productivity and Business Processes",
+            "Azure, Microsoft 365 Commercial cloud, Dynamics 365, Xbox content and services, and search monetization"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_graph_input",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec4_p8_par0",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec4_p8_par0_ch4",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec13_p22_par0_ch1"
+          ],
+          "section_titles": [
+            "4. Fiscal 2025 financial performance",
+            "Appendix C. Growth drivers by business line"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 8,
+              "page_end": 9
+            },
+            {
+              "page_start": 22,
+              "page_end": 24
+            }
+          ],
+          "mention_count": 2,
+          "node_score": 3.1
+        }
+      ],
+      "matched_edges": [
+        {
+          "edge_id": "edge_183",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_finance_leases",
+          "target_canonical_name": "finance leases",
+          "relation_type": "uses",
+          "evidence_snippets": [
+            "The company is also using finance leases extensively"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec6_p11_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec6_p11_par1_ch3"
+          ],
+          "section_titles": [
+            "6. Balance sheet, liquidity, cash flow, and capital allocation"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 11,
+              "page_end": 13
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 4.2
+        },
+        {
+          "edge_id": "edge_242",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_secure_future_initiative",
+          "target_canonical_name": "Secure Future Initiative",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "The company says it launched the Secure Future Initiative"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec8_p15_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch2",
+            "microsoft_fy2025_10k_summary_sec8_p15_par1_ch3"
+          ],
+          "section_titles": [
+            "8. Risk factors and cybersecurity posture"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 15,
+              "page_end": 17
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 4.2
+        },
+        {
+          "edge_id": "edge_329",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_cyber",
+          "target_canonical_name": "cyber",
+          "relation_type": "faces",
+          "evidence_snippets": [
+            "The company remains exposed to cyber"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec10_p19_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec10_p19_par0_ch4"
+          ],
+          "section_titles": [
+            "10. Overall assessment"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 19,
+              "page_end": 20
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 4.2
+        },
+        {
+          "edge_id": "edge_330",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_cyber_incidents",
+          "target_canonical_name": "cyber incidents",
+          "relation_type": "faces",
+          "evidence_snippets": [
+            "The company remains exposed to cyber\nincidents"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec10_p19_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec10_p19_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec10_p19_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec10_p19_par1_ch1"
+          ],
+          "section_titles": [
+            "10. Overall assessment"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 19,
+              "page_end": 20
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 4.2
+        },
+        {
+          "edge_id": "edge_352",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_forward_commitments",
+          "target_canonical_name": "forward commitments",
+          "relation_type": "faces",
+          "evidence_snippets": [
+            "Microsoft\u2019s liquidity remains strong, but the filing makes clear that the company has entered a period of unusually large forward commitments"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec14_p24_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec14_p24_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec14_p24_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec14_p24_par0_ch1"
+          ],
+          "section_titles": [
+            "Appendix D. Liquidity, commitments, and lease detail"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 24,
+              "page_end": 26
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 4.2
+        },
+        {
+          "edge_id": "edge_20",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_microsoft_cloud",
+          "target_canonical_name": "Microsoft Cloud",
+          "relation_type": "integrates",
+          "evidence_snippets": [
+            "Microsoft Cloud revenue reached $168.9 billion"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch2",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "microsoft_fy2025_10k_summary_sec1_p3_par0_ch4"
+          ],
+          "section_titles": [
+            "1. Executive summary"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 3.7
+        },
+        {
+          "edge_id": "edge_22",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_microsoft_365_commercial",
+          "target_canonical_name": "Microsoft 365 Commercial",
+          "relation_type": "includes",
+          "evidence_snippets": [
+            "especially Microsoft 365 Commercial and Azure"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch0",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch1",
+            "microsoft_fy2025_10k_summary_sec1_p3_par1_ch2"
+          ],
+          "section_titles": [
+            "1. Executive summary"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 3,
+              "page_end": 4
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 3.7
+        },
+        {
+          "edge_id": "edge_220",
+          "source_node_id": "node_microsoft",
+          "source_canonical_name": "Microsoft",
+          "target_node_id": "node_microsoft_s_investment_portfolio",
+          "target_canonical_name": "Microsoft's investment portfolio",
+          "relation_type": "uses",
+          "evidence_snippets": [
+            "Microsoft\u2019s investment portfolio is primarily high-quality fixed income and liquidity-oriented holdings"
+          ],
+          "source_graph_input_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_graph_input"
+          ],
+          "source_parent_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4"
+          ],
+          "source_child_ids": [
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch0",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch1",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch2",
+            "microsoft_fy2025_10k_summary_sec7_p13_par4_ch3"
+          ],
+          "section_titles": [
+            "7. Major accounting notes and financial statement"
+          ],
+          "page_ranges": [
+            {
+              "page_start": 13,
+              "page_end": 15
+            }
+          ],
+          "mention_count": 1,
+          "edge_score": 3.7
+        }
+      ]
+    }
+  ]
+}

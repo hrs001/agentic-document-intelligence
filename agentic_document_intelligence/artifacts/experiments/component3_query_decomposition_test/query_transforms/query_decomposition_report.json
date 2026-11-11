@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-03-21T11:09:21.515944+00:00",
+  "query": "Who is the CEO of Microsoft?",
+  "result": {
+    "sanitized_query": "Who is the CEO of Microsoft?",
+    "needs_decomposition": false,
+    "sub_queries": [
+      "Who is the CEO of Microsoft?"
+    ],
+    "reasoning_type": "single_intent",
+    "decomposition_strategy": "none"
+  }
+}

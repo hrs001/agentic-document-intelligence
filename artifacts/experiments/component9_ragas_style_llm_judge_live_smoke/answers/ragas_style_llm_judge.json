@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-03-18T12:01:40.569829+00:00",
+  "result": {
+    "original_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+    "judge_model": "gpt-5-mini",
+    "metrics": {
+      "faithfulness": 5,
+      "answer_relevancy": 5,
+      "context_precision": 5,
+      "citation_grounding": 5,
+      "overall_verdict": "pass",
+      "summary": "The answer correctly states that GitHub is included in the Intelligent Cloud segment and reports FY2025 Intelligent Cloud revenue as $108,610 million. These claims are directly supported by the provided graph, vector document, and SQL row evidence, and citations are attached to the major claims.",
+      "strengths": [
+        "Claims are directly supported by multiple, relevant evidence types (graph relationship, vector document, SQL row).",
+        "Answer is concise and directly answers both parts of the user query (segment and FY2025 revenue).",
+        "Citations are attached to the major claims, making grounding clear."
+      ],
+      "weaknesses": [
+        "Revenue formatting could be clearer (\"$108,610 million\" can be misread; a billions representation would improve readability).",
+        "No primary-source reference (e.g., direct company filing or report link) was provided for users who may want to verify independently."
+      ],
+      "recommendations": [
+        "Clarify units/formatting for the revenue figure (e.g., \"$108,610 million (\u2248 $108.61 billion)\").",
+        "Include or reference the primary source (company annual report or filing) when available to strengthen traceability.",
+        "Optionally provide the fiscal year definition (e.g., Microsoft\u2019s FY2025 end date) to avoid ambiguity about the reporting period."
+      ]
+    },
+    "average_score": 5.0,
+    "usage": {
+      "completion_tokens": 687,
+      "prompt_tokens": 653,
+      "total_tokens": 1340,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 384,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  }
+}

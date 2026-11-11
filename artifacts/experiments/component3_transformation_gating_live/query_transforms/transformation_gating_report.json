@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-03-17T15:35:56.120473+00:00",
+  "result": {
+    "query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+    "max_sub_queries": 3,
+    "estimated_sub_queries": 3,
+    "run_decomposition": true,
+    "run_multi_query": false,
+    "run_step_back": false,
+    "run_hyde": false,
+    "is_ambiguous_case": true,
+    "ambiguity_signals": [
+      "ambiguous_reference"
+    ],
+    "reasons": [
+      "compound_or_multi_intent"
+    ]
+  }
+}

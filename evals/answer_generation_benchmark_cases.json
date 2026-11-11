@@ -1,0 +1,58 @@
+[
+  {
+    "case_id": "ans_001_sql_highest_revenue",
+    "query": "Which segment had the highest revenue in FY2025?",
+    "required_phrases": ["Intelligent Cloud", "108610"],
+    "required_source_types": ["sql_structured"],
+    "min_citation_count": 1
+  },
+  {
+    "case_id": "ans_002_graph_sql_github_revenue",
+    "query": "Which segment includes GitHub and what was its FY2025 revenue?",
+    "required_phrases": ["Intelligent Cloud", "GitHub", "108610"],
+    "required_source_types": ["graph_relationships", "sql_structured"],
+    "min_citation_count": 2
+  },
+  {
+    "case_id": "ans_003_graph_only_structure",
+    "query": "How does Azure relate to GitHub in Microsoft's business structure?",
+    "required_phrases": ["Azure", "GitHub"],
+    "required_source_types": ["graph_relationships"],
+    "min_citation_count": 1
+  },
+  {
+    "case_id": "ans_004_sql_geography_mix_growth",
+    "query": "Which geography had faster year-over-year revenue growth in FY2025 and what was its revenue mix percentage?",
+    "required_phrases": ["United States", "9.8", "46.8"],
+    "required_source_types": ["sql_structured"],
+    "min_citation_count": 1
+  },
+  {
+    "case_id": "ans_005_sql_growth_driver",
+    "query": "Which segment grew the fastest in FY2025 and what narrative driver was mentioned for it?",
+    "required_phrases": ["Intelligent Cloud", "12.6", "AI infrastructure demand"],
+    "required_source_types": ["sql_structured"],
+    "min_citation_count": 1
+  },
+  {
+    "case_id": "ans_006_sql_product_family",
+    "query": "Which product family had the highest AI relevance score in FY2025 and what was its strategic priority?",
+    "required_phrases": ["Azure", "95", "High"],
+    "required_source_types": ["sql_structured"],
+    "min_citation_count": 1
+  },
+  {
+    "case_id": "ans_007_graph_listing",
+    "query": "Which products and services are included under Intelligent Cloud?",
+    "required_phrases": ["Intelligent Cloud", "GitHub"],
+    "required_source_types": ["graph_relationships"],
+    "min_citation_count": 1
+  },
+  {
+    "case_id": "ans_008_vector_narrative",
+    "query": "What did management say about AI demand?",
+    "required_phrases": ["AI", "demand"],
+    "required_source_types": ["vector_document"],
+    "min_citation_count": 1
+  }
+]

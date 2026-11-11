@@ -1,0 +1,377 @@
+{
+  "generated_at": "2026-03-18T11:02:31.317100+00:00",
+  "result": {
+    "original_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+    "policy": {
+      "routing_policy": "x"
+    },
+    "routing_summary": {
+      "sub_query_count": 1
+    },
+    "execution_summary": {
+      "sub_query_count": 1,
+      "source_usage": {
+        "graph_relationships": 1,
+        "sql_structured": 1,
+        "vector_document": 1
+      }
+    },
+    "bundle_summary": {
+      "sub_query_count": 1,
+      "fact_count": 4,
+      "overlap_signal_count": 3,
+      "conflict_signal_count": 0
+    },
+    "normalized_facts": [
+      {
+        "fact_id": "graph_node::n1",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "resolved_sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "fact_type": "entity",
+        "summary": "GitHub (product_or_service)",
+        "entity_name": "GitHub",
+        "entity_type": "product_or_service",
+        "entities": [
+          "GitHub"
+        ],
+        "aliases": [],
+        "section_titles": [
+          "Segment and product portfolio review"
+        ],
+        "parent_ids": [
+          "parent_1"
+        ],
+        "child_ids": [
+          "child_1"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 5
+          }
+        ],
+        "evidence_snippets": [
+          "GitHub is included under Intelligent Cloud"
+        ],
+        "node_score": 7.4
+      },
+      {
+        "fact_id": "graph_edge::e1",
+        "source_type": "graph_relationships",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "resolved_sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "fact_type": "relationship",
+        "summary": "Intelligent Cloud -> includes -> GitHub",
+        "entities": [
+          "Intelligent Cloud",
+          "GitHub"
+        ],
+        "source_entity": "Intelligent Cloud",
+        "relation_type": "includes",
+        "target_entity": "GitHub",
+        "section_titles": [
+          "Segment and product portfolio review"
+        ],
+        "parent_ids": [
+          "parent_1"
+        ],
+        "child_ids": [
+          "child_1"
+        ],
+        "page_ranges": [
+          {
+            "page_start": 4,
+            "page_end": 5
+          }
+        ],
+        "evidence_snippets": [
+          "Intelligent Cloud includes GitHub"
+        ],
+        "edge_score": 8.1
+      },
+      {
+        "fact_id": "sql::sq_1::1",
+        "source_type": "sql_structured",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "resolved_sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "fact_type": "sql_row",
+        "summary": "segment_name=Intelligent Cloud, revenue_usd_millions=108610",
+        "entities": [
+          "Intelligent Cloud"
+        ],
+        "target_tables": [
+          "financial_performance_by_segment"
+        ],
+        "validated_sql": "SELECT segment_name, revenue_usd_millions FROM financial_performance_by_segment WHERE fiscal_year = 2025",
+        "row": {
+          "segment_name": "Intelligent Cloud",
+          "revenue_usd_millions": 108610
+        },
+        "columns": [
+          "segment_name",
+          "revenue_usd_millions"
+        ],
+        "confidence": "high"
+      },
+      {
+        "fact_id": "vector::chunk_1",
+        "source_type": "vector_document",
+        "sub_query_id": "sq_1",
+        "sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "resolved_sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "fact_type": "text_evidence",
+        "summary": "Intelligent Cloud includes GitHub and other cloud services.",
+        "child_text": "Intelligent Cloud includes GitHub and other cloud services.",
+        "parent_text": "Segment and product portfolio review describes Intelligent Cloud.",
+        "entities": [
+          "Intelligent Cloud",
+          "Segment",
+          "Segment and product portfolio review"
+        ],
+        "section_title": "Segment and product portfolio review",
+        "parent_id": "parent_1",
+        "citation": {
+          "parent_id": "parent_1",
+          "section_title": "Segment and product portfolio review",
+          "page": 4,
+          "page_end": 5
+        },
+        "scores": {
+          "best_score": 1.9,
+          "rerank_score": 0.92,
+          "mmr_score": 0.81
+        }
+      }
+    ],
+    "overlap_signals": [
+      {
+        "overlap_type": "entity",
+        "key": "intelligent cloud",
+        "sources": [
+          "graph_relationships",
+          "sql_structured",
+          "vector_document"
+        ],
+        "fact_ids": [
+          "graph_edge::e1",
+          "sql::sq_1::1",
+          "vector::chunk_1"
+        ]
+      },
+      {
+        "overlap_type": "parent_context",
+        "key": "parent 1",
+        "sources": [
+          "graph_relationships",
+          "vector_document"
+        ],
+        "fact_ids": [
+          "graph_node::n1",
+          "graph_edge::e1",
+          "vector::chunk_1"
+        ]
+      },
+      {
+        "overlap_type": "section",
+        "key": "segment and product portfolio review",
+        "sources": [
+          "graph_relationships",
+          "vector_document"
+        ],
+        "fact_ids": [
+          "graph_node::n1",
+          "graph_edge::e1",
+          "vector::chunk_1"
+        ]
+      }
+    ],
+    "conflict_signals": [],
+    "sub_query_fusions": [
+      {
+        "sub_query_id": "sq_1",
+        "original_sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "resolved_sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+        "active_sources": [
+          "graph_relationships",
+          "sql_structured",
+          "vector_document"
+        ],
+        "fact_count": 4,
+        "facts": [
+          {
+            "fact_id": "sql::sq_1::1",
+            "source_type": "sql_structured",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+            "resolved_sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+            "fact_type": "sql_row",
+            "summary": "segment_name=Intelligent Cloud, revenue_usd_millions=108610",
+            "entities": [
+              "Intelligent Cloud"
+            ],
+            "target_tables": [
+              "financial_performance_by_segment"
+            ],
+            "validated_sql": "SELECT segment_name, revenue_usd_millions FROM financial_performance_by_segment WHERE fiscal_year = 2025",
+            "row": {
+              "segment_name": "Intelligent Cloud",
+              "revenue_usd_millions": 108610
+            },
+            "columns": [
+              "segment_name",
+              "revenue_usd_millions"
+            ],
+            "confidence": "high"
+          },
+          {
+            "fact_id": "graph_edge::e1",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+            "resolved_sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+            "fact_type": "relationship",
+            "summary": "Intelligent Cloud -> includes -> GitHub",
+            "entities": [
+              "Intelligent Cloud",
+              "GitHub"
+            ],
+            "source_entity": "Intelligent Cloud",
+            "relation_type": "includes",
+            "target_entity": "GitHub",
+            "section_titles": [
+              "Segment and product portfolio review"
+            ],
+            "parent_ids": [
+              "parent_1"
+            ],
+            "child_ids": [
+              "child_1"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 4,
+                "page_end": 5
+              }
+            ],
+            "evidence_snippets": [
+              "Intelligent Cloud includes GitHub"
+            ],
+            "edge_score": 8.1
+          },
+          {
+            "fact_id": "graph_node::n1",
+            "source_type": "graph_relationships",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+            "resolved_sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+            "fact_type": "entity",
+            "summary": "GitHub (product_or_service)",
+            "entity_name": "GitHub",
+            "entity_type": "product_or_service",
+            "entities": [
+              "GitHub"
+            ],
+            "aliases": [],
+            "section_titles": [
+              "Segment and product portfolio review"
+            ],
+            "parent_ids": [
+              "parent_1"
+            ],
+            "child_ids": [
+              "child_1"
+            ],
+            "page_ranges": [
+              {
+                "page_start": 4,
+                "page_end": 5
+              }
+            ],
+            "evidence_snippets": [
+              "GitHub is included under Intelligent Cloud"
+            ],
+            "node_score": 7.4
+          },
+          {
+            "fact_id": "vector::chunk_1",
+            "source_type": "vector_document",
+            "sub_query_id": "sq_1",
+            "sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+            "resolved_sub_query": "Which segment includes GitHub and what was its FY2025 revenue?",
+            "fact_type": "text_evidence",
+            "summary": "Intelligent Cloud includes GitHub and other cloud services.",
+            "child_text": "Intelligent Cloud includes GitHub and other cloud services.",
+            "parent_text": "Segment and product portfolio review describes Intelligent Cloud.",
+            "entities": [
+              "Intelligent Cloud",
+              "Segment",
+              "Segment and product portfolio review"
+            ],
+            "section_title": "Segment and product portfolio review",
+            "parent_id": "parent_1",
+            "citation": {
+              "parent_id": "parent_1",
+              "section_title": "Segment and product portfolio review",
+              "page": 4,
+              "page_end": 5
+            },
+            "scores": {
+              "best_score": 1.9,
+              "rerank_score": 0.92,
+              "mmr_score": 0.81
+            }
+          }
+        ],
+        "overlap_signals": [
+          {
+            "overlap_type": "entity",
+            "key": "intelligent cloud",
+            "sources": [
+              "graph_relationships",
+              "sql_structured",
+              "vector_document"
+            ],
+            "fact_ids": [
+              "graph_edge::e1",
+              "sql::sq_1::1",
+              "vector::chunk_1"
+            ]
+          },
+          {
+            "overlap_type": "parent_context",
+            "key": "parent 1",
+            "sources": [
+              "graph_relationships",
+              "vector_document"
+            ],
+            "fact_ids": [
+              "graph_node::n1",
+              "graph_edge::e1",
+              "vector::chunk_1"
+            ]
+          },
+          {
+            "overlap_type": "section",
+            "key": "segment and product portfolio review",
+            "sources": [
+              "graph_relationships",
+              "vector_document"
+            ],
+            "fact_ids": [
+              "graph_node::n1",
+              "graph_edge::e1",
+              "vector::chunk_1"
+            ]
+          }
+        ],
+        "conflict_signals": [],
+        "assembled_fused_sub_query_text": "[Fused Sub-query] Which segment includes GitHub and what was its FY2025 revenue?\nResolved Query: Which segment includes GitHub and what was its FY2025 revenue?\nActive Sources: graph_relationships, sql_structured, vector_document\nFact Count: 4\nOverlap Signals: 3\nConflict Signals: 0\nAnswer-Ready Facts:\n[SQL] segment_name=Intelligent Cloud, revenue_usd_millions=108610 | tables=financial_performance_by_segment\n[Graph] Intelligent Cloud -> includes -> GitHub\n[Graph] GitHub (product_or_service)\n[Vector] Intelligent Cloud includes GitHub and other cloud services. | section=Segment and product portfolio review | pages=4 - 5"
+      }
+    ],
+    "assembled_fused_evidence_text": "[Fused Sub-query] Which segment includes GitHub and what was its FY2025 revenue?\nResolved Query: Which segment includes GitHub and what was its FY2025 revenue?\nActive Sources: graph_relationships, sql_structured, vector_document\nFact Count: 4\nOverlap Signals: 3\nConflict Signals: 0\nAnswer-Ready Facts:\n[SQL] segment_name=Intelligent Cloud, revenue_usd_millions=108610 | tables=financial_performance_by_segment\n[Graph] Intelligent Cloud -> includes -> GitHub\n[Graph] GitHub (product_or_service)\n[Vector] Intelligent Cloud includes GitHub and other cloud services. | section=Segment and product portfolio review | pages=4 - 5"
+  }
+}

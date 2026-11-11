@@ -1,0 +1,458 @@
+{
+  "generated_at": "2026-03-17T10:30:45.958327+00:00",
+  "model": "gpt-5-mini",
+  "case_count": 8,
+  "passed_count": 6,
+  "exact_passed_count": 2,
+  "baseline_passed_count": 6,
+  "baseline_exact_passed_count": 5,
+  "results": [
+    {
+      "query": "What was Microsoft's FY2025 revenue?",
+      "llm_result": {
+        "sanitized_query": "What was Microsoft's FY2025 revenue?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "What was Microsoft's FY2025 revenue?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "What was Microsoft's FY2025 revenue?",
+        "passed": true,
+        "exact_passed": true,
+        "missing_sub_queries": [],
+        "extra_sub_queries": [],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+      "llm_result": {
+        "sanitized_query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Who is the CEO of Microsoft?",
+          "What was Microsoft's FY2025 revenue?"
+        ],
+        "reasoning_type": "multi_question",
+        "decomposition_strategy": "question_boundary_split"
+      },
+      "evaluation": {
+        "query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what was fy2025 revenue"
+        ],
+        "extra_sub_queries": [
+          "what was microsoft's fy2025 revenue"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+      "llm_result": {
+        "sanitized_query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Explain Microsoft's FY2025 revenue growth?",
+          "Who is the CEO of Microsoft?"
+        ],
+        "reasoning_type": "multi_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "identify who the ceo is"
+        ],
+        "extra_sub_queries": [
+          "who is the ceo of microsoft"
+        ],
+        "semantic_missing_sub_queries": [
+          "identify who the ceo is"
+        ],
+        "semantic_extra_sub_queries": [
+          "microsoft_ceo"
+        ],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+      "llm_result": {
+        "sanitized_query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "What was Microsoft's FY2025 revenue?",
+          "What was Microsoft's FY2025 operating income?",
+          "What was Microsoft's FY2025 net income?"
+        ],
+        "reasoning_type": "list_intent",
+        "decomposition_strategy": "list_item_split"
+      },
+      "evaluation": {
+        "query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "list microsoft's fy2025 revenue",
+          "list microsoft's fy2025 operating income",
+          "list microsoft's fy2025 net income"
+        ],
+        "extra_sub_queries": [
+          "what was microsoft's fy2025 revenue",
+          "what was microsoft's fy2025 operating income",
+          "what was microsoft's fy2025 net income"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Compare Azure and Microsoft 365 revenue drivers.",
+      "llm_result": {
+        "sanitized_query": "Compare Azure and Microsoft 365 revenue drivers.",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "Compare the revenue drivers of Microsoft Azure and Microsoft 365?"
+        ],
+        "reasoning_type": "comparison",
+        "decomposition_strategy": "comparison_atomic"
+      },
+      "evaluation": {
+        "query": "Compare Azure and Microsoft 365 revenue drivers.",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "compare azure and microsoft 365 revenue drivers"
+        ],
+        "extra_sub_queries": [
+          "compare the revenue drivers of azure and microsoft 365"
+        ],
+        "semantic_missing_sub_queries": [
+          "compare_azure_m365_revenue_drivers"
+        ],
+        "semantic_extra_sub_queries": [
+          "compare the revenue drivers of azure and microsoft 365"
+        ],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Could you tell me the CEO of Microsoft and summarize fiscal 2025 cybersecurity risks?",
+      "llm_result": {
+        "sanitized_query": "Could you tell me the CEO of Microsoft and summarize fiscal 2025 cybersecurity risks?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Who is the CEO of Microsoft?",
+          "Summarize Microsoft's fiscal 2025 cybersecurity risks?"
+        ],
+        "reasoning_type": "multi_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "Could you tell me the CEO of Microsoft and summarize fiscal 2025 cybersecurity risks?",
+        "passed": true,
+        "exact_passed": true,
+        "missing_sub_queries": [],
+        "extra_sub_queries": [],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Revenue, operating income, and cash flow for FY2025 please.",
+      "llm_result": {
+        "sanitized_query": "Revenue, operating income, and cash flow for FY2025 please.",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "What was the revenue for FY2025?",
+          "What was the operating income for FY2025?",
+          "What was the cash flow for FY2025?"
+        ],
+        "reasoning_type": "list_intent",
+        "decomposition_strategy": "list_item_split"
+      },
+      "evaluation": {
+        "query": "Revenue, operating income, and cash flow for FY2025 please.",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what was microsoft's fy2025 revenue",
+          "what was microsoft's fy2025 operating income",
+          "what was microsoft's fy2025 cash flow"
+        ],
+        "extra_sub_queries": [
+          "what was the revenue for fy2025",
+          "what was the operating income for fy2025",
+          "what was the cash flow for fy2025"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "What happened with Azure growth and what did management say about AI demand?",
+      "llm_result": {
+        "sanitized_query": "What happened with Azure growth and what did management say about AI demand?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "What happened with Microsoft's Azure growth?",
+          "What did Microsoft's management say about AI demand?"
+        ],
+        "reasoning_type": "multi_question",
+        "decomposition_strategy": "question_boundary_split"
+      },
+      "evaluation": {
+        "query": "What happened with Azure growth and what did management say about AI demand?",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what happened with azure growth",
+          "what did management say about ai demand"
+        ],
+        "extra_sub_queries": [
+          "what happened with microsoft's azure growth",
+          "what did microsoft's management say about ai demand"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    }
+  ],
+  "baseline_results": [
+    {
+      "query": "What was Microsoft's FY2025 revenue?",
+      "baseline_result": {
+        "sanitized_query": "What was Microsoft's FY2025 revenue?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "What was Microsoft's FY2025 revenue?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "What was Microsoft's FY2025 revenue?",
+        "passed": true,
+        "exact_passed": true,
+        "missing_sub_queries": [],
+        "extra_sub_queries": [],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+      "baseline_result": {
+        "sanitized_query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Who is the CEO of Microsoft",
+          "What was FY2025 revenue"
+        ],
+        "reasoning_type": "multi_question",
+        "decomposition_strategy": "question_boundary_split"
+      },
+      "evaluation": {
+        "query": "Who is the CEO of Microsoft? What was FY2025 revenue?",
+        "passed": true,
+        "exact_passed": true,
+        "missing_sub_queries": [],
+        "extra_sub_queries": [],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+      "baseline_result": {
+        "sanitized_query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Explain Microsoft's FY2025 revenue growth?",
+          "identify who the CEO is?"
+        ],
+        "reasoning_type": "multi_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "Explain Microsoft's FY2025 revenue growth and identify who the CEO is.",
+        "passed": true,
+        "exact_passed": true,
+        "missing_sub_queries": [],
+        "extra_sub_queries": [],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+      "baseline_result": {
+        "sanitized_query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "List Microsoft's FY2025 revenue?",
+          "List Microsoft's FY2025 operating income?",
+          "List Microsoft's FY2025 net income?"
+        ],
+        "reasoning_type": "list_intent",
+        "decomposition_strategy": "list_item_split"
+      },
+      "evaluation": {
+        "query": "List Microsoft's FY2025 revenue, operating income, and net income.",
+        "passed": true,
+        "exact_passed": true,
+        "missing_sub_queries": [],
+        "extra_sub_queries": [],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Compare Azure and Microsoft 365 revenue drivers.",
+      "baseline_result": {
+        "sanitized_query": "Compare Azure and Microsoft 365 revenue drivers.",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "Compare Azure and Microsoft 365 revenue drivers?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "Compare Azure and Microsoft 365 revenue drivers.",
+        "passed": true,
+        "exact_passed": true,
+        "missing_sub_queries": [],
+        "extra_sub_queries": [],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": false,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "Could you tell me the CEO of Microsoft and summarize fiscal 2025 cybersecurity risks?",
+      "baseline_result": {
+        "sanitized_query": "Could you tell me the CEO of Microsoft and summarize fiscal 2025 cybersecurity risks?",
+        "needs_decomposition": true,
+        "sub_queries": [
+          "Could you tell me the CEO of Microsoft?",
+          "summarize fiscal 2025 cybersecurity risks?"
+        ],
+        "reasoning_type": "multi_intent",
+        "decomposition_strategy": "conjunction_split"
+      },
+      "evaluation": {
+        "query": "Could you tell me the CEO of Microsoft and summarize fiscal 2025 cybersecurity risks?",
+        "passed": true,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "who is the ceo of microsoft",
+          "summarize microsoft's fy2025 cybersecurity risks"
+        ],
+        "extra_sub_queries": [
+          "could you tell me the ceo of microsoft",
+          "summarize fy2025 cybersecurity risks"
+        ],
+        "semantic_missing_sub_queries": [],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": true
+      }
+    },
+    {
+      "query": "Revenue, operating income, and cash flow for FY2025 please.",
+      "baseline_result": {
+        "sanitized_query": "Revenue, operating income, and cash flow for FY2025 please.",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "Revenue, operating income, and cash flow for FY2025 please?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "Revenue, operating income, and cash flow for FY2025 please.",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what was microsoft's fy2025 revenue",
+          "what was microsoft's fy2025 operating income",
+          "what was microsoft's fy2025 cash flow"
+        ],
+        "extra_sub_queries": [
+          "revenue, operating income, and cash flow for fy2025 please"
+        ],
+        "semantic_missing_sub_queries": [
+          "microsoft_fy2025_operating_income",
+          "microsoft_fy2025_cash_flow"
+        ],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": false
+      }
+    },
+    {
+      "query": "What happened with Azure growth and what did management say about AI demand?",
+      "baseline_result": {
+        "sanitized_query": "What happened with Azure growth and what did management say about AI demand?",
+        "needs_decomposition": false,
+        "sub_queries": [
+          "What happened with Azure growth and what did management say about AI demand?"
+        ],
+        "reasoning_type": "single_intent",
+        "decomposition_strategy": "none"
+      },
+      "evaluation": {
+        "query": "What happened with Azure growth and what did management say about AI demand?",
+        "passed": false,
+        "exact_passed": false,
+        "missing_sub_queries": [
+          "what happened with azure growth",
+          "what did management say about ai demand"
+        ],
+        "extra_sub_queries": [
+          "what happened with azure growth and what did management say about ai demand"
+        ],
+        "semantic_missing_sub_queries": [
+          "ai_demand"
+        ],
+        "semantic_extra_sub_queries": [],
+        "expected_needs_decomposition": true,
+        "actual_needs_decomposition": false
+      }
+    }
+  ]
+}

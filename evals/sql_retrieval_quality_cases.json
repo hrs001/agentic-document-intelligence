@@ -1,0 +1,72 @@
+[
+  {
+    "case_id": "sql_001_highest_segment_revenue_2025",
+    "query": "Which segment had the highest revenue in FY2025?",
+    "expected_target_tables": ["financial_performance_by_segment"],
+    "reference_sql": "SELECT segment_name, revenue_usd_millions FROM financial_performance_by_segment WHERE fiscal_year = 2025 AND revenue_usd_millions = (SELECT MAX(revenue_usd_millions) FROM financial_performance_by_segment WHERE fiscal_year = 2025)",
+    "ordered": true
+  },
+  {
+    "case_id": "sql_002_best_segment_margin_2025",
+    "query": "Which Microsoft segment had the highest operating margin in FY2025?",
+    "expected_target_tables": ["financial_performance_by_segment"],
+    "reference_sql": "SELECT segment_name, operating_margin_pct FROM financial_performance_by_segment WHERE fiscal_year = 2025 AND operating_margin_pct = (SELECT MAX(operating_margin_pct) FROM financial_performance_by_segment WHERE fiscal_year = 2025)",
+    "ordered": true
+  },
+  {
+    "case_id": "sql_003_negative_growth_2023",
+    "query": "Which segment had negative year-over-year revenue growth in FY2023?",
+    "expected_target_tables": ["financial_performance_by_segment"],
+    "reference_sql": "SELECT segment_name, yoy_revenue_growth_pct FROM financial_performance_by_segment WHERE fiscal_year = 2023 AND yoy_revenue_growth_pct < 0 ORDER BY segment_name",
+    "ordered": true
+  },
+  {
+    "case_id": "sql_004_geography_mix_2025",
+    "query": "What was the revenue mix percentage by geography in FY2025?",
+    "expected_target_tables": ["geographic_revenue_mix"],
+    "reference_sql": "SELECT geography, revenue_mix_pct FROM geographic_revenue_mix WHERE fiscal_year = 2025 ORDER BY geography",
+    "ordered": true
+  },
+  {
+    "case_id": "sql_005_geography_growth_2025",
+    "query": "Which geography had faster year-over-year revenue growth in FY2025?",
+    "expected_target_tables": ["geographic_revenue_mix"],
+    "reference_sql": "SELECT geography, yoy_revenue_growth_pct FROM geographic_revenue_mix WHERE fiscal_year = 2025 AND yoy_revenue_growth_pct = (SELECT MAX(yoy_revenue_growth_pct) FROM geographic_revenue_mix WHERE fiscal_year = 2025)",
+    "ordered": true
+  },
+  {
+    "case_id": "sql_006_top_ai_product_family",
+    "query": "Which product family had the highest AI relevance score in FY2025?",
+    "expected_target_tables": ["product_family_signals"],
+    "reference_sql": "SELECT product_family, ai_relevance_score FROM product_family_signals WHERE fiscal_year = 2025 AND ai_relevance_score = (SELECT MAX(ai_relevance_score) FROM product_family_signals WHERE fiscal_year = 2025)",
+    "ordered": true
+  },
+  {
+    "case_id": "sql_007_high_priority_products",
+    "query": "List the high strategic priority product families in FY2025 ordered by revenue signal index from highest to lowest.",
+    "expected_target_tables": ["product_family_signals"],
+    "reference_sql": "SELECT product_family, revenue_signal_index FROM product_family_signals WHERE fiscal_year = 2025 AND strategic_priority = 'High' ORDER BY revenue_signal_index DESC",
+    "ordered": true
+  },
+  {
+    "case_id": "sql_008_medium_priority_high_ai",
+    "query": "Which FY2025 product families have medium strategic priority and AI relevance score above 40?",
+    "expected_target_tables": ["product_family_signals"],
+    "reference_sql": "SELECT product_family, ai_relevance_score FROM product_family_signals WHERE fiscal_year = 2025 AND strategic_priority = 'Medium' AND ai_relevance_score > 40 ORDER BY ai_relevance_score DESC",
+    "ordered": true
+  },
+  {
+    "case_id": "sql_009_average_margin_2025",
+    "query": "What was the average operating margin across Microsoft segments in FY2025?",
+    "expected_target_tables": ["financial_performance_by_segment"],
+    "reference_sql": "SELECT ROUND(AVG(operating_margin_pct), 4) AS average_operating_margin_pct FROM financial_performance_by_segment WHERE fiscal_year = 2025",
+    "ordered": true
+  },
+  {
+    "case_id": "sql_010_segment_revenue_ranking_2025",
+    "query": "Rank Microsoft segments by FY2025 revenue from highest to lowest.",
+    "expected_target_tables": ["financial_performance_by_segment"],
+    "reference_sql": "SELECT segment_name, revenue_usd_millions FROM financial_performance_by_segment WHERE fiscal_year = 2025 ORDER BY revenue_usd_millions DESC",
+    "ordered": true
+  }
+]

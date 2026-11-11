@@ -1,0 +1,757 @@
+{
+  "generated_at": "2026-03-17T15:41:38.323092+00:00",
+  "model": "gpt-5-mini",
+  "cases_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\evals\\transformation_gating_cases.json",
+  "case_count": 12,
+  "llm_applied_count": 4,
+  "passed_count": 6,
+  "baseline_passed_count": 7,
+  "results": [
+    {
+      "query": "What was Microsoft's FY2025 revenue?",
+      "result": {
+        "query": "What was Microsoft's FY2025 revenue?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 1,
+        "run_decomposition": false,
+        "run_multi_query": true,
+        "run_step_back": false,
+        "run_hyde": true,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "needs_retrieval_variation",
+          "sparse_query_support"
+        ],
+        "selector_notes": [],
+        "llm_selector_applied": false
+      },
+      "evaluation": {
+        "passed": false,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": false,
+          "run_step_back": true,
+          "run_hyde": false,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "Azure growth?",
+      "result": {
+        "query": "Azure growth?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 1,
+        "run_decomposition": false,
+        "run_multi_query": true,
+        "run_step_back": false,
+        "run_hyde": true,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "needs_retrieval_variation",
+          "sparse_query_support"
+        ],
+        "selector_notes": [],
+        "llm_selector_applied": false
+      },
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "What happened with Azure growth and what did management say about AI demand?",
+      "result": {
+        "query": "What happened with Azure growth and what did management say about AI demand?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 2,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": false,
+        "run_hyde": false,
+        "is_ambiguous_case": true,
+        "ambiguity_signals": [
+          "ambiguous_reference"
+        ],
+        "reasons": [
+          "compound_or_multi_intent"
+        ],
+        "selector_notes": [
+          "Query contains two distinct info needs (Azure growth vs management comments on AI demand) \u2014 decompose into two sub-queries.",
+          "Ambiguous timeframe/company (likely Microsoft/Azure) but can target recent earnings/press commentary; do not run step-back to avoid extra cost \u2014 follow-up can clarify if needed.",
+          "Do not run multi-query or HyDE to preserve cost; lexical variation and sparsity are not major concerns.",
+          "Estimated sub-queries (2) stays within the hard cap of 3."
+        ],
+        "llm_selector_applied": true
+      },
+      "evaluation": {
+        "passed": false,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": false,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "Compare Azure and Microsoft 365 revenue drivers.",
+      "result": {
+        "query": "Compare Azure and Microsoft 365 revenue drivers.",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 1,
+        "run_decomposition": false,
+        "run_multi_query": true,
+        "run_step_back": true,
+        "run_hyde": false,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "needs_broader_context",
+          "needs_retrieval_variation"
+        ],
+        "selector_notes": [],
+        "llm_selector_applied": false
+      },
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+      "result": {
+        "query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 3,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": false,
+        "run_hyde": false,
+        "is_ambiguous_case": true,
+        "ambiguity_signals": [
+          "ambiguous_reference"
+        ],
+        "reasons": [
+          "compound_or_multi_intent"
+        ],
+        "selector_notes": [
+          "User query is ambiguous (no company or time). Decompose into 3 focused retrievals: (1) identify the company's CEO, (2) determine which business segment drove the most revenue growth, (3) find the CEO's remarks about AI (e.g., in latest earnings call/press release).",
+          "Do not run multi_query/step_back/hyde to control cost and keep within the 3 sub-query cap. Recommend asking the user to specify the company or time period if available."
+        ],
+        "llm_selector_applied": true
+      },
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+      "result": {
+        "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 2,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": true,
+        "run_hyde": false,
+        "is_ambiguous_case": true,
+        "ambiguity_signals": [
+          "ambiguous_reference",
+          "mixed_explanatory_multi_intent"
+        ],
+        "reasons": [
+          "compound_or_multi_intent",
+          "needs_broader_context"
+        ],
+        "selector_notes": [
+          "Decomposition: query asks about two distinct stakeholders (board vs management) \u2014 split into two sub-queries for clear, focused retrieval.",
+          "Step-back: include a brief governance context (frameworks/roles) to clarify responsibilities and avoid misinterpretation.",
+          "Multi-query not needed: lexical variation unlikely to improve answers for this clear topic.",
+          "HyDE not needed: query is not sparse and should retrieve well without synthetic expansions.",
+          "Estimated sub-queries=2 keeps within the 3-query cap to control cost."
+        ],
+        "llm_selector_applied": true
+      },
+      "evaluation": {
+        "passed": false,
+        "checks": {
+          "run_decomposition": false,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": false
+        }
+      }
+    },
+    {
+      "query": "Revenue, operating income, and cash flow for FY2025 please.",
+      "result": {
+        "query": "Revenue, operating income, and cash flow for FY2025 please.",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 3,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": false,
+        "run_hyde": false,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "compound_or_multi_intent"
+        ],
+        "selector_notes": [],
+        "llm_selector_applied": false
+      },
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "What did they say about AI and margins?",
+      "result": {
+        "query": "What did they say about AI and margins?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 1,
+        "run_decomposition": false,
+        "run_multi_query": false,
+        "run_step_back": true,
+        "run_hyde": false,
+        "is_ambiguous_case": true,
+        "ambiguity_signals": [
+          "ambiguous_reference"
+        ],
+        "reasons": [
+          "compound_or_multi_intent"
+        ],
+        "selector_notes": [
+          "Pronoun 'they' is ambiguous \u2014 need clarification of who/source to retrieve the correct statement.",
+          "'Margins' could mean profit margins, gross margins, or other margin contexts; a clarifying question will resolve intent before retrieval.",
+          "Cost-conscious: one step-back clarifying query suffices; no decomposition or HyDE needed."
+        ],
+        "llm_selector_applied": true
+      },
+      "evaluation": {
+        "passed": false,
+        "checks": {
+          "run_decomposition": false,
+          "run_multi_query": true,
+          "run_step_back": false,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": false
+        }
+      }
+    },
+    {
+      "query": "Explain Microsoft's capital allocation strategy.",
+      "result": {
+        "query": "Explain Microsoft's capital allocation strategy.",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 1,
+        "run_decomposition": false,
+        "run_multi_query": true,
+        "run_step_back": true,
+        "run_hyde": true,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "needs_broader_context",
+          "needs_retrieval_variation",
+          "sparse_query_support"
+        ],
+        "selector_notes": [],
+        "llm_selector_applied": false
+      },
+      "evaluation": {
+        "passed": false,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": false,
+          "run_step_back": true,
+          "run_hyde": false,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+      "result": {
+        "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 2,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": false,
+        "run_hyde": false,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "compound_or_multi_intent"
+        ],
+        "selector_notes": [],
+        "llm_selector_applied": false
+      },
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "Who are the executive officers and what does Satya Nadella do?",
+      "result": {
+        "query": "Who are the executive officers and what does Satya Nadella do?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 2,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": false,
+        "run_hyde": false,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "compound_or_multi_intent"
+        ],
+        "selector_notes": [],
+        "llm_selector_applied": false
+      },
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "Summarize the key risks related to AI demand, cybersecurity, and regulation.",
+      "result": {
+        "query": "Summarize the key risks related to AI demand, cybersecurity, and regulation.",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 3,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": false,
+        "run_hyde": false,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "compound_or_multi_intent"
+        ],
+        "selector_notes": [],
+        "llm_selector_applied": false
+      },
+      "evaluation": {
+        "passed": false,
+        "checks": {
+          "run_decomposition": false,
+          "run_multi_query": true,
+          "run_step_back": false,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": false
+        }
+      }
+    }
+  ],
+  "baseline_results": [
+    {
+      "query": "What was Microsoft's FY2025 revenue?",
+      "result": {
+        "query": "What was Microsoft's FY2025 revenue?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 1,
+        "run_decomposition": false,
+        "run_multi_query": true,
+        "run_step_back": false,
+        "run_hyde": true,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "needs_retrieval_variation",
+          "sparse_query_support"
+        ]
+      },
+      "evaluation": {
+        "passed": false,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": false,
+          "run_step_back": true,
+          "run_hyde": false,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "Azure growth?",
+      "result": {
+        "query": "Azure growth?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 1,
+        "run_decomposition": false,
+        "run_multi_query": true,
+        "run_step_back": false,
+        "run_hyde": true,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "needs_retrieval_variation",
+          "sparse_query_support"
+        ]
+      },
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "What happened with Azure growth and what did management say about AI demand?",
+      "result": {
+        "query": "What happened with Azure growth and what did management say about AI demand?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 2,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": false,
+        "run_hyde": false,
+        "is_ambiguous_case": true,
+        "ambiguity_signals": [
+          "ambiguous_reference"
+        ],
+        "reasons": [
+          "compound_or_multi_intent"
+        ]
+      },
+      "evaluation": {
+        "passed": false,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": false,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "Compare Azure and Microsoft 365 revenue drivers.",
+      "result": {
+        "query": "Compare Azure and Microsoft 365 revenue drivers.",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 1,
+        "run_decomposition": false,
+        "run_multi_query": true,
+        "run_step_back": true,
+        "run_hyde": false,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "needs_broader_context",
+          "needs_retrieval_variation"
+        ]
+      },
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+      "result": {
+        "query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 3,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": false,
+        "run_hyde": false,
+        "is_ambiguous_case": true,
+        "ambiguity_signals": [
+          "ambiguous_reference"
+        ],
+        "reasons": [
+          "compound_or_multi_intent"
+        ]
+      },
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+      "result": {
+        "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 2,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": true,
+        "run_hyde": false,
+        "is_ambiguous_case": true,
+        "ambiguity_signals": [
+          "ambiguous_reference",
+          "mixed_explanatory_multi_intent"
+        ],
+        "reasons": [
+          "compound_or_multi_intent",
+          "needs_broader_context"
+        ]
+      },
+      "evaluation": {
+        "passed": false,
+        "checks": {
+          "run_decomposition": false,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": false
+        }
+      }
+    },
+    {
+      "query": "Revenue, operating income, and cash flow for FY2025 please.",
+      "result": {
+        "query": "Revenue, operating income, and cash flow for FY2025 please.",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 3,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": false,
+        "run_hyde": false,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "compound_or_multi_intent"
+        ]
+      },
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "What did they say about AI and margins?",
+      "result": {
+        "query": "What did they say about AI and margins?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 2,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": false,
+        "run_hyde": false,
+        "is_ambiguous_case": true,
+        "ambiguity_signals": [
+          "ambiguous_reference"
+        ],
+        "reasons": [
+          "compound_or_multi_intent"
+        ]
+      },
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "Explain Microsoft's capital allocation strategy.",
+      "result": {
+        "query": "Explain Microsoft's capital allocation strategy.",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 1,
+        "run_decomposition": false,
+        "run_multi_query": true,
+        "run_step_back": true,
+        "run_hyde": true,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "needs_broader_context",
+          "needs_retrieval_variation",
+          "sparse_query_support"
+        ]
+      },
+      "evaluation": {
+        "passed": false,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": false,
+          "run_step_back": true,
+          "run_hyde": false,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+      "result": {
+        "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 2,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": false,
+        "run_hyde": false,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "compound_or_multi_intent"
+        ]
+      },
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "Who are the executive officers and what does Satya Nadella do?",
+      "result": {
+        "query": "Who are the executive officers and what does Satya Nadella do?",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 2,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": false,
+        "run_hyde": false,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "compound_or_multi_intent"
+        ]
+      },
+      "evaluation": {
+        "passed": true,
+        "checks": {
+          "run_decomposition": true,
+          "run_multi_query": true,
+          "run_step_back": true,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": true
+        }
+      }
+    },
+    {
+      "query": "Summarize the key risks related to AI demand, cybersecurity, and regulation.",
+      "result": {
+        "query": "Summarize the key risks related to AI demand, cybersecurity, and regulation.",
+        "max_sub_queries": 3,
+        "estimated_sub_queries": 3,
+        "run_decomposition": true,
+        "run_multi_query": false,
+        "run_step_back": false,
+        "run_hyde": false,
+        "is_ambiguous_case": false,
+        "ambiguity_signals": [],
+        "reasons": [
+          "compound_or_multi_intent"
+        ]
+      },
+      "evaluation": {
+        "passed": false,
+        "checks": {
+          "run_decomposition": false,
+          "run_multi_query": true,
+          "run_step_back": false,
+          "run_hyde": true,
+          "is_ambiguous_case": true,
+          "estimated_sub_queries": false
+        }
+      }
+    }
+  ]
+}

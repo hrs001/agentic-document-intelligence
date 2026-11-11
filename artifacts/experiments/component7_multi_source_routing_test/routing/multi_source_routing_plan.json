@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-03-20T06:17:15.780612+00:00",
+  "result": {
+    "original_query": "x",
+    "policy": {
+      "routing_model": "gpt-5-mini"
+    },
+    "sub_query_plans": [],
+    "routing_summary": {
+      "sub_query_count": 0,
+      "source_usage": {}
+    }
+  }
+}

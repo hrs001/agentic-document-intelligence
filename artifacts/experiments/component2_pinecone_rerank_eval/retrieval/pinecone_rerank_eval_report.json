@@ -1,0 +1,148 @@
+{
+  "generated_at": "2026-03-17T09:38:28.371202+00:00",
+  "namespace": "microsoft_fy2025_fixed_corpus",
+  "index_name": "universal-knowledge-index",
+  "top_k": 8,
+  "top_n": 5,
+  "alpha": 0.6,
+  "rerank_model": "pinecone-rerank-v0",
+  "case_count": 4,
+  "passed_count": 4,
+  "cases": [
+    {
+      "query": "Who is the CEO of Microsoft?",
+      "expected_terms": [
+        "satya nadella",
+        "chief executive officer"
+      ],
+      "expected_sections": [
+        "Appendix B. Executive officers and selected reference data",
+        "9. Operations, people, properties, and governance"
+      ],
+      "reranked_count": 5,
+      "top_sections": [
+        "5. Segment results and operating drivers",
+        "1. Executive summary",
+        "1. Executive summary"
+      ],
+      "top_child_snippets": [
+        "The flip side was cost intensity. Cost of revenue rose 36%, and gross margin percentage decreased\nbecause Microsoft is scaling AI infrastructure. This is one of the most important economic\nmessages in the 10-K: Azure is ",
+        "infrastructure. In other words, Microsoft is converting a large portion of current earnings power\ninto datacenters, servers, GPUs, and long-duration commercial capacity.\nSeveral themes dominate the 10-K:\n\nAI is now embe",
+        "1. Executive summary\nMicrosoft entered fiscal 2025 with the scale of a mature software platform company and ended it\nlooking increasingly like the infrastructure and application layer for enterprise AI. The filing\nshows "
+      ],
+      "evaluation": {
+        "matched_terms": [],
+        "matched_sections": [
+          "9. Operations, people, properties, and governance"
+        ],
+        "duplicate_results": false,
+        "passed": true
+      }
+    },
+    {
+      "query": "What were Microsoft's FY2025 revenue, operating income, and net income?",
+      "expected_terms": [
+        "$281,724",
+        "$128,528",
+        "$101,832"
+      ],
+      "expected_sections": [
+        "4. Fiscal 2025 financial performance",
+        "1. Executive summary"
+      ],
+      "reranked_count": 5,
+      "top_sections": [
+        "1. Executive summary",
+        "4. Fiscal 2025 financial performance",
+        "5. Segment results and operating drivers"
+      ],
+      "top_child_snippets": [
+        "accepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout.\nThe year’s headline outcomes were strong. Revenue rose 15% to $281.7 billion, operating income\nrose 17% to $128.5 billion, and n",
+        "packaged software or device unit shipments.\nFrom a profitability perspective, FY2025 gross margin was about 68.8% of revenue, operating\nmargin about 45.6%, and net margin about 36.1%. Those remain exceptionally strong at",
+        "| Segment | Revenue FY2025 | Revenue growth | Operating income\nFY2025 | OI growth |\n| --- | --- | --- | --- | --- |\n| Productivity &\nBusiness Processes | $120,810 | +13% | $69,773 | +17% |\n| Intelligent Cloud | $106,265 "
+      ],
+      "evaluation": {
+        "matched_terms": [
+          "$101,832",
+          "$128,528",
+          "$281,724"
+        ],
+        "matched_sections": [
+          "1. Executive summary",
+          "4. Fiscal 2025 financial performance"
+        ],
+        "duplicate_results": false,
+        "passed": true
+      }
+    },
+    {
+      "query": "How fast did Azure and other cloud services grow in FY2025?",
+      "expected_terms": [
+        "34%",
+        "azure"
+      ],
+      "expected_sections": [
+        "5. Segment results and operating drivers",
+        "1. Executive summary"
+      ],
+      "reranked_count": 5,
+      "top_sections": [
+        "1. Executive summary",
+        "Appendix C. Growth drivers by business line",
+        "5. Segment results and operating drivers"
+      ],
+      "top_child_snippets": [
+        "accepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout.\nThe year’s headline outcomes were strong. Revenue rose 15% to $281.7 billion, operating income\nrose 17% to $128.5 billion, and n",
+        "| Business line | FY2025 growth |\n| --- | --- |\n| Microsoft 365 Commercial products and cloud services | +14% |\n| Microsoft 365 Commercial cloud | +15% |\n| Microsoft 365 Commercial seat growth | +6% |\n| Microsoft 365 Con",
+        "Intelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other\ncloud services growth o"
+      ],
+      "evaluation": {
+        "matched_terms": [
+          "34%",
+          "azure"
+        ],
+        "matched_sections": [
+          "1. Executive summary",
+          "5. Segment results and operating drivers"
+        ],
+        "duplicate_results": false,
+        "passed": true
+      }
+    },
+    {
+      "query": "What does the filing say about cybersecurity risk and governance?",
+      "expected_terms": [
+        "cybersecurity",
+        "risk",
+        "governance"
+      ],
+      "expected_sections": [
+        "8. Risk factors and cybersecurity posture",
+        "9. Operations, people, properties, and governance"
+      ],
+      "reranked_count": 5,
+      "top_sections": [
+        "8. Risk factors and cybersecurity posture",
+        "Appendix F. Cybersecurity and risk dashboard",
+        "Document Overview"
+      ],
+      "top_child_snippets": [
+        "states that it uses insights from 84 trillion signals per day in its security operations.\nGovernance of cybersecurity is formalized. The board oversees cybersecurity risk, the CISO reports\nto the EVP of Cloud + AI, and a",
+        "function.\nTable F1. Cybersecurity operating model\nTable F2. Risk dashboard for monitoring the next 12–24 months\nThe broader lesson is that Microsoft’s risk profile scales with its strategic role in the digital\neconomy. T",
+        "discussion and analysis, audited financial statements, major accounting notes, principal risks,\ncybersecurity governance, legal and tax exposures, and corporate governance disclosures.\nSource basis: the user-provided Mic"
+      ],
+      "evaluation": {
+        "matched_terms": [
+          "cybersecurity",
+          "governance",
+          "risk"
+        ],
+        "matched_sections": [
+          "8. Risk factors and cybersecurity posture"
+        ],
+        "duplicate_results": false,
+        "passed": true
+      }
+    }
+  ]
+}

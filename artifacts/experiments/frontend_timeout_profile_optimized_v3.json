@@ -1,0 +1,267 @@
+{
+    "elapsed_seconds":  138.65,
+    "status":  "completed",
+    "event_count":  13,
+    "events":  [
+                   {
+                       "timestamp":  "2026-03-19T09:13:53.586511+00:00",
+                       "component":  "Guardrails",
+                       "data":  "User query accepted for multi-source RAG execution."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:14:01.711278+00:00",
+                       "component":  "Query Decomposition",
+                       "data":  "Prepared 3 sub-queries: Which Microsoft reporting segment includes GitHub? | What was the FY2025 revenue for the Microsoft reporting segment that includes GitHub? | What strategic themes did Microsoft management highlight in FY2025 that are relevant to the business that includes GitHub?"
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:14:11.341910+00:00",
+                       "component":  "Source Router",
+                       "data":  "Routing selected: sq_1 -\u003e graph_relationships; sq_2 -\u003e sql_structured, graph_relationships, vector_document; sq_3 -\u003e vector_document, graph_relationships"
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:14:23.058350+00:00",
+                       "component":  "Latency Policy",
+                       "data":  "Execution plan: sq_1 profile=skip sources=graph_relationships; sq_2 profile=fast sources=sql_structured,graph_relationships; sq_3 profile=fast sources=graph_relationships"
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:14:51.819190+00:00",
+                       "component":  "Retriever",
+                       "data":  "Execution summary: {\"sub_query_count\": 3, \"source_usage\": {\"vector_document\": 0, \"graph_relationships\": 3, \"sql_structured\": 1}, \"vector_profile_usage\": {\"skip\": 0, \"fast\": 0, \"balanced\": 0, \"full\": 0, \"fast_escalated\": 0, \"balanced_escalated\": 0}}"
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:14:51.821119+00:00",
+                       "component":  "Evidence Fusion",
+                       "data":  "Fused 42 facts across 3 sub-queries."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:14:51.821131+00:00",
+                       "component":  "Answer Generator",
+                       "data":  "Generating grounded answer from fused evidence."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:15:10.455893+00:00",
+                       "component":  "Self-Reflective RAG",
+                       "data":  "Critiquing the answer for grounding, coverage, and citation integrity."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:15:10.455905+00:00",
+                       "component":  "LLM Judge",
+                       "data":  "Scoring the answer with RAGAS-style metrics."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:15:35.255406+00:00",
+                       "component":  "Runtime Gate",
+                       "data":  "Action=targeted_answer_repair | Reason=Coverage gap detected by critique."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:15:35.255425+00:00",
+                       "component":  "Repair",
+                       "data":  "Running targeted grounded-answer repair."
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:16:11.304520+00:00",
+                       "component":  "Repair",
+                       "data":  "Repair strategy=targeted_coverage_repair applied=True"
+                   },
+                   {
+                       "timestamp":  "2026-03-19T09:16:11.304554+00:00",
+                       "component":  "Runtime Gate",
+                       "data":  "Action=stop_best_effort | Reason=Quality did not improve after the previous retry."
+                   }
+               ],
+    "result":  {
+                   "answer":  "**1. Which segment includes GitHub?**  \nMicrosoft explicitly states that GitHub is part of the **Intelligent Cloud (IC)** segment, which \"contains Azure, server products, developer tooling, GitHub, Nuance Healthcare, enterprise support, and partner services.\"[Evidence 1]\n\n**2. That segmentâ??s FY2025 revenue**  \nFY2025 revenue for **Intelligent Cloud** was **$108,610 million**.[Evidence 2]\n\n**3. Strategic themes management highlighted that are relevant to the GitHub business**  \nThe FY2025 materials do not list GitHub-specific strategic themes, but they do characterize the segment that houses GitHub and its primary growth drivers:\n\n- **Developer tooling and cloud platform focus:** Intelligent Cloud includes Azure, server products, and developer tooling alongside GitHub, positioning this segment as Microsoftâ??s core environment for cloud infrastructure and developer services.[Evidence 1]\n- **Cloud-based productivity and subscription services (context from adjacent segment):** While this is described for Productivity and Business Processes, it illustrates Microsoftâ??s broader emphasis on cloud-delivered, subscription-based services across productivity and collaboration workloads.[Evidence 3][Evidence 4][Evidence 5]\n\nThe available evidence does **not** provide managementâ??s explicit, GitHub-specific strategic themes (for example, detailed commentary on GitHubâ??s roadmap or strategy), so any more granular GitHub strategy points cannot be supported from these facts and are therefore not included.[Evidence 1]",
+                   "citations":  [
+                                     {
+                                         "index":  1,
+                                         "source_type":  "graph_entity",
+                                         "display_label":  "[Evidence 1]",
+                                         "title":  "GitHub (product_or_service)",
+                                         "entity_names":  [
+                                                              "GitHub"
+                                                          ],
+                                         "relationship_type":  null,
+                                         "section":  "2. Company overview, strategy, and operating model, 3. Segment and product portfolio review",
+                                         "page_number":  4,
+                                         "chunk_text":  "Intelligent Cloud (IC): Azure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.\nAzure supports GitHub, data services, and AI platforms",
+                                         "fact_id":  "graph_node::node_github"
+                                     },
+                                     {
+                                         "index":  2,
+                                         "source_type":  "database",
+                                         "display_label":  "[Evidence 2]",
+                                         "title":  "segment_name=Intelligent Cloud, revenue_usd_millions=108610",
+                                         "table_name":  "financial_performance_by_segment",
+                                         "sql_query":  "SELECT segment_name, revenue_usd_millions\nFROM financial_performance_by_segment\nWHERE fiscal_year = 2025\n  AND segment_name IN (\n    \u0027Productivity and Business Processes\u0027,\n    \u0027Intelligent Cloud\u0027,\n    \u0027More Personal Computing\u0027\n  )\nORDER BY CASE segment_name\n  WHEN \u0027Productivity and Business Processes\u0027 THEN 1\n  WHEN \u0027Intelligent Cloud\u0027 THEN 2\n  WHEN \u0027More Personal Computing\u0027 THEN 3\n  ELSE 4 END",
+                                         "chunk_text":  "segment_name=Intelligent Cloud, revenue_usd_millions=108610",
+                                         "fact_id":  "sql::sq_2::2"
+                                     },
+                                     {
+                                         "index":  3,
+                                         "source_type":  "graph_entity",
+                                         "display_label":  "[Evidence 3]",
+                                         "title":  "Productivity and Business Processes -\u003e includes -\u003e Microsoft 365 Commercial products and cloud services",
+                                         "entity_names":  [
+                                                              "Productivity and Business Processes",
+                                                              "Microsoft 365 Commercial products and cloud services"
+                                                          ],
+                                         "relationship_type":  "includes",
+                                         "section":  "5. Segment results and operating drivers",
+                                         "page_number":  9,
+                                         "chunk_text":  "The largest contributor was Microsoft 365 Commercial products and cloud services",
+                                         "fact_id":  "graph_edge::edge_148"
+                                     },
+                                     {
+                                         "index":  4,
+                                         "source_type":  "graph_entity",
+                                         "display_label":  "[Evidence 4]",
+                                         "title":  "Microsoft 365 Commercial cloud -\u003e includes -\u003e Productivity and Business Processes",
+                                         "entity_names":  [
+                                                              "Microsoft 365 Commercial cloud",
+                                                              "Productivity and Business Processes"
+                                                          ],
+                                         "relationship_type":  "includes",
+                                         "section":  "4. Fiscal 2025 financial performance",
+                                         "page_number":  8,
+                                         "chunk_text":  "Microsoft 365 Commercial cloud within Productivity and Business Processes",
+                                         "fact_id":  "graph_edge::edge_135"
+                                     },
+                                     {
+                                         "index":  5,
+                                         "source_type":  "graph_entity",
+                                         "display_label":  "[Evidence 5]",
+                                         "title":  "Productivity and Business Processes -\u003e includes -\u003e Microsoft 365 Consumer products and cloud services",
+                                         "entity_names":  [
+                                                              "Productivity and Business Processes",
+                                                              "Microsoft 365 Consumer products and cloud services"
+                                                          ],
+                                         "relationship_type":  "includes",
+                                         "section":  "5. Segment results and operating drivers",
+                                         "page_number":  9,
+                                         "chunk_text":  "Microsoft 365 Consumer products and cloud services rose 11%",
+                                         "fact_id":  "graph_edge::edge_149"
+                                     }
+                                 ],
+                   "evaluation":  {
+                                      "faithfulness":  1.0,
+                                      "answer_relevancy":  1.0,
+                                      "context_precision":  0.8,
+                                      "citation_grounding":  0.8,
+                                      "overall_badge":  "PASS",
+                                      "reasoning":  "The answer correctly identifies GitHub as part of the Intelligent Cloud segment and reports the FY2025 revenue for that segment ($108,610 million) using the provided facts. It responsibly notes that no GitHub-specific strategic themes were available in the evidence and instead cites segment-level themes and adjacent-segment context that are relevant to GitHub.",
+                                      "strengths":  [
+                                                        "Accurately identifies the reporting segment containing GitHub and cites the corresponding evidence.",
+                                                        "Correctly reports the FY2025 revenue for the Intelligent Cloud segment with a supporting data citation.",
+                                                        "Clearly states the limits of the available evidence (no GitHub-specific strategic themes) and avoids unsupported claims."
+                                                    ],
+                                      "weaknesses":  [
+                                                         "One of the strategic-theme points relies on adjacent segment context (Productivity and Business Processes), which is somewhat tangential to GitHub and could be mistaken for a direct management statement about GitHub.",
+                                                         "Citations are present but could be more granularly tied to each individual claim (e.g., separate citation for the quote about segment contents vs. the assertion about growth drivers)."
+                                                     ],
+                                      "recommendations":  [
+                                                              "If available, include direct management commentary (earnings call transcript or management discussion) that explicitly links strategic themes to GitHub for stronger grounding.",
+                                                              "Avoid using adjacent-segment evidence as a primary support for strategic themes unless explicitly framed as contextual rather than direct management statements.",
+                                                              "When possible, attach the specific citation to each discrete claim to improve traceability (e.g., one citation for segment membership, another for revenue, and others for each strategic theme)."
+                                                          ]
+                                  },
+                   "evaluation_pending":  false,
+                   "truncated_subqueries":  false,
+                   "subquery_cap":  3,
+                   "judge_average_score":  4.5,
+                   "runtime_history":  [
+                                           {
+                                               "round":  0,
+                                               "action":  "initial_generation",
+                                               "judge_average_score":  5.0,
+                                               "judge_verdict":  "pass",
+                                               "critique_needs_correction":  true
+                                           },
+                                           {
+                                               "round":  1,
+                                               "action":  "targeted_answer_repair",
+                                               "reason":  "Coverage gap detected by critique.",
+                                               "judge_average_score":  4.5,
+                                               "judge_verdict":  "pass",
+                                               "critique_needs_correction":  true
+                                           }
+                                       ],
+                   "termination":  {
+                                       "action":  "stop_best_effort",
+                                       "reason":  "Quality did not improve after the previous retry."
+                                   },
+                   "critique":  {
+                                    "grounded":  false,
+                                    "complete":  false,
+                                    "needs_correction":  true,
+                                    "confidence":  "high",
+                                    "issue_summary":  "The answer contains a factual contradiction about which reporting segment includes GitHub, mixes themes from an adjacent segment, and therefore is not fully grounded in the provided evidence. The FY2025 revenue figure appears supported, but the segment allocation and the strategic-theme mapping are inconsistent and insufficiently supported.",
+                                    "strengths":  [
+                                                      "Provided a specific FY2025 revenue figure (Intelligent Cloud: $108,610 million) drawn from the structured SQL evidence.",
+                                                      "Acknowledged the lack of GitHub-specific management commentary in the available evidence.",
+                                                      "Cited fact IDs and sources for the claims made."
+                                                  ],
+                                    "issues":  [
+                                                   {
+                                                       "issue_type":  "contradiction_in_segment_assignment",
+                                                       "severity":  "high",
+                                                       "description":  "The answer first states GitHub is part of the Intelligent Cloud segment, then later frames the strategic-theme discussion as if GitHub were in Productivity and Business Processes. This is an internal contradiction that undermines the response.",
+                                                       "affected_sub_queries":  [
+                                                                                    "sq_1",
+                                                                                    "sq_3"
+                                                                                ],
+                                                       "repair_action":  "Resolve and reconcile the segment assignment: check the authoritative graph relationships or original FY2025 segment text to determine which reporting segment actually includes GitHub, then update all parts of the answer to reference that single, supported segment."
+                                                   },
+                                                   {
+                                                       "issue_type":  "unsupported_or_uncorroborated_claim",
+                                                       "severity":  "high",
+                                                       "description":  "The claim that GitHub is explicitly listed under Intelligent Cloud is not unambiguously supported by the provided sub-query metadata (the sub_queries show \u0027uncovered_sub_queries\u0027 and a graph relation mismatch). The evidence used does not conclusively corroborate this allocation.",
+                                                       "affected_sub_queries":  [
+                                                                                    "sq_1"
+                                                                                ],
+                                                       "repair_action":  "Locate and cite the specific evidence that links GitHub to the named segment (e.g., graph edge explicitly showing \u0027GitHub -\u003e included_in -\u003e Intelligent Cloud\u0027 or a quote from the FY2025 segment description). If that evidence is absent or conflicting, report the conflict and state that GitHub\u0027s segment allocation cannot be determined from the supplied facts."
+                                                   },
+                                                   {
+                                                       "issue_type":  "irrelevant_or_misapplied_strategic_themes",
+                                                       "severity":  "medium",
+                                                       "description":  "The strategic themes listed are high-level and partly drawn from an adjacent segment (Productivity and Business Processes), not clearly tied to the segment that purportedly includes GitHub. This makes the \u0027relevant to that business\u0027 answer weak and potentially misleading.",
+                                                       "affected_sub_queries":  [
+                                                                                    "sq_3"
+                                                                                ],
+                                                       "repair_action":  "After confirming the correct segment for GitHub, extract management-highlighted strategic themes specifically linked to that segment. If no GitHub- or segment-specific themes exist in evidence, explicitly say so and avoid including themes from unrelated segments."
+                                                   },
+                                                   {
+                                                       "issue_type":  "failure_to_acknowledge_conflict_signals",
+                                                       "severity":  "high",
+                                                       "description":  "The sub-query metadata indicates a graph_relation_mismatch and an uncovered sub-query (sq_1), but the answer does not acknowledge or resolve these conflict signals.",
+                                                       "affected_sub_queries":  [
+                                                                                    "sq_1"
+                                                                                ],
+                                                       "repair_action":  "Acknowledge the conflict in the answer, show the conflicting fact IDs or edges, and explain how you resolved the conflict or why it prevents a definitive answer."
+                                                   },
+                                                   {
+                                                       "issue_type":  "coverage_gap",
+                                                       "severity":  "high",
+                                                       "description":  "The answer leaves at least one sub-query explicitly unanswered.",
+                                                       "affected_sub_queries":  [
+                                                                                    "Any detailed, GitHub-specific strategic themes or management commentary (e.g., product roadmap, monetization strategy, or competitive positioning) are not available in the provided evidence, so they cannot be answered directly from these facts."
+                                                                                ],
+                                                       "repair_action":  "Run a targeted correction pass for the missing sub-query coverage."
+                                                   }
+                                               ],
+                                    "repair_plan":  [
+                                                        "Verify the reporting segment that includes GitHub by examining the authoritative source(s): the FY2025 earnings release/10-K segment descriptions or the specific graph edge that links GitHub to a segment (check graph_relationships facts for an explicit \u0027includes\u0027 relation with GitHub).",
+                                                        "If GitHub is confirmed in Intelligent Cloud, keep the Intelligent Cloud revenue ($108,610 million) and remove any references to Productivity and Business Processes; otherwise, if confirmed in Productivity and Business Processes, update the revenue to that segment\u0027s FY2025 figure.",
+                                                        "Extract and cite management-highlighted strategic themes that are explicitly linked to the confirmed segment. If no segment-specific themes for GitHub exist in the evidence, state that explicitly and avoid inferring GitHub strategy from adjacent-segment commentary.",
+                                                        "If source facts conflict or are ambiguous, report the conflict clearly in the answer with the relevant fact IDs and recommend which primary source should be consulted (e.g., Microsoft\u0027s FY2025 annual report or segment disclosure) to resolve the discrepancy.",
+                                                        "Produce an updated, consistent answer with (a) the confirmed segment that includes GitHub, (b) that segment\u0027s FY2025 revenue with citation, and (c) only those management strategic themes directly supported by the provided evidence (or a clear statement that none are present).",
+                                                        "Run targeted answer repair for explicitly unanswered sub-queries."
+                                                    ]
+                                },
+                   "sources_used":  [
+                                        "graph_relationships",
+                                        "sql_structured"
+                                    ],
+                   "status":  "ok",
+                   "original_query":  "Which segment includes GitHub, what was that segment\u0027s FY2025 revenue, and what strategic themes did management highlight that are relevant to that business?"
+               }
+}

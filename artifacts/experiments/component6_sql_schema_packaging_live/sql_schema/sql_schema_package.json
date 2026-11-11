@@ -1,0 +1,217 @@
+{
+  "generated_at": "2026-03-18T08:03:42.894584+00:00",
+  "result": {
+    "database_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\artifacts\\experiments\\component6_sqlite_database_build_live\\sql_db\\microsoft_fy2025_analyst_demo.sqlite",
+    "table_count": 3,
+    "tables": [
+      {
+        "table_name": "financial_performance_by_segment",
+        "row_count": 9,
+        "columns": [
+          {
+            "name": "fiscal_year",
+            "sqlite_type": "INTEGER",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "segment_name",
+            "sqlite_type": "TEXT",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "revenue_usd_millions",
+            "sqlite_type": "INTEGER",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "operating_income_usd_millions",
+            "sqlite_type": "INTEGER",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "operating_margin_pct",
+            "sqlite_type": "REAL",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "yoy_revenue_growth_pct",
+            "sqlite_type": "REAL",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "narrative_driver",
+            "sqlite_type": "TEXT",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          }
+        ],
+        "sample_rows": [
+          {
+            "fiscal_year": 2023,
+            "segment_name": "Productivity and Business Processes",
+            "revenue_usd_millions": 69040,
+            "operating_income_usd_millions": 33610,
+            "operating_margin_pct": 48.7,
+            "yoy_revenue_growth_pct": 8.1,
+            "narrative_driver": "Commercial seat expansion and durable Microsoft 365 demand"
+          },
+          {
+            "fiscal_year": 2024,
+            "segment_name": "Productivity and Business Processes",
+            "revenue_usd_millions": 74860,
+            "operating_income_usd_millions": 37240,
+            "operating_margin_pct": 49.7,
+            "yoy_revenue_growth_pct": 8.4,
+            "narrative_driver": "Office commercial growth and stable LinkedIn monetization"
+          }
+        ]
+      },
+      {
+        "table_name": "geographic_revenue_mix",
+        "row_count": 6,
+        "columns": [
+          {
+            "name": "fiscal_year",
+            "sqlite_type": "INTEGER",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "geography",
+            "sqlite_type": "TEXT",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "revenue_usd_millions",
+            "sqlite_type": "INTEGER",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "revenue_mix_pct",
+            "sqlite_type": "REAL",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "yoy_revenue_growth_pct",
+            "sqlite_type": "REAL",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          }
+        ],
+        "sample_rows": [
+          {
+            "fiscal_year": 2023,
+            "geography": "United States",
+            "revenue_usd_millions": 98760,
+            "revenue_mix_pct": 46.6,
+            "yoy_revenue_growth_pct": 9.1
+          },
+          {
+            "fiscal_year": 2023,
+            "geography": "Other Countries",
+            "revenue_usd_millions": 113180,
+            "revenue_mix_pct": 53.4,
+            "yoy_revenue_growth_pct": 8.7
+          }
+        ]
+      },
+      {
+        "table_name": "product_family_signals",
+        "row_count": 7,
+        "columns": [
+          {
+            "name": "fiscal_year",
+            "sqlite_type": "INTEGER",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "product_family",
+            "sqlite_type": "TEXT",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "strategic_priority",
+            "sqlite_type": "TEXT",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "revenue_signal_index",
+            "sqlite_type": "INTEGER",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "margin_profile",
+            "sqlite_type": "TEXT",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "ai_relevance_score",
+            "sqlite_type": "INTEGER",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          },
+          {
+            "name": "commentary",
+            "sqlite_type": "TEXT",
+            "notnull": false,
+            "default_value": null,
+            "is_primary_key": false
+          }
+        ],
+        "sample_rows": [
+          {
+            "fiscal_year": 2025,
+            "product_family": "Microsoft 365",
+            "strategic_priority": "High",
+            "revenue_signal_index": 92,
+            "margin_profile": "High",
+            "ai_relevance_score": 88,
+            "commentary": "Recurring commercial productivity revenue with premium mix expansion"
+          },
+          {
+            "fiscal_year": 2025,
+            "product_family": "Azure",
+            "strategic_priority": "High",
+            "revenue_signal_index": 96,
+            "margin_profile": "High",
+            "ai_relevance_score": 95,
+            "commentary": "Core cloud and AI platform growth engine with strong enterprise demand"
+          }
+        ]
+      }
+    ],
+    "prompt_schema_text": "Table: financial_performance_by_segment\nRow count: 9\nColumns:\n- fiscal_year (INTEGER)\n- segment_name (TEXT)\n- revenue_usd_millions (INTEGER)\n- operating_income_usd_millions (INTEGER)\n- operating_margin_pct (REAL)\n- yoy_revenue_growth_pct (REAL)\n- narrative_driver (TEXT)\nSample rows: [{\"fiscal_year\": 2023, \"segment_name\": \"Productivity and Business Processes\", \"revenue_usd_millions\": 69040, \"operating_income_usd_millions\": 33610, \"operating_margin_pct\": 48.7, \"yoy_revenue_growth_pct\": 8.1, \"narrative_driver\": \"Commercial seat expansion and durable Microsoft 365 demand\"}, {\"fiscal_year\": 2024, \"segment_name\": \"Productivity and Business Processes\", \"revenue_usd_millions\": 74860, \"operating_income_usd_millions\": 37240, \"operating_margin_pct\": 49.7, \"yoy_revenue_growth_pct\": 8.4, \"narrative_driver\": \"Office commercial growth and stable LinkedIn monetization\"}]\n\nTable: geographic_revenue_mix\nRow count: 6\nColumns:\n- fiscal_year (INTEGER)\n- geography (TEXT)\n- revenue_usd_millions (INTEGER)\n- revenue_mix_pct (REAL)\n- yoy_revenue_growth_pct (REAL)\nSample rows: [{\"fiscal_year\": 2023, \"geography\": \"United States\", \"revenue_usd_millions\": 98760, \"revenue_mix_pct\": 46.6, \"yoy_revenue_growth_pct\": 9.1}, {\"fiscal_year\": 2023, \"geography\": \"Other Countries\", \"revenue_usd_millions\": 113180, \"revenue_mix_pct\": 53.4, \"yoy_revenue_growth_pct\": 8.7}]\n\nTable: product_family_signals\nRow count: 7\nColumns:\n- fiscal_year (INTEGER)\n- product_family (TEXT)\n- strategic_priority (TEXT)\n- revenue_signal_index (INTEGER)\n- margin_profile (TEXT)\n- ai_relevance_score (INTEGER)\n- commentary (TEXT)\nSample rows: [{\"fiscal_year\": 2025, \"product_family\": \"Microsoft 365\", \"strategic_priority\": \"High\", \"revenue_signal_index\": 92, \"margin_profile\": \"High\", \"ai_relevance_score\": 88, \"commentary\": \"Recurring commercial productivity revenue with premium mix expansion\"}, {\"fiscal_year\": 2025, \"product_family\": \"Azure\", \"strategic_priority\": \"High\", \"revenue_signal_index\": 96, \"margin_profile\": \"High\", \"ai_relevance_score\": 95, \"commentary\": \"Core cloud and AI platform growth engine with strong enterprise demand\"}]"
+  }
+}

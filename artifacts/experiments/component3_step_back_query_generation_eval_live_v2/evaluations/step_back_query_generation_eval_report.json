@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-03-17T11:23:52.721405+00:00",
+  "model": "gpt-5-mini",
+  "cases_path": "C:\\Users\\user\\selfprograms\\programs\\projects\\projects\\Consulting_Projects\\Project_1\\agentic_document_intelligence\\evals\\step_back_query_generation_cases.json",
+  "case_count": 5,
+  "passed_count": 5,
+  "results": [
+    {
+      "query": "What was Microsoft's FY2025 revenue?",
+      "result": {
+        "original_query": "What was Microsoft's FY2025 revenue?",
+        "step_back_query": "How does Microsoft define fiscal year 2025 (fiscal year end date) and what total revenue did it report for FY2025 in its official financial statements or annual earnings release?",
+        "broadening_strategy": "broaden_to_explanation"
+      },
+      "evaluation": {
+        "passed": true,
+        "required_terms_ok": true,
+        "forbidden_ok": true,
+        "broader_ok": true
+      }
+    },
+    {
+      "query": "What happened with Azure growth and what did management say about AI demand?",
+      "result": {
+        "original_query": "What happened with Azure growth and what did management say about AI demand?",
+        "step_back_query": "What drove recent changes in Azure growth, and how has management described AI-driven demand for Azure?",
+        "broadening_strategy": "broaden_to_explanation"
+      },
+      "evaluation": {
+        "passed": true,
+        "required_terms_ok": true,
+        "forbidden_ok": true,
+        "broader_ok": true
+      }
+    },
+    {
+      "query": "Compare Azure and Microsoft 365 revenue drivers.",
+      "result": {
+        "original_query": "Compare Azure and Microsoft 365 revenue drivers.",
+        "step_back_query": "What are the main revenue drivers, business models, pricing/consumption factors, and customer segments that drive growth for Microsoft Azure versus Microsoft 365?",
+        "broadening_strategy": "broaden_to_explanation"
+      },
+      "evaluation": {
+        "passed": true,
+        "required_terms_ok": true,
+        "forbidden_ok": true,
+        "broader_ok": true
+      }
+    },
+    {
+      "query": "What were the main cybersecurity governance responsibilities of the board and management?",
+      "result": {
+        "original_query": "What were the main cybersecurity governance responsibilities of the board and management?",
+        "step_back_query": "What are the typical roles, responsibilities, and oversight functions of a company's board of directors versus executive management in cybersecurity governance?",
+        "broadening_strategy": "broaden_to_governance"
+      },
+      "evaluation": {
+        "passed": true,
+        "required_terms_ok": true,
+        "forbidden_ok": true,
+        "broader_ok": true
+      }
+    },
+    {
+      "query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+      "result": {
+        "original_query": "Did Microsoft mention capex and datacenter spending in FY2025?",
+        "step_back_query": "What guidance or statements has Microsoft given about its FY2025 capital expenditures (capex) and datacenter investment plans in earnings calls, investor presentations, or SEC filings?",
+        "broadening_strategy": "broaden_to_context"
+      },
+      "evaluation": {
+        "passed": true,
+        "required_terms_ok": true,
+        "forbidden_ok": true,
+        "broader_ok": true
+      }
+    }
+  ]
+}

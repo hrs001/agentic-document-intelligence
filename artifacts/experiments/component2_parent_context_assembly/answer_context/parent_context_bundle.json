@@ -1,0 +1,89 @@
+{
+  "query": "What were Microsoft's FY2025 revenue, operating income, and net income?",
+  "generated_at": "2026-03-17T09:42:02.926603+00:00",
+  "source_report_type": "pinecone_rerank_report",
+  "parent_context_count": 4,
+  "contexts": [
+    {
+      "parent_id": "microsoft_fy2025_10k_summary_sec1_p3_par0",
+      "section_title": "1. Executive summary",
+      "page": 3,
+      "page_end": 4,
+      "content_types": [
+        "text"
+      ],
+      "parent_text": "1. Executive summary\nMicrosoft entered fiscal 2025 with the scale of a mature software platform company and ended it\nlooking increasingly like the infrastructure and application layer for enterprise AI. The filing\nshows a business that is simultaneously growing quickly, widening strategic control points, and\naccepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout.\nThe year’s headline outcomes were strong. Revenue rose 15% to $281.7 billion, operating income\nrose 17% to $128.5 billion, and net income rose 16% to $101.8 billion. Microsoft Cloud revenue\nreached $168.9 billion, up 23%, while Azure and other cloud services grew 34%. The company\ncontinued to scale both enterprise productivity and cloud infrastructure while also benefiting from\nthe integration of Activision Blizzard in gaming.\nThe filing also shows the cost of that growth. Capital expenditures surged, lease commitments\nexpanded materially, and management explicitly acknowledged margin pressure from scaling AI\ninfrastructure. In other words, Microsoft is converting a large portion of current earnings power\ninto datacenters, servers, GPUs, and long-duration commercial capacity.\nSeveral themes dominate the 10-K:\n\nAI is now embedded across Microsoft’s entire stack: infrastructure, developer tooling, business\napplications, productivity, search, and security.\n\nCommercial recurring revenue remains the core earnings engine, especially Microsoft 365\nCommercial and Azure.\n",
+      "children": [
+        {
+          "source_chunk_id": "microsoft_fy2025_10k_summary_sec1_p3_par0_ch1",
+          "content_type": "text",
+          "score": 0.84695786,
+          "child_text": "accepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout.\nThe year’s headline outcomes were strong. Revenue rose 15% to $281.7 billion, operating income\nrose 17% to $128.5 billion, and net income rose 16% to $101.8 billion. Microsoft Cloud revenue\nreached $168.9 billion, up 23%, while Azure and other cloud services grew 34%. The company"
+        }
+      ],
+      "best_rank": 1,
+      "best_score": 0.84695786
+    },
+    {
+      "parent_id": "microsoft_fy2025_10k_summary_sec4_p8_par1",
+      "section_title": "4. Fiscal 2025 financial performance",
+      "page": 8,
+      "page_end": 9,
+      "content_types": [
+        "text"
+      ],
+      "parent_text": "The mix shift is strategically important. Product revenue was roughly flat to slightly down, while\nservice and other revenue rose sharply. This reinforces that Microsoft’s earnings profile now\ndepends primarily on subscriptions, cloud consumption, support, and online services rather than\npackaged software or device unit shipments.\nFrom a profitability perspective, FY2025 gross margin was about 68.8% of revenue, operating\nmargin about 45.6%, and net margin about 36.1%. Those remain exceptionally strong at Microsoft’s\nscale, even after absorbing the cost of aggressive AI infrastructure expansion.",
+      "children": [
+        {
+          "source_chunk_id": "microsoft_fy2025_10k_summary_sec4_p8_par1_ch1",
+          "content_type": "text",
+          "score": 0.83548355,
+          "child_text": "packaged software or device unit shipments.\nFrom a profitability perspective, FY2025 gross margin was about 68.8% of revenue, operating\nmargin about 45.6%, and net margin about 36.1%. Those remain exceptionally strong at Microsoft’s\nscale, even after absorbing the cost of aggressive AI infrastructure expansion."
+        }
+      ],
+      "best_rank": 2,
+      "best_score": 0.83548355
+    },
+    {
+      "parent_id": "microsoft_fy2025_10k_summary_sec5_table0",
+      "section_title": "5. Segment results and operating drivers",
+      "page": 9,
+      "page_end": 9,
+      "content_types": [
+        "table"
+      ],
+      "parent_text": "| Segment | Revenue FY2025 | Revenue growth | Operating income\nFY2025 | OI growth |\n| --- | --- | --- | --- | --- |\n| Productivity &\nBusiness Processes | $120,810 | +13% | $69,773 | +17% |\n| Intelligent Cloud | $106,265 | +21% | $44,589 | +18% |\n| More Personal\nComputing | $54,649 | +7% | $14,166 | +18% |\n| Total | $281,724 | +15% | $128,528 | +17% |",
+      "children": [
+        {
+          "source_chunk_id": "microsoft_fy2025_10k_summary_sec5_table0_ch0",
+          "content_type": "table",
+          "score": 0.45011768,
+          "child_text": "| Segment | Revenue FY2025 | Revenue growth | Operating income\nFY2025 | OI growth |\n| --- | --- | --- | --- | --- |\n| Productivity &\nBusiness Processes | $120,810 | +13% | $69,773 | +17% |\n| Intelligent Cloud | $106,265 | +21% | $44,589 | +18% |\n| More Personal\nComputing | $54,649 | +7% | $14,166 | +18% |\n| Total | $281,724 | +15% | $128,528 | +17% |"
+        }
+      ],
+      "best_rank": 3,
+      "best_score": 0.45011768
+    },
+    {
+      "parent_id": "microsoft_fy2025_10k_summary_sec17_table0",
+      "section_title": "Appendix G. Segment economics at a glance",
+      "page": 30,
+      "page_end": 30,
+      "content_types": [
+        "table"
+      ],
+      "parent_text": "| Segment | Revenue FY2025 | Operating income\nFY2025 | Operating margin |\n| --- | --- | --- | --- |\n| Productivity & Business\nProcesses | $120,810 | $69,773 | 57.8% |\n| Intelligent Cloud | $106,265 | $44,589 | 42.0% |\n| More Personal Computing | $54,649 | $14,166 | 25.9% |\n| Total company | $281,724 | $128,528 | 45.6% |",
+      "children": [
+        {
+          "source_chunk_id": "microsoft_fy2025_10k_summary_sec17_table0_ch0",
+          "content_type": "table",
+          "score": 0.42393497,
+          "child_text": "| Segment | Revenue FY2025 | Operating income\nFY2025 | Operating margin |\n| --- | --- | --- | --- |\n| Productivity & Business\nProcesses | $120,810 | $69,773 | 57.8% |\n| Intelligent Cloud | $106,265 | $44,589 | 42.0% |\n| More Personal Computing | $54,649 | $14,166 | 25.9% |\n| Total company | $281,724 | $128,528 | 45.6% |"
+        }
+      ],
+      "best_rank": 4,
+      "best_score": 0.42393497
+    }
+  ],
+  "assembled_context_text": "[Context 1] Section: 1. Executive summary\nPages: 3 - 4\nParent ID: microsoft_fy2025_10k_summary_sec1_p3_par0\nContent Types: text\nEvidence Snippets:\naccepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout.\nThe year’s headline outcomes were strong. Revenue rose 15% to $281.7 billion, operating income\nrose 17% to $128.5 billion, and net income rose 16% to $101.8 billion. Microsoft Cloud revenue\nreached $168.9 billion, up 23%, while Azure and other cloud services grew 34%. The company\nParent Context:\n1. Executive summary\nMicrosoft entered fiscal 2025 with the scale of a mature software platform company and ended it\nlooking increasingly like the infrastructure and application layer for enterprise AI. The filing\nshows a business that is simultaneously growing quickly, widening strategic control points, and\naccepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout.\nThe year’s headline outcomes were strong. Revenue rose 15% to $281.7 billion, operating income\nrose 17% to $128.5 billion, and net income rose 16% to $101.8 billion. Microsoft Cloud revenue\nreached $168.9 billion, up 23%, while Azure and other cloud services grew 34%. The company\ncontinued to scale both enterprise productivity and cloud infrastructure while also benefiting from\nthe integration of Activision Blizzard in gaming.\nThe filing also shows the cost of that growth. Capital expenditures surged, lease commitments\nexpanded materially, and management explicitly acknowledged margin pressure from scaling AI\ninfrastructure. In other words, Microsoft is converting a large portion of current earnings power\ninto datacenters, servers, GPUs, and long-duration commercial capacity.\nSeveral themes dominate the 10-K:\n\nAI is now embedded across Microsoft’s entire stack: infrastructure, developer tooling, business\napplications, productivity, search, and security.\n\nCommercial recurring revenue remains the core earnings engine, especially Microsoft 365\nCommercial and Azure.\n\n\n---\n\n[Context 2] Section: 4. Fiscal 2025 financial performance\nPages: 8 - 9\nParent ID: microsoft_fy2025_10k_summary_sec4_p8_par1\nContent Types: text\nEvidence Snippets:\npackaged software or device unit shipments.\nFrom a profitability perspective, FY2025 gross margin was about 68.8% of revenue, operating\nmargin about 45.6%, and net margin about 36.1%. Those remain exceptionally strong at Microsoft’s\nscale, even after absorbing the cost of aggressive AI infrastructure expansion.\nParent Context:\nThe mix shift is strategically important. Product revenue was roughly flat to slightly down, while\nservice and other revenue rose sharply. This reinforces that Microsoft’s earnings profile now\ndepends primarily on subscriptions, cloud consumption, support, and online services rather than\npackaged software or device unit shipments.\nFrom a profitability perspective, FY2025 gross margin was about 68.8% of revenue, operating\nmargin about 45.6%, and net margin about 36.1%. Those remain exceptionally strong at Microsoft’s\nscale, even after absorbing the cost of aggressive AI infrastructure expansion.\n\n---\n\n[Context 3] Section: 5. Segment results and operating drivers\nPages: 9 - 9\nParent ID: microsoft_fy2025_10k_summary_sec5_table0\nContent Types: table\nEvidence Snippets:\n| Segment | Revenue FY2025 | Revenue growth | Operating income\nFY2025 | OI growth |\n| --- | --- | --- | --- | --- |\n| Productivity &\nBusiness Processes | $120,810 | +13% | $69,773 | +17% |\n| Intelligent Cloud | $106,265 | +21% | $44,589 | +18% |\n| More Personal\nComputing | $54,649 | +7% | $14,166 | +18% |\n| Total | $281,724 | +15% | $128,528 | +17% |\nParent Context:\n| Segment | Revenue FY2025 | Revenue growth | Operating income\nFY2025 | OI growth |\n| --- | --- | --- | --- | --- |\n| Productivity &\nBusiness Processes | $120,810 | +13% | $69,773 | +17% |\n| Intelligent Cloud | $106,265 | +21% | $44,589 | +18% |\n| More Personal\nComputing | $54,649 | +7% | $14,166 | +18% |\n| Total | $281,724 | +15% | $128,528 | +17% |\n\n---\n\n[Context 4] Section: Appendix G. Segment economics at a glance\nPages: 30 - 30\nParent ID: microsoft_fy2025_10k_summary_sec17_table0\nContent Types: table\nEvidence Snippets:\n| Segment | Revenue FY2025 | Operating income\nFY2025 | Operating margin |\n| --- | --- | --- | --- |\n| Productivity & Business\nProcesses | $120,810 | $69,773 | 57.8% |\n| Intelligent Cloud | $106,265 | $44,589 | 42.0% |\n| More Personal Computing | $54,649 | $14,166 | 25.9% |\n| Total company | $281,724 | $128,528 | 45.6% |\nParent Context:\n| Segment | Revenue FY2025 | Operating income\nFY2025 | Operating margin |\n| --- | --- | --- | --- |\n| Productivity & Business\nProcesses | $120,810 | $69,773 | 57.8% |\n| Intelligent Cloud | $106,265 | $44,589 | 42.0% |\n| More Personal Computing | $54,649 | $14,166 | 25.9% |\n| Total company | $281,724 | $128,528 | 45.6% |"
+}

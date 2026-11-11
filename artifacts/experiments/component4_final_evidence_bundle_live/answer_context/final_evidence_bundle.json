@@ -1,0 +1,706 @@
+{
+  "generated_at": "2026-03-18T06:34:20.569765+00:00",
+  "result": {
+    "original_query": "Who is the CEO and what segment drove the most revenue growth and what did they say about AI?",
+    "policy": {
+      "decomposition_model": "gpt-5-mini",
+      "max_sub_queries": 3,
+      "run_hyde_in_initial_bundle": false,
+      "hyde_policy": "candidate_only_after_weak_retrieval",
+      "corrective_hyde_model": "gpt-5-mini",
+      "hyde_retry_policy": "conservative_retrieval_feedback",
+      "sub_query_rerank_model": "pinecone-rerank-v0",
+      "mmr_lambda": 0.75,
+      "mmr_top_m": 4
+    },
+    "bundle_summary": {
+      "sub_query_count": 3,
+      "total_evidence_items": 12
+    },
+    "sub_query_bundles": [
+      {
+        "sub_query_id": "sq_1",
+        "original_sub_query": "Who is the CEO?",
+        "evidence_count": 4,
+        "evidence_items": [
+          {
+            "source_chunk_id": "microsoft_fy2025_10k_summary_sec9_p17_par1_ch4",
+            "parent_id": "microsoft_fy2025_10k_summary_sec9_p17_par1",
+            "child_text": "Governance and executives\nThe executive officers listed in the filing as of July 30, 2025 were Satya Nadella (Chairman and",
+            "parent_text": "County, Washington, it has approximately 15 million square feet, including about 12 million square\nfeet of owned space on roughly 530 acres at headquarters.\nResearch and development\nMicrosoft continues to invest heavily in both fundamental and applied R&D across cloud, AI,\ndevices, security, operating systems, and digital work/life experiences. The report frames in-house\ndevelopment as a source of competitive advantage because it preserves product differentiation,\ncontrol over implementation, and freedom to prioritize modifications and enhancements.\nDistribution, sales, and licensing\nThe filing outlines a broad commercial distribution model spanning direct sales, enterprise\nagreements, Microsoft Customer Agreements, reseller channels, cloud solution providers, OEM\nrelationships, and online direct channels. This matters because Microsoft\u2019s performance is not\ndependent on a single sales motion. Its commercial engine combines long-cycle enterprise\ncontracting with self-serve and partner-led distribution.\nThe company also uses several licensing frameworks\u2014Enterprise Agreement, Microsoft Customer\nAgreement, Microsoft Online Subscription Agreement, Microsoft Products and Services Agreement,\nOpen Value, and Select Plus\u2014to match contract form to customer size and deployment model. The\nresult is high commercial flexibility with strong lock-in effects.\nGovernance and executives\nThe executive officers listed in the filing as of July 30, 2025 were Satya Nadella (Chairman and",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec9_p17_par1_ch4",
+              "parent_id": "microsoft_fy2025_10k_summary_sec9_p17_par1",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "9. Operations, people, properties, and governance",
+              "page": 17,
+              "page_end": 19,
+              "content_type": "text"
+            },
+            "best_score": 2.06646824,
+            "rerank_score": 0.036220055,
+            "mmr_score": 0.03622,
+            "match_count": 3,
+            "variant_types": [
+              "multi_query"
+            ],
+            "query_angles": [
+              "direct",
+              "governance_risk",
+              "management_commentary"
+            ],
+            "matched_query_texts": [
+              "Who is the chief executive officer?",
+              "Which individual serves as the CEO?",
+              "Name of the person holding the CEO title?"
+            ],
+            "provenance_list": [
+              {
+                "sub_query_id": "sq_1",
+                "variant_id": "sq_1_mq_1",
+                "variant_type": "multi_query",
+                "query_text": "Who is the chief executive officer?",
+                "query_angle": "direct"
+              },
+              {
+                "sub_query_id": "sq_1",
+                "variant_id": "sq_1_mq_2",
+                "variant_type": "multi_query",
+                "query_text": "Which individual serves as the CEO?",
+                "query_angle": "governance_risk"
+              },
+              {
+                "sub_query_id": "sq_1",
+                "variant_id": "sq_1_mq_3",
+                "variant_type": "multi_query",
+                "query_text": "Name of the person holding the CEO title?",
+                "query_angle": "management_commentary"
+              }
+            ]
+          },
+          {
+            "source_chunk_id": "microsoft_fy2025_10k_summary_sec9_p17_par1_ch3",
+            "parent_id": "microsoft_fy2025_10k_summary_sec9_p17_par1",
+            "child_text": "The company also uses several licensing frameworks\u2014Enterprise Agreement, Microsoft Customer\nAgreement, Microsoft Online Subscription Agreement, Microsoft Products and Services Agreement,\nOpen Value, and Select Plus\u2014to match contract form to customer size and deployment model. The\nresult is high commercial flexibility with strong lock-in effects.\nGovernance and executives",
+            "parent_text": "County, Washington, it has approximately 15 million square feet, including about 12 million square\nfeet of owned space on roughly 530 acres at headquarters.\nResearch and development\nMicrosoft continues to invest heavily in both fundamental and applied R&D across cloud, AI,\ndevices, security, operating systems, and digital work/life experiences. The report frames in-house\ndevelopment as a source of competitive advantage because it preserves product differentiation,\ncontrol over implementation, and freedom to prioritize modifications and enhancements.\nDistribution, sales, and licensing\nThe filing outlines a broad commercial distribution model spanning direct sales, enterprise\nagreements, Microsoft Customer Agreements, reseller channels, cloud solution providers, OEM\nrelationships, and online direct channels. This matters because Microsoft\u2019s performance is not\ndependent on a single sales motion. Its commercial engine combines long-cycle enterprise\ncontracting with self-serve and partner-led distribution.\nThe company also uses several licensing frameworks\u2014Enterprise Agreement, Microsoft Customer\nAgreement, Microsoft Online Subscription Agreement, Microsoft Products and Services Agreement,\nOpen Value, and Select Plus\u2014to match contract form to customer size and deployment model. The\nresult is high commercial flexibility with strong lock-in effects.\nGovernance and executives\nThe executive officers listed in the filing as of July 30, 2025 were Satya Nadella (Chairman and",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec9_p17_par1_ch3",
+              "parent_id": "microsoft_fy2025_10k_summary_sec9_p17_par1",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "9. Operations, people, properties, and governance",
+              "page": 17,
+              "page_end": 19,
+              "content_type": "text"
+            },
+            "best_score": 1.57580113,
+            "rerank_score": 5.4759766e-05,
+            "mmr_score": -0.104877,
+            "match_count": 1,
+            "variant_types": [
+              "step_back"
+            ],
+            "query_angles": [
+              "broaden_to_context"
+            ],
+            "matched_query_texts": [
+              "Which organization, company, or institution is being referred to when asking 'Who is the CEO?'"
+            ],
+            "provenance_list": [
+              {
+                "sub_query_id": "sq_1",
+                "variant_id": "sq_1_step_back",
+                "variant_type": "step_back",
+                "query_text": "Which organization, company, or institution is being referred to when asking 'Who is the CEO?'",
+                "query_angle": "broaden_to_context"
+              }
+            ]
+          },
+          {
+            "source_chunk_id": "microsoft_fy2025_10k_summary_sec12_table0_ch0",
+            "parent_id": "microsoft_fy2025_10k_summary_sec12_table0",
+            "child_text": "| Name | Age | Position |\n| --- | --- | --- |\n| Satya Nadella | 57 | Chairman and Chief Executive\nOfcfi er |\n| Judson B. Althoff | 52 | Executive Vice President and Chief\nCommercial Ofcfi er |\n| Amy L. Coleman | 53 | Executive Vice President and Chief\nHuman Resources Ofcfi er |\n| Kathleen T. Hogan | 59 | Executive Vice President, Ofcfi e of\nStrategy and Transformation |\n| Amy E. Hood | 53 | Executive Vice President and Chief\nFinancial Ofcfi er |\n| Takeshi Numoto | 54 | Executive Vice President and Chief\nMarketing Officer |\n| Bradford L. Smith | 66 | Vice Chair and President |",
+            "parent_text": "| Name | Age | Position |\n| --- | --- | --- |\n| Satya Nadella | 57 | Chairman and Chief Executive\nOfcfi er |\n| Judson B. Althoff | 52 | Executive Vice President and Chief\nCommercial Ofcfi er |\n| Amy L. Coleman | 53 | Executive Vice President and Chief\nHuman Resources Ofcfi er |\n| Kathleen T. Hogan | 59 | Executive Vice President, Ofcfi e of\nStrategy and Transformation |\n| Amy E. Hood | 53 | Executive Vice President and Chief\nFinancial Ofcfi er |\n| Takeshi Numoto | 54 | Executive Vice President and Chief\nMarketing Officer |\n| Bradford L. Smith | 66 | Vice Chair and President |",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec12_table0_ch0",
+              "parent_id": "microsoft_fy2025_10k_summary_sec12_table0",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "Appendix B. Executive officers and selected reference data",
+              "page": 21,
+              "page_end": 21,
+              "content_type": "table"
+            },
+            "best_score": 3.00746751,
+            "rerank_score": 0.027585281,
+            "mmr_score": -0.131339,
+            "match_count": 2,
+            "variant_types": [
+              "multi_query"
+            ],
+            "query_angles": [
+              "direct",
+              "management_commentary"
+            ],
+            "matched_query_texts": [
+              "Who is the chief executive officer?",
+              "Name of the person holding the CEO title?"
+            ],
+            "provenance_list": [
+              {
+                "sub_query_id": "sq_1",
+                "variant_id": "sq_1_mq_1",
+                "variant_type": "multi_query",
+                "query_text": "Who is the chief executive officer?",
+                "query_angle": "direct"
+              },
+              {
+                "sub_query_id": "sq_1",
+                "variant_id": "sq_1_mq_3",
+                "variant_type": "multi_query",
+                "query_text": "Name of the person holding the CEO title?",
+                "query_angle": "management_commentary"
+              }
+            ]
+          },
+          {
+            "source_chunk_id": "microsoft_fy2025_10k_summary_sec12_p21_par0_ch0",
+            "parent_id": "microsoft_fy2025_10k_summary_sec12_p21_par0",
+            "child_text": "Appendix B. Executive officers and selected reference data\nTable B1. Executive officers listed in the filing\nTable B2. Selected operating and reference data\nMethodology note\nThis condensed report was drafted from the full FY2025 Microsoft Form 10-K and cross-checked\nagainst Microsoft\u2019s Investor Relations annual report pages and the SEC filing page. It is designed to",
+            "parent_text": "Appendix B. Executive officers and selected reference data\nTable B1. Executive officers listed in the filing\nTable B2. Selected operating and reference data\nMethodology note\nThis condensed report was drafted from the full FY2025 Microsoft Form 10-K and cross-checked\nagainst Microsoft\u2019s Investor Relations annual report pages and the SEC filing page. It is designed to\npreserve material information while making the document substantially shorter and easier to\nreview.\nEnd of report.",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec12_p21_par0_ch0",
+              "parent_id": "microsoft_fy2025_10k_summary_sec12_p21_par0",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "Appendix B. Executive officers and selected reference data",
+              "page": 21,
+              "page_end": 22,
+              "content_type": "text"
+            },
+            "best_score": 2.05263901,
+            "rerank_score": 7.031184e-05,
+            "mmr_score": -0.143735,
+            "match_count": 1,
+            "variant_types": [
+              "multi_query"
+            ],
+            "query_angles": [
+              "direct"
+            ],
+            "matched_query_texts": [
+              "Who is the chief executive officer?"
+            ],
+            "provenance_list": [
+              {
+                "sub_query_id": "sq_1",
+                "variant_id": "sq_1_mq_1",
+                "variant_type": "multi_query",
+                "query_text": "Who is the chief executive officer?",
+                "query_angle": "direct"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sub_query_id": "sq_2",
+        "original_sub_query": "Which segment drove the most revenue growth?",
+        "evidence_count": 4,
+        "evidence_items": [
+          {
+            "source_chunk_id": "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+            "parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par1",
+            "child_text": "Intelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other\ncloud services growth of 34%. Azure growth was fueled by demand across the portfolio rather than\none isolated workload, reflecting both traditional cloud migration and AI-related consumption.",
+            "parent_text": "Intelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other\ncloud services growth of 34%. Azure growth was fueled by demand across the portfolio rather than\none isolated workload, reflecting both traditional cloud migration and AI-related consumption.\nThe flip side was cost intensity. Cost of revenue rose 36%, and gross margin percentage decreased\nbecause Microsoft is scaling AI infrastructure. This is one of the most important economic\nmessages in the 10-K: Azure is growing extremely fast, but the company is spending heavily to\npreserve capacity leadership. Operating income still rose 18% to $44.6 billion, showing that the\nsegment remains highly profitable despite margin pressure.\nMore Personal Computing\nMPC revenue rose $3.8 billion, or 7%, to $54.6 billion. The drivers were mixed. Windows and\nDevices rose only 2%, as Windows OEM growth was partly offset by declining Devices revenue.",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec5_p9_par1_ch0",
+              "parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par1",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "5. Segment results and operating drivers",
+              "page": 9,
+              "page_end": 11,
+              "content_type": "text"
+            },
+            "best_score": 5.10596657,
+            "rerank_score": 0.6575384,
+            "mmr_score": 0.657538,
+            "match_count": 5,
+            "variant_types": [
+              "original_sub_query",
+              "multi_query",
+              "step_back"
+            ],
+            "query_angles": [
+              "original",
+              "direct",
+              "financial_disclosure",
+              "comparison",
+              "conceptualize_metric"
+            ],
+            "matched_query_texts": [
+              "Which segment drove the most revenue growth?",
+              "In financial disclosures, which segment reported the largest revenue growth?",
+              "Which segment showed greater revenue growth compared to the other segments?",
+              "How are segments defined and how is segment-level revenue growth measured and compared (including time periods and metrics)?"
+            ],
+            "provenance_list": [
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_original",
+                "variant_type": "original_sub_query",
+                "query_text": "Which segment drove the most revenue growth?",
+                "query_angle": "original"
+              },
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_mq_1",
+                "variant_type": "multi_query",
+                "query_text": "Which segment drove the most revenue growth?",
+                "query_angle": "direct"
+              },
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_mq_2",
+                "variant_type": "multi_query",
+                "query_text": "In financial disclosures, which segment reported the largest revenue growth?",
+                "query_angle": "financial_disclosure"
+              },
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_mq_3",
+                "variant_type": "multi_query",
+                "query_text": "Which segment showed greater revenue growth compared to the other segments?",
+                "query_angle": "comparison"
+              },
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_step_back",
+                "variant_type": "step_back",
+                "query_text": "How are segments defined and how is segment-level revenue growth measured and compared (including time periods and metrics)?",
+                "query_angle": "conceptualize_metric"
+              }
+            ]
+          },
+          {
+            "source_chunk_id": "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+            "parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par1",
+            "child_text": "segment remains highly profitable despite margin pressure.\nMore Personal Computing\nMPC revenue rose $3.8 billion, or 7%, to $54.6 billion. The drivers were mixed. Windows and\nDevices rose only 2%, as Windows OEM growth was partly offset by declining Devices revenue.",
+            "parent_text": "Intelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other\ncloud services growth of 34%. Azure growth was fueled by demand across the portfolio rather than\none isolated workload, reflecting both traditional cloud migration and AI-related consumption.\nThe flip side was cost intensity. Cost of revenue rose 36%, and gross margin percentage decreased\nbecause Microsoft is scaling AI infrastructure. This is one of the most important economic\nmessages in the 10-K: Azure is growing extremely fast, but the company is spending heavily to\npreserve capacity leadership. Operating income still rose 18% to $44.6 billion, showing that the\nsegment remains highly profitable despite margin pressure.\nMore Personal Computing\nMPC revenue rose $3.8 billion, or 7%, to $54.6 billion. The drivers were mixed. Windows and\nDevices rose only 2%, as Windows OEM growth was partly offset by declining Devices revenue.",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec5_p9_par1_ch2",
+              "parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par1",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "5. Segment results and operating drivers",
+              "page": 9,
+              "page_end": 11,
+              "content_type": "text"
+            },
+            "best_score": 4.9357276,
+            "rerank_score": 0.605799,
+            "mmr_score": 0.334583,
+            "match_count": 5,
+            "variant_types": [
+              "original_sub_query",
+              "multi_query",
+              "step_back"
+            ],
+            "query_angles": [
+              "original",
+              "direct",
+              "financial_disclosure",
+              "comparison",
+              "conceptualize_metric"
+            ],
+            "matched_query_texts": [
+              "Which segment drove the most revenue growth?",
+              "In financial disclosures, which segment reported the largest revenue growth?",
+              "Which segment showed greater revenue growth compared to the other segments?",
+              "How are segments defined and how is segment-level revenue growth measured and compared (including time periods and metrics)?"
+            ],
+            "provenance_list": [
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_original",
+                "variant_type": "original_sub_query",
+                "query_text": "Which segment drove the most revenue growth?",
+                "query_angle": "original"
+              },
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_mq_1",
+                "variant_type": "multi_query",
+                "query_text": "Which segment drove the most revenue growth?",
+                "query_angle": "direct"
+              },
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_mq_2",
+                "variant_type": "multi_query",
+                "query_text": "In financial disclosures, which segment reported the largest revenue growth?",
+                "query_angle": "financial_disclosure"
+              },
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_mq_3",
+                "variant_type": "multi_query",
+                "query_text": "Which segment showed greater revenue growth compared to the other segments?",
+                "query_angle": "comparison"
+              },
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_step_back",
+                "variant_type": "step_back",
+                "query_text": "How are segments defined and how is segment-level revenue growth measured and compared (including time periods and metrics)?",
+                "query_angle": "conceptualize_metric"
+              }
+            ]
+          },
+          {
+            "source_chunk_id": "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+            "parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par0",
+            "child_text": "5. Segment results and operating drivers\nTable 3. Segment revenue and operating income\nProductivity and Business Processes\nPBP remained Microsoft\u2019s largest segment by revenue and its most profitable by absolute operating\nincome. Revenue increased $14.0 billion to $120.8 billion. The largest contributor was Microsoft",
+            "parent_text": "5. Segment results and operating drivers\nTable 3. Segment revenue and operating income\nProductivity and Business Processes\nPBP remained Microsoft\u2019s largest segment by revenue and its most profitable by absolute operating\nincome. Revenue increased $14.0 billion to $120.8 billion. The largest contributor was Microsoft\n365 Commercial products and cloud services, which grew $10.8 billion, or 14%. Microsoft 365\nCommercial cloud revenue grew 15%, supported by 6% seat growth, especially among small and\nmedium businesses and frontline worker offerings, as well as higher revenue per user.\nMicrosoft 365 Consumer products and cloud services rose 11%, helped by subscriber growth and a\nJanuary 2025 price increase. Consumer subscribers reached 89.0 million. LinkedIn revenue rose\n9% with growth across all lines of business. Dynamics products and cloud services grew 15%, with\nDynamics 365 up 19%.\nOperating income increased 17% to $69.8 billion. Management says cost of revenue rose due to\nMicrosoft 365 Commercial cloud growth, while gross margin percentage decreased slightly because\nof AI infrastructure scaling. Even so, efficiency gains and scale in the cloud business allowed strong\nprofit expansion.\nIntelligent Cloud\nIntelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec5_p9_par0_ch0",
+              "parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par0",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "5. Segment results and operating drivers",
+              "page": 9,
+              "page_end": 11,
+              "content_type": "text"
+            },
+            "best_score": 5.12030935,
+            "rerank_score": 0.43014735,
+            "mmr_score": 0.176471,
+            "match_count": 4,
+            "variant_types": [
+              "original_sub_query",
+              "multi_query"
+            ],
+            "query_angles": [
+              "original",
+              "direct",
+              "financial_disclosure",
+              "comparison"
+            ],
+            "matched_query_texts": [
+              "Which segment drove the most revenue growth?",
+              "In financial disclosures, which segment reported the largest revenue growth?",
+              "Which segment showed greater revenue growth compared to the other segments?"
+            ],
+            "provenance_list": [
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_original",
+                "variant_type": "original_sub_query",
+                "query_text": "Which segment drove the most revenue growth?",
+                "query_angle": "original"
+              },
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_mq_1",
+                "variant_type": "multi_query",
+                "query_text": "Which segment drove the most revenue growth?",
+                "query_angle": "direct"
+              },
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_mq_2",
+                "variant_type": "multi_query",
+                "query_text": "In financial disclosures, which segment reported the largest revenue growth?",
+                "query_angle": "financial_disclosure"
+              },
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_mq_3",
+                "variant_type": "multi_query",
+                "query_text": "Which segment showed greater revenue growth compared to the other segments?",
+                "query_angle": "comparison"
+              }
+            ]
+          },
+          {
+            "source_chunk_id": "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+            "parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par0",
+            "child_text": "Microsoft 365 Commercial cloud growth, while gross margin percentage decreased slightly because\nof AI infrastructure scaling. Even so, efficiency gains and scale in the cloud business allowed strong\nprofit expansion.\nIntelligent Cloud\nIntelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,",
+            "parent_text": "5. Segment results and operating drivers\nTable 3. Segment revenue and operating income\nProductivity and Business Processes\nPBP remained Microsoft\u2019s largest segment by revenue and its most profitable by absolute operating\nincome. Revenue increased $14.0 billion to $120.8 billion. The largest contributor was Microsoft\n365 Commercial products and cloud services, which grew $10.8 billion, or 14%. Microsoft 365\nCommercial cloud revenue grew 15%, supported by 6% seat growth, especially among small and\nmedium businesses and frontline worker offerings, as well as higher revenue per user.\nMicrosoft 365 Consumer products and cloud services rose 11%, helped by subscriber growth and a\nJanuary 2025 price increase. Consumer subscribers reached 89.0 million. LinkedIn revenue rose\n9% with growth across all lines of business. Dynamics products and cloud services grew 15%, with\nDynamics 365 up 19%.\nOperating income increased 17% to $69.8 billion. Management says cost of revenue rose due to\nMicrosoft 365 Commercial cloud growth, while gross margin percentage decreased slightly because\nof AI infrastructure scaling. Even so, efficiency gains and scale in the cloud business allowed strong\nprofit expansion.\nIntelligent Cloud\nIntelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec5_p9_par0_ch3",
+              "parent_id": "microsoft_fy2025_10k_summary_sec5_p9_par0",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "5. Segment results and operating drivers",
+              "page": 9,
+              "page_end": 11,
+              "content_type": "text"
+            },
+            "best_score": 4.30987215,
+            "rerank_score": 0.47061494,
+            "mmr_score": 0.146699,
+            "match_count": 3,
+            "variant_types": [
+              "multi_query",
+              "step_back"
+            ],
+            "query_angles": [
+              "financial_disclosure",
+              "comparison",
+              "conceptualize_metric"
+            ],
+            "matched_query_texts": [
+              "In financial disclosures, which segment reported the largest revenue growth?",
+              "Which segment showed greater revenue growth compared to the other segments?",
+              "How are segments defined and how is segment-level revenue growth measured and compared (including time periods and metrics)?"
+            ],
+            "provenance_list": [
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_mq_2",
+                "variant_type": "multi_query",
+                "query_text": "In financial disclosures, which segment reported the largest revenue growth?",
+                "query_angle": "financial_disclosure"
+              },
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_mq_3",
+                "variant_type": "multi_query",
+                "query_text": "Which segment showed greater revenue growth compared to the other segments?",
+                "query_angle": "comparison"
+              },
+              {
+                "sub_query_id": "sq_2",
+                "variant_id": "sq_2_step_back",
+                "variant_type": "step_back",
+                "query_text": "How are segments defined and how is segment-level revenue growth measured and compared (including time periods and metrics)?",
+                "query_angle": "conceptualize_metric"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sub_query_id": "sq_3",
+        "original_sub_query": "What did the CEO say about AI?",
+        "evidence_count": 4,
+        "evidence_items": [
+          {
+            "source_chunk_id": "microsoft_fy2025_10k_summary_sec2_p4_par0_ch2",
+            "parent_id": "microsoft_fy2025_10k_summary_sec2_p4_par0",
+            "child_text": "\uf0b7\nCreate more personal computing.\nThe company\u2019s near- to medium-term opportunity is described in explicitly AI-centric terms.\nMicrosoft is investing to help customers maximize digital spend through the Microsoft Cloud while\nleading the AI platform wave across solution areas. Key emphasis areas include Microsoft 365",
+            "parent_text": "2. Company overview, strategy, and operating model\nMicrosoft describes itself as a technology company committed to making digital technology and AI\navailable broadly and responsibly. Its mission remains to empower every person and every\norganization on the planet to achieve more. The business spans software, cloud services, devices,\nonline advertising, gaming, and professional networks, but the filing increasingly frames these\nofferings as connected layers of one stack rather than isolated product lines.\nManagement highlights three ambitions that organize research, product\ndevelopment, and go-to-market execution:\n\uf0b7\nReinvent productivity and business processes.\n\uf0b7\nBuild the intelligent cloud and intelligent edge platform.\n\uf0b7\nCreate more personal computing.\nThe company\u2019s near- to medium-term opportunity is described in explicitly AI-centric terms.\nMicrosoft is investing to help customers maximize digital spend through the Microsoft Cloud while\nleading the AI platform wave across solution areas. Key emphasis areas include Microsoft 365\nCopilot and agents, cloud-based AI services, workplace modernization, developer productivity,\ncybersecurity, gaming expansion, and Windows-linked consumer engagement.\nThe filing also emphasizes sustainability commitments announced in 2020: to become carbon\nnegative, water positive, and zero waste by 2030. Microsoft notes progress but also acknowledges\nthat the operating environment and the technical challenge have both evolved since the goals were",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec2_p4_par0_ch2",
+              "parent_id": "microsoft_fy2025_10k_summary_sec2_p4_par0",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "2. Company overview, strategy, and operating model",
+              "page": 4,
+              "page_end": 6,
+              "content_type": "text"
+            },
+            "best_score": 2.9405055,
+            "rerank_score": 0.0010987311,
+            "mmr_score": 0.001099,
+            "match_count": 4,
+            "variant_types": [
+              "original_sub_query",
+              "multi_query",
+              "step_back"
+            ],
+            "query_angles": [
+              "original",
+              "direct",
+              "management_commentary",
+              "broaden_to_context"
+            ],
+            "matched_query_texts": [
+              "What did the CEO say about AI?",
+              "CEO statement on AI",
+              "The CEO's comments about AI",
+              "What recent public statements by the CEO addressed AI, and what were the main contexts, key themes, and notable quotes in those remarks?"
+            ],
+            "provenance_list": [
+              {
+                "sub_query_id": "sq_3",
+                "variant_id": "sq_3_original",
+                "variant_type": "original_sub_query",
+                "query_text": "What did the CEO say about AI?",
+                "query_angle": "original"
+              },
+              {
+                "sub_query_id": "sq_3",
+                "variant_id": "sq_3_mq_1",
+                "variant_type": "multi_query",
+                "query_text": "CEO statement on AI",
+                "query_angle": "direct"
+              },
+              {
+                "sub_query_id": "sq_3",
+                "variant_id": "sq_3_mq_2",
+                "variant_type": "multi_query",
+                "query_text": "The CEO's comments about AI",
+                "query_angle": "management_commentary"
+              },
+              {
+                "sub_query_id": "sq_3",
+                "variant_id": "sq_3_step_back",
+                "variant_type": "step_back",
+                "query_text": "What recent public statements by the CEO addressed AI, and what were the main contexts, key themes, and notable quotes in those remarks?",
+                "query_angle": "broaden_to_context"
+              }
+            ]
+          },
+          {
+            "source_chunk_id": "microsoft_fy2025_10k_summary_sec6_p11_par1_ch3",
+            "parent_id": "microsoft_fy2025_10k_summary_sec6_p11_par1",
+            "child_text": "These obligations confirm that Microsoft\u2019s AI and cloud expansion is not just an income-statement\nstory but a multi-year capital commitment story. Leases, construction commitments, and purchase\ncommitments together amount to a very large future funding requirement, although one\ncomfortably supported by current cash generation.",
+            "parent_text": "recurring revenue and the scale of commercial contracts. The dominant use of that cash was\ninvesting activity, especially datacenter and infrastructure buildout.\nCapital expenditures reached $64.6 billion, up sharply from $44.5 billion. This is one of the clearest\nquantitative signals in the report: Microsoft is in a capital deployment phase to support cloud and\nAI demand. The company is also using finance leases extensively, so cash capex understates the\nfull infrastructure commitment.\nShareholder returns\nMicrosoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1\nbillion in cash dividends and spent $18.4 billion repurchasing common stock through open-market\nrepurchases. Dividends declared totaled $24.7 billion, or $3.32 per share. A new $60 billion\nrepurchase authorization approved in September 2024 commenced in April 2025 after the prior\nauthorization was completed; $57.3 billion remained available at June 30, 2025.\nTable 7. Selected contractual obligations as of June 30, 2025\nThese obligations confirm that Microsoft\u2019s AI and cloud expansion is not just an income-statement\nstory but a multi-year capital commitment story. Leases, construction commitments, and purchase\ncommitments together amount to a very large future funding requirement, although one\ncomfortably supported by current cash generation.",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec6_p11_par1_ch3",
+              "parent_id": "microsoft_fy2025_10k_summary_sec6_p11_par1",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "6. Balance sheet, liquidity, cash flow, and capital allocation",
+              "page": 11,
+              "page_end": 13,
+              "content_type": "text"
+            },
+            "best_score": 2.7277317,
+            "rerank_score": 0.00055277866,
+            "mmr_score": -0.154002,
+            "match_count": 2,
+            "variant_types": [
+              "multi_query"
+            ],
+            "query_angles": [
+              "direct",
+              "management_commentary"
+            ],
+            "matched_query_texts": [
+              "CEO statement on AI",
+              "The CEO's comments about AI"
+            ],
+            "provenance_list": [
+              {
+                "sub_query_id": "sq_3",
+                "variant_id": "sq_3_mq_1",
+                "variant_type": "multi_query",
+                "query_text": "CEO statement on AI",
+                "query_angle": "direct"
+              },
+              {
+                "sub_query_id": "sq_3",
+                "variant_id": "sq_3_mq_2",
+                "variant_type": "multi_query",
+                "query_text": "The CEO's comments about AI",
+                "query_angle": "management_commentary"
+              }
+            ]
+          },
+          {
+            "source_chunk_id": "microsoft_fy2025_10k_summary_sec2_p4_par0_ch3",
+            "parent_id": "microsoft_fy2025_10k_summary_sec2_p4_par0",
+            "child_text": "Copilot and agents, cloud-based AI services, workplace modernization, developer productivity,\ncybersecurity, gaming expansion, and Windows-linked consumer engagement.\nThe filing also emphasizes sustainability commitments announced in 2020: to become carbon\nnegative, water positive, and zero waste by 2030. Microsoft notes progress but also acknowledges",
+            "parent_text": "2. Company overview, strategy, and operating model\nMicrosoft describes itself as a technology company committed to making digital technology and AI\navailable broadly and responsibly. Its mission remains to empower every person and every\norganization on the planet to achieve more. The business spans software, cloud services, devices,\nonline advertising, gaming, and professional networks, but the filing increasingly frames these\nofferings as connected layers of one stack rather than isolated product lines.\nManagement highlights three ambitions that organize research, product\ndevelopment, and go-to-market execution:\n\uf0b7\nReinvent productivity and business processes.\n\uf0b7\nBuild the intelligent cloud and intelligent edge platform.\n\uf0b7\nCreate more personal computing.\nThe company\u2019s near- to medium-term opportunity is described in explicitly AI-centric terms.\nMicrosoft is investing to help customers maximize digital spend through the Microsoft Cloud while\nleading the AI platform wave across solution areas. Key emphasis areas include Microsoft 365\nCopilot and agents, cloud-based AI services, workplace modernization, developer productivity,\ncybersecurity, gaming expansion, and Windows-linked consumer engagement.\nThe filing also emphasizes sustainability commitments announced in 2020: to become carbon\nnegative, water positive, and zero waste by 2030. Microsoft notes progress but also acknowledges\nthat the operating environment and the technical challenge have both evolved since the goals were",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec2_p4_par0_ch3",
+              "parent_id": "microsoft_fy2025_10k_summary_sec2_p4_par0",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "2. Company overview, strategy, and operating model",
+              "page": 4,
+              "page_end": 6,
+              "content_type": "text"
+            },
+            "best_score": 2.47358298,
+            "rerank_score": 0.0007096704,
+            "mmr_score": -0.158514,
+            "match_count": 1,
+            "variant_types": [
+              "step_back"
+            ],
+            "query_angles": [
+              "broaden_to_context"
+            ],
+            "matched_query_texts": [
+              "What recent public statements by the CEO addressed AI, and what were the main contexts, key themes, and notable quotes in those remarks?"
+            ],
+            "provenance_list": [
+              {
+                "sub_query_id": "sq_3",
+                "variant_id": "sq_3_step_back",
+                "variant_type": "step_back",
+                "query_text": "What recent public statements by the CEO addressed AI, and what were the main contexts, key themes, and notable quotes in those remarks?",
+                "query_angle": "broaden_to_context"
+              }
+            ]
+          },
+          {
+            "source_chunk_id": "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+            "parent_id": "microsoft_fy2025_10k_summary_sec1_p3_par0",
+            "child_text": "infrastructure. In other words, Microsoft is converting a large portion of current earnings power\ninto datacenters, servers, GPUs, and long-duration commercial capacity.\nSeveral themes dominate the 10-K:\n\uf0b7\nAI is now embedded across Microsoft\u2019s entire stack: infrastructure, developer tooling, business\napplications, productivity, search, and security.\n\uf0b7",
+            "parent_text": "1. Executive summary\nMicrosoft entered fiscal 2025 with the scale of a mature software platform company and ended it\nlooking increasingly like the infrastructure and application layer for enterprise AI. The filing\nshows a business that is simultaneously growing quickly, widening strategic control points, and\naccepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout.\nThe year\u2019s headline outcomes were strong. Revenue rose 15% to $281.7 billion, operating income\nrose 17% to $128.5 billion, and net income rose 16% to $101.8 billion. Microsoft Cloud revenue\nreached $168.9 billion, up 23%, while Azure and other cloud services grew 34%. The company\ncontinued to scale both enterprise productivity and cloud infrastructure while also benefiting from\nthe integration of Activision Blizzard in gaming.\nThe filing also shows the cost of that growth. Capital expenditures surged, lease commitments\nexpanded materially, and management explicitly acknowledged margin pressure from scaling AI\ninfrastructure. In other words, Microsoft is converting a large portion of current earnings power\ninto datacenters, servers, GPUs, and long-duration commercial capacity.\nSeveral themes dominate the 10-K:\n\uf0b7\nAI is now embedded across Microsoft\u2019s entire stack: infrastructure, developer tooling, business\napplications, productivity, search, and security.\n\uf0b7\nCommercial recurring revenue remains the core earnings engine, especially Microsoft 365\nCommercial and Azure.\n\uf0b7",
+            "citation": {
+              "source_chunk_id": "microsoft_fy2025_10k_summary_sec1_p3_par0_ch3",
+              "parent_id": "microsoft_fy2025_10k_summary_sec1_p3_par0",
+              "document_id": "microsoft_fy2025_10k_summary",
+              "source_file": "Microsoft_FY2025_10K_Summary.pdf",
+              "section_title": "1. Executive summary",
+              "page": 3,
+              "page_end": 4,
+              "content_type": "text"
+            },
+            "best_score": 3.55263948,
+            "rerank_score": 0.00096975197,
+            "mmr_score": -0.165968,
+            "match_count": 3,
+            "variant_types": [
+              "original_sub_query",
+              "multi_query",
+              "step_back"
+            ],
+            "query_angles": [
+              "original",
+              "management_commentary",
+              "broaden_to_context"
+            ],
+            "matched_query_texts": [
+              "What did the CEO say about AI?",
+              "The CEO's comments about AI",
+              "What recent public statements by the CEO addressed AI, and what were the main contexts, key themes, and notable quotes in those remarks?"
+            ],
+            "provenance_list": [
+              {
+                "sub_query_id": "sq_3",
+                "variant_id": "sq_3_original",
+                "variant_type": "original_sub_query",
+                "query_text": "What did the CEO say about AI?",
+                "query_angle": "original"
+              },
+              {
+                "sub_query_id": "sq_3",
+                "variant_id": "sq_3_mq_2",
+                "variant_type": "multi_query",
+                "query_text": "The CEO's comments about AI",
+                "query_angle": "management_commentary"
+              },
+              {
+                "sub_query_id": "sq_3",
+                "variant_id": "sq_3_step_back",
+                "variant_type": "step_back",
+                "query_text": "What recent public statements by the CEO addressed AI, and what were the main contexts, key themes, and notable quotes in those remarks?",
+                "query_angle": "broaden_to_context"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "assembled_evidence_text": "[Evidence 1] Sub-query: Who is the CEO?\nSection: 9. Operations, people, properties, and governance\nPages: 17 - 19\nParent ID: microsoft_fy2025_10k_summary_sec9_p17_par1\nContent Type: text\nRerank Score: 0.036220055\nMMR Score: 0.03622\nChild Evidence:\nGovernance and executives\nThe executive officers listed in the filing as of July 30, 2025 were Satya Nadella (Chairman and\nParent Context:\nCounty, Washington, it has approximately 15 million square feet, including about 12 million square\nfeet of owned space on roughly 530 acres at headquarters.\nResearch and development\nMicrosoft continues to invest heavily in both fundamental and applied R&D across cloud, AI,\ndevices, security, operating systems, and digital work/life experiences. The report frames in-house\ndevelopment as a source of competitive advantage because it preserves product differentiation,\ncontrol over implementation, and freedom to prioritize modifications and enhancements.\nDistribution, sales, and licensing\nThe filing outlines a broad commercial distribution model spanning direct sales, enterprise\nagreements, Microsoft Customer Agreements, reseller channels, cloud solution providers, OEM\nrelationships, and online direct channels. This matters because Microsoft\u2019s performance is not\ndependent on a single sales motion. Its commercial engine combines long-cycle enterprise\ncontracting with self-serve and partner-led distribution.\nThe company also uses several licensing frameworks\u2014Enterprise Agreement, Microsoft Customer\nAgreement, Microsoft Online Subscription Agreement, Microsoft Products and Services Agreement,\nOpen Value, and Select Plus\u2014to match contract form to customer size and deployment model. The\nresult is high commercial flexibility with strong lock-in effects.\nGovernance and executives\nThe executive officers listed in the filing as of July 30, 2025 were Satya Nadella (Chairman and\n\n---\n\n[Evidence 2] Sub-query: Who is the CEO?\nSection: 9. Operations, people, properties, and governance\nPages: 17 - 19\nParent ID: microsoft_fy2025_10k_summary_sec9_p17_par1\nContent Type: text\nRerank Score: 5.4759766e-05\nMMR Score: -0.104877\nChild Evidence:\nThe company also uses several licensing frameworks\u2014Enterprise Agreement, Microsoft Customer\nAgreement, Microsoft Online Subscription Agreement, Microsoft Products and Services Agreement,\nOpen Value, and Select Plus\u2014to match contract form to customer size and deployment model. The\nresult is high commercial flexibility with strong lock-in effects.\nGovernance and executives\nParent Context:\nCounty, Washington, it has approximately 15 million square feet, including about 12 million square\nfeet of owned space on roughly 530 acres at headquarters.\nResearch and development\nMicrosoft continues to invest heavily in both fundamental and applied R&D across cloud, AI,\ndevices, security, operating systems, and digital work/life experiences. The report frames in-house\ndevelopment as a source of competitive advantage because it preserves product differentiation,\ncontrol over implementation, and freedom to prioritize modifications and enhancements.\nDistribution, sales, and licensing\nThe filing outlines a broad commercial distribution model spanning direct sales, enterprise\nagreements, Microsoft Customer Agreements, reseller channels, cloud solution providers, OEM\nrelationships, and online direct channels. This matters because Microsoft\u2019s performance is not\ndependent on a single sales motion. Its commercial engine combines long-cycle enterprise\ncontracting with self-serve and partner-led distribution.\nThe company also uses several licensing frameworks\u2014Enterprise Agreement, Microsoft Customer\nAgreement, Microsoft Online Subscription Agreement, Microsoft Products and Services Agreement,\nOpen Value, and Select Plus\u2014to match contract form to customer size and deployment model. The\nresult is high commercial flexibility with strong lock-in effects.\nGovernance and executives\nThe executive officers listed in the filing as of July 30, 2025 were Satya Nadella (Chairman and\n\n---\n\n[Evidence 3] Sub-query: Who is the CEO?\nSection: Appendix B. Executive officers and selected reference data\nPages: 21 - 21\nParent ID: microsoft_fy2025_10k_summary_sec12_table0\nContent Type: table\nRerank Score: 0.027585281\nMMR Score: -0.131339\nChild Evidence:\n| Name | Age | Position |\n| --- | --- | --- |\n| Satya Nadella | 57 | Chairman and Chief Executive\nOfcfi er |\n| Judson B. Althoff | 52 | Executive Vice President and Chief\nCommercial Ofcfi er |\n| Amy L. Coleman | 53 | Executive Vice President and Chief\nHuman Resources Ofcfi er |\n| Kathleen T. Hogan | 59 | Executive Vice President, Ofcfi e of\nStrategy and Transformation |\n| Amy E. Hood | 53 | Executive Vice President and Chief\nFinancial Ofcfi er |\n| Takeshi Numoto | 54 | Executive Vice President and Chief\nMarketing Officer |\n| Bradford L. Smith | 66 | Vice Chair and President |\nParent Context:\n| Name | Age | Position |\n| --- | --- | --- |\n| Satya Nadella | 57 | Chairman and Chief Executive\nOfcfi er |\n| Judson B. Althoff | 52 | Executive Vice President and Chief\nCommercial Ofcfi er |\n| Amy L. Coleman | 53 | Executive Vice President and Chief\nHuman Resources Ofcfi er |\n| Kathleen T. Hogan | 59 | Executive Vice President, Ofcfi e of\nStrategy and Transformation |\n| Amy E. Hood | 53 | Executive Vice President and Chief\nFinancial Ofcfi er |\n| Takeshi Numoto | 54 | Executive Vice President and Chief\nMarketing Officer |\n| Bradford L. Smith | 66 | Vice Chair and President |\n\n---\n\n[Evidence 4] Sub-query: Who is the CEO?\nSection: Appendix B. Executive officers and selected reference data\nPages: 21 - 22\nParent ID: microsoft_fy2025_10k_summary_sec12_p21_par0\nContent Type: text\nRerank Score: 7.031184e-05\nMMR Score: -0.143735\nChild Evidence:\nAppendix B. Executive officers and selected reference data\nTable B1. Executive officers listed in the filing\nTable B2. Selected operating and reference data\nMethodology note\nThis condensed report was drafted from the full FY2025 Microsoft Form 10-K and cross-checked\nagainst Microsoft\u2019s Investor Relations annual report pages and the SEC filing page. It is designed to\nParent Context:\nAppendix B. Executive officers and selected reference data\nTable B1. Executive officers listed in the filing\nTable B2. Selected operating and reference data\nMethodology note\nThis condensed report was drafted from the full FY2025 Microsoft Form 10-K and cross-checked\nagainst Microsoft\u2019s Investor Relations annual report pages and the SEC filing page. It is designed to\npreserve material information while making the document substantially shorter and easier to\nreview.\nEnd of report.\n\n---\n\n[Evidence 1] Sub-query: Which segment drove the most revenue growth?\nSection: 5. Segment results and operating drivers\nPages: 9 - 11\nParent ID: microsoft_fy2025_10k_summary_sec5_p9_par1\nContent Type: text\nRerank Score: 0.6575384\nMMR Score: 0.657538\nChild Evidence:\nIntelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other\ncloud services growth of 34%. Azure growth was fueled by demand across the portfolio rather than\none isolated workload, reflecting both traditional cloud migration and AI-related consumption.\nParent Context:\nIntelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other\ncloud services growth of 34%. Azure growth was fueled by demand across the portfolio rather than\none isolated workload, reflecting both traditional cloud migration and AI-related consumption.\nThe flip side was cost intensity. Cost of revenue rose 36%, and gross margin percentage decreased\nbecause Microsoft is scaling AI infrastructure. This is one of the most important economic\nmessages in the 10-K: Azure is growing extremely fast, but the company is spending heavily to\npreserve capacity leadership. Operating income still rose 18% to $44.6 billion, showing that the\nsegment remains highly profitable despite margin pressure.\nMore Personal Computing\nMPC revenue rose $3.8 billion, or 7%, to $54.6 billion. The drivers were mixed. Windows and\nDevices rose only 2%, as Windows OEM growth was partly offset by declining Devices revenue.\n\n---\n\n[Evidence 2] Sub-query: Which segment drove the most revenue growth?\nSection: 5. Segment results and operating drivers\nPages: 9 - 11\nParent ID: microsoft_fy2025_10k_summary_sec5_p9_par1\nContent Type: text\nRerank Score: 0.605799\nMMR Score: 0.334583\nChild Evidence:\nsegment remains highly profitable despite margin pressure.\nMore Personal Computing\nMPC revenue rose $3.8 billion, or 7%, to $54.6 billion. The drivers were mixed. Windows and\nDevices rose only 2%, as Windows OEM growth was partly offset by declining Devices revenue.\nParent Context:\nIntelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other\ncloud services growth of 34%. Azure growth was fueled by demand across the portfolio rather than\none isolated workload, reflecting both traditional cloud migration and AI-related consumption.\nThe flip side was cost intensity. Cost of revenue rose 36%, and gross margin percentage decreased\nbecause Microsoft is scaling AI infrastructure. This is one of the most important economic\nmessages in the 10-K: Azure is growing extremely fast, but the company is spending heavily to\npreserve capacity leadership. Operating income still rose 18% to $44.6 billion, showing that the\nsegment remains highly profitable despite margin pressure.\nMore Personal Computing\nMPC revenue rose $3.8 billion, or 7%, to $54.6 billion. The drivers were mixed. Windows and\nDevices rose only 2%, as Windows OEM growth was partly offset by declining Devices revenue.\n\n---\n\n[Evidence 3] Sub-query: Which segment drove the most revenue growth?\nSection: 5. Segment results and operating drivers\nPages: 9 - 11\nParent ID: microsoft_fy2025_10k_summary_sec5_p9_par0\nContent Type: text\nRerank Score: 0.43014735\nMMR Score: 0.176471\nChild Evidence:\n5. Segment results and operating drivers\nTable 3. Segment revenue and operating income\nProductivity and Business Processes\nPBP remained Microsoft\u2019s largest segment by revenue and its most profitable by absolute operating\nincome. Revenue increased $14.0 billion to $120.8 billion. The largest contributor was Microsoft\nParent Context:\n5. Segment results and operating drivers\nTable 3. Segment revenue and operating income\nProductivity and Business Processes\nPBP remained Microsoft\u2019s largest segment by revenue and its most profitable by absolute operating\nincome. Revenue increased $14.0 billion to $120.8 billion. The largest contributor was Microsoft\n365 Commercial products and cloud services, which grew $10.8 billion, or 14%. Microsoft 365\nCommercial cloud revenue grew 15%, supported by 6% seat growth, especially among small and\nmedium businesses and frontline worker offerings, as well as higher revenue per user.\nMicrosoft 365 Consumer products and cloud services rose 11%, helped by subscriber growth and a\nJanuary 2025 price increase. Consumer subscribers reached 89.0 million. LinkedIn revenue rose\n9% with growth across all lines of business. Dynamics products and cloud services grew 15%, with\nDynamics 365 up 19%.\nOperating income increased 17% to $69.8 billion. Management says cost of revenue rose due to\nMicrosoft 365 Commercial cloud growth, while gross margin percentage decreased slightly because\nof AI infrastructure scaling. Even so, efficiency gains and scale in the cloud business allowed strong\nprofit expansion.\nIntelligent Cloud\nIntelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other\n\n---\n\n[Evidence 4] Sub-query: Which segment drove the most revenue growth?\nSection: 5. Segment results and operating drivers\nPages: 9 - 11\nParent ID: microsoft_fy2025_10k_summary_sec5_p9_par0\nContent Type: text\nRerank Score: 0.47061494\nMMR Score: 0.146699\nChild Evidence:\nMicrosoft 365 Commercial cloud growth, while gross margin percentage decreased slightly because\nof AI infrastructure scaling. Even so, efficiency gains and scale in the cloud business allowed strong\nprofit expansion.\nIntelligent Cloud\nIntelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nParent Context:\n5. Segment results and operating drivers\nTable 3. Segment revenue and operating income\nProductivity and Business Processes\nPBP remained Microsoft\u2019s largest segment by revenue and its most profitable by absolute operating\nincome. Revenue increased $14.0 billion to $120.8 billion. The largest contributor was Microsoft\n365 Commercial products and cloud services, which grew $10.8 billion, or 14%. Microsoft 365\nCommercial cloud revenue grew 15%, supported by 6% seat growth, especially among small and\nmedium businesses and frontline worker offerings, as well as higher revenue per user.\nMicrosoft 365 Consumer products and cloud services rose 11%, helped by subscriber growth and a\nJanuary 2025 price increase. Consumer subscribers reached 89.0 million. LinkedIn revenue rose\n9% with growth across all lines of business. Dynamics products and cloud services grew 15%, with\nDynamics 365 up 19%.\nOperating income increased 17% to $69.8 billion. Management says cost of revenue rose due to\nMicrosoft 365 Commercial cloud growth, while gross margin percentage decreased slightly because\nof AI infrastructure scaling. Even so, efficiency gains and scale in the cloud business allowed strong\nprofit expansion.\nIntelligent Cloud\nIntelligent Cloud was the fastest-growing segment in absolute dollars. Revenue rose $18.8 billion,\nor 21%, to $106.3 billion. Server products and cloud services rose 23%, driven by Azure and other\n\n---\n\n[Evidence 1] Sub-query: What did the CEO say about AI?\nSection: 2. Company overview, strategy, and operating model\nPages: 4 - 6\nParent ID: microsoft_fy2025_10k_summary_sec2_p4_par0\nContent Type: text\nRerank Score: 0.0010987311\nMMR Score: 0.001099\nChild Evidence:\n\uf0b7\nCreate more personal computing.\nThe company\u2019s near- to medium-term opportunity is described in explicitly AI-centric terms.\nMicrosoft is investing to help customers maximize digital spend through the Microsoft Cloud while\nleading the AI platform wave across solution areas. Key emphasis areas include Microsoft 365\nParent Context:\n2. Company overview, strategy, and operating model\nMicrosoft describes itself as a technology company committed to making digital technology and AI\navailable broadly and responsibly. Its mission remains to empower every person and every\norganization on the planet to achieve more. The business spans software, cloud services, devices,\nonline advertising, gaming, and professional networks, but the filing increasingly frames these\nofferings as connected layers of one stack rather than isolated product lines.\nManagement highlights three ambitions that organize research, product\ndevelopment, and go-to-market execution:\n\uf0b7\nReinvent productivity and business processes.\n\uf0b7\nBuild the intelligent cloud and intelligent edge platform.\n\uf0b7\nCreate more personal computing.\nThe company\u2019s near- to medium-term opportunity is described in explicitly AI-centric terms.\nMicrosoft is investing to help customers maximize digital spend through the Microsoft Cloud while\nleading the AI platform wave across solution areas. Key emphasis areas include Microsoft 365\nCopilot and agents, cloud-based AI services, workplace modernization, developer productivity,\ncybersecurity, gaming expansion, and Windows-linked consumer engagement.\nThe filing also emphasizes sustainability commitments announced in 2020: to become carbon\nnegative, water positive, and zero waste by 2030. Microsoft notes progress but also acknowledges\nthat the operating environment and the technical challenge have both evolved since the goals were\n\n---\n\n[Evidence 2] Sub-query: What did the CEO say about AI?\nSection: 6. Balance sheet, liquidity, cash flow, and capital allocation\nPages: 11 - 13\nParent ID: microsoft_fy2025_10k_summary_sec6_p11_par1\nContent Type: text\nRerank Score: 0.00055277866\nMMR Score: -0.154002\nChild Evidence:\nThese obligations confirm that Microsoft\u2019s AI and cloud expansion is not just an income-statement\nstory but a multi-year capital commitment story. Leases, construction commitments, and purchase\ncommitments together amount to a very large future funding requirement, although one\ncomfortably supported by current cash generation.\nParent Context:\nrecurring revenue and the scale of commercial contracts. The dominant use of that cash was\ninvesting activity, especially datacenter and infrastructure buildout.\nCapital expenditures reached $64.6 billion, up sharply from $44.5 billion. This is one of the clearest\nquantitative signals in the report: Microsoft is in a capital deployment phase to support cloud and\nAI demand. The company is also using finance leases extensively, so cash capex understates the\nfull infrastructure commitment.\nShareholder returns\nMicrosoft continued to return substantial capital to shareholders. During FY2025 it paid $24.1\nbillion in cash dividends and spent $18.4 billion repurchasing common stock through open-market\nrepurchases. Dividends declared totaled $24.7 billion, or $3.32 per share. A new $60 billion\nrepurchase authorization approved in September 2024 commenced in April 2025 after the prior\nauthorization was completed; $57.3 billion remained available at June 30, 2025.\nTable 7. Selected contractual obligations as of June 30, 2025\nThese obligations confirm that Microsoft\u2019s AI and cloud expansion is not just an income-statement\nstory but a multi-year capital commitment story. Leases, construction commitments, and purchase\ncommitments together amount to a very large future funding requirement, although one\ncomfortably supported by current cash generation.\n\n---\n\n[Evidence 3] Sub-query: What did the CEO say about AI?\nSection: 2. Company overview, strategy, and operating model\nPages: 4 - 6\nParent ID: microsoft_fy2025_10k_summary_sec2_p4_par0\nContent Type: text\nRerank Score: 0.0007096704\nMMR Score: -0.158514\nChild Evidence:\nCopilot and agents, cloud-based AI services, workplace modernization, developer productivity,\ncybersecurity, gaming expansion, and Windows-linked consumer engagement.\nThe filing also emphasizes sustainability commitments announced in 2020: to become carbon\nnegative, water positive, and zero waste by 2030. Microsoft notes progress but also acknowledges\nParent Context:\n2. Company overview, strategy, and operating model\nMicrosoft describes itself as a technology company committed to making digital technology and AI\navailable broadly and responsibly. Its mission remains to empower every person and every\norganization on the planet to achieve more. The business spans software, cloud services, devices,\nonline advertising, gaming, and professional networks, but the filing increasingly frames these\nofferings as connected layers of one stack rather than isolated product lines.\nManagement highlights three ambitions that organize research, product\ndevelopment, and go-to-market execution:\n\uf0b7\nReinvent productivity and business processes.\n\uf0b7\nBuild the intelligent cloud and intelligent edge platform.\n\uf0b7\nCreate more personal computing.\nThe company\u2019s near- to medium-term opportunity is described in explicitly AI-centric terms.\nMicrosoft is investing to help customers maximize digital spend through the Microsoft Cloud while\nleading the AI platform wave across solution areas. Key emphasis areas include Microsoft 365\nCopilot and agents, cloud-based AI services, workplace modernization, developer productivity,\ncybersecurity, gaming expansion, and Windows-linked consumer engagement.\nThe filing also emphasizes sustainability commitments announced in 2020: to become carbon\nnegative, water positive, and zero waste by 2030. Microsoft notes progress but also acknowledges\nthat the operating environment and the technical challenge have both evolved since the goals were\n\n---\n\n[Evidence 4] Sub-query: What did the CEO say about AI?\nSection: 1. Executive summary\nPages: 3 - 4\nParent ID: microsoft_fy2025_10k_summary_sec1_p3_par0\nContent Type: text\nRerank Score: 0.00096975197\nMMR Score: -0.165968\nChild Evidence:\ninfrastructure. In other words, Microsoft is converting a large portion of current earnings power\ninto datacenters, servers, GPUs, and long-duration commercial capacity.\nSeveral themes dominate the 10-K:\n\uf0b7\nAI is now embedded across Microsoft\u2019s entire stack: infrastructure, developer tooling, business\napplications, productivity, search, and security.\n\uf0b7\nParent Context:\n1. Executive summary\nMicrosoft entered fiscal 2025 with the scale of a mature software platform company and ended it\nlooking increasingly like the infrastructure and application layer for enterprise AI. The filing\nshows a business that is simultaneously growing quickly, widening strategic control points, and\naccepting lower near-term cloud margins in exchange for heavier AI infrastructure buildout.\nThe year\u2019s headline outcomes were strong. Revenue rose 15% to $281.7 billion, operating income\nrose 17% to $128.5 billion, and net income rose 16% to $101.8 billion. Microsoft Cloud revenue\nreached $168.9 billion, up 23%, while Azure and other cloud services grew 34%. The company\ncontinued to scale both enterprise productivity and cloud infrastructure while also benefiting from\nthe integration of Activision Blizzard in gaming.\nThe filing also shows the cost of that growth. Capital expenditures surged, lease commitments\nexpanded materially, and management explicitly acknowledged margin pressure from scaling AI\ninfrastructure. In other words, Microsoft is converting a large portion of current earnings power\ninto datacenters, servers, GPUs, and long-duration commercial capacity.\nSeveral themes dominate the 10-K:\n\uf0b7\nAI is now embedded across Microsoft\u2019s entire stack: infrastructure, developer tooling, business\napplications, productivity, search, and security.\n\uf0b7\nCommercial recurring revenue remains the core earnings engine, especially Microsoft 365\nCommercial and Azure.\n\uf0b7"
+  }
+}

@@ -1,0 +1,674 @@
+{
+  "generated_at": "2026-03-19T10:48:44.944641+00:00",
+  "result": {
+    "baseline": {
+      "model": "baseline_no_compression",
+      "summary": {
+        "avg_judge_score": 4.2,
+        "pass_rate": 0.2,
+        "citation_integrity_rate": 1.0,
+        "avg_compression_latency_seconds": 0.0,
+        "estimated_compression_cost_usd": 0.0
+      },
+      "cases": [
+        {
+          "query": "Which segment includes GitHub, what was that segment's FY2025 revenue, and what strategic themes did management highlight that are relevant to that business?",
+          "judge_average_score": 3.5,
+          "judge_verdict": "borderline",
+          "citation_integrity": true,
+          "citation_count": 4,
+          "answer_preview": "- **Which segment includes GitHub?**  \n  GitHub is listed within the **Intelligent Cloud (IC)** segment, which includes \u201cAzure and other cloud services, server products, GitHub, Nuance Healthcare, and enterprise/partner services.\u201d [Evidence 1]\n\n- **What was that segment\u2019s FY2025 revenue?**  \n  For FY2025, the **Intelligent Cloud** segment reported revenue of **$108,610 million** (i.e., $108.61 bil"
+        },
+        {
+          "query": "Rank Microsoft's FY2025 segments by revenue, identify which one grew the fastest, and explain what the document says about the demand drivers behind that growth.",
+          "judge_average_score": 3.5,
+          "judge_verdict": "borderline",
+          "citation_integrity": true,
+          "citation_count": 6,
+          "answer_preview": "Here\u2019s what the FY2025 data and the document show:\n\n**1. FY2025 segment revenue ranking (highest to lowest)**\n1. **Intelligent Cloud** \u2013 $108,610 million in revenue [Evidence 1]\n2. **Productivity and Business Processes** \u2013 $81,220 million [Evidence 2]\n3. **More Personal Computing** \u2013 $60,610 million [Evidence 3]\n\n**2. Fastest-growing segment by year-over-year revenue**\n- **Intelligent Cloud** was "
+        },
+        {
+          "query": "What was the FY2025 revenue mix by geography, which region contributed the most, and what risks or business context in the document matter for interpreting that concentration?",
+          "judge_average_score": 4.75,
+          "judge_verdict": "borderline",
+          "citation_integrity": true,
+          "citation_count": 7,
+          "answer_preview": "For FY2025, the document reports the following revenue mix by geography:\n\n- United States: 46.8% of revenue [Evidence 1]\n- Other Countries (non-U.S.): 53.2% of revenue [Evidence 2]\n\nThe region contributing the most to FY2025 revenue is **Other Countries**, with $133,010 million of revenue, representing 53.2% of the total geographic mix. [Evidence 3][Evidence 2]\n\nRegarding risks or business context"
+        },
+        {
+          "query": "Find the segment associated with LinkedIn, compare its FY2025 revenue against Intelligent Cloud, and summarize any management commentary that helps explain the difference in scale.",
+          "judge_average_score": 4.25,
+          "judge_verdict": "borderline",
+          "citation_integrity": true,
+          "citation_count": 4,
+          "answer_preview": "\u2022 Segment association: LinkedIn is included in Microsoft\u2019s Productivity and Business Processes (PBP) reporting segment.[Evidence 1]\n\n\u2022 FY2025 revenue comparison:\n  - Productivity and Business Processes (the segment that houses LinkedIn) reported $81,220 million in revenue.[Evidence 2][Evidence 1]\n  - Intelligent Cloud reported $108,610 million in revenue.[Evidence 3][Evidence 4]\n  - Intelligent Cl"
+        },
+        {
+          "query": "Which segment had the highest FY2025 revenue, what was its operating income, and what narrative evidence from the document suggests why that segment performed strongly?",
+          "judge_average_score": 5.0,
+          "judge_verdict": "pass",
+          "citation_integrity": true,
+          "citation_count": 4,
+          "answer_preview": "- Segment with the highest FY2025 revenue: **Intelligent Cloud**, with revenue of **$108,610 million**.[Evidence 1]\n- Its FY2025 operating income: **$49,870 million**.[Evidence 2]\n\n**Narrative evidence for strong performance**\n- The segment\u2019s narrative driver is identified as **\u201cAI infrastructure demand,\u201d** indicating that rising demand for AI infrastructure was a key reason Intelligent Cloud perf"
+        }
+      ]
+    },
+    "model_results": [
+      {
+        "model": "gpt-5.4-mini",
+        "summary": {
+          "avg_judge_score": 4.15,
+          "pass_rate": 0.2,
+          "citation_integrity_rate": 1.0,
+          "avg_compression_latency_seconds": 2.193,
+          "estimated_compression_cost_usd": 0.019489
+        },
+        "cases": [
+          {
+            "query": "Which segment includes GitHub, what was that segment's FY2025 revenue, and what strategic themes did management highlight that are relevant to that business?",
+            "compression_model": "gpt-5.4-mini",
+            "compression_applied": true,
+            "compression_latency_seconds": 3.805,
+            "compression_usage": {
+              "completion_tokens": 509,
+              "prompt_tokens": 6548,
+              "total_tokens": 7057,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 3.801,
+              "estimated_cost_usd": 0.007202
+            },
+            "judge_average_score": 3.5,
+            "judge_verdict": "borderline",
+            "citation_integrity": true,
+            "citation_count": 4,
+            "answer_preview": "- **Reporting segment for GitHub:** GitHub is included in Microsoft\u2019s **Productivity and Business Processes (PBP)** reporting segment.[Evidence 1]\n\n- **FY2025 revenue for that segment:** Microsoft reported **$81,220 million** in FY2025 revenue for the **Productivity and Business Processes** segment.[Evidence 2]\n\n- **Relevant strategic themes management highlighted:**\n  - **Role of Productivity and"
+          },
+          {
+            "query": "Rank Microsoft's FY2025 segments by revenue, identify which one grew the fastest, and explain what the document says about the demand drivers behind that growth.",
+            "compression_model": "gpt-5.4-mini",
+            "compression_applied": true,
+            "compression_latency_seconds": 2.103,
+            "compression_usage": {
+              "completion_tokens": 446,
+              "prompt_tokens": 1832,
+              "total_tokens": 2278,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 2.101,
+              "estimated_cost_usd": 0.003381
+            },
+            "judge_average_score": 3.75,
+            "judge_verdict": "borderline",
+            "citation_integrity": true,
+            "citation_count": 6,
+            "answer_preview": "Here\u2019s what the FY2025 data and narrative say:\n\n1. **FY2025 revenue ranking by segment (highest to lowest)**  \n   - **Intelligent Cloud**: $108.61 billion in revenue, the largest segment.[Evidence 1]  \n   - **Productivity and Business Processes**: $81.22 billion.[Evidence 2]  \n   - **More Personal Computing**: $60.61 billion.[Evidence 3]\n\n2. **Fastest-growing segment by year-over-year revenue**  \n"
+          },
+          {
+            "query": "What was the FY2025 revenue mix by geography, which region contributed the most, and what risks or business context in the document matter for interpreting that concentration?",
+            "compression_model": "gpt-5.4-mini",
+            "compression_applied": true,
+            "compression_latency_seconds": 2.059,
+            "compression_usage": {
+              "completion_tokens": 419,
+              "prompt_tokens": 1441,
+              "total_tokens": 1860,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 2.057,
+              "estimated_cost_usd": 0.002966
+            },
+            "judge_average_score": 5.0,
+            "judge_verdict": "pass",
+            "citation_integrity": true,
+            "citation_count": 7,
+            "answer_preview": "\u2022 FY2025 revenue mix by geography:\n  - Other Countries: 53.2% of revenue.[Evidence 1]\n  - United States: 46.8% of revenue.[Evidence 2]\n\n\u2022 Region contributing the most:\n  - \u201cOther Countries\u201d contributed the most FY2025 revenue, with $133,010 million, and represents the larger share of total revenue.[Evidence 3][Evidence 1]\n\n\u2022 Risks / business context for interpreting this geographic concentration:\n"
+          },
+          {
+            "query": "Find the segment associated with LinkedIn, compare its FY2025 revenue against Intelligent Cloud, and summarize any management commentary that helps explain the difference in scale.",
+            "compression_model": "gpt-5.4-mini",
+            "compression_applied": true,
+            "compression_latency_seconds": 1.39,
+            "compression_usage": {
+              "completion_tokens": 276,
+              "prompt_tokens": 2138,
+              "total_tokens": 2414,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 1.388,
+              "estimated_cost_usd": 0.002845
+            },
+            "judge_average_score": 4.25,
+            "judge_verdict": "borderline",
+            "citation_integrity": true,
+            "citation_count": 5,
+            "answer_preview": "\u2022 Segment: LinkedIn is included in Microsoft\u2019s Productivity and Business Processes reporting segment.[Evidence 1][Evidence 2]\n\n\u2022 FY2025 revenue comparison (by segment):\n  - Productivity and Business Processes (the segment that includes LinkedIn): $81,220 million.[Evidence 3][Evidence 1]\n  - Intelligent Cloud: $108,610 million.[Evidence 4][Evidence 5]\n\n\u2022 Commentary on difference in scale: The provi"
+          },
+          {
+            "query": "Which segment had the highest FY2025 revenue, what was its operating income, and what narrative evidence from the document suggests why that segment performed strongly?",
+            "compression_model": "gpt-5.4-mini",
+            "compression_applied": true,
+            "compression_latency_seconds": 1.61,
+            "compression_usage": {
+              "completion_tokens": 334,
+              "prompt_tokens": 2123,
+              "total_tokens": 2457,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 1.607,
+              "estimated_cost_usd": 0.003095
+            },
+            "judge_average_score": 4.25,
+            "judge_verdict": "borderline",
+            "citation_integrity": true,
+            "citation_count": 5,
+            "answer_preview": "The segment with the highest FY2025 revenue was **Intelligent Cloud**, with revenue of **$108,610 million**.[Evidence 1]\n\nIts FY2025 **operating income** was **$49,870 million**.[Evidence 2]\n\nNarrative evidence in the document suggests it performed strongly primarily due to:\n- **AI infrastructure demand** cited directly as a key driver for the Intelligent Cloud segment\u2019s strong performance.[Eviden"
+          }
+        ]
+      },
+      {
+        "model": "gpt-5.4-nano",
+        "summary": {
+          "avg_judge_score": 4.05,
+          "pass_rate": 0.2,
+          "citation_integrity_rate": 1.0,
+          "avg_compression_latency_seconds": 2.745,
+          "estimated_compression_cost_usd": 0.005522
+        },
+        "cases": [
+          {
+            "query": "Which segment includes GitHub, what was that segment's FY2025 revenue, and what strategic themes did management highlight that are relevant to that business?",
+            "compression_model": "gpt-5.4-nano",
+            "compression_applied": true,
+            "compression_latency_seconds": 3.029,
+            "compression_usage": {
+              "completion_tokens": 562,
+              "prompt_tokens": 6548,
+              "total_tokens": 7110,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 3.026,
+              "estimated_cost_usd": 0.002012
+            },
+            "judge_average_score": 4.25,
+            "judge_verdict": "borderline",
+            "citation_integrity": true,
+            "citation_count": 4,
+            "answer_preview": "\u2022 Segment: GitHub is included in Microsoft\u2019s Productivity and Business Processes (PBP) reporting segment.[Evidence 1]\n\n\u2022 FY2025 revenue for that segment: Productivity and Business Processes reported $81,220 million in revenue in FY2025.[Evidence 2]\n\n\u2022 Relevant strategic themes management highlighted:\n  - Integrated operating model linkages: Management emphasizes that Azure \u201csupports GitHub, data s"
+          },
+          {
+            "query": "Rank Microsoft's FY2025 segments by revenue, identify which one grew the fastest, and explain what the document says about the demand drivers behind that growth.",
+            "compression_model": "gpt-5.4-nano",
+            "compression_applied": true,
+            "compression_latency_seconds": 2.32,
+            "compression_usage": {
+              "completion_tokens": 392,
+              "prompt_tokens": 1832,
+              "total_tokens": 2224,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 2.317,
+              "estimated_cost_usd": 0.000856
+            },
+            "judge_average_score": 3.5,
+            "judge_verdict": "borderline",
+            "citation_integrity": true,
+            "citation_count": 8,
+            "answer_preview": "Here\u2019s what the document supports for FY2025:\n\n1. **Segments ranked by revenue (highest to lowest)**\n   1. **Intelligent Cloud** \u2013 $108,610 million in revenue.[Evidence 1]\n   2. **Productivity and Business Processes** \u2013 $81,220 million.[Evidence 2]\n   3. **More Personal Computing** \u2013 $60,610 million.[Evidence 3]\n\n2. **Fastest-growing segment by year-over-year revenue**\n   - **Intelligent Cloud** h"
+          },
+          {
+            "query": "What was the FY2025 revenue mix by geography, which region contributed the most, and what risks or business context in the document matter for interpreting that concentration?",
+            "compression_model": "gpt-5.4-nano",
+            "compression_applied": true,
+            "compression_latency_seconds": 4.338,
+            "compression_usage": {
+              "completion_tokens": 536,
+              "prompt_tokens": 1441,
+              "total_tokens": 1977,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 4.335,
+              "estimated_cost_usd": 0.000958
+            },
+            "judge_average_score": 5.0,
+            "judge_verdict": "pass",
+            "citation_integrity": true,
+            "citation_count": 5,
+            "answer_preview": "**FY2025 revenue mix by geography**  \n- United States: 46.8% of revenue [Evidence 1]  \n- Other Countries: 53.2% of revenue [Evidence 2]\n\n**Region contributing the most**  \n- Other Countries contributed the largest share, with 53.2% of revenue and $133,010 million in FY2025 revenue. [Evidence 2][Evidence 3]\n\n**Risks and business context relevant to this geographic concentration**  \n- The document i"
+          },
+          {
+            "query": "Find the segment associated with LinkedIn, compare its FY2025 revenue against Intelligent Cloud, and summarize any management commentary that helps explain the difference in scale.",
+            "compression_model": "gpt-5.4-nano",
+            "compression_applied": true,
+            "compression_latency_seconds": 1.7,
+            "compression_usage": {
+              "completion_tokens": 280,
+              "prompt_tokens": 2138,
+              "total_tokens": 2418,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 1.697,
+              "estimated_cost_usd": 0.000778
+            },
+            "judge_average_score": 3.75,
+            "judge_verdict": "borderline",
+            "citation_integrity": true,
+            "citation_count": 5,
+            "answer_preview": "\u2022 LinkedIn is reported within Microsoft\u2019s **Productivity and Business Processes** segment.[Evidence 1][Evidence 2]\n\n\u2022 FY2025 revenue for **Productivity and Business Processes** (the segment that includes LinkedIn) was **$81,220 million**.[Evidence 3][Evidence 1]\n\n\u2022 FY2025 revenue for **Intelligent Cloud** was **$108,610 million**.[Evidence 4][Evidence 5]\n\n\u2022 Comparison of scale: Intelligent Cloud\u2019s"
+          },
+          {
+            "query": "Which segment had the highest FY2025 revenue, what was its operating income, and what narrative evidence from the document suggests why that segment performed strongly?",
+            "compression_model": "gpt-5.4-nano",
+            "compression_applied": true,
+            "compression_latency_seconds": 2.34,
+            "compression_usage": {
+              "completion_tokens": 395,
+              "prompt_tokens": 2123,
+              "total_tokens": 2518,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 2.338,
+              "estimated_cost_usd": 0.000918
+            },
+            "judge_average_score": 3.75,
+            "judge_verdict": "borderline",
+            "citation_integrity": true,
+            "citation_count": 5,
+            "answer_preview": "- Segment with the highest FY2025 revenue: **Intelligent Cloud**, with revenue of **$108,610 million**.[Evidence 1]\n- FY2025 operating income for Intelligent Cloud: **$49,870 million**.[Evidence 2]\n- Narrative evidence for strong performance:\n  - The segment\u2019s narrative explicitly cites **\"AI infrastructure demand\"** as a key driver for Intelligent Cloud.[Evidence 3]\n  - Azure, a core part of Inte"
+          }
+        ]
+      },
+      {
+        "model": "gpt-5.1",
+        "summary": {
+          "avg_judge_score": 4.3,
+          "pass_rate": 0.4,
+          "citation_integrity_rate": 1.0,
+          "avg_compression_latency_seconds": 7.82,
+          "estimated_compression_cost_usd": 0.047843
+        },
+        "cases": [
+          {
+            "query": "Which segment includes GitHub, what was that segment's FY2025 revenue, and what strategic themes did management highlight that are relevant to that business?",
+            "compression_model": "gpt-5.1",
+            "compression_applied": true,
+            "compression_latency_seconds": 6.051,
+            "compression_usage": {
+              "completion_tokens": 776,
+              "prompt_tokens": 6548,
+              "total_tokens": 7324,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 6.048,
+              "estimated_cost_usd": 0.015945
+            },
+            "judge_average_score": 4.75,
+            "judge_verdict": "pass",
+            "citation_integrity": true,
+            "citation_count": 9,
+            "answer_preview": "The provided evidence does **not** explicitly state which named Microsoft reporting segment (Productivity and Business Processes, Intelligent Cloud, or More Personal Computing) includes GitHub, so I cannot reliably assign GitHub to a specific segment or tie it to a single segment revenue figure.\n\nWhat we can say from the evidence:\n\n1. **Microsoft\u2019s reporting segments and their FY2025 revenues**  \n"
+          },
+          {
+            "query": "Rank Microsoft's FY2025 segments by revenue, identify which one grew the fastest, and explain what the document says about the demand drivers behind that growth.",
+            "compression_model": "gpt-5.1",
+            "compression_applied": true,
+            "compression_latency_seconds": 9.159,
+            "compression_usage": {
+              "completion_tokens": 682,
+              "prompt_tokens": 1832,
+              "total_tokens": 2514,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 9.157,
+              "estimated_cost_usd": 0.00911
+            },
+            "judge_average_score": 3.75,
+            "judge_verdict": "borderline",
+            "citation_integrity": true,
+            "citation_count": 8,
+            "answer_preview": "**1. FY2025 segment revenue ranking (highest to lowest)**\n1. Intelligent Cloud \u2013 $108.61 billion in revenue [Evidence 1]\n2. Productivity and Business Processes \u2013 $81.22 billion [Evidence 2]\n3. More Personal Computing \u2013 $60.61 billion [Evidence 3]\n\n**2. Fastest-growing segment by revenue**\n- Intelligent Cloud is identified in the structured data as the fastest-growing Microsoft segment by year-over"
+          },
+          {
+            "query": "What was the FY2025 revenue mix by geography, which region contributed the most, and what risks or business context in the document matter for interpreting that concentration?",
+            "compression_model": "gpt-5.1",
+            "compression_applied": true,
+            "compression_latency_seconds": 10.707,
+            "compression_usage": {
+              "completion_tokens": 605,
+              "prompt_tokens": 1441,
+              "total_tokens": 2046,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 10.705,
+              "estimated_cost_usd": 0.007851
+            },
+            "judge_average_score": 5.0,
+            "judge_verdict": "pass",
+            "citation_integrity": true,
+            "citation_count": 7,
+            "answer_preview": "\u2022 FY2025 revenue mix by geography:\n  - Other Countries: 53.2% of revenue.[Evidence 1]\n  - United States: 46.8% of revenue.[Evidence 2]\n\n\u2022 Region contributing the most:\n  - \u201cOther Countries\u201d contributed the largest share, with $133,010 million of revenue, exceeding the United States.[Evidence 3]\n\n\u2022 Risks / business context relevant to interpreting this geographic concentration:\n  - Management signa"
+          },
+          {
+            "query": "Find the segment associated with LinkedIn, compare its FY2025 revenue against Intelligent Cloud, and summarize any management commentary that helps explain the difference in scale.",
+            "compression_model": "gpt-5.1",
+            "compression_applied": true,
+            "compression_latency_seconds": 4.037,
+            "compression_usage": {
+              "completion_tokens": 402,
+              "prompt_tokens": 2138,
+              "total_tokens": 2540,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 4.036,
+              "estimated_cost_usd": 0.006693
+            },
+            "judge_average_score": 4.0,
+            "judge_verdict": "borderline",
+            "citation_integrity": true,
+            "citation_count": 5,
+            "answer_preview": "\u2022 Segment association: LinkedIn is reported within Microsoft\u2019s Productivity and Business Processes segment.[Evidence 1]\n\n\u2022 FY2025 revenues (USD millions):\n  - Productivity and Business Processes (segment including LinkedIn): $81,220 million.[Evidence 2][Evidence 1]\n  - Intelligent Cloud: $108,610 million.[Evidence 3][Evidence 4]\n\n\u2022 Scale comparison:\n  - Intelligent Cloud revenue exceeded the Produ"
+          },
+          {
+            "query": "Which segment had the highest FY2025 revenue, what was its operating income, and what narrative evidence from the document suggests why that segment performed strongly?",
+            "compression_model": "gpt-5.1",
+            "compression_applied": true,
+            "compression_latency_seconds": 9.147,
+            "compression_usage": {
+              "completion_tokens": 559,
+              "prompt_tokens": 2123,
+              "total_tokens": 2682,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 9.146,
+              "estimated_cost_usd": 0.008244
+            },
+            "judge_average_score": 4.0,
+            "judge_verdict": "borderline",
+            "citation_integrity": true,
+            "citation_count": 5,
+            "answer_preview": "The Intelligent Cloud segment had the highest FY2025 revenue in the provided data, with revenue of $108,610 million.[Evidence 1] Its FY2025 operating income was $49,870 million.[Evidence 2]\n\nNarrative evidence in the filing links this strong performance primarily to:\n- Customer demand for AI infrastructure within Intelligent Cloud, cited as a key driver of the segment\u2019s results.[Evidence 3]\n- Azur"
+          }
+        ]
+      },
+      {
+        "model": "gpt-5-mini",
+        "summary": {
+          "avg_judge_score": 4.4,
+          "pass_rate": 0.6,
+          "citation_integrity_rate": 1.0,
+          "avg_compression_latency_seconds": 25.917,
+          "estimated_compression_cost_usd": 0.026328
+        },
+        "cases": [
+          {
+            "query": "Which segment includes GitHub, what was that segment's FY2025 revenue, and what strategic themes did management highlight that are relevant to that business?",
+            "compression_model": "gpt-5-mini",
+            "compression_applied": true,
+            "compression_latency_seconds": 33.503,
+            "compression_usage": {
+              "completion_tokens": 2984,
+              "prompt_tokens": 6548,
+              "total_tokens": 9532,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 2304,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 33.5,
+              "estimated_cost_usd": 0.007605
+            },
+            "judge_average_score": 4.5,
+            "judge_verdict": "pass",
+            "citation_integrity": true,
+            "citation_count": 5,
+            "answer_preview": "\u2022 Segment: GitHub is included in Microsoft\u2019s Productivity and Business Processes (PBP) reporting segment.[Evidence 1][Evidence 2][Evidence 3]\n\n\u2022 FY2025 revenue for that segment: Productivity and Business Processes reported $81,220 million in revenue in FY2025.[Evidence 4]\n\n\u2022 Relevant strategic themes management highlighted:\n  - Strategic linkages across the stack: Microsoft emphasizes that its ope"
+          },
+          {
+            "query": "Rank Microsoft's FY2025 segments by revenue, identify which one grew the fastest, and explain what the document says about the demand drivers behind that growth.",
+            "compression_model": "gpt-5-mini",
+            "compression_applied": true,
+            "compression_latency_seconds": 26.427,
+            "compression_usage": {
+              "completion_tokens": 2117,
+              "prompt_tokens": 1832,
+              "total_tokens": 3949,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 1280,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 26.425,
+              "estimated_cost_usd": 0.004692
+            },
+            "judge_average_score": 3.5,
+            "judge_verdict": "borderline",
+            "citation_integrity": true,
+            "citation_count": 8,
+            "answer_preview": "**1. FY2025 segment revenue ranking (highest to lowest)**  \n1. Intelligent Cloud \u2014 $108,610 million [Evidence 1]  \n2. Productivity and Business Processes \u2014 $81,220 million [Evidence 2]  \n3. More Personal Computing \u2014 $60,610 million [Evidence 3]\n\n**2. Fastest\u2011growing segment**  \n- Intelligent Cloud is identified as the fastest\u2011growing segment in absolute dollars in the document, with revenue rising"
+          },
+          {
+            "query": "What was the FY2025 revenue mix by geography, which region contributed the most, and what risks or business context in the document matter for interpreting that concentration?",
+            "compression_model": "gpt-5-mini",
+            "compression_applied": true,
+            "compression_latency_seconds": 24.485,
+            "compression_usage": {
+              "completion_tokens": 2044,
+              "prompt_tokens": 1441,
+              "total_tokens": 3485,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 1408,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 24.483,
+              "estimated_cost_usd": 0.004448
+            },
+            "judge_average_score": 5.0,
+            "judge_verdict": "pass",
+            "citation_integrity": true,
+            "citation_count": 6,
+            "answer_preview": "**FY2025 revenue mix by geography**  \n- Other Countries: 53.2% of FY2025 revenue [Evidence 1].  \n- United States: 46.8% of FY2025 revenue [Evidence 2].\n\n**Largest regional contributor**  \n- \u201cOther Countries\u201d was the largest geographic contributor, with $133,010 million of revenue in FY2025 [Evidence 3], representing 53.2% of total revenue [Evidence 1].\n\n**Risks and business context that matter for"
+          },
+          {
+            "query": "Find the segment associated with LinkedIn, compare its FY2025 revenue against Intelligent Cloud, and summarize any management commentary that helps explain the difference in scale.",
+            "compression_model": "gpt-5-mini",
+            "compression_applied": true,
+            "compression_latency_seconds": 17.878,
+            "compression_usage": {
+              "completion_tokens": 1482,
+              "prompt_tokens": 2138,
+              "total_tokens": 3620,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 1024,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 17.876,
+              "estimated_cost_usd": 0.003498
+            },
+            "judge_average_score": 4.25,
+            "judge_verdict": "borderline",
+            "citation_integrity": true,
+            "citation_count": 4,
+            "answer_preview": "\u2022 Segment association: LinkedIn is part of Microsoft\u2019s Productivity and Business Processes reporting segment.[Evidence 1][Evidence 2]\n\n\u2022 FY2025 revenue (segment that includes LinkedIn): Productivity and Business Processes reported revenue of $81,220 million (USD).[Evidence 3]\n\n\u2022 FY2025 revenue (Intelligent Cloud): Intelligent Cloud reported revenue of $108,610 million (USD).[Evidence 4]\n\n\u2022 Compari"
+          },
+          {
+            "query": "Which segment had the highest FY2025 revenue, what was its operating income, and what narrative evidence from the document suggests why that segment performed strongly?",
+            "compression_model": "gpt-5-mini",
+            "compression_applied": true,
+            "compression_latency_seconds": 27.293,
+            "compression_usage": {
+              "completion_tokens": 2777,
+              "prompt_tokens": 2123,
+              "total_tokens": 4900,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 1984,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              },
+              "latency_seconds": 27.291,
+              "estimated_cost_usd": 0.006085
+            },
+            "judge_average_score": 4.75,
+            "judge_verdict": "pass",
+            "citation_integrity": true,
+            "citation_count": 5,
+            "answer_preview": "Based on the SQL structured data (treated as primary here), the answers are:\n\n1. **Segment with the highest FY2025 revenue**  \n   - **Intelligent Cloud** is recorded with FY2025 revenue of **$108,610 million**, and the SQL view identifies this as the highest segment revenue.[Evidence 1]\n\n2. **Operating income for that segment**  \n   - For Intelligent Cloud, FY2025 **operating income** is **$49,870"
+          }
+        ]
+      }
+    ],
+    "ranked_models": [
+      "gpt-5-mini",
+      "gpt-5.1",
+      "gpt-5.4-mini",
+      "gpt-5.4-nano"
+    ],
+    "recommended_model": "gpt-5-mini"
+  }
+}
